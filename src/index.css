@@ -990,4 +990,243 @@ input:focus, select:focus, textarea:focus {
   }
 }
 
+/* ==========================================================================
+   Vintage Catalog Magazine Brochure Modal & Spread Styles
+   ========================================================================== */
+.brochure-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 1.5rem 1rem;
+}
+
+.brochure-modal-toolbar {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 2px solid var(--colors-primary);
+  margin-bottom: 1rem;
+}
+
+.brochure-paper-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border: 4px double #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.brochure-catalog-stamp-header {
+  margin-bottom: 1.5rem;
+}
+
+.brochure-hero-spread {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.brochure-hero-text {
+  flex: 1.2;
+  min-width: 0;
+}
+
+.brochure-category-tag {
+  font-size: 11px;
+  font-weight: 800;
+  background: #000000;
+  color: #ffffff;
+  display: inline-block;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.brochure-title {
+  font-family: 'Arial Black', sans-serif !important;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #000000 !important;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+.brochure-subtitle {
+  font-size: 1.1rem;
+  color: #475569 !important;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.brochure-quote {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #0f172a !important;
+  border-left: 3px solid var(--colors-primary);
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.brochure-desc {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  color: #334155 !important;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.brochure-hero-photo-frame {
+  flex: 0.9;
+  border: 2px solid #000000;
+  padding: 4px;
+  background: #ffffff;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.brochure-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.brochure-photo-caption {
+  font-size: 9px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 4px;
+  letter-spacing: 0.05em;
+}
+
+.brochure-weather-bar {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #000000;
+  padding: 12px 16px;
+  margin-bottom: 1.5rem;
+}
+
+.brochure-section-title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 16px;
+  background: #000000;
+  color: #ffffff !important;
+  padding: 6px 12px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.brochure-days-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.brochure-day-card {
+  border: 1px solid #000000;
+  background: #ffffff;
+  padding: 12px;
+  page-break-inside: avoid;
+}
+
+.brochure-day-header {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 13px;
+  border-bottom: 1.5px solid #000000;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  color: #000000 !important;
+}
+
+.brochure-day-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.brochure-activity-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.brochure-act-time {
+  font-size: 11px;
+  font-weight: 800;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 2px 5px;
+  border-radius: 2px;
+  white-space: nowrap;
+  color: #000000 !important;
+}
+
+.brochure-act-content {
+  flex: 1;
+}
+
+.brochure-act-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #000000 !important;
+}
+
+.brochure-act-desc {
+  font-size: 11px;
+  color: #475569 !important;
+  line-height: 1.35;
+}
+
+.brochure-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.brochure-footer-box {
+  border: 1px solid #000000;
+  padding: 12px;
+}
+
+/* Printable Specific Rules for Brochure Modal */
+@media print {
+  .brochure-modal-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .brochure-paper-container {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
 

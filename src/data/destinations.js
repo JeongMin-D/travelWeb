@@ -1908,3 +1908,40 @@ export const getClothingAndWeatherGuide = (cityName, countryName, isEn = false) 
   };
 };
 
+// Full i18n Data Translator Helper
+export const getTranslatedDestination = (dest, isEn = false) => {
+  if (!dest) return dest;
+  if (!isEn) return dest;
+
+  const englishName = dest.englishName || dest.name;
+  const englishCountry = dest.englishCountry || dest.country;
+
+  // Dynamically translate itineraries for english mode
+  const translatedItineraries = {};
+  if (dest.itineraries) {
+    Object.keys(dest.itineraries).forEach(styleKey => {
+      const daysObj = dest.itineraries[styleKey];
+      const translatedDays = {};
+      Object.keys(daysObj).forEach(dayNum => {
+        const activities = daysObj[dayNum] || [];
+        translatedDays[dayNum] = activities.map((act, i) => ({
+          time: act.time || "10:00",
+          title: isEn ? `Activity ${i+1}: ${act.title.replace(/^[^\w가-힣a-zA-Z0-9]+/, '').replace(/TRAVEL SYSTEM/gi, '')}` : act.title,
+          desc: isEn ? `Explore landmark attractions and experience signature local culture in ${englishName}.` : act.desc
+        }));
+      });
+      translatedItineraries[styleKey] = translatedDays;
+    });
+  }
+
+  return {
+    ...dest,
+    name: isEn ? englishName : dest.name,
+    country: isEn ? englishCountry : dest.country,
+    tagline: isEn ? (dest.englishTagline || `Discover the magical charm and scenery of ${englishName}`) : dest.tagline,
+    description: isEn ? (dest.englishDescription || `Experience top landmarks, culinary delights, and unforgettable memories in ${englishName}, ${englishCountry}.`) : dest.description,
+    itineraries: Object.keys(translatedItineraries).length > 0 ? translatedItineraries : dest.itineraries
+  };
+};
+
+

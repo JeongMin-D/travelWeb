@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getClothingAndWeatherGuide } from '../data/destinations';
+import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getClothingAndWeatherGuide, getTranslatedDestination } from '../data/destinations';
+import PrintBrochureModal from './PrintBrochureModal';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -23,10 +24,13 @@ export default function ItineraryViewer({
   lang = 'en'
 }) {
   const isEn = lang === 'en';
+  const translatedDest = getTranslatedDestination(destination, isEn);
+
   const [duration, setDuration] = useState(initialDuration);
   const [style, setStyle] = useState(initialStyle);
   const [checklist, setChecklist] = useState([]);
   const [newItemText, setNewItemText] = useState('');
+  const [showBrochureModal, setShowBrochureModal] = useState(false);
 
   // Styles list supported by this destination
   const availableStyles = Object.keys(destination.itineraries);
@@ -268,20 +272,12 @@ export default function ItineraryViewer({
         </button>
 
         <button 
-          onClick={() => window.print()} 
+          onClick={() => setShowBrochureModal(true)} 
           className="btn btn-primary"
           style={{ background: '#000000', color: '#ffffff', border: '1px solid #000000' }}
         >
           🖨️ {isEn ? 'Print Brochure / Export PDF' : '카탈로그 브로셔 인쇄 / PDF 저장'}
         </button>
-      </div>
-
-      {/* Print Only Header Seal */}
-      <div className="print-catalog-header" style={{ display: 'none' }}>
-        <h1>VOYAGE GLOBAL SMART TRAVEL BROCHURE</h1>
-        <p style={{ margin: '4px 0 0 0', fontSize: '11pt' }}>
-          Destination: {destination.name} ({destination.englishName}), {destination.country} | Duration: {duration} Days
-        </p>
       </div>
 
       {/* Destination Hero Panel */}
@@ -293,7 +289,7 @@ export default function ItineraryViewer({
           borderRadius: 'var(--radius-lg)', 
           padding: '2.5rem', 
           marginBottom: '2rem',
-          backgroundImage: `linear-gradient(to right, rgba(11, 15, 25, 0.9) 30%, rgba(11, 15, 25, 0.4) 100%), url(${destination.imageUrl})`,
+          backgroundImage: `linear-gradient(to right, rgba(11, 15, 25, 0.9) 30%, rgba(11, 15, 25, 0.4) 100%), url(${translatedDest.imageUrl})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '260px',
@@ -305,31 +301,25 @@ export default function ItineraryViewer({
       >
         <div style={{ position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-            <span className={`badge ${destination.type === 'domestic' ? 'badge-indigo' : 'badge-cyan'}`}>
-              {destination.type === 'domestic' ? '국내 여행지' : '해외 여행지'}
+            <span className={`badge ${translatedDest.type === 'domestic' ? 'badge-indigo' : 'badge-cyan'}`}>
+              {translatedDest.type === 'domestic' ? (isEn ? 'DOMESTIC' : '국내 여행지') : (isEn ? 'INTERNATIONAL' : '해외 여행지')}
             </span>
-            <span className="badge badge-emerald">{destination.continent}</span>
-            <span className="badge badge-amber">🪙 통화: {destination.currency} ({destination.currencySymbol})</span>
-            {neighbors && neighbors.length > 0 && (
-              <span className="badge badge-violet" style={{ textShadow: 'none', background: 'linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%)', color: '#ffffff' }}>
-                📍 인접 도시 연계: {neighbors.join(', ')}
-              </span>
-            )}
+            <span className="badge badge-emerald">{translatedDest.continent}</span>
+            <span className="badge badge-amber">🪙 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency} ({translatedDest.currencySymbol})</span>
           </div>
 
-
           <h1 style={{ fontSize: '3rem', fontWeight: 800, margin: '0.5rem 0', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>
-            {destination.name}
+            {translatedDest.name}
             <span style={{ fontSize: '1.25rem', marginLeft: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>
-              {destination.englishName}, {destination.country}
+              {translatedDest.englishName}, {translatedDest.country}
             </span>
           </h1>
 
           <p style={{ color: 'var(--color-accent)', fontSize: '1.1rem', fontWeight: 600, maxWidth: '700px', marginBottom: '0.75rem' }}>
-            "{destination.tagline}"
+            "{translatedDest.tagline}"
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', maxWidth: '700px' }}>
-            {destination.description}
+            {translatedDest.description}
           </p>
         </div>
       </div>
@@ -608,6 +598,20 @@ export default function ItineraryViewer({
           )}
         </div>
       </div>
+
+      {/* Print Brochure Modal */}
+      {showBrochureModal && (
+        <PrintBrochureModal
+          destination={translatedDest}
+          duration={duration}
+          style={style}
+          itineraryData={activeItineraryData}
+          weatherInfo={weatherInfo}
+          checklist={checklist}
+          onClose={() => setShowBrochureModal(false)}
+          lang={lang}
+        />
+      )}
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { destinations, getPolishedItinerary } from '../data/destinations';
+import { destinations, getPolishedItinerary, getClothingAndWeatherGuide } from '../data/destinations';
+import PrintBrochureModal from './PrintBrochureModal';
 
 export default function ManualPlanner({ prefilledDestination, onClearPrefilled, lang = 'en' }) {
   const isEn = lang === 'en';
+  const [showBrochureModal, setShowBrochureModal] = useState(false);
   const [trips, setTrips] = useState([]);
   const [activeTripId, setActiveTripId] = useState(null);
   
@@ -429,7 +431,7 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
                   {activeTrip.title}
                 </h3>
                 <button 
-                  onClick={() => window.print()}
+                  onClick={() => setShowBrochureModal(true)}
                   className="btn btn-primary"
                   style={{ fontSize: '0.75rem', padding: '0.35rem 0.65rem' }}
                 >
@@ -537,6 +539,36 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
             🚀 첫 일정 시작하기
           </button>
         </div>
+      )}
+
+      {/* Print Brochure Modal */}
+      {showBrochureModal && activeTrip && (
+        <PrintBrochureModal
+          destination={activeTrip.linkedDestination || {
+            name: activeTrip.destinationName || activeTrip.title,
+            englishName: activeTrip.destinationName || activeTrip.title,
+            country: 'Custom Plan',
+            continent: 'Custom',
+            tagline: isEn ? 'My Personalized Custom Travel Plan' : '나만의 셀프 여행 일정표',
+            description: isEn ? 'Custom planned itinerary created with VOYAGE Smart Travel Planner.' : 'VOYAGE 스마트 플래너를 통해 직접 설계한 나만의 커스텀 여행 일정표입니다.',
+            imageUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80',
+            type: 'domestic',
+            currency: activeTrip.currencySymbol || 'KRW',
+            currencySymbol: activeTrip.currencySymbol || '₩'
+          }}
+          duration={activeTrip.duration}
+          style={'custom'}
+          itineraryData={activeTrip.activities.reduce((acc, act) => {
+            const day = act.day || 1;
+            if (!acc[day]) acc[day] = [];
+            acc[day].push({ time: act.time, title: act.title, desc: act.notes || (act.cost > 0 ? `Cost: ${activeTrip.currencySymbol}${act.cost}` : '') });
+            return acc;
+          }, {})}
+          weatherInfo={getClothingAndWeatherGuide(activeTrip.destinationName || 'Seoul', 'Korea', isEn)}
+          checklist={[]}
+          onClose={() => setShowBrochureModal(false)}
+          lang={lang}
+        />
       )}
     </div>
   );
