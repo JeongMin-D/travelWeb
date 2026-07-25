@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getCityCoordinates } from '../data/destinations';
+import { getCityCoordinates, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -259,7 +259,7 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
             <option value="" disabled>{isEn ? 'Select a city...' : '도시 선택...'}</option>
             {availableToAdd.map(dest => (
               <option key={dest.id} value={dest.id}>
-                {dest.name} ({dest.country})
+                {isEn ? (dest.englishName || dest.name) : dest.name} ({isEn ? (COUNTRY_ENGLISH_MAPPING[dest.country] || dest.country) : dest.country})
               </option>
             ))}
           </select>
@@ -321,10 +321,10 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
                   <img src={city.imageUrl} alt={city.name} style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '4px' }} />
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <h4 style={{ fontSize: '0.95rem', fontWeight: 800, margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {city.name}
+                      {isEn ? (city.englishName || city.name) : city.name}
                     </h4>
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                      {city.country} • {city.continent}
+                      {isEn ? (COUNTRY_ENGLISH_MAPPING[city.country] || city.country) : city.country} • {isEn ? (CONTINENT_ENGLISH_MAPPING[city.continent] || city.continent) : city.continent}
                     </span>
                   </div>
                   <button 

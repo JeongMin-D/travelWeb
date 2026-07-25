@@ -122,7 +122,7 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
       // Save marker in ref
       markersRef.current[dest.id] = marker;
     });
-  }, [mapInstance, destinations]);
+  }, [mapInstance, destinations, isEn]);
 
   // Handle clicking a city from the sidebar list
   const handleCityClick = (dest) => {

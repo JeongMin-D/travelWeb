@@ -1180,7 +1180,7 @@ Object.entries(compactCitiesByCountry).forEach(([country, cities]) => {
     standardDirectory.push({
       id: id,
       name: city,
-      englishName: city,
+      englishName: CITY_ENGLISH_MAPPING[city] || city,
       type: type,
       continent: reg.continent,
       country: country,
@@ -1250,7 +1250,7 @@ export const generateCustomDestination = (name, country, continent, currency, cu
   return {
     id: id,
     name: name,
-    englishName: name,
+    englishName: CITY_ENGLISH_MAPPING[name] || name,
     type: isDomestic ? "domestic" : "international",
     continent: continent || (isDomestic ? "Domestic" : "Asia"),
     country: country,
