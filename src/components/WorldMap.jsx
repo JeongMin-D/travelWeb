@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getCityCoordinates, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING, PREMIUM_TAGLINE_ENGLISH_MAPPING } from '../data/destinations';
+import { getCityCoordinates, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING, PREMIUM_TAGLINE_ENGLISH_MAPPING, WIKI_TAGLINE_EN } from '../data/destinations';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -105,10 +105,10 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
       if (isEn) {
         if (PREMIUM_TAGLINE_ENGLISH_MAPPING[dest.tagline]) {
           translatedTagline = PREMIUM_TAGLINE_ENGLISH_MAPPING[dest.tagline];
-        } else if (dest.tagline.includes('대표적인 여행 명소')) {
+        } else if (WIKI_TAGLINE_EN[dest.name]) {
+          translatedTagline = WIKI_TAGLINE_EN[dest.name];
+        } else if (dest.tagline.includes('대표적인 여행 명소') || dest.tagline.includes('보석 같은 도시')) {
           translatedTagline = `A signature destination in ${countryNameToShow}, ${cityNameToShow}`;
-        } else if (dest.tagline.includes('보석 같은 도시')) {
-          translatedTagline = `A hidden gem in ${countryNameToShow}, ${cityNameToShow}`;
         } else {
           translatedTagline = `Experience the beauty of ${cityNameToShow}, ${countryNameToShow}`;
         }
