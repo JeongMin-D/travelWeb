@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getCityCoordinates } from '../data/destinations';
+import { getCityCoordinates, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -78,10 +78,14 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
         fillOpacity: 0.8
       }).addTo(mapInstance);
 
+      const cityNameToShow = isEn ? (dest.englishName || dest.name) : dest.name;
+      const countryNameToShow = isEn ? (COUNTRY_ENGLISH_MAPPING[dest.country] || dest.country) : dest.country;
+      const continentNameToShow = isEn ? (CONTINENT_ENGLISH_MAPPING[dest.continent] || dest.continent) : dest.continent;
+
       // Bind simple tooltip on hover
       marker.bindTooltip(`
         <div style="font-family: sans-serif; font-size: 0.8rem; font-weight: 600;">
-          📍 ${dest.name} (${dest.country})
+          📍 ${cityNameToShow} (${countryNameToShow})
         </div>
       `, { direction: 'top', offset: [0, -5] });
 
@@ -92,16 +96,16 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
       popupDiv.style.width = '200px';
       popupDiv.innerHTML = `
         <div style="margin-bottom: 8px;">
-          <img src="${dest.imageUrl}" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px; margin-bottom: 6px;" alt="${dest.name}" />
-          <h4 style="margin: 0; font-size: 1rem; font-weight: 800;">${dest.name}</h4>
-          <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: #666;">${dest.country} • ${dest.continent}</p>
+          <img src="${dest.imageUrl}" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px; margin-bottom: 6px;" alt="${cityNameToShow}" />
+          <h4 style="margin: 0; font-size: 1rem; font-weight: 800;">${cityNameToShow}</h4>
+          <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: #666;">${countryNameToShow} • ${continentNameToShow}</p>
           <p style="margin: 4px 0 0 0; font-size: 0.75rem; font-style: italic; color: #555;">"${dest.tagline}"</p>
         </div>
       `;
 
       // Create travel button programmatically to bind React event handlers
       const btn = document.createElement('button');
-      btn.innerText = '✈️ 이 도시 여행하기';
+      btn.innerText = isEn ? '✈️ Travel to this City' : '✈️ 이 도시 여행하기';
       btn.className = 'btn btn-primary';
       btn.style.width = '100%';
       btn.style.padding = '0.4rem 0.5rem';
@@ -199,10 +203,10 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
               />
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                  {dest.name}
+                  {isEn ? (dest.englishName || dest.name) : dest.name}
                 </div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                  {dest.country} • {dest.continent}
+                  {isEn ? (COUNTRY_ENGLISH_MAPPING[dest.country] || dest.country) : dest.country} • {isEn ? (CONTINENT_ENGLISH_MAPPING[dest.continent] || dest.continent) : dest.continent}
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BANNED_COUNTRIES, generateCustomDestination, COUNTRY_REGISTRY, getClothingAndWeatherGuide } from '../data/destinations';
+import { BANNED_COUNTRIES, generateCustomDestination, COUNTRY_REGISTRY, getClothingAndWeatherGuide, getTranslatedDestination, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 
 export default function Dashboard({ destinations, onSelectDestination, onRegisterCustomDest, lang = 'en' }) {
   const isEn = lang === 'en';
@@ -106,10 +106,10 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
 
   const getStyleKoreanName = (styleKey) => {
     switch (styleKey) {
-      case 'healing': return '🌿 힐링 & 휴식';
-      case 'activity': return '⚡ 액티비티 & 체험';
-      case 'culture': return '🏛️ 역사 & 문화';
-      case 'food': return '🍕 식도락 여행';
+      case 'healing': return isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식';
+      case 'activity': return isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험';
+      case 'culture': return isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화';
+      case 'food': return isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행';
       default: return styleKey;
     }
   };
@@ -222,20 +222,20 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
       {showAddCity && (
         <div className="glass-panel fade-in" style={{ marginBottom: '2.5rem', border: '2px solid var(--colors-primary)' }}>
           <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-            🌐 새 도시 등록 및 인공지능 일정 설계
+            🌐 {isEn ? 'Register New City & AI Itinerary Design' : '새 도시 등록 및 인공지능 일정 설계'}
           </h3>
           <p style={{ fontSize: '13px', marginBottom: '1rem' }}>
-            데이터베이스에 없는 전 세계 모든 도시를 등록해 보세요. 외교부 지정 여행금지 국가는 실시간 자동 차단됩니다.
+            {isEn ? 'Register any custom city worldwide. Travel-banned countries are automatically blocked in real-time.' : '데이터베이스에 없는 전 세계 모든 도시를 등록해 보세요. 외교부 지정 여행금지 국가는 실시간 자동 차단됩니다.'}
           </p>
 
           <form onSubmit={handleRegisterSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>도시명</label>
+                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'City Name' : '도시명'}</label>
                 <input
                   type="text"
                   required
-                  placeholder="예: 밴쿠버, 방콕, 제주도"
+                  placeholder={isEn ? "e.g., Vancouver, Bangkok, Jeju" : "예: 밴쿠버, 방콕, 제주도"}
                   value={cityName}
                   onChange={(e) => setCityName(e.target.value)}
                   style={{ width: '100%' }}
@@ -243,11 +243,11 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>국가명</label>
+                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Country Name' : '국가명'}</label>
                 <input
                   type="text"
                   required
-                  placeholder="예: 캐나다, 태국, 대한민국"
+                  placeholder={isEn ? "e.g., Canada, Thailand, Korea" : "예: 캐나다, 태국, 대한민국"}
                   value={countryName}
                   onChange={(e) => handleCountryChange(e.target.value)}
                   style={{ width: '100%' }}
@@ -255,24 +255,24 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>대륙</label>
+                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Continent' : '대륙'}</label>
                 <select
                   value={continent}
                   onChange={(e) => setContinent(e.target.value)}
                   style={{ width: '100%' }}
                 >
-                  <option value="Asia">아시아 (Asia)</option>
-                  <option value="Europe">유럽 (Europe)</option>
-                  <option value="Americas">아메리카 (Americas)</option>
-                  <option value="Oceania">오세아니아 (Oceania)</option>
-                  <option value="Africa">아프리카 (Africa)</option>
+                  <option value="Asia">Asia ({isEn ? 'Asia' : '아시아'})</option>
+                  <option value="Europe">Europe ({isEn ? 'Europe' : '유럽'})</option>
+                  <option value="Americas">Americas ({isEn ? 'Americas' : '아메리카'})</option>
+                  <option value="Oceania">Oceania ({isEn ? 'Oceania' : '오세아니아'})</option>
+                  <option value="Africa">Africa ({isEn ? 'Africa' : '아프리카'})</option>
                 </select>
               </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>결제 통화 코드</label>
+                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Currency Code' : '결제 통화 코드'}</label>
                 <select
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
@@ -290,10 +290,10 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>통화 기호</label>
+                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Currency Symbol' : '통화 기호'}</label>
                 <input
                   type="text"
-                  placeholder="예: $, ¥, €, ₩"
+                  placeholder={isEn ? "e.g., $, ¥, €, ₩" : "예: $, ¥, €, ₩"}
                   value={currencySymbol}
                   onChange={(e) => setCurrencySymbol(e.target.value)}
                   style={{ width: '100%' }}
@@ -315,7 +315,7 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
 
             <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
               <button type="submit" className="btn btn-accent" style={{ flex: 1 }}>
-                🚀 도시 등록 및 일정 설계
+                🚀 {isEn ? 'Register & Generate Plan' : '도시 등록 및 일정 설계'}
               </button>
               <button 
                 type="button" 
@@ -323,7 +323,7 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
                 className="btn btn-secondary"
                 style={{ flex: 1 }}
               >
-                취소
+                {isEn ? 'Cancel' : '취소'}
               </button>
             </div>
           </form>
@@ -363,6 +363,9 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
               const tints = ['sage', 'salmon', 'peach', 'lime', 'sky', 'steel', 'periwinkle', 'olive'];
               const tint = tints[index % tints.length];
               const weather = getClothingAndWeatherGuide(dest.name, dest.country, isEn);
+              const td = getTranslatedDestination(dest, isEn);
+              const displayCountry = isEn ? (COUNTRY_ENGLISH_MAPPING[dest.country] || td.country || dest.country) : dest.country;
+              const displayContinent = isEn ? (CONTINENT_ENGLISH_MAPPING[dest.continent] || dest.continent) : dest.continent;
               
               return (
                 <div 
@@ -379,7 +382,7 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
                   {/* Title bar */}
                   <div className="destination-card-title">
                     <span>✈️ {isEn ? (dest.englishName || dest.name) : dest.name}</span>
-                    <span style={{ fontSize: '10px' }}>{dest.continent} / {dest.country}</span>
+                    <span style={{ fontSize: '10px' }}>{displayContinent} / {displayCountry}</span>
                   </div>
 
                   {/* Tinted Body */}
@@ -397,10 +400,10 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
                         </span>
                       </div>
                       <p style={{ fontWeight: 700, fontSize: '13px', margin: '4px 0', fontFamily: 'var(--font-heading)' }}>
-                        "{dest.tagline}"
+                        "{td.tagline}"
                       </p>
                       <p style={{ fontSize: '13px', color: 'var(--colors-ink)', margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: '3', WebkitBoxOrient: 'vertical' }}>
-                        {dest.description}
+                        {td.description}
                       </p>
                     </div>
 

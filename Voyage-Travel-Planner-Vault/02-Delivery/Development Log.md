@@ -1,6 +1,6 @@
 # 📅 개발 일지 (Development Log)
 
-이 문서는 **안티그래비티 트래블 (Antigravity Travel)** 웹 애플리케이션의 단계별 개발 완료 사항을 기록한 일지입니다.
+이 문서는 **VOYAGE Travel Planner**의 단계별 개발 완료 사항을 기록한 이력입니다. 현재 상태와 다음 작업은 [[00-Dashboard/Project Dashboard|프로젝트 대시보드]] 및 [[03-Planning/Active Plan|실행 계획]]에서 확인합니다.
 
 ---
 
@@ -59,4 +59,4 @@
 
 ---
 
-*[[Home]]으로 돌아가기*
+*[[00-Dashboard/Project Dashboard|프로젝트 대시보드로 돌아가기]]*

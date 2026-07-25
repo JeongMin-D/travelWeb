@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getClothingAndWeatherGuide, getTranslatedDestination } from '../data/destinations';
+import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getLandmarkCoordinates, getClothingAndWeatherGuide, getTranslatedDestination, translateChecklistItem, translateActivityTitle, translateActivityDesc, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 import PrintBrochureModal from './PrintBrochureModal';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -25,6 +25,7 @@ export default function ItineraryViewer({
 }) {
   const isEn = lang === 'en';
   const translatedDest = getTranslatedDestination(destination, isEn);
+  const displayContinent = isEn ? (CONTINENT_ENGLISH_MAPPING[destination.continent] || destination.continent) : destination.continent;
 
   const [duration, setDuration] = useState(initialDuration);
   const [style, setStyle] = useState(initialStyle);
@@ -119,6 +120,7 @@ export default function ItineraryViewer({
     saveChecklist(updated);
   };
 
+  // Always use original Korean name for itinerary lookup (keys in data are Korean)
   const activeItineraryData = getPolishedItinerary(destination, style, duration);
   const neighbors = NEIGHBOR_MAPPING[destination.name] || [];
 
@@ -199,6 +201,7 @@ export default function ItineraryViewer({
     };
 
     const allCoords = [];
+    const placedMarkerCoords = [];
 
     for (let dayNum = 1; dayNum <= duration; dayNum++) {
       const dayActivities = activeItineraryData[dayNum] || [];
@@ -206,23 +209,43 @@ export default function ItineraryViewer({
       const dayPathCoords = [];
 
       dayActivities.forEach((act, actIndex) => {
-        const angle = (dayNum * 72 + actIndex * 45) * (Math.PI / 180);
-        const radius = 0.008 + actIndex * 0.003;
-        const offsetLat = Math.sin(angle) * radius;
-        const offsetLng = Math.cos(angle) * radius;
-        const actCoords = [cityLat + offsetLat, cityLng + offsetLng];
+        const rawCoords = getLandmarkCoordinates(destination.name, act.title, dayNum, actIndex, destination.country);
         
+        // Anti-overlap jittering algorithm: if another marker is within ~150m, fan out gently
+        let finalLat = rawCoords[0];
+        let finalLng = rawCoords[1];
+
+        const overlappingCount = placedMarkerCoords.filter(p => {
+          const dLat = Math.abs(p[0] - finalLat);
+          const dLng = Math.abs(p[1] - finalLng);
+          return dLat < 0.002 && dLng < 0.002;
+        }).length;
+
+        if (overlappingCount > 0) {
+          const angle = (overlappingCount * 75 + dayNum * 45 + actIndex * 30) * (Math.PI / 180);
+          const offsetDist = 0.002 + (overlappingCount * 0.0006); // ~200m offset fan-out
+          finalLat += Math.sin(angle) * offsetDist;
+          finalLng += Math.cos(angle) * offsetDist;
+        }
+
+        const actCoords = [finalLat, finalLng];
+        placedMarkerCoords.push(actCoords);
         dayPathCoords.push(actCoords);
         allCoords.push(actCoords);
 
         const divIcon = L.divIcon({
           className: 'custom-map-marker',
           html: `<div class="marker-dot" style="background-color: ${dayColor}; box-shadow: 0 0 10px ${dayColor};">${dayNum}-${actIndex + 1}</div>`,
-          iconSize: [24, 24],
-          iconAnchor: [12, 12]
+          iconSize: [26, 26],
+          iconAnchor: [13, 13]
         });
 
-        L.marker(actCoords, { icon: divIcon })
+        const zIndexOffset = (dayNum * 100) + (actIndex * 10);
+
+        L.marker(actCoords, { 
+          icon: divIcon,
+          zIndexOffset: zIndexOffset
+        })
           .addTo(mapInstance)
           .bindPopup(`
             <div style="color: #0b0f19; font-family: sans-serif; font-size: 0.85rem; padding: 2px;">
@@ -280,45 +303,58 @@ export default function ItineraryViewer({
         </button>
       </div>
 
-      {/* Destination Hero Panel */}
+      {/* Destination Hero Panel (Clear Crisp Photo & High Legibility) */}
       <div 
         className="glass-panel" 
         style={{ 
-          position: 'relative', 
-          overflow: 'hidden', 
-          borderRadius: 'var(--radius-lg)', 
-          padding: '2.5rem', 
           marginBottom: '2rem',
-          backgroundImage: `linear-gradient(to right, rgba(11, 15, 25, 0.9) 30%, rgba(11, 15, 25, 0.4) 100%), url(${translatedDest.imageUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          minHeight: '260px',
+          padding: '1.5rem',
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          border: '1px solid rgba(255, 255, 255, 0.12)'
+          gap: '2rem',
+          alignItems: 'center',
+          flexWrap: 'wrap'
         }}
       >
-        <div style={{ position: 'relative', zIndex: 2 }}>
+        {/* Left Side: Crisp High-Res Photo Frame */}
+        <div 
+          style={{ 
+            width: '320px', 
+            height: '220px', 
+            flexShrink: 0, 
+            border: '2px solid var(--colors-frame-ink)', 
+            padding: '4px',
+            background: '#ffffff',
+            boxShadow: '4px 4px 0px #000000'
+          }}
+        >
+          <img 
+            src={translatedDest.imageUrl} 
+            alt={translatedDest.name} 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+
+        {/* Right Side: High Legibility Information */}
+        <div style={{ flex: 1, minWidth: '280px' }}>
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
             <span className={`badge ${translatedDest.type === 'domestic' ? 'badge-indigo' : 'badge-cyan'}`}>
               {translatedDest.type === 'domestic' ? (isEn ? 'DOMESTIC' : '국내 여행지') : (isEn ? 'INTERNATIONAL' : '해외 여행지')}
             </span>
-            <span className="badge badge-emerald">{translatedDest.continent}</span>
+            <span className="badge badge-emerald">{displayContinent}</span>
             <span className="badge badge-amber">🪙 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency} ({translatedDest.currencySymbol})</span>
           </div>
 
-          <h1 style={{ fontSize: '3rem', fontWeight: 800, margin: '0.5rem 0', textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>
+          <h1 style={{ fontSize: '2.5rem', fontWeight: 800, margin: '0.35rem 0', color: 'var(--text-primary)' }}>
             {translatedDest.name}
-            <span style={{ fontSize: '1.25rem', marginLeft: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>
+            <span style={{ fontSize: '1.1rem', marginLeft: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>
               {translatedDest.englishName}, {translatedDest.country}
             </span>
           </h1>
 
-          <p style={{ color: 'var(--color-accent)', fontSize: '1.1rem', fontWeight: 600, maxWidth: '700px', marginBottom: '0.75rem' }}>
+          <p style={{ color: 'var(--color-accent)', fontSize: '1.05rem', fontWeight: 600, marginBottom: '0.5rem' }}>
             "{translatedDest.tagline}"
           </p>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', maxWidth: '700px' }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>
             {translatedDest.description}
           </p>
         </div>
@@ -353,7 +389,9 @@ export default function ItineraryViewer({
           
           {/* Duration Selector */}
           <div>
-            <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>여행 기간 설정</span>
+            <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
+              {isEn ? 'Trip Duration' : '여행 기간 설정'}
+            </span>
             <select
               value={duration}
               onChange={(e) => setDuration(Number(e.target.value))}
@@ -370,7 +408,7 @@ export default function ItineraryViewer({
             >
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((d) => (
                 <option key={d} value={d} style={{ background: '#131b2e', color: '#fff' }}>
-                  {d}일 일정
+                  {isEn ? `${d} Days Plan` : `${d}일 일정`}
                 </option>
               ))}
             </select>
@@ -378,7 +416,9 @@ export default function ItineraryViewer({
 
           {/* Style Selector */}
           <div>
-            <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>여행 테마</span>
+            <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
+              {isEn ? 'Travel Theme' : '여행 테마'}
+            </span>
             <div style={{ display: 'flex', gap: '0.25rem', flexWrap: 'wrap' }}>
               {availableStyles.map((s) => (
                 <button
@@ -401,14 +441,14 @@ export default function ItineraryViewer({
             className="btn btn-primary"
             style={{ fontSize: '0.9rem' }}
           >
-            ✈️ 셀프 플래너로 가져오기 (편집)
+            ✈️ {isEn ? 'Import to Custom Planner (Edit)' : '셀프 플래너로 가져오기 (편집)'}
           </button>
           <button 
             onClick={() => onStartBudgeting(destination)} 
             className="btn btn-accent"
             style={{ fontSize: '0.9rem' }}
           >
-            💰 예산 수립하기
+            🪙 {isEn ? 'Calculate Travel Budget' : '예산 수립하기'}
           </button>
           <button 
             onClick={handleToggleVisited} 
@@ -420,7 +460,7 @@ export default function ItineraryViewer({
               border: '1px solid var(--glass-border)'
             }}
           >
-            {isVisited ? '💚 다녀온 도시!' : '🤍 가본 도시 등록'}
+            {isVisited ? (isEn ? '💚 Visited City!' : '💚 다녀온 도시!') : (isEn ? '🤍 Mark Visited' : '🤍 가본 도시 등록')}
           </button>
         </div>
       </div>
@@ -428,7 +468,7 @@ export default function ItineraryViewer({
       {/* Map Section */}
       <div className="glass-panel" style={{ padding: '1.25rem', marginBottom: '2rem' }}>
         <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          🗺️ {destination.name} 여행 경로 지도
+          🗺️ {isEn ? `${translatedDest.name} Recommended Route Map` : `${translatedDest.name} 여행 경로 지도`}
         </h3>
         <div 
           id="itinerary-map" 
@@ -442,7 +482,9 @@ export default function ItineraryViewer({
           }}
         ></div>
         <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.5rem', textAlign: 'right' }}>
-          💡 지도 상의 번호는 각 일차(Day)와 해당 활동 순서를 뜻합니다 (예: 1-2 = 1일차 2번째 활동). 점선은 일차별 이동 동선입니다.
+          💡 {isEn 
+            ? 'Numbers indicate Day & Activity order (e.g. 1-2 = Day 1 Activity #2). Dotted lines represent travel paths.' 
+            : '지도 상의 번호는 각 일차(Day)와 해당 활동 순서를 뜻합니다 (예: 1-2 = 1일차 2번째 활동). 점선은 일차별 이동 동선입니다.'}
         </p>
       </div>
 
@@ -453,7 +495,7 @@ export default function ItineraryViewer({
         {/* Left Side: Daily Timeline */}
         <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 700, borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>📅 {duration}일 추천 일정 </span>
+            <span>📅 {isEn ? `Recommended ${duration}-Day Itinerary` : `${duration}일 추천 일정`} </span>
             <span style={{ fontSize: '0.9rem', color: 'var(--color-accent)', fontWeight: 500 }}>
               {getStyleKoreanName(style)}
             </span>
@@ -472,17 +514,21 @@ export default function ItineraryViewer({
 
                 {dayActivities.length === 0 ? (
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', paddingLeft: '1rem' }}>
-                    이 날은 자유 일정 및 개별 힐링 시간입니다.
+                    {isEn ? 'Free leisure time and personal relaxation day.' : '이 날은 자유 일정 및 개별 힐링 시간입니다.'}
                   </p>
                 ) : (
                   <div className="timeline">
-                    {dayActivities.map((act, actIndex) => (
-                      <div key={actIndex} className="timeline-item">
-                        <div className="timeline-time">{act.time}</div>
-                        <div className="timeline-title">{act.title}</div>
-                        <div className="timeline-desc">{act.desc}</div>
-                      </div>
-                    ))}
+                    {dayActivities.map((act, actIndex) => {
+                      const displayTitle = isEn ? translateActivityTitle(act.title, actIndex, translatedDest.name) : act.title;
+                      const displayDesc = isEn ? translateActivityDesc(act.desc, translatedDest.name) : act.desc;
+                      return (
+                        <div key={actIndex} className="timeline-item">
+                          <div className="timeline-time">{act.time}</div>
+                          <div className="timeline-title">{displayTitle}</div>
+                          <div className="timeline-desc">{displayDesc}</div>
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -493,31 +539,31 @@ export default function ItineraryViewer({
         {/* Right Side: Checklist */}
         <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 700, borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>🎒 여행 준비물 체크리스트</span>
+            <span>🎒 {isEn ? 'Packing Checklist' : '여행 준비물 체크리스트'}</span>
             <button 
               onClick={handleResetChecklist}
               className="btn" 
               style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', background: 'rgba(239, 68, 68, 0.1)', color: 'var(--color-danger)', border: '1px solid rgba(239, 68, 68, 0.2)' }}
             >
-              🔄 초기화
+              🔄 {isEn ? 'Reset' : '초기화'}
             </button>
           </h3>
 
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '-0.75rem' }}>
-            기본적인 준비물과 {destination.name} 맞춤 아이템 목록입니다. 체크하며 가방을 싸보세요.
+            {isEn ? `Essential travel items for ${translatedDest.name}. Check off items as you pack.` : `기본적인 준비물과 ${destination.name} 맞춤 아이템 목록입니다. 체크하며 가방을 싸보세요.`}
           </p>
 
           {/* Add custom item form */}
           <form onSubmit={handleAddCustomItem} style={{ display: 'flex', gap: '0.5rem' }}>
             <input
               type="text"
-              placeholder="직접 준비물 추가하기..."
+              placeholder={isEn ? "Add custom item..." : "직접 준비물 추가하기..."}
               value={newItemText}
               onChange={(e) => setNewItemText(e.target.value)}
               style={{ flex: 1, padding: '0.5rem 0.8rem', fontSize: '0.85rem' }}
             />
             <button type="submit" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
-              추가
+              {isEn ? 'Add' : '추가'}
             </button>
           </form>
 
@@ -544,7 +590,7 @@ export default function ItineraryViewer({
                   />
                   <span className="checkmark"></span>
                   <span style={{ fontSize: '0.9rem', color: item.checked ? 'var(--text-muted)' : 'var(--text-primary)' }}>
-                    {item.text}
+                    {translateChecklistItem(item.text, isEn)}
                   </span>
                 </label>
 
@@ -557,7 +603,7 @@ export default function ItineraryViewer({
                     padding: '0.15rem 0.35rem',
                     borderRadius: '4px'
                   }}>
-                    {item.category === 'essential' ? '필수' : item.category === 'electronics' ? '전자' : item.category === 'toiletries' ? '세면' : item.category === 'clothing' ? '의류' : '기타'}
+                    {item.category === 'essential' ? (isEn ? 'Essential' : '필수') : item.category === 'electronics' ? (isEn ? 'Tech' : '전자') : item.category === 'toiletries' ? (isEn ? 'Hygiene' : '세면') : item.category === 'clothing' ? (isEn ? 'Wear' : '의류') : (isEn ? 'Other' : '기타')}
                   </span>
                   
                   {/* Delete button */}

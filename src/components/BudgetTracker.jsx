@@ -154,12 +154,12 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
   const getCategoryEmoji = (cat) => {
     switch (cat) {
-      case 'flight': return '✈️ 항공';
-      case 'stay': return '🏨 숙박';
-      case 'food': return '🍕 식비';
-      case 'shopping': return '🛍️ 쇼핑';
-      case 'activity': return '🎟️ 관광/레저';
-      default: return '💼 기타';
+      case 'flight': return isEn ? '✈️ Flight' : '✈️ 항공';
+      case 'stay': return isEn ? '🏨 Stay' : '🏨 숙박';
+      case 'food': return isEn ? '🍕 Food' : '🍕 식비';
+      case 'shopping': return isEn ? '🛍️ Shopping' : '🛍️ 쇼핑';
+      case 'activity': return isEn ? '🎟️ Leisure' : '🎟️ 관광/레저';
+      default: return isEn ? '💼 Other' : '💼 기타';
     }
   };
 
@@ -183,13 +183,13 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
         {/* Budget Setting Panel */}
         <div className="glass-panel">
           <h3 style={{ fontSize: '1.25rem', fontWeight: 800, borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
-            💵 예산 설정
+            💵 {isEn ? 'Budget Settings' : '예산 설정'}
           </h3>
 
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-end', flexWrap: 'wrap' }}>
             <div style={{ flex: 1, minWidth: '180px' }}>
               <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                총 예산 (KRW)
+                {isEn ? 'Total Budget (KRW)' : '총 예산 (KRW)'}
               </label>
               <input
                 type="number"
@@ -200,14 +200,14 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
             </div>
             
             <div style={{ flex: 1, minWidth: '180px', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-              <div>지출 총액: <strong style={{ color: 'var(--color-primary)' }}>₩{totalSpentKRW.toLocaleString()}</strong></div>
-              <div>남은 금액: <strong style={{ color: remainingKRW >= 0 ? 'var(--color-success)' : 'var(--color-danger)' }}>₩{remainingKRW.toLocaleString()}</strong></div>
+              <div>{isEn ? 'Total Spent:' : '지출 총액:'} <strong style={{ color: 'var(--color-primary)' }}>₩{totalSpentKRW.toLocaleString()}</strong></div>
+              <div>{isEn ? 'Remaining:' : '남은 금액:'} <strong style={{ color: remainingKRW >= 0 ? 'var(--color-success)' : 'var(--color-danger)' }}>₩{remainingKRW.toLocaleString()}</strong></div>
             </div>
           </div>
 
           <div style={{ marginTop: '1.25rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-              <span>예산 대비 지출율</span>
+              <span>{isEn ? 'Budget Utilization' : '예산 대비 지출율'}</span>
               <span>{Math.round((totalSpentKRW / budgetLimit) * 100)}%</span>
             </div>
             <div className="progress-bar-container">
@@ -222,19 +222,19 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
         {/* Add Expense Form */}
         <div className="glass-panel">
           <h3 style={{ fontSize: '1.25rem', fontWeight: 800, borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
-            ➕ 지출 기록 등록
+            ➕ {isEn ? 'Log New Expense' : '지출 기록 등록'}
           </h3>
 
           <form onSubmit={handleAddExpense} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '0.75rem' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  지출 항목명
+                  {isEn ? 'Item Name' : '지출 항목명'}
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder="예: 라멘 점심, 유람선 입장권"
+                  placeholder={isEn ? "e.g., Ramen Lunch, Cruise Ticket" : "예: 라멘 점심, 유람선 입장권"}
                   value={expTitle}
                   onChange={(e) => setExpTitle(e.target.value)}
                   style={{ width: '100%', padding: '0.5rem' }}
@@ -243,19 +243,19 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
               <div>
                 <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  카테고리
+                  {isEn ? 'Category' : '카테고리'}
                 </label>
                 <select
                   value={expCategory}
                   onChange={(e) => setExpCategory(e.target.value)}
                   style={{ width: '100%', padding: '0.5rem' }}
                 >
-                  <option value="flight">✈️ 항공</option>
-                  <option value="stay">🏨 숙박</option>
-                  <option value="food">🍕 식비</option>
-                  <option value="shopping">🛍️ 쇼핑</option>
-                  <option value="activity">🎟️ 관광/레저</option>
-                  <option value="other">💼 기타</option>
+                  <option value="flight">✈️ {isEn ? 'Flight' : '항공'}</option>
+                  <option value="stay">🏨 {isEn ? 'Stay' : '숙박'}</option>
+                  <option value="food">🍕 {isEn ? 'Food' : '식비'}</option>
+                  <option value="shopping">🛍️ {isEn ? 'Shopping' : '쇼핑'}</option>
+                  <option value="activity">🎟️ {isEn ? 'Leisure' : '관광/레저'}</option>
+                  <option value="other">💼 {isEn ? 'Other' : '기타'}</option>
                 </select>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '0.75rem' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  결제 통화
+                  {isEn ? 'Currency' : '결제 통화'}
                 </label>
                 <select
                   value={expCurrency}
@@ -278,7 +278,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
               <div>
                 <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  결제 금액 ({currencySymbols[expCurrency]})
+                  {isEn ? `Amount (${currencySymbols[expCurrency]})` : `결제 금액 (${currencySymbols[expCurrency]})`}
                 </label>
                 <input
                   type="number"
@@ -294,12 +294,12 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
             {expAmount > 0 && expCurrency !== 'KRW' && (
               <div style={{ fontSize: '0.85rem', color: 'var(--color-accent)', padding: '0.25rem 0.5rem', background: 'rgba(6, 182, 212, 0.08)', borderRadius: '4px' }}>
-                💡 원화 환산 가격: 약 <strong>₩{Math.round(expAmount / (rates[expCurrency] || 1.0)).toLocaleString()}</strong> (적용 환율: 1 {expCurrency} = {Math.round(1 / (rates[expCurrency] || 1.0))}원)
+                💡 {isEn ? 'KRW Converted:' : '원화 환산 가격:'} 약 <strong>₩{Math.round(expAmount / (rates[expCurrency] || 1.0)).toLocaleString()}</strong>
               </div>
             )}
 
             <button type="submit" className="btn btn-primary" style={{ marginTop: '0.5rem' }}>
-              ➕ 소비 내역 추가
+              ➕ {isEn ? 'Add Expense' : '소비 내역 추가'}
             </button>
           </form>
         </div>
@@ -308,7 +308,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
         <div className="glass-panel">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
-              🪙 실시간 환율 계산기
+              🪙 {isEn ? 'Live Exchange Calculator' : '실시간 환율 계산기'}
             </h3>
             <button 
               onClick={fetchRates} 
@@ -316,7 +316,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
               className="btn btn-secondary"
               style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem' }}
             >
-              {ratesLoading ? '갱신중...' : '🔄 환율 갱신'}
+              {ratesLoading ? (isEn ? 'Updating...' : '갱신중...') : (isEn ? '🔄 Refresh Rates' : '🔄 환율 갱신')}
             </button>
           </div>
 
@@ -324,7 +324,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
             <p style={{ color: 'var(--color-danger)', fontSize: '0.75rem', marginBottom: '0.5rem' }}>⚠️ {ratesError}</p>
           )}
           <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-            기준일자: {ratesLastUpdated}
+            {isEn ? 'Base Date:' : '기준일자:'} {ratesLastUpdated}
           </p>
 
           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -369,7 +369,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
       <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
           <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
-            🧾 소비 지출 목록 ({expenses.length})
+            🧾 {isEn ? `Expense Log (${expenses.length})` : `소비 지출 목록 (${expenses.length})`}
           </h3>
           {expenses.length > 0 && (
             <button 
@@ -377,7 +377,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
               className="btn btn-secondary" 
               style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', background: 'rgba(239, 68, 68, 0.1)', color: 'var(--color-danger)', border: '1px solid rgba(239, 68, 68, 0.2)' }}
             >
-              ❌ 전체 삭제
+              ❌ {isEn ? 'Clear All' : '전체 삭제'}
             </button>
           )}
         </div>
@@ -406,7 +406,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
                 </h4>
                 
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                  ⏱️ {e.date} | 현지 결제금액: {currencySymbols[e.currency] || ''}{e.amount.toLocaleString()} ({e.currency})
+                  ⏱️ {e.date} | {isEn ? 'Amount:' : '현지 결제금액:'} {currencySymbols[e.currency] || ''}{e.amount.toLocaleString()} ({e.currency})
                 </div>
               </div>
 
@@ -417,7 +417,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
                   </div>
                   {e.currency !== 'KRW' && (
                     <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)' }}>
-                      환율: 1 {e.currency} = {Math.round(1 / e.rateUsed)}원
+                      {isEn ? `Rate: 1 ${e.currency} = ${Math.round(1 / e.rateUsed)} KRW` : `환율: 1 ${e.currency} = ${Math.round(1 / e.rateUsed)}원`}
                     </div>
                   )}
                 </div>
@@ -425,7 +425,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
                 <button
                   onClick={() => handleDeleteExpense(e.id)}
                   style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '1rem' }}
-                  title="내역 삭제"
+                  title="Delete"
                 >
                   🗑️
                 </button>
@@ -435,8 +435,8 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
           {expenses.length === 0 && (
             <div style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '4rem 1rem' }}>
-              <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>💸 기록된 지출 내역이 없습니다.</p>
-              <p style={{ fontSize: '0.8rem' }}>결제 통화와 지출액을 기록하면 실시간 환율을 반영하여 총액을 합산해 줍니다.</p>
+              <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>💸 {isEn ? 'No logged expenses yet.' : '기록된 지출 내역이 없습니다.'}</p>
+              <p style={{ fontSize: '0.8rem' }}>{isEn ? 'Log local expenses to calculate automatically with live rates.' : '결제 통화와 지출액을 기록하면 실시간 환율을 반영하여 총액을 합산해 줍니다.'}</p>
             </div>
           )}
         </div>

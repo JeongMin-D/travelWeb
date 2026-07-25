@@ -282,7 +282,7 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
                 <div className="progress-bar" style={{ width: `${stat.percentage}%`, background: 'var(--color-success)' }}></div>
               </div>
               <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                {stat.visited} / {stat.total}개 도시
+                {stat.visited} / {stat.total} {isEn ? 'Cities' : '개 도시'}
               </span>
             </div>
           ))}

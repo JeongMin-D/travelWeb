@@ -498,7 +498,7 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
                     <button
                       onClick={() => handleDeleteActivity(act.id)}
                       style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.85rem' }}
-                      title="활동 삭제"
+                      title={isEn ? "Delete Activity" : "활동 삭제"}
                     >
                       ❌
                     </button>
@@ -510,7 +510,7 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
 
                   {act.cost > 0 && (
                     <div style={{ fontSize: '0.8rem', color: 'var(--color-success)', fontWeight: 500 }}>
-                      💵 지출: {activeTrip.currencySymbol}{act.cost.toLocaleString()}
+                      💵 {isEn ? 'Cost:' : '지출:'} {activeTrip.currencySymbol}{act.cost.toLocaleString()}
                     </div>
                   )}
 
@@ -523,9 +523,9 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
               ))}
 
               {filteredActivities.length === 0 && (
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textAlign: 'center', padding: '2rem' }}>
-                  이 날에 기록된 일정이 없습니다. 왼쪽 폼에서 일정을 추가하세요!
-                </p>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '2rem 1rem', fontSize: '0.85rem' }}>
+                  {isEn ? `No activities added for Day ${activeDayView} yet. Add a new activity on the left!` : `${activeDayView}일차에 등록된 활동이 없습니다. 왼쪽 폼에서 일정을 추가하세요!`}
+                </div>
               )}
             </div>
           </div>
@@ -533,10 +533,14 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
       ) : (
         /* Empty State */
         <div className="glass-panel" style={{ gridColumn: 'span 2', textAlign: 'center', padding: '3.5rem', color: 'var(--text-secondary)' }}>
-          <p style={{ fontSize: '1.2rem', marginBottom: '0.75rem' }}>🗺️ 작성된 여행 일정표가 없습니다.</p>
-          <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem' }}>왼쪽 사이드바에서 새 계획을 만들어 나만의 완벽한 코스를 설계해보세요.</p>
+          <p style={{ fontSize: '1.2rem', marginBottom: '0.75rem' }}>
+            {isEn ? '🗺️ No travel plans created yet.' : '🗺️ 작성된 여행 일정표가 없습니다.'}
+          </p>
+          <p style={{ fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+            {isEn ? 'Create a new trip plan from the left sidebar to design your perfect custom itinerary.' : '왼쪽 사이드바에서 새 계획을 만들어 나만의 완벽한 코스를 설계해보세요.'}
+          </p>
           <button onClick={() => setShowCreateForm(true)} className="btn btn-primary">
-            🚀 첫 일정 시작하기
+            🚀 {isEn ? 'Create First Trip' : '첫 일정 시작하기'}
           </button>
         </div>
       )}

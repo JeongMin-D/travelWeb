@@ -1,7 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getCityCoordinates } from '../data/destinations';
+import { getCityCoordinates, getTranslatedDestination, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+
+// Fixed geographic bounds prevent an outlying destination (or an old bad
+// coordinate) from zooming a continent selection back out to the world map.
+const CONTINENT_BOUNDS = {
+  Asia: [[4, 25], [78, 180]],
+  Africa: [[-35, -20], [38, 55]],
+  'North America': [[7, -170], [84, -50]],
+  'South America': [[-57, -82], [13, -34]],
+  Europe: [[34, -25], [72, 45]],
+  Oceania: [[-50, 110], [2, 180]]
+};
 
 export default function Randomizer({ destinations, onSelectDestination, lang = 'en' }) {
   const isEn = lang === 'en';
@@ -17,15 +28,38 @@ export default function Randomizer({ destinations, onSelectDestination, lang = '
   const mapInstanceRef = useRef(null);
   const markerRef = useRef(null);
 
-  // Available continents from international destinations
-  const continents = ['Asia', 'Europe', 'Americas', 'Oceania'];
+  // 6 Full Continents List (Asia, Africa, North America, South America, Europe, Oceania)
+  const continentsList = [
+    { key: 'Asia', labelKo: '아시아', labelEn: 'Asia' },
+    { key: 'Africa', labelKo: '아프리카', labelEn: 'Africa' },
+    { key: 'North America', labelKo: '북아메리카', labelEn: 'North America' },
+    { key: 'South America', labelKo: '남아메리카', labelEn: 'South America' },
+    { key: 'Europe', labelKo: '유럽', labelEn: 'Europe' },
+    { key: 'Oceania', labelKo: '오세아니아', labelEn: 'Oceania' }
+  ];
 
   const getFilteredPool = () => {
     const pool = destinations || [];
     if (scope === 'all') return pool;
     if (scope === 'domestic') return pool.filter(d => d.type === 'domestic');
     if (scope === 'international') return pool.filter(d => d.type === 'international');
-    if (scope === 'continent') return pool.filter(d => d.continent.toLowerCase() === selectedContinent.toLowerCase());
+    if (scope === 'continent') {
+      return pool.filter(d => {
+        const c = (d.continent || '').toLowerCase();
+        const sel = selectedContinent.toLowerCase();
+
+        if (sel === 'north america') {
+          return c === 'north america' || (c === 'americas' && ['미국', '캐나다', '멕시코', '쿠바', '포르투리코'].includes(d.country));
+        }
+        if (sel === 'south america') {
+          return c === 'south america' || (c === 'americas' && ['브라질', '아르헨티나', '페루', '칠레'].includes(d.country));
+        }
+        if (sel === 'africa') {
+          return c === 'africa' || ['이집트', '모로코', '남아프리카공화국'].includes(d.country);
+        }
+        return c === sel;
+      });
+    }
     return pool;
   };
 
@@ -71,6 +105,11 @@ export default function Randomizer({ destinations, onSelectDestination, lang = '
 
     const pool = getFilteredPool();
     if (pool.length === 0) return;
+
+    if (scope === 'continent' && CONTINENT_BOUNDS[selectedContinent]) {
+      map.fitBounds(CONTINENT_BOUNDS[selectedContinent], { padding: [20, 20], maxZoom: 4 });
+      return;
+    }
 
     // Center map to cover the current pool bounds
     const coords = pool.map(d => getCityCoordinates(d.name, d.country));
@@ -209,19 +248,19 @@ export default function Randomizer({ destinations, onSelectDestination, lang = '
           </button>
         </div>
 
-        {/* Continent Picker if scope === continent */}
+        {/* Continent Picker if scope === continent (All 6 Continents) */}
         {scope === 'continent' && (
-          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', justifyContent: 'center', animation: 'fadeIn 0.2s' }}>
-            {continents.map((cont) => (
+          <div style={{ display: 'flex', gap: '0.4rem', marginBottom: '1.25rem', justifyContent: 'center', flexWrap: 'wrap', animation: 'fadeIn 0.2s' }}>
+            {continentsList.map((cont) => (
               <button
-                key={cont}
+                key={cont.key}
                 type="button"
-                className={`btn ${selectedContinent === cont ? 'btn-accent' : 'btn-secondary'}`}
-                onClick={() => { setSelectedContinent(cont); setResult(null); }}
+                className={`btn ${selectedContinent === cont.key ? 'btn-accent' : 'btn-secondary'}`}
+                onClick={() => { setSelectedContinent(cont.key); setResult(null); }}
                 disabled={isSpinning}
-                style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}
+                style={{ padding: '0.4rem 0.75rem', fontSize: '0.85rem' }}
               >
-                {cont === 'Asia' ? (isEn ? 'Asia' : '아시아') : cont === 'Europe' ? (isEn ? 'Europe' : '유럽') : cont === 'Americas' ? (isEn ? 'Americas' : '아메리카') : (isEn ? 'Oceania' : '오세아니아')}
+                {isEn ? cont.labelEn : cont.labelKo}
               </button>
             ))}
           </div>
@@ -310,60 +349,60 @@ export default function Randomizer({ destinations, onSelectDestination, lang = '
         </div>
       </div>
 
-      {/* Result Panel */}
-      {result && (
-        <div className="glass-panel fade-in" style={{ border: '2px solid var(--color-success)', marginTop: '2rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-            <span className="badge badge-emerald">🎉 {isEn ? 'Lucky Pick Result!' : '당첨 결과!'}</span>
-            <span className={`badge ${result.type === 'domestic' ? 'badge-indigo' : 'badge-cyan'}`}>
-              {result.type === 'domestic' ? (isEn ? 'Domestic' : '국내') : (isEn ? 'International' : '해외')}
-            </span>
-          </div>
+      {/* Result Panel with Full i18n Support */}
+      {result && (() => {
+        const translatedResult = getTranslatedDestination(result, isEn);
+        const displayCountry = isEn ? (COUNTRY_ENGLISH_MAPPING[result.country] || result.country) : result.country;
+        const displayContinent = isEn ? (CONTINENT_ENGLISH_MAPPING[result.continent] || result.continent) : result.continent;
 
-          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-            <img 
-              src={result.imageUrl} 
-              alt={result.name}
-              style={{ width: '180px', height: '120px', objectFit: 'cover', borderRadius: 'var(--radius-sm)', border: '1px solid var(--glass-border)' }}
-            />
-            <div style={{ flex: 1, minWidth: '240px' }}>
-              <h3 style={{ fontSize: '1.8rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
-                {result.name} <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontWeight: 400 }}>{result.country} ({result.continent})</span>
-              </h3>
-              <p style={{ color: 'var(--text-accent)', fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.5rem' }}>
-                "{result.tagline}"
-              </p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
-                {result.description}
-              </p>
-              
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <button
-                  onClick={() => onSelectDestination(result, 3, Object.keys(result.itineraries)[0] || 'healing')}
-                  className="btn btn-primary"
-                  style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
-                >
-                  📅 {isEn ? 'View 3-Day Plan' : '3일 추천 일정보기'}
-                </button>
-                <button
-                  onClick={() => onSelectDestination(result, 5, Object.keys(result.itineraries)[0] || 'healing')}
-                  className="btn btn-accent"
-                  style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
-                >
-                  📅 5일 추천 일정보기
-                </button>
-                <button
-                  onClick={handleThrowDart}
-                  className="btn btn-secondary"
-                  style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
-                >
-                  🔄 다시 던지기
-                </button>
+        return (
+          <div className="glass-panel fade-in" style={{ border: '2px solid var(--color-success)', marginTop: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
+              <span className="badge badge-emerald">🎉 {isEn ? 'Lucky Pick Result!' : '당첨 결과!'}</span>
+              <span className={`badge ${result.type === 'domestic' ? 'badge-indigo' : 'badge-cyan'}`}>
+                {result.type === 'domestic' ? (isEn ? 'DOMESTIC' : '국내 여행지') : (isEn ? 'INTERNATIONAL' : '해외 여행지')}
+              </span>
+            </div>
+
+            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+              <img 
+                src={result.imageUrl} 
+                alt={translatedResult.name}
+                style={{ width: '180px', height: '120px', objectFit: 'cover', borderRadius: 'var(--radius-sm)', border: '1px solid var(--glass-border)' }}
+              />
+              <div style={{ flex: 1, minWidth: '240px' }}>
+                <h3 style={{ fontSize: '1.8rem', fontWeight: 800, margin: '0 0 0.5rem 0', color: 'var(--text-primary)' }}>
+                  {translatedResult.name} <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontWeight: 400 }}>{displayCountry} ({displayContinent})</span>
+                </h3>
+                <p style={{ color: 'var(--color-accent)', fontSize: '0.95rem', fontWeight: 600, marginBottom: '0.5rem' }}>
+                  "{translatedResult.tagline}"
+                </p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: 1.5 }}>
+                  {translatedResult.description}
+                </p>
+                
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                  <button
+                    onClick={() => onSelectDestination(result, 3, Object.keys(result.itineraries)[0] || 'healing')}
+                    className="btn btn-primary"
+                    style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
+                  >
+                    📅 {isEn ? 'View Recommended Plan' : '상세 추천 일정보기'}
+                  </button>
+                  <button
+                    onClick={handleThrowDart}
+                    className="btn btn-secondary"
+                    disabled={isSpinning}
+                    style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
+                  >
+                    🎯 {isEn ? 'Throw Dart Again' : '다트 다시 던지기'}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </div>
   );
 }

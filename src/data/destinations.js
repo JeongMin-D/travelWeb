@@ -780,7 +780,20 @@ const compactCitiesByCountry = {
   "아일랜드": ["더블린", "골웨이", "코크", "리머릭", "워터퍼드", "드로이다", "던독", "킬케니"],
   "벨기에": ["브뤼셀", "브뤼헤", "헨트", "안트베르펜", "리에주", "샤를루아", "나뮈르", "코르트레이크"],
   "폴란드": ["바르샤바", "크라쿠프", "그단스크", "브로츠와프", "포즈난", "우치", "슈체친", "비드고슈치"],
-  "몰디브": ["말레", "마아푸시", "훌후말레", "아두시티"]
+  "몰디브": ["말레", "마아푸시", "훌후말레", "아두시티"],
+  "인도": ["델리", "뭄바이", "자이푸르", "아그라", "바라나시", "고아", "코치"],
+  "캄보디아": ["시엠레아프", "프놈펜", "시아누크빌"],
+  "라오스": ["루앙프라방", "비엔티안", "방비엥"],
+  "스리랑카": ["콜롬보", "캔디", "갈레", "엘라"],
+  "네팔": ["카트만두", "포카라", "치트완"],
+  "몽골": ["울란바토르", "고비사막", "테를지"],
+  "우즈베키스탄": ["타슈켄트", "사마르칸트", "부하라", "히바"],
+  "모로코": ["마라케시", "카사블랑카", "페스", "셰프샤우엔", "라바트"],
+  "남아프리카공화국": ["케이프타운", "요하네스버그", "더반", "크루거 국립공원"],
+  "케냐": ["나이로비", "몸바사", "마사이마라"],
+  "페루": ["리마", "쿠스코", "마추픽추", "아레키파"],
+  "칠레": ["산티아고", "발파라이소", "아타카마"],
+  "아이슬란드": ["레이캬비크", "비크", "아쿠레이리"]
 };
 
 // Neighboring cities mapping (provides smart recommendations and day trips)
@@ -893,7 +906,7 @@ export const COUNTRY_REGISTRY = {
   "헝가리": { type: "international", continent: "Europe", currency: "HUF", symbol: "Ft", landmarks: ["황금빛 다뉴브강 국회의사당", "따뜻한 야외 세체니 온천", "어부의 요새 조망대"], foods: ["얼큰한 소고기 토마토 수프 굴라쉬", "헝가리 정통 와인 토카이", "바삭한 빵 랑고스"] },
   "네덜란드": { type: "international", continent: "Europe", currency: "EUR", symbol: "€", landmarks: ["풍차마을 잔세스한스", "튤립이 만발한 정원", "고흐 컬렉션 미술관"], foods: ["고소한 네덜란드 치즈", "달콤한 시럽 와플 스트롭와플", "신선한 청어 샌드위치 하링"] },
   "포르투갈": { type: "international", continent: "Europe", currency: "EUR", symbol: "€", landmarks: ["노란 28번 트램 골목", "도루강 동루이스 다리", "신트라의 동화 같은 페나 성"], foods: ["바삭하고 부드러운 정통 에그타르트", "바칼라우", "포트 와인"] },
-  "아랍에미리트": { type: "international", continent: "Africa", currency: "AED", symbol: "د.إ", landmarks: ["초고층 빌딩 부르즈 할리파", "화려한 두바이 대분수", "인공섬 팜 주메이라 리조트"], foods: ["아랍 정통 대추야자 디저트", "향긋한 향신료의 탄두리 치킨", "중동식 볶음밥 캅사"] },
+  "아랍에미리트": { type: "international", continent: "Asia", currency: "AED", symbol: "د.إ", landmarks: ["초고층 빌딩 부르즈 할리파", "화려한 두바이 대분수", "인공섬 팜 주메이라 리조트"], foods: ["아랍 정통 대추야자 디저트", "향긋한 향신료의 탄두리 치킨", "중동식 볶음밥 캅사"] },
   "이집트": { type: "international", continent: "Africa", currency: "EGP", symbol: "E£", landmarks: ["피라미드와 스핑크스", "파라오의 보물이 가득한 국립박물관", "장엄한 사막 언덕의 노을"], foods: ["탄두리 구이 요리", "전통 빵 에이시", "허브 민트 티"] },
   "뉴질랜드": { type: "international", continent: "Oceania", currency: "NZD", symbol: "NZ$", landmarks: ["영화 촬영지 반지의 제왕 홉스 호비튼", "와카티푸 호수", "대형 양떼 목장"], foods: ["양갈비 구이", "파블로바", "소비뇽 블랑 와인"] },
   "멕시코": { type: "international", continent: "Americas", currency: "MXN", symbol: "$", landmarks: ["마야 문명의 유적 치첸이차", "칸쿤 비치", "멕시코시티의 거대 헌법 광장"], foods: ["나초와 신선한 과카몰리", "타코와 케사디야", "시원한 코로나 맥주"] },
@@ -906,7 +919,20 @@ export const COUNTRY_REGISTRY = {
   "아일랜드": { type: "international", continent: "Europe", currency: "EUR", symbol: "€", landmarks: ["트리니티 칼리지 도서관", "기네스 맥주 박물관", "모허 절벽 정경"], foods: ["기네스 스튜 소고기 찜", "아이리시 브렉퍼스트", "아이리시 커피"] },
   "벨기에": { type: "international", continent: "Europe", currency: "EUR", symbol: "€", landmarks: ["그랑플라스 광장", "오줌싸개 동상 조형물", "브뤼헤 물길"], foods: ["와플", "프리츠와 홍합찜", "벨기에 초콜릿"] },
   "폴란드": { type: "international", continent: "Europe", currency: "PLN", symbol: "zł", landmarks: ["크라쿠프 구시가지 중앙광장", "바르샤바 역사 지구 복원 거리", "비엘리치카 지하 성당"], foods: ["만두 피에로기", "따뜻한 수프 주레크", "폴란드 훈제 치즈"] },
-  "몰디브": { type: "international", continent: "Asia", currency: "MVR", symbol: "Rf", landmarks: ["산호초 투명 라군 해변", "수상 프라이빗 빌라 리조트", "밤하늘 은하수 바다"], foods: ["참치 샐러드 마스후니", "열대 과일 쥬스", "코코넛 카레 요리"] }
+  "몰디브": { type: "international", continent: "Asia", currency: "MVR", symbol: "Rf", landmarks: ["산호초 투명 라군 해변", "수상 프라이빗 빌라 리조트", "밤하늘 은하수 바다"], foods: ["참치 샐러드 마스후니", "열대 과일 쥬스", "코코넛 카레 요리"] },
+  "인도": { type: "international", continent: "Asia", currency: "INR", symbol: "₹", landmarks: ["타지마할과 무굴 제국 유적", "고대 사원과 성스러운 강변", "왕궁과 분홍빛 구시가지", "활기찬 전통 시장"], foods: ["향긋한 버터 치킨 커리", "바삭한 사모사", "탄두리 요리", "달콤한 잘레비"] },
+  "캄보디아": { type: "international", continent: "Asia", currency: "KHR", symbol: "៛", landmarks: ["앙코르 와트 일출", "바이욘 사원 미소", "톤레삽 호수", "올드 마켓"], foods: ["피시 아목", "크메르 카레", "로컬 누들", "야자 디저트"] },
+  "라오스": { type: "international", continent: "Asia", currency: "LAK", symbol: "₭", landmarks: ["메콩강 선셋", "고즈넉한 사원", "쿠앙시 폭포", "야시장 골목"], foods: ["라프 샐러드", "카오삐약 센", "찰밥", "라오 커피"] },
+  "스리랑카": { type: "international", continent: "Asia", currency: "LKR", symbol: "Rs", landmarks: ["시기리야 바위 요새", "고원 차밭", "식민지 시대 요새", "황금빛 해변"], foods: ["스리랑카 커리", "호퍼스", "코투 로티", "실론 티"] },
+  "네팔": { type: "international", continent: "Asia", currency: "NPR", symbol: "Rs", landmarks: ["히말라야 전망", "고대 사원 광장", "평화로운 호숫가", "트레킹 관문"], foods: ["모모 만두", "달밧", "티베트 누들", "마살라 차이"] },
+  "몽골": { type: "international", continent: "Asia", currency: "MNT", symbol: "₮", landmarks: ["드넓은 초원", "게르 캠프", "고비 사막", "칭기즈 칸 기념관"], foods: ["허르헉", "보즈", "수테 차이", "양고기 바비큐"] },
+  "우즈베키스탄": { type: "international", continent: "Asia", currency: "UZS", symbol: "soʻm", landmarks: ["실크로드 모스크", "푸른 타일 마드라사", "고대 성벽", "전통 바자르"], foods: ["플로브", "삼사", "라그만", "녹차"] },
+  "모로코": { type: "international", continent: "Africa", currency: "MAD", symbol: "DH", landmarks: ["메디나 골목", "사하라 사막", "푸른 산악 마을", "왕궁 광장"], foods: ["타진", "쿠스쿠스", "민트 티", "파스티야"] },
+  "남아프리카공화국": { type: "international", continent: "Africa", currency: "ZAR", symbol: "R", landmarks: ["테이블 마운틴", "사파리 보호구역", "케이프 해안", "와이너리"], foods: ["브라이 바비큐", "보보티", "빌통", "남아공 와인"] },
+  "케냐": { type: "international", continent: "Africa", currency: "KES", symbol: "KSh", landmarks: ["마사이마라 사파리", "대지구대 전망", "인도양 해변", "야생동물 보호구역"], foods: ["냐마 초마", "우갈리", "차파티", "케냐 커피"] },
+  "페루": { type: "international", continent: "Americas", currency: "PEN", symbol: "S/", landmarks: ["마추픽추", "잉카 유적", "안데스 산맥", "태평양 해안"], foods: ["세비체", "로모 살타도", "안티쿠초", "피스코 사워"] },
+  "칠레": { type: "international", continent: "Americas", currency: "CLP", symbol: "$", landmarks: ["아타카마 사막", "안데스 전망", "태평양 항구", "파타고니아"], foods: ["엠파나다", "파스텔 데 초클로", "해산물", "칠레 와인"] },
+  "아이슬란드": { type: "international", continent: "Europe", currency: "ISK", symbol: "kr", landmarks: ["오로라 하늘", "블루 라군", "빙하 폭포", "검은 모래 해변"], foods: ["양고기 수프", "신선한 대구", "스키르", "라이 브레드"] }
 };
 
 // Generates an itinerary with localized details, foods, and landmarks based on the resolved country registry
@@ -1133,7 +1159,11 @@ export const COUNTRY_COORDINATES = {
   "아일랜드": [53.4129, -8.2439],
   "벨기에": [50.5039, 4.4699],
   "폴란드": [51.9194, 19.1451],
-  "몰디브": [3.2028, 73.2207]
+  "몰디브": [3.2028, 73.2207],
+  "인도": [20.5937, 78.9629], "캄보디아": [12.5657, 104.9910], "라오스": [19.8563, 102.4955],
+  "스리랑카": [7.8731, 80.7718], "네팔": [28.3949, 84.1240], "몽골": [46.8625, 103.8467],
+  "우즈베키스탄": [41.3775, 64.5853], "모로코": [31.7917, -7.0926], "남아프리카공화국": [-30.5595, 22.9375],
+  "케냐": [-0.0236, 37.9062], "페루": [-9.1900, -75.0152], "칠레": [-35.6751, -71.5430], "아이슬란드": [64.9631, -19.0208]
 };
 
 export const CITY_COORDINATES = {
@@ -1785,11 +1815,35 @@ export const CITY_COORDINATES = {
   "브라질리아": [-15.793987, -47.882800],
   "포르투알레그리": [-30.032500, -51.230377],
   "마나우스": [-3.131633, -59.982504],
+
+  // 신규 추천 여행지
+  "델리": [28.6139, 77.2090], "뭄바이": [19.0760, 72.8777], "자이푸르": [26.9124, 75.7873], "아그라": [27.1767, 78.0081], "바라나시": [25.3176, 82.9739], "고아": [15.2993, 74.1240], "코치": [9.9312, 76.2673],
+  "시엠레아프": [13.3633, 103.8564], "프놈펜": [11.5564, 104.9282], "시아누크빌": [10.6253, 103.5234],
+  "루앙프라방": [19.8856, 102.1347], "비엔티안": [17.9757, 102.6331], "방비엥": [18.9237, 102.4470],
+  "콜롬보": [6.9271, 79.8612], "캔디": [7.2906, 80.6337], "갈레": [6.0329, 80.2170], "엘라": [6.8667, 81.0466],
+  "카트만두": [27.7172, 85.3240], "포카라": [28.2096, 83.9856], "치트완": [27.5291, 84.3542],
+  "울란바토르": [47.8864, 106.9057], "고비사막": [42.5903, 103.4280], "테를지": [47.9881, 107.5519],
+  "타슈켄트": [41.2995, 69.2401], "사마르칸트": [39.6542, 66.9597], "부하라": [39.7681, 64.4556], "히바": [41.3775, 60.3639],
+  "마라케시": [31.6295, -7.9811], "카사블랑카": [33.5731, -7.5898], "페스": [34.0331, -5.0003], "셰프샤우엔": [35.1688, -5.2636], "라바트": [34.0209, -6.8416],
+  "케이프타운": [-33.9249, 18.4241], "요하네스버그": [-26.2041, 28.0473], "더반": [-29.8587, 31.0218], "크루거 국립공원": [-23.9884, 31.5547],
+  "나이로비": [-1.2921, 36.8219], "몸바사": [-4.0435, 39.6682], "마사이마라": [-1.4061, 35.0128],
+  "리마": [-12.0464, -77.0428], "쿠스코": [-13.5319, -71.9675], "마추픽추": [-13.1631, -72.5450], "아레키파": [-16.4090, -71.5375],
+  "산티아고": [-33.4489, -70.6693], "발파라이소": [-33.0472, -71.6127], "아타카마": [-23.8634, -69.1328],
+  "레이캬비크": [64.1466, -21.9426], "비크": [63.4186, -19.0060], "아쿠레이리": [65.6885, -18.1262],
 };
 
 export const getCityCoordinates = (cityName, countryName) => {
-  if (CITY_COORDINATES[cityName]) {
-    return CITY_COORDINATES[cityName];
+  const cityCoordinates = CITY_COORDINATES[cityName];
+  // Some legacy geocoding entries use [0, 0] as a failed lookup marker.
+  // Never pass that marker to Leaflet: it places the city in the Atlantic and
+  // makes a continent-sized map fit the entire world.
+  if (
+    Array.isArray(cityCoordinates)
+    && Number.isFinite(cityCoordinates[0])
+    && Number.isFinite(cityCoordinates[1])
+    && !(cityCoordinates[0] === 0 && cityCoordinates[1] === 0)
+  ) {
+    return cityCoordinates;
   }
   
   const base = COUNTRY_COORDINATES[countryName] || [36.5, 127.5];
@@ -1908,15 +1962,204 @@ export const getClothingAndWeatherGuide = (cityName, countryName, isEn = false) 
   };
 };
 
-// Full i18n Data Translator Helper
+
+export const CITY_ENGLISH_MAPPING = {
+  // 대한민국
+  "제주도": "Jeju Island",
+  "제주": "Jeju Island",
+  "부산": "Busan",
+  "서울": "Seoul",
+  "강릉": "Gangneung",
+  "경주": "Gyeongju",
+  "여수": "Yeosu",
+  "전주": "Jeonju",
+  "인천": "Incheon",
+  "대구": "Daegu",
+  "대전": "Daejeon",
+  "울산": "Ulsan",
+  "수원": "Suwon",
+  "속초": "Sokcho",
+  "춘천": "Chuncheon",
+  "포항": "Pohang",
+  "통영": "Tongyeong",
+  "거제": "Geoje",
+  "목포": "Mokpo",
+  "남해": "Namhae",
+
+  // 일본
+  "도쿄": "Tokyo",
+  "오사카": "Osaka",
+  "교토": "Kyoto",
+  "후쿠오카": "Fukuoka",
+  "삿포로": "Sapporo",
+  "나고야": "Nagoya",
+  "요코하마": "Yokohama",
+  "고베": "Kobe",
+  "나라": "Nara",
+  "히로시마": "Hiroshima",
+  "오키나와": "Okinawa",
+  "하마마츠": "Hamamatsu",
+  "오츠": "Otsu",
+  "돗토리": "Tottori",
+  "가루이자와": "Karuizawa",
+  "구사츠": "Kusatsu",
+  "다카야마": "Takayama",
+  "시라카와고": "Shirakawago",
+  "하코네": "Hakone",
+  "닛코": "Nikko",
+  "벳푸": "Beppu",
+  "유후인": "Yufuin",
+  "나하": "Naha",
+
+  // 중국 & 대만 & 홍콩
+  "베이징": "Beijing",
+  "상하이": "Shanghai",
+  "선전": "Shenzhen",
+  "리장": "Lijiang",
+  "하얼빈": "Harbin",
+  "싼야": "Sanya",
+  "장자제": "Zhangjiajie",
+  "타이베이": "Taipei",
+  "가오슝": "Kaohsiung",
+  "타이중": "Taichung",
+  "홍콩": "Hong Kong",
+  "마카오": "Macau",
+
+  // 동남아
+  "방콕": "Bangkok",
+  "푸켓": "Phuket",
+  "치앙마이": "Chiang Mai",
+  "파타야": "Pattaya",
+  "다낭": "Da Nang",
+  "하노이": "Hanoi",
+  "호치민": "Ho Chi Minh City",
+  "나트랑": "Nha Trang",
+  "푸꾸옥": "Phu Quoc",
+  "사파": "Sapa",
+  "발리": "Bali",
+  "우붓": "Ubud",
+  "짱구": "Canggu",
+  "스미냑": "Seminyak",
+  "싱가포르": "Singapore",
+  "세부": "Cebu",
+  "보라카이": "Boracay",
+  "쿠알라룸푸르": "Kuala Lumpur",
+  "코타키나발루": "Kota Kinabalu",
+
+  // 중동 & 아프리카
+  "두바이": "Dubai",
+  "아부다비": "Abu Dhabi",
+  "샤르자": "Sharjah",
+  "알레인": "Al Ain",
+  "푸자이라": "Fujairah",
+  "라스알카이마": "Ras Al Khaimah",
+  "아지만": "Ajman",
+  "움알쿠와인": "Umm Al Quwain",
+  "카이로": "Cairo",
+  "마라케시": "Marrakech",
+  "케이프타운": "Cape Town",
+
+  // 유럽
+  "파리": "Paris",
+  "니스": "Nice",
+  "리옹": "Lyon",
+  "마르세유": "Marseille",
+  "로마": "Rome",
+  "밀라노": "Milan",
+  "베네치아": "Venice",
+  "피렌체": "Florence",
+  "런던": "London",
+  "에든버러": "Edinburgh",
+  "바르셀로나": "Barcelona",
+  "마드리드": "Madrid",
+  "세비야": "Seville",
+  "베를린": "Berlin",
+  "뮌헨": "Munich",
+  "프랑크푸르트": "Frankfurt",
+  "취리히": "Zurich",
+  "제네바": "Geneva",
+  "비엔나": "Vienna",
+  "잘츠부르크": "Salzburg",
+  "프라하": "Prague",
+  "체스키크룸로프": "Cesky Krumlov",
+  "부다페스트": "Budapest",
+  "암스테르담": "Amsterdam",
+  "리스본": "Lisbon",
+  "포르투": "Porto",
+  "아테네": "Athens",
+  "산토리니": "Santorini",
+  "스톡홀름": "Stockholm",
+  "오슬로": "Oslo",
+  "코펜하겐": "Copenhagen",
+  "헬싱키": "Helsinki",
+  "더블린": "Dublin",
+  "브뤼셀": "Brussels",
+  "바르샤바": "Warsaw",
+  "크라쿠프": "Krakow",
+
+  // 미주 & 오세아니아
+  "뉴욕": "New York",
+  "로스앤젤레스": "Los Angeles",
+  "샌프란시스코": "San Francisco",
+  "라스베이거스": "Las Vegas",
+  "하와이 오아후": "Oahu Hawaii",
+  "호놀룰루": "Honolulu",
+  "시카고": "Chicago",
+  "마이애미": "Miami",
+  "샌디에고": "San Diego",
+  "달라스": "Dallas",
+  "밴쿠버": "Vancouver",
+  "토론토": "Toronto",
+  "시드니": "Sydney",
+  "멜버른": "Melbourne",
+  "오클랜드": "Auckland",
+  "괌": "Guam",
+
+  // 신규 추천 여행지
+  "델리": "Delhi", "뭄바이": "Mumbai", "자이푸르": "Jaipur", "아그라": "Agra", "바라나시": "Varanasi", "고아": "Goa", "코치": "Kochi",
+  "시엠레아프": "Siem Reap", "프놈펜": "Phnom Penh", "시아누크빌": "Sihanoukville", "루앙프라방": "Luang Prabang", "비엔티안": "Vientiane", "방비엥": "Vang Vieng",
+  "콜롬보": "Colombo", "캔디": "Kandy", "갈레": "Galle", "엘라": "Ella", "카트만두": "Kathmandu", "포카라": "Pokhara", "치트완": "Chitwan",
+  "울란바토르": "Ulaanbaatar", "고비사막": "Gobi Desert", "테를지": "Terelj", "타슈켄트": "Tashkent", "사마르칸트": "Samarkand", "부하라": "Bukhara", "히바": "Khiva",
+  "카사블랑카": "Casablanca", "페스": "Fes", "셰프샤우엔": "Chefchaouen", "라바트": "Rabat", "요하네스버그": "Johannesburg", "더반": "Durban", "크루거 국립공원": "Kruger National Park",
+  "나이로비": "Nairobi", "몸바사": "Mombasa", "마사이마라": "Maasai Mara", "리마": "Lima", "쿠스코": "Cusco", "마추픽추": "Machu Picchu", "아레키파": "Arequipa",
+  "산티아고": "Santiago", "발파라이소": "Valparaiso", "아타카마": "Atacama", "레이캬비크": "Reykjavik", "비크": "Vik", "아쿠레이리": "Akureyri"
+};
+
+// A number of generated destinations do not yet have a hand-authored English
+// name. Use Revised-Romanization-style syllable conversion as a safe fallback
+// so English UI never falls back to Korean text or a generic placeholder.
+const KOREAN_INITIALS = ['g', 'kk', 'n', 'd', 'tt', 'r', 'm', 'b', 'pp', 's', 'ss', '', 'j', 'jj', 'ch', 'k', 't', 'p', 'h'];
+const KOREAN_VOWELS = ['a', 'ae', 'ya', 'yae', 'eo', 'e', 'yeo', 'ye', 'o', 'wa', 'wae', 'oe', 'yo', 'u', 'wo', 'we', 'wi', 'yu', 'eu', 'ui', 'i'];
+const KOREAN_FINALS = ['', 'k', 'k', 'ks', 'n', 'nj', 'nh', 't', 'l', 'lk', 'lm', 'lb', 'ls', 'lt', 'lp', 'lh', 'm', 'p', 'ps', 't', 't', 'ng', 'j', 'ch', 'k', 't', 'p', 'h'];
+
+const romanizeKorean = (value = '') => value
+  .split('')
+  .map(char => {
+    const code = char.charCodeAt(0) - 0xAC00;
+    if (code < 0 || code > 11171) return char;
+
+    const initial = Math.floor(code / 588);
+    const vowel = Math.floor((code % 588) / 28);
+    const final = code % 28;
+    return `${KOREAN_INITIALS[initial]}${KOREAN_VOWELS[vowel]}${KOREAN_FINALS[final]}`;
+  })
+  .join('')
+  .replace(/(^|[\s-])([a-z])/g, (_, prefix, letter) => `${prefix}${letter.toUpperCase()}`);
+
+
 export const getTranslatedDestination = (dest, isEn = false) => {
   if (!dest) return dest;
   if (!isEn) return dest;
 
-  const englishName = dest.englishName || dest.name;
-  const englishCountry = dest.englishCountry || dest.country;
+  let englishName = dest.englishName || dest.name;
+  if (/[가-힣]/.test(englishName)) {
+    englishName = CITY_ENGLISH_MAPPING[dest.name]
+      || CITY_ENGLISH_MAPPING[englishName]
+      || romanizeKorean(englishName);
+  }
 
-  // Dynamically translate itineraries for english mode
+  const englishCountry = COUNTRY_ENGLISH_MAPPING[dest.country] || dest.englishCountry || dest.country;
+
   const translatedItineraries = {};
   if (dest.itineraries) {
     Object.keys(dest.itineraries).forEach(styleKey => {
@@ -1926,22 +2169,342 @@ export const getTranslatedDestination = (dest, isEn = false) => {
         const activities = daysObj[dayNum] || [];
         translatedDays[dayNum] = activities.map((act, i) => ({
           time: act.time || "10:00",
-          title: isEn ? `Activity ${i+1}: ${act.title.replace(/^[^\w가-힣a-zA-Z0-9]+/, '').replace(/TRAVEL SYSTEM/gi, '')}` : act.title,
-          desc: isEn ? `Explore landmark attractions and experience signature local culture in ${englishName}.` : act.desc
+          title: isEn ? translateActivityTitle(act.title, i, englishName) : act.title,
+          desc: isEn ? translateActivityDesc(act.desc, englishName) : act.desc
         }));
       });
       translatedItineraries[styleKey] = translatedDays;
     });
   }
 
+  let finalTagline = dest.tagline;
+  if (isEn || /[가-힣]/.test(finalTagline)) {
+    finalTagline = dest.englishTagline || `Discover the magical charm and scenery of ${englishName}`;
+  }
+
+  let finalDesc = dest.description;
+  if (isEn || /[가-힣]/.test(finalDesc)) {
+    finalDesc = dest.englishDescription || `Experience top landmarks, local culinary delights, and unforgettable memories in ${englishName}, ${englishCountry}.`;
+  }
+
   return {
     ...dest,
     name: isEn ? englishName : dest.name,
     country: isEn ? englishCountry : dest.country,
-    tagline: isEn ? (dest.englishTagline || `Discover the magical charm and scenery of ${englishName}`) : dest.tagline,
-    description: isEn ? (dest.englishDescription || `Experience top landmarks, culinary delights, and unforgettable memories in ${englishName}, ${englishCountry}.`) : dest.description,
+    tagline: finalTagline,
+    description: finalDesc,
     itineraries: Object.keys(translatedItineraries).length > 0 ? translatedItineraries : dest.itineraries
   };
 };
 
 
+
+
+
+export const CONTINENT_ENGLISH_MAPPING = {
+  "아시아": "Asia",
+  "유럽": "Europe",
+  "북아메리카": "North America",
+  "남아메리카": "South America",
+  "아메리카": "North America",
+  "오세아니아": "Oceania",
+  "아프리카": "Africa",
+  "국내": "Domestic",
+  "Asia": "Asia",
+  "Europe": "Europe",
+  "Americas": "North America",
+  "North America": "North America",
+  "South America": "South America",
+  "Oceania": "Oceania",
+  "Africa": "Africa",
+  "Domestic": "Domestic"
+};
+
+export const COUNTRY_ENGLISH_MAPPING = {
+  "대한민국": "South Korea",
+  "일본": "Japan",
+  "프랑스": "France",
+  "미국": "United States",
+  "이탈리아": "Italy",
+  "영국": "United Kingdom",
+  "스페인": "Spain",
+  "독일": "Germany",
+  "호주": "Australia",
+  "태국": "Thailand",
+  "베트남": "Vietnam",
+  "인도네시아": "Indonesia",
+  "스위스": "Switzerland",
+  "대만": "Taiwan",
+  "필리핀": "Philippines",
+  "말레이시아": "Malaysia",
+  "싱가포르": "Singapore",
+  "터키": "Turkey",
+  "그리스": "Greece",
+  "오스트리아": "Austria",
+  "체코": "Czech Republic",
+  "헝가리": "Hungary",
+  "네덜란드": "Netherlands",
+  "포르투갈": "Portugal",
+  "아랍에미리트": "United Arab Emirates",
+  "이집트": "Egypt",
+  "뉴질랜드": "New Zealand",
+  "멕시코": "Mexico",
+  "브라질": "Brazil",
+  "중국": "China",
+  "캐나다": "Canada",
+  "페루": "Peru",
+  "아르헨티나": "Argentina",
+  "칠레": "Chile",
+  "모로코": "Morocco",
+  "남아프리카공화국": "South Africa",
+  "인도": "India",
+  "홍콩": "Hong Kong",
+  "마카오": "Macau",
+  "스웨덴": "Sweden",
+  "노르웨이": "Norway",
+  "덴마크": "Denmark",
+  "핀란드": "Finland",
+  "아일랜드": "Ireland",
+  "벨기에": "Belgium",
+  "폴란드": "Poland",
+  "몰디브": "Maldives",
+  "캄보디아": "Cambodia",
+  "라오스": "Laos",
+  "스리랑카": "Sri Lanka",
+  "네팔": "Nepal",
+  "몽골": "Mongolia",
+  "우즈베키스탄": "Uzbekistan",
+  "케냐": "Kenya",
+  "아이슬란드": "Iceland"
+};
+
+export const AIRPORT_COORDINATES = {
+  "제주도": [33.5104, 126.4914],
+  "제주": [33.5104, 126.4914],
+  "서울": [37.4602, 126.4407],
+  "인천": [37.4602, 126.4407],
+  "김포": [37.5583, 126.7906],
+  "부산": [35.1795, 128.9382],
+  "도쿄": [35.5494, 139.7798],
+  "오사카": [34.4320, 135.2304],
+  "후쿠오카": [33.5859, 130.4507],
+  "삿포로": [42.7752, 141.6923],
+  "방콕": [13.6900, 100.7501],
+  "다낭": [16.0439, 108.1994],
+  "하노이": [21.2212, 105.8072],
+  "발리": [-8.7482, 115.1672],
+  "싱가포르": [1.3644, 103.9915],
+  "세부": [10.3075, 123.9794],
+  "파리": [49.0097, 2.5479],
+  "런던": [51.4700, -0.4543],
+  "로마": [41.7999, 12.2462],
+  "바르셀로나": [41.2974, 2.0785],
+  "뉴욕": [40.6413, -73.7781],
+  "로스앤젤레스": [33.9416, -118.4085],
+  "샌프란시스코": [37.6213, -122.3790],
+  "호놀룰루": [21.3187, -157.9224],
+  "하와이 오아후": [21.3187, -157.9224],
+  "시드니": [-33.9399, 151.1753]
+};
+
+export const LANDMARK_COORDINATES = {
+  "한담": [33.4624, 126.3276],
+  "오설록": [33.3059, 126.2895],
+  "서광차밭": [33.3059, 126.2895],
+  "사려니": [33.4077, 126.6426],
+  "산방산": [33.2422, 126.3122],
+  "카멜리아": [33.2901, 126.3684],
+  "색달": [33.2447, 126.4121],
+  "동문시장": [33.5126, 126.5284],
+  "용두암": [33.5166, 126.5126],
+  "우도": [33.5042, 126.9543],
+  "서빈백사": [33.5044, 126.9442],
+  "절물": [33.4394, 126.6283],
+  "차귀도": [33.3134, 126.1472],
+  "성산": [33.4581, 126.9425],
+  "일출봉": [33.4581, 126.9425],
+  "쇠소깍": [33.2524, 126.6231],
+  "한라산": [33.3617, 126.5332],
+  "함덕": [33.5432, 126.6692],
+  "협재": [33.3940, 126.2397],
+  "애월": [33.4624, 126.3276],
+
+  "부산역": [35.1152, 129.0422],
+  "흰여울": [35.0784, 129.0452],
+  "송도": [35.0761, 129.0202],
+  "자갈치": [35.0967, 129.0306],
+  "블루라인": [35.1601, 129.1683],
+  "해운대": [35.1587, 129.1604],
+  "광안": [35.1532, 129.1189],
+  "감천": [35.0974, 129.0106],
+  "서면": [35.1578, 129.0593],
+
+  "서울역": [37.5547, 126.9706],
+  "경복궁": [37.5796, 126.9770],
+  "명동": [37.5636, 126.9822],
+  "남산": [37.5512, 126.9882],
+  "홍대": [37.5563, 126.9230],
+  "강남": [37.4979, 127.0276],
+  "성수": [37.5447, 127.0557],
+
+  "도쿄타워": [35.6586, 139.7454],
+  "센소지": [35.7148, 139.7967],
+  "시부야": [35.6595, 139.7004],
+  "신주쿠": [35.6938, 139.7034],
+  "긴자": [35.6719, 139.7648],
+  "아키하바라": [35.6983, 139.7731],
+
+  "도톤보리": [34.6687, 135.5013],
+  "오사카성": [34.6873, 135.5262],
+  "우메다": [34.7053, 135.4896],
+  "유니버설": [34.6654, 135.4323],
+
+  "에펠탑": [48.8584, 2.2945],
+  "루브르": [48.8606, 2.3376],
+  "샹젤리제": [48.8738, 2.2950],
+  "개선문": [48.8738, 2.2950],
+  "몽마르트르": [48.8867, 2.3431],
+
+  "빅벤": [51.5007, -0.1246],
+  "런던아이": [51.5033, -0.1195],
+  "대영박물관": [51.5194, -0.1270],
+  "타워브리지": [51.5055, -0.0754],
+
+  "타임스퀘어": [40.7580, -73.9855],
+  "센트럴파크": [40.7812, -73.9665],
+  "자유의여신상": [40.6892, -74.0445]
+};
+
+export const translateChecklistItem = (itemText, isEn = false) => {
+  if (!itemText) return itemText;
+  if (!isEn) return itemText;
+
+  const text = itemText.trim();
+
+  if (text.includes('110V') || text.includes('돼지코')) return '110V Power Adapter';
+  if (text.includes('ESTA')) return 'ESTA Visa Approval Document';
+  if (text.includes('ETA')) return 'ETA Tourist Visa Document';
+  if (text.includes('바람막이')) return 'Light Windbreaker Jacket';
+  if (text.includes('겉옷') || text.includes('가디건')) return 'Light Outerwear / Cardigan';
+  if (text.includes('간사이 패스')) return 'Kansai Travel Pass';
+  if (text.includes('교통카드') || text.includes('패스')) return 'Transit Card / City Pass';
+  if (text.includes('구글맵')) return 'Google Maps App';
+  if (text.includes('달러') && text.includes('렌터카')) return 'USD Cash & Rental Car Docs';
+  if (text.includes('돗자리')) return 'Picnic Mat';
+  if (text.includes('래쉬가드')) return 'Swimwear & Rashguard';
+  if (text.includes('루피아')) return 'IDR Cash (Indonesian Rupiah)';
+  if (text.includes('모기')) return 'Mosquito Repellent Spray';
+  if (text.includes('베트남 동')) return 'VND Cash (Vietnamese Dong)';
+  if (text.includes('어댑터') || text.includes('변압')) return 'Universal Power Adapter';
+  if (text.includes('보조배터리')) return 'Portable Power Bank';
+  if (text.includes('전자VOA') || text.includes('VOA')) return 'e-VOA Visa Document';
+  if (text.includes('비짓재팬')) return 'Visit Japan Web QR Code';
+  if (text.includes('상비약') || text.includes('약')) return 'First Aid Kit & Emergency Medicine';
+  if (text.includes('선글라스') && text.includes('선크림')) return 'Sunscreen & Sunglasses';
+  if (text.includes('선크림') && text.includes('모자')) return 'Sunscreen & Sun Hat';
+  if (text.includes('선크림') || text.includes('자외선')) return 'Sunscreen / Sunblock';
+  if (text.includes('선글라스')) return 'Sun Protection Sunglasses';
+  if (text.includes('소매치기') || text.includes('복대') || text.includes('와이어')) return 'Anti-theft Money Belt & Lock Cable';
+  if (text.includes('신분증')) return 'Personal Identification Card';
+  if (text.includes('싱가포르 달러')) return 'SGD Cash (Singapore Dollar)';
+  if (text.includes('엔화') || text.includes('엔')) return 'JPY Cash (Japanese Yen)';
+  if (text.includes('여권')) return 'Passport & Copies (6+ months valid)';
+  if (text.includes('파운드')) return 'GBP Cash (British Pound)';
+  if (text.includes('긴바지') || text.includes('왕궁')) return 'Long Pants for Temple / Palace Visit';
+  if (text.includes('우산')) return 'Compact Umbrella / Rain Gear';
+  if (text.includes('운전면허')) return 'International Driver License';
+  if (text.includes('유로')) return 'EUR Cash (Euro)';
+  if (text.includes('SG Arrival') || text.includes('전자입국신고서')) return 'SG Arrival Card Registration';
+  if (text.includes('카메라')) return 'Camera & Extra Memory Card';
+  if (text.includes('크로스백') || text.includes('자물쇠')) return 'Crossbody Bag & Safety Padlock';
+  if (text.includes('바트')) return 'THB Cash (Thai Baht)';
+  if (text.includes('신발') || text.includes('운동화') || text.includes('도보')) return 'Comfortable Walking Shoes';
+  if (text.includes('옷차림') || text.includes('의류') || text.includes('여벌 옷') || text.includes('속옷')) return 'Casual Clothing & Extra Outfits';
+  if (text.includes('카드') || text.includes('현금') || text.includes('환전')) return 'International Credit Card & Cash';
+  if (text.includes('호주 달러')) return 'AUD Cash / Credit Card';
+  if (text.includes('충전기')) return 'Phone Charger & Cables';
+  if (text.includes('세면') || text.includes('위생')) return 'Personal Toiletries & Hygiene Kit';
+
+  return text;
+};
+
+export const getLandmarkCoordinates = (cityName, activityTitle, dayNum = 1, actIndex = 0, countryName = '') => {
+  const cityCoords = getCityCoordinates(cityName, countryName);
+  const titleLower = (activityTitle || '').toLowerCase();
+
+  if (titleLower.includes('공항') || titleLower.includes('도착') || titleLower.includes('입국') || titleLower.includes('airport') || titleLower.includes('check-in') || titleLower.includes('체크인')) {
+    if (AIRPORT_COORDINATES[cityName]) {
+      return AIRPORT_COORDINATES[cityName];
+    }
+    const matchedCityKey = Object.keys(AIRPORT_COORDINATES).find(k => cityName.includes(k) || k.includes(cityName));
+    if (matchedCityKey) {
+      return AIRPORT_COORDINATES[matchedCityKey];
+    }
+  }
+
+  if (!activityTitle) {
+    const angle = (dayNum * 60 + actIndex * 35) * (Math.PI / 180);
+    const radius = 0.003 + actIndex * 0.0015;
+    return [cityCoords[0] + Math.sin(angle) * radius, cityCoords[1] + Math.cos(angle) * radius];
+  }
+
+  for (const [landmarkKey, coords] of Object.entries(LANDMARK_COORDINATES)) {
+    if (titleLower.includes(landmarkKey.toLowerCase())) {
+      return coords;
+    }
+  }
+
+  const hash = ((cityName || '') + (activityTitle || '') + dayNum + actIndex).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const angle = (hash % 360) * (Math.PI / 180);
+  const dist = 0.002 + ((hash % 10) * 0.0004);
+
+  return [
+    cityCoords[0] + Math.sin(angle) * dist,
+    cityCoords[1] + Math.cos(angle) * dist
+  ];
+};
+
+export const translateActivityTitle = (title, index, englishName) => {
+  if (!title) return `Activity ${index + 1}: ${englishName} Highlights`;
+  const clean = title.replace(/^[^w가-힣a-zA-Z0-9]+/, '').replace(/TRAVEL SYSTEM/gi, '').trim();
+  if (clean.includes('체크인') || clean.includes('도착')) return `Arrival & Hotel Check-in in ${englishName}`;
+  if (clean.includes('점심') || clean.includes('특선') || clean.includes('식사')) return `Local Gourmet Culinary Experience`;
+  if (clean.includes('탐방') || clean.includes('산책') || clean.includes('명소')) return `Signature Landmark Tour in ${englishName}`;
+  if (clean.includes('야경') || clean.includes('스카이라인')) return `Panoramic Night Skyline & Evening Walk`;
+  if (clean.includes('쇼핑') || clean.includes('기념품')) return `Local Market & Boutique Souvenir Shopping`;
+  if (clean.includes('휴식') || clean.includes('카페')) return `Relaxing Coffee & Scenic View Break`;
+  if (clean.includes('당일치기') || clean.includes('근교')) return `Excursion & Neighboring City Tour`;
+  if (clean.includes('복귀') || clean.includes('공항')) return `Airport Transfer & Departure Prep`;
+  if (clean.includes('투어') || clean.includes('관광')) return `Guided Sightseeing Tour in ${englishName}`;
+  if (clean.includes('시장') || clean.includes('재래')) return `Local Traditional Market Experience`;
+  if (clean.includes('일출') || clean.includes('해돋이')) return `Sunrise Viewing & Morning Walk`;
+  if (clean.includes('해변') || clean.includes('비치')) return `Beach & Coastal Relaxation`;
+  if (clean.includes('사원') || clean.includes('절') || clean.includes('신사')) return `Temple & Shrine Pilgrimage`;
+  if (clean.includes('박물관') || clean.includes('미술관')) return `Museum & Art Gallery Tour`;
+  if (clean.includes('공원') || clean.includes('정원')) return `Park & Garden Stroll`;
+  if (clean.includes('요리') || clean.includes('쿠킹')) return `Local Cooking Class Experience`;
+  if (clean.includes('크루즈') || clean.includes('유람')) return `Scenic River Cruise Tour`;
+  if (clean.includes('온천') || clean.includes('스파')) return `Hot Spring & Spa Relaxation`;
+  if (clean.includes('하이킹') || clean.includes('트레킹') || clean.includes('등산')) return `Mountain Hiking & Trekking Adventure`;
+  if (clean.includes('자전거') || clean.includes('사이클')) return `Cycling Tour Around ${englishName}`;
+  if (clean.includes('야시장') || clean.includes('나이트')) return `Night Market & Street Food Tour`;
+  if (clean.includes('전망대') || clean.includes('타워')) return `Observation Tower & Panoramic Views`;
+  return `Day Activity: Explore ${englishName}`;
+};
+
+export const translateActivityDesc = (desc, englishName) => {
+  if (!desc) return `Explore top tourist attractions and experience signature culture in ${englishName}.`;
+  const clean = (desc || '').trim();
+  if (clean.includes('박물관') || clean.includes('미술관')) return `Visit world-class museums and galleries, admire renowned masterpieces, and immerse in the artistic heritage of ${englishName}.`;
+  if (clean.includes('맛집') || clean.includes('음식') || clean.includes('디저트') || clean.includes('요리')) return `Savor authentic local cuisine, from signature dishes to hidden culinary gems beloved by locals in ${englishName}.`;
+  if (clean.includes('야경') || clean.includes('야간') || clean.includes('불빛')) return `Experience the stunning nightscape and illuminated skyline that transforms ${englishName} after sunset.`;
+  if (clean.includes('산책') || clean.includes('거리') || clean.includes('골목')) return `Wander through charming streets and hidden alleyways, discovering the authentic local atmosphere of ${englishName}.`;
+  if (clean.includes('쇼핑') || clean.includes('기념품') || clean.includes('시장')) return `Browse local markets and boutique shops for unique souvenirs and artisan goods in ${englishName}.`;
+  if (clean.includes('사진') || clean.includes('포토')) return `Capture memorable photos at iconic landmarks and picturesque viewpoints throughout ${englishName}.`;
+  if (clean.includes('해변') || clean.includes('바다') || clean.includes('비치')) return `Relax on pristine beaches and enjoy the crystal-clear waters along the stunning coastline of ${englishName}.`;
+  if (clean.includes('사원') || clean.includes('절') || clean.includes('신사') || clean.includes('성당')) return `Explore sacred temples and historic religious sites, experiencing the spiritual heritage of ${englishName}.`;
+  if (clean.includes('공원') || clean.includes('정원') || clean.includes('자연')) return `Enjoy the lush parks and beautifully manicured gardens, a peaceful retreat in the heart of ${englishName}.`;
+  if (clean.includes('체크인') || clean.includes('도착') || clean.includes('호텔')) return `Arrive and check in to your accommodation, settle in and prepare for an exciting journey in ${englishName}.`;
+  if (clean.includes('공항') || clean.includes('출발') || clean.includes('귀국')) return `Complete final preparations and transfer to the airport for your departure from ${englishName}.`;
+  return `Explore landmark attractions, take memorable photos, and experience signature local culture in ${englishName}.`;
+};

@@ -1017,15 +1017,43 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 1rem;
 }
 
-.brochure-paper-container {
+.brochure-booklet-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 210mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.brochure-page-spread {
+  width: 100%;
+  min-height: 297mm;
+  box-sizing: border-box;
   background: #ffffff !important;
   color: #000000 !important;
   padding: 2.5rem;
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   border: 4px double #000000;
   font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+.brochure-page-footer-seal {
+  margin-top: 2rem;
+  border-top: 1px solid #000000;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #000000 !important;
+}
+
+@media print {
+  .brochure-page-spread.page-1 {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
 }
 
 .brochure-catalog-stamp-header {
@@ -1211,22 +1239,70 @@ input:focus, select:focus, textarea:focus {
 
 /* Printable Specific Rules for Brochure Modal */
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  /* The brochure is portalled to body, so the app can never leak into the
+     printed document or alter the brochure's layout. */
+  .app-container {
+    display: none !important;
+  }
+
+  body, html {
+    width: 210mm !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   .brochure-modal-overlay {
-    position: absolute !important;
-    inset: 0 !important;
+    position: static !important;
+    inset: auto !important;
     background: #ffffff !important;
     padding: 0 !important;
     overflow: visible !important;
+    display: block !important;
+    width: 210mm !important;
   }
 
-  .brochure-paper-container {
-    max-width: 100% !important;
+  .brochure-booklet-container {
+    width: 210mm !important;
+    max-width: none !important;
+    gap: 0 !important;
+  }
+
+  .brochure-page-spread {
+    width: 210mm !important;
+    min-height: 297mm !important;
+    box-sizing: border-box !important;
     box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    border: 4px double #000000 !important;
+    padding: 2.5rem !important;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+  }
+
+  .brochure-page-spread.page-1 {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .brochure-page-spread.page-2 {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .brochure-day-card,
+  .brochure-activity-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
-
 
 

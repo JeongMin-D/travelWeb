@@ -70,4 +70,4 @@
 
 ---
 
-*[[Home]]으로 돌아가기*
+*[[00-Dashboard/Project Dashboard|프로젝트 대시보드로 돌아가기]]*
