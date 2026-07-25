@@ -793,7 +793,20 @@ const compactCitiesByCountry = {
   "케냐": ["나이로비", "몸바사", "마사이마라"],
   "페루": ["리마", "쿠스코", "마추픽추", "아레키파"],
   "칠레": ["산티아고", "발파라이소", "아타카마"],
-  "아이슬란드": ["레이캬비크", "비크", "아쿠레이리"]
+  "아이슬란드": ["레이캬비크", "비크", "아쿠레이리"],
+  "탄자니아": ["잔지바르", "아루샤", "세렝게티", "다르에스살람"],
+  "나미비아": ["빈트후크", "소수스블레이", "스바코프문트", "에토샤 국립공원"],
+  "보츠와나": ["가보로네", "초베 국립공원", "오카방고 델타", "마운"],
+  "르완다": ["키갈리", "화산 국립공원", "키부 호수", "뉴응웨 국립공원"],
+  "에티오피아": ["아디스아바바", "랄리벨라", "곤다르", "바히르다르"],
+  "가나": ["아크라", "케이프코스트", "쿠마시", "몰레 국립공원"],
+  "세네갈": ["다카르", "생루이", "살리", "카자망스"],
+  "튀니지": ["튀니스", "시디부사이드", "하마메트", "제르바"],
+  "모리셔스": ["포트루이스", "그랑베이", "르몬", "플릭앙플락"],
+  "세이셸": ["빅토리아", "마헤", "프랄린", "라디그"],
+  "잠비아": ["루사카", "리빙스턴", "사우스 루앙와", "로어 잠베지"],
+  "짐바브웨": ["하라레", "빅토리아 폭포", "황게 국립공원", "불라와요"],
+  "우간다": ["캄팔라", "브윈디", "진자", "머치슨 폭포"]
 };
 
 // Neighboring cities mapping (provides smart recommendations and day trips)
@@ -932,7 +945,20 @@ export const COUNTRY_REGISTRY = {
   "케냐": { type: "international", continent: "Africa", currency: "KES", symbol: "KSh", landmarks: ["마사이마라 사파리", "대지구대 전망", "인도양 해변", "야생동물 보호구역"], foods: ["냐마 초마", "우갈리", "차파티", "케냐 커피"] },
   "페루": { type: "international", continent: "Americas", currency: "PEN", symbol: "S/", landmarks: ["마추픽추", "잉카 유적", "안데스 산맥", "태평양 해안"], foods: ["세비체", "로모 살타도", "안티쿠초", "피스코 사워"] },
   "칠레": { type: "international", continent: "Americas", currency: "CLP", symbol: "$", landmarks: ["아타카마 사막", "안데스 전망", "태평양 항구", "파타고니아"], foods: ["엠파나다", "파스텔 데 초클로", "해산물", "칠레 와인"] },
-  "아이슬란드": { type: "international", continent: "Europe", currency: "ISK", symbol: "kr", landmarks: ["오로라 하늘", "블루 라군", "빙하 폭포", "검은 모래 해변"], foods: ["양고기 수프", "신선한 대구", "스키르", "라이 브레드"] }
+  "아이슬란드": { type: "international", continent: "Europe", currency: "ISK", symbol: "kr", landmarks: ["오로라 하늘", "블루 라군", "빙하 폭포", "검은 모래 해변"], foods: ["양고기 수프", "신선한 대구", "스키르", "라이 브레드"] },
+  "탄자니아": { type: "international", continent: "Africa", currency: "TZS", symbol: "TSh", landmarks: ["세렝게티 사파리", "킬리만자로 전망", "잔지바르 스톤타운", "응고롱고로 분화구"], foods: ["필라우", "니아마 초마", "잔지바르 해산물", "향신료 차이"] },
+  "나미비아": { type: "international", continent: "Africa", currency: "NAD", symbol: "N$", landmarks: ["소수스블레이 모래언덕", "에토샤 국립공원", "대서양 해안", "나미브 사막"], foods: ["브라이", "오릭스 스테이크", "독일식 베이커리", "로컬 맥주"] },
+  "보츠와나": { type: "international", continent: "Africa", currency: "BWP", symbol: "P", landmarks: ["오카방고 델타", "초베 국립공원", "칼라하리 사막", "코끼리 사파리"], foods: ["세스와", "세스와아", "모로고", "보츠와나 차"] },
+  "르완다": { type: "international", continent: "Africa", currency: "RWF", symbol: "FRw", landmarks: ["화산 국립공원", "고릴라 트레킹", "키부 호수", "천 개 언덕"], foods: ["이소베", "브로셰트", "아카방가", "르완다 커피"] },
+  "에티오피아": { type: "international", continent: "Africa", currency: "ETB", symbol: "Br", landmarks: ["랄리벨라 암굴 교회", "시미엔 산맥", "곤다르 성", "청나일 폭포"], foods: ["인제라", "도로 왓", "티브스", "에티오피아 커피"] },
+  "가나": { type: "international", continent: "Africa", currency: "GHS", symbol: "GH₵", landmarks: ["케이프 코스트 성", "열대 해변", "아샨티 문화", "몰레 사파리"], foods: ["졸로프 라이스", "와케", "켈레웰레", "가나 코코아"] },
+  "세네갈": { type: "international", continent: "Africa", currency: "XOF", symbol: "CFA", landmarks: ["다카르 해안", "고레 섬", "생루이 식민지 거리", "사헬 모래사장"], foods: ["티에부디엔", "야사 치킨", "마페", "비사프 주스"] },
+  "튀니지": { type: "international", continent: "Africa", currency: "TND", symbol: "د.ت", landmarks: ["카르타고 유적", "시디 부 사이드", "사하라 오아시스", "지중해 해변"], foods: ["브리크", "쿠스쿠스", "라블라비", "민트 티"] },
+  "모리셔스": { type: "international", continent: "Africa", currency: "MUR", symbol: "₨", landmarks: ["르몬 해변", "샤마렐 칠색지", "산호 라군", "크리올 항구"], foods: ["돌 푸리", "크리올 커리", "해산물 루가이", "바닐라 차"] },
+  "세이셸": { type: "international", continent: "Africa", currency: "SCR", symbol: "₨", landmarks: ["앙스 소스 다르장", "화강암 해변", "발레 드 메", "인도양 섬 호핑"], foods: ["크리올 생선 커리", "문어 카레", "열대 과일", "코코넛 디저트"] },
+  "잠비아": { type: "international", continent: "Africa", currency: "ZMW", symbol: "K", landmarks: ["빅토리아 폭포", "잠베지강", "사우스 루앙와 사파리", "데빌스 풀"], foods: ["은시마", "숯불 생선", "이피스와시", "잠비아 차"] },
+  "짐바브웨": { type: "international", continent: "Africa", currency: "ZiG", symbol: "ZiG", landmarks: ["빅토리아 폭포", "그레이트 짐바브웨", "황게 사파리", "마토보 언덕"], foods: ["사자", "은도우", "마즈비타", "로컬 맥주"] },
+  "우간다": { type: "international", continent: "Africa", currency: "UGX", symbol: "USh", landmarks: ["브윈디 고릴라 숲", "나일강 수원", "머치슨 폭포", "르웬조리 산맥"], foods: ["롤렉스", "마토케", "루원보", "우간다 커피"] }
 };
 
 // Generates an itinerary with localized details, foods, and landmarks based on the resolved country registry
@@ -1163,7 +1189,11 @@ export const COUNTRY_COORDINATES = {
   "인도": [20.5937, 78.9629], "캄보디아": [12.5657, 104.9910], "라오스": [19.8563, 102.4955],
   "스리랑카": [7.8731, 80.7718], "네팔": [28.3949, 84.1240], "몽골": [46.8625, 103.8467],
   "우즈베키스탄": [41.3775, 64.5853], "모로코": [31.7917, -7.0926], "남아프리카공화국": [-30.5595, 22.9375],
-  "케냐": [-0.0236, 37.9062], "페루": [-9.1900, -75.0152], "칠레": [-35.6751, -71.5430], "아이슬란드": [64.9631, -19.0208]
+  "케냐": [-0.0236, 37.9062], "페루": [-9.1900, -75.0152], "칠레": [-35.6751, -71.5430], "아이슬란드": [64.9631, -19.0208],
+  "탄자니아": [-6.3690, 34.8888], "나미비아": [-22.9576, 18.4904], "보츠와나": [-22.3285, 24.6849],
+  "르완다": [-1.9403, 29.8739], "에티오피아": [9.1450, 40.4897], "가나": [7.9465, -1.0232],
+  "세네갈": [14.4974, -14.4524], "튀니지": [33.8869, 9.5375], "모리셔스": [-20.3484, 57.5522],
+  "세이셸": [-4.6796, 55.4920], "잠비아": [-13.1339, 27.8493], "짐바브웨": [-19.0154, 29.1549], "우간다": [1.3733, 32.2903]
 };
 
 export const CITY_COORDINATES = {
@@ -1830,10 +1860,33 @@ export const CITY_COORDINATES = {
   "리마": [-12.0464, -77.0428], "쿠스코": [-13.5319, -71.9675], "마추픽추": [-13.1631, -72.5450], "아레키파": [-16.4090, -71.5375],
   "산티아고": [-33.4489, -70.6693], "발파라이소": [-33.0472, -71.6127], "아타카마": [-23.8634, -69.1328],
   "레이캬비크": [64.1466, -21.9426], "비크": [63.4186, -19.0060], "아쿠레이리": [65.6885, -18.1262],
+
+  // 아프리카 확장 여행지
+  "잔지바르": [-6.1659, 39.2026], "아루샤": [-3.3869, 36.6830], "세렝게티": [-2.3333, 34.8333], "다르에스살람": [-6.7924, 39.2083],
+  "빈트후크": [-22.5609, 17.0658], "소수스블레이": [-24.7270, 15.3412], "스바코프문트": [-22.6784, 14.5266], "에토샤 국립공원": [-18.8556, 16.3293],
+  "가보로네": [-24.6282, 25.9231], "초베 국립공원": [-18.6657, 24.7413], "오카방고 델타": [-19.6510, 22.9040], "마운": [-19.9833, 23.4167],
+  "키갈리": [-1.9441, 30.0619], "화산 국립공원": [-1.4840, 29.5469], "키부 호수": [-2.0600, 29.2300], "뉴응웨 국립공원": [-2.4850, 29.2000],
+  "아디스아바바": [8.9806, 38.7578], "랄리벨라": [12.0311, 39.0473], "곤다르": [12.6000, 37.4667], "바히르다르": [11.5742, 37.3614],
+  "아크라": [5.6037, -0.1870], "케이프코스트": [5.1315, -1.2795], "쿠마시": [6.6885, -1.6244], "몰레 국립공원": [9.7000, -1.8500],
+  "다카르": [14.7167, -17.4677], "생루이": [16.0179, -16.4896], "살리": [14.4444, -17.0167], "카자망스": [12.5833, -16.2719],
+  "튀니스": [36.8065, 10.1815], "시디부사이드": [36.8689, 10.3417], "하마메트": [36.4000, 10.6167], "제르바": [33.8076, 10.8451],
+  "포트루이스": [-20.1609, 57.5012], "그랑베이": [-20.0094, 57.5816], "르몬": [-20.4597, 57.3089], "플릭앙플락": [-20.2781, 57.3631],
+  "빅토리아": [-4.6191, 55.4513], "마헤": [-4.6796, 55.4920], "프랄린": [-4.3290, 55.7450], "라디그": [-4.3570, 55.8290],
+  "루사카": [-15.3875, 28.3228], "리빙스턴": [-17.8419, 25.8544], "사우스 루앙와": [-13.1000, 31.8000], "로어 잠베지": [-15.7000, 29.3000],
+  "하라레": [-17.8252, 31.0335], "빅토리아 폭포": [-17.9243, 25.8572], "황게 국립공원": [-18.6500, 26.9500], "불라와요": [-20.1325, 28.6265],
+  "캄팔라": [0.3476, 32.5825], "브윈디": [-1.0400, 29.7200], "진자": [0.4244, 33.2042], "머치슨 폭포": [2.2822, 31.5564],
+  "후르가다": [27.2579, 33.8116], "탄타": [30.7865, 31.0004], "만수라": [31.0409, 31.3785], "지에즈": [29.9871, 31.2118], "수에즈": [29.9668, 32.5498],
+};
+
+// Same-named destinations need a country-specific coordinate before the
+// shared city-name lookup (for example Victoria, Canada and Seychelles).
+const COUNTRY_CITY_COORDINATES = {
+  "캐나다": { "빅토리아": [48.4284, -123.3656] },
+  "세이셸": { "빅토리아": [-4.6191, 55.4513] }
 };
 
 export const getCityCoordinates = (cityName, countryName) => {
-  const cityCoordinates = CITY_COORDINATES[cityName];
+  const cityCoordinates = COUNTRY_CITY_COORDINATES[countryName]?.[cityName] || CITY_COORDINATES[cityName];
   // Some legacy geocoding entries use [0, 0] as a failed lookup marker.
   // Never pass that marker to Leaflet: it places the city in the Atlantic and
   // makes a continent-sized map fit the entire world.
@@ -2122,7 +2175,23 @@ export const CITY_ENGLISH_MAPPING = {
   "울란바토르": "Ulaanbaatar", "고비사막": "Gobi Desert", "테를지": "Terelj", "타슈켄트": "Tashkent", "사마르칸트": "Samarkand", "부하라": "Bukhara", "히바": "Khiva",
   "카사블랑카": "Casablanca", "페스": "Fes", "셰프샤우엔": "Chefchaouen", "라바트": "Rabat", "요하네스버그": "Johannesburg", "더반": "Durban", "크루거 국립공원": "Kruger National Park",
   "나이로비": "Nairobi", "몸바사": "Mombasa", "마사이마라": "Maasai Mara", "리마": "Lima", "쿠스코": "Cusco", "마추픽추": "Machu Picchu", "아레키파": "Arequipa",
-  "산티아고": "Santiago", "발파라이소": "Valparaiso", "아타카마": "Atacama", "레이캬비크": "Reykjavik", "비크": "Vik", "아쿠레이리": "Akureyri"
+  "산티아고": "Santiago", "발파라이소": "Valparaiso", "아타카마": "Atacama", "레이캬비크": "Reykjavik", "비크": "Vik", "아쿠레이리": "Akureyri",
+
+  // 아프리카 확장 여행지
+  "잔지바르": "Zanzibar", "아루샤": "Arusha", "세렝게티": "Serengeti", "다르에스살람": "Dar es Salaam",
+  "빈트후크": "Windhoek", "소수스블레이": "Sossusvlei", "스바코프문트": "Swakopmund", "에토샤 국립공원": "Etosha National Park",
+  "가보로네": "Gaborone", "초베 국립공원": "Chobe National Park", "오카방고 델타": "Okavango Delta", "마운": "Maun",
+  "키갈리": "Kigali", "화산 국립공원": "Volcanoes National Park", "키부 호수": "Lake Kivu", "뉴응웨 국립공원": "Nyungwe National Park",
+  "아디스아바바": "Addis Ababa", "랄리벨라": "Lalibela", "곤다르": "Gondar", "바히르다르": "Bahir Dar",
+  "아크라": "Accra", "케이프코스트": "Cape Coast", "쿠마시": "Kumasi", "몰레 국립공원": "Mole National Park",
+  "다카르": "Dakar", "생루이": "Saint-Louis", "살리": "Saly", "카자망스": "Casamance",
+  "튀니스": "Tunis", "시디부사이드": "Sidi Bou Said", "하마메트": "Hammamet", "제르바": "Djerba",
+  "포트루이스": "Port Louis", "그랑베이": "Grand Baie", "르몬": "Le Morne", "플릭앙플락": "Flic en Flac",
+  "빅토리아": "Victoria", "마헤": "Mahé", "프랄린": "Praslin", "라디그": "La Digue",
+  "루사카": "Lusaka", "리빙스턴": "Livingstone", "사우스 루앙와": "South Luangwa", "로어 잠베지": "Lower Zambezi",
+  "하라레": "Harare", "빅토리아 폭포": "Victoria Falls", "황게 국립공원": "Hwange National Park", "불라와요": "Bulawayo",
+  "캄팔라": "Kampala", "브윈디": "Bwindi", "진자": "Jinja", "머치슨 폭포": "Murchison Falls",
+  "알렉산드리아": "Alexandria", "룩소르": "Luxor", "아스완": "Aswan", "샤름엘셰이크": "Sharm El Sheikh", "후르가다": "Hurghada", "탄타": "Tanta", "만수라": "Mansoura", "지에즈": "Giza", "수에즈": "Suez"
 };
 
 // A number of generated destinations do not yet have a hand-authored English
@@ -2275,7 +2344,20 @@ export const COUNTRY_ENGLISH_MAPPING = {
   "몽골": "Mongolia",
   "우즈베키스탄": "Uzbekistan",
   "케냐": "Kenya",
-  "아이슬란드": "Iceland"
+  "아이슬란드": "Iceland",
+  "탄자니아": "Tanzania",
+  "나미비아": "Namibia",
+  "보츠와나": "Botswana",
+  "르완다": "Rwanda",
+  "에티오피아": "Ethiopia",
+  "가나": "Ghana",
+  "세네갈": "Senegal",
+  "튀니지": "Tunisia",
+  "모리셔스": "Mauritius",
+  "세이셸": "Seychelles",
+  "잠비아": "Zambia",
+  "짐바브웨": "Zimbabwe",
+  "우간다": "Uganda"
 };
 
 export const AIRPORT_COORDINATES = {
