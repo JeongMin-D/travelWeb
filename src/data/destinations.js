@@ -653,6 +653,29 @@ const premiumDestinations = [
 ];
 
 // Compact list of over 500 cities grouped by country to prevent codebase bloat
+export const PREMIUM_TAGLINE_ENGLISH_MAPPING = {
+  "푸른 바다와 이국적인 자연이 숨쉬는 환상의 섬": "A fantasy island with blue seas and exotic nature",
+  "바다와 현대적인 도시가 어우러진 다이내믹 시티": "A dynamic city where the ocean meets modernity",
+  "전통과 첨단이 공존하는 트렌디한 대한민국의 수도": "The trendy capital where tradition and high-tech coexist",
+  "천년 신라의 숨결이 깃든 노천 박물관": "An open-air museum breathing the thousand-year history of Silla",
+  "푸른 동해바다와 향긋한 커피 향의 조화": "A harmony of the blue East Sea and fragrant coffee",
+  "여수 밤바다, 낭만이 가득한 남해안의 미항": "A romantic and beautiful port city on the southern coast",
+  "가장 한국적인 한옥 전통과 비빔밥의 본고장": "The home of traditional Hanok and Bibimbap",
+  "전통 사원과 화려한 네온사인, 미식이 공존하는 아시아 중심지": "An Asian hub where traditional temples, neon signs, and gastronomy coexist",
+  "천하의 부엌, 타코야키와 도톤보리의 네온사인": "The nation's kitchen, famous for Takoyaki and Dotonbori neon signs",
+  "화려한 황금빛 왕궁과 저렴하고 맛있는 야시장 투어": "A city of golden palaces and delicious, affordable night markets",
+  "끝없이 펼쳐진 미케 비치와 가성비 최고의 휴양지": "A top-value resort destination with the endless My Khe Beach",
+  "정원 속의 미래 도시, 세련되고 안전한 패밀리 관광지": "A futuristic city in a garden, a refined and safe family destination",
+  "낭만이 흐르는 센강 and 위대한 문화유산의 예술 도시": "An artistic city of great cultural heritage and the romantic Seine River",
+  "모든 길은 로마로, 인류 역사를 통째로 품은 영원의 도시": "All roads lead to Rome, the eternal city embracing human history",
+  "신사와 왕실의 품격, 빨간 버스와 타워 브릿지": "The dignity of royalty and gentlemen, red buses and Tower Bridge",
+  "천재 가우디의 미완성 성당과 열정의 지중해 해변": "The passion of the Mediterranean and Gaudí's unfinished basilica",
+  "잠들지 않는 도시, 잠들지 않는 예술과 금융의 허브": "The city that never sleeps, a hub of art and finance",
+  "알로하, 눈부신 와이키키 해변과 환상의 하이킹 코스": "Aloha, dazzling Waikiki beach and fantastic hiking trails",
+  "신들의 섬, 고요한 요가와 활기찬 서핑의 파라다이스": "The Island of Gods, a paradise for serene yoga and lively surfing",
+  "남반구의 태양, 아름다운 항구와 끝없는 해안선의 도시": "The sun of the Southern Hemisphere, a city with beautiful harbors and endless coastlines",
+};
+
 export const CITY_ENGLISH_MAPPING = {
   // 대한민국
   "제주도": "Jeju Island",
