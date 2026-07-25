@@ -12,28 +12,27 @@
 - [ ] 국가가 신규라면 `COUNTRY_REGISTRY`에 대륙·통화·랜드마크·음식을 추가했는가?
 - [ ] `CITY_COORDINATES`에 실제 좌표를 넣었는가? (`[0,0]` 금지)
 - [ ] `CITY_ENGLISH_MAPPING`과 `COUNTRY_ENGLISH_MAPPING`을 추가했는가?
-- [ ] 주요 도시라면 `CITY_IMAGE_MAP`에 Unsplash 이미지 ID를 등록했는가?
-- [ ] 신규 국가라면 `COUNTRY_IMAGE_MAP`에 국가 대표 이미지 ID를 등록했는가?
+- [ ] 주요 도시라면 `CITY_IMAGE_MAP`에 큐레이션 Unsplash 이미지 ID를 등록했는가?
+- [ ] 표준 도시는 도시·국가 기반 고정 시드를 쓰는 도시 풍경 사진 URL을 받는가?
 - [ ] 랜덤 대륙 필터에서 올바른 후보군에 포함되는가?
 - [ ] 빌드와 좌표/번역 검사를 통과했는가?
 
 ## 이미지 시스템
 
-도시 카드에 표시되는 이미지는 3단 캐스케이드 룩업으로 결정됩니다:
+도시 카드에 표시되는 이미지는 2단 방식으로 결정됩니다:
 
-1. **`CITY_IMAGE_MAP`** (~120개 주요 도시): 도시명으로 직접 매핑된 Unsplash 사진 ID
-2. **`COUNTRY_IMAGE_MAP`** (67개국): 해당 국가의 대표 풍경/랜드마크 사진 ID
-3. **`CONTINENT_IMAGE_MAP`** (6개 대륙): 최종 폴백용 대륙 대표 이미지
+1. **`CITY_IMAGE_MAP`**: 주요 도시에는 검증된 Unsplash 랜드마크 사진을 직접 매핑합니다.
+2. **도시별 고정 사진 URL**: 나머지 표준 도시는 도시·국가 기반 고정 시드로 생성한 도시 풍경 사진 URL을 사용합니다. 동일 도시 카드는 다시 렌더링해도 같은 사진을 유지합니다.
 
 ### 이미지 URL 형식
 ```
 https://images.unsplash.com/{photo-id}?auto=format&fit=crop&w=600&q=80
+https://loremflickr.com/900/600/city,travel?lock={stable-seed}
 ```
 
 ### 이미지 등록 방법
-- [Unsplash](https://unsplash.com)에서 도시/국가 검색 후 사진 ID를 복사
-- 사진 ID 형식: `photo-1234567890123-abcdef123456`
-- `destinations.js`의 해당 Map 객체에 `"도시명": "photo-id"` 형태로 추가
+- 주요 도시: [Unsplash](https://unsplash.com)에서 도시/국가 검색 후 사진 ID를 복사해 `CITY_IMAGE_MAP`에 `"도시명": "photo-id"` 형태로 추가합니다.
+- 표준 도시: 도시명과 국가명이 고정 시드 생성에 정상적으로 사용되는지 확인합니다.
 
 ## 품질 기준
 
@@ -43,7 +42,7 @@ https://images.unsplash.com/{photo-id}?auto=format&fit=crop&w=600&q=80
 | 영문명 | 통용되는 공식 또는 널리 쓰이는 영문 표기 우선 |
 | 대륙 | 랜덤 필터 정책과 일치하는 단일 분류 |
 | 추천 정보 | 국가 특성을 반영하는 랜드마크·음식 최소 3개 |
-| 이미지 | 주요 도시는 도시 고유 이미지, 나머지는 국가 대표 이미지 사용 |
+| 이미지 | 주요 도시는 큐레이션 이미지, 표준 도시는 고정된 도시·국가 기반 사진 |
 | 중복 | 같은 도시명이라도 다른 국가면 국가 기반 좌표 키를 검토 |
 
 ## 검증 명령

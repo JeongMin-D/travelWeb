@@ -1188,7 +1188,10 @@ Object.entries(compactCitiesByCountry).forEach(([country, cities]) => {
       currencySymbol: reg.symbol,
       tagline: `${country}의 대표적인 여행 명소, ${city}`,
       description: `${city}은(는) ${country}의 매력적인 도시입니다. 아름다운 풍경과 로컬 감성, 그리고 독특한 먹거리를 만끽하며 나만의 잊지 못할 추억을 만들어보세요.`,
-      imageUrl: imageUrl
+      imageUrl: imageUrl,
+      // Keep handcrafted city photos; replace only country-level fallback
+      // images after the English city-name map has been initialized.
+      _cityPhotoSearch: CITY_IMAGE_MAP[city] ? null : city
     });
   });
 });
@@ -2485,6 +2488,22 @@ export const COUNTRY_ENGLISH_MAPPING = {
   "짐바브웨": "Zimbabwe",
   "우간다": "Uganda"
 };
+
+const getCityPhotoUrl = (cityName, countryName, id) => {
+  const seedSource = `${id}:${cityName}:${countryName}`;
+  const seed = [...seedSource].reduce((total, char) => total + char.charCodeAt(0), 0);
+  return `https://loremflickr.com/900/600/city,travel?lock=${seed}`;
+};
+
+// Standard destinations that did not have a manually curated image now use a
+// stable city-specific URL. The lock makes each card keep the same cityscape
+// photo across renders instead of reusing its country's fallback image.
+destinations.forEach(destination => {
+  if (destination._cityPhotoSearch) {
+    destination.imageUrl = getCityPhotoUrl(destination.name, destination.country, destination.id);
+  }
+  delete destination._cityPhotoSearch;
+});
 
 export const AIRPORT_COORDINATES = {
   "제주도": [33.5104, 126.4914],
