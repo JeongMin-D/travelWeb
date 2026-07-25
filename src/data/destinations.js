@@ -14,7 +14,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "푸른 바다와 이국적인 자연이 숨쉬는 환상의 섬",
     description: "제주도는 유네스코 세계자연유산으로 등재된 대한민국 대표 관광지입니다. 한라산, 성산일출봉, 푸른 해변 등 사계절 각기 다른 풍경을 자아냅니다. 오메기떡, 흑돼지, 갈치조림 등 미식도 가득합니다.",
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1579169825319-d5e47bca7a5c?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "운전면허증 (렌터카용)", "선크림 & 선글라스", "보조배터리", "가벼운 겉옷"],
     itineraries: {
       healing: {
@@ -79,7 +79,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "바다와 현대적인 도시가 어우러진 다이내믹 시티",
     description: "부산은 대한민국 제2의 도시이자 아시아 최대 영화제가 열리는 다이내믹한 항구도시입니다. 해운대와 광안리의 화려한 야경, 감천문화마을의 알록달록한 골목, 신선한 자갈치시장 해산물 등이 매력적입니다.",
-    imageUrl: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1621996659490-3275b4d0d951?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "편안한 운동화", "선글라스", "카메라", "교통카드"],
     itineraries: {
       food: {
@@ -113,7 +113,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "전통과 첨단이 공존하는 트렌디한 대한민국의 수도",
     description: "서울은 600년 조선의 역사 유적과 글로벌 K-컬처의 최첨단 트렌드가 환상적인 조화를 이루는 메가시티입니다. 한강, 경복궁, 홍대, 강남 등 즐길거리가 끝이 없습니다.",
-    imageUrl: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "편한 신발", "교통카드", "보조배터리"],
     itineraries: {
       culture: {
@@ -145,7 +145,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "천년 신라의 숨결이 깃든 노천 박물관",
     description: "경주는 도시 전체가 신라 시대의 유적지이자 유네스코 세계유산입니다. 불국사, 석굴암, 대릉원, 그리고 황리단길의 뉴트로 감성이 아름다운 조화를 이룹니다.",
-    imageUrl: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "편한 도보용 신발", "선글라스", "카메라"],
     itineraries: {
       culture: {
@@ -177,7 +177,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "푸른 동해바다와 향긋한 커피 향의 조화",
     description: "강릉은 탁 트인 동해 바다를 바라보며 커피를 마실 수 있는 안목커피거리, 그리고 초당두부와 장칼국수 등 강원도 특유의 토속 미식이 가득한 낭만적인 도시입니다.",
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1610437792930-c0b1d0b05e68?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "가벼운 바람막이 점퍼", "선크림", "돗자리"],
     itineraries: {
       healing: {
@@ -206,7 +206,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "여수 밤바다, 낭만이 가득한 남해안의 미항",
     description: "여수는 버스커 버스커의 노래로 유명한 남해의 대표 낭만 도시입니다. 아기자기한 섬들과 화려한 여수 국가산업단지 야경, 맛깔나는 돌산갓김치와 게장백반이 반겨줍니다.",
-    imageUrl: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1623820919239-0d0ff10797a1?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "야간 방한용 가디건", "편안한 도보용 신발"],
     itineraries: {
       food: {
@@ -237,7 +237,7 @@ const premiumDestinations = [
     currencySymbol: "₩",
     tagline: "가장 한국적인 한옥 전통과 비빔밥의 본고장",
     description: "전주는 700여 채의 독특한 기와 한옥들이 밀집된 한옥마을이 유명합니다. 한국 전통 음악, 서예, 한지 공예와 전주비빔밥, 콩나물국밥 등 대한민국 최고의 미식 문화를 지닌 예향입니다.",
-    imageUrl: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1613041442604-f3b164e81b22?auto=format&fit=crop&w=600&q=80",
     essentials: ["신분증", "한복 대여용 가벼운 속옷", "보조배터리"],
     itineraries: {
       culture: {
@@ -267,7 +267,7 @@ const premiumDestinations = [
     currencySymbol: "¥",
     tagline: "전통 사원과 화려한 네온사인, 미식이 공존하는 아시아 중심지",
     description: "도쿄는 화려한 스카이라인, 애니메이션 문화, 차분한 신사가 어우러진 아시아 대표 메트로폴리스입니다. 쇼핑과 맛있는 디저트, 편리한 전철망 덕분에 인기가 높습니다.",
-    imageUrl: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "일본 엔화 (일부 현금 필수)", "110V 돼지코 변압기", "비짓재팬 등록", "구글맵 앱"],
     itineraries: {
       food: {
@@ -299,7 +299,7 @@ const premiumDestinations = [
     currencySymbol: "¥",
     tagline: "천하의 부엌, 타코야키와 도톤보리의 네온사인",
     description: "오사카는 일본 미식의 메카이자 활기찬 상인들의 활기가 가득한 대도시입니다. 글리코상이 반기는 화려한 도톤보리, 신나는 유니버설 스튜디오 재팬이 매력적입니다.",
-    imageUrl: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "엔화 지폐", "110V 돼지코 변압기", "간사이 패스"],
     itineraries: {
       food: {
@@ -330,7 +330,7 @@ const premiumDestinations = [
     currencySymbol: "฿",
     tagline: "화려한 황금빛 왕궁과 저렴하고 맛있는 야시장 투어",
     description: "방콕은 배낭여행자들의 천국이자 천만 명이 넘는 아시아 최고의 관광 도시입니다. 웅장한 사원 왓 아룬, 카오산 로드의 나이트라이프, 그리고 저렴한 미식이 가득합니다.",
-    imageUrl: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "태국 바트화", "모기 기피제", "왕궁 입장용 긴바지"],
     itineraries: {
       food: {
@@ -360,7 +360,7 @@ const premiumDestinations = [
     currencySymbol: "₫",
     tagline: "끝없이 펼쳐진 미케 비치와 가성비 최고의 휴양지",
     description: "다낭은 한국인들이 사랑하는 베트남 중부의 대표 휴양 도시입니다. 미케 비치, 대리석 마블마운틴, 골든 브릿지의 바나힐, 인근 역사 도시 호이안의 노란 등불 야경이 어우러집니다.",
-    imageUrl: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "베트남 동화", "모기퇴치 스프레이"],
     itineraries: {
       healing: {
@@ -511,7 +511,7 @@ const premiumDestinations = [
     currencySymbol: "€",
     tagline: "천재 가우디의 미완성 성당과 열정의 지중해 해변",
     description: "바르셀로나는 건축가 가우디의 초현실적인 세계와 지중해의 따사로운 햇살을 머금은 도시 바르셀로네타 해변, 빠에야와 타파스가 환상적인 맛을 자아냅니다.",
-    imageUrl: "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "유로화", "자외선 선크림", "크로스백 & 자물쇠"],
     itineraries: {
       culture: {
@@ -572,7 +572,7 @@ const premiumDestinations = [
     currencySymbol: "$",
     tagline: "알로하, 눈부신 와이키키 해변과 환상의 하이킹 코스",
     description: "하와이 오아후 섬은 세계적인 와이키키 해변, 에메랄드빛 카일루아 바다, 스노클링 천국 하나우마 베이까지 끝없는 천국 같은 해안선이 반겨주는 대표 파라다이스 휴양지입니다.",
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1507876466758-bc54f384809c?auto=format&fit=crop&w=600&q=80",
     essentials: ["여권", "ESTA 비자 승인서", "달러화 및 렌터카 서류", "래쉬가드 & 선크림"],
     itineraries: {
       healing: {
@@ -1036,17 +1036,143 @@ Object.entries(compactCitiesByCountry).forEach(([country, cities]) => {
     const isPremium = premiumDestinations.some(p => p.name === city);
     if (isPremium) return;
 
-    // Generate fallback Unsplash image based on continent
-    let imageUrl = "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80"; // Default
-    if (reg.continent === "Europe") {
-      imageUrl = "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80";
-    } else if (reg.continent === "Americas") {
-      imageUrl = "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80";
-    } else if (reg.continent === "Oceania") {
-      imageUrl = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80";
-    } else if (reg.continent === "Asia") {
-      imageUrl = "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80";
-    }
+    // City-specific Unsplash images for major cities
+    const CITY_IMAGE_MAP = {
+      "경주": "photo-1600577916048-804c9191e36c", "강릉": "photo-1610437792930-c0b1d0b05e68",
+      "여수": "photo-1623820919239-0d0ff10797a1", "전주": "photo-1613041442604-f3b164e81b22",
+      "인천": "photo-1583167617782-a0c0a3e886f9", "대전": "photo-1590523277543-a94d2e4eb00b",
+      "대구": "photo-1578037571214-25e07ed4a412", "광주": "photo-1590523277543-a94d2e4eb00b",
+      "수원": "photo-1577587230708-187ffc1104c5", "춘천": "photo-1517517963779-e47e3e72e2b8",
+      "속초": "photo-1517517963779-e47e3e72e2b8", "안동": "photo-1600577916048-804c9191e36c",
+      "통영": "photo-1623820919239-0d0ff10797a1", "목포": "photo-1623820919239-0d0ff10797a1",
+      "교토": "photo-1493976040374-85c8e12f0c0e", "후쿠오카": "photo-1577702312572-c79f4527bbca",
+      "삿포로": "photo-1571167366136-b57e07761625", "오키나와": "photo-1583471072498-4a05de4b1f0a",
+      "나라": "photo-1624253321171-1be53e12f5f4", "나고야": "photo-1528360983277-13d401cdc186",
+      "히로시마": "photo-1528360983277-13d401cdc186", "요코하마": "photo-1540959733332-eab4deabeeaf",
+      "고베": "photo-1528360983277-13d401cdc186", "가나자와": "photo-1528360983277-13d401cdc186",
+      "베이징": "photo-1508804185872-d7badad00f7d", "상하이": "photo-1474181487882-5abf3f0ba6c2",
+      "시안": "photo-1547981609-4b6bfe67ca0b", "광저우": "photo-1547981609-4b6bfe67ca0b",
+      "청두": "photo-1547981609-4b6bfe67ca0b", "항저우": "photo-1547981609-4b6bfe67ca0b",
+      "타이베이": "photo-1470004914212-05527e49370b", "가오슝": "photo-1470004914212-05527e49370b",
+      "푸켓": "photo-1589394815804-964ed0be2eb5", "치앙마이": "photo-1598978483151-955901e12edf",
+      "파타야": "photo-1552465011-b4e21bf6e79a", "끄라비": "photo-1589394815804-964ed0be2eb5",
+      "하노이": "photo-1509030450996-dd1a26613e2c", "호치민": "photo-1583417319070-4a69db38a482",
+      "호이안": "photo-1557750255-c76072a7aee1", "나트랑": "photo-1557750255-c76072a7aee1",
+      "자카르타": "photo-1518548419970-58e3b4079ab2", "수라바야": "photo-1518548419970-58e3b4079ab2",
+      "족자카르타": "photo-1518548419970-58e3b4079ab2", "롬복": "photo-1537996194471-e657df975ab4",
+      "세부": "photo-1505840717430-882ce147ef2d", "보라카이": "photo-1584890131631-e4170927a668",
+      "마닐라": "photo-1518509562904-e7ef99cdcc86", "팔라완": "photo-1518509562904-e7ef99cdcc86",
+      "쿠알라룸푸르": "photo-1596422846543-75c6fc197f07", "페낭": "photo-1596422846543-75c6fc197f07",
+      "코타키나발루": "photo-1596422846543-75c6fc197f07", "랑카위": "photo-1596422846543-75c6fc197f07",
+      "시엠레아프": "photo-1508159452718-d22f6734a00a", "프놈펜": "photo-1508159452718-d22f6734a00a",
+      "루앙프라방": "photo-1583321500900-82807e458f3c", "비엔티안": "photo-1583321500900-82807e458f3c",
+      "홍콩": "photo-1536599018102-9f803c140fc1", "마카오": "photo-1555217851-6141535bd88f",
+      "두바이": "photo-1512453979798-5ea266f8880c", "아부다비": "photo-1611605698335-8b1569810432",
+      "이스탄불": "photo-1524231757912-21f4fe3a7200", "앙카라": "photo-1524231757912-21f4fe3a7200",
+      "카파도키아": "photo-1641128324972-af3212f0f6bd", "안탈리아": "photo-1524231757912-21f4fe3a7200",
+      "콜롬보": "photo-1586523969989-75ddf90e7ffd", "카트만두": "photo-1544735716-392fe2489ffa",
+      "델리": "photo-1524492412937-b28074a5d7da", "뭄바이": "photo-1524492412937-b28074a5d7da",
+      "자이푸르": "photo-1524492412937-b28074a5d7da", "아그라": "photo-1524492412937-b28074a5d7da",
+      "울란바토르": "photo-1510042239-f1b7a4a25c64",
+      "니스": "photo-1533104816931-20fa691ff6ca", "마르세유": "photo-1499856871958-5b9627545d1a",
+      "리옹": "photo-1499856871958-5b9627545d1a", "보르도": "photo-1499856871958-5b9627545d1a",
+      "밀라노": "photo-1520440229-6469a149ac59", "베네치아": "photo-1523906834658-6e24ef2386f9",
+      "피렌체": "photo-1543429258-09759863b9c6", "나폴리": "photo-1529260830199-42c24126f198",
+      "아말피": "photo-1529260830199-42c24126f198", "시칠리아": "photo-1529260830199-42c24126f198",
+      "마드리드": "photo-1539037116277-4db20889f2d4", "발렌시아": "photo-1543783207-ec64e4d95325",
+      "세비야": "photo-1543783207-ec64e4d95325", "그라나다": "photo-1543783207-ec64e4d95325",
+      "버밍엄": "photo-1486299267070-83823f5448dd", "맨체스터": "photo-1486299267070-83823f5448dd",
+      "에든버러": "photo-1486299267070-83823f5448dd", "리버풀": "photo-1486299267070-83823f5448dd",
+      "베를린": "photo-1560969184-10fe8719e047", "뮌헨": "photo-1467269204594-9661b134dd2b",
+      "함부르크": "photo-1467269204594-9661b134dd2b", "프랑크푸르트": "photo-1467269204594-9661b134dd2b",
+      "취리히": "photo-1530122037265-a5f1f91d3b99", "제네바": "photo-1530122037265-a5f1f91d3b99",
+      "루체른": "photo-1530122037265-a5f1f91d3b99", "인터라켄": "photo-1530122037265-a5f1f91d3b99",
+      "암스테르담": "photo-1534351590666-13e3e96b5017", "로테르담": "photo-1534351590666-13e3e96b5017",
+      "프라하": "photo-1519677100203-a0e668c92439", "체스키크룸로프": "photo-1519677100203-a0e668c92439",
+      "빈": "photo-1516550893923-42d28e5677af", "잘츠부르크": "photo-1516550893923-42d28e5677af",
+      "부다페스트": "photo-1549923746-c502d488b3ea",
+      "산토리니": "photo-1570077188670-e3a8d69ac5ff", "아테네": "photo-1555993539-1732b0258235",
+      "미코노스": "photo-1570077188670-e3a8d69ac5ff", "크레타": "photo-1570077188670-e3a8d69ac5ff",
+      "리스본": "photo-1585208798174-6cedd86e019a", "포르투": "photo-1585208798174-6cedd86e019a",
+      "스톡홀름": "photo-1509356843151-3e7d96241e11",
+      "코펜하겐": "photo-1513622470522-26c3c8a854bc", "오르후스": "photo-1513622470522-26c3c8a854bc",
+      "오슬로": "photo-1531366936337-7c912a4589a7", "베르겐": "photo-1531366936337-7c912a4589a7",
+      "트롬쇠": "photo-1531366936337-7c912a4589a7",
+      "헬싱키": "photo-1538332576228-eb5b4c4de6f5", "로바니에미": "photo-1538332576228-eb5b4c4de6f5",
+      "더블린": "photo-1590089415225-401ed6f9db8e", "골웨이": "photo-1590089415225-401ed6f9db8e",
+      "브뤼셀": "photo-1491557345352-5929e343eb89", "브뤼헤": "photo-1491557345352-5929e343eb89",
+      "바르샤바": "photo-1519197924294-4ba991a11128", "크라쿠프": "photo-1519197924294-4ba991a11128",
+      "레이캬비크": "photo-1504829857797-ddff29c27927",
+      "로스앤젤레스": "photo-1534190760961-74e8c1c5c3da", "샌프란시스코": "photo-1521464302861-ce943915d1c3",
+      "라스베이거스": "photo-1605833556294-ea5c7a74f57d", "시애틀": "photo-1501594907352-04cda38ebc29",
+      "시카고": "photo-1494522855154-9297ac14b55f", "마이애미": "photo-1501594907352-04cda38ebc29",
+      "워싱턴 D.C.": "photo-1501594907352-04cda38ebc29", "보스턴": "photo-1501594907352-04cda38ebc29",
+      "밴쿠버": "photo-1559511260-66a68edb8927", "토론토": "photo-1517090504332-af2856ba9a2e",
+      "몬트리올": "photo-1503614472-8c93d56e92ce", "캘거리": "photo-1503614472-8c93d56e92ce",
+      "멕시코시티": "photo-1518638150340-f706e86654de", "칸쿤": "photo-1518638150340-f706e86654de",
+      "리우데자네이루": "photo-1483729558449-99ef09a8c325", "상파울루": "photo-1483729558449-99ef09a8c325",
+      "부에노스아이레스": "photo-1589909202802-8f4aadce1849", "바릴로체": "photo-1589909202802-8f4aadce1849",
+      "리마": "photo-1526392060635-9d6019884377", "쿠스코": "photo-1526392060635-9d6019884377",
+      "마추픽추": "photo-1526392060635-9d6019884377",
+      "산티아고": "photo-1469854523086-cc02fe5d8800",
+      "멜버른": "photo-1514395462725-fb4566210144", "브리즈번": "photo-1523482580672-f109ba8cb9be",
+      "퍼스": "photo-1523482580672-f109ba8cb9be", "골드코스트": "photo-1523482580672-f109ba8cb9be",
+      "오클랜드": "photo-1507699622108-4be3abd695ad", "퀸스타운": "photo-1469521669194-babb45599def",
+      "카이로": "photo-1572252009286-268acec5ca0a", "룩소르": "photo-1572252009286-268acec5ca0a",
+      "마라케시": "photo-1597211833712-5e41faa202ea", "페스": "photo-1597211833712-5e41faa202ea",
+      "케이프타운": "photo-1580060839134-75a5edca2e99", "요하네스버그": "photo-1580060839134-75a5edca2e99",
+      "나이로비": "photo-1547471080-7cc2caa01a7e", "마사이마라": "photo-1547471080-7cc2caa01a7e",
+      "잔지바르": "photo-1516426122078-c23e76319801", "세렝게티": "photo-1516426122078-c23e76319801",
+    };
+
+    // Country-level fallback images
+    const COUNTRY_IMAGE_MAP = {
+      "대한민국": "photo-1517154421773-0529f29ea451", "일본": "photo-1528360983277-13d401cdc186",
+      "중국": "photo-1547981609-4b6bfe67ca0b", "대만": "photo-1470004914212-05527e49370b",
+      "태국": "photo-1552465011-b4e21bf6e79a", "베트남": "photo-1557750255-c76072a7aee1",
+      "인도네시아": "photo-1518548419970-58e3b4079ab2", "싱가포르": "photo-1525625293386-3f8f99389edd",
+      "필리핀": "photo-1518509562904-e7ef99cdcc86", "말레이시아": "photo-1596422846543-75c6fc197f07",
+      "터키": "photo-1524231757912-21f4fe3a7200", "아랍에미리트": "photo-1512453979798-5ea266f8880c",
+      "홍콩": "photo-1536599018102-9f803c140fc1", "캄보디아": "photo-1508159452718-d22f6734a00a",
+      "라오스": "photo-1583321500900-82807e458f3c", "스리랑카": "photo-1586523969989-75ddf90e7ffd",
+      "인도": "photo-1524492412937-b28074a5d7da", "네팔": "photo-1544735716-392fe2489ffa",
+      "몽골": "photo-1510042239-f1b7a4a25c64", "몰디브": "photo-1514282401047-d79a71a590e8",
+      "우즈베키스탄": "photo-1596484552834-6a58f850e0a1",
+      "프랑스": "photo-1499856871958-5b9627545d1a", "이탈리아": "photo-1529260830199-42c24126f198",
+      "영국": "photo-1486299267070-83823f5448dd", "스페인": "photo-1543783207-ec64e4d95325",
+      "독일": "photo-1467269204594-9661b134dd2b", "스위스": "photo-1530122037265-a5f1f91d3b99",
+      "오스트리아": "photo-1516550893923-42d28e5677af", "체코": "photo-1519677100203-a0e668c92439",
+      "헝가리": "photo-1549923746-c502d488b3ea", "그리스": "photo-1570077188670-e3a8d69ac5ff",
+      "네덜란드": "photo-1534351590666-13e3e96b5017", "포르투갈": "photo-1585208798174-6cedd86e019a",
+      "스웨덴": "photo-1509356843151-3e7d96241e11", "노르웨이": "photo-1531366936337-7c912a4589a7",
+      "덴마크": "photo-1513622470522-26c3c8a854bc", "핀란드": "photo-1538332576228-eb5b4c4de6f5",
+      "아일랜드": "photo-1590089415225-401ed6f9db8e", "벨기에": "photo-1491557345352-5929e343eb89",
+      "폴란드": "photo-1519197924294-4ba991a11128", "아이슬란드": "photo-1504829857797-ddff29c27927",
+      "미국": "photo-1501594907352-04cda38ebc29", "캐나다": "photo-1503614472-8c93d56e92ce",
+      "멕시코": "photo-1518638150340-f706e86654de", "브라질": "photo-1483729558449-99ef09a8c325",
+      "아르헨티나": "photo-1589909202802-8f4aadce1849", "페루": "photo-1526392060635-9d6019884377",
+      "칠레": "photo-1469854523086-cc02fe5d8800",
+      "호주": "photo-1523482580672-f109ba8cb9be", "뉴질랜드": "photo-1469521669194-babb45599def",
+      "이집트": "photo-1572252009286-268acec5ca0a", "모로코": "photo-1597211833712-5e41faa202ea",
+      "남아프리카공화국": "photo-1580060839134-75a5edca2e99", "케냐": "photo-1547471080-7cc2caa01a7e",
+      "탄자니아": "photo-1516426122078-c23e76319801", "나미비아": "photo-1509042239860-f550ce710b93",
+      "보츠와나": "photo-1516426122078-c23e76319801", "르완다": "photo-1607262105591-5e5b7e539c84",
+      "에티오피아": "photo-1523805009345-7448845a9e53", "가나": "photo-1577655197620-704858b270ac",
+      "세네갈": "photo-1611348524140-53c9a25263d6", "튀니지": "photo-1590502593747-42a996133562",
+      "모리셔스": "photo-1518509562904-e7ef99cdcc86", "세이셸": "photo-1589979481223-deb893043163",
+      "잠비아": "photo-1489392191049-fc10c97e64b6", "짐바브웨": "photo-1489392191049-fc10c97e64b6",
+      "우간다": "photo-1607262105591-5e5b7e539c84",
+    };
+
+    // Continent-level ultimate fallback
+    const CONTINENT_IMAGE_MAP = {
+      "Europe": "photo-1499856871958-5b9627545d1a", "Americas": "photo-1501594907352-04cda38ebc29",
+      "Oceania": "photo-1523482580672-f109ba8cb9be", "Asia": "photo-1528360983277-13d401cdc186",
+      "Africa": "photo-1547471080-7cc2caa01a7e", "Domestic": "photo-1517154421773-0529f29ea451",
+    };
+
+    const imgId = CITY_IMAGE_MAP[city] || COUNTRY_IMAGE_MAP[country] || CONTINENT_IMAGE_MAP[reg.continent] || "photo-1493976040374-85c8e12f0c0e";
+    const imageUrl = `https://images.unsplash.com/${imgId}?auto=format&fit=crop&w=600&q=80`;
 
     const type = reg.type;
     const id = `std_${country}_${city}`.toLowerCase().replace(/\s+/g, "_");
