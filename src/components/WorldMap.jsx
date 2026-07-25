@@ -90,6 +90,17 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
         </div>
       `, { direction: 'top', offset: [0, -5] });
 
+      let translatedTagline = dest.tagline;
+      if (isEn) {
+        if (dest.tagline.includes('대표적인 여행 명소')) {
+          translatedTagline = `A signature destination in ${countryNameToShow}, ${cityNameToShow}`;
+        } else if (dest.tagline.includes('보석 같은 도시')) {
+          translatedTagline = `A hidden gem in ${countryNameToShow}, ${cityNameToShow}`;
+        } else {
+          translatedTagline = `Experience the beauty of ${cityNameToShow}, ${countryNameToShow}`;
+        }
+      }
+
       // Build popup content with "Travel to this City" button hook
       const popupDiv = document.createElement('div');
       popupDiv.style.color = '#0b0f19';
@@ -100,7 +111,7 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
           <img src="${dest.imageUrl}" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px; margin-bottom: 6px;" alt="${cityNameToShow}" />
           <h4 style="margin: 0; font-size: 1rem; font-weight: 800;">${cityNameToShow}</h4>
           <p style="margin: 2px 0 0 0; font-size: 0.75rem; color: #666;">${countryNameToShow} • ${continentNameToShow}</p>
-          <p style="margin: 4px 0 0 0; font-size: 0.75rem; font-style: italic; color: #555;">"${dest.tagline}"</p>
+          <p style="margin: 4px 0 0 0; font-size: 0.75rem; font-style: italic; color: #555;">"${translatedTagline}"</p>
         </div>
       `;
 
