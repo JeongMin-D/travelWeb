@@ -16,7 +16,8 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
   const [searchQuery, setSearchQuery] = useState('');
   const [mapInstance, setMapInstance] = useState(null);
   const mapContainerRef = useRef(null);
-  const markersRef = useRef({}); // Store L.circleMarker instances mapped by city id
+  const markersRef = useRef({});
+  const tileLayerRef = useRef(null); // Store L.circleMarker instances mapped by city id
 
   // Filter destinations based on search query
   const filtered = (destinations || []).filter(dest => {
@@ -44,16 +45,26 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
 
     // 2. CartoDB Dark Matter tile layer (Google Maps base with dynamic language)
     const hl = isEn ? 'en' : 'ko';
-    L.tileLayer(`https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=${hl}`, {
+    const tileLayer = L.tileLayer(`https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=${hl}`, {
       attribution: '&copy; Google Maps',
       maxZoom: 20
-    }).addTo(map);
+    });
+    tileLayer.addTo(map);
+    tileLayerRef.current = tileLayer;
 
     setMapInstance(map);
 
     return () => {
       map.remove();
     };
+  }, []);
+
+  // Update tile layer language dynamically
+  useEffect(() => {
+    if (tileLayerRef.current) {
+      const hl = isEn ? 'en' : 'ko';
+      tileLayerRef.current.setUrl(`https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=${hl}`);
+    }
   }, [isEn]);
 
   // Plot all cities as glowing markers when map is ready
