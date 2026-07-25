@@ -997,208 +997,6 @@ export const COUNTRY_ENGLISH_MAPPING = {
   "우간다": "Uganda"
 };
 
-const getCityPhotoUrl = (cityName, countryName, id) => {
-  const seedSource = `${id}:${cityName}:${countryName}`;
-  const seed = [...seedSource].reduce((total, char) => total + char.charCodeAt(0), 0);
-  return `https://loremflickr.com/900/600/city,travel?lock=${seed}`;
-};
-
-// Standard destinations that did not have a manually curated image now use a
-// stable city-specific URL. The lock makes each card keep the same cityscape
-// photo across renders instead of reusing its country's fallback image.
-destinations.forEach(destination => {
-  if (destination._cityPhotoSearch) {
-    destination.imageUrl = getCityPhotoUrl(destination.name, destination.country, destination.id);
-  }
-  delete destination._cityPhotoSearch;
-});
-
-export const AIRPORT_COORDINATES = {
-  "제주도": [33.5104, 126.4914],
-  "제주": [33.5104, 126.4914],
-  "서울": [37.4602, 126.4407],
-  "인천": [37.4602, 126.4407],
-  "김포": [37.5583, 126.7906],
-  "부산": [35.1795, 128.9382],
-  "도쿄": [35.5494, 139.7798],
-  "오사카": [34.4320, 135.2304],
-  "후쿠오카": [33.5859, 130.4507],
-  "삿포로": [42.7752, 141.6923],
-  "방콕": [13.6900, 100.7501],
-  "다낭": [16.0439, 108.1994],
-  "하노이": [21.2212, 105.8072],
-  "발리": [-8.7482, 115.1672],
-  "싱가포르": [1.3644, 103.9915],
-  "세부": [10.3075, 123.9794],
-  "파리": [49.0097, 2.5479],
-  "런던": [51.4700, -0.4543],
-  "로마": [41.7999, 12.2462],
-  "바르셀로나": [41.2974, 2.0785],
-  "뉴욕": [40.6413, -73.7781],
-  "로스앤젤레스": [33.9416, -118.4085],
-  "샌프란시스코": [37.6213, -122.3790],
-  "호놀룰루": [21.3187, -157.9224],
-  "하와이 오아후": [21.3187, -157.9224],
-  "시드니": [-33.9399, 151.1753]
-};
-
-export const LANDMARK_COORDINATES = {
-  "한담": [33.4624, 126.3276],
-  "오설록": [33.3059, 126.2895],
-  "서광차밭": [33.3059, 126.2895],
-  "사려니": [33.4077, 126.6426],
-  "산방산": [33.2422, 126.3122],
-  "카멜리아": [33.2901, 126.3684],
-  "색달": [33.2447, 126.4121],
-  "동문시장": [33.5126, 126.5284],
-  "용두암": [33.5166, 126.5126],
-  "우도": [33.5042, 126.9543],
-  "서빈백사": [33.5044, 126.9442],
-  "절물": [33.4394, 126.6283],
-  "차귀도": [33.3134, 126.1472],
-  "성산": [33.4581, 126.9425],
-  "일출봉": [33.4581, 126.9425],
-  "쇠소깍": [33.2524, 126.6231],
-  "한라산": [33.3617, 126.5332],
-  "함덕": [33.5432, 126.6692],
-  "협재": [33.3940, 126.2397],
-  "애월": [33.4624, 126.3276],
-
-  "부산역": [35.1152, 129.0422],
-  "흰여울": [35.0784, 129.0452],
-  "송도": [35.0761, 129.0202],
-  "자갈치": [35.0967, 129.0306],
-  "블루라인": [35.1601, 129.1683],
-  "해운대": [35.1587, 129.1604],
-  "광안": [35.1532, 129.1189],
-  "감천": [35.0974, 129.0106],
-  "서면": [35.1578, 129.0593],
-
-  "서울역": [37.5547, 126.9706],
-  "경복궁": [37.5796, 126.9770],
-  "명동": [37.5636, 126.9822],
-  "남산": [37.5512, 126.9882],
-  "홍대": [37.5563, 126.9230],
-  "강남": [37.4979, 127.0276],
-  "성수": [37.5447, 127.0557],
-
-  "도쿄타워": [35.6586, 139.7454],
-  "센소지": [35.7148, 139.7967],
-  "시부야": [35.6595, 139.7004],
-  "신주쿠": [35.6938, 139.7034],
-  "긴자": [35.6719, 139.7648],
-  "아키하바라": [35.6983, 139.7731],
-
-  "도톤보리": [34.6687, 135.5013],
-  "오사카성": [34.6873, 135.5262],
-  "우메다": [34.7053, 135.4896],
-  "유니버설": [34.6654, 135.4323],
-
-  "에펠탑": [48.8584, 2.2945],
-  "루브르": [48.8606, 2.3376],
-  "샹젤리제": [48.8738, 2.2950],
-  "개선문": [48.8738, 2.2950],
-  "몽마르트르": [48.8867, 2.3431],
-
-  "빅벤": [51.5007, -0.1246],
-  "런던아이": [51.5033, -0.1195],
-  "대영박물관": [51.5194, -0.1270],
-  "타워브리지": [51.5055, -0.0754],
-
-  "타임스퀘어": [40.7580, -73.9855],
-  "센트럴파크": [40.7812, -73.9665],
-  "자유의여신상": [40.6892, -74.0445]
-};
-
-export const translateChecklistItem = (itemText, isEn = false) => {
-  if (!itemText) return itemText;
-  if (!isEn) return itemText;
-
-  const text = itemText.trim();
-
-  if (text.includes('110V') || text.includes('돼지코')) return '110V Power Adapter';
-  if (text.includes('ESTA')) return 'ESTA Visa Approval Document';
-  if (text.includes('ETA')) return 'ETA Tourist Visa Document';
-  if (text.includes('바람막이')) return 'Light Windbreaker Jacket';
-  if (text.includes('겉옷') || text.includes('가디건')) return 'Light Outerwear / Cardigan';
-  if (text.includes('간사이 패스')) return 'Kansai Travel Pass';
-  if (text.includes('교통카드') || text.includes('패스')) return 'Transit Card / City Pass';
-  if (text.includes('구글맵')) return 'Google Maps App';
-  if (text.includes('달러') && text.includes('렌터카')) return 'USD Cash & Rental Car Docs';
-  if (text.includes('돗자리')) return 'Picnic Mat';
-  if (text.includes('래쉬가드')) return 'Swimwear & Rashguard';
-  if (text.includes('루피아')) return 'IDR Cash (Indonesian Rupiah)';
-  if (text.includes('모기')) return 'Mosquito Repellent Spray';
-  if (text.includes('베트남 동')) return 'VND Cash (Vietnamese Dong)';
-  if (text.includes('어댑터') || text.includes('변압')) return 'Universal Power Adapter';
-  if (text.includes('보조배터리')) return 'Portable Power Bank';
-  if (text.includes('전자VOA') || text.includes('VOA')) return 'e-VOA Visa Document';
-  if (text.includes('비짓재팬')) return 'Visit Japan Web QR Code';
-  if (text.includes('상비약') || text.includes('약')) return 'First Aid Kit & Emergency Medicine';
-  if (text.includes('선글라스') && text.includes('선크림')) return 'Sunscreen & Sunglasses';
-  if (text.includes('선크림') && text.includes('모자')) return 'Sunscreen & Sun Hat';
-  if (text.includes('선크림') || text.includes('자외선')) return 'Sunscreen / Sunblock';
-  if (text.includes('선글라스')) return 'Sun Protection Sunglasses';
-  if (text.includes('소매치기') || text.includes('복대') || text.includes('와이어')) return 'Anti-theft Money Belt & Lock Cable';
-  if (text.includes('신분증')) return 'Personal Identification Card';
-  if (text.includes('싱가포르 달러')) return 'SGD Cash (Singapore Dollar)';
-  if (text.includes('엔화') || text.includes('엔')) return 'JPY Cash (Japanese Yen)';
-  if (text.includes('여권')) return 'Passport & Copies (6+ months valid)';
-  if (text.includes('파운드')) return 'GBP Cash (British Pound)';
-  if (text.includes('긴바지') || text.includes('왕궁')) return 'Long Pants for Temple / Palace Visit';
-  if (text.includes('우산')) return 'Compact Umbrella / Rain Gear';
-  if (text.includes('운전면허')) return 'International Driver License';
-  if (text.includes('유로')) return 'EUR Cash (Euro)';
-  if (text.includes('SG Arrival') || text.includes('전자입국신고서')) return 'SG Arrival Card Registration';
-  if (text.includes('카메라')) return 'Camera & Extra Memory Card';
-  if (text.includes('크로스백') || text.includes('자물쇠')) return 'Crossbody Bag & Safety Padlock';
-  if (text.includes('바트')) return 'THB Cash (Thai Baht)';
-  if (text.includes('신발') || text.includes('운동화') || text.includes('도보')) return 'Comfortable Walking Shoes';
-  if (text.includes('옷차림') || text.includes('의류') || text.includes('여벌 옷') || text.includes('속옷')) return 'Casual Clothing & Extra Outfits';
-  if (text.includes('카드') || text.includes('현금') || text.includes('환전')) return 'International Credit Card & Cash';
-  if (text.includes('호주 달러')) return 'AUD Cash / Credit Card';
-  if (text.includes('충전기')) return 'Phone Charger & Cables';
-  if (text.includes('세면') || text.includes('위생')) return 'Personal Toiletries & Hygiene Kit';
-
-  return text;
-};
-
-export const getLandmarkCoordinates = (cityName, activityTitle, dayNum = 1, actIndex = 0, countryName = '') => {
-  const cityCoords = getCityCoordinates(cityName, countryName);
-  const titleLower = (activityTitle || '').toLowerCase();
-
-  if (titleLower.includes('공항') || titleLower.includes('도착') || titleLower.includes('입국') || titleLower.includes('airport') || titleLower.includes('check-in') || titleLower.includes('체크인')) {
-    if (AIRPORT_COORDINATES[cityName]) {
-      return AIRPORT_COORDINATES[cityName];
-    }
-    const matchedCityKey = Object.keys(AIRPORT_COORDINATES).find(k => cityName.includes(k) || k.includes(cityName));
-    if (matchedCityKey) {
-      return AIRPORT_COORDINATES[matchedCityKey];
-    }
-  }
-
-  if (!activityTitle) {
-    const angle = (dayNum * 60 + actIndex * 35) * (Math.PI / 180);
-    const radius = 0.003 + actIndex * 0.0015;
-    return [cityCoords[0] + Math.sin(angle) * radius, cityCoords[1] + Math.cos(angle) * radius];
-  }
-
-  for (const [landmarkKey, coords] of Object.entries(LANDMARK_COORDINATES)) {
-    if (titleLower.includes(landmarkKey.toLowerCase())) {
-      return coords;
-    }
-  }
-
-  const hash = ((cityName || '') + (activityTitle || '') + dayNum + actIndex).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  const angle = (hash % 360) * (Math.PI / 180);
-  const dist = 0.002 + ((hash % 10) * 0.0004);
-
-  return [
-    cityCoords[0] + Math.sin(angle) * dist,
-    cityCoords[1] + Math.cos(angle) * dist
-  ];
-};
-
 
 const compactCitiesByCountry = {
   "대한민국": [
@@ -2862,6 +2660,208 @@ export const getClothingAndWeatherGuide = (cityName, countryName, isEn = false) 
   };
 };
 
+
+const getCityPhotoUrl = (cityName, countryName, id) => {
+  const seedSource = `${id}:${cityName}:${countryName}`;
+  const seed = [...seedSource].reduce((total, char) => total + char.charCodeAt(0), 0);
+  return `https://loremflickr.com/900/600/city,travel?lock=${seed}`;
+};
+
+// Standard destinations that did not have a manually curated image now use a
+// stable city-specific URL. The lock makes each card keep the same cityscape
+// photo across renders instead of reusing its country's fallback image.
+destinations.forEach(destination => {
+  if (destination._cityPhotoSearch) {
+    destination.imageUrl = getCityPhotoUrl(destination.name, destination.country, destination.id);
+  }
+  delete destination._cityPhotoSearch;
+});
+
+export const AIRPORT_COORDINATES = {
+  "제주도": [33.5104, 126.4914],
+  "제주": [33.5104, 126.4914],
+  "서울": [37.4602, 126.4407],
+  "인천": [37.4602, 126.4407],
+  "김포": [37.5583, 126.7906],
+  "부산": [35.1795, 128.9382],
+  "도쿄": [35.5494, 139.7798],
+  "오사카": [34.4320, 135.2304],
+  "후쿠오카": [33.5859, 130.4507],
+  "삿포로": [42.7752, 141.6923],
+  "방콕": [13.6900, 100.7501],
+  "다낭": [16.0439, 108.1994],
+  "하노이": [21.2212, 105.8072],
+  "발리": [-8.7482, 115.1672],
+  "싱가포르": [1.3644, 103.9915],
+  "세부": [10.3075, 123.9794],
+  "파리": [49.0097, 2.5479],
+  "런던": [51.4700, -0.4543],
+  "로마": [41.7999, 12.2462],
+  "바르셀로나": [41.2974, 2.0785],
+  "뉴욕": [40.6413, -73.7781],
+  "로스앤젤레스": [33.9416, -118.4085],
+  "샌프란시스코": [37.6213, -122.3790],
+  "호놀룰루": [21.3187, -157.9224],
+  "하와이 오아후": [21.3187, -157.9224],
+  "시드니": [-33.9399, 151.1753]
+};
+
+export const LANDMARK_COORDINATES = {
+  "한담": [33.4624, 126.3276],
+  "오설록": [33.3059, 126.2895],
+  "서광차밭": [33.3059, 126.2895],
+  "사려니": [33.4077, 126.6426],
+  "산방산": [33.2422, 126.3122],
+  "카멜리아": [33.2901, 126.3684],
+  "색달": [33.2447, 126.4121],
+  "동문시장": [33.5126, 126.5284],
+  "용두암": [33.5166, 126.5126],
+  "우도": [33.5042, 126.9543],
+  "서빈백사": [33.5044, 126.9442],
+  "절물": [33.4394, 126.6283],
+  "차귀도": [33.3134, 126.1472],
+  "성산": [33.4581, 126.9425],
+  "일출봉": [33.4581, 126.9425],
+  "쇠소깍": [33.2524, 126.6231],
+  "한라산": [33.3617, 126.5332],
+  "함덕": [33.5432, 126.6692],
+  "협재": [33.3940, 126.2397],
+  "애월": [33.4624, 126.3276],
+
+  "부산역": [35.1152, 129.0422],
+  "흰여울": [35.0784, 129.0452],
+  "송도": [35.0761, 129.0202],
+  "자갈치": [35.0967, 129.0306],
+  "블루라인": [35.1601, 129.1683],
+  "해운대": [35.1587, 129.1604],
+  "광안": [35.1532, 129.1189],
+  "감천": [35.0974, 129.0106],
+  "서면": [35.1578, 129.0593],
+
+  "서울역": [37.5547, 126.9706],
+  "경복궁": [37.5796, 126.9770],
+  "명동": [37.5636, 126.9822],
+  "남산": [37.5512, 126.9882],
+  "홍대": [37.5563, 126.9230],
+  "강남": [37.4979, 127.0276],
+  "성수": [37.5447, 127.0557],
+
+  "도쿄타워": [35.6586, 139.7454],
+  "센소지": [35.7148, 139.7967],
+  "시부야": [35.6595, 139.7004],
+  "신주쿠": [35.6938, 139.7034],
+  "긴자": [35.6719, 139.7648],
+  "아키하바라": [35.6983, 139.7731],
+
+  "도톤보리": [34.6687, 135.5013],
+  "오사카성": [34.6873, 135.5262],
+  "우메다": [34.7053, 135.4896],
+  "유니버설": [34.6654, 135.4323],
+
+  "에펠탑": [48.8584, 2.2945],
+  "루브르": [48.8606, 2.3376],
+  "샹젤리제": [48.8738, 2.2950],
+  "개선문": [48.8738, 2.2950],
+  "몽마르트르": [48.8867, 2.3431],
+
+  "빅벤": [51.5007, -0.1246],
+  "런던아이": [51.5033, -0.1195],
+  "대영박물관": [51.5194, -0.1270],
+  "타워브리지": [51.5055, -0.0754],
+
+  "타임스퀘어": [40.7580, -73.9855],
+  "센트럴파크": [40.7812, -73.9665],
+  "자유의여신상": [40.6892, -74.0445]
+};
+
+export const translateChecklistItem = (itemText, isEn = false) => {
+  if (!itemText) return itemText;
+  if (!isEn) return itemText;
+
+  const text = itemText.trim();
+
+  if (text.includes('110V') || text.includes('돼지코')) return '110V Power Adapter';
+  if (text.includes('ESTA')) return 'ESTA Visa Approval Document';
+  if (text.includes('ETA')) return 'ETA Tourist Visa Document';
+  if (text.includes('바람막이')) return 'Light Windbreaker Jacket';
+  if (text.includes('겉옷') || text.includes('가디건')) return 'Light Outerwear / Cardigan';
+  if (text.includes('간사이 패스')) return 'Kansai Travel Pass';
+  if (text.includes('교통카드') || text.includes('패스')) return 'Transit Card / City Pass';
+  if (text.includes('구글맵')) return 'Google Maps App';
+  if (text.includes('달러') && text.includes('렌터카')) return 'USD Cash & Rental Car Docs';
+  if (text.includes('돗자리')) return 'Picnic Mat';
+  if (text.includes('래쉬가드')) return 'Swimwear & Rashguard';
+  if (text.includes('루피아')) return 'IDR Cash (Indonesian Rupiah)';
+  if (text.includes('모기')) return 'Mosquito Repellent Spray';
+  if (text.includes('베트남 동')) return 'VND Cash (Vietnamese Dong)';
+  if (text.includes('어댑터') || text.includes('변압')) return 'Universal Power Adapter';
+  if (text.includes('보조배터리')) return 'Portable Power Bank';
+  if (text.includes('전자VOA') || text.includes('VOA')) return 'e-VOA Visa Document';
+  if (text.includes('비짓재팬')) return 'Visit Japan Web QR Code';
+  if (text.includes('상비약') || text.includes('약')) return 'First Aid Kit & Emergency Medicine';
+  if (text.includes('선글라스') && text.includes('선크림')) return 'Sunscreen & Sunglasses';
+  if (text.includes('선크림') && text.includes('모자')) return 'Sunscreen & Sun Hat';
+  if (text.includes('선크림') || text.includes('자외선')) return 'Sunscreen / Sunblock';
+  if (text.includes('선글라스')) return 'Sun Protection Sunglasses';
+  if (text.includes('소매치기') || text.includes('복대') || text.includes('와이어')) return 'Anti-theft Money Belt & Lock Cable';
+  if (text.includes('신분증')) return 'Personal Identification Card';
+  if (text.includes('싱가포르 달러')) return 'SGD Cash (Singapore Dollar)';
+  if (text.includes('엔화') || text.includes('엔')) return 'JPY Cash (Japanese Yen)';
+  if (text.includes('여권')) return 'Passport & Copies (6+ months valid)';
+  if (text.includes('파운드')) return 'GBP Cash (British Pound)';
+  if (text.includes('긴바지') || text.includes('왕궁')) return 'Long Pants for Temple / Palace Visit';
+  if (text.includes('우산')) return 'Compact Umbrella / Rain Gear';
+  if (text.includes('운전면허')) return 'International Driver License';
+  if (text.includes('유로')) return 'EUR Cash (Euro)';
+  if (text.includes('SG Arrival') || text.includes('전자입국신고서')) return 'SG Arrival Card Registration';
+  if (text.includes('카메라')) return 'Camera & Extra Memory Card';
+  if (text.includes('크로스백') || text.includes('자물쇠')) return 'Crossbody Bag & Safety Padlock';
+  if (text.includes('바트')) return 'THB Cash (Thai Baht)';
+  if (text.includes('신발') || text.includes('운동화') || text.includes('도보')) return 'Comfortable Walking Shoes';
+  if (text.includes('옷차림') || text.includes('의류') || text.includes('여벌 옷') || text.includes('속옷')) return 'Casual Clothing & Extra Outfits';
+  if (text.includes('카드') || text.includes('현금') || text.includes('환전')) return 'International Credit Card & Cash';
+  if (text.includes('호주 달러')) return 'AUD Cash / Credit Card';
+  if (text.includes('충전기')) return 'Phone Charger & Cables';
+  if (text.includes('세면') || text.includes('위생')) return 'Personal Toiletries & Hygiene Kit';
+
+  return text;
+};
+
+export const getLandmarkCoordinates = (cityName, activityTitle, dayNum = 1, actIndex = 0, countryName = '') => {
+  const cityCoords = getCityCoordinates(cityName, countryName);
+  const titleLower = (activityTitle || '').toLowerCase();
+
+  if (titleLower.includes('공항') || titleLower.includes('도착') || titleLower.includes('입국') || titleLower.includes('airport') || titleLower.includes('check-in') || titleLower.includes('체크인')) {
+    if (AIRPORT_COORDINATES[cityName]) {
+      return AIRPORT_COORDINATES[cityName];
+    }
+    const matchedCityKey = Object.keys(AIRPORT_COORDINATES).find(k => cityName.includes(k) || k.includes(cityName));
+    if (matchedCityKey) {
+      return AIRPORT_COORDINATES[matchedCityKey];
+    }
+  }
+
+  if (!activityTitle) {
+    const angle = (dayNum * 60 + actIndex * 35) * (Math.PI / 180);
+    const radius = 0.003 + actIndex * 0.0015;
+    return [cityCoords[0] + Math.sin(angle) * radius, cityCoords[1] + Math.cos(angle) * radius];
+  }
+
+  for (const [landmarkKey, coords] of Object.entries(LANDMARK_COORDINATES)) {
+    if (titleLower.includes(landmarkKey.toLowerCase())) {
+      return coords;
+    }
+  }
+
+  const hash = ((cityName || '') + (activityTitle || '') + dayNum + actIndex).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  const angle = (hash % 360) * (Math.PI / 180);
+  const dist = 0.002 + ((hash % 10) * 0.0004);
+
+  return [
+    cityCoords[0] + Math.sin(angle) * dist,
+    cityCoords[1] + Math.cos(angle) * dist
+  ];
+};
 
 export const translateActivityTitle = (title, index, englishName) => {
   if (!title) return `Activity ${index + 1}: ${englishName} Highlights`;
