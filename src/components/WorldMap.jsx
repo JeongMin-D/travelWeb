@@ -42,8 +42,9 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
       scrollWheelZoom: true
     }).setView([20, 10], 3); // Centered to view Europe, Asia, Americas
 
-    // 2. CartoDB Dark Matter tile layer
-    L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=ko', {
+    // 2. CartoDB Dark Matter tile layer (Google Maps base with dynamic language)
+    const hl = isEn ? 'en' : 'ko';
+    L.tileLayer(`https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=${hl}`, {
       attribution: '&copy; Google Maps',
       maxZoom: 20
     }).addTo(map);
@@ -53,7 +54,7 @@ export default function WorldMap({ destinations, onSelectDestination, lang = 'en
     return () => {
       map.remove();
     };
-  }, []);
+  }, [isEn]);
 
   // Plot all cities as glowing markers when map is ready
   useEffect(() => {

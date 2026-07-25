@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { destinations, getPolishedItinerary, getClothingAndWeatherGuide } from '../data/destinations';
+import { destinations, getPolishedItinerary, getClothingAndWeatherGuide, COUNTRY_ENGLISH_MAPPING } from '../data/destinations';
 import PrintBrochureModal from './PrintBrochureModal';
 
 export default function ManualPlanner({ prefilledDestination, onClearPrefilled, lang = 'en' }) {
@@ -315,7 +315,7 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
                 >
                   <option value="">{isEn ? 'None (Other)' : '연동 안 함 (기타)'}</option>
                   {destinations.map(d => (
-                    <option key={d.id} value={d.id}>{isEn ? (d.englishName || d.name) : d.name} ({d.country})</option>
+                    <option key={d.id} value={d.id}>{isEn ? (d.englishName || d.name) : d.name} ({isEn ? (COUNTRY_ENGLISH_MAPPING[d.country] || d.country) : d.country})</option>
                   ))}
                 </select>
               </div>
