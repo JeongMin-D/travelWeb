@@ -424,9 +424,18 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
           {/* Column 3: Daily Timeline Editor Viewer */}
           <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div style={{ borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
-                {activeTrip.title}
-              </h3>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>
+                  {activeTrip.title}
+                </h3>
+                <button 
+                  onClick={() => window.print()}
+                  className="btn btn-primary"
+                  style={{ fontSize: '0.75rem', padding: '0.35rem 0.65rem' }}
+                >
+                  🖨️ {isEn ? 'Print / Save PDF' : '브로셔 인쇄 / PDF 저장'}
+                </button>
+              </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.35rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
                 <span>📍 {isEn ? 'Destination:' : '목적지:'} {activeTrip.destinationName}</span>
                 <span>💰 {isEn ? 'Total:' : '총 경비:'} <strong style={{ color: 'var(--color-success)' }}>{activeTrip.currencySymbol}{totalCost.toLocaleString()}</strong></span>

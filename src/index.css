@@ -926,3 +926,68 @@ input:focus, select:focus, textarea:focus {
   background-color: #e2e8f0;
 }
 
+/* ==========================================================================
+   Catalog Brochure Print & PDF Export Engine (@media print)
+   ========================================================================== */
+@media print {
+  /* Hide non-printable navigation, sidebar, top banner and buttons */
+  .top-banner,
+  .sidebar-left,
+  .footer-band,
+  .btn,
+  .control-badge-btn,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12pt !important;
+  }
+
+  .app-container {
+    border: none !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+
+  .glass-panel {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 1rem !important;
+    padding: 1.5rem !important;
+  }
+
+  /* Catalog Print Watermark / Header Seal */
+  .print-catalog-header {
+    display: block !important;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .print-catalog-header h1 {
+    font-family: 'Arial Black', sans-serif !important;
+    font-size: 22pt !important;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .badge {
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    background: #f1f5f9 !important;
+  }
+}
+
+

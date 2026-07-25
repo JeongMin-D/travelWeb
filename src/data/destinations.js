@@ -1844,3 +1844,67 @@ export const getPolishedItinerary = (destination, style, duration) => {
   }
   return polished;
 };
+
+// Weather & Clothing Recommendation Guide Engine
+export const getClothingAndWeatherGuide = (cityName, countryName, isEn = false) => {
+  const coords = getCityCoordinates(cityName, countryName);
+  const lat = coords[0];
+  
+  // Estimate temperature based on latitude and climate zone
+  let tempC = 25;
+  if (lat > 50) tempC = 19;       // Northern Europe / UK / Canada
+  else if (lat > 40) tempC = 22;  // Southern Europe / East Asia
+  else if (lat > 20) tempC = 29;  // Tropical / SE Asia
+  else if (lat < -20) tempC = 16; // Southern Hemisphere (Australia / NZ)
+  else if (lat < 0) tempC = 27;   // Equator
+
+  // Pseudo-random offset based on city name string hash for realistic diversity
+  const hash = (cityName || '').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  tempC = tempC + (hash % 7) - 3;
+
+  let icon = '🌤️';
+  let summary = isEn ? 'Partly Cloudy & Pleasant' : '구름 조금 & 온화함';
+  let outfit = '';
+
+  if (tempC >= 28) {
+    icon = '☀️';
+    summary = isEn ? 'Hot Tropical Climate' : '무더운 한여름 기후';
+    outfit = isEn 
+      ? 'Breathable summer wear: Sleeveless tops, shorts, linen shirts, sunglasses & sunblock.' 
+      : '한여름 통풍 우수 의류: 민소매, 숏팬츠, 린넨 셔츠, 선글라스 및 차단제 필수.';
+  } else if (tempC >= 22) {
+    icon = '🌤️';
+    summary = isEn ? 'Warm Summer Breeze' : '선선하고 따스한 날씨';
+    outfit = isEn 
+      ? 'Light casual outfit: Short sleeves, thin cotton pants, light cardigan for evening.' 
+      : '가벼운 캐주얼 복장: 반팔 셔츠, 얇은 면바지, 아침저녁 얇은 가디건.';
+  } else if (tempC >= 16) {
+    icon = '🍃';
+    summary = isEn ? 'Mild & Cool Air' : '선선한 쾌적한 기후';
+    outfit = isEn 
+      ? 'Layered spring/autumn wear: Long sleeves, hoodies, windbreaker & denim.' 
+      : '간절기 레이어드 룩: 긴팔 셔츠, 후드티, 바람막이 자켓, 청바지.';
+  } else if (tempC >= 8) {
+    icon = '🍂';
+    summary = isEn ? 'Chilly Autumn Breeze' : '쌀쌀한 가을/겨울 바람';
+    outfit = isEn 
+      ? 'Warm cozy layer: Trench coat, wool cardigan, knitwear & trousers.' 
+      : '따뜻한 감성 룩: 트렌치코트, 울 가디건, 니트, 슬랙스 준비.';
+  } else {
+    icon = '❄️';
+    summary = isEn ? 'Freezing Cold Climate' : '매서운 한파/겨울 기후';
+    outfit = isEn 
+      ? 'Heavy winter protection: Down padded jacket, thermal underwear, scarf & gloves.' 
+      : '방한 중점 복장: 롱패딩 점퍼, 방한 히트텍, 목도리, 장갑 필수.';
+  }
+
+  return {
+    tempC,
+    icon,
+    summary,
+    outfit,
+    lat: lat.toFixed(2),
+    lng: coords[1].toFixed(2)
+  };
+};
+

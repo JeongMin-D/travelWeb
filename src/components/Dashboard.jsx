@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BANNED_COUNTRIES, generateCustomDestination, COUNTRY_REGISTRY } from '../data/destinations';
+import { BANNED_COUNTRIES, generateCustomDestination, COUNTRY_REGISTRY, getClothingAndWeatherGuide } from '../data/destinations';
 
 export default function Dashboard({ destinations, onSelectDestination, onRegisterCustomDest, lang = 'en' }) {
   const isEn = lang === 'en';
@@ -362,6 +362,7 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
             {filtered.slice(0, visibleCount).map((dest, index) => {
               const tints = ['sage', 'salmon', 'peach', 'lime', 'sky', 'steel', 'periwinkle', 'olive'];
               const tint = tints[index % tints.length];
+              const weather = getClothingAndWeatherGuide(dest.name, dest.country, isEn);
               
               return (
                 <div 
@@ -390,6 +391,9 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
                         </span>
                         <span className="badge badge-amber">
                           {dest.currency} ({dest.currencySymbol})
+                        </span>
+                        <span className="badge badge-emerald">
+                          {weather.icon} {weather.tempC}°C
                         </span>
                       </div>
                       <p style={{ fontWeight: 700, fontSize: '13px', margin: '4px 0', fontFamily: 'var(--font-heading)' }}>

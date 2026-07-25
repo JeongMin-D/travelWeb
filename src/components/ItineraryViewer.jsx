@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates } from '../data/destinations';
+import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getClothingAndWeatherGuide } from '../data/destinations';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -257,12 +257,32 @@ export default function ItineraryViewer({
     }
   };
 
+  const weatherInfo = getClothingAndWeatherGuide(destination.name, destination.country, isEn);
+
   return (
     <div className="fade-in">
-      {/* Back button */}
-      <button onClick={onBack} className="btn btn-secondary" style={{ marginBottom: '1.5rem' }}>
-        {isEn ? '⬅️ Back to Destinations' : '⬅️ 목록으로 돌아가기'}
-      </button>
+      {/* Top Action Bar with Print/PDF Export Button */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+        <button onClick={onBack} className="btn btn-secondary">
+          {isEn ? '⬅️ Back to Destinations' : '⬅️ 목록으로 돌아가기'}
+        </button>
+
+        <button 
+          onClick={() => window.print()} 
+          className="btn btn-primary"
+          style={{ background: '#000000', color: '#ffffff', border: '1px solid #000000' }}
+        >
+          🖨️ {isEn ? 'Print Brochure / Export PDF' : '카탈로그 브로셔 인쇄 / PDF 저장'}
+        </button>
+      </div>
+
+      {/* Print Only Header Seal */}
+      <div className="print-catalog-header" style={{ display: 'none' }}>
+        <h1>VOYAGE GLOBAL SMART TRAVEL BROCHURE</h1>
+        <p style={{ margin: '4px 0 0 0', fontSize: '11pt' }}>
+          Destination: {destination.name} ({destination.englishName}), {destination.country} | Duration: {duration} Days
+        </p>
+      </div>
 
       {/* Destination Hero Panel */}
       <div 
@@ -311,6 +331,29 @@ export default function ItineraryViewer({
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', maxWidth: '700px' }}>
             {destination.description}
           </p>
+        </div>
+      </div>
+
+      {/* Weather & Clothing Recommendation Guide Panel */}
+      <div className="glass-panel" style={{ marginBottom: '2rem', background: 'rgba(15, 23, 42, 0.4)', borderLeft: '4px solid var(--color-accent)' }}>
+        <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ fontSize: '3rem', lineHeight: 1 }}>{weatherInfo.icon}</div>
+          <div style={{ flex: 1, minWidth: '240px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
+              <span className="badge badge-amber" style={{ fontSize: '11px', fontWeight: 800 }}>
+                🌡️ {weatherInfo.tempC}°C
+              </span>
+              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+                {weatherInfo.summary} (Lat: {weatherInfo.lat}°)
+              </span>
+            </div>
+            <h4 style={{ fontSize: '0.9rem', fontWeight: 800, margin: '0.25rem 0', color: 'var(--color-accent)' }}>
+              👕 {isEn ? 'Recommended Outfit & Packing Guide:' : '추천 여행 복장 & 코디 가이드:'}
+            </h4>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: 1.4 }}>
+              {weatherInfo.outfit}
+            </p>
+          </div>
         </div>
       </div>
 
