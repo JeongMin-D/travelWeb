@@ -1,4 +1,5 @@
 import { CITY_ITINERARY_DATA } from "./cityItineraryData";
+import { buildDynamicItinerary } from "../utils/itineraryEngine";
 export const WIKI_TAGLINE_KO = {
   "서울": "서울특별시(서울特別市)는 대한민국의 수도이자 문화·인문·정치·경제 중심지 역할을 하는 도시로, 경기도와 인천광역시까지 아우르는 수도권의 중심지 기능을 하고 있다.",
   "경주": "경주시(慶州市)는 대한민국 경상북도 동남부에 있는 시이다.",
@@ -4637,57 +4638,21 @@ export const getCityCoordinates = (cityName, countryName) => {
 
 // Dynamic itinerary complete/fill engine
 export const getPolishedItinerary = (destination, style, duration) => {
-  const rawStyleData = destination.itineraries[style] || Object.values(destination.itineraries)[0] || {};
-  const polished = { ...rawStyleData };
-  
-  // Check if we have neighbors
-  const neighbors = NEIGHBOR_MAPPING[destination.name] || [];
-  
-  // Find country registry config
-  const countryReg = COUNTRY_REGISTRY[destination.country] || {
-    landmarks: ["로컬 랜드마크", "감성 쇼핑 거리", "푸른 시립 공원", "유서 깊은 전통 광장"],
-    foods: ["로컬 시그니처 볶음 요리", "현지인 추천 숨은 찌개 런치", "달콤한 특산 수제 디저트", "아름다운 야경과 함께하는 전통 코스 요리"]
-  };
+  const dynamicItinerary = buildDynamicItinerary(destination.name, destination.country, style, duration);
+  const rawStyleData = destination.itineraries?.[style] || Object.values(destination.itineraries || {})[0] || {};
 
-  // Check if we have specific city data
-  const cityData = CITY_ITINERARY_DATA[destination.name];
-  
-  const reg = {
-    ...countryReg,
-    landmarks: cityData && cityData.landmarks ? cityData.landmarks : countryReg.landmarks,
-    foods: cityData && cityData.foods ? cityData.foods : countryReg.foods,
-    activities: cityData && cityData.activities ? cityData.activities : ["이색적인 로컬 투어", "짜릿한 야외 액티비티 체험"]
-  };
+  const polished = {};
 
-  // Make sure all days from 1 to duration are filled!
   for (let day = 1; day <= duration; day++) {
-    if (!polished[day] || polished[day].length === 0) {
-      // We need to fill this day!
-      if (day === 4 && neighbors.length > 0) {
-        const neighborCity = neighbors[0];
-        polished[day] = [
-          { time: "09:30", title: "🚗 인접 도시 [" + neighborCity + "] 당일치기 여행", desc: destination.name + " 근교에 인접한 아름다운 이웃 도시 [" + neighborCity + "](으)로 출발하여 당일치기 여행을 즐깁니다." },
-          { time: "12:30", title: "🍴 [" + neighborCity + "] 지역 특선 점심", desc: "이웃 도시 [" + neighborCity + "]에서만 맛볼 수 있는 유명한 로컬 맛집 요리를 맛봅니다." },
-          { time: "15:00", title: "📸 [" + neighborCity + "] 시그니처 명소 산책", desc: "[" + neighborCity + "]의 대표 랜드마크와 골목길을 둘러보며 감성 가득한 스냅 사진을 촬영합니다." },
-          { time: "18:00", title: "🏡 " + destination.name + " 복귀 및 저녁 식사", desc: "본진인 " + destination.name + "(으)로 돌아와 하루의 긴장과 피로를 푸는 기분 좋은 만찬을 나눕니다." }
-        ];
-      } else if (day === duration) {
-        polished[day] = [
-          { time: "10:00", title: "🌿 평화로운 [" + (reg.landmarks[2] || "로컬 공원") + "] 산책", desc: "여행의 마지막 날, 맑은 공기를 쐬며 여유롭게 숲과 정원을 거닙니다." },
-          { time: "12:00", title: "🛍️ 로컬 소품샵 및 기념품 쇼핑", desc: "가족들과 친구들에게 나누어 줄 특산품, 수공예품, 마그넷 등을 구매합니다." },
-          { time: "13:30", title: "🥞 마지막 대표 특식 점심", desc: "떠나기 아쉬운 마음을 달래줄 [" + (reg.foods[2] || "대표 디저트 브런치") + "] 맛있는 한 끼를 해결합니다." },
-          { time: "16:00", title: "✈️ 역/공항 이동 및 홈타운 복귀", desc: "수하물을 다시 한번 꼼꼼하게 정리한 뒤, 안전하게 출발 수속을 진행하고 여행을 마무리합니다." }
-        ];
-      } else {
-        polished[day] = [
-          { time: "10:00", title: "🏛️ 미탐방 명소 [" + (reg.landmarks[1] || "중심 광장") + "] 방문", desc: destination.name + "의 아직 가보지 못한 또 다른 유명 도보 코스를 탐방합니다." },
-          { time: "12:30", title: "🍛 현지식 점심 식사 [" + (reg.foods[1] || "전통 런치") + "]", desc: "가성비가 뛰어나고 로컬 향기가 물씬 풍기는 골목 식당에서 든든하게 한 그릇 합니다." },
-          { time: "15:00", title: "☕ 도심 전망 카페에서의 휴식", desc: "멋진 시티뷰나 오션뷰가 펼쳐지는 노천 테라스에서 티 타임을 가집니다." },
-          { time: "18:30", title: "🌃 아름다운 스카이라인 야경 감상", desc: destination.name + "의 가장 대중적인 전망대나 타워에 올라 환상적인 불빛 쇼를 보며 저녁을 즐깁니다." }
-        ];
-      }
+    if (rawStyleData[day] && rawStyleData[day].length > 0) {
+      // Use handwritten itinerary for this day
+      polished[day] = rawStyleData[day];
+    } else {
+      // Use dynamic time-slot non-repeating itinerary for this day
+      polished[day] = dynamicItinerary[day] || [];
     }
   }
+
   return polished;
 };
 

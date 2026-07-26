@@ -521,10 +521,26 @@ export default function ItineraryViewer({
                     {dayActivities.map((act, actIndex) => {
                       const displayTitle = isEn ? translateActivityTitle(act.title, actIndex, translatedDest.name) : act.title;
                       const displayDesc = isEn ? translateActivityDesc(act.desc, translatedDest.name) : act.desc;
+
+                      // Category badge helper
+                      let catBadge = null;
+                      if (act.categoryType === 'restaurant' || act.title.includes('점심') || act.title.includes('저녁') || act.title.includes('식사') || act.title.includes('만찬')) {
+                        catBadge = <span className="badge badge-amber" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🍽️ Dining' : '🍽️ 식당'}</span>;
+                      } else if (act.categoryType === 'cafe' || act.title.includes('카페') || act.title.includes('디저트') || act.title.includes('티 타임') || act.title.includes('브런치')) {
+                        catBadge = <span className="badge badge-indigo" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '☕ Cafe/Dessert' : '☕ 카페/디저트'}</span>;
+                      } else if (act.categoryType === 'activity' || act.title.includes('체험') || act.title.includes('투어') || act.title.includes('레저') || act.title.includes('스파')) {
+                        catBadge = <span className="badge badge-cyan" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🎡 Activity' : '🎡 액티비티'}</span>;
+                      } else {
+                        catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🏛️ Sightseeing' : '🏛️ 관광지'}</span>;
+                      }
+
                       return (
                         <div key={actIndex} className="timeline-item">
                           <div className="timeline-time">{act.time}</div>
-                          <div className="timeline-title">{displayTitle}</div>
+                          <div className="timeline-title" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '4px' }}>
+                            {catBadge}
+                            <span>{displayTitle}</span>
+                          </div>
                           <div className="timeline-desc">{displayDesc}</div>
                         </div>
                       );
