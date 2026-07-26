@@ -524,14 +524,16 @@ export default function ItineraryViewer({
 
                       // Category badge helper
                       let catBadge = null;
-                      if (act.categoryType === 'restaurant' || act.title.includes('점심') || act.title.includes('저녁') || act.title.includes('식사') || act.title.includes('만찬')) {
+                      if (act.categoryType === 'relaxation' || act.title.includes('힐링') || act.title.includes('산책') || act.title.includes('숲길') || act.title.includes('피크닉')) {
+                        catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🌿 Relaxation' : '🌿 힐링/휴식'}</span>;
+                      } else if (act.categoryType === 'restaurant' || act.title.includes('점심') || act.title.includes('저녁') || act.title.includes('식사') || act.title.includes('만찬')) {
                         catBadge = <span className="badge badge-amber" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🍽️ Dining' : '🍽️ 식당'}</span>;
                       } else if (act.categoryType === 'cafe' || act.title.includes('카페') || act.title.includes('디저트') || act.title.includes('티 타임') || act.title.includes('브런치')) {
                         catBadge = <span className="badge badge-indigo" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '☕ Cafe/Dessert' : '☕ 카페/디저트'}</span>;
                       } else if (act.categoryType === 'activity' || act.title.includes('체험') || act.title.includes('투어') || act.title.includes('레저') || act.title.includes('스파')) {
                         catBadge = <span className="badge badge-cyan" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🎡 Activity' : '🎡 액티비티'}</span>;
                       } else {
-                        catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🏛️ Sightseeing' : '🏛️ 관광지'}</span>;
+                        catBadge = <span className="badge badge-purple" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🏛️ Sightseeing' : '🏛️ 명소/관광'}</span>;
                       }
 
                       return (
