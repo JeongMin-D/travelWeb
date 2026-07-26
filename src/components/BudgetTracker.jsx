@@ -163,15 +163,14 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
     }
   };
 
-  const currencySymbols = {
-    KRW: '₩',
-    USD: '$',
-    JPY: '¥',
-    EUR: '€',
-    GBP: '£',
-    AUD: 'A$',
-    THB: '฿',
-    IDR: 'Rp'
+  const getCurrencySymbol = (curr) => {
+    try {
+      const parts = new Intl.NumberFormat('en-US', { style: 'currency', currency: curr }).formatToParts(0);
+      const symbol = parts.find(p => p.type === 'currency').value;
+      return symbol;
+    } catch(e) {
+      return '';
+    }
   };
 
   return (
@@ -271,14 +270,14 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
                   style={{ width: '100%', padding: '0.5rem' }}
                 >
                   {Object.keys(rates).map(curr => (
-                    <option key={curr} value={curr}>{curr} ({currencySymbols[curr] || ''})</option>
+                    <option key={curr} value={curr}>{curr} {getCurrencySymbol(curr) ? `(${getCurrencySymbol(curr)})` : ''}</option>
                   ))}
                 </select>
               </div>
 
               <div>
                 <label style={{ display: 'block', marginBottom: '0.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  {isEn ? `Amount (${currencySymbols[expCurrency]})` : `결제 금액 (${currencySymbols[expCurrency]})`}
+                  {isEn ? `Amount (${getCurrencySymbol(expCurrency) || expCurrency})` : `결제 금액 (${getCurrencySymbol(expCurrency) || expCurrency})`}
                 </label>
                 <input
                   type="number"
@@ -358,7 +357,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
             </select>
 
             <div style={{ flex: 1, minWidth: '100px', fontWeight: 700, fontSize: '1rem', color: 'var(--color-success)', paddingLeft: '0.5rem' }}>
-              = {currencySymbols[convToCurr] || ''}{convResult.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}
+              = {getCurrencySymbol(convToCurr)}{convResult.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}
             </div>
           </div>
         </div>
@@ -406,7 +405,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
                 </h4>
                 
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                  ⏱️ {e.date} | {isEn ? 'Amount:' : '현지 결제금액:'} {currencySymbols[e.currency] || ''}{e.amount.toLocaleString()} ({e.currency})
+                  ⏱️ {e.date} | {isEn ? 'Amount:' : '현지 결제금액:'} {getCurrencySymbol(e.currency)}{e.amount.toLocaleString()} ({e.currency})
                 </div>
               </div>
 

@@ -131,8 +131,8 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
           {isEn 
-            ? 'Browse 568 cities worldwide, view custom itineraries, and plan your dream trip.' 
-            : '전 세계 568개 도시의 맞춤형 추천 일정과 여행 정보를 자유롭게 탐색해보세요.'}
+            ? 'Browse 906 cities worldwide, view custom itineraries, and plan your dream trip.' 
+            : '전 세계 906개 도시의 맞춤형 추천 일정과 여행 정보를 자유롭게 탐색해보세요.'}
         </p>
       </div>
 

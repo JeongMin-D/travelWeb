@@ -18,6 +18,10 @@ import { poiDeepGangneung } from './poi/poi_deep_gangneung';
 import { poiDeepJeonju } from './poi/poi_deep_jeonju';
 import { poiDeepSokcho } from './poi/poi_deep_sokcho';
 import { poiDeepTongyeong } from './poi/poi_deep_tongyeong';
+import { poiDomesticMissing } from './poi/poi_domestic_missing';
+import { poiJapan1 } from './poi/poi_japan_1';
+import { poiJapan2 } from './poi/poi_japan_2';
+import { poiGlobalMissing } from './poi/poi_global_missing';
 import { poiDeepGunsan } from './poi/poi_deep_gunsan';
 import { poiDeepAndong } from './poi/poi_deep_andong';
 import { poiDeepPohang } from './poi/poi_deep_pohang';
@@ -30,6 +34,7 @@ import { poiDeepDanyang } from './poi/poi_deep_danyang';
 import { poiDeepChuncheon } from './poi/poi_deep_chuncheon';
 import { poiDeepGapyeong } from './poi/poi_deep_gapyeong';
 import { poiDeepKoreaOthers } from './poi/poi_deep_korea_others';
+import { poiGlobalOthers } from './poi/poi_global_others';
 import { poiJapan } from './poi/poi_japan';
 import { poiSeasia } from './poi/poi_seasia';
 import { poiEurope } from './poi/poi_europe';
@@ -73,6 +78,12 @@ export const CITY_POI_DATABASE = {
   ...poiDeepGapyeong,
   // Remaining 117+ Domestic Cities
   ...poiDeepKoreaOthers,
+  ...poiDomesticMissing,
+  ...poiJapan1,
+  ...poiJapan2,
+  ...poiGlobalMissing,
+  // 154 Global Cities
+  ...poiGlobalOthers,
   "교토": [
     {
       id: "kyoto_att_1", name: "금각사 (킨카쿠지)", category: "attraction", subCategory: "heritage",

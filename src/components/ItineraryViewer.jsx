@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getLandmarkCoordinates, getClothingAndWeatherGuide, getTranslatedDestination, translateChecklistItem, translateActivityTitle, translateActivityDesc, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
+import { regenerateSlot } from '../utils/itineraryEngine';
 import PrintBrochureModal from './PrintBrochureModal';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -121,7 +122,51 @@ export default function ItineraryViewer({
   };
 
   // Always use original Korean name for itinerary lookup (keys in data are Korean)
-  const activeItineraryData = getPolishedItinerary(destination, style, duration);
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [activeItineraryData, setActiveItineraryData] = useState({});
+
+  useEffect(() => {
+    setIsGenerating(true);
+    const timer = setTimeout(() => {
+      const data = getPolishedItinerary(destination, style, duration);
+      setActiveItineraryData(data);
+      setIsGenerating(false);
+    }, 1500); // Simulate AI calculation time
+    return () => clearTimeout(timer);
+  }, [destination, style, duration]);
+
+  const handleRegenerateSlot = (dayNum, actIndex, currentCat) => {
+    const usedIds = [];
+    Object.values(activeItineraryData).forEach(dayArr => {
+      dayArr.forEach(act => {
+        if (act.id) usedIds.push(act.id);
+      });
+    });
+
+    const dayZone = ['center', 'east', 'west', 'north', 'south'][(dayNum - 1) % 5];
+    const newSpot = regenerateSlot(destination.name, destination.country, style, currentCat, dayZone, usedIds);
+    
+    if (newSpot) {
+      setActiveItineraryData(prev => {
+        const newData = { ...prev };
+        const newAct = { ...newData[dayNum][actIndex] };
+        newAct.id = newSpot.id;
+        // Keep the emoji prefix if it exists
+        const parts = newAct.title.split(' ');
+        if (parts.length > 1 && /[\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF]/.test(parts[0])) {
+          newAct.title = parts[0] + ' ' + newSpot.name;
+        } else {
+          newAct.title = newSpot.name;
+        }
+        newAct.desc = newSpot.desc;
+        newAct.categoryType = newSpot.category || newAct.categoryType;
+        newData[dayNum][actIndex] = newAct;
+        return newData;
+      });
+    } else {
+      alert(isEn ? 'No more alternative places available for this category.' : '이 카테고리의 대체 가능한 다른 장소가 더 이상 없습니다.');
+    }
+  };
   const neighbors = NEIGHBOR_MAPPING[destination.name] || [];
 
   const [isVisited, setIsVisited] = useState(false);
@@ -502,7 +547,20 @@ export default function ItineraryViewer({
           </h3>
 
           {/* Generate Days */}
-          {Array.from({ length: duration }).map((_, i) => {
+          {isGenerating ? (
+            <div style={{ padding: '3rem 1rem', textAlign: 'center', color: 'var(--color-accent)' }}>
+              <style>{`
+                @keyframes spin {
+                  0% { transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); }
+                }
+              `}</style>
+              <div className="spinner" style={{ margin: '0 auto 1rem auto', width: '40px', height: '40px', border: '3px solid rgba(255,255,255,0.1)', borderTopColor: 'var(--color-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+              <h4 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>{isEn ? 'AI is generating the optimal itinerary...' : 'AI가 최적의 일정을 계산 중입니다...'}</h4>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{isEn ? 'Analyzing thousands of POIs for the best route.' : '해당 도시의 수많은 명소와 테마를 분석하여 동선을 짜고 있습니다.'}</p>
+            </div>
+          ) : (
+          Array.from({ length: duration }).map((_, i) => {
             const dayNum = i + 1;
             const dayActivities = activeItineraryData[dayNum] || [];
 
@@ -570,8 +628,18 @@ export default function ItineraryViewer({
                               border: '3px solid var(--color-bg)' 
                             }}></div>
                             
-                            <div className="timeline-time" style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-                              {act.time}
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                              <div className="timeline-time" style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '1.1rem' }}>
+                                {act.time}
+                              </div>
+                              <button 
+                                onClick={() => handleRegenerateSlot(dayNum, actIndex, act.categoryType)}
+                                className="btn"
+                                style={{ background: 'rgba(255,255,255,0.05)', color: 'var(--text-muted)', fontSize: '0.75rem', padding: '0.25rem 0.5rem', border: '1px solid var(--glass-border)' }}
+                                title={isEn ? "Swap to another place" : "다른 장소로 교체하기"}
+                              >
+                                🔄 {isEn ? 'Swap' : '교체'}
+                              </button>
                             </div>
                             <div className="timeline-title" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '4px', fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
                               {catBadge}
@@ -588,7 +656,8 @@ export default function ItineraryViewer({
                 )}
               </div>
             );
-          })}
+          })
+          )}
         </div>
 
         {/* Right Side: Checklist */}

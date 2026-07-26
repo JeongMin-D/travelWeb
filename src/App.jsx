@@ -111,7 +111,7 @@ function App() {
         </div>
         <div className="top-banner-right">
           <span className="phone-callout">
-            {isEn ? '568 GLOBAL CITIES' : '전 세계 568개 도시'}
+            {isEn ? '906 GLOBAL CITIES' : '전 세계 906개 도시'}
           </span>
           <div className="buy-a-dell-sticker">
             VOYAGE <span className="purple-sticker-a">SMART</span> PLANNER
@@ -175,8 +175,8 @@ function App() {
           <div className="cta-block-red">
             <h3>{isEn ? 'VOYAGE SERVICE GUIDE' : 'VOYAGE 서비스 안내'}</h3>
             {isEn 
-              ? 'Explore 568 cities worldwide, generate custom 1-14 day itineraries, track real-time budgets, and log your travel memories—all in one place!'
-              : '전 세계 568개 도시 검색부터 1~14일 맞춤 일정 생성, 실시간 예산/환율 계산기, 다녀온 도시 기록 메모까지 한곳에서 스마트하게 이용해보세요!'}
+              ? 'Explore 906 cities worldwide, generate custom 1-14 day itineraries, track real-time budgets, and log your travel memories—all in one place!'
+              : '전 세계 906개 도시 검색부터 1~14일 맞춤 일정 생성, 실시간 예산/환율 계산기, 다녀온 도시 기록 메모까지 한곳에서 스마트하게 이용해보세요!'}
           </div>
 
           {/* Service Seal Badge */}
@@ -184,7 +184,7 @@ function App() {
             <div className="cert-seal">
               <div>VOYAGE SMART</div>
               <div style={{ fontSize: '6px', margin: '2px 0' }}>★★★★★</div>
-              <div>568 CITIES GUIDE</div>
+              <div>906 CITIES GUIDE</div>
             </div>
           </div>
         </aside>
