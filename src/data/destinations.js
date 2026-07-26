@@ -1,3 +1,4 @@
+import { CITY_ITINERARY_DATA } from "./cityItineraryData";
 export const WIKI_TAGLINE_KO = {
   "서울": "서울특별시(서울特別市)는 대한민국의 수도이자 문화·인문·정치·경제 중심지 역할을 하는 도시로, 경기도와 인천광역시까지 아우르는 수도권의 중심지 기능을 하고 있다.",
   "경주": "경주시(慶州市)는 대한민국 경상북도 동남부에 있는 시이다.",
@@ -1949,14 +1950,20 @@ const premiumDestinations = [
       healing: {
         1: [
           { time: "11:00", title: "호놀룰루 공항 도착 & 오픈카 렌트", desc: "시원한 태평양 하와이 바람을 맞으며 호텔로 렌트카 드라이브합니다." },
-          { time: "15:00", title: "와이키키 해변 백사장 누워있기", desc: "세계적으로 가장 유명한 모래사장에 타월을 깔고 지상낙원 햇빛을 쬡니다." }
+          { time: "12:30", title: "호텔 체크인 & 울프강 스테이크 하우스", desc: "고급스러운 버터향 가득 스테이크로 여행의 첫 시작을 화려하게 장식합니다." },
+          { time: "15:00", title: "와이키키 해변 백사장 휴식", desc: "세계적으로 가장 유명한 모래사장에 타월을 깔고 지상낙원 햇빛을 쬡니다." },
+          { time: "18:00", title: "칼라카우아 애비뉴 쇼핑 & 저녁 산책", desc: "로열 하와이안 센터와 와이키키 비치워크의 활기찬 야간 거리를 걷습니다." }
         ],
         2: [
           { time: "08:00", title: "하나우마베이 산호초 스노클링", desc: "자연 보호 구역으로 지정된 분화구 해변에서 투명한 물 아래 알록달록한 열대어들과 수영합니다." },
-          { time: "13:00", title: "지오반니 새우 트럭 갈릭 버터 쉬림프", desc: "마늘 양념 쉬림프 한 판을 맛있게 뜯고 노스쇼어 파도를 구경합니다." }
+          { time: "13:00", title: "지오반니 새우 트럭 & 카후쿠 옥수수", desc: "마늘 양념 쉬림프 한 판과 달콤한 로컬 옥수수를 맛보며 허기를 채웁니다." },
+          { time: "15:00", title: "노스쇼어 선셋 비치 산책", desc: "하와이 최고의 거대 파도와 바다 거북을 구경하고 환상적인 노을을 마주합니다." },
+          { time: "19:00", title: "폴리네시안 문화센터 디너쇼", desc: "전통 불꽃 춤과 루아우식 돼지 바비큐로 잊지 못할 하와이안 밤을 보냅니다." }
         ],
         3: [
-          { time: "09:30", title: "다이아몬드 헤드 분화구 하이킹", desc: "왕복 2시간의 산책 코스로, 정상에 올라 푸른 바다와 와이키키 빌딩 마천루를 한눈에 봅니다." }
+          { time: "07:30", title: "다이아몬드 헤드 분화구 하이킹", desc: "왕복 2시간의 산책 코스로, 정상에 올라 푸른 바다와 와이키키 마천루를 한눈에 담습니다." },
+          { time: "10:30", title: "아사이볼 & 코나 커피 브런치", desc: "하와이 대표 건강식 과일 스무디 볼과 진한 코나 커피로 완벽한 아침을 엽니다." },
+          { time: "13:00", title: "알라모아나 센터 마지막 쇼핑", desc: "하와이 최대 쇼핑몰에서 기념품, 쿠키, 의류를 구매하고 여행을 아쉽게 마무리합니다." }
         ]
       }
     }
@@ -2009,14 +2016,21 @@ const premiumDestinations = [
       activity: {
         1: [
           { time: "09:00", title: "오페라 하우스 외관 & 로열 보타닉 가든", desc: "시드니의 대표 랜드마크를 구경하고, 바다 전망 잔디밭을 산책합니다." },
-          { time: "14:30", title: "시드니 천문대 언덕 휴식", desc: "하버 브릿지가 한눈에 내려다보이는 명당 언덕에서 돗자리를 펴고 누워 여유를 즐깁니다." }
+          { time: "11:30", title: "달링 하버 야외 테라스 점심", desc: "햇살 가득한 달링 하버의 펍에서 피시 앤 칩스와 로컬 맥주를 즐깁니다." },
+          { time: "14:30", title: "시드니 천문대 언덕 휴식", desc: "하버 브릿지가 한눈에 내려다보이는 명당 언덕에서 돗자리를 펴고 누워 여유를 즐깁니다." },
+          { time: "18:00", title: "서큘러 키 스카이라인 야경 크루즈", desc: "석양이 지는 항구를 유람선으로 돌며 스테이크 디너와 화려한 시드니 야경을 감상합니다." }
         ],
         2: [
           { time: "09:00", title: "블루마운틴 국립공원 데이투어", desc: "유칼립투스 잎에서 나오는 유분 때문에 푸른빛을 띠는 그랜드 캐년급 대협곡을 보러 갑니다." },
-          { time: "11:30", title: "시닉 월드 케이블카 & 궤도열차", desc: "52도 경사의 세계에서 가장 가파른 열차를 타고 원시림 협곡 속을 아슬아슬하게 통과합니다." }
+          { time: "11:30", title: "시닉 월드 케이블카 & 궤도열차", desc: "52도 경사의 세계에서 가장 가파른 열차를 타고 원시림 협곡 속을 아슬아슬하게 통과합니다." },
+          { time: "14:00", title: "에코 포인트 전망대 트레킹", desc: "세 자매 봉을 가장 잘 볼 수 있는 포인트에서 웅장한 대자연을 눈에 담습니다." },
+          { time: "19:00", title: "페더데일 야생동물원 야간 방문", desc: "캥거루와 왈라비에게 먹이를 주고 코알라와 함께 특별한 사진을 남깁니다." }
         ],
         3: [
-          { time: "09:30", title: "본다이 비치 서핑 체험", desc: "거대한 파도가 밀려오는 본다이 비치에서 비치 클럽 수영장 아이스버그를 관람하고 서핑을 체험합니다." }
+          { time: "09:30", title: "본다이 비치 서핑 체험", desc: "거대한 파도가 밀려오는 본다이 비치에서 비치 클럽 수영장 아이스버그를 관람하고 서핑을 체험합니다." },
+          { time: "12:30", title: "해변가 뷰 브런치 런치", desc: "아보카도 샌드위치와 호주 시그니처 플랫 화이트 커피로 에너지를 보충합니다." },
+          { time: "15:00", title: "본다이 투 쿠지 코스탈 워크", desc: "깎아지른 절벽과 끝없는 태평양을 곁에 두고 걷는 호주 최고의 산책로 코스를 정복합니다." },
+          { time: "18:00", title: "QVB(퀸 빅토리아 빌딩) 마지막 쇼핑", desc: "세상에서 가장 아름다운 쇼핑몰에서 기념품과 영양제를 구매하며 여행을 마무리합니다." }
         ]
       }
     }
@@ -3369,7 +3383,7 @@ export const COUNTRY_REGISTRY = {
 // Generates an itinerary with localized details, foods, and landmarks based on the resolved country registry
 const generateProceduralPremiumItinerary = (cityName, countryName, style) => {
   // Find registry config. If country doesn't exist, fallback to Korea or USA template
-  const reg = COUNTRY_REGISTRY[countryName] || {
+  const countryReg = COUNTRY_REGISTRY[countryName] || {
     type: "international",
     continent: "Asia",
     currency: "USD",
@@ -3378,13 +3392,23 @@ const generateProceduralPremiumItinerary = (cityName, countryName, style) => {
     foods: ["로컬 시그니처 전통 요리", "현지인 추천 숨은 맛집 런치", "달콤한 특산품 수제 디저트", "아름다운 야경과 함께하는 디너 요리"]
   };
 
+  // Check if we have specific city data
+  const cityData = CITY_ITINERARY_DATA[cityName];
+  
+  const reg = {
+    ...countryReg,
+    landmarks: cityData && cityData.landmarks ? cityData.landmarks : countryReg.landmarks,
+    foods: cityData && cityData.foods ? cityData.foods : countryReg.foods,
+    activities: cityData && cityData.activities ? cityData.activities : ["이색적인 로컬 투어", "짜릿한 야외 액티비티 체험"]
+  };
+
   const isDomestic = reg.type === "domestic";
 
   if (style === "healing") {
     return {
       1: [
         { time: "10:00", title: `${isDomestic ? "기차/차량" : "비행기"} 도착 및 체크인`, desc: `${cityName}에 도착하여 짐을 가볍게 풀고 여정을 시작합니다.` },
-        { time: "12:00", title: `현지식 첫 점심 식사`, desc: `${countryName}의 첫 미식으로, 부드러운 [${reg.foods[0]}]을(를) 맛봅니다.` },
+        { time: "12:00", title: `현지식 첫 점심 식사`, desc: `${cityName}의 첫 미식으로, 부드러운 [${reg.foods[0]}]을(를) 맛봅니다.` },
         { time: "14:30", title: `${reg.landmarks[0]} 산책`, desc: `가장 상징적인 랜드마크인 [${reg.landmarks[0]}] 근처를 천천히 걸으며 자연과 건축물의 정취를 느낍니다.` },
         { time: "17:30", title: `전망 좋은 카페 휴식`, desc: `현지인들이 추천하는 로컬 카페에 들러 따뜻한 차와 [${reg.foods[3] || reg.foods[0]}] 디저트를 음미합니다.` }
       ],
@@ -3392,7 +3416,7 @@ const generateProceduralPremiumItinerary = (cityName, countryName, style) => {
         { time: "09:30", title: `아침 숲길/공원 치유 도보 산책`, desc: `초록빛 자연이 보존된 [${reg.landmarks[2]}]에서 새소리를 들으며 명상의 걷기를 실행합니다.` },
         { time: "12:00", title: `건강한 자연 식단 웰빙 런치`, desc: `담백하고 정갈하게 조리된 [${reg.foods[1]}] 정식으로 속 편한 식사를 즐깁니다.` },
         { time: "14:30", title: `박물관/미술관 실내 힐링 투어`, desc: `시각적으로 차분함을 주는 대표 갤러리에 입장하여 거장들의 고요한 조각상과 회화를 감상합니다.` },
-        { time: "18:00", title: `낭만 가득한 강변/해변 노을 감상`, desc: `${cityName}의 대표 물길을 따라 붉게 번지는 노을을 눈에 담으며 하루를 편안하게 정리합니다.` }
+        { time: "18:00", title: `낭만 가득한 강변/해변 노을 감상`, desc: `${cityName}의 대표 풍경을 따라 붉게 번지는 노을을 눈에 담으며 하루를 편안하게 정리합니다.` }
       ],
       3: [
         { time: "10:00", title: `${reg.landmarks[1]} 플리마켓 투어`, desc: `오래된 한적한 거리 [${reg.landmarks[1]}]에 열리는 플리마켓에서 아기자기한 수공예 특산 소품을 고릅니다.` },
@@ -3413,12 +3437,12 @@ const generateProceduralPremiumItinerary = (cityName, countryName, style) => {
       2: [
         { time: "09:00", title: `이색 지형 스포츠/하이킹 도전`, desc: `경치가 눈부신 [${reg.landmarks[0]}] 정상까지 씩씩하게 오르며 심장이 터질 듯한 트레킹을 수행합니다.` },
         { time: "12:30", title: `현지식 매콤 칼칼한 정통 점심`, desc: `땀 흘린 보상으로 새콤 매콤하고 깊은 맛의 [${reg.foods[1]}] 요리를 든든하게 한 그릇 비워냅니다.` },
-        { time: "14:30", title: `짜릿한 야외 카트/짚라인 체험`, desc: "가장 짜릿한 속도감을 자랑하는 레저 코스에 탑승해 비명을 지르며 공중 비행을 완료합니다." },
-        { time: "18:30", title: `웅장한 고대 역사 성곽 투어`, desc: `거대하고 오랜 이야기가 보존된 [${reg.landmarks[2]}] 성벽에 조명이 켜질 때 고딕 역사의 분위기를 만끽합니다.` }
+        { time: "14:30", title: `${reg.activities[0] || "짜릿한 야외 액티비티"} 체험`, desc: "가장 인기 있는 로컬 코스에 탑승해 색다른 재미를 즐겨봅니다." },
+        { time: "18:30", title: `웅장한 역사 랜드마크 야간 투어`, desc: `오랜 이야기가 보존된 [${reg.landmarks[2]}]에 조명이 켜질 때 특별한 분위기를 만끽합니다.` }
       ],
       3: [
         { time: "09:30", title: `마지막 날 대형 쇼핑몰 클리어`, desc: `${cityName} 최대 규모의 메가 몰을 누비며 의류, 소품, 화장품 쇼핑 카트를 가득 채웁니다.` },
-        { time: "12:30", title: `달콤 쌉싸름한 로컬 망고/초콜릿 브런치`, desc: `구운 빵과 함께 제공되는 부드러운 [${reg.foods[2]}] 세트로 아쉬운 마무리를 합니다.` },
+        { time: "12:30", title: `달콤 쌉싸름한 로컬 브런치`, desc: `부드러운 [${reg.foods[2]}] 세트로 여행의 아쉬운 마무리를 합니다.` },
         { time: "15:00", title: `추억의 탑승 완료`, desc: "탑승 구역으로 신속히 이동해 안전하게 탑승을 마치고 여정을 종료합니다." }
       ]
     };
@@ -4620,9 +4644,19 @@ export const getPolishedItinerary = (destination, style, duration) => {
   const neighbors = NEIGHBOR_MAPPING[destination.name] || [];
   
   // Find country registry config
-  const reg = COUNTRY_REGISTRY[destination.country] || {
+  const countryReg = COUNTRY_REGISTRY[destination.country] || {
     landmarks: ["로컬 랜드마크", "감성 쇼핑 거리", "푸른 시립 공원", "유서 깊은 전통 광장"],
     foods: ["로컬 시그니처 볶음 요리", "현지인 추천 숨은 찌개 런치", "달콤한 특산 수제 디저트", "아름다운 야경과 함께하는 전통 코스 요리"]
+  };
+
+  // Check if we have specific city data
+  const cityData = CITY_ITINERARY_DATA[destination.name];
+  
+  const reg = {
+    ...countryReg,
+    landmarks: cityData && cityData.landmarks ? cityData.landmarks : countryReg.landmarks,
+    foods: cityData && cityData.foods ? cityData.foods : countryReg.foods,
+    activities: cityData && cityData.activities ? cityData.activities : ["이색적인 로컬 투어", "짜릿한 야외 액티비티 체험"]
   };
 
   // Make sure all days from 1 to duration are filled!
