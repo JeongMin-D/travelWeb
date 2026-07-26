@@ -155,7 +155,7 @@ function App() {
               className={`nav-grid-button ${activeTab === 'budget' ? 'active' : ''}`}
               onClick={() => setActiveTab('budget')}
             >
-              🪙 {isEn ? 'Budget' : '예산 & 환율'}
+              💰 {isEn ? 'Budget' : '예산 & 환율'}
             </button>
             <button 
               className={`nav-grid-button ${activeTab === 'worldmap' ? 'active' : ''}`}
@@ -269,7 +269,7 @@ function App() {
             <span>{isEn ? 'PLANNER' : 'PLANNER (플래너)'}</span>
           </a>
           <a href="#" onClick={(e) => { e.preventDefault(); setActiveTab('budget'); }} className="nav-icon-pair">
-            <span style={{ fontSize: '1.5rem' }}>🪙</span>
+            <span style={{ fontSize: '1.5rem' }}>💰</span>
             <span>{isEn ? 'BUDGET' : 'BUDGET (예산)'}</span>
           </a>
         </div>

@@ -308,7 +308,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
         <div className="glass-panel">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
-              🪙 {isEn ? 'Live Exchange Calculator' : '실시간 환율 계산기'}
+              💰 {isEn ? 'Live Exchange Calculator' : '실시간 환율 계산기'}
             </h3>
             <button 
               onClick={fetchRates} 

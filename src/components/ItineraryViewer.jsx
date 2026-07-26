@@ -341,7 +341,7 @@ export default function ItineraryViewer({
               {translatedDest.type === 'domestic' ? (isEn ? 'DOMESTIC' : '국내 여행지') : (isEn ? 'INTERNATIONAL' : '해외 여행지')}
             </span>
             <span className="badge badge-emerald">{displayContinent}</span>
-            <span className="badge badge-amber">🪙 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency} ({translatedDest.currencySymbol})</span>
+            <span className="badge badge-amber">💰 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency} ({translatedDest.currencySymbol})</span>
           </div>
 
           <h1 style={{ fontSize: '2.5rem', fontWeight: 800, margin: '0.35rem 0', color: 'var(--text-primary)' }}>
@@ -448,7 +448,7 @@ export default function ItineraryViewer({
             className="btn btn-accent"
             style={{ fontSize: '0.9rem' }}
           >
-            🪙 {isEn ? 'Calculate Travel Budget' : '예산 수립하기'}
+            💰 {isEn ? 'Calculate Travel Budget' : '예산 수립하기'}
           </button>
           <button 
             onClick={handleToggleVisited} 
