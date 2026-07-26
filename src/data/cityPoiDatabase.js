@@ -2,127 +2,77 @@
 // Category types: 'attraction', 'restaurant', 'cafe', 'activity', 'relaxation', 'nightview'
 // Themes scores (1-5): healing, activity, food, culture, shopping
 
+import { poiDomestic } from './poi/poi_domestic';
+import { poiKoreaExtra } from './poi/poi_korea_extra';
+import { poiKoreaExtra2 } from './poi/poi_korea_extra2';
+import { poiKoreaExtra3 } from './poi/poi_korea_extra3';
+import { poiKoreaExtra4 } from './poi/poi_korea_extra4';
+import { poiKoreaExtra5 } from './poi/poi_korea_extra5';
+import { poiKoreaExtra6 } from './poi/poi_korea_extra6';
+import { poiDeepJeju } from './poi/poi_deep_jeju';
+import { poiDeepSeoul } from './poi/poi_deep_seoul';
+import { poiDeepBusan } from './poi/poi_deep_busan';
+import { poiDeepGyeongju } from './poi/poi_deep_gyeongju';
+import { poiDeepYeosu } from './poi/poi_deep_yeosu';
+import { poiDeepGangneung } from './poi/poi_deep_gangneung';
+import { poiDeepJeonju } from './poi/poi_deep_jeonju';
+import { poiDeepSokcho } from './poi/poi_deep_sokcho';
+import { poiDeepTongyeong } from './poi/poi_deep_tongyeong';
+import { poiDeepGunsan } from './poi/poi_deep_gunsan';
+import { poiDeepAndong } from './poi/poi_deep_andong';
+import { poiDeepPohang } from './poi/poi_deep_pohang';
+import { poiDeepGeoje } from './poi/poi_deep_geoje';
+import { poiDeepNamhae } from './poi/poi_deep_namhae';
+import { poiDeepSuncheon } from './poi/poi_deep_suncheon';
+import { poiDeepMokpo } from './poi/poi_deep_mokpo';
+import { poiDeepDamyang } from './poi/poi_deep_damyang';
+import { poiDeepDanyang } from './poi/poi_deep_danyang';
+import { poiDeepChuncheon } from './poi/poi_deep_chuncheon';
+import { poiDeepGapyeong } from './poi/poi_deep_gapyeong';
+import { poiDeepKoreaOthers } from './poi/poi_deep_korea_others';
+import { poiJapan } from './poi/poi_japan';
+import { poiSeasia } from './poi/poi_seasia';
+import { poiEurope } from './poi/poi_europe';
+import { poiAmericas } from './poi/poi_americas';
+
 export const CITY_POI_DATABASE = {
-  "서울": [
-    {
-      id: "seoul_att_1", name: "경복궁 & 광화문 광장", category: "attraction", subCategory: "palace",
-      themes: { healing: 4, activity: 2, food: 1, culture: 5, shopping: 1 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [37.5796, 126.9770], zone: "center",
-      desc: "조선 왕조의 으뜸 궁궐을 산책하고 한복 체험 및 전통 성문 교대식을 관람합니다."
-    },
-    {
-      id: "seoul_att_2", name: "북촌 한옥마을 & 삼청동", category: "attraction", subCategory: "heritage",
-      themes: { healing: 5, activity: 2, food: 2, culture: 5, shopping: 3 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [37.5826, 126.9831], zone: "center",
-      desc: "고즈넉한 한옥 골목길을 걸으며 정갈한 한국 전통의 멋과 고풍스러운 정취를 즐깁니다."
-    },
-    {
-      id: "seoul_att_3", name: "국립중앙박물관 & 용산가족공원", category: "attraction", subCategory: "museum",
-      themes: { healing: 4, activity: 1, food: 1, culture: 5, shopping: 1 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [37.5240, 126.9804], zone: "south",
-      desc: "대한민국의 찬란한 역사 유물과 반가사유상을 관람하고 평화로운 공원을 걸어봅니다."
-    },
-    {
-      id: "seoul_att_4", name: "성수동 연무장길 & 팝업스토어", category: "attraction", subCategory: "trendy",
-      themes: { healing: 2, activity: 4, food: 3, culture: 2, shopping: 5 },
-      timeOfDay: ["afternoon"], coordinates: [37.5445, 127.0560], zone: "east",
-      desc: "트렌디한 브랜드 팝업스토어, 감성 복합문화공간 및 디자인 소품샵을 둘러봅니다."
-    },
-    {
-      id: "seoul_att_5", name: "남산서울타워 야경 전망대", category: "nightview", subCategory: "viewpoint",
-      themes: { healing: 4, activity: 3, food: 2, culture: 3, shopping: 2 },
-      timeOfDay: ["evening"], coordinates: [37.5512, 126.9882], zone: "center",
-      desc: "서울 도심 한복판 높이 솟은 타워 전망대에서 반짝이는 서울 시티 파노라마 야경을 관람합니다."
-    },
-    {
-      id: "seoul_att_6", name: "한강공원 여의도 피크닉", category: "relaxation", subCategory: "park",
-      themes: { healing: 5, activity: 3, food: 3, culture: 1, shopping: 1 },
-      timeOfDay: ["afternoon", "evening"], coordinates: [37.5284, 126.9331], zone: "west",
-      desc: "탁 트인 한강변에서 자전거를 타거나 돗자리를 펴고 시원한 강바람과 힐링 피크닉을 즐깁니다."
-    },
-    {
-      id: "seoul_res_1", name: "토속촌 전통 삼계탕", category: "restaurant", subCategory: "gourmet",
-      themes: { healing: 4, activity: 1, food: 5, culture: 4, shopping: 1 },
-      timeOfDay: ["lunch"], coordinates: [37.5778, 126.9717], zone: "center",
-      desc: "진하고 구수한 진국 육수에 영계와 인삼, 견과류가 들어간 건강한 보양 삼계탕 정식."
-    },
-    {
-      id: "seoul_res_2", name: "명동교자 본점", category: "restaurant", subCategory: "gourmet",
-      themes: { healing: 2, activity: 2, food: 5, culture: 3, shopping: 3 },
-      timeOfDay: ["lunch", "dinner"], coordinates: [37.5625, 126.9856], zone: "center",
-      desc: "진한 닭육수 칼국수와 만두, 알싸한 마늘 겉절이 김치가 일품인 미쉐린 가이드 맛집."
-    },
-    {
-      id: "seoul_res_3", name: "마장동 우시장 숯불 한우 구이", category: "restaurant", subCategory: "gourmet",
-      themes: { healing: 3, activity: 2, food: 5, culture: 2, shopping: 1 },
-      timeOfDay: ["dinner"], coordinates: [37.5697, 127.0436], zone: "east",
-      desc: "마블링 가득한 최고급 최상급 숯불 한우 구이로 즐기는 풍미 넘치는 저녁 특식."
-    },
-    {
-      id: "seoul_cafe_1", name: "어니언 안국 한옥 카페", category: "cafe", subCategory: "bakery_cafe",
-      themes: { healing: 5, activity: 2, food: 4, culture: 5, shopping: 2 },
-      timeOfDay: ["tea"], coordinates: [37.5772, 126.9863], zone: "center",
-      desc: "한옥 리노베이션 공간에서 고소한 팡도르 빵과 시그니처 드립 커피를 즐기는 감성 찻집."
-    },
-    {
-      id: "seoul_cafe_2", name: "누데이크 성수 아방가르드 카페", category: "cafe", subCategory: "dessert_cafe",
-      themes: { healing: 2, activity: 3, food: 5, culture: 3, shopping: 4 },
-      timeOfDay: ["tea"], coordinates: [37.5441, 127.0542], zone: "east",
-      desc: "예술 작품 같은 아이코닉 말차 피크 크로와상 케이크와 독창적인 시그니처 디저트 음료."
-    },
-    {
-      id: "seoul_act_1", name: "한강 뚝섬 윈드서핑 & 패들보드", category: "activity", subCategory: "watersports",
-      themes: { healing: 2, activity: 5, food: 1, culture: 1, shopping: 1 },
-      timeOfDay: ["afternoon"], coordinates: [37.5312, 127.0671], zone: "east",
-      desc: "시원한 한강 물살을 가르며 액티브한 수상 레포츠와 패들보딩을 체험합니다."
-    }
-  ],
-
-  "제주도": [
-    {
-      id: "jeju_att_1", name: "성산일출봉 화산구", category: "attraction", subCategory: "nature",
-      themes: { healing: 5, activity: 4, food: 1, culture: 3, shopping: 1 },
-      timeOfDay: ["morning"], coordinates: [33.4581, 126.9426], zone: "east",
-      desc: "유네스코 세계자연유산인 거대 화산구 정상에 올라 탁 트인 푸른 바다 절경을 감상합니다."
-    },
-    {
-      id: "jeju_att_2", name: "사려니숲길 삼나무 코스", category: "relaxation", subCategory: "forest",
-      themes: { healing: 5, activity: 2, food: 1, culture: 1, shopping: 1 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [33.4285, 126.6341], zone: "center",
-      desc: "울창한 삼나무 숲길을 걸으며 피톤치드를 쐬고 온전한 자연 치유 삼림욕을 즐깁니다."
-    },
-    {
-      id: "jeju_att_3", name: "협재 해수욕장 & 비양도", category: "attraction", subCategory: "beach",
-      themes: { healing: 5, activity: 3, food: 2, culture: 1, shopping: 1 },
-      timeOfDay: ["afternoon"], coordinates: [33.3938, 126.2397], zone: "west",
-      desc: "에메랄드빛 에메랄드 투명한 바다와 하얀 몽돌 모래사장을 산책하며 힐링합니다."
-    },
-    {
-      id: "jeju_res_1", name: "중문 흑돼지 연탄구이", category: "restaurant", subCategory: "local_food",
-      themes: { healing: 3, activity: 2, food: 5, culture: 2, shopping: 1 },
-      timeOfDay: ["dinner"], coordinates: [33.2541, 126.4172], zone: "south",
-      desc: "두툼한 제주 흑돼지 오겹살과 멜젓의 고소한 풍미가 일품인 저녁 특식 만찬."
-    },
-    {
-      id: "jeju_res_2", name: "애월 해물라면 & 전복 통갈치조림", category: "restaurant", subCategory: "seafood",
-      themes: { healing: 3, activity: 2, food: 5, culture: 1, shopping: 1 },
-      timeOfDay: ["lunch"], coordinates: [33.4652, 126.3201], zone: "west",
-      desc: "문어, 전복, 꽃게가 푸짐하게 들어간 시원한 해물 라면과 매콤 통갈치조림 점심."
-    },
-    {
-      id: "jeju_cafe_1", name: "오설록 티뮤지엄 녹차밭", category: "cafe", subCategory: "tea_house",
-      themes: { healing: 5, activity: 1, food: 4, culture: 3, shopping: 2 },
-      timeOfDay: ["tea"], coordinates: [33.3059, 126.2895], zone: "west",
-      desc: "초록빛 차밭 전망과 함께 즐기는 최고급 오설록 녹차 아이스크림과 롤케이크."
-    },
-    {
-      id: "jeju_act_1", name: "윈드 1947 카트 레이싱", category: "activity", subCategory: "leisure",
-      themes: { healing: 1, activity: 5, food: 1, culture: 1, shopping: 1 },
-      timeOfDay: ["afternoon"], coordinates: [33.2841, 126.5812], zone: "south",
-      desc: "한라산 배경의 아시아 최장 트랙에서 펼쳐지는 스릴 만점 속도감의 카트 체험."
-    }
-  ],
-
+  ...poiDomestic,
+  ...poiKoreaExtra,
+  ...poiKoreaExtra2,
+  ...poiKoreaExtra3,
+  ...poiKoreaExtra4,
+  ...poiKoreaExtra5,
+  ...poiKoreaExtra6,
+  ...poiJapan,
+  ...poiSeasia,
+  ...poiEurope,
+  ...poiAmericas,
+  // Deep Overrides (These will replace shallow data for the top 5 cities)
+  ...poiDeepJeju,
+  ...poiDeepSeoul,
+  ...poiDeepBusan,
+  ...poiDeepGyeongju,
+  ...poiDeepYeosu,
+  // 2nd Batch Deep Overrides
+  ...poiDeepGangneung,
+  ...poiDeepJeonju,
+  ...poiDeepSokcho,
+  ...poiDeepTongyeong,
+  ...poiDeepGunsan,
+  // 3rd Batch Deep Overrides
+  ...poiDeepAndong,
+  ...poiDeepPohang,
+  ...poiDeepGeoje,
+  ...poiDeepNamhae,
+  ...poiDeepSuncheon,
+  // 4th Batch Deep Overrides
+  ...poiDeepMokpo,
+  ...poiDeepDamyang,
+  ...poiDeepDanyang,
+  ...poiDeepChuncheon,
+  ...poiDeepGapyeong,
+  // Remaining 117+ Domestic Cities
+  ...poiDeepKoreaOthers,
   "교토": [
     {
       id: "kyoto_att_1", name: "금각사 (킨카쿠지)", category: "attraction", subCategory: "heritage",

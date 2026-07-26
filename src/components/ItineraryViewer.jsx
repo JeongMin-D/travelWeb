@@ -517,34 +517,71 @@ export default function ItineraryViewer({
                     {isEn ? 'Free leisure time and personal relaxation day.' : '이 날은 자유 일정 및 개별 힐링 시간입니다.'}
                   </p>
                 ) : (
-                  <div className="timeline">
+                  <div className="timeline" style={{ position: 'relative', borderLeft: '2px dashed var(--glass-border)', marginLeft: '1rem', paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                     {dayActivities.map((act, actIndex) => {
                       const displayTitle = isEn ? translateActivityTitle(act.title, actIndex, translatedDest.name) : act.title;
                       const displayDesc = isEn ? translateActivityDesc(act.desc, translatedDest.name) : act.desc;
 
-                      // Category badge helper
+                      // Category badge helper (Strictly based on categoryType to prevent false positives)
                       let catBadge = null;
-                      if (act.categoryType === 'relaxation' || act.title.includes('힐링') || act.title.includes('산책') || act.title.includes('숲길') || act.title.includes('피크닉')) {
-                        catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🌿 Relaxation' : '🌿 힐링/휴식'}</span>;
-                      } else if (act.categoryType === 'restaurant' || act.title.includes('점심') || act.title.includes('저녁') || act.title.includes('식사') || act.title.includes('만찬')) {
-                        catBadge = <span className="badge badge-amber" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🍽️ Dining' : '🍽️ 식당'}</span>;
-                      } else if (act.categoryType === 'cafe' || act.title.includes('카페') || act.title.includes('디저트') || act.title.includes('티 타임') || act.title.includes('브런치')) {
-                        catBadge = <span className="badge badge-indigo" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '☕ Cafe/Dessert' : '☕ 카페/디저트'}</span>;
-                      } else if (act.categoryType === 'activity' || act.title.includes('체험') || act.title.includes('투어') || act.title.includes('레저') || act.title.includes('스파')) {
-                        catBadge = <span className="badge badge-cyan" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🎡 Activity' : '🎡 액티비티'}</span>;
+                      if (act.categoryType === 'relaxation') {
+                        catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🌿 Relaxation' : '🌿 힐링/휴식'}</span>;
+                      } else if (act.categoryType === 'restaurant') {
+                        catBadge = <span className="badge badge-amber" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🍽️ Dining' : '🍽️ 식당/다이닝'}</span>;
+                      } else if (act.categoryType === 'cafe') {
+                        catBadge = <span className="badge badge-indigo" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '☕ Cafe/Dessert' : '☕ 카페/디저트'}</span>;
+                      } else if (act.categoryType === 'activity') {
+                        catBadge = <span className="badge badge-cyan" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🎡 Activity' : '🎡 액티비티'}</span>;
+                      } else if (act.categoryType === 'nightview') {
+                        catBadge = <span className="badge badge-purple" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🌙 Nightview' : '🌙 야간/야경'}</span>;
                       } else {
-                        catBadge = <span className="badge badge-purple" style={{ fontSize: '10px', padding: '1px 6px', marginRight: '6px', flexShrink: 0 }}>{isEn ? '🏛️ Sightseeing' : '🏛️ 명소/관광'}</span>;
+                        catBadge = <span className="badge badge-purple" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🏛️ Sightseeing' : '🏛️ 명소/관광'}</span>;
                       }
 
                       return (
-                        <div key={actIndex} className="timeline-item">
-                          <div className="timeline-time">{act.time}</div>
-                          <div className="timeline-title" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '4px' }}>
-                            {catBadge}
-                            <span>{displayTitle}</span>
+                        <React.Fragment key={actIndex}>
+                          {act.distText && (
+                            <div style={{ position: 'relative', margin: '-0.75rem 0', left: '-2.25rem', display: 'flex', alignItems: 'center' }}>
+                              <div style={{ background: 'var(--color-bg)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.75rem', color: 'var(--text-muted)', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', gap: '0.3rem', zIndex: 2 }}>
+                                🚗 <span style={{ fontWeight: 600 }}>{act.distText}</span>
+                              </div>
+                            </div>
+                          )}
+                          <div 
+                            className="timeline-item premium-timeline-item" 
+                            style={{ 
+                              position: 'relative', 
+                              background: 'rgba(255,255,255,0.02)', 
+                              padding: '1.25rem', 
+                              borderRadius: 'var(--radius-md)', 
+                              border: '1px solid rgba(255,255,255,0.05)',
+                              transition: 'transform 0.2s, box-shadow 0.2s',
+                              boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+                            }}
+                          >
+                            <div style={{ 
+                              position: 'absolute', 
+                              left: '-1.85rem', 
+                              top: '1.5rem', 
+                              width: '12px', 
+                              height: '12px', 
+                              borderRadius: '50%', 
+                              background: 'var(--color-primary)', 
+                              border: '3px solid var(--color-bg)' 
+                            }}></div>
+                            
+                            <div className="timeline-time" style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+                              {act.time}
+                            </div>
+                            <div className="timeline-title" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '4px', fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                              {catBadge}
+                              <span>{displayTitle}</span>
+                            </div>
+                            <div className="timeline-desc" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                              {displayDesc}
+                            </div>
                           </div>
-                          <div className="timeline-desc">{displayDesc}</div>
-                        </div>
+                        </React.Fragment>
                       );
                     })}
                   </div>

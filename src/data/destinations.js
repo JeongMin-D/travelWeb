@@ -4638,22 +4638,7 @@ export const getCityCoordinates = (cityName, countryName) => {
 
 // Dynamic itinerary complete/fill engine
 export const getPolishedItinerary = (destination, style, duration) => {
-  const dynamicItinerary = buildDynamicItinerary(destination.name, destination.country, style, duration);
-  const rawStyleData = destination.itineraries?.[style] || Object.values(destination.itineraries || {})[0] || {};
-
-  const polished = {};
-
-  for (let day = 1; day <= duration; day++) {
-    if (rawStyleData[day] && rawStyleData[day].length > 0) {
-      // Use handwritten itinerary for this day
-      polished[day] = rawStyleData[day];
-    } else {
-      // Use dynamic time-slot non-repeating itinerary for this day
-      polished[day] = dynamicItinerary[day] || [];
-    }
-  }
-
-  return polished;
+  return buildDynamicItinerary(destination.name, destination.country, style, duration);
 };
 
 // Weather & Clothing Recommendation Guide Engine

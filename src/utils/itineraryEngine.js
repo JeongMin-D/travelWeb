@@ -55,23 +55,26 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
       pool = pool.filter(item => item.category === 'attraction' || item.category === 'relaxation' || item.category === 'nightview');
     }
 
-    if (pool.length === 0) {
-      // Fallback: search any unused POI
-      pool = poiList.filter(item => !usedIds.has(item.id));
-    }
-
     if (pool.length > 0) {
       // Sort candidates by Theme Score (descending) & Distance to lastCoord (ascending)
       pool.sort((a, b) => {
         const scoreA = getThemeScore(a);
         const scoreB = getThemeScore(b);
-        if (scoreA !== scoreB) return scoreB - scoreA;
-
-        if (lastCoord && a.coordinates && b.coordinates) {
-          const distA = getDistanceKm(lastCoord, a.coordinates);
-          const distB = getDistanceKm(lastCoord, b.coordinates);
-          return distA - distB;
+        
+        let distA = 0;
+        let distB = 0;
+        if (lastCoord) {
+          distA = a.coordinates ? getDistanceKm(lastCoord, a.coordinates) : 5;
+          distB = b.coordinates ? getDistanceKm(lastCoord, b.coordinates) : 5;
         }
+
+        // Weighted score: Theme (0~5) * 20 - Distance * 3
+        // We want HIGHEST total score. A 5km difference reduces score by 15, which is almost 1 theme star (20).
+        // This makes the algorithm prefer closer places unless the theme score is vastly superior.
+        const totalA = (scoreA * 20) - (distA * 3);
+        const totalB = (scoreB * 20) - (distB * 3);
+        
+        if (totalA !== totalB) return totalB - totalA;
 
         if (preferredZone) {
           if (a.zone === preferredZone && b.zone !== preferredZone) return -1;
@@ -91,45 +94,59 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
     const synthId = `${cityName}_synth_${style}_${synthIndex}`;
     usedIds.add(synthId);
 
+    // Arrays for diverse random names to prevent repetitive schedules
+    const restNames = ["로컬 숨은 맛집", "현지인 추천 미식 식당", "유명 향토 요리점", "인기 만점 웨이팅 식당"];
+    const cafeNames = ["감성 테라스 찻집", "뷰가 아름다운 대형 카페", "로스터리 핸드드립 카페", "아기자기한 디저트 카페"];
+    const actNames = ["이색 야외 레저 체험", "전통 문화 체험 클래스", "로컬 시장 투어", "자연 속 힐링 스포츠"];
+    const relNames = ["고즈넉한 숲길 피크닉", "숨겨진 비밀의 정원", "강변 달빛 산책로", "마음이 편안해지는 명상 산책"];
+    const attNames = ["역사 골목 갤러리 산책", "랜드마크 기념사진 포인트", "아름다운 벽화마을", "도시의 전경이 보이는 언덕"];
+
+    const getSynthName = (arr) => `${cityName} ${arr[synthIndex % arr.length]}`;
+
     if (targetCategory === 'restaurant') {
       return {
         id: synthId,
-        name: style === 'food' ? `${cityName} 미쉐린 / 로컬 숨은 맛집` : `${cityName} 정갈한 현지식 식당`,
+        name: getSynthName(restNames),
         category: 'restaurant',
-        desc: `${cityName}의 로컬 재료로 조리한 깊은 풍미의 미식 한 끼를 음미합니다.`,
-        badgeIcon: '🍽️'
+        desc: `${cityName}의 신선한 로컬 재료로 조리한 깊은 풍미의 미식 한 끼를 음미합니다.`,
+        badgeIcon: '🍽️',
+        isSynth: true
       };
     } else if (targetCategory === 'cafe') {
       return {
         id: synthId,
-        name: `${cityName} 감성 테라스 찻집`,
+        name: getSynthName(cafeNames),
         category: 'cafe',
-        desc: `여유로운 풍경이 보이는 테라스에서 갓 추출한 커피와 스페셜 디저트 타임.`,
-        badgeIcon: '☕'
+        desc: `여유로운 풍경이 보이는 공간에서 갓 추출한 커피와 스페셜 디저트 타임.`,
+        badgeIcon: '☕',
+        isSynth: true
       };
-    } else if (style === 'activity') {
+    } else if (style === 'activity' || targetCategory === 'activity') {
       return {
         id: synthId,
-        name: `${cityName} 이색 야외 레저 / 스포츠 체험`,
+        name: getSynthName(actNames),
         category: 'activity',
-        desc: `지형과 자연을 활용한 액티브한 현지 스포츠 및 미디어 아트 탐방.`,
-        badgeIcon: '🎡'
+        desc: `지형과 문화를 활용한 액티브한 현지 체험 및 탐방을 즐깁니다.`,
+        badgeIcon: '🎡',
+        isSynth: true
       };
-    } else if (style === 'healing') {
+    } else if (style === 'healing' || targetCategory === 'relaxation') {
       return {
         id: synthId,
-        name: `${cityName} 고즈넉한 정원 & 숲길 피크닉`,
+        name: getSynthName(relNames),
         category: 'relaxation',
-        desc: `새소리가 들리는 한적한 수목 정원에서 마음의 평안을 얻는 힐링 산책.`,
-        badgeIcon: '🌿'
+        desc: `바쁜 일상에서 벗어나 마음의 평안을 얻는 진정한 힐링 타임.`,
+        badgeIcon: '🌿',
+        isSynth: true
       };
     } else {
       return {
         id: synthId,
-        name: `${cityName} 역사 골목 & 갤러리 산책`,
+        name: getSynthName(attNames),
         category: 'attraction',
-        desc: `${cityName}의 오랜 이야기가 깃든 문화 골목길을 둘러보며 스냅 사진 촬영.`,
-        badgeIcon: '🏛️'
+        desc: `${cityName}의 오랜 이야기가 깃든 명소를 둘러보며 멋진 여행 사진을 남깁니다.`,
+        badgeIcon: '🏛️',
+        isSynth: true
       };
     }
   };
@@ -149,28 +166,32 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
           title: `🚗 인접 도시 [${neighborCity}] 당일치기 투어`,
           desc: `${cityName} 근교의 아름다운 이웃 도시 [${neighborCity}](으)로 출발하여 특별한 근교 여정을 만끽합니다.`,
           categoryType: "attraction",
-          badgeIcon: "🚗"
+          badgeIcon: "🚗",
+          distText: "약 45km (1시간)"
         },
         {
           time: "12:30",
           title: `🍴 [${neighborCity}] 로컬 특산 점심`,
           desc: `이웃 도시 [${neighborCity}]에서만 맛볼 수 있는 소문난 지역 특선 명가 요리.`,
           categoryType: "restaurant",
-          badgeIcon: "🍽️"
+          badgeIcon: "🍽️",
+          distText: "약 3km (10분)"
         },
         {
           time: "15:00",
           title: `☕ [${neighborCity}] 호숫가/전망 테라스 카페`,
           desc: `근교 자연 정경이 내다보이는 고즈넉한 카페에서 여유롭게 음료와 디저트를 음미합니다.`,
           categoryType: "cafe",
-          badgeIcon: "☕"
+          badgeIcon: "☕",
+          distText: "약 5km (15분)"
         },
         {
           time: "18:30",
           title: `🏡 ${cityName} 복귀 및 만찬`,
           desc: `본진인 ${cityName}(으)로 귀환하여 따뜻한 식사와 함께 하루를 만족스럽게 정리합니다.`,
           categoryType: "restaurant",
-          badgeIcon: "🍷"
+          badgeIcon: "🍷",
+          distText: "약 45km (1시간)"
         }
       ];
       continue;
@@ -178,99 +199,78 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
 
     // Dynamic Rhythm according to Style
     let lastCoord = null;
+    const generateDaySlots = (pattern) => {
+      const slots = [];
+      let currentCoord = null;
+      
+      pattern.forEach((slotInfo, index) => {
+        const spot = selectPOI(slotInfo.cat, dayZone, currentCoord);
+        
+        let distKm = null;
+        if (currentCoord && spot.coordinates && !spot.isSynth) {
+          distKm = getDistanceKm(currentCoord, spot.coordinates);
+        }
+        
+        let distText = null;
+        if (distKm !== null) {
+          const timeMins = Math.max(5, Math.round(distKm * 2.5)); // rough estimate: 24km/h avg city speed
+          distText = `약 ${distKm.toFixed(1)}km (${timeMins}분)`;
+        }
+
+        currentCoord = spot.coordinates || currentCoord;
+        
+        slots.push({
+          time: slotInfo.time,
+          title: `${slotInfo.prefix} ${spot.name}`,
+          desc: spot.desc,
+          categoryType: spot.category || slotInfo.cat,
+          badgeIcon: slotInfo.icon,
+          distText: distText
+        });
+      });
+      return slots;
+    };
 
     if (style === 'healing') {
-      // 🌿 Healing Rhythm: Nature/Park -> Healthy Lunch -> Quiet View/Spa -> Tea House -> Gentle Dinner
-      const morningSpot = selectPOI('relaxation', dayZone, lastCoord);
-      lastCoord = morningSpot.coordinates || lastCoord;
-
-      const lunchSpot = selectPOI('restaurant', dayZone, lastCoord);
-      lastCoord = lunchSpot.coordinates || lastCoord;
-
-      const afternoonSpot = selectPOI('relaxation', dayZone, lastCoord);
-      lastCoord = afternoonSpot.coordinates || lastCoord;
-
-      const teaSpot = selectPOI('cafe', dayZone, lastCoord);
-      lastCoord = teaSpot.coordinates || lastCoord;
-
-      const dinnerSpot = selectPOI('restaurant', dayZone, lastCoord);
-
-      itinerary[day] = [
-        { time: "10:00", title: `🌿 ${morningSpot.name}`, desc: morningSpot.desc, categoryType: "relaxation", badgeIcon: "🌿" },
-        { time: "12:30", title: `🍽️ [정갈한 점심] ${lunchSpot.name}`, desc: lunchSpot.desc, categoryType: "restaurant", badgeIcon: "🍽️" },
-        { time: "14:30", title: `☕ ${afternoonSpot.name}`, desc: afternoonSpot.desc, categoryType: afternoonSpot.category || "relaxation", badgeIcon: "☕" },
-        { time: "16:30", title: `🍵 [힐링 찻집] ${teaSpot.name}`, desc: teaSpot.desc, categoryType: "cafe", badgeIcon: "🍵" },
-        { time: "18:30", title: `🍷 [여유로운 저녁] ${dinnerSpot.name}`, desc: dinnerSpot.desc, categoryType: "restaurant", badgeIcon: "🍷" }
-      ];
+      itinerary[day] = generateDaySlots([
+        { time: "08:30", cat: "restaurant", prefix: "🍳 [상쾌한 조식]", icon: "🍳" },
+        { time: "10:00", cat: "relaxation", prefix: "🌿", icon: "🌿" },
+        { time: "12:30", cat: "restaurant", prefix: "🍽️ [정갈한 점심]", icon: "🍽️" },
+        { time: "14:30", cat: "relaxation", prefix: "🍃", icon: "🍃" },
+        { time: "16:30", cat: "cafe", prefix: "🍵 [힐링 찻집]", icon: "🍵" },
+        { time: "18:30", cat: "restaurant", prefix: "🍷 [여유로운 저녁]", icon: "🍷" },
+        { time: "20:00", cat: "nightview", prefix: "🌙", icon: "🌙" }
+      ]);
     } else if (style === 'activity') {
-      // ⚡ Activity Rhythm: Thrill Morning -> Active Lunch -> Outdoor Sports/Leisure -> Energy Cafe -> Night Market/Bar
-      const morningSpot = selectPOI('activity', dayZone, lastCoord);
-      lastCoord = morningSpot.coordinates || lastCoord;
-
-      const lunchSpot = selectPOI('restaurant', dayZone, lastCoord);
-      lastCoord = lunchSpot.coordinates || lastCoord;
-
-      const afternoonSpot = selectPOI('activity', dayZone, lastCoord);
-      lastCoord = afternoonSpot.coordinates || lastCoord;
-
-      const cafeSpot = selectPOI('cafe', dayZone, lastCoord);
-      lastCoord = cafeSpot.coordinates || lastCoord;
-
-      const dinnerSpot = selectPOI('restaurant', dayZone, lastCoord);
-
-      itinerary[day] = [
-        { time: "09:30", title: `🎡 ${morningSpot.name}`, desc: morningSpot.desc, categoryType: "activity", badgeIcon: "🎡" },
-        { time: "12:30", title: `🍽️ [에너지 든든 점심] ${lunchSpot.name}`, desc: lunchSpot.desc, categoryType: "restaurant", badgeIcon: "🍽️" },
-        { time: "14:30", title: `⚡ ${afternoonSpot.name}`, desc: afternoonSpot.desc, categoryType: "activity", badgeIcon: "⚡" },
-        { time: "17:00", title: `☕ [에너지 충전] ${cafeSpot.name}`, desc: cafeSpot.desc, categoryType: "cafe", badgeIcon: "☕" },
-        { time: "19:00", title: `🍺 [활기찬 야간 만찬] ${dinnerSpot.name}`, desc: dinnerSpot.desc, categoryType: "restaurant", badgeIcon: "🍺" }
-      ];
+      itinerary[day] = generateDaySlots([
+        { time: "08:30", cat: "restaurant", prefix: "🍳 [든든한 조식]", icon: "🍳" },
+        { time: "10:00", cat: "activity", prefix: "🎡", icon: "🎡" },
+        { time: "12:30", cat: "restaurant", prefix: "🍽️ [에너지 보충 점심]", icon: "🍽️" },
+        { time: "14:30", cat: "activity", prefix: "⚡", icon: "⚡" },
+        { time: "17:00", cat: "cafe", prefix: "☕ [달콤한 휴식]", icon: "☕" },
+        { time: "19:00", cat: "restaurant", prefix: "🍺 [활기찬 야간 만찬]", icon: "🍺" },
+        { time: "21:00", cat: "nightview", prefix: "✨", icon: "✨" }
+      ]);
     } else if (style === 'food') {
-      // 🍕 Food Rhythm: Market Tour -> Gourmet Lunch -> Dessert Tasting -> Specialty Cafe -> Dinner Feast
-      const morningSpot = selectPOI('attraction', dayZone, lastCoord);
-      lastCoord = morningSpot.coordinates || lastCoord;
-
-      const lunchSpot = selectPOI('restaurant', dayZone, lastCoord);
-      lastCoord = lunchSpot.coordinates || lastCoord;
-
-      const dessertSpot = selectPOI('cafe', dayZone, lastCoord);
-      lastCoord = dessertSpot.coordinates || lastCoord;
-
-      const cafeSpot = selectPOI('cafe', dayZone, lastCoord);
-      lastCoord = cafeSpot.coordinates || lastCoord;
-
-      const dinnerSpot = selectPOI('restaurant', dayZone, lastCoord);
-
-      itinerary[day] = [
-        { time: "10:30", title: `🛍️ ${morningSpot.name}`, desc: morningSpot.desc, categoryType: "attraction", badgeIcon: "🛍️" },
-        { time: "12:30", title: `🍕 [시그니처 미식 점심] ${lunchSpot.name}`, desc: lunchSpot.desc, categoryType: "restaurant", badgeIcon: "🍕" },
-        { time: "14:30", title: `🍰 [유명 디저트] ${dessertSpot.name}`, desc: dessertSpot.desc, categoryType: "cafe", badgeIcon: "🍰" },
-        { time: "16:30", title: `☕ [로스터리 카페] ${cafeSpot.name}`, desc: cafeSpot.desc, categoryType: "cafe", badgeIcon: "☕" },
-        { time: "18:30", title: `🍷 [정통 만찬] ${dinnerSpot.name}`, desc: dinnerSpot.desc, categoryType: "restaurant", badgeIcon: "🍷" }
-      ];
+      itinerary[day] = generateDaySlots([
+        { time: "08:30", cat: "restaurant", prefix: "🍳 [브런치/조식]", icon: "🍳" },
+        { time: "10:30", cat: "attraction", prefix: "🛍️", icon: "🛍️" },
+        { time: "12:30", cat: "restaurant", prefix: "🍕 [시그니처 미식 점심]", icon: "🍕" },
+        { time: "14:30", cat: "cafe", prefix: "🍰 [유명 디저트]", icon: "🍰" },
+        { time: "16:30", cat: "cafe", prefix: "☕ [로스터리 카페]", icon: "☕" },
+        { time: "18:30", cat: "restaurant", prefix: "🍷 [정통 만찬]", icon: "🍷" },
+        { time: "20:30", cat: "nightview", prefix: "🌙", icon: "🌙" }
+      ]);
     } else {
-      // 🏛️ Culture / General Rhythm: Heritage Morning -> Traditional Lunch -> Museum/Old Town -> Cultural Cafe -> Fine Dinner
-      const morningSpot = selectPOI('attraction', dayZone, lastCoord);
-      lastCoord = morningSpot.coordinates || lastCoord;
-
-      const lunchSpot = selectPOI('restaurant', dayZone, lastCoord);
-      lastCoord = lunchSpot.coordinates || lastCoord;
-
-      const afternoonSpot = selectPOI('attraction', dayZone, lastCoord);
-      lastCoord = afternoonSpot.coordinates || lastCoord;
-
-      const cafeSpot = selectPOI('cafe', dayZone, lastCoord);
-      lastCoord = cafeSpot.coordinates || lastCoord;
-
-      const dinnerSpot = selectPOI('restaurant', dayZone, lastCoord);
-
-      itinerary[day] = [
-        { time: "09:30", title: `🏛️ ${morningSpot.name}`, desc: morningSpot.desc, categoryType: "attraction", badgeIcon: "🏛️" },
-        { time: "12:30", title: `🍽️ [전통 정식 점심] ${lunchSpot.name}`, desc: lunchSpot.desc, categoryType: "restaurant", badgeIcon: "🍽️" },
-        { time: "14:30", title: `📸 ${afternoonSpot.name}`, desc: afternoonSpot.desc, categoryType: "attraction", badgeIcon: "📸" },
-        { time: "16:30", title: `☕ [문화 카페] ${cafeSpot.name}`, desc: cafeSpot.desc, categoryType: "cafe", badgeIcon: "☕" },
-        { time: "18:30", title: `🍷 [품격 저녁] ${dinnerSpot.name}`, desc: dinnerSpot.desc, categoryType: "restaurant", badgeIcon: "🍷" }
-      ];
+      itinerary[day] = generateDaySlots([
+        { time: "08:30", cat: "restaurant", prefix: "🍳 [현지식 조식]", icon: "🍳" },
+        { time: "10:00", cat: "attraction", prefix: "🏛️", icon: "🏛️" },
+        { time: "12:30", cat: "restaurant", prefix: "🍽️ [전통 정식 점심]", icon: "🍽️" },
+        { time: "14:30", cat: "attraction", prefix: "📸", icon: "📸" },
+        { time: "16:30", cat: "cafe", prefix: "☕ [문화 카페]", icon: "☕" },
+        { time: "18:30", cat: "restaurant", prefix: "🍷 [품격 저녁]", icon: "🍷" },
+        { time: "20:00", cat: "nightview", prefix: "🌃", icon: "🌃" }
+      ]);
     }
   }
 
