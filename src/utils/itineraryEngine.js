@@ -1,5 +1,6 @@
 import { getCityPOIs } from '../data/cityPoiDatabase';
-import { NEIGHBOR_MAPPING } from '../data/destinations';
+import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY } from '../data/destinations';
+import { CITY_ITINERARY_DATA } from '../data/cityItineraryData';
 
 /**
  * Calculate Haversine distance between two [lat, lng] coordinates in km
@@ -94,57 +95,84 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
     const synthId = `${cityName}_synth_${style}_${synthIndex}`;
     usedIds.add(synthId);
 
-    // Arrays for diverse random names to prevent repetitive schedules
-    const restNames = ["로컬 숨은 맛집", "현지인 추천 미식 식당", "유명 향토 요리점", "인기 만점 웨이팅 식당"];
-    const cafeNames = ["감성 테라스 찻집", "뷰가 아름다운 대형 카페", "로스터리 핸드드립 카페", "아기자기한 디저트 카페"];
-    const actNames = ["이색 야외 레저 체험", "전통 문화 체험 클래스", "로컬 시장 투어", "자연 속 힐링 스포츠"];
-    const relNames = ["고즈넉한 숲길 피크닉", "숨겨진 비밀의 정원", "강변 달빛 산책로", "마음이 편안해지는 명상 산책"];
-    const attNames = ["역사 골목 갤러리 산책", "랜드마크 기념사진 포인트", "아름다운 벽화마을", "도시의 전경이 보이는 언덕"];
+    // Resolve localized details from registry
+    const cityData = CITY_ITINERARY_DATA[cityName];
+    const countryReg = COUNTRY_REGISTRY[countryName] || {
+      type: "international",
+      continent: "Asia",
+      currency: "USD",
+      symbol: "$",
+      landmarks: ["중심 랜드마크", "도시 광장", "푸른 도심 공원", "감성 거리"],
+      foods: ["로컬 시그니처 요리", "전통 맛집 메뉴", "수제 디저트", "야경 디너 요리"]
+    };
 
-    const getSynthName = (arr) => `${cityName} ${arr[synthIndex % arr.length]}`;
+    const reg = {
+      ...countryReg,
+      landmarks: cityData && cityData.landmarks ? cityData.landmarks : countryReg.landmarks,
+      foods: cityData && cityData.foods ? cityData.foods : countryReg.foods,
+      activities: cityData && cityData.activities ? cityData.activities : ["이색적인 로컬 투어", "짜릿한 야외 액티비티 체험"]
+    };
+
+    const foodName = reg.foods[synthIndex % reg.foods.length];
+    const landmarkName = reg.landmarks[synthIndex % reg.landmarks.length];
+    const activityName = reg.activities[synthIndex % reg.activities.length];
+    
+    // Choose the best dessert or drink name
+    const getDessertOrDrink = (foodsList) => {
+      if (!foodsList || foodsList.length === 0) return "디저트";
+      const keywords = ['커피', '차', '음료', '빙수', '케이크', '크레페', '초콜릿', '디저트', '스콘', '쉐이크', '와인', '맥주', '칵테일', '푸딩', '빵', '타르트', '와플'];
+      for (const food of foodsList) {
+        if (keywords.some(k => food.includes(k))) return food;
+      }
+      return foodsList[foodsList.length - 1];
+    };
+    const dessertOrDrink = getDessertOrDrink(reg.foods);
+
+    const cafeStyles = ["전망 좋은 뷰 카페", "로컬 감성 로스팅 카페", "아기자기한 디저트 찻집", "핸드드립 스페셜티 카페"];
+    const cafeSuffix = cafeStyles[synthIndex % cafeStyles.length];
 
     if (targetCategory === 'restaurant') {
       return {
         id: synthId,
-        name: getSynthName(restNames),
+        name: `${cityName} ${foodName} 전문 맛집`,
         category: 'restaurant',
-        desc: `${cityName}의 신선한 로컬 재료로 조리한 깊은 풍미의 미식 한 끼를 음미합니다.`,
+        desc: `${cityName}의 대표 특산 미식인 [${foodName}]을(를) 정성껏 조리하여 선보이는 소문난 현지 식당입니다.`,
         badgeIcon: '🍽️',
         isSynth: true
       };
     } else if (targetCategory === 'cafe') {
       return {
         id: synthId,
-        name: getSynthName(cafeNames),
+        name: `${cityName} ${dessertOrDrink} & ${cafeSuffix}`,
         category: 'cafe',
-        desc: `여유로운 풍경이 보이는 공간에서 갓 추출한 커피와 스페셜 디저트 타임.`,
+        desc: `은은한 분위기 속에서 향긋한 로컬 음료와 달콤한 [${dessertOrDrink}](으)로 여행의 여유를 채워갑니다.`,
         badgeIcon: '☕',
         isSynth: true
       };
     } else if (style === 'activity' || targetCategory === 'activity') {
       return {
         id: synthId,
-        name: getSynthName(actNames),
+        name: `${cityName} ${activityName} 체험`,
         category: 'activity',
-        desc: `지형과 문화를 활용한 액티브한 현지 체험 및 탐방을 즐깁니다.`,
+        desc: `현지 문화와 생태를 깊이 있게 체감할 수 있는 인기 [${activityName}] 코스에 참여해 짜릿한 시간을 보냅니다.`,
         badgeIcon: '🎡',
         isSynth: true
       };
     } else if (style === 'healing' || targetCategory === 'relaxation') {
       return {
         id: synthId,
-        name: getSynthName(relNames),
+        name: `${cityName} ${landmarkName} 산책로`,
         category: 'relaxation',
-        desc: `바쁜 일상에서 벗어나 마음의 평안을 얻는 진정한 힐링 타임.`,
+        desc: `복잡한 일상에서 완전히 벗어나 초록빛 자연과 [${landmarkName}]의 평화로운 정취를 만끽하며 천천히 걷는 힐링 타임.`,
         badgeIcon: '🌿',
         isSynth: true
       };
     } else {
       return {
         id: synthId,
-        name: getSynthName(attNames),
+        name: `${cityName} ${landmarkName} 투어`,
         category: 'attraction',
-        desc: `${cityName}의 오랜 이야기가 깃든 명소를 둘러보며 멋진 여행 사진을 남깁니다.`,
+        desc: `지역을 대표하는 핵심 명소인 [${landmarkName}]을(를) 천천히 둘러보며 숨겨진 역사 이야기를 듣고 멋진 인생샷을 기록합니다.`,
         badgeIcon: '🏛️',
         isSynth: true
       };
