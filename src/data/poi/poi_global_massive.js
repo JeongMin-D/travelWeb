@@ -114086,5 +114086,36119 @@ export const poiGlobalMassive = {
       "zone": "north_bank",
       "desc": "나일강을 붉게 물들이는 환상적인 일몰과 쏟아지는 아프리카의 별빛을 감상할 수 있는 명소입니다."
     }
+  ],
+  "하와이 오아후": [
+    {
+      "id": "global_hawaii_att_1",
+      "name": "다이아몬드 헤드",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "하와이의 상징적인 화산 분화구로 하이킹 후 멋진 전망을 제공합니다."
+    },
+    {
+      "id": "global_hawaii_att_2",
+      "name": "진주만 국립 기념관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "제2차 세계대전의 역사를 간직한 엄숙하고 역사적인 기념관입니다."
+    },
+    {
+      "id": "global_hawaii_rel_1",
+      "name": "와이키키 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "부드러운 모래와 서핑을 즐길 수 있는 세계적으로 유명한 해변입니다."
+    },
+    {
+      "id": "global_hawaii_act_1",
+      "name": "쿠알로아 랜치",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광활한 대자연 속에서 승마와 ATV 등 다양한 액티비티를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_hawaii_res_1",
+      "name": "듀크스 와이키키",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "해변가에서 즐기는 맛있는 하와이 현지 음식과 멋진 칵테일 바입니다."
+    },
+    {
+      "id": "global_hawaii_res_2",
+      "name": "마루가메 우동",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "언제나 인기 있는 와이키키 최고의 가성비 우동 맛집입니다."
+    },
+    {
+      "id": "global_hawaii_res_3",
+      "name": "지오바니 새우 트럭",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "갈릭 버터 향이 가득한 하와이 노스쇼어의 명물 푸드 트럭입니다."
+    },
+    {
+      "id": "global_hawaii_caf_1",
+      "name": "아일랜드 빈티지 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 코나 커피와 달콤하고 신선한 아사이볼이 인기 있는 카페입니다."
+    },
+    {
+      "id": "global_hawaii_caf_2",
+      "name": "코나 커피 퍼베이어스",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "향긋한 코나 커피와 함께 뛰어난 퀄리티의 패스트리를 제공합니다."
+    },
+    {
+      "id": "global_hawaii_nig_1",
+      "name": "탄탈루스 전망대",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "호놀룰루의 반짝이는 도심 야경을 한눈에 내려다볼 수 있는 낭만적인 명소입니다."
+    }
+  ],
+  "사스카툰": [
+    {
+      "id": "global_saskatoon_att_1",
+      "name": "레미 모던",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현대 미술 작품들이 가득한 사스카툰을 대표하는 세련된 미술관입니다."
+    },
+    {
+      "id": "global_saskatoon_att_2",
+      "name": "와누스케윈 헤리티지 파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "원주민의 문화를 배우고 체험할 수 있는 북미 원주민 역사 공원입니다."
+    },
+    {
+      "id": "global_saskatoon_rel_1",
+      "name": "미와신 밸리 트레일",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "강가를 따라 산책하거나 자전거를 타기에 완벽한 힐링 코스입니다."
+    },
+    {
+      "id": "global_saskatoon_act_1",
+      "name": "서스캐처원 강 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강을 유람하며 사스카툰의 아름다운 풍경을 편안하게 감상할 수 있습니다."
+    },
+    {
+      "id": "global_saskatoon_res_1",
+      "name": "아유덴",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "정통 캐나다 요리와 현대적 감각이 어우러진 고급 레스토랑입니다."
+    },
+    {
+      "id": "global_saskatoon_res_2",
+      "name": "더 할로우",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 로컬 재료만을 사용하여 독창적인 요리를 선보이는 맛집입니다."
+    },
+    {
+      "id": "global_saskatoon_res_3",
+      "name": "호머스 피자",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "두툼하고 맛있는 그리스식 피자로 오랫동안 사랑받는 피자 전문점입니다."
+    },
+    {
+      "id": "global_saskatoon_caf_1",
+      "name": "콜렉티브 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "부드러운 라떼와 여유로운 분위기로 인기 많은 현지 로스터리 카페입니다."
+    },
+    {
+      "id": "global_saskatoon_caf_2",
+      "name": "시티즌 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 베이커리와 음료를 맛보며 휴식하기 좋은 감성 가득한 곳입니다."
+    },
+    {
+      "id": "global_saskatoon_nig_1",
+      "name": "브로드웨이 브릿지 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어두운 강물 위로 빛나는 다리의 아름다운 불빛을 감상할 수 있습니다."
+    }
+  ],
+  "파리": [
+    {
+      "id": "global_paris_att_1",
+      "name": "루브르 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계 3대 박물관 중 하나로 모나리자를 비롯한 무수한 명작을 소장하고 있습니다."
+    },
+    {
+      "id": "global_paris_att_2",
+      "name": "에펠탑",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "파리의 상징이자 낭만의 대명사인 세계적인 철탑 랜드마크입니다."
+    },
+    {
+      "id": "global_paris_rel_1",
+      "name": "뤽상부르 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 분수와 정원이 어우러져 파리지앵처럼 여유를 즐길 수 있는 공원입니다."
+    },
+    {
+      "id": "global_paris_act_1",
+      "name": "바토무슈 센강 유람선",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "센강을 따라 주요 명소들을 유람선 위에서 감상할 수 있는 인기 액티비티입니다."
+    },
+    {
+      "id": "global_paris_res_1",
+      "name": "르 트랑 블루",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "리옹역 내부에 위치한 화려한 인테리어의 클래식 프렌치 레스토랑입니다."
+    },
+    {
+      "id": "global_paris_res_2",
+      "name": "부용 샤르티에",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "역사적인 공간에서 합리적인 가격으로 프랑스 가정식을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_paris_res_3",
+      "name": "르 를레 드랑트르코트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "부드러운 스테이크와 특제 소스, 무한 리필 감자튀김으로 유명한 맛집입니다."
+    },
+    {
+      "id": "global_paris_caf_1",
+      "name": "카페 드 플로르",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유명 문인들이 즐겨 찾았던 파리 생제르맹 거리의 유서 깊은 카페입니다."
+    },
+    {
+      "id": "global_paris_caf_2",
+      "name": "안젤리나",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "진한 몽블랑 디저트와 깊은 풍미의 핫초코로 유명한 고급 디저트 카페입니다."
+    },
+    {
+      "id": "global_paris_nig_1",
+      "name": "몽파르나스 타워",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "에펠탑을 포함한 파리의 탁 트인 황홀한 전경을 감상할 수 있는 전망대입니다."
+    }
+  ],
+  "릴": [
+    {
+      "id": "global_lille_att_1",
+      "name": "그랑 플라스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 2,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "플랑드르 건축 양식의 매력을 느낄 수 있는 릴의 중심 광장입니다."
+    },
+    {
+      "id": "global_lille_att_2",
+      "name": "릴 미대",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스에서 루브르 다음으로 많은 예술 작품을 소장하고 있는 미술관입니다."
+    },
+    {
+      "id": "global_lille_rel_1",
+      "name": "보방 정원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속에서 자연을 만끽하며 걷기 좋은 평화로운 영국식 정원입니다."
+    },
+    {
+      "id": "global_lille_act_1",
+      "name": "불로뉴 숲 자전거 타기",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "울창한 숲길과 호수를 따라 상쾌한 공기를 마시며 자전거를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_lille_res_1",
+      "name": "브라세리 라 페",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "고급스러운 인테리어 속에서 정통 프렌치 다이닝을 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_lille_res_2",
+      "name": "라 쉬코레",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "늦은 시간까지 운영하며 릴 특유의 향토 요리를 맛볼 수 있는 유명 식당입니다."
+    },
+    {
+      "id": "global_lille_res_3",
+      "name": "블뢰 카나르",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "트렌디한 분위기에서 신선한 요리를 즐길 수 있는 비스트로입니다."
+    },
+    {
+      "id": "global_lille_caf_1",
+      "name": "메르트",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "릴을 대표하는 디저트인 얇고 쫀득한 바닐라 고프레가 매우 유명합니다."
+    },
+    {
+      "id": "global_lille_caf_2",
+      "name": "커피 메이커스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "퀄리티 높은 원두를 사용한 스페셜티 커피를 맛볼 수 있는 모던한 카페입니다."
+    },
+    {
+      "id": "global_lille_nig_1",
+      "name": "릴 브루스 전망대",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "시청 종탑에 올라가 릴 도심의 불빛과 야경을 파노라마로 감상할 수 있습니다."
+    }
+  ],
+  "렌": [
+    {
+      "id": "global_rennes_att_1",
+      "name": "렌 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "웅장한 파사드와 아름다운 내부 장식이 돋보이는 렌의 주요 성당입니다."
+    },
+    {
+      "id": "global_rennes_att_2",
+      "name": "브르타뉴 의사당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "브르타뉴 지역의 역사를 간직한 화려하고 역사적인 건축물입니다."
+    },
+    {
+      "id": "global_rennes_rel_1",
+      "name": "타보르 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "장미 정원과 식물원이 있어 평화로운 산책을 즐길 수 있는 도심 공원입니다."
+    },
+    {
+      "id": "global_rennes_act_1",
+      "name": "비렌 강 카약",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "강물을 따라 노를 저으며 렌의 자연과 풍경을 색다르게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_rennes_res_1",
+      "name": "라 상 조르주",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "브르타뉴 지방의 전통 크레프와 갈레트를 전문으로 하는 유명 식당입니다."
+    },
+    {
+      "id": "global_rennes_res_2",
+      "name": "르 갤리옹",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "우아한 분위기 속에서 섬세한 프랑스 정통 다이닝을 경험할 수 있습니다."
+    },
+    {
+      "id": "global_rennes_res_3",
+      "name": "브셰리 휴고",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "최고 품질의 육류 요리를 즐길 수 있는 현지인 추천 맛집입니다."
+    },
+    {
+      "id": "global_rennes_caf_1",
+      "name": "카페 브르통",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고풍스러운 인테리어 속에서 차분하게 휴식할 수 있는 로컬 카페입니다."
+    },
+    {
+      "id": "global_rennes_caf_2",
+      "name": "르 까레 르즈네스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 종류의 디저트와 차를 함께 맛볼 수 있는 안락한 공간입니다."
+    },
+    {
+      "id": "global_rennes_nig_1",
+      "name": "샹 자크 타워 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "도시의 고층 랜드마크 주변에서 렌의 반짝이는 밤풍경을 즐길 수 있습니다."
+    }
+  ],
+  "랭스": [
+    {
+      "id": "global_reims_att_1",
+      "name": "랭스 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 역대 왕들의 대관식이 거행되었던 웅장하고 아름다운 고딕 성당입니다."
+    },
+    {
+      "id": "global_reims_att_2",
+      "name": "팔레 뒤 토",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "대관식 관련 유물과 보물들을 전시하고 있는 대주교의 궁전입니다."
+    },
+    {
+      "id": "global_reims_rel_1",
+      "name": "샹파뉴 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심을 벗어나 푸른 잔디와 숲속에서 휴식을 취하기 좋은 평온한 공원입니다."
+    },
+    {
+      "id": "global_reims_act_1",
+      "name": "떼땅져 꺄브 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오래된 지하 셀러를 탐방하고 고급 샴페인을 시음하는 특별한 투어입니다."
+    },
+    {
+      "id": "global_reims_res_1",
+      "name": "르 파크 레 크레예르",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 가이드에 등재된 최고급 다이닝과 샴페인을 경험할 수 있습니다."
+    },
+    {
+      "id": "global_reims_res_2",
+      "name": "브라세리 르 불링그랭",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "해산물과 정통 프랑스 요리로 유명한 활기찬 분위기의 브라세리입니다."
+    },
+    {
+      "id": "global_reims_res_3",
+      "name": "카페 뒤 팔레",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "예술적인 인테리어와 함께 간단한 프렌치 식사를 즐기기 좋은 곳입니다."
+    },
+    {
+      "id": "global_reims_caf_1",
+      "name": "레 정팡 게이트",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "따뜻하고 아늑한 공간에서 맛있는 홈메이드 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_reims_caf_2",
+      "name": "베이커리 브와예",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "신선하게 구워진 빵과 크루아상으로 랭스의 아침을 시작하기 좋습니다."
+    },
+    {
+      "id": "global_reims_nig_1",
+      "name": "랭스 대성당 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조명을 받아 금빛으로 빛나는 성당과 화려한 미디어 파사드를 볼 수 있습니다."
+    }
+  ],
+  "르아브르": [
+    {
+      "id": "global_lehavre_att_1",
+      "name": "성 요셉 성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 콘크리트 타워와 화려한 스테인드글라스가 돋보이는 랜드마크입니다."
+    },
+    {
+      "id": "global_lehavre_att_2",
+      "name": "앙드레 말로 현대미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모네, 르누아르 등 인상주의 화가들의 수많은 걸작을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_lehavre_rel_1",
+      "name": "르아브르 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 바닷바람을 맞으며 자갈 해변을 산책하기 좋은 휴식처입니다."
+    },
+    {
+      "id": "global_lehavre_act_1",
+      "name": "항구 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스의 주요 무역항인 르아브르의 거대한 항구를 해상에서 둘러볼 수 있습니다."
+    },
+    {
+      "id": "global_lehavre_res_1",
+      "name": "르 비스트로 데 잘",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 식재료로 만든 요리를 부담없이 즐길 수 있는 비스트로입니다."
+    },
+    {
+      "id": "global_lehavre_res_2",
+      "name": "장 뤽 타르티에",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 투스타에 빛나는 창의적이고 예술적인 프렌치 다이닝을 선보입니다."
+    },
+    {
+      "id": "global_lehavre_res_3",
+      "name": "타베른 푸셍",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "항구 도시의 신선한 해산물과 전통 요리를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_lehavre_caf_1",
+      "name": "콜롱부스 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달콤한 머핀과 따뜻한 커피로 여행의 여유를 즐기기 좋은 카페입니다."
+    },
+    {
+      "id": "global_lehavre_caf_2",
+      "name": "르 부도아르",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "우아한 인테리어와 함께 고품질의 홍차와 디저트를 제공합니다."
+    },
+    {
+      "id": "global_lehavre_nig_1",
+      "name": "오세안 파크 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "언덕 위의 정원에서 르아브르 시내와 바다의 멋진 야경을 볼 수 있습니다."
+    }
+  ],
+  "디종": [
+    {
+      "id": "global_dijon_att_1",
+      "name": "부르고뉴 공작 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "부르고뉴 공국의 권력을 상징하는 웅장하고 아름다운 역사적 건축물입니다."
+    },
+    {
+      "id": "global_dijon_att_2",
+      "name": "디종 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "궁전 내부에 위치하며 중세 시대의 화려한 예술 작품들을 소장하고 있습니다."
+    },
+    {
+      "id": "global_dijon_rel_1",
+      "name": "다르시 정원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "백곰 동상과 분수대가 있는 고요하고 예쁜 도심 속 식물원입니다."
+    },
+    {
+      "id": "global_dijon_act_1",
+      "name": "올빼미 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바닥에 새겨진 올빼미 표식을 따라 디종의 주요 명소를 걸어서 탐방합니다."
+    },
+    {
+      "id": "global_dijon_res_1",
+      "name": "로이소 데 뒤크",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 스타를 받은 디종 최고의 부르고뉴 정통 다이닝 레스토랑입니다."
+    },
+    {
+      "id": "global_dijon_res_2",
+      "name": "비스트로 데 알",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "디종 시장 근처에 위치하여 활기찬 분위기에서 신선한 요리를 제공합니다."
+    },
+    {
+      "id": "global_dijon_res_3",
+      "name": "라 메종 데 카리아티드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "고풍스러운 건물에서 맛보는 훌륭한 부르고뉴 와인과 프렌치 요리가 일품입니다."
+    },
+    {
+      "id": "global_dijon_caf_1",
+      "name": "모닝 글로리 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "감각적인 인테리어와 함께 스페셜티 커피를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_dijon_caf_2",
+      "name": "카페 드 랭뒤스트리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 다양한 타르트와 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_dijon_nig_1",
+      "name": "필립 르 봉 타워 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "타워 위에서 내려다보는 디종의 은은하고 낭만적인 밤풍경이 일품입니다."
+    }
+  ],
+  "몽생미셸": [
+    {
+      "id": "global_montsaintmichel_att_1",
+      "name": "몽생미셸 수도원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다 위 바위섬에 세워진 신비롭고 장엄한 중세 시대의 수도원입니다."
+    },
+    {
+      "id": "global_montsaintmichel_att_2",
+      "name": "생 피에르 교회",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수도원으로 올라가는 길목에 있는 아담하고 경건한 마을 교회입니다."
+    },
+    {
+      "id": "global_montsaintmichel_rel_1",
+      "name": "갯벌 산책로",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "썰물 때 드러나는 광활한 갯벌을 맨발로 걸으며 자연과 교감할 수 있습니다."
+    },
+    {
+      "id": "global_montsaintmichel_act_1",
+      "name": "승마 투어",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "몽생미셸 만을 배경으로 말을 타고 달리는 잊지 못할 이색 체험입니다."
+    },
+    {
+      "id": "global_montsaintmichel_res_1",
+      "name": "라 메르 풀라르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오랜 역사를 지닌 폭신하고 거대한 전통 수플레 오믈렛 맛집입니다."
+    },
+    {
+      "id": "global_montsaintmichel_res_2",
+      "name": "르 를레 뒤 루아",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 양갈비 요리와 브르타뉴 전통 음식을 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_montsaintmichel_res_3",
+      "name": "레 테라스 풀라르",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바다가 내려다보이는 훌륭한 뷰와 함께 해산물 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_montsaintmichel_caf_1",
+      "name": "카페 라 시렌",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수도원을 오르기 전후에 가볍게 차 한 잔을 즐기기 좋은 카페입니다."
+    },
+    {
+      "id": "global_montsaintmichel_caf_2",
+      "name": "아우베르쥬 상 피에르 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통적인 분위기 속에서 크레프와 따뜻한 커피를 마시며 쉴 수 있습니다."
+    },
+    {
+      "id": "global_montsaintmichel_nig_1",
+      "name": "몽생미셸 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어둠이 내린 바다 위로 신비롭게 조명이 밝혀지는 수도원의 환상적인 모습입니다."
+    }
+  ],
+  "콜마르": [
+    {
+      "id": "global_colmar_att_1",
+      "name": "쁘띠 베니스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "동화 속에 들어온 듯 알록달록한 반목조 전통 가옥들이 운하를 따라 늘어서 있습니다."
+    },
+    {
+      "id": "global_colmar_att_2",
+      "name": "운터린덴 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛 수녀원을 개조한 미술관으로 이젠하임 제단화가 매우 유명합니다."
+    },
+    {
+      "id": "global_colmar_rel_1",
+      "name": "마르스 광장",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "넓은 잔디밭과 분수가 있어 벤치에 앉아 여유를 즐기기 좋은 공원입니다."
+    },
+    {
+      "id": "global_colmar_act_1",
+      "name": "로슈 강 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "운하를 따라 작은 배를 타고 콜마르의 사랑스러운 풍경을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_colmar_res_1",
+      "name": "라 메종 데 테트",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "역사적인 건축물 안에서 정통 알자스 요리와 훌륭한 와인을 제공합니다."
+    },
+    {
+      "id": "global_colmar_res_2",
+      "name": "비스트로 데 라방디에르",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "쁘띠 베니스 운하 근처에서 알자스 지방 요리를 편하게 즐길 수 있는 비스트로입니다."
+    },
+    {
+      "id": "global_colmar_res_3",
+      "name": "윈스텁 브레너",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "따뜻하고 전통적인 분위기에서 슈크루트 등 현지 음식을 맛보는 맛집입니다."
+    },
+    {
+      "id": "global_colmar_caf_1",
+      "name": "자디 에 구르망드",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "사랑스러운 인테리어 속에서 각종 케이크와 차를 즐길 수 있는 티룸입니다."
+    },
+    {
+      "id": "global_colmar_caf_2",
+      "name": "비스퀴테리 마카롱",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "콜마르의 달콤한 향기를 책임지는 부드럽고 쫀득한 수제 마카롱 상점입니다."
+    },
+    {
+      "id": "global_colmar_nig_1",
+      "name": "쁘띠 베니스 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 조명이 켜져 낮보다 더욱 낭만적이고 로맨틱한 분위기를 자아냅니다."
+    }
+  ],
+  "생말로": [
+    {
+      "id": "global_saintmalo_att_1",
+      "name": "생말로 성벽",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "구시가지를 둘러싼 견고한 성벽으로, 위를 걸으며 멋진 바다 전망을 볼 수 있습니다."
+    },
+    {
+      "id": "global_saintmalo_att_2",
+      "name": "나시오날 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "썰물 때만 걸어서 접근할 수 있는 바다 위 신비로운 군사 요새입니다."
+    },
+    {
+      "id": "global_saintmalo_rel_1",
+      "name": "시용 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "길게 뻗은 고운 백사장으로 에메랄드빛 바다를 보며 힐링하기 좋습니다."
+    },
+    {
+      "id": "global_saintmalo_act_1",
+      "name": "요트 세일링",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 바닷바람을 가르며 생말로 앞바다를 항해하는 해양 액티비티입니다."
+    },
+    {
+      "id": "global_saintmalo_res_1",
+      "name": "르 샬루티에",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 가이드에 소개된 최고급 해산물 요리를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_saintmalo_res_2",
+      "name": "크레프리 마르가르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "브르타뉴 지역의 상징인 바삭한 갈레트와 달콤한 크레프의 명소입니다."
+    },
+    {
+      "id": "global_saintmalo_res_3",
+      "name": "카페 드 루에스트",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "성벽 안에 위치하여 쾌활한 분위기에서 식사와 맥주를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_saintmalo_caf_1",
+      "name": "티 살롱 베르가모트",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "향긋한 홍차와 훌륭한 디저트를 제공하는 고풍스러운 찻집입니다."
+    },
+    {
+      "id": "global_saintmalo_caf_2",
+      "name": "커핑 브로스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "힙한 분위기와 함께 훌륭한 스페셜티 커피를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_saintmalo_nig_1",
+      "name": "그랑 베 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어두워진 생말로의 해안선과 잔잔한 바다 풍경이 아름답게 어우러집니다."
+    }
+  ],
+  "툴론": [
+    {
+      "id": "global_toulon_att_1",
+      "name": "몽 파롱",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "툴론 시내와 푸른 지중해가 한눈에 내려다보이는 해발 584m의 아름다운 산입니다."
+    },
+    {
+      "id": "global_toulon_att_2",
+      "name": "국립 해양 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 해군의 역사와 선박 모형들을 상세히 관람할 수 있습니다."
+    },
+    {
+      "id": "global_toulon_rel_1",
+      "name": "무리용 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "깨끗한 모래사장과 함께 산책로와 놀이터가 잘 갖춰진 가족 친화적 해변입니다."
+    },
+    {
+      "id": "global_toulon_act_1",
+      "name": "몽 파롱 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "케이블카를 타고 산정상으로 오르며 툴론 항구의 절경을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_toulon_res_1",
+      "name": "르 마위",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "지중해의 신선한 해산물 요리와 아름다운 바다 전망을 자랑합니다."
+    },
+    {
+      "id": "global_toulon_res_2",
+      "name": "레 테라스",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세련된 플레이팅의 고급 프렌치 다이닝을 경험할 수 있는 곳입니다."
+    },
+    {
+      "id": "global_toulon_res_3",
+      "name": "라 쁘띠 시렌",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 분위기에서 가성비 좋은 프랑스 가정식을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_toulon_caf_1",
+      "name": "카페 텔레그라프",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "역사적인 건물 내부에 위치하여 독특한 분위기 속에서 커피를 마실 수 있습니다."
+    },
+    {
+      "id": "global_toulon_caf_2",
+      "name": "브륄르리 드 툴론",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선하게 로스팅된 원두의 짙은 풍미가 돋보이는 로스터리 카페입니다."
+    },
+    {
+      "id": "global_toulon_nig_1",
+      "name": "몽 파롱 전망대 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "지중해안을 따라 반짝이는 툴론 시내의 보석 같은 야경을 감상할 수 있습니다."
+    }
+  ],
+  "그르노블": [
+    {
+      "id": "global_grenoble_att_1",
+      "name": "바스티유 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "알프스 산자락에 위치하여 시내 전경을 한눈에 볼 수 있는 역사적인 요새입니다."
+    },
+    {
+      "id": "global_grenoble_att_2",
+      "name": "그르노블 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고전부터 현대까지 아우르는 훌륭한 예술 컬렉션을 소장한 대형 미술관입니다."
+    },
+    {
+      "id": "global_grenoble_rel_1",
+      "name": "폴 미스탈 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속 넓은 녹지 공간으로 산책, 조깅 등 휴식을 취하기 완벽한 장소입니다."
+    },
+    {
+      "id": "global_grenoble_act_1",
+      "name": "바스티유 텔레페리크",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "투명한 원형 케이블카를 타고 요새로 올라가며 짜릿한 전경을 감상합니다."
+    },
+    {
+      "id": "global_grenoble_res_1",
+      "name": "르 팡타그뤼엘",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 제철 재료로 만든 수준 높은 프렌치 코스 요리를 제공합니다."
+    },
+    {
+      "id": "global_grenoble_res_2",
+      "name": "카페 안토니오",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "앤티크한 분위기의 거리에서 가벼운 식사와 음료를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_grenoble_res_3",
+      "name": "라 로마네",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들에게 오랫동안 사랑받아온 편안한 분위기의 알프스 전통 식당입니다."
+    },
+    {
+      "id": "global_grenoble_caf_1",
+      "name": "프렌치 커피 숍",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달콤한 크림이 올라간 다양한 커피 음료로 인기가 많은 카페입니다."
+    },
+    {
+      "id": "global_grenoble_caf_2",
+      "name": "카이유",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "미니멀하고 세련된 인테리어와 함께 고품질의 커피를 제공합니다."
+    },
+    {
+      "id": "global_grenoble_nig_1",
+      "name": "바스티유 요새 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "알프스 산맥을 배경으로 반짝이는 그르노블 시내의 야경을 즐길 수 있습니다."
+    }
+  ],
+  "낭시": [
+    {
+      "id": "global_nancy_att_1",
+      "name": "스타니슬라스 광장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "화려한 금빛 장식과 우아한 건축물이 돋보이는 유럽에서 가장 아름다운 광장입니다."
+    },
+    {
+      "id": "global_nancy_att_2",
+      "name": "에콜 드 낭시 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아르누보 양식의 발상지답게 매혹적인 아르누보 예술품들을 전시하고 있습니다."
+    },
+    {
+      "id": "global_nancy_rel_1",
+      "name": "페피니에르 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광장 옆에 위치한 거대한 공원으로 미니 동물원과 놀이시설이 있습니다."
+    },
+    {
+      "id": "global_nancy_act_1",
+      "name": "미니 트레인 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "귀여운 관광 열차를 타고 낭시의 주요 역사적 명소들을 편안하게 둘러봅니다."
+    },
+    {
+      "id": "global_nancy_res_1",
+      "name": "라 메종 당 라 파크",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 스타를 받은 세련되고 현대적인 고급 프렌치 레스토랑입니다."
+    },
+    {
+      "id": "global_nancy_res_2",
+      "name": "브라세리 렉셀시어",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "숨 막히게 화려한 아르누보 인테리어를 감상하며 정통 식사를 할 수 있습니다."
+    },
+    {
+      "id": "global_nancy_res_3",
+      "name": "레 프레르 마르샹",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "치즈 전문점이 운영하여 뛰어난 치즈 요리와 와인을 즐길 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_nancy_caf_1",
+      "name": "아모리노",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스타니슬라스 광장 근처에서 예쁜 장미꽃 모양의 젤라토를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_nancy_caf_2",
+      "name": "장 마카롱",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "낭시 전통 마카롱의 원조 맛을 고스란히 느낄 수 있는 유명한 베이커리입니다."
+    },
+    {
+      "id": "global_nancy_nig_1",
+      "name": "스타니슬라스 광장 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "황금빛 조명과 미디어 아트가 어우러져 화려하고 낭만적인 밤을 선사합니다."
+    }
+  ],
+  "메스": [
+    {
+      "id": "global_metz_att_1",
+      "name": "퐁피두 센터 메스",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 지붕 디자인이 인상적인 세계적인 현대 미술관의 분관입니다."
+    },
+    {
+      "id": "global_metz_att_2",
+      "name": "메스 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "샤갈이 디자인한 스테인드글라스와 노란색 석회암이 매력적인 대성당입니다."
+    },
+    {
+      "id": "global_metz_rel_1",
+      "name": "에스플라나드 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시내 중심부에 위치한 아름다운 정원으로 조용히 산책하기 좋습니다."
+    },
+    {
+      "id": "global_metz_act_1",
+      "name": "모젤 강 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "보트를 타고 모젤 강을 따라 흐르며 메스의 아름다운 건축물들을 감상합니다."
+    },
+    {
+      "id": "global_metz_res_1",
+      "name": "브라세리 플로",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아름다운 샹들리에 아래서 가성비 좋은 프랑스 전통 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_metz_res_2",
+      "name": "엘 테아트로",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "로맨틱한 분위기에서 훌륭한 이탈리안 퓨전 다이닝을 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_metz_res_3",
+      "name": "셰 마리에트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "친절한 서비스와 함께 로렌 지방의 향토 요리를 맛깔나게 제공합니다."
+    },
+    {
+      "id": "global_metz_caf_1",
+      "name": "폭스 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "여유로운 분위기와 함께 수준 높은 커피, 맛있는 브런치를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_metz_caf_2",
+      "name": "카페 파크스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세심하게 내린 핸드드립 커피와 달콤한 디저트가 어우러진 안락한 카페입니다."
+    },
+    {
+      "id": "global_metz_nig_1",
+      "name": "탕플 누프 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "강물 위에 떠 있는 듯한 개신교 교회의 그림 같은 야경을 감상할 수 있습니다."
+    }
+  ],
+  "비아리츠": [
+    {
+      "id": "global_biarritz_att_1",
+      "name": "비아리츠 해양 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 해양 생물과 아름다운 아르데코 건축 양식을 뽐내는 훌륭한 수족관입니다."
+    },
+    {
+      "id": "global_biarritz_att_2",
+      "name": "비아리츠 등대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해안가 끝에 우뚝 솟은 등대로, 나선형 계단을 오르면 탁 트인 오션뷰가 펼쳐집니다."
+    },
+    {
+      "id": "global_biarritz_rel_1",
+      "name": "코트 데 바스크 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유럽 서핑의 발상지로 유명하며, 황홀한 일몰을 감상하며 산책하기 좋습니다."
+    },
+    {
+      "id": "global_biarritz_act_1",
+      "name": "서핑 강습",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "서핑의 성지에서 전문 강사와 함께 파도를 타보는 짜릿한 액티비티입니다."
+    },
+    {
+      "id": "global_biarritz_res_1",
+      "name": "레 로제 드 비아리츠",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "섬세하고 창의적인 미슐랭 스타의 미식 코스를 경험할 수 있는 다이닝입니다."
+    },
+    {
+      "id": "global_biarritz_res_2",
+      "name": "셰 알베르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "항구 근처에서 바다 냄새를 맡으며 갓 잡은 신선한 해산물을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_biarritz_res_3",
+      "name": "르 코르세르",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "캐주얼하고 활기찬 분위기 속에서 바스크 지방 특유의 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_biarritz_caf_1",
+      "name": "밀와 코피 숍",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "건강하고 푸짐한 브런치와 진한 커피가 일품인 인기 카페입니다."
+    },
+    {
+      "id": "global_biarritz_caf_2",
+      "name": "블레 드 메르",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다를 닮은 푸른 인테리어에서 퀄리티 높은 디저트와 차를 제공합니다."
+    },
+    {
+      "id": "global_biarritz_nig_1",
+      "name": "로셰 드 라 비에르주 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "바다 위 바위에 세워진 성모 마리아 동상 주변으로 파도와 불빛이 어우러집니다."
+    }
+  ],
+  "로마": [
+    {
+      "id": "global_rome_att_1",
+      "name": "콜로세움",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 로마의 위대함을 그대로 보여주는 거대한 원형 투기장입니다."
+    },
+    {
+      "id": "global_rome_att_2",
+      "name": "판테온",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "천장의 커다란 구멍으로 들어오는 빛이 경이로운 고대 로마의 완벽한 신전입니다."
+    },
+    {
+      "id": "global_rome_rel_1",
+      "name": "보르게세 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로마에서 가장 큰 공원 중 하나로 숲과 호수, 미술관이 어우러져 있습니다."
+    },
+    {
+      "id": "global_rome_act_1",
+      "name": "테베레 강 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강물을 따라 흘러가며 영원의 도시 로마를 색다른 각도에서 바라봅니다."
+    },
+    {
+      "id": "global_rome_res_1",
+      "name": "로시올리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "최고의 재료로 만든 진한 카르보나라와 베이커리로 명성이 자자한 맛집입니다."
+    },
+    {
+      "id": "global_rome_res_2",
+      "name": "다 엔초 알 29",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "트라스테베레 지역의 따뜻한 분위기 속에서 전통 로마식 파스타를 제공합니다."
+    },
+    {
+      "id": "global_rome_res_3",
+      "name": "안티카 페사",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "할리우드 스타들도 즐겨 찾는 고풍스럽고 우아한 이탈리안 파인 다이닝입니다."
+    },
+    {
+      "id": "global_rome_caf_1",
+      "name": "산 에우스타키오 일 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수십 년 전통의 로스팅 비법으로 만든 풍부한 거품의 에스프레소가 유명합니다."
+    },
+    {
+      "id": "global_rome_caf_2",
+      "name": "안티코 카페 그레코",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "괴테, 카사노바가 사랑했던 로마에서 가장 오래되고 예술적인 카페입니다."
+    },
+    {
+      "id": "global_rome_nig_1",
+      "name": "트레비 분수 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "황금빛 조명 아래 웅장하게 물을 뿜어내는 분수의 로맨틱한 야경입니다."
+    }
+  ],
+  "토리노": [
+    {
+      "id": "global_turin_att_1",
+      "name": "몰레 안토넬리아나",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "토리노의 스카이라인을 장식하는 돔 형태의 건축물로 내부에 국립 영화 박물관이 있습니다."
+    },
+    {
+      "id": "global_turin_att_2",
+      "name": "이집트 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "카이로에 이어 세계에서 두 번째로 큰 규모의 이집트 유물을 자랑합니다."
+    },
+    {
+      "id": "global_turin_rel_1",
+      "name": "발렌티노 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "포 강변을 따라 조성된 우아한 공원으로 중세풍 성곽과 정원을 산책할 수 있습니다."
+    },
+    {
+      "id": "global_turin_act_1",
+      "name": "자동차 박물관 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자동차의 도시 토리노에서 피아트를 비롯한 흥미로운 자동차의 역사를 관람합니다."
+    },
+    {
+      "id": "global_turin_res_1",
+      "name": "델 캄비오",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "수백 년의 역사를 지닌 화려한 레스토랑에서 럭셔리한 미식 경험을 제공합니다."
+    },
+    {
+      "id": "global_turin_res_2",
+      "name": "트라토리아 소토 라 루나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "친근한 분위기에서 훌륭한 품질의 피에몬테 지방 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_turin_res_3",
+      "name": "포르토 디 사보나",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "유서 깊은 광장에 위치하여 현지인들이 사랑하는 푸짐한 파스타 맛집입니다."
+    },
+    {
+      "id": "global_turin_caf_1",
+      "name": "카페 산 카를로",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "샹들리에와 화려한 거울 장식 속에서 귀족처럼 에스프레소를 즐기는 곳입니다."
+    },
+    {
+      "id": "global_turin_caf_2",
+      "name": "비체린",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초콜릿, 커피, 크림이 층을 이룬 토리노의 전통 음료 비체린의 원조 카페입니다."
+    },
+    {
+      "id": "global_turin_nig_1",
+      "name": "비토리오 베네토 광장 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "포 강 주변으로 은은하게 빛나는 유럽 최대 규모의 아름다운 광장입니다."
+    }
+  ],
+  "바리": [
+    {
+      "id": "global_bari_att_1",
+      "name": "성 니콜라오 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "산타클로스의 유래가 된 성 니콜라오의 유해를 모신 역사적인 로마네스크 성당입니다."
+    },
+    {
+      "id": "global_bari_att_2",
+      "name": "바리 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다를 지키던 견고한 중세 요새로 내부에서 다양한 예술 전시가 열립니다."
+    },
+    {
+      "id": "global_bari_rel_1",
+      "name": "판 디 스텔레 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시내에서 가깝고 접근성이 좋아 편하게 해수욕과 일광욕을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_bari_act_1",
+      "name": "파스타 쿠킹 클래스",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바리 구시가지 골목에서 현지 할머니들에게 직접 귀 모양의 오레키에테를 배웁니다."
+    },
+    {
+      "id": "global_bari_res_1",
+      "name": "테라니마",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "풀리아 주 특유의 정통 향토 요리와 신선한 식재료의 맛을 살린 맛집입니다."
+    },
+    {
+      "id": "global_bari_res_2",
+      "name": "라 체체나",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "구시가지 골목에 위치하여 활기찬 분위기에서 피자와 파스타를 제공합니다."
+    },
+    {
+      "id": "global_bari_res_3",
+      "name": "안티카 오스테리아",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "풍부한 해산물과 와인을 즐길 수 있는 격식 있고 우아한 레스토랑입니다."
+    },
+    {
+      "id": "global_bari_caf_1",
+      "name": "카페 제리코",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "트렌디하고 편안한 분위기에서 깔끔한 에스프레소 한 잔의 여유를 즐깁니다."
+    },
+    {
+      "id": "global_bari_caf_2",
+      "name": "바르 마르테치스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달콤한 이탈리아식 페이스트리와 젤라토가 훌륭한 디저트 카페입니다."
+    },
+    {
+      "id": "global_bari_nig_1",
+      "name": "룽고마레 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "아드리아 해안을 따라 길게 이어진 산책로에서 황홀한 바다 야경을 만끽할 수 있습니다."
+    }
+  ],
+  "폼페이": [
+    {
+      "id": "global_pompeii_att_1",
+      "name": "폼페이 고고학 공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "화산 폭발로 멈춰버린 고대 로마 도시의 거리를 생생하게 걸어볼 수 있는 유적지입니다."
+    },
+    {
+      "id": "global_pompeii_att_2",
+      "name": "미스터리 빌라",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "선명하게 남아있는 붉은 빛의 프레스코화가 돋보이는 외곽의 귀족 저택입니다."
+    },
+    {
+      "id": "global_pompeii_rel_1",
+      "name": "베수비오 산 국립공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "웅장한 화산 지대를 여유롭게 산책하며 웅장한 대자연을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_pompeii_act_1",
+      "name": "베수비오 산 하이킹",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "폼페이를 멸망시킨 거대한 화산의 분화구까지 직접 올라가보는 하이킹입니다."
+    },
+    {
+      "id": "global_pompeii_res_1",
+      "name": "카우포나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "고대 로마 시대의 식당을 재현하여 당시의 레시피로 만든 이색적인 요리를 맛봅니다."
+    },
+    {
+      "id": "global_pompeii_res_2",
+      "name": "일 프린시페",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "고급스럽고 정갈한 분위기에서 캄파니아 지방의 훌륭한 미식을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_pompeii_res_3",
+      "name": "라 베티나",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "유적지 관람 후 화덕 피자와 시원한 맥주로 피로를 풀기 좋은 맛집입니다."
+    },
+    {
+      "id": "global_pompeii_caf_1",
+      "name": "폼페이 마켓 바",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "더운 날씨에 시원한 슬러시나 레몬 그라니따로 수분을 보충하기 좋은 카페입니다."
+    },
+    {
+      "id": "global_pompeii_caf_2",
+      "name": "파스티체리아 데 비보",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수십 년 전통의 레시피로 만든 나폴리식 전통 빵과 디저트가 일품입니다."
+    },
+    {
+      "id": "global_pompeii_nig_1",
+      "name": "캄파니아 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어두워진 유적지 너머로 평화롭게 빛나는 주변 마을들의 아름다운 전경입니다."
+    }
+  ],
+  "소렌토": [
+    {
+      "id": "global_소렌토_att_1",
+      "name": "타소 광장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "소렌토의 중심지이자 상징적인 광장입니다."
+    },
+    {
+      "id": "global_소렌토_att_2",
+      "name": "마리나 그란데",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "전통적인 어촌 마을의 정취를 느낄 수 있는 항구입니다."
+    },
+    {
+      "id": "global_소렌토_rel_1",
+      "name": "빌라 코무날레",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "나폴리 만과 베수비오 산의 탁 트인 전망을 감상할 수 있는 공원입니다."
+    },
+    {
+      "id": "global_소렌토_act_1",
+      "name": "아말피 해안 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "소렌토에서 출발하여 아름다운 아말피 해안을 둘러보는 보트 투어입니다."
+    },
+    {
+      "id": "global_소렌토_res_1",
+      "name": "일 부코",
+      "category": "restaurant",
+      "subCategory": "italian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 별을 받은 고급 이탈리안 해산물 레스토랑입니다."
+    },
+    {
+      "id": "global_소렌토_res_2",
+      "name": "트라토리아 다 에밀리아",
+      "category": "restaurant",
+      "subCategory": "italian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "마리나 그란데에 위치한 전통적인 현지 해산물 식당입니다."
+    },
+    {
+      "id": "global_소렌토_res_3",
+      "name": "오 파루치아노",
+      "category": "restaurant",
+      "subCategory": "italian",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "레몬 나무 아래에서 정통 소렌토 요리를 즐길 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_소렌토_caf_1",
+      "name": "바 파우노",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "타소 광장에 위치한 유명한 카페로 에스프레소와 디저트가 훌륭합니다."
+    },
+    {
+      "id": "global_소렌토_caf_2",
+      "name": "파스티체리아 다비드",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "젤라토와 전통 이탈리아 디저트를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_소렌토_nig_1",
+      "name": "소렌토 절벽 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "밤이 되면 불빛으로 반짝이는 소렌토의 해안 절벽과 바다 야경입니다."
+    }
+  ],
+  "쿠엥카": [
+    {
+      "id": "global_쿠엥카_att_1",
+      "name": "매달린 집 (Las Casas Colgadas)",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "절벽 끝에 아슬아슬하게 지어진 쿠엥카의 상징적인 건축물입니다."
+    },
+    {
+      "id": "global_쿠엥카_att_2",
+      "name": "쿠엥카 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고딕 양식과 다양한 건축 양식이 혼합된 아름다운 대성당입니다."
+    },
+    {
+      "id": "global_쿠엥카_rel_1",
+      "name": "산 파블로 다리",
+      "category": "relaxation",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "valley",
+      "desc": "후카르 강 위를 지나는 다리로 매달린 집을 조망하기 좋은 장소입니다."
+    },
+    {
+      "id": "global_쿠엥카_act_1",
+      "name": "마법의 도시 (Ciudad Encantada) 투어",
+      "category": "activity",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "자연이 빚어낸 독특한 모양의 석회암 지대를 탐험하는 투어입니다."
+    },
+    {
+      "id": "global_쿠엥카_res_1",
+      "name": "피구두스 (Figon del Huecar)",
+      "category": "restaurant",
+      "subCategory": "spanish",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "절벽에 위치하여 아름다운 전망과 함께 스페인 요리를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_쿠엥카_res_2",
+      "name": "트리비오 (Trivio)",
+      "category": "restaurant",
+      "subCategory": "spanish",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 가이드에 등재된 현대적인 스페인 요리 레스토랑입니다."
+    },
+    {
+      "id": "global_쿠엥카_res_3",
+      "name": "메손 다이아나 (Meson Diana)",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "쿠엥카 전통 요리인 아호 아리에로 등을 맛볼 수 있는 현지 식당입니다."
+    },
+    {
+      "id": "global_쿠엥카_caf_1",
+      "name": "카페 테르미나",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광장 근처에 위치한 여유로운 분위기의 카페입니다."
+    },
+    {
+      "id": "global_쿠엥카_caf_2",
+      "name": "루이즈 제과점",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 스페인 구운 과자와 빵을 제공하는 인기 제과점입니다."
+    },
+    {
+      "id": "global_쿠엥카_nig_1",
+      "name": "산 파블로 수도원 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "valley",
+      "desc": "현재는 파라도르 호텔로 쓰이는 옛 수도원과 다리의 은은한 야경입니다."
+    }
+  ],
+  "론다": [
+    {
+      "id": "global_론다_att_1",
+      "name": "누에보 다리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "구시가지와 신시가지를 잇는 거대한 아치형 다리이자 론다의 상징입니다."
+    },
+    {
+      "id": "global_론다_att_2",
+      "name": "론다 투우장",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페인에서 가장 오래된 투우장 중 하나로 역사적인 의미를 가집니다."
+    },
+    {
+      "id": "global_론다_rel_1",
+      "name": "알라메다 델 타호 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "탁 트인 안달루시아 평원의 절경을 감상하며 쉴 수 있는 공원입니다."
+    },
+    {
+      "id": "global_론다_act_1",
+      "name": "엘 타호 협곡 트레킹",
+      "category": "activity",
+      "subCategory": "trekking",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "다리 아래쪽으로 내려가 웅장한 협곡의 모습을 올려다보는 하이킹입니다."
+    },
+    {
+      "id": "global_론다_res_1",
+      "name": "푸에르타 그란데",
+      "category": "restaurant",
+      "subCategory": "spanish",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "투우장 근처에 위치한 유명한 소꼬리 찜 요리(라보 데 토로) 전문점입니다."
+    },
+    {
+      "id": "global_론다_res_2",
+      "name": "엘 모라비토",
+      "category": "restaurant",
+      "subCategory": "spanish",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "절벽 가장자리에 위치해 누에보 다리를 보며 식사할 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_론다_res_3",
+      "name": "바르 산타 마리아",
+      "category": "restaurant",
+      "subCategory": "tapas",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "구시가지 골목에 있는 전통적이고 가성비 좋은 타파스 바입니다."
+    },
+    {
+      "id": "global_론다_caf_1",
+      "name": "카페 라스 캄파나스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페인 광장에 위치해 커피와 추로스를 즐기기 좋은 츄레리아 겸 카페입니다."
+    },
+    {
+      "id": "global_론다_caf_2",
+      "name": "파스티체리아 다 로사",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 즐겨 찾는 디저트와 페이스트리 숍입니다."
+    },
+    {
+      "id": "global_론다_nig_1",
+      "name": "누에보 다리 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "nature",
+      "desc": "은은한 조명이 비추는 거대한 다리와 협곡의 낭만적인 밤 풍경입니다."
+    }
+  ],
+  "뒤셀도르프": [
+    {
+      "id": "global_뒤셀도르프_att_1",
+      "name": "쾨니히살레",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 운하와 가로수가 있는 명품 쇼핑 거리입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_att_2",
+      "name": "라인타워 (라인투름)",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "도시와 라인 강 전체를 조망할 수 있는 가장 높은 전망대입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_rel_1",
+      "name": "호프가르텐",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 한가운데 위치한 넓고 평화로운 역사적인 공원입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_act_1",
+      "name": "라인 강 유람선",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "라인 강을 따라 구시가지와 현대 건축물을 감상하는 크루즈입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_res_1",
+      "name": "슈마허 (Brauerei Schumacher)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "뒤셀도르프 특산 알트비어와 정통 독일식 돼지고기 요리를 제공하는 양조장 식당입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_res_2",
+      "name": "우에리게 (Uerige)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "old_town",
+      "desc": "구시가지에서 가장 유명한 알트비어 하우스로 활기찬 분위기가 특징입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_res_3",
+      "name": "나니와 누들 앤 수프",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "japan_town",
+      "desc": "일본 거리에 위치한 줄 서서 먹는 유명한 일본식 라멘 가게입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_caf_1",
+      "name": "하이네만 (Heinemann)",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초콜릿 트러플과 케이크가 아주 유명한 프리미엄 카페입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_caf_2",
+      "name": "로스터리 뷰어링",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페셜티 커피를 직접 로스팅하여 제공하는 트렌디한 카페입니다."
+    },
+    {
+      "id": "global_뒤셀도르프_nig_1",
+      "name": "메디엔하펜 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "port",
+      "desc": "프랭크 게리의 독특한 건축물들이 조명을 받아 빛나는 항구 야경입니다."
+    }
+  ],
+  "도르트문트": [
+    {
+      "id": "global_도르트문트_att_1",
+      "name": "지그날 이두나 파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "보루시아 도르트문트 축구팀의 홈구장으로 거대한 열기를 느낄 수 있습니다."
+    },
+    {
+      "id": "global_도르트문트_att_2",
+      "name": "도르트문트 U 타워",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 양조장 건물을 개조한 현대 미술관 및 문화 공간입니다."
+    },
+    {
+      "id": "global_도르트문트_rel_1",
+      "name": "베스트팔렌 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "장미 정원과 잔디밭, 플로리안 타워가 있는 도르트문트 최고의 휴식처입니다."
+    },
+    {
+      "id": "global_도르트문트_act_1",
+      "name": "독일 축구 박물관 관람",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독일 축구의 역사와 영광의 순간들을 인터랙티브하게 체험할 수 있습니다."
+    },
+    {
+      "id": "global_도르트문트_res_1",
+      "name": "회벨스 하우스 (Hövels Hausbrauerei)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지 양조장에서 갓 만든 맥주와 독일 전통 요리를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_도르트문트_res_2",
+      "name": "피제리아 데 치코",
+      "category": "restaurant",
+      "subCategory": "italian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들에게 인기 있는 화덕 피자 전문점입니다."
+    },
+    {
+      "id": "global_도르트문트_res_3",
+      "name": "프리텐베르크 (Frittenwerk)",
+      "category": "restaurant",
+      "subCategory": "fastfood",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "푸틴(Poutine)과 다양한 토핑을 얹은 감자튀김을 제공하는 캐주얼 식당입니다."
+    },
+    {
+      "id": "global_도르트문트_caf_1",
+      "name": "카페 블루멘",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "편안한 분위기 속에서 비건 케이크와 커피를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "global_도르트문트_caf_2",
+      "name": "로스팅 컴퍼니",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 볶은 고품질 원두를 사용하는 커피 전문점입니다."
+    },
+    {
+      "id": "global_도르트문트_nig_1",
+      "name": "플로리안 타워 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "공원 내 타워 전망대에서 내려다보는 도르트문트의 고요한 야경입니다."
+    }
+  ],
+  "에센": [
+    {
+      "id": "global_에센_att_1",
+      "name": "촐페어라인 탄광 산업단지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "유네스코 세계문화유산으로 지정된 거대한 옛 탄광이자 복합 문화 공간입니다."
+    },
+    {
+      "id": "global_에센_att_2",
+      "name": "폴크방 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독일에서 가장 중요한 근현대 미술 컬렉션을 소장한 미술관입니다."
+    },
+    {
+      "id": "global_에센_rel_1",
+      "name": "그루가파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "광활한 식물원, 조각 공원, 온천 등을 갖춘 에센의 허파 같은 공원입니다."
+    },
+    {
+      "id": "global_에센_act_1",
+      "name": "발데나이 호수 자전거 라이딩",
+      "category": "activity",
+      "subCategory": "activity",
+      "themes": {
+        "healing": 5,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "에센 남부의 아름다운 인공 호수 주변을 따라 자전거를 타는 활동입니다."
+    },
+    {
+      "id": "global_에센_res_1",
+      "name": "카지노 촐페어라인",
+      "category": "restaurant",
+      "subCategory": "european",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "옛 탄광의 웅장한 산업 공간에서 고급스러운 퓨전 요리를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_에센_res_2",
+      "name": "프리우엘 파크 레스토랑",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "그루가파크 근처에 위치한 평화로운 분위기의 독일 전통 레스토랑입니다."
+    },
+    {
+      "id": "global_에센_res_3",
+      "name": "루카스 (Lukas)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "발데나이 호수 근처 옛 기차역을 개조한 분위기 좋은 펍 겸 식당입니다."
+    },
+    {
+      "id": "global_에센_caf_1",
+      "name": "카페 노르트",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "레트로한 인테리어와 록 음악이 흐르는 에센의 상징적인 카페 및 바입니다."
+    },
+    {
+      "id": "global_에센_caf_2",
+      "name": "골드바 (Goldbar)",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 브런치 메뉴와 훌륭한 커피를 제공하는 모던한 카페입니다."
+    },
+    {
+      "id": "global_에센_nig_1",
+      "name": "촐페어라인 야간 조명",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "밤이 되면 산업 구조물에 붉고 푸른 조명이 켜져 신비로운 분위기를 자아냅니다."
+    }
+  ],
+  "하이델베르크": [
+    {
+      "id": "global_하이델베르크_att_1",
+      "name": "하이델베르크 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "언덕 위에 자리 잡아 도시와 네카어 강을 내려다보는 아름다운 고성입니다."
+    },
+    {
+      "id": "global_하이델베르크_att_2",
+      "name": "카를 테오도르 다리 (옛 다리)",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "네카어 강을 가로지르는 우아한 아치형 돌다리입니다."
+    },
+    {
+      "id": "global_하이델베르크_rel_1",
+      "name": "철학자의 길",
+      "category": "relaxation",
+      "subCategory": "promenade",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "강 건너 언덕을 따라 난 산책로로, 하이델베르크 성의 최고의 뷰포인트입니다."
+    },
+    {
+      "id": "global_하이델베르크_act_1",
+      "name": "학생 감옥 및 하이델베르크 대학 투어",
+      "category": "activity",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "독일 최고(最古) 대학의 역사와 옛 학생들의 낙서가 가득한 학생 감옥을 구경합니다."
+    },
+    {
+      "id": "global_하이델베르크_res_1",
+      "name": "춤 굴덴 샤프 (Zum Gulden Schaf)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "유서 깊은 구시가지 식당으로 슈바인스학세 등 정통 독일 요리가 유명합니다."
+    },
+    {
+      "id": "global_하이델베르크_res_2",
+      "name": "베터스 양조장 (Vetter's Alt Heidelberger Brauhaus)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "독한 맥주와 맛있는 소시지를 즐길 수 있는 전통 양조장입니다."
+    },
+    {
+      "id": "global_하이델베르크_res_3",
+      "name": "슈니첼방크 (Schnitzelbank)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "아늑한 분위기에서 크고 맛있는 슈니첼을 제공하는 현지 맛집입니다."
+    },
+    {
+      "id": "global_하이델베르크_caf_1",
+      "name": "카페 크뇌젤",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "유명한 '학생의 키스(Studentenkuss)' 초콜릿을 파는 하이델베르크에서 가장 오래된 카페입니다."
+    },
+    {
+      "id": "global_하이델베르크_caf_2",
+      "name": "로스팅 하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "구시가지 골목길에 위치한 작고 향긋한 커피 전문점입니다."
+    },
+    {
+      "id": "global_하이델베르크_nig_1",
+      "name": "네카어 강변 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "river",
+      "desc": "조명이 켜진 하이델베르크 성과 다리가 강물에 반사되는 낭만적인 밤 풍경입니다."
+    }
+  ],
+  "로텐부르크": [
+    {
+      "id": "global_로텐부르크_att_1",
+      "name": "플뢴라인",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "동화 속에 나오는 듯한 갈림길의 전통 목조 주택과 시계탑 풍경입니다."
+    },
+    {
+      "id": "global_로텐부르크_att_2",
+      "name": "로텐부르크 시청사 광장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "정각마다 인형이 나오는 시계탑을 볼 수 있는 중심 광장입니다."
+    },
+    {
+      "id": "global_로텐부르크_rel_1",
+      "name": "부르크 정원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "옛 성터에 자리하여 도시 밖 계곡의 평화로운 풍경을 감상할 수 있는 정원입니다."
+    },
+    {
+      "id": "global_로텐부르크_act_1",
+      "name": "나이트워치 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "중세 경비병 복장을 한 가이드와 함께 구시가지 골목의 역사를 듣는 야간 투어입니다."
+    },
+    {
+      "id": "global_로텐부르크_res_1",
+      "name": "바우마이스터하우스",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "16세기에 지어진 역사적인 건물에서 아름다운 안뜰을 보며 즐기는 독일 식당입니다."
+    },
+    {
+      "id": "global_로텐부르크_res_2",
+      "name": "추어 횔 (Zur Holl)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "중세 시대 지하실 분위기 속에서 훌륭한 스테이크와 와인을 제공하는 곳입니다."
+    },
+    {
+      "id": "global_로텐부르크_res_3",
+      "name": "알트프랭키쉐 바인슈투베",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "old_town",
+      "desc": "아늑하고 고풍스러운 분위기의 프란켄 지방 전통 요리 전문점입니다."
+    },
+    {
+      "id": "global_로텐부르크_caf_1",
+      "name": "카페 프리들",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로텐부르크 명물 과자인 '슈니발렌'을 맛볼 수 있는 유명한 빵집입니다."
+    },
+    {
+      "id": "global_로텐부르크_caf_2",
+      "name": "카페 아이히오르스트",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "따뜻한 커피와 훌륭한 수제 케이크를 곁들일 수 있는 조용한 카페입니다."
+    },
+    {
+      "id": "global_로텐부르크_nig_1",
+      "name": "구시가지 성벽 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "old_town",
+      "desc": "가로등 빛이 은은하게 비추는 중세 성벽과 조약돌 골목길의 밤 풍경입니다."
+    }
+  ],
+  "브레멘": [
+    {
+      "id": "global_브레멘_att_1",
+      "name": "브레멘 시청사 및 롤란트 상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유네스코 세계문화유산으로 지정된 화려한 르네상스 양식의 시청사입니다."
+    },
+    {
+      "id": "global_브레멘_att_2",
+      "name": "브레멘 음악대 동상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "당나귀 앞다리를 만지면 소원이 이루어진다는 동화 속 주인공들의 동상입니다."
+    },
+    {
+      "id": "global_브레멘_rel_1",
+      "name": "슈노어 지구",
+      "category": "relaxation",
+      "subCategory": "promenade",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "좁은 골목길과 아기자기한 전통 가옥, 수공예품 상점이 모여있는 평화로운 지구입니다."
+    },
+    {
+      "id": "global_브레멘_act_1",
+      "name": "슈라흐테 강변 산책",
+      "category": "activity",
+      "subCategory": "promenade",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "베저 강을 따라 늘어선 산책로와 비어 가든에서 여유를 즐기는 활동입니다."
+    },
+    {
+      "id": "global_브레멘_res_1",
+      "name": "브레머 라츠켈러",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "시청사 지하에 위치한 유서 깊은 식당으로, 엄청난 종류의 독일 와인과 음식을 제공합니다."
+    },
+    {
+      "id": "global_브레멘_res_2",
+      "name": "슈팅거 (Schüttinger)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "브레멘에서 가장 오래된 수제 맥주 양조장으로 북적이는 분위기가 특징입니다."
+    },
+    {
+      "id": "global_브레멘_res_3",
+      "name": "피셔스토베",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "북해에서 갓 잡은 신선한 해산물 요리를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_브레멘_caf_1",
+      "name": "슈노어 티하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "old_town",
+      "desc": "아기자기한 슈노어 지구에 위치해 다양한 홍차와 디저트를 파는 찻집입니다."
+    },
+    {
+      "id": "global_브레멘_caf_2",
+      "name": "크누프 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 커피와 함께 브레멘의 젊고 현대적인 분위기를 느낄 수 있는 곳입니다."
+    },
+    {
+      "id": "global_브레멘_nig_1",
+      "name": "마르크트 광장 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조명이 아름답게 켜진 시청사와 주변 르네상스 건물들이 이루는 웅장한 야경입니다."
+    }
+  ],
+  "본": [
+    {
+      "id": "global_본_att_1",
+      "name": "베토벤 생가",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "천재 음악가 베토벤이 태어나고 자란 집으로 현재는 박물관입니다."
+    },
+    {
+      "id": "global_본_att_2",
+      "name": "구 시청사 광장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로코코 양식의 아름다운 구 시청사가 있는 본의 중심지입니다."
+    },
+    {
+      "id": "global_본_rel_1",
+      "name": "라인 강변 산책로",
+      "category": "relaxation",
+      "subCategory": "promenade",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "라인 강을 따라 길게 이어진 평화로운 산책로와 잔디밭입니다."
+    },
+    {
+      "id": "global_본_act_1",
+      "name": "드라헨부르크 성 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "본 외곽 산속에 위치한 동화 같은 드라헨부르크 성을 방문하는 코스입니다."
+    },
+    {
+      "id": "global_본_res_1",
+      "name": "브라우스 가스테호스",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "푸짐한 독일 정통 요리와 쾰슈 맥주를 제공하는 전통 식당입니다."
+    },
+    {
+      "id": "global_본_res_2",
+      "name": "타지마할",
+      "category": "restaurant",
+      "subCategory": "indian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "본에서 오랫동안 사랑받아 온 수준 높은 인도 요리 전문점입니다."
+    },
+    {
+      "id": "global_본_res_3",
+      "name": "할루 위트",
+      "category": "restaurant",
+      "subCategory": "european",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현대적이고 창의적인 파인 다이닝을 경험할 수 있는 곳입니다."
+    },
+    {
+      "id": "global_본_caf_1",
+      "name": "카페 파스빈더",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 케이크와 커피를 즐길 수 있는 클래식한 독일식 카페입니다."
+    },
+    {
+      "id": "global_본_caf_2",
+      "name": "블랙 커피 파머시",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 분위기에서 훌륭한 스페셜티 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_본_nig_1",
+      "name": "본 대성당 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "로마네스크 양식의 본 대성당이 은은한 조명을 받아 빛나는 야경입니다."
+    }
+  ],
+  "뒤스부르크": [
+    {
+      "id": "global_뒤스부르크_att_1",
+      "name": "풍경 공원 북부 (Landschaftspark Nord)",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "폐쇄된 제철소를 개조하여 만든 독특한 산업 유산이자 공원입니다."
+    },
+    {
+      "id": "global_뒤스부르크_att_2",
+      "name": "타이거 앤 터틀 - 매직 마운틴",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "롤러코스터 모양을 한 대형 철제 조각품으로 직접 걸어 올라갈 수 있습니다."
+    },
+    {
+      "id": "global_뒤스부르크_rel_1",
+      "name": "이너 하버 (내항)",
+      "category": "relaxation",
+      "subCategory": "promenade",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "port",
+      "desc": "옛 공업 항구를 세련된 식당가와 박물관 거리로 바꾼 수변 휴식 공간입니다."
+    },
+    {
+      "id": "global_뒤스부르크_act_1",
+      "name": "내항 유람선 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "port",
+      "desc": "유럽 최대 규모의 내륙 항구인 뒤스부르크 항의 모습을 배에서 관람합니다."
+    },
+    {
+      "id": "global_뒤스부르크_res_1",
+      "name": "디벨스 안 드 항 (Diebels im Hafen)",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "port",
+      "desc": "이너 하버에 위치해 흑맥주와 소시지를 먹으며 항구 뷰를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_뒤스부르크_res_2",
+      "name": "파크하우스 마이더리히",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "풍경 공원 근처에 있는 푸짐한 현지식 고기 요리 식당입니다."
+    },
+    {
+      "id": "global_뒤스부르크_res_3",
+      "name": "볼트",
+      "category": "restaurant",
+      "subCategory": "european",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 신선한 재료로 만든 현대식 요리를 제공합니다."
+    },
+    {
+      "id": "global_뒤스부르크_caf_1",
+      "name": "카페 무제움",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "큅퍼스뮐레 현대미술관 내부에 위치한 조용한 카페입니다."
+    },
+    {
+      "id": "global_뒤스부르크_caf_2",
+      "name": "쉬프켄",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "따뜻한 커피와 빵이 있는 편안한 분위기의 동네 카페입니다."
+    },
+    {
+      "id": "global_뒤스부르크_nig_1",
+      "name": "풍경 공원 북부 야간 조명",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "거대한 용광로와 굴뚝에 원색 조명이 들어와 초현실적인 야경을 선사합니다."
+    }
+  ],
+  "포츠담": [
+    {
+      "id": "global_포츠담_att_1",
+      "name": "상수시 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "park",
+      "desc": "프리드리히 대왕의 여름 궁전으로 로코코 양식의 정수와 화려한 테라스가 일품입니다."
+    },
+    {
+      "id": "global_포츠담_att_2",
+      "name": "체칠리엔호프 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "park",
+      "desc": "영국 튜더 양식으로 지어졌으며 2차 대전 후 포츠담 회담이 열린 역사적 장소입니다."
+    },
+    {
+      "id": "global_포츠담_rel_1",
+      "name": "상수시 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "park",
+      "desc": "궁전을 둘러싼 광대한 정원과 포도밭, 작은 숲이 있는 휴식 공간입니다."
+    },
+    {
+      "id": "global_포츠담_act_1",
+      "name": "홀란드 지구 자전거 투어",
+      "category": "activity",
+      "subCategory": "activity",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 2,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "붉은 벽돌집이 이국적인 홀란드 지구와 주변을 자전거로 둘러봅니다."
+    },
+    {
+      "id": "global_포츠담_res_1",
+      "name": "아우구스티너 포츠담",
+      "category": "restaurant",
+      "subCategory": "german",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "홀란드 지구 중심에서 뮌헨 맥주와 바이에른 전통 음식을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_포츠담_res_2",
+      "name": "레스토랑 줄리에트",
+      "category": "restaurant",
+      "subCategory": "french",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "로맨틱한 분위기에서 훌륭한 프랑스식 요리를 제공하는 파인 다이닝입니다."
+    },
+    {
+      "id": "global_포츠담_res_3",
+      "name": "크레페리 만주",
+      "category": "restaurant",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "홀란드 지구 내에 있는 인기 있는 크레페와 갈레트 전문점입니다."
+    },
+    {
+      "id": "global_포츠담_caf_1",
+      "name": "카페 구텐베르크",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 서재 같은 인테리어에서 커피와 디저트를 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_포츠담_caf_2",
+      "name": "로스터리 바움하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "공원 근처에서 직접 로스팅한 신선한 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_포츠담_nig_1",
+      "name": "브란덴부르크 문 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "포츠담 구시가지의 시작을 알리는 개선문에 조명이 켜진 고풍스러운 야경입니다."
+    }
+  ],
+  "시드니": [
+    {
+      "id": "global_시드니_att_1",
+      "name": "시드니 오페라 하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "harbour",
+      "desc": "조가비 모양의 독특한 지붕을 가진 호주의 가장 상징적인 건축물입니다."
+    },
+    {
+      "id": "global_시드니_att_2",
+      "name": "하버 브리지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "harbour",
+      "desc": "오페라 하우스와 함께 시드니 항만을 대표하는 거대한 철교입니다."
+    },
+    {
+      "id": "global_시드니_rel_1",
+      "name": "로열 보태닉 가든",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "city",
+      "desc": "항구 옆에 위치하여 오페라 하우스 뷰를 감상하며 산책하기 좋은 거대한 식물원입니다."
+    },
+    {
+      "id": "global_시드니_act_1",
+      "name": "본다이 투 쿠지 코스탈 워크",
+      "category": "activity",
+      "subCategory": "trekking",
+      "themes": {
+        "healing": 5,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "beach",
+      "desc": "해안 절벽을 따라 아름다운 해변들을 거니는 시드니 최고의 트레킹 코스입니다."
+    },
+    {
+      "id": "global_시드니_res_1",
+      "name": "시드니 타워 뷔페",
+      "category": "restaurant",
+      "subCategory": "buffet",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "city",
+      "desc": "시드니 타워 360도 회전 레스토랑에서 시내 전망과 함께 식사할 수 있습니다."
+    },
+    {
+      "id": "global_시드니_res_2",
+      "name": "도일스 온 더 비치",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "beach",
+      "desc": "왓슨스 베이에 위치하여 탁 트인 바다 뷰와 신선한 해산물을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_시드니_res_3",
+      "name": "미스터 웡",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "city",
+      "desc": "세련된 인테리어와 광둥식 퓨전 요리로 인기 있는 고급 레스토랑입니다."
+    },
+    {
+      "id": "global_시드니_caf_1",
+      "name": "더 그라운즈 오브 알렉산드리아",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "아름다운 테마 정원과 신선한 브런치를 제공하는 거대한 카페 단지입니다."
+    },
+    {
+      "id": "global_시드니_caf_2",
+      "name": "캄포스 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "city",
+      "desc": "호주 스페셜티 커피의 대명사로 플랫 화이트가 유명한 뉴타운의 본점입니다."
+    },
+    {
+      "id": "global_시드니_nig_1",
+      "name": "달링 하버 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "harbour",
+      "desc": "관람차와 화려한 레스토랑 불빛들이 물결에 반사되는 활기찬 항구 야경입니다."
+    }
+  ],
+  "멜버른": [
+    {
+      "id": "global_멜버른_att_1",
+      "name": "플린더스 스트리트 역",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빅토리아 시대의 고풍스러운 외관을 자랑하는 멜버른의 랜드마크입니다."
+    },
+    {
+      "id": "global_멜버른_att_2",
+      "name": "빅토리아 주립 도서관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "팔각형 모양의 라 트로브 열람실로 유명한 아름답고 장엄한 도서관입니다."
+    },
+    {
+      "id": "global_멜버른_rel_1",
+      "name": "로열 보태닉 가든스 빅토리아",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "아름다운 호수와 다양한 희귀 식물이 있는 멜버른 최고의 평화로운 정원입니다."
+    },
+    {
+      "id": "global_멜버른_act_1",
+      "name": "야라 강 유람선 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "도시를 가로지르는 야라 강을 따라 멜버른의 스카이라인을 감상합니다."
+    },
+    {
+      "id": "global_멜버른_res_1",
+      "name": "친친 (Chin Chin)",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "활기찬 분위기에서 세련된 동남아시아 퓨전 요리를 선보이는 핫플레이스입니다."
+    },
+    {
+      "id": "global_멜버른_res_2",
+      "name": "부르크 스트리트 버거",
+      "category": "restaurant",
+      "subCategory": "fastfood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "두툼한 패티와 푸짐한 재료가 특징인 현지 인기 수제 버거집입니다."
+    },
+    {
+      "id": "global_멜버른_res_3",
+      "name": "하드웨어 소사이어티",
+      "category": "restaurant",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수준 높은 멜버른의 브런치 문화를 경험할 수 있는 대표적인 식당입니다."
+    },
+    {
+      "id": "global_멜버른_caf_1",
+      "name": "브라더 바바 부단",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "천장에 매달린 수많은 의자가 인상적인 멜버른 커피 골목의 명소입니다."
+    },
+    {
+      "id": "global_멜버른_caf_2",
+      "name": "룬 크루아상",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "suburb",
+      "desc": "세계에서 가장 맛있는 크루아상 중 하나로 꼽히는 대기줄이 긴 베이커리입니다."
+    },
+    {
+      "id": "global_멜버른_nig_1",
+      "name": "유레카 스카이덱 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "남반구 최고 높이의 전망대에서 멜버른 시내 전체의 불빛을 감상합니다."
+    }
+  ],
+  "앨리스스프링스": [
+    {
+      "id": "global_앨리스스프링스_att_1",
+      "name": "앨리스 스프링스 데저트 파크",
+      "category": "attraction",
+      "subCategory": "zoo",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "호주 내륙 사막 지대의 고유한 동식물을 가까이서 볼 수 있는 자연 생태 공원입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_att_2",
+      "name": "왕립 항공 의료 서비스(RFDS) 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오지 주민들을 위한 항공 의료 서비스의 역사와 실제를 배울 수 있는 곳입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_rel_1",
+      "name": "올리브 핑크 보태닉 가든",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "건조 지대 식물들을 보존하고 있는 고요하고 이색적인 식물원입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_act_1",
+      "name": "맥도넬 산맥 열기구 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "nature",
+      "desc": "이른 아침 열기구를 타고 아웃백의 광활한 붉은 대지 위로 떠오르는 체험입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_res_1",
+      "name": "오버랜더 스테이크하우스",
+      "category": "restaurant",
+      "subCategory": "steak",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "호주산 소고기뿐만 아니라 캥거루, 에뮤 등 아웃백 이색 고기 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_앨리스스프링스_res_2",
+      "name": "바라문디 어니언",
+      "category": "restaurant",
+      "subCategory": "australian",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "편안한 분위기에서 호주식 캐주얼 다이닝을 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_res_3",
+      "name": "레드 오크 브루어리",
+      "category": "restaurant",
+      "subCategory": "pub",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "사막의 열기를 식혀줄 시원한 수제 맥주와 안주가 있는 펍입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_caf_1",
+      "name": "더 페이지 스탠드",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아웃백 스타일의 따뜻한 감성이 느껴지는 동네 카페입니다."
+    },
+    {
+      "id": "global_앨리스스프링스_caf_2",
+      "name": "워터탱크 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "산업용 물탱크 단지에 위치하여 트렌디하고 독특한 분위기를 풍깁니다."
+    },
+    {
+      "id": "global_앨리스스프링스_nig_1",
+      "name": "안작 힐 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "hill",
+      "desc": "전쟁 기념비가 있는 언덕에서 앨리스 스프링스 시내의 불빛을 감상할 수 있습니다."
+    }
+  ],
+  "그레이트오션로드": [
+    {
+      "id": "global_그레이트오션로드_att_1",
+      "name": "12사도상",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "오랜 세월 파도에 깎여 만들어진 거대한 석회암 기둥들이 장관을 이룹니다."
+    },
+    {
+      "id": "global_그레이트오션로드_att_2",
+      "name": "로크 아드 고지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "난파선의 슬픈 역사를 간직한 신비로운 분위기의 좁은 협곡과 해변입니다."
+    },
+    {
+      "id": "global_그레이트오션로드_rel_1",
+      "name": "아폴로 베이 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "드라이브 중간에 들러 부드러운 모래사장을 걷고 휴식하기 좋은 평화로운 해변입니다."
+    },
+    {
+      "id": "global_그레이트오션로드_act_1",
+      "name": "그레이트 오트웨이 국립공원 트리탑 워크",
+      "category": "activity",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "forest",
+      "desc": "울창한 열대우림 속 거대한 나무들 사이에 설치된 공중 산책로를 걷습니다."
+    },
+    {
+      "id": "global_그레이트오션로드_res_1",
+      "name": "크리스 베이컨",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "아폴로 베이에서 가장 유명한 피시 앤 칩스와 신선한 해산물을 제공합니다."
+    },
+    {
+      "id": "global_그레이트오션로드_res_2",
+      "name": "론 펍 (Lorne Hotel Restaurant)",
+      "category": "restaurant",
+      "subCategory": "pub",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "론 해변의 탁 트인 뷰를 즐기며 호주식 펍 요리와 맥주를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_그레이트오션로드_res_3",
+      "name": "포트 캠벨 타번",
+      "category": "restaurant",
+      "subCategory": "pub",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "12사도상 관광 후 든든한 식사를 할 수 있는 따뜻한 분위기의 타번입니다."
+    },
+    {
+      "id": "global_그레이트오션로드_caf_1",
+      "name": "Wye General Store & Cafe",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "해안 도로를 달리다 잠시 쉬어가며 훌륭한 브런치와 커피를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_그레이트오션로드_caf_2",
+      "name": "스윙 브리지 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "강과 바다가 만나는 곳의 출렁다리 옆에 위치한 경치 좋은 카페입니다."
+    },
+    {
+      "id": "global_그레이트오션로드_nig_1",
+      "name": "12사도상 별빛 은하수",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "주변에 빛 공해가 적어 밤하늘 가득 쏟아지는 수많은 별과 은하수를 볼 수 있습니다."
+    }
+  ],
+  "바이런베이": [
+    {
+      "id": "global_바이런베이_att_1",
+      "name": "케이프 바이런 등대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "cape",
+      "desc": "호주 본토의 최동단에 위치하여 아름다운 바다와 일출을 볼 수 있는 등대입니다."
+    },
+    {
+      "id": "global_바이런베이_att_2",
+      "name": "더 패스 (The Pass) 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "beach",
+      "desc": "서핑의 성지로 불리며 독특한 모양의 모래사장과 맑은 물을 자랑합니다."
+    },
+    {
+      "id": "global_바이런베이_rel_1",
+      "name": "메인 비치 잔디밭",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "beach",
+      "desc": "해변 바로 앞 잔디밭에서 자유롭게 휴식하고 버스킹을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_바이런베이_act_1",
+      "name": "서핑 레슨",
+      "category": "activity",
+      "subCategory": "activity",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "beach",
+      "desc": "초보자도 안전하고 재미있게 배울 수 있는 바이런베이 서핑 체험입니다."
+    },
+    {
+      "id": "global_바이런베이_res_1",
+      "name": "발코니 바 & 오이스터 코",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "야외 발코니에서 사람들을 구경하며 신선한 굴과 해산물 요리를 즐깁니다."
+    },
+    {
+      "id": "global_바이런베이_res_2",
+      "name": "바이런 프레시",
+      "category": "restaurant",
+      "subCategory": "australian",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현지 유기농 식재료를 활용한 건강하고 맛있는 호주식 브런치 식당입니다."
+    },
+    {
+      "id": "global_바이런베이_res_3",
+      "name": "더 로컬 프로미스",
+      "category": "restaurant",
+      "subCategory": "vegan",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바이런베이 특유의 웰빙 라이프스타일을 담은 비건 친화적 레스토랑입니다."
+    },
+    {
+      "id": "global_바이런베이_caf_1",
+      "name": "베이리프 카페 (Bayleaf Cafe)",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "항상 활기가 넘치며 독창적인 커피와 브런치를 맛볼 수 있는 명소입니다."
+    },
+    {
+      "id": "global_바이런베이_caf_2",
+      "name": "콤비 (Combi)",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아사이볼과 로우 케이크 등 사진 찍기 좋은 예쁘고 건강한 디저트가 있습니다."
+    },
+    {
+      "id": "global_바이런베이_nig_1",
+      "name": "비치 호텔 밤 풍경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "beach",
+      "desc": "해안가에 위치한 펍에서 라이브 음악과 함께 즐기는 자유로운 분위기의 야경입니다."
+    }
+  ],
+  "울릉공": [
+    {
+      "id": "global_울릉공_att_1",
+      "name": "남천사 (Nan Tien Temple)",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "남반구에서 가장 큰 불교 사원으로 웅장한 건축물과 평화로운 분위기가 특징입니다."
+    },
+    {
+      "id": "global_울릉공_att_2",
+      "name": "씨 클리프 브리지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "절벽을 따라 바다 위로 둥글게 이어진 도로로 최고의 해안 드라이브 코스입니다."
+    },
+    {
+      "id": "global_울릉공_rel_1",
+      "name": "울릉공 보태닉 가든",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "city",
+      "desc": "다양한 테마 구역을 갖추고 있어 피크닉과 산책을 즐기기 완벽한 식물원입니다."
+    },
+    {
+      "id": "global_울릉공_act_1",
+      "name": "스카이다이브 시드니-울릉공",
+      "category": "activity",
+      "subCategory": "activity",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "푸른 태평양과 해안선을 내려다보며 짜릿한 자유낙하를 경험할 수 있습니다."
+    },
+    {
+      "id": "global_울릉공_res_1",
+      "name": "봄보라 해산물 식당",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "울릉공 항구 쪽에 위치하여 바다를 보며 갓 잡은 해산물 요리를 즐깁니다."
+    },
+    {
+      "id": "global_울릉공_res_2",
+      "name": "일라와라 브루어리",
+      "category": "restaurant",
+      "subCategory": "pub",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "city",
+      "desc": "다양한 수제 맥주와 호주 스타일의 안주를 곁들일 수 있는 로컬 브루어리입니다."
+    },
+    {
+      "id": "global_울릉공_res_3",
+      "name": "아마고스 (Amigos)",
+      "category": "restaurant",
+      "subCategory": "mexican",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "city",
+      "desc": "울릉공 중심가에서 오랫동안 사랑받아 온 유쾌한 분위기의 멕시칸 레스토랑입니다."
+    },
+    {
+      "id": "global_울릉공_caf_1",
+      "name": "디지 다이너",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "city",
+      "desc": "미국 레트로 다이너 감성을 살린 인테리어와 두툼한 밀크셰이크가 유명합니다."
+    },
+    {
+      "id": "global_울릉공_caf_2",
+      "name": "더 에스컬프처 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "해변가 산책로 주변에 위치하여 경치와 커피를 동시에 즐기기 좋은 곳입니다."
+    },
+    {
+      "id": "global_울릉공_nig_1",
+      "name": "울릉공 브레이크워터 등대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "밤이 되면 조명이 켜지는 새하얀 등대와 파도 소리가 어우러지는 풍경입니다."
+    }
+  ],
+  "론세스턴": [
+    {
+      "id": "global_론세스턴_att_1",
+      "name": "캐터랙트 협곡",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "도심에서 도보 거리에 있는 웅장한 계곡으로, 현수교와 체어리프트가 있습니다."
+    },
+    {
+      "id": "global_론세스턴_att_2",
+      "name": "퀸 빅토리아 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "타즈매니아의 역사, 예술, 자연사를 전시하는 호주 최대 규모의 지역 박물관입니다."
+    },
+    {
+      "id": "global_론세스턴_rel_1",
+      "name": "시티 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "일본 원숭이 사육장과 아름다운 온실 원예관이 있는 역사적인 도심 공원입니다."
+    },
+    {
+      "id": "global_론세스턴_act_1",
+      "name": "타마 밸리 와이너리 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "론세스턴 인근의 유명한 서늘한 기후 와인 산지를 돌아보는 투어입니다."
+    },
+    {
+      "id": "global_론세스턴_res_1",
+      "name": "스틸워터 (Stillwater)",
+      "category": "restaurant",
+      "subCategory": "australian",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "1830년대 제분소를 개조한 고급 식당으로 타즈매니아산 최고급 식재료를 사용합니다."
+    },
+    {
+      "id": "global_론세스턴_res_2",
+      "name": "제라니모 레스토랑",
+      "category": "restaurant",
+      "subCategory": "european",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "타마 밸리 와인과 함께 세련된 유러피안 요리를 제공하는 다이닝 바입니다."
+    },
+    {
+      "id": "global_론세스턴_res_3",
+      "name": "블랙 카우 비스트로",
+      "category": "restaurant",
+      "subCategory": "steak",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "최고 품질의 타즈매니아 소고기 스테이크로 유명한 프리미엄 레스토랑입니다."
+    },
+    {
+      "id": "global_론세스턴_caf_1",
+      "name": "스위트브루 (Sweetbrew)",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "힙한 분위기와 환상적인 비건 및 브런치 메뉴를 자랑하는 인기 카페입니다."
+    },
+    {
+      "id": "global_론세스턴_caf_2",
+      "name": "크로프터스 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "따뜻하고 아늑한 공간에서 스페셜티 커피의 진수를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_론세스턴_nig_1",
+      "name": "타마 강변 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "river",
+      "desc": "구시가지의 고풍스러운 건물 불빛이 잔잔한 강물에 비치는 야경입니다."
+    }
+  ],
+  "포트더글라스": [
+    {
+      "id": "global_포트더글라스_att_1",
+      "name": "포 마일 비치",
+      "category": "attraction",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "야자수가 늘어선 끝없이 펼쳐진 깨끗한 백사장으로 휴양지 최고의 명소입니다."
+    },
+    {
+      "id": "global_포트더글라스_att_2",
+      "name": "그레이트 배리어 리프 크루즈",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "sea",
+      "desc": "세계 최대의 산호초 지대인 대산호초를 탐험하는 해상 투어 출발지입니다."
+    },
+    {
+      "id": "global_포트더글라스_rel_1",
+      "name": "안작 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "항구 바로 옆에 있어 일몰 시간에 맞춰 산책하고 쉬기에 아주 좋은 작은 공원입니다."
+    },
+    {
+      "id": "global_포트더글라스_act_1",
+      "name": "모스만 고지 원주민 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "forest",
+      "desc": "세계에서 가장 오래된 데인트리 열대우림에서 호주 원주민의 지혜를 배웁니다."
+    },
+    {
+      "id": "global_포트더글라스_res_1",
+      "name": "살사 바 앤 그릴",
+      "category": "restaurant",
+      "subCategory": "australian",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "아름다운 목조 건물에서 열대 재료를 활용한 호주식 퓨전 요리를 제공합니다."
+    },
+    {
+      "id": "global_포트더글라스_res_2",
+      "name": "징 레스토랑",
+      "category": "restaurant",
+      "subCategory": "european",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "열대 우림의 정취를 느끼며 우아하게 저녁을 즐길 수 있는 고급 레스토랑입니다."
+    },
+    {
+      "id": "global_포트더글라스_res_3",
+      "name": "커리지 코트야드",
+      "category": "restaurant",
+      "subCategory": "pub",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "시원한 생맥주와 대중적인 안주로 관광객과 현지인이 어우러지는 활기찬 곳입니다."
+    },
+    {
+      "id": "global_포트더글라스_caf_1",
+      "name": "스패로우 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "town",
+      "desc": "아침 일찍부터 문을 열어 맛있는 모닝 커피와 페이스트리를 제공하는 작은 카페입니다."
+    },
+    {
+      "id": "global_포트더글라스_caf_2",
+      "name": "카페 프레스코",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "다양한 건강식 브런치와 열대 과일 스무디를 맛볼 수 있는 휴양지 카페입니다."
+    },
+    {
+      "id": "global_포트더글라스_nig_1",
+      "name": "마리나 미라지 선셋 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "harbour",
+      "desc": "정박해 있는 고급 요트들과 바다 위로 지는 붉은 석양, 그리고 야간 조명입니다."
+    }
+  ],
+  "누사": [
+    {
+      "id": "global_noosa_att_1",
+      "name": "누사 국립공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 해안선과 숲길을 따라 걷기 좋은 호주의 대표적인 국립공원입니다."
+    },
+    {
+      "id": "global_noosa_att_2",
+      "name": "헤이스팅스 스트리트",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "부티크 숍과 고급 레스토랑이 즐비한 누사의 중심 활기찬 거리입니다."
+    },
+    {
+      "id": "global_noosa_rel_1",
+      "name": "누사 메인 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "잔잔한 파도와 고운 모래사장으로 유명한 아름답고 평화로운 해변입니다."
+    },
+    {
+      "id": "global_noosa_act_1",
+      "name": "에버글레이즈 카약",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "north",
+      "desc": "거울처럼 맑은 누사 에버글레이즈에서 카약을 타는 이색 생태 체험입니다."
+    },
+    {
+      "id": "global_noosa_res_1",
+      "name": "리키스 리버 바 & 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "강변의 멋진 뷰와 함께 고급 호주식 요리를 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_noosa_res_2",
+      "name": "비스트로 C",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "해변을 바라보며 신선한 해산물과 브런치를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_noosa_res_3",
+      "name": "시즌 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지 제철 식재료를 활용한 모던 오스트레일리아 요리를 선보입니다."
+    },
+    {
+      "id": "global_noosa_caf_1",
+      "name": "아로마스 누사",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "파리풍의 야외 좌석이 매력적인 헤이스팅스 스트리트의 상징적인 카페입니다."
+    },
+    {
+      "id": "global_noosa_caf_2",
+      "name": "클란데스티노 로스터스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "누사 최고의 스페셜티 커피를 맛볼 수 있는 분위기 좋은 로스터리 카페입니다."
+    },
+    {
+      "id": "global_noosa_nig_1",
+      "name": "라구나 룩아웃",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "누사 시내와 바다 너머로 지는 아름다운 일몰을 감상할 수 있는 전망대입니다."
+    }
+  ],
+  "질롱": [
+    {
+      "id": "global_geelong_att_1",
+      "name": "국립 양모 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호주 양모 산업의 역사와 문화를 깊이 있게 알아볼 수 있는 국립 박물관입니다."
+    },
+    {
+      "id": "global_geelong_att_2",
+      "name": "이스턴 비치 보호구역",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "아르데코 양식의 수영장과 피크닉 시설이 있는 가족 친화적인 해변 공원입니다."
+    },
+    {
+      "id": "global_geelong_rel_1",
+      "name": "질롱 보태닉 가든",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "희귀 식물과 평화로운 산책로가 어우러져 휴식하기 좋은 유서 깊은 식물원입니다."
+    },
+    {
+      "id": "global_geelong_act_1",
+      "name": "워터프론트 볼라드 트레일",
+      "category": "activity",
+      "subCategory": "walking",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 2,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "질롱의 역사를 담은 독특한 목각 인형들을 찾아 걷는 해안가 산책 체험입니다."
+    },
+    {
+      "id": "global_geelong_res_1",
+      "name": "이그니",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "우드파이어 그릴을 활용한 독창적인 코스 요리를 제공하는 파인 다이닝 레스토랑입니다."
+    },
+    {
+      "id": "global_geelong_res_2",
+      "name": "튜립",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "지속 가능한 식재료로 만든 모던 오스트레일리아 요리가 일품인 식당입니다."
+    },
+    {
+      "id": "global_geelong_res_3",
+      "name": "커스텀스 하우스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "탁 트인 워터프론트 전망을 자랑하며 훌륭한 와인과 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_geelong_caf_1",
+      "name": "더 보트하우스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "물 위에 떠 있는 듯한 독특한 구조로 브런치와 커피를 즐기기 완벽한 장소입니다."
+    },
+    {
+      "id": "global_geelong_caf_2",
+      "name": "카르텔 커피 로스터스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "질롱 지역 커피 문화를 이끄는 깊은 향의 스페셜티 커피 전문점입니다."
+    },
+    {
+      "id": "global_geelong_nig_1",
+      "name": "커닝햄 피어 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "바다 위로 길게 뻗은 부두에서 질롱 시내의 불빛을 감상하는 로맨틱한 스팟입니다."
+    }
+  ],
+  "타운즈빌": [
+    {
+      "id": "global_townsville_att_1",
+      "name": "열대 퀸즐랜드 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "열대 지방의 자연사와 난파선 유물을 전시해 가족 단위로 방문하기 좋은 박물관입니다."
+    },
+    {
+      "id": "global_townsville_att_2",
+      "name": "빌라봉 생태공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "호주 토종 야생동물들과 가까이서 교감하고 먹이를 줄 수 있는 자연 공원입니다."
+    },
+    {
+      "id": "global_townsville_rel_1",
+      "name": "더 스트랜드 해변공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "시원한 바닷바람을 맞으며 산책하거나 무료 워터파크를 즐길 수 있는 휴식처입니다."
+    },
+    {
+      "id": "global_townsville_act_1",
+      "name": "마그네틱 아일랜드 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "island",
+      "desc": "아름다운 섬으로 들어가 코알라를 찾고 스노클링을 즐기는 당일 투어입니다."
+    },
+    {
+      "id": "global_townsville_res_1",
+      "name": "잼 코너",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "수준 높은 현대식 호주 요리와 훌륭한 와인 리스트를 자랑하는 유명 레스토랑입니다."
+    },
+    {
+      "id": "global_townsville_res_2",
+      "name": "터치 오브 솔트",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강가에 위치해 낭만적인 분위기 속에서 창의적인 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_townsville_res_3",
+      "name": "브릿지워터",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "아름다운 전망을 배경으로 신선한 지역 해산물과 스테이크를 제공하는 곳입니다."
+    },
+    {
+      "id": "global_townsville_caf_1",
+      "name": "줄리엣 에스프레소",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "더 스트랜드 해변에 위치해 맛있는 젤라토와 수준급 커피를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "global_townsville_caf_2",
+      "name": "코티지 온 이스트",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고풍스러운 오두막을 개조하여 아늑한 분위기에서 브런치를 즐기는 인기 명소입니다."
+    },
+    {
+      "id": "global_townsville_nig_1",
+      "name": "캐슬 힐 전망대 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "타운즈빌 도시 전체와 마그네틱 아일랜드가 어우러진 화려한 야경을 감상할 수 있습니다."
+    }
+  ],
+  "푸켓": [
+    {
+      "id": "global_phuket_att_1",
+      "name": "빅 부다",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "산 정상에 자리한 거대한 불상으로 푸켓 전경을 360도로 감상할 수 있는 명소입니다."
+    },
+    {
+      "id": "global_phuket_att_2",
+      "name": "왓 찰롱",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "푸켓에서 가장 화려하고 중요한 사원으로 현지인들의 깊은 신앙심을 엿볼 수 있습니다."
+    },
+    {
+      "id": "global_phuket_rel_1",
+      "name": "카론 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "빠통에 비해 조용하고 넓은 백사장을 가져 여유로운 휴식을 취하기 완벽한 해변입니다."
+    },
+    {
+      "id": "global_phuket_act_1",
+      "name": "푸켓 올드타운 도보 투어",
+      "category": "activity",
+      "subCategory": "walking",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 3,
+        "culture": 5,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "포르투갈풍의 이국적인 건축물과 화려한 벽화를 구경하며 걷는 매력적인 도보 투어입니다."
+    },
+    {
+      "id": "global_phuket_res_1",
+      "name": "블루 엘리펀트",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "고풍스러운 저택에서 정통 황실 태국 요리를 고급스럽게 즐길 수 있는 파인 다이닝입니다."
+    },
+    {
+      "id": "global_phuket_res_2",
+      "name": "투 카우 크랍",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "미슐랭 가이드에 소개된 남부 태국 요리 전문점으로 풍부한 향신료의 맛이 일품입니다."
+    },
+    {
+      "id": "global_phuket_res_3",
+      "name": "라야",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오래된 중국-포르투갈 양식 건물에서 진정한 로컬 푸켓 음식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_phuket_caf_1",
+      "name": "더 커피 클럽",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "해변가에서 시원한 에어컨 바람과 함께 서양식 브런치와 퀄리티 높은 커피를 즐깁니다."
+    },
+    {
+      "id": "global_phuket_caf_2",
+      "name": "카페 델 마르",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "비치 클럽 컨셉으로 신나는 음악과 수영, 맛있는 칵테일 및 커피를 동시에 즐길 수 있습니다."
+    },
+    {
+      "id": "global_phuket_nig_1",
+      "name": "방라 로드 나이트라이프",
+      "category": "nightview",
+      "subCategory": "nightlife",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "west",
+      "desc": "화려한 네온사인과 신나는 음악이 가득한 푸켓 최고의 밤거리입니다."
+    }
+  ],
+  "크라비": [
+    {
+      "id": "global_krabi_att_1",
+      "name": "타이거 케이브 템플",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "north",
+      "desc": "1,200개의 가파른 계단을 오르면 탁 트인 크라비 절경과 거대 불상을 만날 수 있습니다."
+    },
+    {
+      "id": "global_krabi_att_2",
+      "name": "에메랄드 풀",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "울창한 열대우림 속에 숨겨진 신비로운 에메랄드빛 천연 수영장입니다."
+    },
+    {
+      "id": "global_krabi_rel_1",
+      "name": "라일레이 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "배를 타야만 갈 수 있는 곳으로, 석회암 암벽과 맑은 바다가 조화를 이루는 비경입니다."
+    },
+    {
+      "id": "global_krabi_act_1",
+      "name": "맹그로브 카약킹",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "신비로운 맹그로브 숲 사이를 노 저어 탐험하며 자연과 하나 되는 시간입니다."
+    },
+    {
+      "id": "global_krabi_res_1",
+      "name": "톤 마욤",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "깔끔하고 맛있는 정통 태국 요리를 합리적인 가격에 선보이는 숨은 맛집입니다."
+    },
+    {
+      "id": "global_krabi_res_2",
+      "name": "더 라스트 피셔맨",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "해변 모래사장에서 파도 소리를 들으며 해산물 바비큐를 즐기는 낭만적인 식당입니다."
+    },
+    {
+      "id": "global_krabi_res_3",
+      "name": "코담 키친",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 재료로 만든 다채로운 로컬 요리로 많은 여행자들에게 극찬받는 곳입니다."
+    },
+    {
+      "id": "global_krabi_caf_1",
+      "name": "카페 8.98",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아오낭 중심에 위치해 세련된 분위기에서 브런치와 맛있는 커피를 제공합니다."
+    },
+    {
+      "id": "global_krabi_caf_2",
+      "name": "안달레이 비치 바 앤 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "탁 트인 바다 전망과 함께 시원한 과일 스무디와 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_krabi_nig_1",
+      "name": "크라비 타운 주말 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "다양한 길거리 음식과 수공예품, 활기찬 거리 공연을 즐길 수 있는 야시장입니다."
+    }
+  ],
+  "코사무이": [
+    {
+      "id": "global_koh_samui_att_1",
+      "name": "빅 부다 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "바다를 향해 황금빛으로 빛나는 거대한 12미터 불상이 있는 섬의 대표 랜드마크입니다."
+    },
+    {
+      "id": "global_koh_samui_att_2",
+      "name": "힌따 힌야이 바위",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "할아버지와 할머니를 닮은 독특한 모양의 천연 기암괴석으로 유명한 명소입니다."
+    },
+    {
+      "id": "global_koh_samui_rel_1",
+      "name": "차웽 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 3,
+        "culture": 2,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "하얀 모래와 에메랄드빛 바다가 끝없이 펼쳐진 코사무이 최고의 인기 해변입니다."
+    },
+    {
+      "id": "global_koh_samui_act_1",
+      "name": "앙통 해양 국립공원 스노클링",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "island",
+      "desc": "42개의 아름다운 무인도를 스피드보트로 돌며 스노클링과 카약을 즐기는 액티비티입니다."
+    },
+    {
+      "id": "global_koh_samui_res_1",
+      "name": "코코 탐스",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "보풋 해변에 위치해 멋진 불쇼와 함께 피자, 칵테일을 즐길 수 있는 힙한 비치 클럽입니다."
+    },
+    {
+      "id": "global_koh_samui_res_2",
+      "name": "더 정글 클럽",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "hill",
+      "desc": "산 중턱에 자리 잡아 섬의 파노라마 뷰를 감상하며 태국 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_koh_samui_res_3",
+      "name": "수파뜨라 타이 다이닝",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "해산물을 주재료로 하여 정성스럽게 차려내는 최고급 타이 파인 다이닝입니다."
+    },
+    {
+      "id": "global_koh_samui_caf_1",
+      "name": "카페 데자뷰",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 프랑스 스타일의 빵과 진한 커피를 맛볼 수 있는 숨은 명소입니다."
+    },
+    {
+      "id": "global_koh_samui_caf_2",
+      "name": "피셔맨스 빌리지 티하우스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "오래된 목조 건물이 주는 빈티지한 감성 속에서 여유롭게 차를 즐기는 곳입니다."
+    },
+    {
+      "id": "global_koh_samui_nig_1",
+      "name": "아크 바 파티",
+      "category": "nightview",
+      "subCategory": "nightlife",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "east",
+      "desc": "차웽 비치에서 열리는 열광적인 풀 파티와 화려한 불꽃놀이로 밤을 지새우는 곳입니다."
+    }
+  ],
+  "아유타야": [
+    {
+      "id": "global_ayutthaya_att_1",
+      "name": "왓 마하탓",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "보리수나무 뿌리에 감싸인 불상 머리로 유명한 아유타야의 상징적인 유적지입니다."
+    },
+    {
+      "id": "global_ayutthaya_att_2",
+      "name": "왓 프라시산펫",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세 개의 거대한 종 모양 불탑이 나란히 서 있는 옛 왕궁터의 웅장한 사원입니다."
+    },
+    {
+      "id": "global_ayutthaya_rel_1",
+      "name": "랑카 숲 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "거대한 유적지 주변으로 조성된 푸른 잔디밭에서 평온하게 산책을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_ayutthaya_act_1",
+      "name": "툭툭 사원 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 모양의 툭툭을 타고 광활한 아유타야 주요 유적지를 편하게 둘러보는 체험입니다."
+    },
+    {
+      "id": "global_ayutthaya_res_1",
+      "name": "쌀라 아유타야 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "차오프라야 강과 왓 푸카오통이 한눈에 담기는 럭셔리한 리버뷰 다이닝입니다."
+    },
+    {
+      "id": "global_ayutthaya_res_2",
+      "name": "란 타이 로띠",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "설탕 줄기로 감싼 독특한 로띠 사이마이를 맛볼 수 있는 전통 간식 맛집입니다."
+    },
+    {
+      "id": "global_ayutthaya_res_3",
+      "name": "반 마이 림 남",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "강가에 자리 잡은 전통 목조 가옥에서 대형 민물새우 구이 등 로컬 음식을 즐깁니다."
+    },
+    {
+      "id": "global_ayutthaya_caf_1",
+      "name": "부사바 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 유적을 모티브로 한 세련된 인테리어와 시그니처 솜사탕 디저트가 유명합니다."
+    },
+    {
+      "id": "global_ayutthaya_caf_2",
+      "name": "프라나콘 까사",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "앤티크한 소품들과 빈티지한 분위기가 가득하여 사진 찍기 좋은 감성 카페입니다."
+    },
+    {
+      "id": "global_ayutthaya_nig_1",
+      "name": "왓 차이왓타나람 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "river",
+      "desc": "해 질 녘 사원 전체에 조명이 켜지며 강물에 반사되는 신비롭고 장엄한 야경 명소입니다."
+    }
+  ],
+  "치앙라이": [
+    {
+      "id": "global_chiang_rai_att_1",
+      "name": "백색 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "순백의 화려한 조각이 햇빛에 반사되어 눈부시게 빛나는 현대적인 예술 사원입니다."
+    },
+    {
+      "id": "global_chiang_rai_att_2",
+      "name": "청색 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "푸른색과 황금색의 강렬한 대비가 인상적인 독창적이고 신비로운 사원입니다."
+    },
+    {
+      "id": "global_chiang_rai_rel_1",
+      "name": "싱하 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "끝없이 펼쳐진 녹차 밭과 아름다운 조경 속에서 자전거를 타며 휴식하기 좋습니다."
+    },
+    {
+      "id": "global_chiang_rai_act_1",
+      "name": "골든 트라이앵글 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "태국, 라오스, 미얀마 세 나라의 국경이 만나는 역사적 지점을 방문하는 투어입니다."
+    },
+    {
+      "id": "global_chiang_rai_res_1",
+      "name": "치빗 탐마 다",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "유럽의 정원 같은 분위기 속에서 정갈한 퓨전 요리를 선보이는 강변 레스토랑입니다."
+    },
+    {
+      "id": "global_chiang_rai_res_2",
+      "name": "멜트 인 유어 마우스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "이름처럼 입에서 사르르 녹는 부드러운 음식과 디저트를 아늑하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_chiang_rai_res_3",
+      "name": "란나 솜땀",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "매콤새콤한 솜땀과 북부식 숯불구이를 제대로 맛볼 수 있는 현지인 추천 식당입니다."
+    },
+    {
+      "id": "global_chiang_rai_caf_1",
+      "name": "도이창 커피 농장 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "태국 최고의 원두 산지에서 갓 로스팅한 신선하고 풍부한 커피를 산안개와 함께 즐깁니다."
+    },
+    {
+      "id": "global_chiang_rai_caf_2",
+      "name": "아카 아마 커피 치앙라이",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "소수민족 아카족이 재배한 윤리적이고 깊은 향의 커피를 경험할 수 있습니다."
+    },
+    {
+      "id": "global_chiang_rai_nig_1",
+      "name": "치앙라이 나이트 바자",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 4,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "전통 공연을 보며 북부식 전골인 무카타를 먹고 수공예품을 쇼핑하는 밤의 중심지입니다."
+    }
+  ],
+  "빠이": [
+    {
+      "id": "global_pai_att_1",
+      "name": "빠이 협곡",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "아찔한 흙길 능선을 따라 걸으며 경이로운 일몰을 감상할 수 있는 독특한 협곡입니다."
+    },
+    {
+      "id": "global_pai_att_2",
+      "name": "메모리얼 브릿지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "제2차 세계대전 당시 지어진 철교로 빈티지한 사진을 남기기에 완벽한 장소입니다."
+    },
+    {
+      "id": "global_pai_rel_1",
+      "name": "타빠이 온천",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "east",
+      "desc": "숲속에 층층이 고여 있는 맑은 천연 유황 온천수에 몸을 담그며 힐링할 수 있습니다."
+    },
+    {
+      "id": "global_pai_act_1",
+      "name": "뱀부 래프팅",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "대나무 뗏목을 타고 유유자적 흐르는 강물을 따라 정글 풍경을 감상하는 액티비티입니다."
+    },
+    {
+      "id": "global_pai_res_1",
+      "name": "나스 키친",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 재료로 태국 가정식을 정성껏 내어주는 빠이에서 가장 사랑받는 맛집입니다."
+    },
+    {
+      "id": "global_pai_res_2",
+      "name": "찰리 하우스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "건강한 채식 요리와 서양식 아침 식사를 평화로운 분위기에서 즐기는 곳입니다."
+    },
+    {
+      "id": "global_pai_res_3",
+      "name": "버거 퀸",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "여행의 피로를 잊게 해줄 푸짐하고 육즙 가득한 수제 버거를 제공합니다."
+    },
+    {
+      "id": "global_pai_caf_1",
+      "name": "커피 인 러브",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "산자락을 조망하는 동화 같은 노란 집 건물에서 달콤한 케이크와 커피를 즐깁니다."
+    },
+    {
+      "id": "global_pai_caf_2",
+      "name": "투 허츠 빠이",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "hill",
+      "desc": "드넓은 들판과 계곡을 바라보며 빈백에 누워 휴식하기 좋은 탁 트인 전망의 카페입니다."
+    },
+    {
+      "id": "global_pai_nig_1",
+      "name": "빠이 워킹 스트리트",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "다양한 길거리 간식과 핸드메이드 소품, 히피 문화를 엿볼 수 있는 매력적인 야시장입니다."
+    }
+  ],
+  "칸차나부리": [
+    {
+      "id": "global_kanchanaburi_att_1",
+      "name": "콰이강의 다리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "영화의 배경이 된 가슴 아픈 역사를 간직한 철교로 직접 걸어서 건널 수 있습니다."
+    },
+    {
+      "id": "global_kanchanaburi_att_2",
+      "name": "에라완 국립공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "7단으로 이어지는 환상적인 옥빛 폭포에서 수영과 트레킹을 동시에 즐기는 곳입니다."
+    },
+    {
+      "id": "global_kanchanaburi_rel_1",
+      "name": "사이욕 노이 폭포",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "접근성이 좋아 남녀노소 누구나 시원한 물줄기 아래에서 여유를 만끽할 수 있습니다."
+    },
+    {
+      "id": "global_kanchanaburi_act_1",
+      "name": "죽음의 철도 탑승 체험",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "깎아지른 절벽을 따라 달리는 아찔하고도 아름다운 옛 기차를 직접 타보는 체험입니다."
+    },
+    {
+      "id": "global_kanchanaburi_res_1",
+      "name": "키리 타라",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "콰이강의 다리가 보이는 강변에서 로맨틱한 분위기와 태국 퓨전 요리를 선사합니다."
+    },
+    {
+      "id": "global_kanchanaburi_res_2",
+      "name": "블루 라이스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "나비완두콩으로 색을 낸 파란 밥과 건강하고 맛깔스러운 반찬들이 돋보이는 식당입니다."
+    },
+    {
+      "id": "global_kanchanaburi_res_3",
+      "name": "잽 잽 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강렬한 북동부 이산 지역의 맛을 제대로 살린 쏨땀과 까이양(구운 닭) 맛집입니다."
+    },
+    {
+      "id": "global_kanchanaburi_caf_1",
+      "name": "미나 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "광활하게 펼쳐진 푸른 논 한가운데서 사원 뷰를 감상하며 커피를 즐기는 핫플레이스입니다."
+    },
+    {
+      "id": "global_kanchanaburi_caf_2",
+      "name": "팜 카페 데 칼라벨라",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "rural",
+      "desc": "빈티지 농장 콘셉트로 예쁘게 꾸며져 눈과 입이 모두 즐거운 디저트 카페입니다."
+    },
+    {
+      "id": "global_kanchanaburi_nig_1",
+      "name": "제이제이 나이트 마켓",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "기차역 근처에 열리는 규모가 큰 로컬 시장으로 저렴한 옷과 먹거리가 풍성합니다."
+    }
+  ],
+  "핫야이": [
+    {
+      "id": "global_hat_yai_att_1",
+      "name": "김용 시장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 4,
+        "culture": 4,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아 등 인근 국가의 수입품과 다양한 건어물을 파는 활기찬 전통 시장입니다."
+    },
+    {
+      "id": "global_hat_yai_att_2",
+      "name": "핫야이 시립 공원",
+      "category": "attraction",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "언덕 위의 아름다운 호수와 대형 불상이 있어 산책과 명상을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_hat_yai_rel_1",
+      "name": "톤응아창 폭포",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "마치 코끼리 상아처럼 두 갈래로 나뉘어 떨어지는 장엄하고 시원한 7단 폭포입니다."
+    },
+    {
+      "id": "global_hat_yai_act_1",
+      "name": "핫야이 케이블카",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "태국 최초의 케이블카로 시립 공원 내 산 정상을 연결하며 탁 트인 뷰를 제공합니다."
+    },
+    {
+      "id": "global_hat_yai_res_1",
+      "name": "촉디 딤섬",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "이른 아침부터 현지인들이 줄 서서 먹는 신선하고 저렴한 남부식 딤섬 맛집입니다."
+    },
+    {
+      "id": "global_hat_yai_res_2",
+      "name": "깐엥 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "태국 및 중국식 해산물 요리를 넓고 쾌적한 공간에서 제공하는 대형 식당입니다."
+    },
+    {
+      "id": "global_hat_yai_res_3",
+      "name": "가이야앙 로따스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바삭하게 구워낸 닭구이와 매콤한 쏨땀의 조화가 완벽한 로컬 현지 식당입니다."
+    },
+    {
+      "id": "global_hat_yai_caf_1",
+      "name": "더 커티지",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 정원 속에 꾸며져 있어 커피 한 잔과 함께 편안히 쉬어가기 좋습니다."
+    },
+    {
+      "id": "global_hat_yai_caf_2",
+      "name": "스페이스 바",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "우주 콘셉트의 독특한 인테리어와 개성 넘치는 음료 메뉴로 젊은 층에게 인기입니다."
+    },
+    {
+      "id": "global_hat_yai_nig_1",
+      "name": "아세안 나이트 바자",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "2층 테라스에서 시장의 전경을 내려다보며 다양한 옷과 스트리트 푸드를 즐깁니다."
+    }
+  ],
+  "피피섬": [
+    {
+      "id": "global_phi_phi_att_1",
+      "name": "마야 베이",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "south",
+      "desc": "영화 '더 비치'의 촬영지로 유명하며 거대한 석회암 절벽이 둘러싼 환상적인 해변입니다."
+    },
+    {
+      "id": "global_phi_phi_att_2",
+      "name": "피피 뷰포인트",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "가파른 길을 오르면 피피섬의 잘록한 허리 모양과 양쪽 해변을 동시에 내려다볼 수 있습니다."
+    },
+    {
+      "id": "global_phi_phi_rel_1",
+      "name": "롱 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "보드라운 모래를 밟으며 스노클링을 즐기기에 좋은 피피섬 제일의 평화로운 해변입니다."
+    },
+    {
+      "id": "global_phi_phi_act_1",
+      "name": "피피 스쿠버 다이빙",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "sea",
+      "desc": "화려한 산호초와 열대어가 가득한 피피섬 앞바다 깊숙한 곳을 탐험하는 레포츠입니다."
+    },
+    {
+      "id": "global_phi_phi_res_1",
+      "name": "안나스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "푸짐하고 맛있는 유러피안 및 태국 가정식을 제공하여 여행자들의 오아시스 같은 곳입니다."
+    },
+    {
+      "id": "global_phi_phi_res_2",
+      "name": "몬스터 버거",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "물놀이 후 허기진 배를 든든하게 채워주는 크고 두툼한 패티의 수제 버거 맛집입니다."
+    },
+    {
+      "id": "global_phi_phi_res_3",
+      "name": "아쿠아 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세련된 인테리어와 함께 고급스러운 파스타와 신선한 시푸드를 와인과 함께 즐깁니다."
+    },
+    {
+      "id": "global_phi_phi_caf_1",
+      "name": "패치 리 베이커리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 빵 냄새가 일품이며 든든한 서양식 조식 메뉴로 아침을 시작하기 좋습니다."
+    },
+    {
+      "id": "global_phi_phi_caf_2",
+      "name": "망고 가든",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "망고 스티키 라이스 등 달콤하고 시원한 망고 디저트의 모든 것을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_phi_phi_nig_1",
+      "name": "톤사이 베이 해변 바",
+      "category": "nightview",
+      "subCategory": "nightlife",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "beach",
+      "desc": "밤이 되면 모래사장 위에서 환상적인 불쇼와 함께 세계 각국의 젊은이들이 파티를 엽니다."
+    }
+  ],
+  "치앙다오": [
+    {
+      "id": "global_chiang_dao_att_1",
+      "name": "치앙다오 동굴",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "수 킬로미터에 이르는 거대한 석회암 동굴 내부의 불상과 종유석을 가스 랜턴으로 탐험합니다."
+    },
+    {
+      "id": "global_chiang_dao_att_2",
+      "name": "왓 탐 파 플롱",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "mountain",
+      "desc": "숲속 계단을 따라 오르며 명상적인 글귀를 읽고 도달하는 평화로운 숲속 사원입니다."
+    },
+    {
+      "id": "global_chiang_dao_rel_1",
+      "name": "치앙다오 야외 온천",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "forest",
+      "desc": "울창한 숲속 계곡 옆에 자연적으로 솟아나는 따뜻한 천연 온천탕입니다."
+    },
+    {
+      "id": "global_chiang_dao_act_1",
+      "name": "도이 루앙 트레킹",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "태국에서 세 번째로 높은 석회암 산의 고유 식생과 웅장한 경치를 만끽하는 트레킹입니다."
+    },
+    {
+      "id": "global_chiang_dao_res_1",
+      "name": "치앙다오 네스트 1",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "resort",
+      "desc": "뛰어난 솜씨로 조리된 고급 유러피안 요리를 멋진 자연 풍광 속에서 즐길 수 있습니다."
+    },
+    {
+      "id": "global_chiang_dao_res_2",
+      "name": "치앙다오 네스트 2",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "resort",
+      "desc": "네스트 1과 이웃하며 향신료가 조화롭게 어우러진 최고 수준의 태국 전통 요리를 냅니다."
+    },
+    {
+      "id": "global_chiang_dao_res_3",
+      "name": "크루아 야 카위",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로컬 향기가 물씬 나는 소박한 식당으로 매콤한 북부식 카레 국수가 일품입니다."
+    },
+    {
+      "id": "global_chiang_dao_caf_1",
+      "name": "마카미아 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "road",
+      "desc": "마카다미아 농장을 겸하고 있어 신선한 견과류 디저트와 고소한 커피를 자랑합니다."
+    },
+    {
+      "id": "global_chiang_dao_caf_2",
+      "name": "하이 캠프 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "탁 트인 도이 루앙 산맥을 병풍처럼 두르고 캠핑 감성으로 커피를 즐기는 명소입니다."
+    },
+    {
+      "id": "global_chiang_dao_nig_1",
+      "name": "도이 루앙 별빛 언덕",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "mountain",
+      "desc": "광해가 전혀 없어 밤하늘에 쏟아지는 수많은 별과 은하수를 감상할 수 있는 스팟입니다."
+    }
+  ],
+  "람빵": [
+    {
+      "id": "global_lampang_att_1",
+      "name": "왓 프라탓 람빵 루앙",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "요새처럼 지어진 란나 왕조 양식의 웅장한 목조 사원으로 깊은 역사를 간직하고 있습니다."
+    },
+    {
+      "id": "global_lampang_att_2",
+      "name": "코끼리 보호 센터",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "국가에서 운영하며 코끼리 병원을 갖추고 있어 코끼리 생태를 건강하게 체험할 수 있습니다."
+    },
+    {
+      "id": "global_lampang_rel_1",
+      "name": "째손 국립공원 온천",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "바위 틈에서 솟구치는 섭씨 80도의 온천수에 달걀을 삶아 먹고 족욕을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_lampang_act_1",
+      "name": "람빵 마차 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "태국에서 유일하게 말이 끄는 화려한 마차를 타고 느긋하게 올드타운을 둘러봅니다."
+    },
+    {
+      "id": "global_lampang_res_1",
+      "name": "아로이 원 바트",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "옛 목조 건물에서 흰 쌀죽과 함께 다양하고 저렴한 반찬을 골라 먹는 유명 식당입니다."
+    },
+    {
+      "id": "global_lampang_res_2",
+      "name": "카오소이 이슬람",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통을 지닌 식당으로 진하고 부드러운 국물의 북부식 카레 국수인 카오소이가 일품입니다."
+    },
+    {
+      "id": "global_lampang_res_3",
+      "name": "리버사이드 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "왕 강변에 위치해 선선한 강바람을 맞으며 라이브 음악과 함께 저녁을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_lampang_caf_1",
+      "name": "카르페 디엠 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빈티지한 가구들과 클래식한 음악이 어우러져 여유로운 오후를 보내기 좋은 카페입니다."
+    },
+    {
+      "id": "global_lampang_caf_2",
+      "name": "카페 프라나콘",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "태국 전통 디저트와 퓨전 음료를 복고풍 인테리어 속에서 감각적으로 제공합니다."
+    },
+    {
+      "id": "global_lampang_nig_1",
+      "name": "깟 꽁따 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 5,
+        "culture": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "주말 밤 고풍스러운 목조 건축물들이 늘어선 거리에서 열리는 활기찬 보행자 야시장입니다."
+    }
+  ],
+  "차암": [
+    {
+      "id": "global_cha_am_att_1",
+      "name": "마루카타이완 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "황금빛 티크목으로 지어져 바다를 향해 길게 뻗은 고풍스럽고 우아한 옛 여름 별장입니다."
+    },
+    {
+      "id": "global_cha_am_att_2",
+      "name": "산토리니 파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 3,
+        "culture": 2,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "그리스 산토리니 마을을 그대로 옮겨놓은 듯한 테마파크로 사진 촬영과 쇼핑에 제격입니다."
+    },
+    {
+      "id": "global_cha_am_rel_1",
+      "name": "차암 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "소나무가 길게 늘어선 해변에서 말 타기 체험을 하거나 덱체어에 누워 쉬기 좋습니다."
+    },
+    {
+      "id": "global_cha_am_act_1",
+      "name": "차암 ATV 파크",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "거친 오프로드 트랙을 사륜바이크로 질주하며 스트레스를 날려버리는 액티비티입니다."
+    },
+    {
+      "id": "global_cha_am_res_1",
+      "name": "크루아 메드 사이",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "beach",
+      "desc": "해변 모래사장 바로 위에서 파도 소리와 함께 신선한 게 요리를 즐기는 해산물 식당입니다."
+    },
+    {
+      "id": "global_cha_am_res_2",
+      "name": "촘 뷰 시푸드",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "beach",
+      "desc": "탁 트인 바다 전망과 합리적인 가격의 대규모 타이 시푸드로 현지인에게 인기 많습니다."
+    },
+    {
+      "id": "global_cha_am_res_3",
+      "name": "플라투 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "이름 그대로 고등어(플라투)를 활용한 매콤하고 짭짤한 태국식 전통 해산물 요리 전문점입니다."
+    },
+    {
+      "id": "global_cha_am_caf_1",
+      "name": "보니 온 더 비치",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "beach",
+      "desc": "통유리창 너머로 푸른 바다가 가득 담기는 미니멀하고 트렌디한 오션뷰 카페입니다."
+    },
+    {
+      "id": "global_cha_am_caf_2",
+      "name": "레 세레스트 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 시골 정원을 연상케 하는 로맨틱한 분위기에서 수제 케이크를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_cha_am_nig_1",
+      "name": "차암 수요 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "매주 수요일 밤에만 열려 더욱 활기차며 저렴한 로컬 길거리 음식을 맘껏 즐기는 곳입니다."
+    }
+  ],
+  "코창": [
+    {
+      "id": "global_koh_chang_att_1",
+      "name": "클롱 플루 폭포",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "울창한 정글을 짧게 트레킹하고 나타나는 차갑고 맑은 폭포수 웅덩이에서 수영을 즐깁니다."
+    },
+    {
+      "id": "global_koh_chang_att_2",
+      "name": "방바오 어촌마을",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 4,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "바다 위 기둥을 세워 지은 전통 수상 가옥 마을로 신선한 해산물과 기념품 숍이 가득합니다."
+    },
+    {
+      "id": "global_koh_chang_rel_1",
+      "name": "화이트 샌드 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 4,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "섬에서 가장 길고 번화한 해변으로 부드러운 백사장과 얕은 수심을 자랑합니다."
+    },
+    {
+      "id": "global_koh_chang_act_1",
+      "name": "코창 스노클링",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "sea",
+      "desc": "주변의 깨끗한 무인도 4~5곳을 배로 이동하며 다채로운 열대어와 산호를 구경합니다."
+    },
+    {
+      "id": "global_koh_chang_res_1",
+      "name": "눙 부아 시푸드",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "화이트 샌드 비치의 터줏대감으로 신선한 해산물 바비큐를 얼음 위에 진열해 구워줍니다."
+    },
+    {
+      "id": "global_koh_chang_res_2",
+      "name": "카티 컬리너리",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "깔끔하고 수준 높은 정통 태국 요리를 선보이며 쿠킹 클래스로도 유명한 식당입니다."
+    },
+    {
+      "id": "global_koh_chang_res_3",
+      "name": "카오콴 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "아름다운 데코레이션이 돋보이는 모던 타이 요리를 고급스러운 분위기에서 즐길 수 있습니다."
+    },
+    {
+      "id": "global_koh_chang_caf_1",
+      "name": "마린 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "맛있는 이탈리아식 커피와 에어컨이 나오는 쾌적한 실내를 제공하는 인기 카페입니다."
+    },
+    {
+      "id": "global_koh_chang_caf_2",
+      "name": "더 코티지 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "푸른 열대 정원 속에 숨겨진 작은 카페로 수제 케이크와 시원한 음료로 더위를 달랩니다."
+    },
+    {
+      "id": "global_koh_chang_nig_1",
+      "name": "사바이 바 파이어 쇼",
+      "category": "nightview",
+      "subCategory": "nightlife",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "west",
+      "desc": "밤바다를 배경으로 해변가 모래 위에서 칵테일을 마시며 아찔한 불쇼 공연을 감상합니다."
+    }
+  ],
+  "야소톤": [
+    {
+      "id": "global_yasothon_att_1",
+      "name": "프라탓 아논",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아난다 존자의 유물을 모셨다고 전해지는 오래되고 성스러운 이산 지역의 대표 불탑입니다."
+    },
+    {
+      "id": "global_yasothon_att_2",
+      "name": "파야 탄 공원 두꺼비 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "지역 전설 속의 거대한 두꺼비를 형상화한 독특한 외관의 박물관입니다."
+    },
+    {
+      "id": "global_yasothon_rel_1",
+      "name": "치 강변 생태공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "야소톤을 관통하는 치 강을 따라 조성된 평화로운 공원으로 노을 감상에 좋습니다."
+    },
+    {
+      "id": "global_yasothon_act_1",
+      "name": "야소톤 로켓 축제관",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "비를 기원하며 거대한 수제 로켓을 쏘아 올리는 분방파이 축제의 역사를 체험합니다."
+    },
+    {
+      "id": "global_yasothon_res_1",
+      "name": "란 라입 야소톤",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "매콤하고 알싸한 이산식 다진 고기 샐러드인 '라입'을 제대로 맛볼 수 있는 로컬 맛집입니다."
+    },
+    {
+      "id": "global_yasothon_res_2",
+      "name": "솜땀 야소톤",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "강렬한 맛의 젓갈이 들어간 이산 정통 솜땀과 찰밥을 현지인들과 섞여 먹는 곳입니다."
+    },
+    {
+      "id": "global_yasothon_res_3",
+      "name": "더 리버 다이닝",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "치 강변에 넓게 자리 잡아 신선한 민물고기 요리와 시원한 맥주를 즐기기 좋은 식당입니다."
+    },
+    {
+      "id": "global_yasothon_caf_1",
+      "name": "1990 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 인테리어와 시그니처 크루아상이 훌륭해 조용한 휴식을 원하는 여행객에게 제격입니다."
+    },
+    {
+      "id": "global_yasothon_caf_2",
+      "name": "블랙 로스터",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 내린 묵직한 바디감의 스페셜티 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_yasothon_nig_1",
+      "name": "야소톤 나이트 바자",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "다양한 이산 지역의 길거리 음식과 소박한 현지인들의 저녁 일상을 엿보는 야시장입니다."
+    }
+  ],
+  "수코타이": [
+    {
+      "id": "global_sukhothai_att_1",
+      "name": "수코타이 역사공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "태국 최초 왕조의 찬란했던 옛 수도 유적지로 연못과 어우러진 수많은 사원이 남아있습니다."
+    },
+    {
+      "id": "global_sukhothai_att_2",
+      "name": "왓 시춤",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "좁은 틈 사이로 자비로운 미소를 띠고 있는 거대한 좌불상의 신비로움이 압도적입니다."
+    },
+    {
+      "id": "global_sukhothai_rel_1",
+      "name": "람캄행 국립박물관 정원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "중요한 유물들을 관람한 뒤 아름답게 가꿔진 연꽃 정원에서 조용히 쉴 수 있습니다."
+    },
+    {
+      "id": "global_sukhothai_act_1",
+      "name": "수코타이 자전거 투어",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "평탄하고 넓은 역사공원 안팎을 자전거를 타고 누비며 고대 유적의 정취를 느낍니다."
+    },
+    {
+      "id": "global_sukhothai_res_1",
+      "name": "마이끌랑끄룽",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고전적인 분위기에서 새콤달콤한 정통 수코타이 국수와 현지식 디저트를 제공합니다."
+    },
+    {
+      "id": "global_sukhothai_res_2",
+      "name": "타 푸이 수코타이 국수",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "돼지고기와 땅콩이 듬뿍 들어간 수코타이식 쌀국수로 지역에서 가장 유명한 노포입니다."
+    },
+    {
+      "id": "global_sukhothai_res_3",
+      "name": "촘 쁘랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "역사공원 근처에서 아름다운 뷰와 함께 깔끔하고 고급스러운 태국 요리를 선보입니다."
+    },
+    {
+      "id": "global_sukhothai_caf_1",
+      "name": "루시다 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "더운 유적지 탐방 후 시원한 에어컨과 수준급 드립 커피로 완벽한 휴식을 선사합니다."
+    },
+    {
+      "id": "global_sukhothai_caf_2",
+      "name": "만나 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초록빛 정원 테라스가 매력적이며 수제 케이크와 시원한 과일 스무디가 인기입니다."
+    },
+    {
+      "id": "global_sukhothai_nig_1",
+      "name": "수코타이 토요 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "유적지에 조명이 켜진 환상적인 배경 아래 전통 음식과 공예품을 즐기는 낭만적인 야시장입니다."
+    }
+  ],
+  "롭부리": [
+    {
+      "id": "global_lopburi_att_1",
+      "name": "프라 프랑 삼 욧",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "크메르 양식의 세 개 프랑(탑)으로 이루어진 유적지로 수많은 원숭이들의 터전입니다."
+    },
+    {
+      "id": "global_lopburi_att_2",
+      "name": "나라이 왕궁",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "서양 건축 양식이 혼합된 독특한 옛 왕궁으로 화려했던 롭부리의 과거를 보여줍니다."
+    },
+    {
+      "id": "global_lopburi_rel_1",
+      "name": "파삭 촌라싯 댐 호수",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "거대한 인공 호수 위로 달리는 기차 풍경이 아름다우며 피크닉을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_lopburi_act_1",
+      "name": "롭부리 원숭이 먹이주기 체험",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 한가운데를 장악한 수백 마리의 야생 원숭이들과 가까이서 교감하는 아찔한 체험입니다."
+    },
+    {
+      "id": "global_lopburi_res_1",
+      "name": "크루아 마이 홈",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들 사이에서 입소문이 자자한 가성비 훌륭한 정통 타이 요리 전문점입니다."
+    },
+    {
+      "id": "global_lopburi_res_2",
+      "name": "보란 타이 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛 조리 방식을 고수하여 깊은 맛을 내는 태국 중부식 커리와 볶음 요리를 맛봅니다."
+    },
+    {
+      "id": "global_lopburi_res_3",
+      "name": "란 파 푼",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강가 근처에 위치하여 시원한 솜땀과 민물고기 튀김 등을 저렴하게 먹을 수 있습니다."
+    },
+    {
+      "id": "global_lopburi_caf_1",
+      "name": "플로엔 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "깔끔한 화이트톤 인테리어 속에서 더위를 식히며 진한 커피와 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_lopburi_caf_2",
+      "name": "몽키 커피 로스터스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 볶은 원두의 향긋함이 매력적이며 원숭이 마을의 활기찬 모습을 구경하며 쉴 수 있습니다."
+    },
+    {
+      "id": "global_lopburi_nig_1",
+      "name": "롭부리 기차역 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "기차역 주변으로 넓게 펼쳐져 저녁 식사와 간식을 해결하기 좋은 시끌벅적한 야시장입니다."
+    }
+  ],
+  "훼": [
+    {
+      "id": "global_hue_att_1",
+      "name": "후에 황성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "응우옌 왕조의 웅장한 황궁으로 베트남의 마지막 왕조의 화려함과 쓸쓸함을 엿볼 수 있습니다."
+    },
+    {
+      "id": "global_hue_att_2",
+      "name": "티엔무 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "흐엉 강변에 서 있는 7층 팔각탑이 상징적인 유서 깊고 평화로운 불교 사원입니다."
+    },
+    {
+      "id": "global_hue_rel_1",
+      "name": "뜨득 황릉 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "호수와 누각이 어우러진 넓고 고즈넉한 정원 형태의 황릉을 산책하며 명상하기 좋습니다."
+    },
+    {
+      "id": "global_hue_act_1",
+      "name": "흐엉 강 드래곤 보트 탑승",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "전통적인 용 머리 장식 보트를 타고 고도 훼를 관통하는 향수로운 강을 유람합니다."
+    },
+    {
+      "id": "global_hue_res_1",
+      "name": "마담 투",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "반베오, 넴루이 등 후에를 대표하는 궁중 궁중음식과 지역 별미를 코스처럼 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_hue_res_2",
+      "name": "니나스 카페 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "골목 안쪽에 숨어있는 가정식 맛집으로 정성 가득하고 깔끔한 베트남 요리를 제공합니다."
+    },
+    {
+      "id": "global_hue_res_3",
+      "name": "오끄엉 쭈디엡 분보후에",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "매콤하고 진한 국물의 훼식 소고기 쌀국수 '분보후에'를 제대로 끓여내는 현지 찐 맛집입니다."
+    },
+    {
+      "id": "global_hue_caf_1",
+      "name": "더 원 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 식민지 시절 건축 양식이 돋보이는 고급스러운 2층 카페에서 휴식을 취합니다."
+    },
+    {
+      "id": "global_hue_caf_2",
+      "name": "카페 무오이",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "후에에서 꼭 마셔봐야 할 단짠의 완벽한 조화, '소금 커피'의 원조 카페입니다."
+    },
+    {
+      "id": "global_hue_nig_1",
+      "name": "쯔엉띠엔 다리 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "river",
+      "desc": "형형색색으로 조명이 변하는 다리를 걷고 주변 야시장에서 간식을 먹으며 훼의 밤을 즐깁니다."
+    }
+  ],
+  "호이안": [
+    {
+      "id": "global_호이안_attraction_1",
+      "name": "내원교",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호이안 구시가지의 상징적인 일본식 다리로, 역사적인 분위기를 느낄 수 있습니다."
+    },
+    {
+      "id": "global_호이안_attraction_2",
+      "name": "안방 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸른 바다와 고운 모래사장이 매력적인 해변으로, 휴식을 취하기 좋습니다."
+    },
+    {
+      "id": "global_호이안_relaxation_3",
+      "name": "호이안 에코 로지 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자연 속에서 편안하게 마사지를 받으며 힐링할 수 있는 스파 시설입니다."
+    },
+    {
+      "id": "global_호이안_activity_4",
+      "name": "코코넛 배 탑승",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 대나무 배를 타고 수로를 탐험하는 특별한 체험 프로그램입니다."
+    },
+    {
+      "id": "global_호이안_restaurant_5",
+      "name": "반미 프엉",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바삭한 바게트와 풍부한 속재료가 어우러진 베트남 최고의 반미 맛집입니다."
+    },
+    {
+      "id": "global_호이안_restaurant_6",
+      "name": "모닝 글로리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양하고 정갈한 베트남 전통 음식을 맛볼 수 있는 유명 레스토랑입니다."
+    },
+    {
+      "id": "global_호이안_restaurant_7",
+      "name": "오리비 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 정원 분위기 속에서 신선한 로컬 요리를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_호이안_cafe_8",
+      "name": "파이포 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옥상에서 호이안 올드타운의 아름다운 전경을 감상할 수 있는 카페입니다."
+    },
+    {
+      "id": "global_호이안_cafe_9",
+      "name": "호이안 로스터리",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 내린 향긋한 커피를 맛볼 수 있는 로스터리 카페입니다."
+    },
+    {
+      "id": "global_호이안_nightview_10",
+      "name": "호이안 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다채로운 등불과 활기찬 분위기 속에서 밤거리를 거닐며 야경을 감상할 수 있습니다."
+    }
+  ],
+  "붕따우": [
+    {
+      "id": "global_붕따우_attraction_1",
+      "name": "거대 예수상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "산을 오르며 아름다운 해안 절경과 함께 거대한 예수상을 볼 수 있는 명소입니다."
+    },
+    {
+      "id": "global_붕따우_attraction_2",
+      "name": "화이트 팰리스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 프랑스 총독의 별장으로 사용되었던 아름다운 하얀 건축물입니다."
+    },
+    {
+      "id": "global_붕따우_relaxation_3",
+      "name": "임페리얼 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급스러운 호텔 내 스파에서 수준 높은 마사지 서비스를 제공합니다."
+    },
+    {
+      "id": "global_붕따우_activity_4",
+      "name": "호마이 파크 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "케이블카를 타고 산 정상에 올라가 다양한 놀이시설을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_붕따우_restaurant_5",
+      "name": "간하오",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해안가에 위치하여 아름다운 바다를 보며 신선한 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_붕따우_restaurant_6",
+      "name": "반콧 코바",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "붕따우의 명물인 바삭하고 고소한 반콧을 제대로 맛볼 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_붕따우_restaurant_7",
+      "name": "오션 하우스",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다가 한눈에 보이는 멋진 전망과 함께 분위기 있는 식사를 할 수 있습니다."
+    },
+    {
+      "id": "global_붕따우_cafe_8",
+      "name": "소호 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 인테리어와 탁 트인 오션뷰가 돋보이는 붕따우의 핫한 카페입니다."
+    },
+    {
+      "id": "global_붕따우_cafe_9",
+      "name": "마리나 클럽",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다 위 선착장에 위치해 요트와 바다 풍경을 감상하기 좋은 분위기 있는 카페입니다."
+    },
+    {
+      "id": "global_붕따우_nightview_10",
+      "name": "붕따우 등대",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 조명이 켜지는 등대에서 붕따우 시내의 아름다운 야경을 감상할 수 있습니다."
+    }
+  ],
+  "하이퐁": [
+    {
+      "id": "global_하이퐁_attraction_1",
+      "name": "하이퐁 오페라 하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 식민지 시대의 건축 양식을 잘 보여주는 아름답고 역사적인 건물입니다."
+    },
+    {
+      "id": "global_하이퐁_attraction_2",
+      "name": "도선 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 즐겨 찾는 해변으로, 탁 트인 바다와 백사장이 인상적입니다."
+    },
+    {
+      "id": "global_하이퐁_relaxation_3",
+      "name": "깟바 아일랜드 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용한 섬 분위기 속에서 피로를 풀 수 있는 아늑한 스파입니다."
+    },
+    {
+      "id": "global_하이퐁_activity_4",
+      "name": "깟바 국립공원 트레킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "원시림이 보존된 국립공원 내 트레킹 코스를 따라 대자연을 만끽할 수 있습니다."
+    },
+    {
+      "id": "global_하이퐁_restaurant_5",
+      "name": "반다꾸아 바쿠",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "하이퐁 특산물인 민물게로 끓여낸 진한 국물의 국수를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_하이퐁_restaurant_6",
+      "name": "넴꾸아베 하이퐁",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "게살을 듬뿍 넣어 바삭하게 튀겨낸 넴을 전문으로 하는 인기 식당입니다."
+    },
+    {
+      "id": "global_하이퐁_restaurant_7",
+      "name": "로컬 씨푸드 크랩 식당",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "하이퐁 앞바다에서 잡힌 신선한 게와 다양한 해산물 요리를 제공합니다."
+    },
+    {
+      "id": "global_하이퐁_cafe_8",
+      "name": "노츠 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특하고 웅장한 인테리어와 빈티지한 감성이 어우러진 핫플레이스 카페입니다."
+    },
+    {
+      "id": "global_하이퐁_cafe_9",
+      "name": "마츠 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 향긋한 베트남 커피와 맛있는 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_하이퐁_nightview_10",
+      "name": "땀박 호수 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조명이 켜진 호수 주변을 산책하며 여유로운 저녁 시간을 보낼 수 있는 명소입니다."
+    }
+  ],
+  "무이네": [
+    {
+      "id": "global_무이네_attraction_1",
+      "name": "화이트 샌드 듄",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마치 사막에 온 듯한 광활하고 아름다운 백사구 풍경을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_무이네_attraction_2",
+      "name": "요정의 샘물",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "붉은 모래와 석회암 절벽 사이로 흐르는 얕은 시냇물을 맨발로 걷는 명소입니다."
+    },
+    {
+      "id": "global_무이네_relaxation_3",
+      "name": "미아 리조트 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급스러운 리조트 내에서 전문 테라피스트의 마사지를 받을 수 있습니다."
+    },
+    {
+      "id": "global_무이네_activity_4",
+      "name": "사륜구동 ATV 체험",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모래언덕 위를 질주하는 ATV를 타며 짜릿한 스릴을 경험할 수 있습니다."
+    },
+    {
+      "id": "global_무이네_restaurant_5",
+      "name": "신밧드 케밥",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸짐하고 맛있는 되너 케밥을 저렴한 가격에 즐길 수 있는 무이네 대표 맛집입니다."
+    },
+    {
+      "id": "global_무이네_restaurant_6",
+      "name": "미스터 크랩 보케",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해안도로 보케거리에 위치해 파도 소리를 들으며 해산물 바비큐를 먹을 수 있습니다."
+    },
+    {
+      "id": "global_무이네_restaurant_7",
+      "name": "산달스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 분위기에서 정통 서양식과 퓨전 요리를 맛볼 수 있는 고급 레스토랑입니다."
+    },
+    {
+      "id": "global_무이네_cafe_8",
+      "name": "카고 클럽",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "탁 트인 바다 전망을 감상하며 칵테일과 커피를 즐길 수 있는 오션뷰 카페입니다."
+    },
+    {
+      "id": "global_무이네_cafe_9",
+      "name": "파인애플 비치 바",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "귀여운 파인애플 장식과 빈백에 누워 힐링할 수 있는 트렌디한 비치 카페입니다."
+    },
+    {
+      "id": "global_무이네_nightview_10",
+      "name": "드래곤 비치 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "흥겨운 음악과 함께 화려한 불쇼를 감상할 수 있는 무이네의 대표적인 나이트 바입니다."
+    }
+  ],
+  "하롱베이": [
+    {
+      "id": "global_하롱베이_attraction_1",
+      "name": "승솟 동굴",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조명이 더해져 신비로운 분위기를 자아내는 거대하고 아름다운 종유석 동굴입니다."
+    },
+    {
+      "id": "global_하롱베이_attraction_2",
+      "name": "티톱 섬",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전망대에 오르면 깎아지른 듯한 기암괴석과 어우러진 하롱베이의 전경을 볼 수 있습니다."
+    },
+    {
+      "id": "global_하롱베이_relaxation_3",
+      "name": "빈펄 리조트 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급 리조트의 아늑한 스파 시설에서 여행의 피로를 완벽하게 풀 수 있습니다."
+    },
+    {
+      "id": "global_하롱베이_activity_4",
+      "name": "하롱베이 크루즈 카약킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "잔잔한 바다 위를 직접 카약을 저으며 기암괴석 사이를 탐험하는 액티비티입니다."
+    },
+    {
+      "id": "global_하롱베이_restaurant_5",
+      "name": "1958 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "우아한 인테리어와 수준 높은 베트남 북부 요리를 맛볼 수 있는 식당입니다."
+    },
+    {
+      "id": "global_하롱베이_restaurant_6",
+      "name": "홍엔 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 해산물과 정갈하게 요리된 베트남 전통식을 즐길 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_하롱베이_restaurant_7",
+      "name": "린단 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "관광객과 현지인 모두에게 사랑받는 깔끔하고 맛있는 베트남 로컬 식당입니다."
+    },
+    {
+      "id": "global_하롱베이_cafe_8",
+      "name": "완더 스테이션 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빈티지한 감성과 감각적인 인테리어가 돋보이는 하롱베이 시내 카페입니다."
+    },
+    {
+      "id": "global_하롱베이_cafe_9",
+      "name": "올드타운 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마치 성에 들어온 듯한 외관과 하롱베이 앞바다가 보이는 전망 좋은 카페입니다."
+    },
+    {
+      "id": "global_하롱베이_nightview_10",
+      "name": "썬 휠 대관람차",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "대관람차를 타고 하롱베이 시내와 바다의 환상적인 야경을 한눈에 감상할 수 있습니다."
+    }
+  ],
+  "껀터": [
+    {
+      "id": "global_껀터_attraction_1",
+      "name": "까이랑 수상시장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "메콩강에서 배를 타고 물건을 사고파는 활기찬 현지 수상시장입니다."
+    },
+    {
+      "id": "global_껀터_attraction_2",
+      "name": "빈투이 고가",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 양식과 베트남 전통 건축이 혼합된 아름다운 고택으로 영화 촬영지로도 유명합니다."
+    },
+    {
+      "id": "global_껀터_relaxation_3",
+      "name": "센스 스파 껀터",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "여행객들이 지친 몸을 이끌고 편안한 마사지를 받기에 좋은 로컬 스파입니다."
+    },
+    {
+      "id": "global_껀터_activity_4",
+      "name": "메콩강 델타 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "작은 보트를 타고 울창한 코코넛 나무 사이를 누비며 자연을 만끽하는 투어입니다."
+    },
+    {
+      "id": "global_껀터_restaurant_5",
+      "name": "상마이 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "껀터의 전통적인 가정식과 풍성한 델타 지역 요리를 제공하는 식당입니다."
+    },
+    {
+      "id": "global_껀터_restaurant_6",
+      "name": "넴느엉 탄반",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "숯불에 구운 돼지고기 꼬치인 넴느엉을 신선한 채소와 함께 싸 먹는 맛집입니다."
+    },
+    {
+      "id": "global_껀터_restaurant_7",
+      "name": "호아 수 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "강변에 위치하여 운치 있는 분위기 속에서 강 생선 및 해산물 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_껀터_cafe_8",
+      "name": "안 카페 껀터",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 정원과 빈티지한 소품들이 가득해 사진 찍기 좋은 예쁜 카페입니다."
+    },
+    {
+      "id": "global_껀터_cafe_9",
+      "name": "1985 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "레트로한 감성과 잔잔한 음악이 어우러져 편안하게 쉬어갈 수 있는 곳입니다."
+    },
+    {
+      "id": "global_껀터_nightview_10",
+      "name": "닌끼우 선착장",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 화려한 불빛으로 물드는 껀터 강변 산책로로, 야경이 훌륭합니다."
+    }
+  ],
+  "닌빈": [
+    {
+      "id": "global_닌빈_attraction_1",
+      "name": "짱안 생태관광단지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수많은 석회암 절벽과 동굴 사이를 배로 유람하며 신비로운 절경을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_닌빈_attraction_2",
+      "name": "항무아",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "돌계단을 따라 정상에 오르면 땀꼭의 들판과 구불구불한 강줄기가 빚어낸 멋진 풍경이 펼쳐집니다."
+    },
+    {
+      "id": "global_닌빈_relaxation_3",
+      "name": "땀꼭 가든 리조트 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초록빛 대자연 속 리조트에서 허브 향기와 함께 즐기는 평화로운 스파입니다."
+    },
+    {
+      "id": "global_닌빈_activity_4",
+      "name": "땀꼭 나룻배 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "사공이 발로 노를 젓는 독특한 풍경 속에서 한적한 농촌 마을의 정취를 느낄 수 있습니다."
+    },
+    {
+      "id": "global_닌빈_restaurant_5",
+      "name": "중투엣 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸짐한 양과 정성스러운 베트남 현지 요리로 외국인 관광객들에게 인기 있는 식당입니다."
+    },
+    {
+      "id": "global_닌빈_restaurant_6",
+      "name": "땀꼭 패밀리 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 식재료로 만든 닌빈 특산물 염소고기 요리를 거부감 없이 즐길 수 있습니다."
+    },
+    {
+      "id": "global_닌빈_restaurant_7",
+      "name": "뱀부 바 앤 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "대나무 인테리어가 돋보이며 다채로운 아시아 요리와 시원한 맥주를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_닌빈_cafe_8",
+      "name": "땀꼭 라나 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용한 마을 분위기에 어울리는 따뜻하고 소박한 인테리어의 휴식처입니다."
+    },
+    {
+      "id": "global_닌빈_cafe_9",
+      "name": "브릭 커피 라이브러리",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "벽돌로 지어진 차분한 분위기의 북카페로, 퀄리티 높은 커피를 제공합니다."
+    },
+    {
+      "id": "global_닌빈_nightview_10",
+      "name": "바이딘 사원",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어둠이 내리면 수많은 불빛이 사원을 비춰 웅장하고 아름다운 야경을 감상할 수 있습니다."
+    }
+  ],
+  "꾸이년": [
+    {
+      "id": "global_꾸이년_attraction_1",
+      "name": "키코 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "에메랄드빛 바다와 하얀 백사장이 어우러져 '베트남의 몰디브'라 불리는 해변입니다."
+    },
+    {
+      "id": "global_꾸이년_attraction_2",
+      "name": "에오지오",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바람이 깎아낸 기암절벽과 푸른 바다가 어우러진 환상적인 해안 산책로입니다."
+    },
+    {
+      "id": "global_꾸이년_relaxation_3",
+      "name": "아바니 꾸이년 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바닷소리를 들으며 몸과 마음을 릴렉스할 수 있는 럭셔리한 웰니스 스파입니다."
+    },
+    {
+      "id": "global_꾸이년_activity_4",
+      "name": "혼세오 스노클링",
+      "category": "activity",
+      "subCategory": "watersports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "투명한 바닷물 속에서 산호초와 열대어를 감상할 수 있는 해양 액티비티입니다."
+    },
+    {
+      "id": "global_꾸이년_restaurant_5",
+      "name": "꽌안응온 꾸이년",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 종류의 베트남 전통 요리를 깔끔하고 현대적인 분위기에서 즐길 수 있습니다."
+    },
+    {
+      "id": "global_꾸이년_restaurant_6",
+      "name": "해산물 식당 투이차우",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "꾸이년에서 갓 잡은 싱싱하고 저렴한 해산물을 숯불에 구워 제공하는 로컬 맛집입니다."
+    },
+    {
+      "id": "global_꾸이년_restaurant_7",
+      "name": "트레 비 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "대나무로 만든 이색적인 공간에서 정갈하고 깊은 맛의 전통 가정식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_꾸이년_cafe_8",
+      "name": "서프 바",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해변 모래사장 위에 위치해 파도 소리와 함께 시원한 음료를 마실 수 있는 핫한 바입니다."
+    },
+    {
+      "id": "global_꾸이년_cafe_9",
+      "name": "S비치 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 디자인과 바다 전망이 훌륭해 여행 중 여유롭게 사진을 찍고 쉬기 좋은 카페입니다."
+    },
+    {
+      "id": "global_꾸이년_nightview_10",
+      "name": "꾸이년 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 길거리 음식과 기념품을 구경하며 현지의 활기찬 밤 문화를 체험할 수 있습니다."
+    }
+  ],
+  "디엔비엔푸": [
+    {
+      "id": "global_디엔비엔푸_attraction_1",
+      "name": "A1 언덕",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "디엔비엔푸 전투의 핵심 격전지로 당시의 참호와 역사적 흔적이 보존되어 있습니다."
+    },
+    {
+      "id": "global_디엔비엔푸_attraction_2",
+      "name": "승리 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독립전쟁의 역사와 디엔비엔푸 전투의 승리를 생생하게 기록한 박물관입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_relaxation_3",
+      "name": "므엉탄 호아빈 마사지",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통적인 방식의 마사지를 통해 여행 중 지친 몸의 피로를 풀어줍니다."
+    },
+    {
+      "id": "global_디엔비엔푸_activity_4",
+      "name": "파딘 패스 드라이브",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "베트남 서북부의 아름다운 산세와 웅장한 자연 경관을 감상하며 달리는 드라이브 코스입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_restaurant_5",
+      "name": "냐항 꽁 두안",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "지역 현지인들이 자주 찾는 곳으로 푸짐하고 맛있는 베트남 북부 산악지역 요리를 선보입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_restaurant_6",
+      "name": "호앙 안 로컬 푸드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 식재료를 활용한 깔끔하고 담백한 로컬 쌀국수와 볶음밥이 일품입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_restaurant_7",
+      "name": "비엣 토안 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 다양한 지역 특선 요리를 합리적인 가격에 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_디엔비엔푸_cafe_8",
+      "name": "에덴 카페 디엔비엔",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초록빛 식물과 아기자기한 정원으로 꾸며져 편안한 휴식을 취할 수 있는 정원 카페입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_cafe_9",
+      "name": "윈드 차임 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 풍경 소리를 들으며 달콤한 디저트와 향긋한 차를 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_디엔비엔푸_nightview_10",
+      "name": "승리 기념탑 광장",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "야간 조명이 켜진 웅장한 기념탑과 넓은 광장에서 현지인들의 여유로운 일상을 엿볼 수 있습니다."
+    }
+  ],
+  "미토": [
+    {
+      "id": "global_미토_attraction_1",
+      "name": "빈짱 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "베트남, 중국, 캄보디아의 건축 양식이 조화롭게 섞인 독특하고 아름다운 사찰입니다."
+    },
+    {
+      "id": "global_미토_attraction_2",
+      "name": "터이선 섬",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과수원과 열대 정원이 우거진 섬으로, 메콩 델타의 풍요로운 자연을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_미토_relaxation_3",
+      "name": "메콩 미토 호텔 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "깔끔한 호텔 내 스파에서 전문적인 마사지 서비스로 재충전의 시간을 가질 수 있습니다."
+    },
+    {
+      "id": "global_미토_activity_4",
+      "name": "미토 과수원 자전거 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자전거를 타고 열대 과수원 사이를 달리며 달콤한 제철 과일도 시식하는 체험입니다."
+    },
+    {
+      "id": "global_미토_restaurant_5",
+      "name": "후띠에우 미토 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "쫄깃한 면발과 진하고 구수한 국물이 일품인 미토 지역 명물 쌀국수 식당입니다."
+    },
+    {
+      "id": "global_미토_restaurant_6",
+      "name": "냐항 로즈",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "강변 근처에 위치해 코끼리 귀 생선 튀김 등 메콩 지역 특산물 요리를 제공합니다."
+    },
+    {
+      "id": "global_미토_restaurant_7",
+      "name": "추옹즈엉 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 바람을 맞으며 퀄리티 높은 베트남 전통식과 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_미토_cafe_8",
+      "name": "뉴 카페 미토",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현대적인 인테리어와 시원한 에어컨, 쾌적한 분위기를 갖춘 세련된 로컬 카페입니다."
+    },
+    {
+      "id": "global_미토_cafe_9",
+      "name": "가든 커피 바",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속 정원처럼 꾸며져 자연 친화적인 분위기에서 커피 한 잔의 여유를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_미토_nightview_10",
+      "name": "미토 강변 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "가로등이 은은하게 켜진 메콩 강변을 따라 걸으며 밤바람의 상쾌함을 느낄 수 있습니다."
+    }
+  ],
+  "달락": [
+    {
+      "id": "global_달락_attraction_1",
+      "name": "크레이지 하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "동화 속 미로처럼 구불구불하고 기괴하면서도 독특한 디자인의 건축물입니다."
+    },
+    {
+      "id": "global_달락_attraction_2",
+      "name": "쑤언흐엉 호수",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달랏 시내 중심에 자리한 거대하고 아름다운 호수로 산책하기 매우 좋습니다."
+    },
+    {
+      "id": "global_달락_relaxation_3",
+      "name": "아나 만다라 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "숲속 별장 같은 분위기 속에서 프라이빗하고 고급스러운 마사지를 받을 수 있습니다."
+    },
+    {
+      "id": "global_달락_activity_4",
+      "name": "다탄라 폭포 루지",
+      "category": "activity",
+      "subCategory": "watersports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "울창한 숲속 레일 위를 달리는 루지를 타고 폭포 앞까지 시원하게 질주하는 액티비티입니다."
+    },
+    {
+      "id": "global_달락_restaurant_5",
+      "name": "르 샬레 달랏",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "감각적인 프랑스풍 인테리어와 훌륭한 베트남 및 서양식 요리가 어우러진 레스토랑입니다."
+    },
+    {
+      "id": "global_달락_restaurant_6",
+      "name": "냐항 응온 달랏",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 종류의 베트남 길거리 음식을 위생적이고 아늑한 환경에서 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_달락_restaurant_7",
+      "name": "꽌 비아 야키",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달랏의 선선한 날씨에 어울리는 따뜻한 숯불 화로구이 고기와 맥주를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_달락_cafe_8",
+      "name": "메린 커피 농장",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "넓은 커피 밭을 내려다보며 위즐 커피 등 신선하게 로스팅된 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_달락_cafe_9",
+      "name": "라 비엣 커피",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달랏의 창고형 로스터리 카페로 산지에서 갓 볶은 최상급 원두의 커피를 제공합니다."
+    },
+    {
+      "id": "global_달락_nightview_10",
+      "name": "달랏 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 길거리 음식과 달랏 특산물 등을 구경하며 현지의 활기찬 밤을 느낄 수 있습니다."
+    }
+  ],
+  "판랑": [
+    {
+      "id": "global_판랑_attraction_1",
+      "name": "포 끌롱 가라이 참 탑",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 참파 왕국의 찬란했던 문화와 뛰어난 건축 예술을 엿볼 수 있는 고대 유적지입니다."
+    },
+    {
+      "id": "global_판랑_attraction_2",
+      "name": "닌추 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "깨끗하고 넓은 모래사장과 잔잔한 파도가 매력적인 판랑의 대표 휴양 해변입니다."
+    },
+    {
+      "id": "global_판랑_relaxation_3",
+      "name": "아만노이 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "국립공원의 자연 속에 자리 잡아 최고의 프라이빗 힐링을 선사하는 럭셔리 스파입니다."
+    },
+    {
+      "id": "global_판랑_activity_4",
+      "name": "무이딘 샌드 듄 짚차 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광활한 해안 모래사막을 짚차를 타고 거침없이 달리는 짜릿한 투어입니다."
+    },
+    {
+      "id": "global_판랑_restaurant_5",
+      "name": "반칸 판랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "작은 화로에 구워낸 겉은 바삭하고 속은 촉촉한 판랑식 반칸을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_판랑_restaurant_6",
+      "name": "비엔 주 씨푸드",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해안가에 위치해 갓 잡은 싱싱한 랍스터와 오징어 등을 저렴하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_판랑_restaurant_7",
+      "name": "흐엉 비엣",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "판랑의 로컬 향토 음식을 깔끔한 분위기에서 경험할 수 있는 현지인 맛집입니다."
+    },
+    {
+      "id": "global_판랑_cafe_8",
+      "name": "55 커피하우스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 분위기와 쾌적한 실내 환경으로 여행객들에게 편안한 휴식처를 제공합니다."
+    },
+    {
+      "id": "global_판랑_cafe_9",
+      "name": "티노 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 디자인에 맛있는 음료를 갖춰 사진 촬영과 담소를 나누기 좋은 예쁜 카페입니다."
+    },
+    {
+      "id": "global_판랑_nightview_10",
+      "name": "빈히 베이 선셋 앤 스카이",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "해안도로를 따라 드라이브를 하며 빈히 만의 붉게 물드는 환상적인 저녁 노을을 감상합니다."
+    }
+  ],
+  "메단": [
+    {
+      "id": "global_메단_attraction_1",
+      "name": "마이문 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이, 인도, 이탈리아 건축 양식이 융합된 화려하고 아름다운 옛 술탄의 궁전입니다."
+    },
+    {
+      "id": "global_메단_attraction_2",
+      "name": "그랜드 모스크 메단",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 돔과 장식이 돋보이는 메단의 상징적인 이슬람 사원으로 웅장함이 느껴집니다."
+    },
+    {
+      "id": "global_메단_relaxation_3",
+      "name": "젠 힐링 스파 메단",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "쾌적하고 조용한 환경에서 숙련된 테라피스트의 수준 높은 전통 마사지를 제공합니다."
+    },
+    {
+      "id": "global_메단_activity_4",
+      "name": "캄풍 켈링 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "리틀 인디아라 불리는 독특한 지역을 걸으며 다양한 문화가 혼합된 메단을 체험합니다."
+    },
+    {
+      "id": "global_메단_restaurant_5",
+      "name": "레스토랑 가루다",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 접시에 음식이 제공되는 인도네시아 전통 나시 파당을 맛볼 수 있는 유명 식당입니다."
+    },
+    {
+      "id": "global_메단_restaurant_6",
+      "name": "티프탑 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "식민지 시대부터 오랜 역사를 지닌 곳으로, 올드보이 스타일의 양식과 인도네시아 음식을 팝니다."
+    },
+    {
+      "id": "global_메단_restaurant_7",
+      "name": "넬라얀 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 딤섬과 해산물을 베이스로 한 아시안 요리를 훌륭하게 요리해내는 맛집입니다."
+    },
+    {
+      "id": "global_메단_cafe_8",
+      "name": "메이스 커피",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수마트라 지역 특유의 진하고 풍미 깊은 스페셜티 원두 커피를 경험할 수 있습니다."
+    },
+    {
+      "id": "global_메단_cafe_9",
+      "name": "코피 사디스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 디저트와 다양한 종류의 음료로 현지 젊은이들에게 인기 있는 핫플레이스입니다."
+    },
+    {
+      "id": "global_메단_nightview_10",
+      "name": "메르데카 워크 야시장",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "수많은 야외 푸드코트가 모여 있어 북적이는 분위기 속에서 메단의 밤문화를 만끽할 수 있습니다."
+    }
+  ],
+  "족자카르타": [
+    {
+      "id": "global_족자카르타_attraction_1",
+      "name": "보로부두르 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계 최대 규모의 불교 유적지로 정교한 부조 조각과 웅장한 불탑이 경이로움을 선사합니다."
+    },
+    {
+      "id": "global_족자카르타_attraction_2",
+      "name": "프람바난 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "하늘을 찌를 듯 솟아오른 거대한 힌두교 사원군으로 힌두 서사시 조각이 섬세합니다."
+    },
+    {
+      "id": "global_족자카르타_relaxation_3",
+      "name": "누르카디야 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 자바식 왕실 스파 테라피를 통해 깊은 휴식과 피로 해소를 경험할 수 있습니다."
+    },
+    {
+      "id": "global_족자카르타_activity_4",
+      "name": "므라피 화산 지프 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거친 화산 지대를 지프차로 탐험하며 대자연의 경이로움과 화산 폭발의 흔적을 봅니다."
+    },
+    {
+      "id": "global_족자카르타_restaurant_5",
+      "name": "발레 라오스",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 술탄이 먹던 전통 궁중 요리를 고풍스러운 분위기에서 맛볼 수 있는 식당입니다."
+    },
+    {
+      "id": "global_족자카르타_restaurant_6",
+      "name": "하우스 오브 라무텐",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 자바 문화 인테리어 속에서 전통 퓨전 요리를 합리적인 가격에 즐길 수 있습니다."
+    },
+    {
+      "id": "global_족자카르타_restaurant_7",
+      "name": "미디테라니아 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 셰프가 요리하는 훌륭한 퀄리티의 지중해식 요리로 외국인들에게 인기가 많습니다."
+    },
+    {
+      "id": "global_족자카르타_cafe_8",
+      "name": "로스터 앤 베어",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "귀여운 곰돌이 라떼아트로 유명하며 깔끔하고 편안한 실내 공간을 자랑하는 카페입니다."
+    },
+    {
+      "id": "global_족자카르타_cafe_9",
+      "name": "필로소피 코피",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통적인 자바 가옥 구조를 살린 분위기 있는 인테리어와 훌륭한 커피가 조화롭습니다."
+    },
+    {
+      "id": "global_족자카르타_nightview_10",
+      "name": "말리오보로 거리",
+      "category": "nightview",
+      "subCategory": "night_market",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "늦은 밤까지 길거리 공연과 마차, 수많은 상점들로 불야성을 이루는 족자카르타의 중심지입니다."
+    }
+  ],
+  "롬복": [
+    {
+      "id": "global_롬복_attraction_1",
+      "name": "린자니 산",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "인도네시아에서 두 번째로 높은 화산으로 장엄한 칼데라 호수와 아름다운 풍경을 자랑합니다."
+    },
+    {
+      "id": "global_롬복_attraction_2",
+      "name": "셍기기 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "길게 뻗은 곡선 해안선과 에메랄드빛 바다가 만들어내는 풍경이 일품인 대표 해변입니다."
+    },
+    {
+      "id": "global_롬복_relaxation_3",
+      "name": "쉐라톤 셍기기 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급스러운 리조트 시설 안에서 최고급 오일과 함께 편안한 마사지를 받을 수 있습니다."
+    },
+    {
+      "id": "global_롬복_activity_4",
+      "name": "스쿠버다이빙 롬복",
+      "category": "activity",
+      "subCategory": "watersports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "투명하고 맑은 바닷속에서 바다거북과 다양한 열대어를 만날 수 있는 다이빙 포인트입니다."
+    },
+    {
+      "id": "global_롬복_restaurant_5",
+      "name": "스퀘어 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로맨틱한 분위기와 세심한 서비스를 제공하는 셍기기 최고의 파인 다이닝 중 하나입니다."
+    },
+    {
+      "id": "global_롬복_restaurant_6",
+      "name": "아시테투르 레스토랑",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "언덕 위에 위치하여 바다를 한눈에 내려다보며 식사를 즐길 수 있는 최고의 전망 맛집입니다."
+    },
+    {
+      "id": "global_롬복_restaurant_7",
+      "name": "엘 바자르",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 식재료로 만든 모로코식 및 지중해식 요리를 선보이는 힙한 분위기의 식당입니다."
+    },
+    {
+      "id": "global_롬복_cafe_8",
+      "name": "락 카페 롬복",
+      "category": "cafe",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해변 빈백에 누워 붉게 물드는 석양을 바라보며 시원한 맥주나 커피를 마시기 좋습니다."
+    },
+    {
+      "id": "global_롬복_cafe_9",
+      "name": "밀크 에스프레소",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "서퍼들의 사랑을 받는 트렌디한 공간으로 맛있는 브런치와 질 좋은 호주식 커피를 팝니다."
+    },
+    {
+      "id": "global_롬복_nightview_10",
+      "name": "셍기기 선셋 포인트",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "해가 진 후 해안선을 따라 펼쳐지는 낭만적인 밤바다의 풍경과 야경을 즐길 수 있는 곳입니다."
+    }
+  ],
+  "우붓": [
+    {
+      "id": "global_우붓_attraction_1",
+      "name": "원숭이 숲",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신성한 사원과 울창한 숲속에서 자유롭게 서식하는 수백 마리의 야생 원숭이들을 만납니다."
+    },
+    {
+      "id": "global_우붓_attraction_2",
+      "name": "짬뿌한 능선 산책로",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸른 초원과 계곡이 내려다보이는 능선을 따라 걷는 환상적인 트레킹 코스입니다."
+    },
+    {
+      "id": "global_우붓_relaxation_3",
+      "name": "카르사 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "논밭으로 둘러싸인 조용하고 평화로운 자연 속에서 발리식 전통 마사지를 받을 수 있습니다."
+    },
+    {
+      "id": "global_우붓_activity_4",
+      "name": "파온 발리 쿠킹 클래스",
+      "category": "activity",
+      "subCategory": "class",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현지 시장 장보기부터 시작해 발리 전통 요리를 직접 만들어보고 맛보는 유익한 체험입니다."
+    },
+    {
+      "id": "global_우붓_restaurant_5",
+      "name": "로카보어",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "발리 로컬 식재료를 활용하여 예술적인 창작 요리를 선보이는 세계적인 파인 다이닝입니다."
+    },
+    {
+      "id": "global_우붓_restaurant_6",
+      "name": "노매드 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 발리식 요리와 서양식 메뉴를 두루 갖추고 있어 여행객들이 편안하게 찾는 식당입니다."
+    },
+    {
+      "id": "global_우붓_restaurant_7",
+      "name": "베벡 벵길",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바삭하게 튀겨낸 발리식 오리 요리인 베벡 고렝을 논밭 뷰와 함께 즐기는 유명 맛집입니다."
+    },
+    {
+      "id": "global_우붓_cafe_8",
+      "name": "세니만 커피 스튜디오",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두를 사용해 커피를 추출하는 과정까지 볼 수 있는 전문적인 카페입니다."
+    },
+    {
+      "id": "global_우붓_cafe_9",
+      "name": "클리어 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "연못과 독특한 인테리어로 꾸며진 친환경적인 공간에서 건강한 음료와 식사를 즐깁니다."
+    },
+    {
+      "id": "global_우붓_nightview_10",
+      "name": "사라스와띠 사원 공연",
+      "category": "nightview",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "연꽃으로 가득한 사원 앞에서 펼쳐지는 발리 전통 무용 공연으로 몽환적인 밤을 선사합니다."
+    }
+  ],
+  "짱구": [
+    {
+      "id": "global_짱구_attraction_1",
+      "name": "타나롯 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다 위 거대한 바위 위에 세워진 해상 사원으로 밀물 때면 물에 떠 있는 듯한 비경을 자랑합니다."
+    },
+    {
+      "id": "global_짱구_attraction_2",
+      "name": "바투 볼롱 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "화산재로 이루어진 검은 모래가 인상적이며, 수많은 서퍼들이 모여드는 활기찬 해변입니다."
+    },
+    {
+      "id": "global_짱구_relaxation_3",
+      "name": "스프링 스파 짱구",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던하고 트렌디한 인테리어와 시원한 마사지 실력으로 젊은 층에게 인기가 높은 스파입니다."
+    },
+    {
+      "id": "global_짱구_activity_4",
+      "name": "서핑 레슨 바투 볼롱",
+      "category": "activity",
+      "subCategory": "class",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초보자도 쉽게 파도를 타며 서핑의 매력을 배울 수 있는 일일 서핑 강습 프로그램입니다."
+    },
+    {
+      "id": "global_짱구_restaurant_5",
+      "name": "메이슨",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "질 좋은 고기를 장작불에 구워내는 훌륭한 서양식 그릴 요리를 분위기 있게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_짱구_restaurant_6",
+      "name": "페니 레인",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "감각적인 로마 양식의 인테리어와 수영장이 있어 어디서든 인생샷을 남길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_짱구_restaurant_7",
+      "name": "크레이트 카페",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 비주얼과 압도적인 크기를 자랑하는 브런치 메뉴로 아침부터 붐비는 핫플레이스입니다."
+    },
+    {
+      "id": "global_짱구_cafe_8",
+      "name": "마차 카페 발리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마차를 베이스로 한 다양하고 건강한 디저트와 음료를 판매하는 깔끔한 카페입니다."
+    },
+    {
+      "id": "global_짱구_cafe_9",
+      "name": "헝그리 버드 커피",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "짱구 지역 최고의 커피 맛집 중 하나로 스페셜티 원두로 내린 환상적인 커피를 제공합니다."
+    },
+    {
+      "id": "global_짱구_nightview_10",
+      "name": "더 론 짱구",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "잔디밭에 앉아 칵테일을 마시며 노을을 감상하고, 밤이 되면 DJ 공연과 함께 파티를 즐깁니다."
+    }
+  ],
+  "스미냑": [
+    {
+      "id": "global_스미냑_attraction_1",
+      "name": "쁘띠땽겟 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급 리조트와 비치 클럽이 밀집해 있는 넓고 여유로운 분위기의 아름다운 해변입니다."
+    },
+    {
+      "id": "global_스미냑_attraction_2",
+      "name": "스미냑 스퀘어",
+      "category": "attraction",
+      "subCategory": "shopping",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 부티크 샵, 레스토랑, 카페가 모여 있어 쇼핑과 휴식을 동시에 즐길 수 있는 거리입니다."
+    },
+    {
+      "id": "global_스미냑_relaxation_3",
+      "name": "바디웍스 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통을 지닌 스미냑의 대표 스파로 이국적인 건물 속에서 완벽한 마사지를 선사합니다."
+    },
+    {
+      "id": "global_스미냑_activity_4",
+      "name": "해변 승마 체험",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "파도가 치는 스미냑의 아름다운 해변을 말을 타고 달리는 로맨틱하고 특별한 체험입니다."
+    },
+    {
+      "id": "global_스미냑_restaurant_5",
+      "name": "사롱",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고급스럽고 매혹적인 인테리어에서 동남아시아 각국의 진미를 재해석한 고급 요리를 팝니다."
+    },
+    {
+      "id": "global_스미냑_restaurant_6",
+      "name": "밤부",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "물 위에 떠 있는 듯한 신비로운 다이닝 공간에서 정통 발리식 요리를 우아하게 제공합니다."
+    },
+    {
+      "id": "global_스미냑_restaurant_7",
+      "name": "울티모 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "라이브 음악을 들으며 합리적인 가격에 맛있는 정통 이탈리아 요리를 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_스미냑_cafe_8",
+      "name": "리볼버 에스프레소",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "숨겨진 골목 안쪽에 위치한 비밀스러운 분위기 속에서 발리 최고의 커피를 제공합니다."
+    },
+    {
+      "id": "global_스미냑_cafe_9",
+      "name": "시스터필즈",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호주 스타일의 세련된 브런치와 신선한 쥬스로 스미냑 중심가에서 항상 인기 있는 카페입니다."
+    },
+    {
+      "id": "global_스미냑_nightview_10",
+      "name": "포테이토 헤드 비치 클럽",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "독특한 외관과 멋진 인피니티 풀을 갖추고 있으며, 밤이 되면 환상적인 분위기로 변신합니다."
+    }
+  ],
+  "누사두아": [
+    {
+      "id": "global_누사두아_attraction_1",
+      "name": "워터블로우",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거대한 파도가 좁은 바위 틈으로 부딪히며 거대한 물기둥을 만들어내는 장관을 볼 수 있습니다."
+    },
+    {
+      "id": "global_누사두아_attraction_2",
+      "name": "멘기앗 비치",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "백사장이 매우 깨끗하고 파도가 잔잔하여 가족 단위 관광객이 휴양하기 완벽한 해변입니다."
+    },
+    {
+      "id": "global_누사두아_relaxation_3",
+      "name": "르메데 스파",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세인트 레지스 리조트의 최고급 스파로, 수중 마사지 시설과 완벽한 트리트먼트를 자랑합니다."
+    },
+    {
+      "id": "global_누사두아_activity_4",
+      "name": "탄중 베노아 해양 스포츠",
+      "category": "activity",
+      "subCategory": "watersports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "패러세일링, 바나나보트, 제트스키 등 다이내믹한 해양 액티비티를 마음껏 즐길 수 있습니다."
+    },
+    {
+      "id": "global_누사두아_restaurant_5",
+      "name": "븜부 발리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 발리 요리를 고집하는 곳으로 향신료가 어우러진 깊고 진한 로컬 맛을 제대로 냅니다."
+    },
+    {
+      "id": "global_누사두아_restaurant_6",
+      "name": "본 다비브 뷔페",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "화려하고 고급스러운 식재료로 구성된 최고의 디너 뷔페를 즐길 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_누사두아_restaurant_7",
+      "name": "아이칸 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해변에 인접해 바닷바람을 맞으며 신선한 해산물 바비큐와 발리식 그릴 요리를 맛봅니다."
+    },
+    {
+      "id": "global_누사두아_cafe_8",
+      "name": "카유푸티 라운지",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "새하얀 톤의 우아한 인테리어와 탁 트인 오션뷰를 감상하며 고급스러운 애프터눈 티를 즐깁니다."
+    },
+    {
+      "id": "global_누사두아_cafe_9",
+      "name": "발리 콜렉션 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "누사두아 쇼핑 단지 내에 위치해 쇼핑 후 편안하게 쉬며 커피와 달콤한 디저트를 먹기 좋습니다."
+    },
+    {
+      "id": "global_누사두아_nightview_10",
+      "name": "클리프 바 에야트",
+      "category": "nightview",
+      "subCategory": "view",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "아찔한 절벽 끄트머리에 매달린 듯한 바에서 누사두아의 깊은 밤바다를 바라보며 칵테일을 마십니다."
+    }
+  ],
+  "길리": [
+    {
+      "id": "global_길리_attraction_1",
+      "name": "길리 오션 스윙",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다 한가운데 설치된 그네를 타고 인생 사진을 남길 수 있는 길리의 상징적인 명소입니다."
+    },
+    {
+      "id": "global_길리_attraction_2",
+      "name": "터틀 포인트",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스노클링만으로도 바다거북을 매우 쉽게 마주칠 수 있는 맑고 아름다운 바다 구역입니다."
+    },
+    {
+      "id": "global_길리_relaxation_3",
+      "name": "아주르 스파 길리",
+      "category": "relaxation",
+      "subCategory": "massage",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "물놀이로 지친 근육을 부드럽게 풀어주며 평온한 섬의 분위기를 느낄 수 있는 스파 시설입니다."
+    },
+    {
+      "id": "global_길리_activity_4",
+      "name": "3섬 스노클링 호핑투어",
+      "category": "activity",
+      "subCategory": "watersports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "길리 트라왕안, 메노, 아이르 3개의 섬을 배로 이동하며 다채로운 수중 환경을 탐험합니다."
+    },
+    {
+      "id": "global_길리_restaurant_5",
+      "name": "펄 비치 라운지",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특한 대나무 건축물 안에서 바다를 바라보며 수준 높은 퓨전 요리와 칵테일을 제공합니다."
+    },
+    {
+      "id": "global_길리_restaurant_6",
+      "name": "레지나 피자리아",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "이탈리아 주방장이 직접 화덕에 구워내는 정통 나폴리식 피자로 길리 최고의 맛집 중 하나입니다."
+    },
+    {
+      "id": "global_길리_restaurant_7",
+      "name": "길리 나이트 마켓 바비큐",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광장에 모여 갓 잡은 싱싱한 해산물과 생선을 골라 즉석에서 숯불 바비큐로 즐기는 시장입니다."
+    },
+    {
+      "id": "global_길리_cafe_8",
+      "name": "헬로 캡틴 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기하고 화사한 인테리어와 상큼한 스무디 볼로 더위를 식히며 쉬어가는 귀여운 카페입니다."
+    },
+    {
+      "id": "global_길리_cafe_9",
+      "name": "카유 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "에어컨이 완비된 시원한 실내에서 건강한 유기농 브런치와 맛있는 디저트를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_길리_nightview_10",
+      "name": "사마사마 레게 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤마다 신나는 라이브 레게 음악 공연이 펼쳐지며 다 함께 춤추고 즐기는 흥겨운 바입니다."
+    }
+  ],
+  "반다아체": [
+    {
+      "id": "global_반다아체_att_1",
+      "name": "바이투르라만 대모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "이슬람 건축의 걸작으로 꼽히는 아름다운 대모스크입니다."
+    },
+    {
+      "id": "global_반다아체_att_2",
+      "name": "쓰나미 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "2004년 대지진과 쓰나미의 아픔을 기리는 역사적인 박물관입니다."
+    },
+    {
+      "id": "global_반다아체_rel_1",
+      "name": "우레레 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "잔잔한 파도 소리를 들으며 산책하기 좋은 평화로운 해변입니다."
+    },
+    {
+      "id": "global_반다아체_act_1",
+      "name": "플라우 웨 스노클링",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "island",
+      "desc": "맑고 깨끗한 바다에서 다채로운 열대어와 산호초를 감상할 수 있습니다."
+    },
+    {
+      "id": "global_반다아체_res_1",
+      "name": "미 라잘리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아체 특유의 향신료가 가미된 맛있는 전통 면 요리를 제공합니다."
+    },
+    {
+      "id": "global_반다아체_res_2",
+      "name": "사테 마탕",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현지인들에게 사랑받는 숯불 꼬치구이와 진한 땅콩 소스가 일품입니다."
+    },
+    {
+      "id": "global_반다아체_res_3",
+      "name": "아얌 탕캅 카스 아체",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "고소하게 튀겨낸 닭고기와 허브 향이 조화로운 아체 대표 닭 요리 전문점입니다."
+    },
+    {
+      "id": "global_반다아체_caf_1",
+      "name": "솔롱 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "진한 아로마를 자랑하는 아체의 전통 커피를 제대로 맛볼 수 있는 명소입니다."
+    },
+    {
+      "id": "global_반다아체_caf_2",
+      "name": "쿠피 낭그로",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "여유로운 분위기 속에서 향긋한 로컬 커피 한 잔의 여유를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_반다아체_nig_1",
+      "name": "블랑 파당 광장",
+      "category": "nightview",
+      "subCategory": "night-market",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "야간이 되면 다양한 길거리 음식과 조명으로 활기를 띠는 광장입니다."
+    }
+  ],
+  "발리파판": [
+    {
+      "id": "global_발리파판_att_1",
+      "name": "마르가사리 수상 가옥",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "물 위에 지어진 전통 가옥들이 이색적인 풍경을 자아내는 곳입니다."
+    },
+    {
+      "id": "global_발리파판_att_2",
+      "name": "뱅키라이 힐 캐노피 브릿지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "울창한 열대우림 위를 걷는 스릴과 상쾌함을 동시에 경험할 수 있습니다."
+    },
+    {
+      "id": "global_발리파판_rel_1",
+      "name": "크말라 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "부드러운 백사장과 탁 트인 바다 전망이 아름다운 휴식처입니다."
+    },
+    {
+      "id": "global_발리파판_act_1",
+      "name": "숭가이 와인 보호구역",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "오랑우탄을 비롯한 다양한 희귀 야생동물을 만날 수 있는 숲 탐험 코스입니다."
+    },
+    {
+      "id": "global_발리파판_res_1",
+      "name": "오션스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "바닷가를 바라보며 신선한 해산물 요리를 즐길 수 있는 전망 좋은 식당입니다."
+    },
+    {
+      "id": "global_발리파판_res_2",
+      "name": "케피팅 단디토",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "특제 소스가 곁들여진 매콤하고 달콤한 게 요리로 유명한 현지 맛집입니다."
+    },
+    {
+      "id": "global_발리파판_res_3",
+      "name": "토라니 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "발리파판에서 갓 잡은 신선한 재료로 풍성한 해산물 만찬을 제공합니다."
+    },
+    {
+      "id": "global_발리파판_caf_1",
+      "name": "더 비치 하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "아늑한 분위기에서 해안선의 노을을 감상하며 커피를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_발리파판_caf_2",
+      "name": "키나리 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세련된 인테리어 속에서 정성스럽게 브루잉한 스페셜티 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_발리파판_nig_1",
+      "name": "멜라와이 해변 산책로",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coastal",
+      "desc": "일몰 후 선선한 바닷바람과 함께 분위기 있는 밤을 즐길 수 있는 명소입니다."
+    }
+  ],
+  "마나도": [
+    {
+      "id": "global_마나도_att_1",
+      "name": "부나켄 해양 국립공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "island",
+      "desc": "세계 최고의 다이빙 스팟 중 하나로 수많은 산호와 해양 생물이 서식합니다."
+    },
+    {
+      "id": "global_마나도_att_2",
+      "name": "예수 그리스도 축복상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "공중에 떠 있는 듯한 독특한 형태를 지닌 세계에서 두 번째로 큰 예수상입니다."
+    },
+    {
+      "id": "global_마나도_rel_1",
+      "name": "말라라양 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "황홀한 일몰을 감상하며 가볍게 산책하기 좋은 잔잔한 해변입니다."
+    },
+    {
+      "id": "global_마나도_act_1",
+      "name": "마하우 화산 트레킹",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "suburbs",
+      "desc": "쉽게 접근할 수 있는 분화구와 탁 트인 고원 지대의 절경을 만끽하는 코스입니다."
+    },
+    {
+      "id": "global_마나도_res_1",
+      "name": "위사타 바하리",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "바다를 바라보며 마나도식 신선한 해산물 구이를 푸짐하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_마나도_res_2",
+      "name": "라자 오티",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "매콤한 맛이 특징인 미나하사 전통 요리를 제대로 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_마나도_res_3",
+      "name": "데고 데고",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "마나도식 볶음밥과 현지 간식을 쾌적한 환경에서 즐길 수 있는 인기 맛집입니다."
+    },
+    {
+      "id": "global_마나도_caf_1",
+      "name": "무가나 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달콤한 디저트와 함께 로스터리 커피를 즐기며 쉬어갈 수 있는 카페입니다."
+    },
+    {
+      "id": "global_마나도_caf_2",
+      "name": "코피티암 마나도",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통을 간직한 로컬 분위기에서 씁쓸하고 진한 커피 한 잔을 맛보세요."
+    },
+    {
+      "id": "global_마나도_nig_1",
+      "name": "만토스 스퀘어 해변",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 3,
+        "culture": 1,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coastal",
+      "desc": "밤바다의 정취와 함께 야간 쇼핑과 라이브 음악을 즐기기 좋은 활기찬 거리입니다."
+    }
+  ],
+  "사누르": [
+    {
+      "id": "global_사누르_att_1",
+      "name": "사누르 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "얕고 잔잔한 파도 덕분에 가족 단위 여행객들이 평화롭게 즐기기 좋은 해변입니다."
+    },
+    {
+      "id": "global_사누르_att_2",
+      "name": "르 메르디앙 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "발리의 아름다움을 화폭에 담은 벨기에 화가의 옛집이자 미술관입니다."
+    },
+    {
+      "id": "global_사누르_rel_1",
+      "name": "신두 야시장",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "해질 무렵 열리는 활기찬 야시장에서 다양한 현지 길거리 음식을 맛보며 쉴 수 있습니다."
+    },
+    {
+      "id": "global_사누르_act_1",
+      "name": "사누르 패들보드",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "고요한 사누르 앞바다에서 여유롭게 즐기는 스탠드업 패들보드 체험입니다."
+    },
+    {
+      "id": "global_사누르_res_1",
+      "name": "마시모 이탈리안",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정통 이탈리안 화덕 피자와 젤라토로 유명한 사누르의 대표 맛집입니다."
+    },
+    {
+      "id": "global_사누르_res_2",
+      "name": "와룽 마크 벵",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "얼큰한 생선 수프와 바삭한 생선 구이 단일 메뉴로 사랑받는 로컬 식당입니다."
+    },
+    {
+      "id": "global_사누르_res_3",
+      "name": "릴라 판타이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "breakfast",
+        "lunch"
+      ],
+      "zone": "coastal",
+      "desc": "바다를 마주하고 앉아 신선하고 건강한 브런치와 발리 전통 요리를 즐겨보세요."
+    },
+    {
+      "id": "global_사누르_caf_1",
+      "name": "코피발리 하우스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "발리 커피의 진수를 보여주는 역사 깊은 곳으로, 기념품으로 커피를 사기에도 좋습니다."
+    },
+    {
+      "id": "global_사누르_caf_2",
+      "name": "지니어스 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "해변 모래사장 위에서 건강한 스무디와 비건 디저트를 맛볼 수 있는 디지털 노마드의 성지입니다."
+    },
+    {
+      "id": "global_사누르_nig_1",
+      "name": "아르텔리어 루프탑 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "세련된 분위기 속에서 칵테일 한 잔과 함께 사누르의 차분한 야경을 감상해보세요."
+    }
+  ],
+  "울루와뚜": [
+    {
+      "id": "global_울루와뚜_att_1",
+      "name": "울루와뚜 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "깎아지른 절벽 위에 위치하여 환상적인 인도양의 일몰을 자랑하는 힌두 사원입니다."
+    },
+    {
+      "id": "global_울루와뚜_att_2",
+      "name": "가루다 위스누 끈짜나 문화공원",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거대한 가루다 조각상과 함께 발리의 전통 공연과 문화를 엿볼 수 있는 테마파크입니다."
+    },
+    {
+      "id": "global_울루와뚜_rel_1",
+      "name": "술루반 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "독특한 동굴 지형을 지나 나타나는 숨겨진 보석 같은 서핑 명소 겸 휴양지입니다."
+    },
+    {
+      "id": "global_울루와뚜_act_1",
+      "name": "파당파당 비치 서핑",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "투명한 에메랄드빛 바다에서 파도를 가르며 서핑을 즐기기 완벽한 장소입니다."
+    },
+    {
+      "id": "global_울루와뚜_res_1",
+      "name": "싱글 핀 발리",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "절벽 위에서 멋진 노을과 함께 서퍼들을 구경하며 식사와 맥주를 즐기는 핫플레이스입니다."
+    },
+    {
+      "id": "global_울루와뚜_res_2",
+      "name": "엘 카브론 발리",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "인피니티 풀을 갖춘 럭셔리한 스페인식 레스토랑이자 비치 클럽입니다."
+    },
+    {
+      "id": "global_울루와뚜_res_3",
+      "name": "디마레 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "지중해풍 인테리어와 함께 고급스러운 파인다이닝을 만끽할 수 있는 곳입니다."
+    },
+    {
+      "id": "global_울루와뚜_caf_1",
+      "name": "수카 에스프레소",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "건강하고 신선한 브런치 메뉴와 수준 높은 호주식 커피를 제공하는 카페입니다."
+    },
+    {
+      "id": "global_울루와뚜_caf_2",
+      "name": "버킷리스트 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "서퍼들의 문화를 반영한 자유로운 분위기에서 가벼운 식사와 디저트를 맛보세요."
+    },
+    {
+      "id": "global_울루와뚜_nig_1",
+      "name": "울루 클리프하우스",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coastal",
+      "desc": "밤이 되면 감각적인 음악과 조명이 더해져 환상적인 파티 분위기가 연출되는 절벽 바입니다."
+    }
+  ],
+  "짐바란": [
+    {
+      "id": "global_짐바란_att_1",
+      "name": "짐바란 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "로맨틱한 황금빛 노을로 유명한 발리의 대표적인 일몰 감상 포인트입니다."
+    },
+    {
+      "id": "global_짐바란_att_2",
+      "name": "케둥아난 수산시장",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 4,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "coastal",
+      "desc": "매일 아침 갓 잡아 올린 신선한 해산물이 거래되는 활기 넘치는 로컬 시장입니다."
+    },
+    {
+      "id": "global_짐바란_rel_1",
+      "name": "아야나 리조트 스파",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "바다를 마주한 럭셔리한 공간에서 세계 최고 수준의 마사지와 스파 트리트먼트를 즐겨보세요."
+    },
+    {
+      "id": "global_짐바란_act_1",
+      "name": "짐바란 선셋 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "바다 위에서 발리의 붉은 노을을 감상하며 로맨틱한 시간을 보낼 수 있는 요트 투어입니다."
+    },
+    {
+      "id": "global_짐바란_res_1",
+      "name": "메네가 카페",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "해변 모래사장 위에 테이블을 두고 숯불에 구운 환상적인 해산물을 제공합니다."
+    },
+    {
+      "id": "global_짐바란_res_2",
+      "name": "키식 씨푸드 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "절벽 아래 숨겨진 프라이빗한 해변에서 고급스러운 해산물 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_짐바란_res_3",
+      "name": "마데 바구스 씨푸드",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "바닷바람을 맞으며 가성비 좋고 맛있는 바비큐 씨푸드를 푸짐하게 즐기는 맛집입니다."
+    },
+    {
+      "id": "global_짐바란_caf_1",
+      "name": "발리크 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빈티지하고 앤티크한 소품들이 가득한 예쁜 카페에서 여유를 만끽하세요."
+    },
+    {
+      "id": "global_짐바란_caf_2",
+      "name": "스무디 샵",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원하고 상큼한 스무디 볼과 열대 과일 음료가 일품인 아담한 쉼터입니다."
+    },
+    {
+      "id": "global_짐바란_nig_1",
+      "name": "락 바 발리",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coastal",
+      "desc": "바위에 부딪히는 파도 소리와 함께 몽환적인 야경을 즐길 수 있는 세계적인 절벽 바입니다."
+    }
+  ],
+  "쿠타": [
+    {
+      "id": "global_쿠타_att_1",
+      "name": "쿠타 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coastal",
+      "desc": "발리에서 가장 활기찬 해변으로 초보 서퍼들과 젊은 여행객들로 항상 붐빕니다."
+    },
+    {
+      "id": "global_쿠타_att_2",
+      "name": "워터봄 발리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아시아 최고의 워터파크로 손꼽히는 곳으로 다이내믹한 슬라이드를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_쿠타_rel_1",
+      "name": "비치워크 쇼핑센터",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 3,
+        "culture": 2,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "자연 친화적인 오픈형 건축물로 더위를 식히며 쇼핑과 휴식을 동시에 즐기기 좋습니다."
+    },
+    {
+      "id": "global_쿠타_act_1",
+      "name": "오딧세이 서프 스쿨",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "coastal",
+      "desc": "초보자도 안전하고 재밌게 파도 타는 법을 배울 수 있는 유명 서핑 스쿨입니다."
+    },
+    {
+      "id": "global_쿠타_res_1",
+      "name": "팻 차우",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "세련된 아시안 퓨전 요리를 선보이며 트렌디한 인테리어가 돋보이는 맛집입니다."
+    },
+    {
+      "id": "global_쿠타_res_2",
+      "name": "뽀피스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "열대 정원 한가운데서 로맨틱한 발리 전통 요리와 서양식을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_쿠타_res_3",
+      "name": "하드락 카페 발리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "라이브 밴드의 신나는 연주를 들으며 든든한 아메리칸 스타일 버거를 맛보세요."
+    },
+    {
+      "id": "global_쿠타_caf_1",
+      "name": "크럼브 앤 코스터",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "비좁은 골목에 숨겨진 힙한 감성의 카페로 환상적인 브런치와 커피를 제공합니다."
+    },
+    {
+      "id": "global_쿠타_caf_2",
+      "name": "코피폿",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "번잡한 도로 한가운데 오아시스처럼 자리한 정원 카페로 맛있는 케이크가 유명합니다."
+    },
+    {
+      "id": "global_쿠타_nig_1",
+      "name": "스카이 가든 발리",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 장르의 음악과 뷔페를 제공하며 쿠타의 화려한 밤을 책임지는 대형 클럽입니다."
+    }
+  ],
+  "바탐": [
+    {
+      "id": "global_바탐_att_1",
+      "name": "바레랑 다리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "여러 섬을 잇는 장엄한 다리로 바탐의 현대적 발전과 아름다운 바다를 상징합니다."
+    },
+    {
+      "id": "global_바탐_att_2",
+      "name": "마하 비하라 두타 메이트레야",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "동남아시아에서 가장 큰 규모를 자랑하는 고요하고 웅장한 불교 사원입니다."
+    },
+    {
+      "id": "global_바탐_rel_1",
+      "name": "눙사 비치",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coastal",
+      "desc": "싱가포르의 스카이라인이 희미하게 보이는 한적하고 깨끗한 백사장입니다."
+    },
+    {
+      "id": "global_바탐_act_1",
+      "name": "바탐 웨이크파크",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초보자부터 전문가까지 짜릿한 웨이크보드를 즐길 수 있는 수상 레저 파크입니다."
+    },
+    {
+      "id": "global_바탐_res_1",
+      "name": "골든 프라운 933",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "호수 위에 지어진 거대한 규모의 식당으로 저렴하고 풍성한 해산물을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_바탐_res_2",
+      "name": "켈롱 씨푸드",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "바다 위 전통 가옥 스타일의 수상 레스토랑에서 낭만적인 식사를 즐겨보세요."
+    },
+    {
+      "id": "global_바탐_res_3",
+      "name": "하버베이 씨푸드",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coastal",
+      "desc": "페리 터미널 근처에 위치하여 접근성이 좋고 칠리크랩이 특히 유명한 곳입니다."
+    },
+    {
+      "id": "global_바탐_caf_1",
+      "name": "앵커 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두의 깊은 풍미와 미국식 수제 파이를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "global_바탐_caf_2",
+      "name": "더 일루젼 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "착시 현상을 일으키는 3D 트릭아트 포토존을 갖춘 이색적인 디저트 카페입니다."
+    },
+    {
+      "id": "global_바탐_nig_1",
+      "name": "바탐 시티 스퀘어",
+      "category": "nightview",
+      "subCategory": "night-market",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 4,
+        "culture": 2,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 네온사인과 함께 쇼핑, 마사지, 길거리 음식 등 다채로운 즐길 거리가 가득합니다."
+    }
+  ],
+  "바젤": [
+    {
+      "id": "global_바젤_att_1",
+      "name": "바젤 뮌스터",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "붉은 사암으로 지어진 고딕과 로마네스크 양식의 장엄한 대성당입니다."
+    },
+    {
+      "id": "global_바젤_att_2",
+      "name": "바젤 시청사",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마르크트 광장에 위치한 화려한 붉은색 외관과 벽화가 인상적인 역사적 건물입니다."
+    },
+    {
+      "id": "global_바젤_rel_1",
+      "name": "라인 강변 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "강을 따라 걸으며 현지인들처럼 여유를 부리거나 일몰을 감상하기 완벽한 길입니다."
+    },
+    {
+      "id": "global_바젤_act_1",
+      "name": "팅겔리 미술관",
+      "category": "activity",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스위스를 대표하는 키네틱 아티스트 장 팅겔리의 움직이는 조각들을 관람할 수 있습니다."
+    },
+    {
+      "id": "global_바젤_res_1",
+      "name": "레스토랑 볼크하우스",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통적인 브라세리 양식을 현대적으로 재해석한 고풍스럽고 미식 경험이 뛰어난 레스토랑입니다."
+    },
+    {
+      "id": "global_바젤_res_2",
+      "name": "뢰벤초른",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "오랜 역사를 간직한 낭만적인 스위스 전통 요리와 바젤 특선 요리를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_바젤_res_3",
+      "name": "쉐발 블랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "river",
+      "desc": "프랑스 오트 퀴진을 선보이는 미슐랭 3스타의 세계적인 파인다이닝 식당입니다."
+    },
+    {
+      "id": "global_바젤_caf_1",
+      "name": "운테르네멘 미테",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛 은행 건물을 개조하여 만든 거대한 카페로 예술적이고 자유로운 분위기가 특징입니다."
+    },
+    {
+      "id": "global_바젤_caf_2",
+      "name": "카페 쉴리버",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스위스에서 가장 오래된 카페 중 하나로 고풍스러운 티룸에서 훌륭한 디저트를 제공합니다."
+    },
+    {
+      "id": "global_바젤_nig_1",
+      "name": "바루즈 옥상 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "도시의 가장 높은 곳에서 화려한 칵테일과 함께 바젤 시내 전체의 야경을 조망할 수 있습니다."
+    }
+  ],
+  "로잔": [
+    {
+      "id": "global_로잔_att_1",
+      "name": "로잔 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스위스에서 가장 아름다운 고딕 건축물로 밤마다 파수꾼이 시간을 외치는 전통이 있습니다."
+    },
+    {
+      "id": "global_로잔_att_2",
+      "name": "올림픽 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "올림픽의 역사와 정신을 생생하게 체험할 수 있는 세계 최대 규모의 올림픽 전시관입니다."
+    },
+    {
+      "id": "global_로잔_rel_1",
+      "name": "우시 항구",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "제네바 호수의 평화로운 풍경과 알프스 산맥을 바라보며 산책하기 좋은 낭만적인 항구입니다."
+    },
+    {
+      "id": "global_로잔_act_1",
+      "name": "라보 포도밭 하이킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 3,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "유네스코 세계문화유산으로 지정된 계단식 포도밭을 걸으며 환상적인 경치와 와인을 즐겨보세요."
+    },
+    {
+      "id": "global_로잔_res_1",
+      "name": "르 베르소 데 상스",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "로잔 호텔 학교 학생들이 운영하는 미슐랭 1스타의 혁신적이고 창의적인 레스토랑입니다."
+    },
+    {
+      "id": "global_로잔_res_2",
+      "name": "카페 드 그랑시",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "기차역 근처의 트렌디하고 아늑한 분위기에서 스위스-프렌치 가정식을 선보입니다."
+    },
+    {
+      "id": "global_로잔_res_3",
+      "name": "브라세리 드 몽브농",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "클래식한 높은 천장과 호수 전망이 어우러진 우아한 공간에서 스위스 전통 음식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_로잔_caf_1",
+      "name": "블랙버드 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "풍부한 향의 스페셜티 커피와 영국식 아침 식사로 사랑받는 활기찬 카페입니다."
+    },
+    {
+      "id": "global_로잔_caf_2",
+      "name": "르 포인트 가루",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독창적인 디자인과 맛의 수제 디저트, 훌륭한 라떼아트를 자랑하는 인기 만점 카페입니다."
+    },
+    {
+      "id": "global_로잔_nig_1",
+      "name": "스카이라운지 로잔",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "로얄 사보이 호텔 꼭대기에서 와인을 마시며 로잔 시내와 호수의 아름다운 야경을 조망합니다."
+    }
+  ],
+  "체르마트": [
+    {
+      "id": "global_체르마트_att_1",
+      "name": "마테호른 전망대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "알프스의 혼이라 불리는 웅장한 마테호른을 가장 가까이서 감상할 수 있는 고르너그라트 전망대입니다."
+    },
+    {
+      "id": "global_체르마트_att_2",
+      "name": "마테호른 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 체르마트의 산악 마을 모습과 마테호른 초등의 비극적인 역사를 전시하고 있습니다."
+    },
+    {
+      "id": "global_체르마트_rel_1",
+      "name": "힌터도르프 거리",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "수백 년 된 나무 통나무집들이 줄지어 있어 동화 속 마을을 산책하는 기분을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_체르마트_act_1",
+      "name": "수네가 하이킹",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "맑은 라이 호수에 비친 마테호른의 반영을 감상하며 걷는 평화로운 트레킹 코스입니다."
+    },
+    {
+      "id": "global_체르마트_res_1",
+      "name": "셰 브로니",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "mountain",
+      "desc": "알프스 산중턱에 자리해 환상적인 마테호른 뷰와 수준 높은 유기농 요리를 제공합니다."
+    },
+    {
+      "id": "global_체르마트_res_2",
+      "name": "레스토랑 율렌",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "치즈 퐁듀와 고기 요리 등 스위스 발레주의 전통적인 산장 음식을 푸짐하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_체르마트_res_3",
+      "name": "옴니아 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "모던한 디자인의 호텔 내 위치하며 제철 식재료를 활용한 미슐랭 스타급 다이닝을 선사합니다."
+    },
+    {
+      "id": "global_체르마트_caf_1",
+      "name": "프티 로열 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "추운 날씨에 몸을 녹여줄 최고의 핫초코와 달콤한 수제 케이크를 자랑합니다."
+    },
+    {
+      "id": "global_체르마트_caf_2",
+      "name": "푹스 베이커리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마테호른 모양을 본뜬 초콜릿과 바삭한 빵들로 관광객과 현지인 모두에게 인기 있습니다."
+    },
+    {
+      "id": "global_체르마트_nig_1",
+      "name": "파피용 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "스키 일정을 마친 후 시끌벅적하게 맥주를 마시며 체르마트의 밤문화를 즐기는 아프레스키 성지입니다."
+    },
+    {
+      "id": "global_체르마트_att_1",
+      "name": "마테호른 글래시어 파라다이스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "유럽 최고 고도의 케이블카 역이자 전망대"
+    },
+    {
+      "id": "global_체르마트_att_2",
+      "name": "고르너그라트 전망대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "마테호른의 웅장한 자태를 감상할 수 있는 곳"
+    },
+    {
+      "id": "global_체르마트_rel_1",
+      "name": "수네가 호수",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "마테호른이 수면에 비치는 아름다운 호수"
+    },
+    {
+      "id": "global_체르마트_act_1",
+      "name": "5개 호수 하이킹",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "체르마트의 대표적인 하이킹 코스"
+    },
+    {
+      "id": "global_체르마트_res_1",
+      "name": "Restaurant Julen",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통적인 스위스 퐁듀와 양고기 요리 전문점"
+    },
+    {
+      "id": "global_체르마트_res_2",
+      "name": "Chez Vrony",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "마테호른을 보며 식사할 수 있는 알프스 레스토랑"
+    },
+    {
+      "id": "global_체르마트_res_3",
+      "name": "Brown Cow Pub",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "캐주얼하게 버거와 맥주를 즐길 수 있는 펍"
+    },
+    {
+      "id": "global_체르마트_caf_1",
+      "name": "Petit Royal Cafe",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 핫초콜릿과 디저트가 있는 아늑한 카페"
+    },
+    {
+      "id": "global_체르마트_caf_2",
+      "name": "Zermatt Roasters",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "향긋한 스페셜티 커피를 맛볼 수 있는 곳"
+    },
+    {
+      "id": "global_체르마트_nig_1",
+      "name": "마테호른 야경 포인트",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "체르마트 시내에서 바라보는 마테호른의 몽환적인 야경"
+    }
+  ],
+  "생모리츠": [
+    {
+      "id": "global_생모리츠_att_1",
+      "name": "생모리츠 호수",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "여름에는 요트를, 겨울에는 얼음 위 경마대회가 열리는 눈부시게 푸른 호수입니다."
+    },
+    {
+      "id": "global_생모리츠_att_2",
+      "name": "세간티니 미술관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "알프스의 빛과 자연을 캔버스에 담아낸 화가 조반니 세간티니의 웅장한 작품들이 전시되어 있습니다."
+    },
+    {
+      "id": "global_생모리츠_rel_1",
+      "name": "무오타스 무라글",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "mountain",
+      "desc": "엥가딘 계곡과 호수들이 어우러진 파노라마 전망을 바라보며 완벽한 휴식을 취할 수 있습니다."
+    },
+    {
+      "id": "global_생모리츠_act_1",
+      "name": "코르빌리아 스키",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "동계 올림픽이 열렸던 세계 최고 수준의 슬로프에서 스릴 넘치는 겨울 스포츠를 만끽하세요."
+    },
+    {
+      "id": "global_생모리츠_res_1",
+      "name": "피제리아 하우저",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "고급 휴양지 생모리츠에서 편안하고 친근한 분위기 속에 훌륭한 화덕 피자를 제공합니다."
+    },
+    {
+      "id": "global_생모리츠_res_2",
+      "name": "엘 파라디소",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "구름 위 천국이라 불리는 산장에 위치하여 절경과 함께 최고의 고메 요리를 선보입니다."
+    },
+    {
+      "id": "global_생모리츠_res_3",
+      "name": "체샤 베글리아",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "1658년에 지어진 유서 깊은 농가를 개조한 레스토랑으로 정통 이탈리안 및 스위스 요리의 진수입니다."
+    },
+    {
+      "id": "global_생모리츠_caf_1",
+      "name": "카페 한스만",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오드리 헵번도 즐겨 찾았던 100년 전통의 카페로 부드러운 초콜릿과 엥가딘 호두 파이가 일품입니다."
+    },
+    {
+      "id": "global_생모리츠_caf_2",
+      "name": "스테파니 베이커리",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "매일 아침 갓 구워내는 신선한 크루아상과 따뜻한 커피로 활기찬 하루를 시작하기 좋은 곳입니다."
+    },
+    {
+      "id": "global_생모리츠_nig_1",
+      "name": "르 몽타뉴 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "우아하고 클래식한 분위기에서 라이브 피아노 연주와 시그니처 칵테일을 즐길 수 있습니다."
+    }
+  ],
+  "그란델발트": [
+    {
+      "id": "global_그란델발트_att_1",
+      "name": "피르스트 전망대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "알프스 봉우리들을 병풍처럼 두른 탁 트인 전망과 아찔한 클리프 워크를 경험할 수 있습니다."
+    },
+    {
+      "id": "global_그란델발트_att_2",
+      "name": "핑슈텍",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "그린델발트 계곡을 내려다볼 수 있는 조용한 전망대로 터보건을 타며 즐거움을 만끽합니다."
+    },
+    {
+      "id": "global_그란델발트_rel_1",
+      "name": "빙하 협곡",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "수만 년 동안 빙하가 깎아 만든 신비로운 협곡 사이를 걸으며 자연의 위대함을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_그란델발트_act_1",
+      "name": "피르스트 플라이어",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "알프스 상공을 새처럼 날아가는 짚라인 액티비티로 짜릿한 스피드와 절경을 제공합니다."
+    },
+    {
+      "id": "global_그란델발트_res_1",
+      "name": "베리 뷰티풀 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "스위스 산 구조견 베르나르를 테마로 한 아늑한 분위기에서 정통 퐁듀와 뢰스티를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_그란델발트_res_2",
+      "name": "벨베데레 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아이거 북벽의 장엄한 뷰를 마주하고 앉아 세련되고 고급스러운 다이닝을 경험합니다."
+    },
+    {
+      "id": "global_그란델발트_res_3",
+      "name": "알테 포스트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "나무 향이 물씬 풍기는 전통적인 샬레 스타일의 식당으로 친절한 서비스와 고기 요리가 일품입니다."
+    },
+    {
+      "id": "global_그란델발트_caf_1",
+      "name": "카페 3692",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "독특하게 목재로 꾸며진 실내외 공간에서 아이거 산을 보며 느긋하게 커피를 마실 수 있습니다."
+    },
+    {
+      "id": "global_그란델발트_caf_2",
+      "name": "아이거 빈 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "질 좋은 원두로 정성스레 내린 향긋한 에스프레소와 간단한 페이스트리를 제공하는 곳입니다."
+    },
+    {
+      "id": "global_그란델발트_nig_1",
+      "name": "아보카도 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "그린델발트에서 가장 젊고 활기찬 바(Bar)로 하이킹 후 맥주를 들이켜며 피로를 푸는 명소입니다."
+    }
+  ],
+  "융프라우": [
+    {
+      "id": "global_융프라우_att_1",
+      "name": "스핑크스 전망대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "유럽의 지붕이라 불리며 만년설로 덮인 알프스의 아찔하고 경이로운 파노라마를 감상할 수 있습니다."
+    },
+    {
+      "id": "global_융프라우_att_2",
+      "name": "얼음 궁전",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "알레치 빙하 내부를 깎아 만든 신비로운 터널로 정교한 얼음 조각상들이 전시되어 있습니다."
+    },
+    {
+      "id": "global_융프라우_rel_1",
+      "name": "알레치 빙하",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "유라시아 최대의 빙하로 대자연의 장엄함 속에서 숭고한 평화로움을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_융프라우_act_1",
+      "name": "스노우 펀 파크",
+      "category": "activity",
+      "subCategory": "sport",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "한여름에도 눈썰매, 스키, 스노보드 등 다양한 겨울 액티비티를 신나게 즐길 수 있는 공간입니다."
+    },
+    {
+      "id": "global_융프라우_res_1",
+      "name": "크리스탈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "mountain",
+      "desc": "해발 3,454m에 위치하여 최고의 설경을 바라보며 고급스러운 스위스 요리를 음미할 수 있습니다."
+    },
+    {
+      "id": "global_융프라우_res_2",
+      "name": "아이거글레처",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "mountain",
+      "desc": "융프라우요흐로 가는 환승역에 위치하며 아이거 북벽을 배경으로 든든한 식사를 제공합니다."
+    },
+    {
+      "id": "global_융프라우_res_3",
+      "name": "클라이네 샤이데크 산장",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "하이킹 코스의 중심지에서 따뜻한 소시지와 감자 요리로 등산객들의 피로를 달래줍니다."
+    },
+    {
+      "id": "global_융프라우_caf_1",
+      "name": "파노라마 델리",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "만년설을 감상하며 마시는 따뜻한 커피 한 잔과 샌드위치가 특별하게 다가오는 델리 카페입니다."
+    },
+    {
+      "id": "global_융프라우_caf_2",
+      "name": "스노우 바",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "눈밭 위 야외 의자에 앉아 눈부신 햇살을 받으며 달콤한 간식과 핫초코를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_융프라우_nig_1",
+      "name": "융프라우 별빛 라운지",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "mountain",
+      "desc": "특별한 야간 이벤트 시 개방되며 알프스 산정에서 쏟아지는 별빛을 감상할 수 있는 비경입니다."
+    }
+  ],
+  "몽트뢰": [
+    {
+      "id": "global_몽트뢰_att_1",
+      "name": "시옹 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "호수 위에 떠 있는 듯한 로맨틱하고 우아한 중세 성으로 바이런의 시로도 유명합니다."
+    },
+    {
+      "id": "global_몽트뢰_att_2",
+      "name": "프레디 머큐리 동상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "퀸의 프레디 머큐리가 사랑했던 도시 몽트뢰 호숫가에서 그를 기리는 상징적인 포토존입니다."
+    },
+    {
+      "id": "global_몽트뢰_rel_1",
+      "name": "제네바 호수 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "다양한 꽃과 나무로 아름답게 꾸며진 길을 따라 걸으며 알프스와 호수를 감상할 수 있습니다."
+    },
+    {
+      "id": "global_몽트뢰_act_1",
+      "name": "로쉐 드 네 열차",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "톱니바퀴 산악 열차를 타고 해발 2,042m로 올라가 제네바 호수의 엄청난 뷰를 내려다봅니다."
+    },
+    {
+      "id": "global_몽트뢰_res_1",
+      "name": "몽트뢰 팰리스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "벨 에포크 양식의 화려한 호텔에서 최상급 프렌치 다이닝을 여유롭게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_몽트뢰_res_2",
+      "name": "몽트뢰 재즈 카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "세계적인 몽트뢰 재즈 페스티벌의 열기를 담은 인테리어와 맛있는 그릴 요리가 특징입니다."
+    },
+    {
+      "id": "global_몽트뢰_res_3",
+      "name": "라 루벤타스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "호숫가 근처에서 훌륭한 퀄리티의 이탈리안 피자와 파스타를 합리적인 가격에 제공합니다."
+    },
+    {
+      "id": "global_몽트뢰_caf_1",
+      "name": "티룸 풀리에",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "마치 동화 속에 들어온 듯한 아기자기한 다과실에서 차분하게 홍차와 스콘을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_몽트뢰_caf_2",
+      "name": "젤라테리아 몽트뢰",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "호숫가를 산책하며 시원하게 즐기기 좋은 달콤하고 쫀득한 수제 이탈리안 젤라토 가게입니다."
+    },
+    {
+      "id": "global_몽트뢰_nig_1",
+      "name": "카지노 바리에르 몽트뢰",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 3,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "화려한 조명 아래 게임과 칵테일을 즐길 수 있으며 퀸의 녹음실 박물관이 내부에 있습니다."
+    }
+  ],
+  "로카르노": [
+    {
+      "id": "global_로카르노_att_1",
+      "name": "마돈나 델 사소",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "로카르노 시내와 마조레 호수를 한눈에 굽어보는 절벽 위의 아름다운 순례 사원입니다."
+    },
+    {
+      "id": "global_로카르노_att_2",
+      "name": "피아차 그란데",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 2,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "매년 여름 로카르노 영화제가 열리는 매력적인 자갈밭 광장으로 카페와 상점이 즐비합니다."
+    },
+    {
+      "id": "global_로카르노_rel_1",
+      "name": "마조레 호수",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "지중해성 기후로 야자수가 자라는 따뜻하고 이국적인 분위기의 거대한 호수입니다."
+    },
+    {
+      "id": "global_로카르노_act_1",
+      "name": "카르다다 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "건축가 마리오 보타가 디자인한 케이블카를 타고 알프스 산등성이로 오르는 경이로운 체험입니다."
+    },
+    {
+      "id": "global_로카르노_res_1",
+      "name": "오스테리아 보르게세",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "골목 어귀에 숨겨진 진정한 로컬 맛집으로 정통 티치노 주(주)의 가정식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_로카르노_res_2",
+      "name": "센테네라 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "푸근한 분위기에서 진한 소스의 파스타와 리조또를 즐기며 와인을 곁들이기 좋습니다."
+    },
+    {
+      "id": "global_로카르노_res_3",
+      "name": "일 가르디노 델 발드레",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "lake",
+      "desc": "우아한 정원 속에서 섬세하고 예술적인 지중해 퓨전 요리를 제공하는 파인다이닝입니다."
+    },
+    {
+      "id": "global_로카르노_caf_1",
+      "name": "카페 델라르테",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "예술 작품이 전시된 고상한 분위기에서 훌륭한 에스프레소와 휴식을 제공하는 카페입니다."
+    },
+    {
+      "id": "global_로카르노_caf_2",
+      "name": "파스티체리아 메르콜리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "티치노 지역에서 가장 유명한 베이커리 중 하나로 달콤한 빵과 타르트가 일품입니다."
+    },
+    {
+      "id": "global_로카르노_nig_1",
+      "name": "문 라이트 라운지",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "lake",
+      "desc": "달빛이 비치는 마조레 호숫가를 바라보며 여유로운 밤의 낭만을 즐길 수 있는 바입니다."
+    }
+  ],
+  "루가노": [
+    {
+      "id": "global_루가노_att_1",
+      "name": "몬테 산 살바토레",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "루가노 호수와 주변 도시가 360도로 펼쳐지는 '루가노의 슈가로프 산'이라 불리는 명소입니다."
+    },
+    {
+      "id": "global_루가노_att_2",
+      "name": "산 로렌초 성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "르네상스 양식의 아름다운 외관과 훌륭한 프레스코화를 자랑하는 역사 깊은 대성당입니다."
+    },
+    {
+      "id": "global_루가노_rel_1",
+      "name": "파르코 치아니",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "루가노 호수에 인접한 도심 속 오아시스로, 철제 문 사이로 보이는 호수 뷰가 유명합니다."
+    },
+    {
+      "id": "global_루가노_act_1",
+      "name": "몬테 브레 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "스위스에서 가장 일조량이 풍부한 몬테 브레 산을 오르며 눈부신 호수 경관을 감상합니다."
+    },
+    {
+      "id": "global_루가노_res_1",
+      "name": "갈레리아 아르테",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현대 미술 작품들로 장식된 실내에서 우아한 이탈리안 컨템퍼러리 다이닝을 선사합니다."
+    },
+    {
+      "id": "global_루가노_res_2",
+      "name": "라 틴테라",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "수백 년 된 지하 와인셀러 느낌의 인테리어에서 훌륭한 티치노 전통 고기 요리를 선보입니다."
+    },
+    {
+      "id": "global_루가노_res_3",
+      "name": "알 포르티코",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "lake",
+      "desc": "호반의 시원한 공기를 느끼며 신선한 해산물 파스타와 화덕 피자를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_루가노_caf_1",
+      "name": "그란 카페 알 포르토",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "1848년부터 문을 연 유서 깊은 카페로 이탈리안 에스프레소와 최고급 프랄린을 제공합니다."
+    },
+    {
+      "id": "global_루가노_caf_2",
+      "name": "반니니 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "메인 광장에 위치해 노천 테이블에 앉아 사람 구경하며 젤라토와 커피를 마시기 완벽합니다."
+    },
+    {
+      "id": "global_루가노_nig_1",
+      "name": "루가노 카지노",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤을 수놓는 세련된 조명 속에서 가볍게 칵테일을 즐기며 오락을 체험할 수 있는 공간입니다."
+    }
+  ],
+  "생갈렌": [
+    {
+      "id": "global_생갈렌_att_1",
+      "name": "수도원 부속 도서관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "영혼의 약국이라 불리는 스위스에서 가장 오래되고 아름다운 바로크 양식의 도서관입니다."
+    },
+    {
+      "id": "global_생갈렌_att_2",
+      "name": "생갈렌 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유네스코 세계문화유산인 수도원 지구의 중심을 이루는 웅장하고 화려한 성당입니다."
+    },
+    {
+      "id": "global_생갈렌_rel_1",
+      "name": "데라이린덴 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "suburbs",
+      "desc": "생갈렌 시내가 내려다보이는 구릉지에 위치해 현지인들이 피크닉과 수영을 즐기는 평화로운 연못 공원입니다."
+    },
+    {
+      "id": "global_생갈렌_act_1",
+      "name": "올드타운 도보 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "정교한 목조 창문(오리엘)이 돋보이는 중세풍의 구시가지를 걸으며 역사를 탐방합니다."
+    },
+    {
+      "id": "global_생갈렌_res_1",
+      "name": "네츠코빙",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "생갈렌의 명물인 송아지 구이 소시지(올마 브라트부르스트)를 전통 방식대로 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_생갈렌_res_2",
+      "name": "춤 골데넨 셰플리",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "1층 건물이 기울어진 독특한 외관의 역사적 건물에서 품격 있는 길드 정찬 요리를 선보입니다."
+    },
+    {
+      "id": "global_생갈렌_res_3",
+      "name": "슐로슬리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "작은 성을 의미하는 고풍스러운 식당에서 스위스 동부 지역의 훌륭한 가정식을 제공합니다."
+    },
+    {
+      "id": "global_생갈렌_caf_1",
+      "name": "카페 공 즈",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "비엔나 스타일의 아늑한 인테리어를 갖추어 클래식한 커피와 다양한 페이스트리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_생갈렌_caf_2",
+      "name": "펠크린 초콜릿",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "질 좋은 스위스 초콜릿과 프랄린을 맛보고 선물용으로 구입하기 좋은 럭셔리 디저트 숍입니다."
+    },
+    {
+      "id": "global_생갈렌_nig_1",
+      "name": "아인슈타인 바",
+      "category": "nightview",
+      "subCategory": "bar",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "고급 호텔 내부에 위치해 클래식하고 조용한 분위기에서 기품 있는 칵테일을 즐기는 곳입니다."
+    }
+  ],
+  "툰": [
+    {
+      "id": "global_툰_att_1",
+      "name": "툰 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 가장 높은 곳에서 툰 호수와 알프스의 장엄한 풍경을 내려다보는 12세기 고성입니다."
+    },
+    {
+      "id": "global_툰_att_2",
+      "name": "샤다우 공원 및 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "호숫가에 위치한 영국풍 정원과 동화 같은 성곽이 어우러져 그림 같은 풍경을 자랑합니다."
+    },
+    {
+      "id": "global_툰_rel_1",
+      "name": "툰 호수",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "에메랄드빛 푸른 물결과 맑은 공기를 만끽하며 일상의 피로를 씻어낼 수 있는 거대한 호수입니다."
+    },
+    {
+      "id": "global_툰_act_1",
+      "name": "호수 유람선 탑승",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "lake",
+      "desc": "잔잔한 호수 위를 미끄러지듯 나아가며 호숫가 마을들과 알프스의 절경을 눈에 담습니다."
+    },
+    {
+      "id": "global_툰_res_1",
+      "name": "춤 무흘레 플라츠",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "river",
+      "desc": "아레 강이 흐르는 테라스에 앉아 여유롭게 스위스 전통 음식과 맥주를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_툰_res_2",
+      "name": "보 리바주",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "lake",
+      "desc": "환상적인 호수 뷰를 배경으로 신선한 식재료를 활용한 고품격 프렌치-스위스 요리를 선보입니다."
+    },
+    {
+      "id": "global_툰_res_3",
+      "name": "담프시프 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "lake",
+      "desc": "선착장 근처에 자리하여 갓 잡은 호수 생선 요리와 시원한 화이트 와인을 곁들이기 좋은 식당입니다."
+    },
+    {
+      "id": "global_툰_caf_1",
+      "name": "카페 마흐",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "예술적이고 빈티지한 감각으로 꾸며진 로컬 카페로 진한 에스프레소의 향이 인상적입니다."
+    },
+    {
+      "id": "global_툰_caf_2",
+      "name": "하슬러 베이커리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "매일 구워내는 신선하고 결이 살아있는 빵과 부드러운 케이크로 현지인들의 아침을 책임집니다."
+    },
+    {
+      "id": "global_툰_nig_1",
+      "name": "라트하우스플라츠 야경",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 3,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "구시청 광장에 은은한 조명이 켜지면 중세의 밤거리로 시간 여행을 온 듯한 기분이 듭니다."
+    }
+  ],
+  "브리엔츠": [
+    {
+      "id": "global_브리엔츠_att_1",
+      "name": "로트호른 철도",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "1892년부터 운행된 증기 기관차를 타고 알프스의 험준한 산세를 누비며 절경을 감상합니다."
+    },
+    {
+      "id": "global_브리엔츠_att_2",
+      "name": "발렌베르크 야외 박물관",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 2,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburbs",
+      "desc": "스위스 전역의 전통 가옥 100여 채를 그대로 옮겨놓아 과거의 생활상을 생생하게 체험할 수 있습니다."
+    },
+    {
+      "id": "global_브리엔츠_rel_1",
+      "name": "브리엔츠 호수 산책로",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "lake",
+      "desc": "비현실적으로 영롱한 청록색 호숫가를 따라 걸으며 마음에 고요한 안식을 채워보세요."
+    },
+    {
+      "id": "global_브리엔츠_act_1",
+      "name": "목각 마을 공방 체험",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계적으로 유명한 브리엔츠 목각 세공 장인들의 공방을 구경하고 정교한 기념품을 구입합니다."
+    },
+    {
+      "id": "global_브리엔츠_res_1",
+      "name": "슈타인복",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "호수가 보이는 아늑한 테라스에서 푸짐한 스위스 뢰스티와 신선한 샐러드를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_브리엔츠_res_2",
+      "name": "브리엔처부를리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "lake",
+      "desc": "나무 향기가 풍기는 샬레 레스토랑으로 호수 생선 구이와 부드러운 치즈 요리가 일품입니다."
+    },
+    {
+      "id": "global_브리엔츠_res_3",
+      "name": "호발트 샬레",
+      "category": "restaurant",
+      "subCategory": "fine-dining",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "suburbs",
+      "desc": "자연에 둘러싸인 조용한 오두막에서 품격 있고 정성스러운 다이닝을 프라이빗하게 선사합니다."
+    },
+    {
+      "id": "global_브리엔츠_caf_1",
+      "name": "카페 알트슈타트",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "목조 건물들 사이에 위치한 사랑스러운 카페로 산책 중 쌉싸름한 커피 한 잔의 여유를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_브리엔츠_caf_2",
+      "name": "크로이츠 베이커리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통을 자랑하는 빵집으로 속이 꽉 찬 파이와 스위스 전통 달콤한 간식들을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_브리엔츠_nig_1",
+      "name": "호수 야경 전망대",
+      "category": "nightview",
+      "subCategory": "observatory",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "lake",
+      "desc": "별이 쏟아지는 알프스의 밤하늘과 잔잔한 호수에 비친 불빛들이 황홀한 야경을 만들어냅니다."
+    }
+  ],
+  "베기스": [
+    {
+      "id": "global_베기스_att_1",
+      "name": "리기 칼트바트",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "온천과 스파를 즐길 수 있는 유명 명소"
+    },
+    {
+      "id": "global_베기스_att_2",
+      "name": "베기스 케이블카",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 루체른 호수를 감상하며 오르는 케이블카"
+    },
+    {
+      "id": "global_베기스_rel_1",
+      "name": "호숫가 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "루체른 호수를 따라 걷는 평화로운 산책로"
+    },
+    {
+      "id": "global_베기스_act_1",
+      "name": "리기산 하이킹",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "스위스 알프스의 절경을 즐길 수 있는 하이킹 코스"
+    },
+    {
+      "id": "global_베기스_res_1",
+      "name": "Restaurant Beau Rivage",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "고급스러운 호수 전망의 레스토랑"
+    },
+    {
+      "id": "global_베기스_res_2",
+      "name": "Spark Restaurant",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 재료로 만든 스위스 전통 요리"
+    },
+    {
+      "id": "global_베기스_res_3",
+      "name": "Restaurant Oliv",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기의 이탈리안 및 스위스 퓨전 레스토랑"
+    },
+    {
+      "id": "global_베기스_caf_1",
+      "name": "Cafe Dahinden",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 스위스 페이스트리를 즐길 수 있는 카페"
+    },
+    {
+      "id": "global_베기스_caf_2",
+      "name": "Cafe-Bäckerei von Rotz",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 빵과 커피가 훌륭한 베이커리 카페"
+    },
+    {
+      "id": "global_베기스_nig_1",
+      "name": "루체른 호수 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "밤이 되면 조명이 켜진 호숫가의 낭만적인 야경"
+    }
+  ],
+  "타이베이": [
+    {
+      "id": "global_타이베이_att_1",
+      "name": "타이베이 101",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 3,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "타이베이의 랜드마크인 초고층 빌딩"
+    },
+    {
+      "id": "global_타이베이_att_2",
+      "name": "국립고궁박물원",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "수많은 중국 왕조의 보물을 전시하는 세계적인 박물관"
+    },
+    {
+      "id": "global_타이베이_rel_1",
+      "name": "다안 삼림 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속 오아시스 같은 거대한 공원"
+    },
+    {
+      "id": "global_타이베이_act_1",
+      "name": "샹산 하이킹",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "타이베이 101을 한눈에 담을 수 있는 가벼운 등산 코스"
+    },
+    {
+      "id": "global_타이베이_res_1",
+      "name": "딘타이펑 본점",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "세계적으로 유명한 대만 샤오롱바오 전문점"
+    },
+    {
+      "id": "global_타이베이_res_2",
+      "name": "융캉우육면",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "깊고 진한 국물 맛이 일품인 우육면 맛집"
+    },
+    {
+      "id": "global_타이베이_res_3",
+      "name": "스린 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "다양한 대만 길거리 음식을 맛볼 수 있는 최대 야시장"
+    },
+    {
+      "id": "global_타이베이_caf_1",
+      "name": "심플 카파",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계 바리스타 챔피언이 운영하는 유명 카페"
+    },
+    {
+      "id": "global_타이베이_caf_2",
+      "name": "Fika Fika Cafe",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "북유럽 감성의 여유로운 분위기를 자랑하는 카페"
+    },
+    {
+      "id": "global_타이베이_nig_1",
+      "name": "샹산 전망대 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "east",
+      "desc": "타이베이 도심 전체가 내려다보이는 최고의 야경 명소"
+    }
+  ],
+  "가오슝": [
+    {
+      "id": "global_가오슝_att_1",
+      "name": "렌츠탄 풍경구",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "용과 호랑이 탑이 있는 아름다운 호수"
+    },
+    {
+      "id": "global_가오슝_att_2",
+      "name": "보얼 예술특구",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 2,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오래된 창고를 개조해 만든 힙한 복합 문화 공간"
+    },
+    {
+      "id": "global_가오슝_rel_1",
+      "name": "아이허 강변",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "여유롭게 산책하거나 유람선을 타기 좋은 강변"
+    },
+    {
+      "id": "global_가오슝_act_1",
+      "name": "치진섬 자전거 타기",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "페리를 타고 들어가 해안선을 따라 즐기는 자전거 라이딩"
+    },
+    {
+      "id": "global_가오슝_res_1",
+      "name": "향원우육면",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "가오슝에서 가장 인기 있는 현지 우육면 맛집"
+    },
+    {
+      "id": "global_가오슝_res_2",
+      "name": "루이펑 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "가오슝 현지인들이 즐겨 찾는 활기찬 야시장"
+    },
+    {
+      "id": "global_가오슝_res_3",
+      "name": "딘타이펑 가오슝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "가오슝 한신 아레나에 위치한 딤섬 명가"
+    },
+    {
+      "id": "global_가오슝_caf_1",
+      "name": "어반 소울 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "감각적인 인테리어와 디저트가 있는 핫플레이스"
+    },
+    {
+      "id": "global_가오슝_caf_2",
+      "name": "카페 드 시아오",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용한 분위기에서 스페셜티 커피를 즐기는 곳"
+    },
+    {
+      "id": "global_가오슝_nig_1",
+      "name": "85 스카이타워 전망대",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "가오슝 시내와 항구를 한눈에 내려다보는 야경"
+    }
+  ],
+  "타이중": [
+    {
+      "id": "global_타이중_att_1",
+      "name": "무지개 마을",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "알록달록한 벽화로 가득한 아름다운 동화 마을"
+    },
+    {
+      "id": "global_타이중_att_2",
+      "name": "국립자연과학박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 생태와 과학 전시가 있는 대형 박물관"
+    },
+    {
+      "id": "global_타이중_rel_1",
+      "name": "고미습지",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "대만의 우유니라 불리는 환상적인 습지 풍경"
+    },
+    {
+      "id": "global_타이중_act_1",
+      "name": "심가촌 자전거길",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 2,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오래된 숙소 단지를 개조한 문화 예술 거리를 자전거로 탐방"
+    },
+    {
+      "id": "global_타이중_res_1",
+      "name": "춘수당 본점",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "버블티가 처음 탄생한 역사적인 음식점"
+    },
+    {
+      "id": "global_타이중_res_2",
+      "name": "펑지아 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "다양한 먹거리와 볼거리가 넘치는 거대한 야시장"
+    },
+    {
+      "id": "global_타이중_res_3",
+      "name": "궁원안과",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오래된 안과 병원을 개조해 아이스크림과 디저트를 파는 명소"
+    },
+    {
+      "id": "global_타이중_caf_1",
+      "name": "오아시스 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 분위기에서 즐기는 맛있는 커피와 브런치"
+    },
+    {
+      "id": "global_타이중_caf_2",
+      "name": "더 팩토리 모조 커피",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "타이중의 스페셜티 커피를 선도하는 카페"
+    },
+    {
+      "id": "global_타이중_nig_1",
+      "name": "국립가극원 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "독특한 곡선형 건축물이 빛나는 멋진 야경"
+    }
+  ],
+  "타이난": [
+    {
+      "id": "global_타이난_att_1",
+      "name": "안핑구바오",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "대만에서 가장 오래된 네덜란드식 요새"
+    },
+    {
+      "id": "global_타이난_att_2",
+      "name": "츠칸러우",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "타이난의 역사를 간직한 붉은 벽돌의 옛 건축물"
+    },
+    {
+      "id": "global_타이난_rel_1",
+      "name": "안핑수우",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "거대한 반얀트리가 오래된 창고를 집어삼킨 신비로운 공간"
+    },
+    {
+      "id": "global_타이난_act_1",
+      "name": "쓰차오 녹색터널",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "맹그로브 숲 사이를 보트로 탐험하는 생태 체험"
+    },
+    {
+      "id": "global_타이난_res_1",
+      "name": "도소월",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "100년 전통을 자랑하는 타이난의 명물 단자이몐 식당"
+    },
+    {
+      "id": "global_타이난_res_2",
+      "name": "화위엔 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "타이난 최대 규모의 주말 야시장"
+    },
+    {
+      "id": "global_타이난_res_3",
+      "name": "윈자이 우육탕",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "신선한 소고기를 데쳐 먹는 타이난식 우육탕 맛집"
+    },
+    {
+      "id": "global_타이난_caf_1",
+      "name": "나로우 도어 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "매우 좁은 틈새를 지나 들어가는 독특한 분위기의 카페"
+    },
+    {
+      "id": "global_타이난_caf_2",
+      "name": "파라팡 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빈티지한 매력이 돋보이는 현지 로스터리 카페"
+    },
+    {
+      "id": "global_타이난_nig_1",
+      "name": "션농지에 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "오래된 건물이 줄지어 선 골목길의 운치 있는 밤 풍경"
+    }
+  ],
+  "화롄": [
+    {
+      "id": "global_화롄_att_1",
+      "name": "타이루거 협곡",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "대자연의 경이로움을 느낄 수 있는 거대한 대리석 협곡"
+    },
+    {
+      "id": "global_화롄_att_2",
+      "name": "치싱탄 해변",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "둥근 자갈과 푸른 태평양이 어우러진 아름다운 해변"
+    },
+    {
+      "id": "global_화롄_rel_1",
+      "name": "둥화대학 캠퍼스",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "유럽풍 건물과 호수가 어우러진 대만에서 가장 아름다운 캠퍼스"
+    },
+    {
+      "id": "global_화롄_act_1",
+      "name": "화롄 돌고래 투어",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "태평양으로 나가 야생 돌고래를 관찰하는 해상 액티비티"
+    },
+    {
+      "id": "global_화롄_res_1",
+      "name": "둥다먼 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 원주민 요리와 길거리 음식이 모인 대형 야시장"
+    },
+    {
+      "id": "global_화롄_res_2",
+      "name": "공정바오즈",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "가성비 좋고 맛있는 화롄의 유명한 찐빵 맛집"
+    },
+    {
+      "id": "global_화롄_res_3",
+      "name": "라오파이 쫑즈",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 사랑하는 대만식 찰밥 요리집"
+    },
+    {
+      "id": "global_화롄_caf_1",
+      "name": "스타벅스 컨테이너 매장",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "하얀색 컨테이너를 겹겹이 쌓아올린 이색적인 스타벅스"
+    },
+    {
+      "id": "global_화롄_caf_2",
+      "name": "코기 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "귀여운 웰시코기와 함께 커피를 마실 수 있는 힐링 카페"
+    },
+    {
+      "id": "global_화롄_nig_1",
+      "name": "메이룬산 공원 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "화롄 시내의 야경을 조용히 감상할 수 있는 공원"
+    }
+  ],
+  "지우펀": [
+    {
+      "id": "global_지우펀_att_1",
+      "name": "지우펀 라오지에",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 5,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "수많은 상점과 먹거리가 가득한 구불구불한 골목길"
+    },
+    {
+      "id": "global_지우펀_att_2",
+      "name": "셩핑극장",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛 지우펀의 황금기 시절을 보여주는 고전 극장"
+    },
+    {
+      "id": "global_지우펀_rel_1",
+      "name": "수치루",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "가파른 계단을 따라 붉은 홍등이 줄지어 있는 낭만적인 길"
+    },
+    {
+      "id": "global_지우펀_act_1",
+      "name": "지우펀 골목 탐방",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 3,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "골목 구석구석을 돌아보며 대만의 옛 정취를 느끼는 산책"
+    },
+    {
+      "id": "global_지우펀_res_1",
+      "name": "아메이차주관",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "애니메이션의 배경이 된 유명하고 전통 있는 찻집"
+    },
+    {
+      "id": "global_지우펀_res_2",
+      "name": "위위엔 단팥죽",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "쫄깃한 토란 경단이 들어간 지우펀의 명물 디저트"
+    },
+    {
+      "id": "global_지우펀_res_3",
+      "name": "지우펀 소시지",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "길거리에서 갓 구워내는 육즙 가득한 소시지 맛집"
+    },
+    {
+      "id": "global_지우펀_caf_1",
+      "name": "칭유 차장",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다를 조망하며 여유롭게 차와 커피를 즐길 수 있는 곳"
+    },
+    {
+      "id": "global_지우펀_caf_2",
+      "name": "CHLIV 지우펀",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "블랙 톤의 시크한 인테리어가 돋보이는 라떼아트 챔피언의 카페"
+    },
+    {
+      "id": "global_지우펀_nig_1",
+      "name": "지우펀 홍등거리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 2,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "해가 지면 골목을 붉게 물들이는 지우펀의 상징적인 야경"
+    }
+  ],
+  "예류": [
+    {
+      "id": "global_예류_att_1",
+      "name": "예류지질공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "자연이 조각한 기암괴석들을 볼 수 있는 독특한 공원"
+    },
+    {
+      "id": "global_예류_att_2",
+      "name": "여왕머리 바위",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "이집트 여왕의 옆모습을 닮은 예류 최고의 명물 바위"
+    },
+    {
+      "id": "global_예류_rel_1",
+      "name": "예류 해안 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "푸른 바다와 기암괴석을 보며 걷는 힐링 산책길"
+    },
+    {
+      "id": "global_예류_act_1",
+      "name": "해양세계 구경",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "다양한 해양 생물과 공연을 즐길 수 있는 해양 테마파크"
+    },
+    {
+      "id": "global_예류_res_1",
+      "name": "예류 해산물 식당가",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "신선한 해산물 요리를 푸짐하게 맛볼 수 있는 거리"
+    },
+    {
+      "id": "global_예류_res_2",
+      "name": "예류 어촌 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "현지 어부들이 잡은 생선으로 요리하는 현지 로컬 맛집"
+    },
+    {
+      "id": "global_예류_res_3",
+      "name": "신베이 시푸드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "바다 풍경을 보며 즐기는 깔끔한 해산물 레스토랑"
+    },
+    {
+      "id": "global_예류_caf_1",
+      "name": "85도씨 예류점",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "저렴하고 맛있는 소금커피와 디저트를 파는 베이커리 카페"
+    },
+    {
+      "id": "global_예류_caf_2",
+      "name": "예류 등대 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "멀리 등대와 바다가 보이는 여유로운 로컬 카페"
+    },
+    {
+      "id": "global_예류_nig_1",
+      "name": "예류 해안 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "조용히 파도 소리를 들으며 걷는 예류의 밤바다"
+    }
+  ],
+  "단수이": [
+    {
+      "id": "global_단수이_att_1",
+      "name": "홍마오청",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "스페인과 네덜란드의 역사가 담긴 붉은 요새"
+    },
+    {
+      "id": "global_단수이_att_2",
+      "name": "단수이 라오지에",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바다와 인접한 길을 따라 다양한 간식거리를 파는 옛 거리"
+    },
+    {
+      "id": "global_단수이_rel_1",
+      "name": "위런마터우",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "석양이 아름답기로 유명한 낭만적인 어부의 선창"
+    },
+    {
+      "id": "global_단수이_act_1",
+      "name": "빠리 자전거 타기",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "배를 타고 건너가 강변을 따라 즐기는 자전거 하이킹"
+    },
+    {
+      "id": "global_단수이_res_1",
+      "name": "아게이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유부 속에 당면을 채워 넣은 단수이만의 독특한 간식"
+    },
+    {
+      "id": "global_단수이_res_2",
+      "name": "대왕 카스테라",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "부드럽고 푹신한 식감으로 유명한 단수이 원조 카스테라"
+    },
+    {
+      "id": "global_단수이_res_3",
+      "name": "하워드 철판구이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "가성비 좋게 즉석에서 구워주는 대만식 철판 요리"
+    },
+    {
+      "id": "global_단수이_caf_1",
+      "name": "안지아로즈 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 소품과 식물로 꾸며진 예쁜 카페"
+    },
+    {
+      "id": "global_단수이_caf_2",
+      "name": "LB Cafe",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "바다를 보며 쉴 수 있는 분위기 좋은 리버뷰 카페"
+    },
+    {
+      "id": "global_단수이_nig_1",
+      "name": "워터프론트 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "west",
+      "desc": "단수이 연인의 다리에 조명이 켜지면 펼쳐지는 낭만적인 야경"
+    }
+  ],
+  "신주": [
+    {
+      "id": "global_신주_att_1",
+      "name": "신주 성황묘",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "대만에서 가장 높은 지위를 가진 유서 깊은 성황당"
+    },
+    {
+      "id": "global_신주_att_2",
+      "name": "육복촌 테마파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "놀이동산과 동물원이 결합된 대형 사파리 테마파크"
+    },
+    {
+      "id": "global_신주_rel_1",
+      "name": "신주 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수와 벚꽃나무가 있는 도심 속 평화로운 휴식처"
+    },
+    {
+      "id": "global_신주_act_1",
+      "name": "17km 해안 자전거길",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "시원한 바닷바람을 맞으며 달리는 긴 해안 자전거길"
+    },
+    {
+      "id": "global_신주_res_1",
+      "name": "먀오커우 로우위엔",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "성황묘 앞에서 파는 쫄깃하고 맛있는 전통 고기완자"
+    },
+    {
+      "id": "global_신주_res_2",
+      "name": "비훈 국수",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바람이 많이 부는 신주의 특산물인 얇은 쌀국수 요리"
+    },
+    {
+      "id": "global_신주_res_3",
+      "name": "청황미아오 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "사원 주변으로 형성된 활기찬 로컬 미식 거리"
+    },
+    {
+      "id": "global_신주_caf_1",
+      "name": "무드 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현대적인 감각의 인테리어와 커피가 있는 카페"
+    },
+    {
+      "id": "global_신주_caf_2",
+      "name": "ZCafe",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "신주의 자연 속에 숨겨진 갤러리 같은 감성 카페"
+    },
+    {
+      "id": "global_신주_nig_1",
+      "name": "신주 동문 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "신주 시내 한가운데 옛 성문의 고풍스러운 야경"
+    }
+  ],
+  "지룽": [
+    {
+      "id": "global_지룽_att_1",
+      "name": "정빈 어항 컬러 하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "어항을 따라 형형색색의 건물이 늘어선 인생샷 명소"
+    },
+    {
+      "id": "global_지룽_att_2",
+      "name": "허핑다오 공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "독특한 침식 지형과 바다 수영장이 있는 지질 공원"
+    },
+    {
+      "id": "global_지룽_rel_1",
+      "name": "차오징 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "탁 트인 바다와 거대한 빗자루 조형물이 있는 공원"
+    },
+    {
+      "id": "global_지룽_act_1",
+      "name": "바더우쯔 레일바이크",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "바다를 바로 옆에 두고 달리는 아기자기한 레일바이크"
+    },
+    {
+      "id": "global_지룽_res_1",
+      "name": "먀오커우 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "노란 초롱이 길게 매달려 있는 유명한 미식 야시장"
+    },
+    {
+      "id": "global_지룽_res_2",
+      "name": "영강 해산물",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "지룽 항구의 신선한 해산물을 맛볼 수 있는 로컬 식당"
+    },
+    {
+      "id": "global_지룽_res_3",
+      "name": "딩창루 빙수",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "시원하고 달콤한 대만식 전통 빙수 맛집"
+    },
+    {
+      "id": "global_지룽_caf_1",
+      "name": "루모우 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "지룽 항구를 바라보며 커피를 마실 수 있는 오션뷰 카페"
+    },
+    {
+      "id": "global_지룽_caf_2",
+      "name": "화수이무 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용하고 따뜻한 분위기의 아기자기한 동네 카페"
+    },
+    {
+      "id": "global_지룽_nig_1",
+      "name": "지룽 항구 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "대형 크루즈와 선박들이 정박해 있는 항구의 아름다운 밤"
+    }
+  ],
+  "타이동": [
+    {
+      "id": "global_타이동_att_1",
+      "name": "싼셴타이",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "독특한 모양의 아치교가 섬과 연결된 타이동의 상징"
+    },
+    {
+      "id": "global_타이동_att_2",
+      "name": "보랑대도",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "전봇대 하나 없이 끝없이 펼쳐진 아름다운 논길"
+    },
+    {
+      "id": "global_타이동_rel_1",
+      "name": "즈번 온천",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "대만 동부 최고의 수질을 자랑하는 유명 온천 지대"
+    },
+    {
+      "id": "global_타이동_act_1",
+      "name": "루예가오타이 열기구",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "푸른 초원 위에서 즐기는 열기구 탑승 체험"
+    },
+    {
+      "id": "global_타이동_res_1",
+      "name": "롱타우 우육면",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "진한 육수와 부드러운 고기가 일품인 현지 우육면"
+    },
+    {
+      "id": "global_타이동_res_2",
+      "name": "린자 쵸우도우푸",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바삭하게 튀겨내어 냄새가 적고 고소한 취두부 맛집"
+    },
+    {
+      "id": "global_타이동_res_3",
+      "name": "타마리 커피 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "south",
+      "desc": "원주민 전통 요리와 해산물을 즐길 수 있는 식당"
+    },
+    {
+      "id": "global_타이동_caf_1",
+      "name": "다다오청 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛 건물을 개조하여 레트로한 분위기를 풍기는 카페"
+    },
+    {
+      "id": "global_타이동_caf_2",
+      "name": "커피 하우스 타이동",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용히 독서하며 스페셜티 커피를 마시기 좋은 공간"
+    },
+    {
+      "id": "global_타이동_nig_1",
+      "name": "철화촌 음악폴락 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "수많은 열기구 모양의 등불이 켜지는 감성적인 예술촌 야경"
+    }
+  ],
+  "컨딩": [
+    {
+      "id": "global_컨딩_att_1",
+      "name": "어롼비 등대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "대만 최남단에 위치한 새하얀 등대와 넓은 초원"
+    },
+    {
+      "id": "global_컨딩_att_2",
+      "name": "난완 해변",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "다양한 해양 스포츠를 즐길 수 있는 활기찬 해변"
+    },
+    {
+      "id": "global_컨딩_rel_1",
+      "name": "룽판 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "태평양이 한눈에 내려다보이는 탁 트인 해안 절벽 공원"
+    },
+    {
+      "id": "global_컨딩_act_1",
+      "name": "바이사완 서핑",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "하얀 모래사장과 맑은 물에서 즐기는 서핑 체험"
+    },
+    {
+      "id": "global_컨딩_res_1",
+      "name": "컨딩 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "매일 밤 메인 스트리트를 가득 채우는 열대 야시장"
+    },
+    {
+      "id": "global_컨딩_res_2",
+      "name": "허우비후 해산물 시장",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "아주 저렴한 가격에 두툼한 생선회를 맛볼 수 있는 곳"
+    },
+    {
+      "id": "global_컨딩_res_3",
+      "name": "스마일 타이완 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "다양한 현지 대만식 요리와 해산물 볶음을 파는 로컬 식당"
+    },
+    {
+      "id": "global_컨딩_caf_1",
+      "name": "미호 비치 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "해변 바로 앞에 위치해 열대 휴양지 느낌이 물씬 나는 카페"
+    },
+    {
+      "id": "global_컨딩_caf_2",
+      "name": "하파 카와 커피",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 내린 커피를 파는 한적한 카페"
+    },
+    {
+      "id": "global_컨딩_nig_1",
+      "name": "컨딩 메인스트리트 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "야시장의 화려한 네온사인과 사람들로 북적이는 밤거리"
+    }
+  ],
+  "이란": [
+    {
+      "id": "global_이란_att_1",
+      "name": "카발란 위스키 증류소",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "세계적인 대만 위스키의 제조 과정을 볼 수 있는 투어"
+    },
+    {
+      "id": "global_이란_att_2",
+      "name": "뤄둥 임업문화원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "과거 벌목장이었던 곳을 생태 공원으로 아름답게 가꾼 명소"
+    },
+    {
+      "id": "global_이란_rel_1",
+      "name": "자오시 온천",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "피부 미용에 좋은 무색무취의 탄산수소나트륨 온천"
+    },
+    {
+      "id": "global_이란_act_1",
+      "name": "구이산도 돌고래 투어",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "거북이를 닮은 섬 주변에서 돌고래와 고래를 관찰하는 배 투어"
+    },
+    {
+      "id": "global_이란_res_1",
+      "name": "뤄둥 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "이란의 특산물인 파가 들어간 다양한 음식을 파는 야시장"
+    },
+    {
+      "id": "global_이란_res_2",
+      "name": "원야오지",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "항아리에서 참나무 장작으로 구워낸 바삭한 닭구이 맛집"
+    },
+    {
+      "id": "global_이란_res_3",
+      "name": "정상 샤오롱바오",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "신선한 파와 고기가 가득 들어간 육즙 가득한 딤섬"
+    },
+    {
+      "id": "global_이란_caf_1",
+      "name": "흑도롱뇽 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자연 친화적인 인테리어와 풍미 깊은 커피를 즐기는 곳"
+    },
+    {
+      "id": "global_이란_caf_2",
+      "name": "헤이보 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "조용한 마을 길가에 위치한 빈티지 감성 카페"
+    },
+    {
+      "id": "global_이란_nig_1",
+      "name": "지미 공원 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "대만의 유명 일러스트레이터 지미의 작품들이 조명과 어우러진 공원"
+    }
+  ],
+  "자이": [
+    {
+      "id": "global_자이_att_1",
+      "name": "아리산 국립풍경구",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "장엄한 일출과 운해, 거대한 삼림을 볼 수 있는 대만 최고의 명산"
+    },
+    {
+      "id": "global_자이_att_2",
+      "name": "고궁남원",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "아시아의 문화와 예술품을 전시하는 아름다운 현대식 박물관"
+    },
+    {
+      "id": "global_자이_rel_1",
+      "name": "난만 저수지",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "조용히 산책하며 휴식을 취하기 좋은 넓은 인공 호수"
+    },
+    {
+      "id": "global_자이_act_1",
+      "name": "아리산 삼림철도",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "좁은 궤도를 따라 아리산의 숲속을 달리는 옛날 기차 탑승"
+    },
+    {
+      "id": "global_자이_res_1",
+      "name": "스마트 피시 훠궈",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "생선 머리를 튀겨 넣은 얼큰하고 독특한 대만식 전골 맛집"
+    },
+    {
+      "id": "global_자이_res_2",
+      "name": "원화루 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "자이 시민들의 저녁을 책임지는 가장 크고 활기찬 야시장"
+    },
+    {
+      "id": "global_자이_res_3",
+      "name": "자이 터키라이스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "자이에서 반드시 먹어야 하는 고소한 칠면조 고기 덮밥"
+    },
+    {
+      "id": "global_자이_caf_1",
+      "name": "모리 코히",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아리산의 특산품인 커피 원두를 정성껏 내려주는 로스터리 카페"
+    },
+    {
+      "id": "global_자이_caf_2",
+      "name": "카멜 코스터 랩",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "실험실 콘셉트의 독특하고 재미있는 커피바"
+    },
+    {
+      "id": "global_자이_nig_1",
+      "name": "란탄 분수 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "east",
+      "desc": "저수지 위에서 화려한 조명과 함께 펼쳐지는 음악 분수쇼"
+    }
+  ],
+  "먀오리": [
+    {
+      "id": "global_먀오리_att_1",
+      "name": "룽텅 단교",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "대지진으로 무너진 채 남아있는 아치형의 붉은 벽돌 다리"
+    },
+    {
+      "id": "global_먀오리_att_2",
+      "name": "셩싱 기차역",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "목조로 지어진 대만에서 가장 높은 고도의 옛 기차역"
+    },
+    {
+      "id": "global_먀오리_rel_1",
+      "name": "난좡 라오지에",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 3,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "객가인의 전통과 문화가 남아있는 아기자기한 옛 거리"
+    },
+    {
+      "id": "global_먀오리_act_1",
+      "name": "구 산선 레일바이크",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "옛 철길을 따라 터널과 철교를 지나는 짜릿한 레일바이크"
+    },
+    {
+      "id": "global_먀오리_res_1",
+      "name": "레이차 가게",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "곡물과 찻잎을 빻아 마시는 객가 전통차 체험 및 다과"
+    },
+    {
+      "id": "global_먀오리_res_2",
+      "name": "먀오리 하카 요리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "짭조름하고 고소한 대만 객가 원주민의 전통 요리 식당"
+    },
+    {
+      "id": "global_먀오리_res_3",
+      "name": "진춘발 소고기국수",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "부드러운 소고기가 듬뿍 들어간 오랜 전통의 국수집"
+    },
+    {
+      "id": "global_먀오리_caf_1",
+      "name": "산잉 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "산속에 자리 잡아 맑은 공기와 풍경을 만끽하는 카페"
+    },
+    {
+      "id": "global_먀오리_caf_2",
+      "name": "더 그린 마일 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "초록빛 정원이 아름답게 꾸며진 힐링 카페"
+    },
+    {
+      "id": "global_먀오리_nig_1",
+      "name": "퉁뤄 차밭 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "east",
+      "desc": "해 질 녘 차밭 너머로 물드는 붉은 노을과 평화로운 저녁 풍경"
+    }
+  ],
+  "난터우": [
+    {
+      "id": "global_난터우_att_1",
+      "name": "일월담",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해와 달의 모습을 닮았다는 대만 최대의 아름다운 고산 호수"
+    },
+    {
+      "id": "global_난터우_att_2",
+      "name": "칭징농장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "푸른 초원 위에서 양 떼가 노니는 대만의 스위스"
+    },
+    {
+      "id": "global_난터우_rel_1",
+      "name": "샹산 방문자 센터",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수와 조화를 이루는 멋진 건축물에서 여유를 즐기는 곳"
+    },
+    {
+      "id": "global_난터우_act_1",
+      "name": "일월담 케이블카",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수 위를 가로지르며 일월담의 전경을 감상하는 케이블카"
+    },
+    {
+      "id": "global_난터우_res_1",
+      "name": "이다샤오 닭구이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "일월담 소수민족의 전통 방식으로 구워낸 닭고기 요리"
+    },
+    {
+      "id": "global_난터우_res_2",
+      "name": "루지 찻집",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 차밭 풍경과 함께 즐기는 신선한 차와 식사"
+    },
+    {
+      "id": "global_난터우_res_3",
+      "name": "난터우 죽순 요리집",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "난터우의 특산물인 신선한 죽순을 활용한 건강한 요리"
+    },
+    {
+      "id": "global_난터우_caf_1",
+      "name": "니나 초콜릿 성",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "마치 유럽의 고성처럼 지어진 아름다운 초콜릿 공장 겸 카페"
+    },
+    {
+      "id": "global_난터우_caf_2",
+      "name": "일월담 호수뷰 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "일월담 호수를 바로 앞에서 감상하며 즐기는 여유로운 커피 한 잔"
+    },
+    {
+      "id": "global_난터우_nig_1",
+      "name": "문무묘 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "호수를 굽어보는 장엄한 사원에 불이 켜진 웅장한 야경"
+    }
+  ],
+  "장화": [
+    {
+      "id": "global_장화_att_1",
+      "name": "팔괘산 대불",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "장화 시내를 굽어보고 있는 거대하고 웅장한 부처상"
+    },
+    {
+      "id": "global_장화_att_2",
+      "name": "루강 라오지에",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 4,
+        "culture": 5,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "붉은 벽돌과 구불구불한 골목이 예전 그대로 보존된 전통 거리"
+    },
+    {
+      "id": "global_장화_rel_1",
+      "name": "톈웨이 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "수많은 꽃과 나무들이 가득한 아름다운 원예 마을"
+    },
+    {
+      "id": "global_장화_act_1",
+      "name": "장화 갯벌 체험",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "우마차를 타고 갯벌로 나가 굴을 캐보는 독특한 체험"
+    },
+    {
+      "id": "global_장화_res_1",
+      "name": "장화 로우위엔",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "튀기듯이 구워낸 쫄깃한 피 안에 고기가 가득한 장화 명물 완자"
+    },
+    {
+      "id": "global_장화_res_2",
+      "name": "루강 굴전 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "신선한 굴과 채소를 듬뿍 넣고 부쳐낸 고소한 굴전"
+    },
+    {
+      "id": "global_장화_res_3",
+      "name": "징청 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "현지인들의 삶을 엿볼 수 있는 다양한 먹거리의 로컬 야시장"
+    },
+    {
+      "id": "global_장화_caf_1",
+      "name": "서가 찻집",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "루강 라오지에 골목 안쪽, 옛 정취를 즐기며 차를 마시는 곳"
+    },
+    {
+      "id": "global_장화_caf_2",
+      "name": "카페 코너 168",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 인테리어 속에서 조용히 쉴 수 있는 로컬 카페"
+    },
+    {
+      "id": "global_장화_nig_1",
+      "name": "팔괘산 스카이워크 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 조명이 켜진 숲길을 따라 산책하는 낭만적인 길"
+    }
+  ],
+  "펑후": [
+    {
+      "id": "global_펑후_att_1",
+      "name": "치메이 쌍심석호",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "두 개의 하트가 겹친 모양으로 쌓아 올린 낭만적인 전통 돌그물"
+    },
+    {
+      "id": "global_펑후_att_2",
+      "name": "관음정 친수유게구",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "일몰과 무지개 다리를 한눈에 볼 수 있는 아름다운 해변 공원"
+    },
+    {
+      "id": "global_펑후_rel_1",
+      "name": "산수이 해수욕장",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "곱고 부드러운 백사장과 맑은 바닷물이 있는 평화로운 해수욕장"
+    },
+    {
+      "id": "global_펑후_act_1",
+      "name": "쿠바섬 스노클링",
+      "category": "activity",
+      "subCategory": "outdoor",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "투명한 펑후 바다에서 즐기는 화려한 산호초와 열대어 스노클링"
+    },
+    {
+      "id": "global_펑후_res_1",
+      "name": "펑후 해산물 뷔페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "그날 잡은 신선한 해산물을 마음껏 즐길 수 있는 곳"
+    },
+    {
+      "id": "global_펑후_res_2",
+      "name": "선인장 아이스크림",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "펑후의 특산물인 선인장 열매로 만든 새콤달콤한 아이스크림"
+    },
+    {
+      "id": "global_펑후_res_3",
+      "name": "마궁 야시장",
+      "category": "restaurant",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 길거리 음식과 해산물 꼬치를 맛볼 수 있는 야시장"
+    },
+    {
+      "id": "global_펑후_caf_1",
+      "name": "블로우 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "펑후의 바닷바람을 맞으며 즐기는 로컬 로스터리 카페"
+    },
+    {
+      "id": "global_펑후_caf_2",
+      "name": "펑후 오션뷰 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 3,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸른 바다를 파노라마로 감상할 수 있는 멋진 전망의 카페"
+    },
+    {
+      "id": "global_펑후_nig_1",
+      "name": "무지개 다리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "바다 위를 가로지르는 다리에 오색찬란한 조명이 켜지는 야경"
+    }
+  ],
+  "진먼": [
+    {
+      "id": "global_진먼_att_1",
+      "name": "진먼 민속문화촌",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 푸젠성 양식의 아름다운 건축물이 보존된 민속촌입니다."
+    },
+    {
+      "id": "global_진먼_att_2",
+      "name": "자이산 갱도",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 4,
+        "healing": 1,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "화강암을 뚫고 만든 군사 터널로, 독특한 역사적 경험을 제공합니다."
+    },
+    {
+      "id": "global_진먼_rel_1",
+      "name": "구닝터우 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "고요한 해안가에서 휴식을 취하며 아름다운 바다를 조망할 수 있는 곳입니다."
+    },
+    {
+      "id": "global_진먼_act_1",
+      "name": "지광빙 자전거 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "activity": 5,
+        "healing": 3,
+        "culture": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자전거를 타고 진먼의 평화로운 시골 길과 유적지를 둘러보는 투어입니다."
+    },
+    {
+      "id": "global_진먼_res_1",
+      "name": "니우지아좡",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "진먼 특산물인 소고기를 활용한 요리가 유명한 현지 식당입니다."
+    },
+    {
+      "id": "global_진먼_res_2",
+      "name": "홍면 굴전",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "market",
+      "desc": "신선한 굴을 듬뿍 넣은 굴전이 일품인 전통 식당입니다."
+    },
+    {
+      "id": "global_진먼_res_3",
+      "name": "라오제 면집",
+      "category": "restaurant",
+      "subCategory": "noodle",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "old_street",
+      "desc": "오랜 역사를 지닌 거리에서 즐기는 정통 대만식 국수 맛집입니다."
+    },
+    {
+      "id": "global_진먼_caf_1",
+      "name": "블랙하우스 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "특색 있는 인테리어와 향긋한 커피, 달콤한 디저트를 제공하는 카페입니다."
+    },
+    {
+      "id": "global_진먼_caf_2",
+      "name": "모바오 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "바다를 바라보며 여유로운 커피 타임을 가질 수 있는 아늑한 공간입니다."
+    },
+    {
+      "id": "global_진먼_nig_1",
+      "name": "주광루",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "culture": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조명이 켜진 주광루의 환상적인 모습과 진먼 야경을 감상할 수 있는 명소입니다."
+    }
+  ],
+  "마주": [
+    {
+      "id": "global_마주_att_1",
+      "name": "베이하이 갱도",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "과거 군사용으로 파놓은 지하 수로로, 배를 타고 내부를 관람할 수 있습니다."
+    },
+    {
+      "id": "global_마주_att_2",
+      "name": "철보",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 4,
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "해안가 암초 위에 세워진 옛 군사 요새로 독특한 경관을 자랑합니다."
+    },
+    {
+      "id": "global_마주_rel_1",
+      "name": "진사 마을",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "culture": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "village",
+      "desc": "전통 석조 가옥이 모여있는 평화로운 마을에서 힐링의 시간을 가질 수 있습니다."
+    },
+    {
+      "id": "global_마주_act_1",
+      "name": "푸른 눈물 탐방",
+      "category": "activity",
+      "subCategory": "nature",
+      "themes": {
+        "activity": 4,
+        "healing": 5,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "밤바다를 푸르게 수놓는 신비로운 발광 플랑크톤 '푸른 눈물'을 관찰하는 체험입니다."
+    },
+    {
+      "id": "global_마주_res_1",
+      "name": "다중 인촨 면집",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "마주 전통 방식의 쫄깃한 생선 국수를 맛볼 수 있는 유명 식당입니다."
+    },
+    {
+      "id": "global_마주_res_2",
+      "name": "홍짜오 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "마주 특산물인 홍조(붉은 누룩)를 활용한 볶음밥과 고기 요리를 제공합니다."
+    },
+    {
+      "id": "global_마주_res_3",
+      "name": "씨푸드 하우스",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "갓 잡은 신선한 해산물 요리를 합리적인 가격에 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_마주_caf_1",
+      "name": "부락 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "village",
+      "desc": "전통 가옥을 개조해 만든 카페로, 고즈넉한 풍경과 함께 차를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_마주_caf_2",
+      "name": "씨뷰 디저트 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "바다 전망이 훌륭하며 수제 디저트와 향긋한 커피가 인기 있는 곳입니다."
+    },
+    {
+      "id": "global_마주_nig_1",
+      "name": "마주 동인 등대",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "culture": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "별이 쏟아지는 밤하늘과 등대가 어우러져 낭만적인 야경을 선사합니다."
+    }
+  ],
+  "보홀": [
+    {
+      "id": "global_보홀_att_1",
+      "name": "초콜릿 힐",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "inland",
+      "desc": "건기에는 초콜릿 색으로 변하는 수천 개의 원뿔형 언덕이 장관을 이루는 명소입니다."
+    },
+    {
+      "id": "global_보홀_att_2",
+      "name": "안경원숭이 보호구역",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "inland",
+      "desc": "세상에서 가장 작은 영장류 중 하나인 귀여운 안경원숭이를 만날 수 있습니다."
+    },
+    {
+      "id": "global_보홀_rel_1",
+      "name": "알로나 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 3,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "panglao",
+      "desc": "하얀 백사장과 투명한 바다가 어우러져 휴식과 해수욕을 즐기기 완벽한 해변입니다."
+    },
+    {
+      "id": "global_보홀_act_1",
+      "name": "발리카삭 호핑투어",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 3,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "ocean",
+      "desc": "아름다운 산호초와 바다거북을 볼 수 있는 최고의 스노클링 포인트입니다."
+    },
+    {
+      "id": "global_보홀_res_1",
+      "name": "버즈 카페",
+      "category": "restaurant",
+      "subCategory": "organic",
+      "themes": {
+        "food": 5,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "panglao",
+      "desc": "유기농 재료로 만든 건강한 현지식과 꽃잎 샐러드가 유명한 맛집입니다."
+    },
+    {
+      "id": "global_보홀_res_2",
+      "name": "주세페 피자",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "healing": 2,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "panglao",
+      "desc": "화덕에서 구워낸 정통 이탈리안 피자와 파스타를 선보이는 인기 레스토랑입니다."
+    },
+    {
+      "id": "global_보홀_res_3",
+      "name": "로복강 선상 뷔페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 3,
+        "activity": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "inland",
+      "desc": "배를 타고 열대 우림을 감상하며 현지식 뷔페를 즐길 수 있는 특별한 식당입니다."
+    },
+    {
+      "id": "global_보홀_caf_1",
+      "name": "모스비로 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "panglao",
+      "desc": "열대 식물로 꾸며진 자연 친화적인 공간에서 시원한 빙수와 커피를 팝니다."
+    },
+    {
+      "id": "global_보홀_caf_2",
+      "name": "보홀 비 팜 카페",
+      "category": "cafe",
+      "subCategory": "organic",
+      "themes": {
+        "food": 5,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "panglao",
+      "desc": "유기농 꿀을 활용한 독특한 아이스크림과 디저트를 바다 뷰와 함께 즐깁니다."
+    },
+    {
+      "id": "global_보홀_nig_1",
+      "name": "아바탄 강 반딧불이 투어",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "inland",
+      "desc": "맹그로브 숲 사이를 수놓는 수많은 반딧불이의 아름다운 빛을 감상하는 투어입니다."
+    }
+  ],
+  "다바오": [
+    {
+      "id": "global_다바오_att_1",
+      "name": "필리핀 독수리 센터",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 2,
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "멸종 위기에 처한 필리핀 국조인 필리핀 독수리를 보호하고 전시하는 자연 공원입니다."
+    },
+    {
+      "id": "global_다바오_att_2",
+      "name": "아포 산",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "필리핀에서 가장 높은 산으로 웅장한 자연 경관과 다양한 생태계를 자랑합니다."
+    },
+    {
+      "id": "global_다바오_rel_1",
+      "name": "에덴 자연 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 3,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "시원한 산속에서 산책과 다양한 야외 활동을 즐기며 휴식할 수 있는 공원입니다."
+    },
+    {
+      "id": "global_다바오_act_1",
+      "name": "크로커다일 파크",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 4,
+        "healing": 2,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "거대한 악어들과 다양한 야생 동물을 가까이서 관찰할 수 있는 테마파크입니다."
+    },
+    {
+      "id": "global_다바오_res_1",
+      "name": "마리나 투나",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "city_center",
+      "desc": "다바오의 명물인 참치를 다양한 조리법으로 제공하는 참치 요리 전문점입니다."
+    },
+    {
+      "id": "global_다바오_res_2",
+      "name": "클라우드 9",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "culture": 1,
+        "healing": 4,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "hill",
+      "desc": "도시의 파노라마 뷰를 감상하며 필리핀 현지 음식을 즐길 수 있는 전망 좋은 식당입니다."
+    },
+    {
+      "id": "global_다바오_res_3",
+      "name": "루즈 킨라우",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "city_center",
+      "desc": "필리핀식 전통 회무침인 '킨라우'가 유명한 로컬 인기 식당입니다."
+    },
+    {
+      "id": "global_다바오_caf_1",
+      "name": "블루포스트 보일링 크랩 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "city_center",
+      "desc": "신선한 해산물 요리 후 깔끔한 커피와 디저트를 즐길 수 있는 여유로운 카페입니다."
+    },
+    {
+      "id": "global_다바오_caf_2",
+      "name": "라레스 로스터리",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "food": 5,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "city_center",
+      "desc": "직접 로스팅한 다바오 현지 원두의 진한 풍미를 느낄 수 있는 전문 카페입니다."
+    },
+    {
+      "id": "global_다바오_nig_1",
+      "name": "록사스 나이트 마켓",
+      "category": "nightview",
+      "subCategory": "market",
+      "themes": {
+        "healing": 2,
+        "culture": 4,
+        "activity": 3,
+        "food": 5,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "city_center",
+      "desc": "다양한 길거리 음식과 현지 문화를 체험할 수 있는 다바오의 대표적인 야시장입니다."
+    }
+  ],
+  "클락": [
+    {
+      "id": "global_클락_att_1",
+      "name": "클락 뮤지엄",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "미군 기지 시절부터 현재까지 클락의 역사와 문화를 보여주는 박물관입니다."
+    },
+    {
+      "id": "global_클락_att_2",
+      "name": "다이노소어 아일랜드",
+      "category": "attraction",
+      "subCategory": "theme_park",
+      "themes": {
+        "culture": 1,
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "실제 크기의 움직이는 공룡 모형들이 전시된 가족 단위 방문객에게 좋은 테마파크입니다."
+    },
+    {
+      "id": "global_클락_rel_1",
+      "name": "푸닝 온천",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "피나투보 화산의 지열을 이용한 천연 온천으로 피로를 풀기에 완벽한 장소입니다."
+    },
+    {
+      "id": "global_클락_act_1",
+      "name": "아쿠아 플라넷",
+      "category": "activity",
+      "subCategory": "water_park",
+      "themes": {
+        "activity": 5,
+        "healing": 2,
+        "culture": 1,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "필리핀 최대 규모의 워터파크로 다양하고 스릴 넘치는 슬라이드를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_클락_res_1",
+      "name": "마블링",
+      "category": "restaurant",
+      "subCategory": "korean",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "질 좋은 프리미엄 소고기와 정갈한 반찬을 제공하는 한식 바비큐 전문점입니다."
+    },
+    {
+      "id": "global_클락_res_2",
+      "name": "마타리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 필리핀 요리를 세련된 분위기에서 맛볼 수 있는 고급 레스토랑입니다."
+    },
+    {
+      "id": "global_클락_res_3",
+      "name": "브레드 토크 레스토랑",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "sm_mall",
+      "desc": "다양한 아시안 퓨전 요리와 갓 구운 빵을 함께 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_클락_caf_1",
+      "name": "카페 베이커리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "food": 5,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신선한 원두로 내린 커피와 매일 굽는 맛있는 페이스트리가 일품인 카페입니다."
+    },
+    {
+      "id": "global_클락_caf_2",
+      "name": "어반 로스터스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "감각적인 인테리어 속에서 스페셜티 커피와 달콤한 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_클락_nig_1",
+      "name": "워킹 스트리트 야경",
+      "category": "nightview",
+      "subCategory": "street",
+      "themes": {
+        "healing": 2,
+        "culture": 3,
+        "activity": 4,
+        "food": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "angeles",
+      "desc": "화려한 네온사인과 다양한 바, 레스토랑이 밀집해 활기찬 밤거리를 경험할 수 있습니다."
+    }
+  ],
+  "엘니도": [
+    {
+      "id": "global_엘니도_att_1",
+      "name": "빅 라군",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "깎아지른 석회암 절벽 사이로 에메랄드빛 바다가 펼쳐진 엘니도의 상징적인 명소입니다."
+    },
+    {
+      "id": "global_엘니도_att_2",
+      "name": "시크릿 라군",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "작은 바위틈을 통과하면 나타나는 숨겨진 신비로운 석호입니다."
+    },
+    {
+      "id": "global_엘니도_rel_1",
+      "name": "낙판 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "길게 뻗은 황금빛 백사장과 야자수가 어우러져 여유로운 휴양을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_엘니도_act_1",
+      "name": "아일랜드 호핑투어 A",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 3,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "엘니도의 주요 석호와 해변을 돌아보며 스노클링과 카약을 즐기는 필수 액티비티입니다."
+    },
+    {
+      "id": "global_엘니도_res_1",
+      "name": "알트로베 피자",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "화덕에서 직접 구워내는 정통 이탈리안 피자가 맛있기로 소문난 맛집입니다."
+    },
+    {
+      "id": "global_엘니도_res_2",
+      "name": "아트카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 3,
+        "activity": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "신선한 해산물 요리와 함께 예술적인 분위기와 바다 전망을 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_엘니도_res_3",
+      "name": "바쿠잇 그릴",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "해변가에서 갓 구운 바비큐와 시원한 맥주를 즐길 수 있는 분위기 좋은 그릴 전문점입니다."
+    },
+    {
+      "id": "global_엘니도_caf_1",
+      "name": "가스토 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "진한 맛의 크레페와 훌륭한 커피를 제공하여 여행자들의 휴식처가 되는 곳입니다."
+    },
+    {
+      "id": "global_엘니도_caf_2",
+      "name": "미드타운 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 3,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "town",
+      "desc": "아침 일찍 문을 열어 든든한 조식과 향긋한 커피를 맛볼 수 있는 깔끔한 카페입니다."
+    },
+    {
+      "id": "global_엘니도_nig_1",
+      "name": "라스 카바나스 해변 일몰",
+      "category": "nightview",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "엘니도에서 가장 환상적인 일몰과 낭만적인 저녁 풍경을 감상할 수 있는 해변입니다."
+    }
+  ],
+  "코론": [
+    {
+      "id": "global_코론_att_1",
+      "name": "카양간 호수",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "아시아에서 가장 맑은 호수 중 하나로, 기암괴석과 투명한 물빛이 절경을 이룹니다."
+    },
+    {
+      "id": "global_코론_att_2",
+      "name": "트윈 라군",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "따뜻한 물과 차가운 물이 교차하는 신비로운 두 개의 석호입니다."
+    },
+    {
+      "id": "global_코론_rel_1",
+      "name": "마퀴닛 온천",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "바다와 인접한 천연 해수 온천으로, 호핑투어 후 피로를 풀기에 최적입니다."
+    },
+    {
+      "id": "global_코론_act_1",
+      "name": "난파선 다이빙",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 1,
+        "culture": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "제2차 세계대전 당시 침몰한 일본 군함들을 탐험하는 세계적인 스쿠버 다이빙 포인트입니다."
+    },
+    {
+      "id": "global_코론_res_1",
+      "name": "산 안구스틴 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "풍성하고 신선한 해산물 요리와 로컬 바비큐를 합리적인 가격에 즐길 수 있습니다."
+    },
+    {
+      "id": "global_코론_res_2",
+      "name": "위니에스 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "정성 가득한 필리핀 가정식 요리를 아늑한 분위기에서 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_코론_res_3",
+      "name": "알트로베 코론",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "town",
+      "desc": "화덕 피자와 파스타 등 완성도 높은 이탈리안 요리를 제공하는 인기 맛집입니다."
+    },
+    {
+      "id": "global_코론_caf_1",
+      "name": "코피 브레이크 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "에어컨이 완비된 시원한 실내에서 달콤한 조각 케이크와 커피를 마시며 쉴 수 있습니다."
+    },
+    {
+      "id": "global_코론_caf_2",
+      "name": "에픽 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "town",
+      "desc": "빈티지한 인테리어와 함께 정성스럽게 내린 스페셜티 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_코론_nig_1",
+      "name": "타피야스 산 일몰",
+      "category": "nightview",
+      "subCategory": "mountain",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "town",
+      "desc": "700여 개의 계단을 오르면 코론 타운과 바다를 붉게 물들이는 환상적인 일몰을 볼 수 있습니다."
+    }
+  ],
+  "바콜로드": [
+    {
+      "id": "global_바콜로드_att_1",
+      "name": "더 루인스",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 5,
+        "healing": 3,
+        "activity": 1,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "suburb",
+      "desc": "필리핀의 타지마할이라 불리는 아름다운 대저택 유적지로, 노을 질 때의 풍경이 예술입니다."
+    },
+    {
+      "id": "global_바콜로드_att_2",
+      "name": "산 세바스찬 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "산호석으로 지어진 역사적인 성당으로 바콜로드 시민들의 중요한 정신적 안식처입니다."
+    },
+    {
+      "id": "global_바콜로드_rel_1",
+      "name": "캐피톨 파크 앤 라군",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "culture": 3,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시내 중심에 위치한 평화로운 공원으로 인공 호수와 조각상 사이를 산책하기 좋습니다."
+    },
+    {
+      "id": "global_바콜로드_act_1",
+      "name": "캠프에스토한 하이랜드 리조트",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 5,
+        "healing": 2,
+        "culture": 1,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "수영장, 집라인, 테마 존 등 다양한 즐길 거리가 있는 산속의 대형 리조트입니다."
+    },
+    {
+      "id": "global_바콜로드_res_1",
+      "name": "아이다스 치킨 이나살",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "manokan",
+      "desc": "바콜로드의 대표 음식인 숯불 닭구이 '이나살'을 가장 맛있게 하는 현지 맛집입니다."
+    },
+    {
+      "id": "global_바콜로드_res_2",
+      "name": "압바스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "해산물과 깔끔한 퓨전 요리를 선보이며 현지인들에게 오랫동안 사랑받는 곳입니다."
+    },
+    {
+      "id": "global_바콜로드_res_3",
+      "name": "발렌시아나 하우스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 스페인식 볶음밥과 현지 요리를 결합한 풍미 깊은 요리를 제공합니다."
+    },
+    {
+      "id": "global_바콜로드_caf_1",
+      "name": "세일라 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 5,
+        "healing": 3,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바콜로드에서 가장 유명한 디저트 카페로, 다양한 케이크와 페이스트리가 일품입니다."
+    },
+    {
+      "id": "global_바콜로드_caf_2",
+      "name": "톰스 디오라마 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "정교한 미니어처 디오라마를 감상하며 조용하게 커피 한 잔의 여유를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_바콜로드_nig_1",
+      "name": "마노칸 컨트리 야시장",
+      "category": "nightview",
+      "subCategory": "market",
+      "themes": {
+        "healing": 2,
+        "culture": 4,
+        "activity": 2,
+        "food": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 수많은 숯불 연기와 함께 활기찬 분위기에서 야식을 즐길 수 있는 거리입니다."
+    }
+  ],
+  "일로일로": [
+    {
+      "id": "global_일로일로_att_1",
+      "name": "미아가오 성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "유네스코 세계문화유산으로 지정된 성당으로, 화려한 부조 조각이 매우 인상적입니다."
+    },
+    {
+      "id": "global_일로일로_att_2",
+      "name": "하로 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "jaro",
+      "desc": "수컷 성인들의 동상이 도열해 있는 독특한 건축 양식의 일로일로 대표 성당입니다."
+    },
+    {
+      "id": "global_일로일로_rel_1",
+      "name": "일로일로 리버 에스플러네이드",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "강변을 따라 길게 조성된 산책로로, 선선한 강바람을 맞으며 휴식하기 좋은 곳입니다."
+    },
+    {
+      "id": "global_일로일로_act_1",
+      "name": "기간테스 군도 호핑투어",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 3,
+        "culture": 1,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "ocean",
+      "desc": "숨겨진 천혜의 자연을 간직한 섬들을 돌며 스노클링과 신선한 가리비 구이를 즐기는 투어입니다."
+    },
+    {
+      "id": "global_일로일로_res_1",
+      "name": "네통스 라파즈 바초이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "market",
+      "desc": "일로일로의 소울푸드인 깊은 맛의 고기 국수 '바초이'의 원조 식당입니다."
+    },
+    {
+      "id": "global_일로일로_res_2",
+      "name": "브레이크스루 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "해변가에서 바다를 바라보며 갓 잡은 싱싱한 해산물 요리를 맛볼 수 있는 유명 식당입니다."
+    },
+    {
+      "id": "global_일로일로_res_3",
+      "name": "타토이스 마녹칸",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "일로일로식 전통 토종닭 구이와 푸짐한 현지 요리를 제공하는 대형 레스토랑입니다."
+    },
+    {
+      "id": "global_일로일로_caf_1",
+      "name": "마지 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오래된 저택을 개조한 고풍스러운 분위기에서 맛있는 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_일로일로_caf_2",
+      "name": "도아 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 인테리어와 품질 좋은 스페셜티 커피를 자랑하는 현지 핫플레이스입니다."
+    },
+    {
+      "id": "global_일로일로_nig_1",
+      "name": "스몰빌 컴플렉스",
+      "category": "nightview",
+      "subCategory": "street",
+      "themes": {
+        "healing": 2,
+        "culture": 3,
+        "activity": 4,
+        "food": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 바와 라이브 클럽, 레스토랑이 밀집해 있어 일로일로의 활기찬 나이트라이프를 즐길 수 있습니다."
+    }
+  ],
+  "카가얀데오로": [
+    {
+      "id": "global_카가얀데오로_att_1",
+      "name": "마카함부스 동굴",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 4,
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "미국-필리핀 전쟁 당시의 역사적인 유적지이자 신비로운 자연 동굴입니다."
+    },
+    {
+      "id": "global_카가얀데오로_att_2",
+      "name": "메이플스 캐년",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "웅장한 협곡과 울창한 숲이 어우러져 트레킹과 사진 촬영하기 좋은 명소입니다."
+    },
+    {
+      "id": "global_카가얀데오로_rel_1",
+      "name": "가스톤 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "culture": 3,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "시청 앞의 넓고 평화로운 공원으로 저녁에는 아름다운 분수 쇼가 펼쳐집니다."
+    },
+    {
+      "id": "global_카가얀데오로_act_1",
+      "name": "급류 래프팅",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 1,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "카가얀 강에서 즐기는 짜릿하고 스릴 넘치는 최고의 급류 래프팅 체험입니다."
+    },
+    {
+      "id": "global_카가얀데오로_res_1",
+      "name": "하이 릿지",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 5,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "hill",
+      "desc": "탁 트인 도시 전망과 함께 로맨틱한 식사를 즐길 수 있는 산 중턱의 레스토랑입니다."
+    },
+    {
+      "id": "global_카가얀데오로_res_2",
+      "name": "쿠야 제이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "mall",
+      "desc": "깔끔하고 세련된 필리핀 전통 요리를 선보이는 인기 프랜차이즈 식당입니다."
+    },
+    {
+      "id": "global_카가얀데오로_res_3",
+      "name": "비카스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 참치와 해산물 요리를 저렴하게 마음껏 먹을 수 있는 로컬 맛집입니다."
+    },
+    {
+      "id": "global_카가얀데오로_caf_1",
+      "name": "밀레니엄 커피",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "편안한 소파 좌석과 맛있는 페이스트리로 휴식을 취하기 좋은 아늑한 카페입니다."
+    },
+    {
+      "id": "global_카가얀데오로_caf_2",
+      "name": "보스 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "필리핀 로컬 원두를 활용한 진한 커피를 맛볼 수 있는 유명 체인 카페입니다."
+    },
+    {
+      "id": "global_카가얀데오로_nig_1",
+      "name": "디비소리아 나이트 카페",
+      "category": "nightview",
+      "subCategory": "market",
+      "themes": {
+        "healing": 3,
+        "culture": 4,
+        "activity": 3,
+        "food": 5,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "주말 밤마다 거리가 통제되고 다양한 먹거리와 볼거리가 넘쳐나는 활기찬 야시장입니다."
+    }
+  ],
+  "제네럴산토스": [
+    {
+      "id": "global_제네럴산토스_att_1",
+      "name": "제네럴산토스 어항 복합단지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 4,
+        "healing": 1,
+        "activity": 2,
+        "food": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "coast",
+      "desc": "거대한 다랑어가 경매되는 활기찬 아침 풍경을 볼 수 있는 '참치 수도'의 상징입니다."
+    },
+    {
+      "id": "global_제네럴산토스_att_2",
+      "name": "플라자 헤네랄 산토스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 4,
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도시의 중심 광장으로 깔끔하게 조성된 공원과 기념비가 있어 산책하기 좋습니다."
+    },
+    {
+      "id": "global_제네럴산토스_rel_1",
+      "name": "사랑가니 만 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "아름다운 일몰과 고운 모래사장을 즐기며 여유롭게 쉴 수 있는 청정 해변입니다."
+    },
+    {
+      "id": "global_제네럴산토스_act_1",
+      "name": "파퀴아오 체육관 방문",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "activity": 4,
+        "healing": 1,
+        "culture": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계적인 복서 매니 파퀴아오의 고향에서 그의 훈련장과 기념관을 둘러보는 체험입니다."
+    },
+    {
+      "id": "global_제네럴산토스_res_1",
+      "name": "튜나 그릴",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "가장 신선한 참치 뱃살 구이와 다양한 해산물 요리를 숯불에 구워 제공합니다."
+    },
+    {
+      "id": "global_제네럴산토스_res_2",
+      "name": "롤리스 시푸드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "참치 회부터 조림까지 참치를 활용한 필리핀 전통식 요리를 전문으로 하는 식당입니다."
+    },
+    {
+      "id": "global_제네럴산토스_res_3",
+      "name": "빅비스 하우스",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 4,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "mall",
+      "desc": "푸짐한 양의 바비큐 폭립과 서양식 메뉴로 현지인들에게 인기 있는 가족 식당입니다."
+    },
+    {
+      "id": "global_제네럴산토스_caf_1",
+      "name": "아와티 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던하고 깔끔한 분위기 속에서 달콤한 케이크와 시원한 프라페를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_제네럴산토스_caf_2",
+      "name": "바리스타 커피하우스",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "food": 5,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 내린 향긋한 에스프레소와 아늑한 인테리어를 자랑합니다."
+    },
+    {
+      "id": "global_제네럴산토스_nig_1",
+      "name": "티옹손 아케이드",
+      "category": "nightview",
+      "subCategory": "market",
+      "themes": {
+        "healing": 2,
+        "culture": 4,
+        "activity": 3,
+        "food": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "신선한 해산물을 직접 고르면 즉석에서 요리해 주는 활기찬 야외 야시장입니다."
+    }
+  ],
+  "앙헬레스": [
+    {
+      "id": "global_앙헬레스_att_1",
+      "name": "홀리 로사리 교구 성당",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페인 식민지 시대에 지어진 두 개의 종탑이 아름다운 역사적인 성당입니다."
+    },
+    {
+      "id": "global_앙헬레스_att_2",
+      "name": "파민투안 저택",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "필리핀의 독립 역사가 서려 있는 유서 깊은 건축물로 현재는 박물관으로 쓰입니다."
+    },
+    {
+      "id": "global_앙헬레스_rel_1",
+      "name": "살라콧 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거대한 필리핀 전통 모자 모양의 정자가 있는 평화로운 공원으로 휴식하기 좋습니다."
+    },
+    {
+      "id": "global_앙헬레스_act_1",
+      "name": "샌드박스 파크",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 5,
+        "healing": 1,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "대형 롤러코스터 짚라인과 자이언트 스윙 등 익스트림 액티비티를 즐길 수 있는 테마파크입니다."
+    },
+    {
+      "id": "global_앙헬레스_res_1",
+      "name": "알링 루싱 시식",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "돼지머리와 내장을 철판에 볶은 요리 '시식'을 최초로 개발한 원조 로컬 맛집입니다."
+    },
+    {
+      "id": "global_앙헬레스_res_2",
+      "name": "밀라즈 톡와트 바보이",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바삭하게 튀긴 돼지고기와 두부 요리가 일품인 앙헬레스의 숨은 맛집입니다."
+    },
+    {
+      "id": "global_앙헬레스_res_3",
+      "name": "스위스 샬레",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정통 유럽식 퐁듀와 고급스러운 스테이크를 맛볼 수 있는 세련된 레스토랑입니다."
+    },
+    {
+      "id": "global_앙헬레스_caf_1",
+      "name": "디저트 팩토리",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양하고 달콤한 케이크와 밀크티를 넓고 쾌적한 공간에서 즐길 수 있습니다."
+    },
+    {
+      "id": "global_앙헬레스_caf_2",
+      "name": "카페 다이아그",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던한 인테리어와 정통 에스프레소의 조화가 훌륭한 카페입니다."
+    },
+    {
+      "id": "global_앙헬레스_nig_1",
+      "name": "발리바고 워킹 스트리트",
+      "category": "nightview",
+      "subCategory": "street",
+      "themes": {
+        "healing": 1,
+        "culture": 3,
+        "activity": 4,
+        "food": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "balibago",
+      "desc": "화려한 네온사인 아래 다양한 레스토랑과 바가 밀집한 나이트라이프의 중심지입니다."
+    }
+  ],
+  "다구판": [
+    {
+      "id": "global_다구판_att_1",
+      "name": "다구판 시티 플라자",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 4,
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시민들의 휴식처이자 다양한 행사가 열리는 다구판의 중심 광장입니다."
+    },
+    {
+      "id": "global_다구판_att_2",
+      "name": "다구판 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오랜 역사를 간직한 성당으로 아름다운 건축미와 고즈넉한 분위기가 특징입니다."
+    },
+    {
+      "id": "global_다구판_rel_1",
+      "name": "톤달리간 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "긴 해안선과 그늘을 만들어주는 소나무 숲이 있어 피크닉과 해수욕에 좋습니다."
+    },
+    {
+      "id": "global_다구판_act_1",
+      "name": "다웰 리버 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "activity": 3,
+        "healing": 4,
+        "culture": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "작은 유람선을 타고 다구판 강을 유람하며 맹그로브 숲과 자연을 만끽할 수 있습니다."
+    },
+    {
+      "id": "global_다구판_res_1",
+      "name": "마투티나스 시푸드",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "다구판 특산물인 밀크피쉬(방우스) 구이와 신선한 해산물이 맛있는 유명 식당입니다."
+    },
+    {
+      "id": "global_다구판_res_2",
+      "name": "실렌트로 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 필리핀 음식을 현대적인 감각으로 풀어낸 세련된 현지 맛집입니다."
+    },
+    {
+      "id": "global_다구판_res_3",
+      "name": "쿠야 막스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "저렴한 가격에 푸짐한 로컬 바비큐와 그릴 요리를 맛볼 수 있는 가성비 식당입니다."
+    },
+    {
+      "id": "global_다구판_caf_1",
+      "name": "카피톨리오 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 필리핀 전통 디저트와 맛있는 커피를 제공하는 카페입니다."
+    },
+    {
+      "id": "global_다구판_caf_2",
+      "name": "옐로우 트리 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "인테리어가 예뻐서 사진 찍기 좋으며, 조용하게 차를 마시기 좋은 공간입니다."
+    },
+    {
+      "id": "global_다구판_nig_1",
+      "name": "톤달리간 블루라이트 파크",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "culture": 1,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "해변 공원에 다채로운 조명이 켜지며 산책과 가벼운 길거리 음식을 즐길 수 있습니다."
+    }
+  ],
+  "수빅": [
+    {
+      "id": "global_수빅_att_1",
+      "name": "쥬빅 사파리",
+      "category": "attraction",
+      "subCategory": "theme_park",
+      "themes": {
+        "culture": 1,
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "호랑이에게 직접 먹이를 주고 밀림 속 야생 동물을 가까이서 볼 수 있는 사파리입니다."
+    },
+    {
+      "id": "global_수빅_att_2",
+      "name": "오션 어드벤처",
+      "category": "attraction",
+      "subCategory": "theme_park",
+      "themes": {
+        "culture": 1,
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "자연 바다를 이용한 수족관으로 돌고래 쇼와 바다사자 공연이 인기가 많습니다."
+    },
+    {
+      "id": "global_수빅_rel_1",
+      "name": "수빅 베이 보드워크",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "수빅만의 고요한 바다를 감상하며 산책하기 좋은 해변가 산책로입니다."
+    },
+    {
+      "id": "global_수빅_act_1",
+      "name": "트리탑 어드벤처",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 5,
+        "healing": 2,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "forest",
+      "desc": "열대 우림의 거대한 나무 사이를 오가며 짚라인 등 익스트림 액티비티를 체험합니다."
+    },
+    {
+      "id": "global_수빅_res_1",
+      "name": "텍사스 조스",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정통 미국식 훈제 바비큐 립과 스테이크를 푸짐하게 즐길 수 있는 유명 맛집입니다."
+    },
+    {
+      "id": "global_수빅_res_2",
+      "name": "미트 플러스 카페",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 4,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "원하는 고기를 직접 고르면 즉석에서 스테이크로 구워주는 가성비 훌륭한 식당입니다."
+    },
+    {
+      "id": "global_수빅_res_3",
+      "name": "게리스 그릴 수빅",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "달콤 짭짤한 오징어 통구이와 필리핀 요리를 바다를 바라보며 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_수빅_caf_1",
+      "name": "엑스트랙트 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "건강한 과일 스무디와 맛있는 커피, 가벼운 샌드위치를 즐기며 쉬어가기 좋습니다."
+    },
+    {
+      "id": "global_수빅_caf_2",
+      "name": "매직 라군 카페",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 3,
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "작은 호수 위에 떠 있는 듯한 야외 좌석에서 힐링 타임을 가질 수 있는 독특한 카페입니다."
+    },
+    {
+      "id": "global_수빅_nig_1",
+      "name": "수빅 요트클럽 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "정박해 있는 럭셔리 요트들과 은은한 조명이 어우러져 이국적인 밤 풍경을 선사합니다."
+    }
+  ],
+  "타가이타이": [
+    {
+      "id": "global_타가이타이_att_1",
+      "name": "따알 화산",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "세계에서 가장 작은 활화산 중 하나로, 호수 안의 화산이라는 독특한 풍경을 자랑합니다."
+    },
+    {
+      "id": "global_타가이타이_att_2",
+      "name": "피플스 파크 인 더 스카이",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 3,
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "산 정상에 위치해 타가이타이의 파노라마 전경을 감상할 수 있는 미완성된 영빈관입니다."
+    },
+    {
+      "id": "global_타가이타이_rel_1",
+      "name": "피크닉 그로브",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "따알 호수를 내려다보며 가족들과 평화롭게 피크닉과 승마, 짚라인을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_타가이타이_act_1",
+      "name": "스카이 랜치",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 5,
+        "healing": 2,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아찔한 높이의 대관람차와 다양한 놀이기구가 있어 아이들과 함께하기 좋은 유원지입니다."
+    },
+    {
+      "id": "global_타가이타이_res_1",
+      "name": "안토니오스",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "food": 5,
+        "culture": 2,
+        "healing": 4,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "suburb",
+      "desc": "아름다운 정원과 함께 최고급 파인 다이닝을 경험할 수 있는 필리핀 최고의 레스토랑 중 하나입니다."
+    },
+    {
+      "id": "global_타가이타이_res_2",
+      "name": "조세핀 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 4,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "타가이타이의 탁 트인 화산 뷰를 보며 필리핀 전통 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_타가이타이_res_3",
+      "name": "발라이 다코",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 5,
+        "healing": 3,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "커다란 전통 가옥에서 깊은 맛의 필리핀 정통 국물 요리 '불랄로'를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_타가이타이_caf_1",
+      "name": "백 오브 빈스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 5,
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "동화 같은 아기자기한 인테리어 속에서 맛있는 팬케이크와 무제한 커피를 즐깁니다."
+    },
+    {
+      "id": "global_타가이타이_caf_2",
+      "name": "스타벅스 타가이타이",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "따알 호수의 절경이 한눈에 들어오는 테라스를 가져 세계적으로 경치가 아름답기로 유명합니다."
+    },
+    {
+      "id": "global_타가이타이_nig_1",
+      "name": "스카이 랜치 대관람차 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조명이 켜진 대관람차에서 타가이타이의 시원한 밤공기와 아름다운 야경을 감상할 수 있습니다."
+    }
+  ],
+  "사말": [
+    {
+      "id": "global_사말_att_1",
+      "name": "몽포트 박쥐 서식지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "island",
+      "desc": "기네스북에 등재된 거대한 동굴로, 수백만 마리의 과일박쥐가 매달려 있는 장관을 봅니다."
+    },
+    {
+      "id": "global_사말_att_2",
+      "name": "하기밋 폭포",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "forest",
+      "desc": "울창한 숲속 층층이 떨어지는 맑고 시원한 계곡물에서 수영과 물놀이를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_사말_rel_1",
+      "name": "펄 팜 비치 리조트",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "과거 진주 양식장이었던 곳을 개조한 고급 리조트로 프라이빗하고 평화로운 휴식을 제공합니다."
+    },
+    {
+      "id": "global_사말_act_1",
+      "name": "탈리쿠드 섬 호핑",
+      "category": "activity",
+      "subCategory": "water_sports",
+      "themes": {
+        "activity": 5,
+        "healing": 3,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "ocean",
+      "desc": "수정처럼 맑은 바닷속 산호 정원을 탐험하는 최고의 스노클링 및 다이빙 포인트입니다."
+    },
+    {
+      "id": "global_사말_res_1",
+      "name": "섹데아 비치 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 4,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "바다를 보며 갓 잡은 싱싱한 해산물과 로컬 바비큐를 분위기 있게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_사말_res_2",
+      "name": "카파티안 해변 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 3,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "coast",
+      "desc": "저렴하고 맛있는 필리핀 가정식을 모래사장 위 방갈로에서 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_사말_res_3",
+      "name": "파라다이스 리조트 그릴",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 2,
+        "healing": 4,
+        "activity": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "파도 소리를 들으며 숯불에 구운 꼬치 요리와 시원한 맥주를 곁들이기 좋은 식당입니다."
+    },
+    {
+      "id": "global_사말_caf_1",
+      "name": "캄푸에호 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 3,
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "사말 섬의 높은 곳에 위치해 탁 트인 바다 뷰를 보며 커피를 마실 수 있는 힐링 카페입니다."
+    },
+    {
+      "id": "global_사말_caf_2",
+      "name": "아일랜드 브루스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 3,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "섬 여행 중 시원한 아이스커피와 달달한 디저트로 더위를 식힐 수 있는 아늑한 공간입니다."
+    },
+    {
+      "id": "global_사말_nig_1",
+      "name": "선셋 비치 야경",
+      "category": "nightview",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "사말 섬 서해안에서 다바오 시티의 불빛과 함께 아름답게 저무는 노을을 감상합니다."
+    }
+  ],
+  "바네스코": [
+    {
+      "id": "global_바네스코_att_1",
+      "name": "바스코 등대",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 4,
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hill",
+      "desc": "푸른 언덕 위에 우뚝 선 아름다운 등대로, 끝없이 펼쳐진 바다와 초원의 절경을 선사합니다."
+    },
+    {
+      "id": "global_바네스코_att_2",
+      "name": "말보로 힐스",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "culture": 1,
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "소를 방목하는 넓은 초록빛 목초지와 푸른 바다가 어우러진 그림 같은 언덕입니다."
+    },
+    {
+      "id": "global_바네스코_rel_1",
+      "name": "발루간 볼더 비치",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "모래 대신 둥글고 커다란 화산암들이 해변을 가득 채우고 있는 신비로운 해변입니다."
+    },
+    {
+      "id": "global_바네스코_act_1",
+      "name": "바양 롤링 힐스 트레킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "activity": 4,
+        "healing": 4,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "mountain",
+      "desc": "끝없는 언덕을 걸으며 시원한 바닷바람과 함께 바타네스의 웅장한 대자연을 만끽합니다."
+    },
+    {
+      "id": "global_바네스코_res_1",
+      "name": "푼다시온 파시타",
+      "category": "restaurant",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 5,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "hill",
+      "desc": "아름다운 예술 작품과 전망이 어우러진 언덕 위 호텔에서 즐기는 로맨틱한 식사입니다."
+    },
+    {
+      "id": "global_바네스코_res_2",
+      "name": "펜션 이바탄",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바타네스 전통 음식인 날치 요리와 토속적인 이바탄 잎밥을 제대로 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_바네스코_res_3",
+      "name": "바스코 시푸드 오두막",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 3,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "당일 어획한 신선한 바닷가재와 생선 요리를 바닷가 오두막에서 소박하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_바네스코_caf_1",
+      "name": "정직한 카페",
+      "category": "cafe",
+      "subCategory": "unique",
+      "themes": {
+        "food": 3,
+        "healing": 4,
+        "culture": 5,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "직원이 없이 무인으로 운영되며 손님이 양심껏 돈을 지불하는 독특하고 따뜻한 카페입니다."
+    },
+    {
+      "id": "global_바네스코_caf_2",
+      "name": "하버 뷰 커피",
+      "category": "cafe",
+      "subCategory": "view",
+      "themes": {
+        "food": 4,
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "바스코 항구의 평화로운 전경을 내려다보며 향긋한 커피와 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_바네스코_nig_1",
+      "name": "바스코 시티 밤하늘",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "culture": 1,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "공해가 없어 밤이 되면 쏟아질 듯 수많은 은하수와 별을 감상할 수 있는 완벽한 야경 포인트입니다."
+    }
+  ],
+  "말라카": [
+    {
+      "id": "global_말라카_att_1",
+      "name": "에이파모사 요새",
+      "category": "attraction",
+      "subCategory": "history",
+      "themes": {
+        "culture": 5,
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "heritage",
+      "desc": "포르투갈 지배 시절 세워진 요새의 유적으로, 말라카의 파란만장한 역사를 보여줍니다."
+    },
+    {
+      "id": "global_말라카_att_2",
+      "name": "그리스도 교회",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "dutch_square",
+      "desc": "네덜란드 광장에 위치한 붉은색 벽돌의 아름다운 교회로 말라카의 대표적인 랜드마크입니다."
+    },
+    {
+      "id": "global_말라카_rel_1",
+      "name": "말라카 리버워크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "culture": 3,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "전통 가옥과 벽화가 어우러진 운치 있는 강변을 따라 여유롭게 산책할 수 있습니다."
+    },
+    {
+      "id": "global_말라카_act_1",
+      "name": "말라카 리버 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "activity": 3,
+        "healing": 4,
+        "culture": 3,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "river",
+      "desc": "배를 타고 말라카 강을 유람하며 오래된 건물들과 아름다운 야경을 감상하는 투어입니다."
+    },
+    {
+      "id": "global_말라카_res_1",
+      "name": "청와 나욘 페라나칸",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 5,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "jonker",
+      "desc": "중국과 말레이 문화가 융합된 독특하고 맛있는 정통 '뇨냐' 요리를 선보이는 맛집입니다."
+    },
+    {
+      "id": "global_말라카_res_2",
+      "name": "화호치킨라이스볼",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "jonker",
+      "desc": "동그랗게 빚은 밥과 부드러운 닭고기를 함께 먹는 말라카 명물 치킨 라이스 볼 식당입니다."
+    },
+    {
+      "id": "global_말라카_res_3",
+      "name": "파모사 사테 첼룹",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "원하는 꼬치를 골라 진한 땅콩 소스 국물에 끓여 먹는 독특한 사테 요리 전문점입니다."
+    },
+    {
+      "id": "global_말라카_caf_1",
+      "name": "지오그래퍼 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 3,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "jonker",
+      "desc": "오래된 코너 건물을 개조한 분위기 좋은 카페로 시원한 맥주와 디저트를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_말라카_caf_2",
+      "name": "더 데일리 픽스",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 5,
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "jonker",
+      "desc": "빈티지 상점 안쪽에 숨겨진 힙한 카페로 촉촉하고 달콤한 판단 팬케이크가 유명합니다."
+    },
+    {
+      "id": "global_말라카_nig_1",
+      "name": "존커 스트리트 야시장",
+      "category": "nightview",
+      "subCategory": "market",
+      "themes": {
+        "healing": 2,
+        "culture": 4,
+        "activity": 3,
+        "food": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "jonker",
+      "desc": "주말 밤마다 열리는 활기찬 야시장으로, 다양한 길거리 음식과 골동품을 구경할 수 있습니다."
+    }
+  ],
+  "조호바루": [
+    {
+      "id": "global_조호바루_att_1",
+      "name": "레고랜드 말레이시아",
+      "category": "attraction",
+      "subCategory": "theme_park",
+      "themes": {
+        "culture": 1,
+        "healing": 2,
+        "activity": 5,
+        "food": 2,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nusajaya",
+      "desc": "아시아 최초의 레고랜드로, 수많은 레고 브릭으로 만들어진 볼거리와 신나는 놀이기구가 가득합니다."
+    },
+    {
+      "id": "global_조호바루_att_2",
+      "name": "술탄 아부 바카르 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "culture": 5,
+        "healing": 3,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "영국 빅토리아 양식과 무어 양식이 결합된 눈부시게 아름다운 백색의 이슬람 사원입니다."
+    },
+    {
+      "id": "global_조호바루_rel_1",
+      "name": "단가 베이",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "culture": 2,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "해 질 녘 산책하기 좋은 해변 공원으로 야외 놀이공원과 다양한 식당들이 모여 있습니다."
+    },
+    {
+      "id": "global_조호바루_act_1",
+      "name": "앵그리버드 액티비티 파크",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": {
+        "activity": 5,
+        "healing": 1,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "komtar",
+      "desc": "쾌적한 실내에서 아이들과 함께 트램펄린과 장애물 코스를 즐기는 테마 액티비티 센터입니다."
+    },
+    {
+      "id": "global_조호바루_res_1",
+      "name": "깜풍 알리 마막",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "저렴한 가격에 미고랭, 로티 차나이 등 정통 말레이-인도 길거리 음식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_조호바루_res_2",
+      "name": "토쿠토쿠 라멘",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "food": 4,
+        "culture": 1,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "진하고 깊은 국물 맛의 돈코츠 라멘으로 조호바루 현지인들에게 인기 있는 일식당입니다."
+    },
+    {
+      "id": "global_조호바루_res_3",
+      "name": "세다프 코너",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "다양한 말레이시아 전통 요리와 향긋한 코코넛 라이스(나시르막)를 깔끔하게 제공합니다."
+    },
+    {
+      "id": "global_조호바루_caf_1",
+      "name": "히압 주 베이커리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "food": 5,
+        "healing": 2,
+        "culture": 4,
+        "activity": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "heritage",
+      "desc": "100년이 넘은 전통 화덕에서 구워내는 폭신한 바나나 케이크가 매우 유명한 노포 빵집입니다."
+    },
+    {
+      "id": "global_조호바루_caf_2",
+      "name": "루트 66 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "heritage",
+      "desc": "빈티지하고 힙한 분위기 속에서 정성스럽게 내린 스페셜티 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_조호바루_nig_1",
+      "name": "푸테리 하버 야경",
+      "category": "nightview",
+      "subCategory": "marina",
+      "themes": {
+        "healing": 5,
+        "culture": 2,
+        "activity": 1,
+        "food": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "nusajaya",
+      "desc": "고급 요트들이 정박한 항구를 따라 예쁜 조명이 켜지며 이국적이고 세련된 야경을 자랑합니다."
+    }
+  ],
+  "쿠칭": [
+    {
+      "id": "global_쿠칭_att_1",
+      "name": "사라왁 문화 마을",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "culture": 5,
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "다양한 원주민 부족의 전통 가옥과 생활 방식, 화려한 민속 공연을 체험하는 살아있는 박물관입니다."
+    },
+    {
+      "id": "global_쿠칭_att_2",
+      "name": "고양이 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "culture": 3,
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "'고양이의 도시' 쿠칭을 상징하는 전 세계의 다양한 고양이 관련 예술품과 자료를 전시합니다."
+    },
+    {
+      "id": "global_쿠칭_rel_1",
+      "name": "쿠칭 워터프론트",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "culture": 3,
+        "activity": 2,
+        "food": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "사라왁 강을 따라 조성된 산책로로, 예쁜 조각상과 쉴 공간이 마련된 시민들의 휴식처입니다."
+    },
+    {
+      "id": "global_쿠칭_act_1",
+      "name": "바코 국립공원 트레킹",
+      "category": "activity",
+      "subCategory": "nature",
+      "themes": {
+        "activity": 5,
+        "healing": 4,
+        "culture": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "bako",
+      "desc": "희귀한 코주부원숭이와 기암괴석, 열대 우림을 만날 수 있는 흥미진진한 정글 트레킹 코스입니다."
+    },
+    {
+      "id": "global_쿠칭_res_1",
+      "name": "탑 스팟 푸드 코트",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "food": 5,
+        "culture": 3,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "건물 옥상에 위치해 활기찬 분위기 속에서 저렴하고 신선한 대형 해산물을 맘껏 고를 수 있습니다."
+    },
+    {
+      "id": "global_쿠칭_res_2",
+      "name": "포춘 누들",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 4,
+        "healing": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "쿠칭의 명물인 구불구불하고 쫄깃한 계란 국수 '꼴로 미'를 가장 맛있게 하는 로컬 식당입니다."
+    },
+    {
+      "id": "global_쿠칭_res_3",
+      "name": "레팍 마막",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "food": 4,
+        "culture": 3,
+        "healing": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "늦은 밤까지 운영하며 사라왁 전통 락사와 떼타릭을 가볍게 먹기 좋은 야외 식당입니다."
+    },
+    {
+      "id": "global_쿠칭_caf_1",
+      "name": "블랙빈 커피 앤 티",
+      "category": "cafe",
+      "subCategory": "roastery",
+      "themes": {
+        "food": 5,
+        "healing": 3,
+        "culture": 2,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "사라왁 현지 농장에서 수확한 원두만을 직접 로스팅하여 깊고 진한 현지 커피를 제공합니다."
+    },
+    {
+      "id": "global_쿠칭_caf_2",
+      "name": "더 스미스 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "food": 4,
+        "healing": 4,
+        "culture": 1,
+        "activity": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "카펜터 스트리트의 낡은 철물점을 개조해 독특한 빈티지 감성과 달콤한 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_쿠칭_nig_1",
+      "name": "사라왁 주 의사당 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "culture": 2,
+        "activity": 1,
+        "food": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "river",
+      "desc": "황금빛 우산 모양의 독특한 주 의사당 건물이 강물에 반사되며 환상적인 야경을 연출합니다."
+    },
+    {
+      "id": "global_쿠칭_att_1",
+      "name": "바코 국립공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "기암괴석과 다양한 트레킹 코스를 즐길 수 있는 사라왁 주에서 가장 오래된 국립공원입니다."
+    },
+    {
+      "id": "global_쿠칭_att_2",
+      "name": "사라왁 문화 마을",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "보르네오 섬 원주민들의 전통 가옥과 생활상을 재현한 살아있는 박물관입니다."
+    },
+    {
+      "id": "global_쿠칭_rel_1",
+      "name": "쿠칭 워터프론트",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "사라왁 강변을 따라 조성된 산책로로 일몰을 감상하며 여유를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_쿠칭_act_1",
+      "name": "세멩고 와일드라이프 센터",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "반야생 상태의 오랑우탄들이 먹이를 먹는 모습을 가까이서 관찰할 수 있습니다."
+    },
+    {
+      "id": "global_쿠칭_res_1",
+      "name": "톱 스팟 푸드코트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "빌딩 옥상에 위치해 신선한 해산물 요리를 합리적인 가격에 즐길 수 있는 야외 식당가입니다."
+    },
+    {
+      "id": "global_쿠칭_res_2",
+      "name": "레포 켕",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "사라왁 원주민의 전통 요리를 모던한 분위기에서 제공하는 레스토랑입니다."
+    },
+    {
+      "id": "global_쿠칭_res_3",
+      "name": "총 춘 카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "쿠칭식 락사로 현지인과 여행객 모두에게 사랑받는 전설적인 아침 식당입니다."
+    },
+    {
+      "id": "global_쿠칭_caf_1",
+      "name": "블랙 빈 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "사라왁 현지에서 재배된 원두로 로스팅한 훌륭한 커피를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_쿠칭_caf_2",
+      "name": "더 인디고 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "예술적인 감각과 개성 있는 소품들로 꾸며진 브런치 카페입니다."
+    },
+    {
+      "id": "global_쿠칭_nig_1",
+      "name": "다루하나 브릿지 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤에 화려한 조명이 켜지는 S자 모양의 도보교로 쿠칭의 새로운 야경 명소입니다."
+    }
+  ],
+  "이포": [
+    {
+      "id": "global_이포_att_1",
+      "name": "켈리스 캐슬",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아에 있는 미완성의 영국식 성곽으로 신비로운 분위기를 자아냅니다."
+    },
+    {
+      "id": "global_이포_att_2",
+      "name": "페락 동굴 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거대한 석회암 동굴 안에 자리 잡은 불교 사원으로 아름다운 벽화가 인상적입니다."
+    },
+    {
+      "id": "global_이포_rel_1",
+      "name": "군눙 랑 레크리에이션 파크",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수와 석회암 언덕이 어우러진 평화로운 자연 공원으로 보트 투어를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_이포_act_1",
+      "name": "콩 헹 스퀘어 산책",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 2,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "과거와 현재가 공존하는 예술적인 광장으로 수공예품과 벽화를 구경하기 좋습니다."
+    },
+    {
+      "id": "global_이포_res_1",
+      "name": "로우 웡 투게",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "이포의 명물인 숙주나물 닭고기를 맛볼 수 있는 유명 현지 식당입니다."
+    },
+    {
+      "id": "global_이포_res_2",
+      "name": "포산 딤섬",
+      "category": "restaurant",
+      "subCategory": "chinese",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "다양하고 신선한 딤섬을 제공하는 이포 최고의 딤섬 맛집입니다."
+    },
+    {
+      "id": "global_이포_res_3",
+      "name": "텍키 닭고기 덮밥",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 즐겨 찾는 소박하고 맛있는 닭고기 요리 전문점입니다."
+    },
+    {
+      "id": "global_이포_caf_1",
+      "name": "남흥 화이트 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "이포 화이트 커피의 발상지로 진하고 달콤한 커피를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_이포_caf_2",
+      "name": "플랜 비",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현대적인 인테리어와 세련된 브런치를 제공하는 인기 카페입니다."
+    },
+    {
+      "id": "global_이포_nig_1",
+      "name": "이포 올드타운 벽화거리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 조명과 함께 더욱 감성적으로 변하는 이포 구시가지의 벽화거리입니다."
+    }
+  ],
+  "쿠안탄": [
+    {
+      "id": "global_쿠안탄_att_1",
+      "name": "텔룩 쳄페닥",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "쿠안탄의 대표적인 해변으로 넓은 모래사장과 맑은 바다가 아름다운 곳입니다."
+    },
+    {
+      "id": "global_쿠안탄_att_2",
+      "name": "술탄 아흐마드 샤 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 푸른색 돔과 미나렛을 자랑하는 파항주 최대의 이슬람 사원입니다."
+    },
+    {
+      "id": "global_쿠안탄_rel_1",
+      "name": "타만 겔로라",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 나무 그늘 아래서 산책이나 조깅을 즐기기 좋은 조용한 해변 공원입니다."
+    },
+    {
+      "id": "global_쿠안탄_act_1",
+      "name": "숭가이 판단 폭포 트레킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자연 속에서 시원한 폭포수를 맞으며 피크닉과 수영을 즐길 수 있는 장소입니다."
+    },
+    {
+      "id": "global_쿠안탄_res_1",
+      "name": "레스토랑 알로 아카르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현지인들에게 사랑받는 중식 해산물 요리 전문점입니다."
+    },
+    {
+      "id": "global_쿠안탄_res_2",
+      "name": "아나 이칸 바카르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "매콤한 소스를 발라 숯불에 구워내는 현지식 해산물 구이 맛집입니다."
+    },
+    {
+      "id": "global_쿠안탄_res_3",
+      "name": "사라 타이 키친",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정통 태국 요리와 똠얌을 맛볼 수 있는 인기 레스토랑입니다."
+    },
+    {
+      "id": "global_쿠안탄_caf_1",
+      "name": "쿨라 케이크",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "쿠안탄에서 가장 유명한 디저트 카페로 망고 치즈케이크가 일품입니다."
+    },
+    {
+      "id": "global_쿠안탄_caf_2",
+      "name": "롯 66",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "감각적인 분위기 속에서 커피와 다양한 브런치를 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_쿠안탄_nig_1",
+      "name": "콴탄 리버 크루즈 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤하늘을 수놓는 별빛과 함께 강변의 평화로운 야경을 감상할 수 있습니다."
+    }
+  ],
+  "샌다칸": [
+    {
+      "id": "global_샌다칸_att_1",
+      "name": "세필록 오랑우탄 재활센터",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "야생 오랑우탄이 자연으로 돌아갈 수 있도록 돕는 의미 깊은 보존 센터입니다."
+    },
+    {
+      "id": "global_샌다칸_att_2",
+      "name": "보르네오 태양곰 보존센터",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "멸종 위기에 처한 세계에서 가장 작은 곰인 태양곰을 만날 수 있는 곳입니다."
+    },
+    {
+      "id": "global_샌다칸_rel_1",
+      "name": "샌다칸 메모리얼 파크",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "역사적인 의미를 간직한 조용하고 평화로운 추모 공원입니다."
+    },
+    {
+      "id": "global_샌다칸_act_1",
+      "name": "키나바탄간 강 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "보트를 타고 야생 원숭이와 코끼리 등 보르네오의 희귀 동물을 관찰하는 투어입니다."
+    },
+    {
+      "id": "global_샌다칸_res_1",
+      "name": "심심 씨푸드 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "수상 가옥에서 신선한 해산물 요리를 즐길 수 있는 유명 식당입니다."
+    },
+    {
+      "id": "global_샌다칸_res_2",
+      "name": "잉글리시 티 하우스",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "영국의 식민지 시대 분위기를 간직한 낭만적인 레스토랑입니다."
+    },
+    {
+      "id": "global_샌다칸_res_3",
+      "name": "산다칸 센트럴 마켓 식당가",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "저렴하고 맛있는 현지 음식들을 다양하게 맛볼 수 있는 시장 내 푸드코트입니다."
+    },
+    {
+      "id": "global_샌다칸_caf_1",
+      "name": "크라우드 91",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "편안한 분위기에서 스페셜티 커피와 디저트를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "global_샌다칸_caf_2",
+      "name": "어반 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아늑한 인테리어와 수제 케이크로 현지인들에게 인기 있는 곳입니다."
+    },
+    {
+      "id": "global_샌다칸_nig_1",
+      "name": "푸지 시 템플 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "언덕 위에 위치해 샌다칸 베이의 탁 트인 야경을 감상할 수 있는 사원입니다."
+    }
+  ],
+  "미리": [
+    {
+      "id": "global_미리_att_1",
+      "name": "니아 국립공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "웅장한 석회암 동굴과 선사시대 인류의 흔적을 탐험할 수 있는 국립공원입니다."
+    },
+    {
+      "id": "global_미리_att_2",
+      "name": "그랜드 올드 레이디",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아 최초의 유정이 있던 역사적인 기념비로 언덕 위에 위치해 있습니다."
+    },
+    {
+      "id": "global_미리_rel_1",
+      "name": "미리 시립 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 조경과 분수가 어우러져 피크닉을 즐기기에 좋은 도심 공원입니다."
+    },
+    {
+      "id": "global_미리_act_1",
+      "name": "투산 비치 산책",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "기암괴석과 아름다운 해안선을 따라 걸으며 여유를 즐기는 멋진 해변입니다."
+    },
+    {
+      "id": "global_미리_res_1",
+      "name": "밍 카페",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 맥주와 서양식 안주를 즐길 수 있는 미리의 대표적인 펍 앤 레스토랑입니다."
+    },
+    {
+      "id": "global_미리_res_2",
+      "name": "아폴로 씨푸드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 해산물을 활용한 중국식 요리로 유명한 현지 맛집입니다."
+    },
+    {
+      "id": "global_미리_res_3",
+      "name": "마담 위 랑고쉬",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "특색 있는 보르네오 전통 요리와 해산물을 제공하는 식당입니다."
+    },
+    {
+      "id": "global_미리_caf_1",
+      "name": "카페 로잘리타",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "우아하고 차분한 분위기에서 애프터눈 티를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "global_미리_caf_2",
+      "name": "챕터 원 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맛있는 커피와 다양한 페이스트리를 제공하는 힙한 분위기의 공간입니다."
+    },
+    {
+      "id": "global_미리_nig_1",
+      "name": "코코카바나 해변 일몰 및 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "바다로 떨어지는 환상적인 일몰과 로맨틱한 해변 야경을 볼 수 있는 곳입니다."
+    }
+  ],
+  "샤알람": [
+    {
+      "id": "global_샤알람_att_1",
+      "name": "블루 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "파란색 돔이 인상적인 말레이시아에서 가장 크고 아름다운 모스크 중 하나입니다."
+    },
+    {
+      "id": "global_샤알람_att_2",
+      "name": "아이시티",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 3,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "화려한 LED 조명과 다양한 테마파크 시설이 모여 있는 엔터테인먼트 시티입니다."
+    },
+    {
+      "id": "global_샤알람_rel_1",
+      "name": "샤알람 호수 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속 평화로운 인공 호수로 보트 타기와 피크닉 장소로 인기가 높습니다."
+    },
+    {
+      "id": "global_샤알람_act_1",
+      "name": "국립 식물원 자전거 타기",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "열대 우림과 다채로운 테마 정원을 자전거로 누비며 자연을 만끽하는 활동입니다."
+    },
+    {
+      "id": "global_샤알람_res_1",
+      "name": "레스토랑 카잔",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바삭하고 고소한 로티 카나이와 매콤한 카레를 맛볼 수 있는 현지 식당입니다."
+    },
+    {
+      "id": "global_샤알람_res_2",
+      "name": "가젤보 다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아늑한 목조 정자에서 전통 말레이 요리를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_샤알람_res_3",
+      "name": "스리 카다르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "나시 짬뿌르 등 다양하고 정갈한 말레이시아 가정식을 제공합니다."
+    },
+    {
+      "id": "global_샤알람_caf_1",
+      "name": "카르디간 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "빈티지한 인테리어와 따뜻한 분위기가 돋보이는 브런치 카페입니다."
+    },
+    {
+      "id": "global_샤알람_caf_2",
+      "name": "블렌드 커피 로스터스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "매장에서 직접 로스팅한 신선한 원두로 내린 커피를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_샤알람_nig_1",
+      "name": "아이시티 테마파크 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "수백만 개의 LED 조명이 빛나는 환상적인 밤 풍경을 제공합니다."
+    }
+  ],
+  "푸트라자야": [
+    {
+      "id": "global_푸트라자야_att_1",
+      "name": "푸트라 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수 위에 떠 있는 듯한 착각을 불러일으키는 아름다운 분홍빛 모스크입니다."
+    },
+    {
+      "id": "global_푸트라자야_att_2",
+      "name": "페르다나 푸트라",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아의 총리 관저로 화려한 이슬람 건축 양식을 감상할 수 있습니다."
+    },
+    {
+      "id": "global_푸트라자야_rel_1",
+      "name": "푸트라자야 보타니컬 가든",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "희귀 식물들과 잘 가꿔진 정원이 넓게 펼쳐진 힐링 명소입니다."
+    },
+    {
+      "id": "global_푸트라자야_act_1",
+      "name": "푸트라자야 호수 크루즈",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "유람선을 타고 도시의 주요 랜드마크와 현대적인 건축물을 둘러보는 투어입니다."
+    },
+    {
+      "id": "global_푸트라자야_res_1",
+      "name": "아라빅 다우",
+      "category": "restaurant",
+      "subCategory": "middle_eastern",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "중동 요리와 함께 호숫가의 멋진 전망을 즐길 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_푸트라자야_res_2",
+      "name": "우마이 카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "호수 전망과 함께 정통 말레이시아 요리를 제공하는 인기 식당입니다."
+    },
+    {
+      "id": "global_푸트라자야_res_3",
+      "name": "메단 셀레라 프레신트 8",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "다양한 현지 길거리 음식과 간식을 저렴하게 맛볼 수 있는 푸드코트입니다."
+    },
+    {
+      "id": "global_푸트라자야_caf_1",
+      "name": "글라스하우스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유리 온실 같은 독특한 인테리어 속에서 여유로운 커피 타임을 가질 수 있습니다."
+    },
+    {
+      "id": "global_푸트라자야_caf_2",
+      "name": "카페 10",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현대적인 감각과 훌륭한 커피 맛으로 젊은 층에게 사랑받는 카페입니다."
+    },
+    {
+      "id": "global_푸트라자야_nig_1",
+      "name": "스리 와와산 다리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 형형색색의 조명이 켜지며 미래 도시 같은 야경을 선사합니다."
+    }
+  ],
+  "라부안": [
+    {
+      "id": "global_라부안_att_1",
+      "name": "라부안 워 메모리얼",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "제2차 세계대전 당시 전사한 군인들을 추모하기 위해 정갈하게 조성된 묘역입니다."
+    },
+    {
+      "id": "global_라부안_att_2",
+      "name": "피스 파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전쟁을 잊지 않고 평화를 기원하기 위해 해변에 만들어진 공원입니다."
+    },
+    {
+      "id": "global_라부안_rel_1",
+      "name": "라부안 마린 뮤지엄",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "주변 해역의 해양 생물과 산호초 등 수중 생태계를 전시하는 공간입니다."
+    },
+    {
+      "id": "global_라부안_act_1",
+      "name": "팜 비치 스노클링",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "맑고 투명한 바다에서 열대어들과 함께 수영을 즐기는 해양 액티비티입니다."
+    },
+    {
+      "id": "global_라부안_res_1",
+      "name": "마와산 해산물 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바다를 바라보며 저렴하고 싱싱한 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_라부안_res_2",
+      "name": "아나케 다이닝",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "다채로운 아시안 퓨전 요리를 세련된 분위기에서 맛볼 수 있는 식당입니다."
+    },
+    {
+      "id": "global_라부안_res_3",
+      "name": "텐탈루 비치 푸드코트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "해질녘 해변의 낭만과 함께 다양한 길거리 음식을 파는 야외 식당가입니다."
+    },
+    {
+      "id": "global_라부안_caf_1",
+      "name": "루앙 탬불",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "편안하게 쉬어갈 수 있는 소박하고 아늑한 동네 카페입니다."
+    },
+    {
+      "id": "global_라부안_caf_2",
+      "name": "로스터리 라부안",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다양한 원두를 취향에 맞게 핸드드립으로 즐길 수 있는 전문 로스터리입니다."
+    },
+    {
+      "id": "global_라부안_nig_1",
+      "name": "라부안 시계탑 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "매시 정각을 알리는 역사적인 시계탑 주변으로 은은한 조명이 켜집니다."
+    }
+  ],
+  "알로스타": [
+    {
+      "id": "global_알로스타_att_1",
+      "name": "자히르 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아에서 가장 아름다운 모스크 중 하나로 검은색 돔이 특징입니다."
+    },
+    {
+      "id": "global_알로스타_att_2",
+      "name": "알로스타 타워",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "케다주의 전경과 넓은 들판을 한눈에 내려다볼 수 있는 랜드마크 타워입니다."
+    },
+    {
+      "id": "global_알로스타_rel_1",
+      "name": "다룰 아만 파크",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "커다란 호수와 울창한 나무들이 어우러진 도심 속 최고의 휴식처입니다."
+    },
+    {
+      "id": "global_알로스타_act_1",
+      "name": "페디 뮤지엄 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "쌀 생산 중심지인 케다주의 벼농사 역사와 문화를 배울 수 있는 박물관 관람입니다."
+    },
+    {
+      "id": "global_알로스타_res_1",
+      "name": "이칸 바카르 알로스타",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 자주 찾는 숯불 생선 구이 전문점으로 불맛이 일품입니다."
+    },
+    {
+      "id": "global_알로스타_res_2",
+      "name": "나시 레막 알리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "바나나 잎에 싼 매콤달콤한 나시 레막으로 유명한 오래된 맛집입니다."
+    },
+    {
+      "id": "global_알로스타_res_3",
+      "name": "하이 펭 시푸드",
+      "category": "restaurant",
+      "subCategory": "chinese",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 식재료로 맛을 낸 다채로운 중식 해산물 요리를 선보입니다."
+    },
+    {
+      "id": "global_알로스타_caf_1",
+      "name": "카페 디안",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "엔틱한 가구와 따뜻한 조명으로 편안함을 주는 감성 카페입니다."
+    },
+    {
+      "id": "global_알로스타_caf_2",
+      "name": "빈 앤 베리",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페셜티 커피와 함께 상큼한 과일 디저트가 맛있는 곳입니다."
+    },
+    {
+      "id": "global_알로스타_nig_1",
+      "name": "알로스타 타워 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "도시의 밤을 환하게 비추는 통신탑의 아름다운 불빛을 감상할 수 있습니다."
+    }
+  ],
+  "타이핑": [
+    {
+      "id": "global_타이핑_att_1",
+      "name": "타이핑 동물원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아에서 가장 오래된 동물원으로 자연 친화적인 환경을 자랑합니다."
+    },
+    {
+      "id": "global_타이핑_att_2",
+      "name": "맥스웰 힐",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "지프를 타고 올라가는 시원한 고산 지대로 상쾌한 공기를 마실 수 있습니다."
+    },
+    {
+      "id": "global_타이핑_rel_1",
+      "name": "타이핑 호수 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "거대한 고목이 호수를 향해 가지를 뻗은 신비로운 풍경의 산책로가 있습니다."
+    },
+    {
+      "id": "global_타이핑_act_1",
+      "name": "페락 박물관 관람",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "식민지 시대의 건축물 안에서 말레이시아의 오랜 역사와 유물을 탐구합니다."
+    },
+    {
+      "id": "global_타이핑_res_1",
+      "name": "라루트 마탕 푸드코트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "수십 개의 노점이 모여 타이핑의 모든 먹거리를 판매하는 활기찬 시장입니다."
+    },
+    {
+      "id": "global_타이핑_res_2",
+      "name": "야우 티 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "하이난식 치킨찹과 갓 구운 토스트가 유명한 전통 커피숍입니다."
+    },
+    {
+      "id": "global_타이핑_res_3",
+      "name": "안사리 페이머스 첸돌",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "무더위를 식혀주는 달콤하고 시원한 빙수 디저트 첸돌의 명가입니다."
+    },
+    {
+      "id": "global_타이핑_caf_1",
+      "name": "더 화이트 하우스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오래된 건물을 리모델링하여 고풍스러운 분위기를 내는 커피집입니다."
+    },
+    {
+      "id": "global_타이핑_caf_2",
+      "name": "카페 플뢰르",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "꽃과 식물로 가득 꾸며져 있어 사진 찍기 좋은 화사한 디저트 카페입니다."
+    },
+    {
+      "id": "global_타이핑_nig_1",
+      "name": "나이트 사파리 야경",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "야행성 동물들의 생생한 모습을 관찰할 수 있는 밤의 동물원 탐험입니다."
+    }
+  ],
+  "카메론하이랜드": [
+    {
+      "id": "global_카메론하이랜드_att_1",
+      "name": "보아 티 에스테이트",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "끝없이 펼쳐진 초록빛 녹차 밭 풍경이 그림처럼 아름다운 다원입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_att_2",
+      "name": "카메론 라벤더 가든",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "보라색 라벤더 꽃을 비롯해 다양한 꽃들이 만발한 화사한 정원입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_rel_1",
+      "name": "카메론 하이랜드 플로라 파크",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "꽃향기로 가득한 유리 온실과 정원에서 조용히 힐링할 수 있는 공간입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_act_1",
+      "name": "모시 포레스트 트레킹",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "이끼로 뒤덮인 신비로운 숲속을 걸으며 대자연의 경이로움을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_카메론하이랜드_res_1",
+      "name": "하이랜드 스팀보트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "서늘한 고산 기후에서 따뜻한 국물의 스팀보트를 즐기기 완벽한 식당입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_res_2",
+      "name": "펌 뇨냐 레스토랑",
+      "category": "restaurant",
+      "subCategory": "asian",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "말레이시아 전통 페라나칸 요리의 정수를 보여주는 훌륭한 식당입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_res_3",
+      "name": "싱 우 바쿠테",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "진한 약재 육수에 끓여낸 든든한 돼지갈비탕, 바쿠테를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_카메론하이랜드_caf_1",
+      "name": "더 로드 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 달콤한 스콘과 신선한 딸기 잼이 가장 유명한 영국식 찻집입니다."
+    },
+    {
+      "id": "global_카메론하이랜드_caf_2",
+      "name": "지아 코피티암",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "빈티지 감성을 자아내는 인테리어 속에서 현지식 커피와 토스트를 판매합니다."
+    },
+    {
+      "id": "global_카메론하이랜드_nig_1",
+      "name": "브린창 야시장",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤마다 활기를 띠는 야시장으로 딸기 튀김, 옥수수 등 길거리 간식이 가득합니다."
+    }
+  ],
+  "조지타운": [
+    {
+      "id": "global_조지타운_att_1",
+      "name": "페낭 힐",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "푸니쿨라를 타고 올라가 페낭 섬의 전경과 조지타운 시내를 한눈에 담을 수 있는 전망대입니다."
+    },
+    {
+      "id": "global_조지타운_att_2",
+      "name": "켁록시 사원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "말레이시아 최대 규모의 불교 사원으로 웅장한 불탑과 화려한 장식이 압권입니다."
+    },
+    {
+      "id": "global_조지타운_rel_1",
+      "name": "페낭 보타닉 가든",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "울창한 열대 우림과 폭포가 있는 역사 깊은 식물원으로 피크닉을 즐기기에 완벽합니다."
+    },
+    {
+      "id": "global_조지타운_act_1",
+      "name": "조지타운 스트리트 아트 탐방",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 3,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오래된 건물 벽면에 그려진 재치 있는 벽화들을 찾아 골목길을 누비는 투어입니다."
+    },
+    {
+      "id": "global_조지타운_res_1",
+      "name": "테크센 레스토랑",
+      "category": "restaurant",
+      "subCategory": "chinese",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "매콤달콤한 두번 구운 돼지고기 요리로 대기 줄이 끊이지 않는 광동식 맛집입니다."
+    },
+    {
+      "id": "global_조지타운_res_2",
+      "name": "레드 가든 푸드 파라다이스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 국가의 요리와 페낭의 전통 호커 푸드를 한곳에서 즐기는 푸드코트입니다."
+    },
+    {
+      "id": "global_조지타운_res_3",
+      "name": "거니 드라이브 호커 센터",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "페낭 해안가를 따라 길게 늘어선 길거리 음식의 성지로 볶음면과 꼬치가 유명합니다."
+    },
+    {
+      "id": "global_조지타운_caf_1",
+      "name": "차이나하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "여러 채의 전통 상점 건물을 개조한 복합 공간으로, 수십 가지의 케이크와 커피가 일품입니다."
+    },
+    {
+      "id": "global_조지타운_caf_2",
+      "name": "머그샷 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 베이글과 직접 만든 요거트가 매력적인 아늑한 감성의 카페입니다."
+    },
+    {
+      "id": "global_조지타운_nig_1",
+      "name": "콤타 타워 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "조지타운에서 가장 높은 빌딩 전망대에서 도시 전체의 화려한 불빛을 감상할 수 있습니다."
+    }
+  ],
+  "티오만": [
+    {
+      "id": "global_티오만_att_1",
+      "name": "주아라 터틀 프로젝트",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "멸종 위기의 바다거북을 보호하고 부화하는 과정을 배울 수 있는 의미 있는 보존 센터입니다."
+    },
+    {
+      "id": "global_티오만_att_2",
+      "name": "아사 폭포",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "울창한 열대 우림 속에 숨겨져 있는 장엄한 폭포로 트레킹을 통해 도달할 수 있습니다."
+    },
+    {
+      "id": "global_티오만_rel_1",
+      "name": "멍와크 비치",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "부드러운 모래사장과 맑은 에메랄드빛 바다를 자랑하는 조용하고 한적한 해변입니다."
+    },
+    {
+      "id": "global_티오만_act_1",
+      "name": "코랄 아일랜드 스노클링",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "형형색색의 산호초와 열대어가 가득한 투명한 바다에서 수중 세계를 탐험합니다."
+    },
+    {
+      "id": "global_티오만_res_1",
+      "name": "만디 만디 레스토랑",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바다 위 데크에 자리해 낭만적인 식사와 함께 훌륭한 서양식 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_티오만_res_2",
+      "name": "살랑 인디 드림스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "해산물 바비큐와 현지 말레이 요리를 맛볼 수 있는 해변가의 캐주얼한 식당입니다."
+    },
+    {
+      "id": "global_티오만_res_3",
+      "name": "바부르 비치 카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "여유로운 열대 해변의 분위기 속에서 간단한 식사와 음료를 제공합니다."
+    },
+    {
+      "id": "global_티오만_caf_1",
+      "name": "헬로 카푸치노",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "다이빙 후 시원한 커피 한잔과 함께 달콤한 휴식을 취하기 좋은 아담한 카페입니다."
+    },
+    {
+      "id": "global_티오만_caf_2",
+      "name": "비치 프론트 코피티암",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "파도 소리를 들으며 아침 식사와 전통 커피를 저렴하게 즐길 수 있는 곳입니다."
+    },
+    {
+      "id": "global_티오만_nig_1",
+      "name": "테켁 마을 해변 야경",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤하늘의 쏟아지는 별과 조용한 파도 소리가 어우러지는 낭만적인 해변입니다."
+    }
+  ],
+  "앙카라": [
+    {
+      "id": "global_앙카라_att_1",
+      "name": "안느트카비르",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "튀르키예 공화국 창립자인 무스타파 케말 아타튀르크의 거대하고 장엄한 영묘입니다."
+    },
+    {
+      "id": "global_앙카라_att_2",
+      "name": "아나톨리아 문명 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "히타이트, 프리지아 등 아나톨리아 반도의 고대 유물들을 집대성한 세계적인 박물관입니다."
+    },
+    {
+      "id": "global_앙카라_rel_1",
+      "name": "쿠울루 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "백조와 오리가 유유히 헤엄치는 호수를 둘러싸고 있는 앙카라 시민들의 쉼터입니다."
+    },
+    {
+      "id": "global_앙카라_act_1",
+      "name": "앙카라 성곽 탐방",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 2,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "언덕 꼭대기의 고대 성곽에 올라 도시 전체의 파노라마 뷰를 감상하는 액티비티입니다."
+    },
+    {
+      "id": "global_앙카라_res_1",
+      "name": "트릴예 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "터키 최고 수준의 해산물 요리와 우아한 서비스를 경험할 수 있는 고급 식당입니다."
+    },
+    {
+      "id": "global_앙카라_res_2",
+      "name": "메자잘라",
+      "category": "restaurant",
+      "subCategory": "western",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 재료로 만든 화덕 피자와 정통 이탈리아 파스타를 제공하는 인기 레스토랑입니다."
+    },
+    {
+      "id": "global_앙카라_res_3",
+      "name": "지벡 바클라바",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "앙카라 성 근처에 위치해 오스만 전통 분위기 속에서 케밥을 맛볼 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_앙카라_caf_1",
+      "name": "카흐베 듄야시",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "진한 튀르키예 커피와 수제 초콜릿을 즐길 수 있는 유명 프랜차이즈 카페입니다."
+    },
+    {
+      "id": "global_앙카라_caf_2",
+      "name": "아이린 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조용하고 아늑한 정원이 있어 독서를 하거나 대화를 나누기 좋은 휴식 공간입니다."
+    },
+    {
+      "id": "global_앙카라_nig_1",
+      "name": "아타쿨레 타워 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "도시를 360도로 내려다보는 회전 레스토랑과 화려한 조명으로 앙카라 최고의 야경을 자랑합니다."
+    }
+  ],
+  "이즈밀르": [
+    {
+      "id": "global_이즈밀르_att_1",
+      "name": "이즈미르 시계탑",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "코낙 광장의 중심에 위치한 정교하고 아름다운 이즈미르의 상징적인 건축물입니다."
+    },
+    {
+      "id": "global_이즈밀르_att_2",
+      "name": "케메랄트 바자르",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 4,
+        "culture": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수백 년의 역사를 지닌 활기찬 전통 시장으로 다양한 향신료와 공예품을 판매합니다."
+    },
+    {
+      "id": "global_이즈밀르_rel_1",
+      "name": "코르돈 해변 산책로",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "끝없이 펼쳐진 잔디밭과 바다를 배경으로 산책과 피크닉을 즐기기 완벽한 장소입니다."
+    },
+    {
+      "id": "global_이즈밀르_act_1",
+      "name": "아산쇠르 역사 엘리베이터 탑승",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 2,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "과거 절벽을 오르내리던 엘리베이터를 타고 언덕 위에 올라가 시내 전경을 감상합니다."
+    },
+    {
+      "id": "global_이즈밀르_res_1",
+      "name": "데니즈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "이즈미르 앞바다에서 갓 잡은 신선한 생선을 최고급 요리로 선보이는 유서 깊은 식당입니다."
+    },
+    {
+      "id": "global_이즈밀르_res_2",
+      "name": "보가지치 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "바다 풍경과 함께 푸짐한 터키식 조식과 케밥을 즐길 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_이즈밀르_res_3",
+      "name": "레이한 파스타네시",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "다양한 케이크와 달콤한 터키 디저트가 가득해 현지인들이 줄 서서 먹는 디저트 카페입니다."
+    },
+    {
+      "id": "global_이즈밀르_caf_1",
+      "name": "1888 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유럽풍의 고풍스러운 인테리어 속에서 여유롭게 에스프레소와 디저트를 즐기는 공간입니다."
+    },
+    {
+      "id": "global_이즈밀르_caf_2",
+      "name": "무이 커피",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "스페셜티 원두를 다루는 세련된 인테리어의 트렌디한 로스터리 카페입니다."
+    },
+    {
+      "id": "global_이즈밀르_nig_1",
+      "name": "코르돈 해변 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "바닷물에 비친 도시의 불빛과 시원한 바닷바람이 낭만적인 밤 산책 코스입니다."
+    }
+  ],
+  "보드룸": [
+    {
+      "id": "global_보드룸_att_1",
+      "name": "보드룸 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "바다를 향해 돌출된 반도에 세워진 십자군 시대의 성으로 수중 고고학 박물관을 품고 있습니다."
+    },
+    {
+      "id": "global_보드룸_att_2",
+      "name": "보드룸 고대 극장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "언덕 비탈에 자리 잡아 바다와 도시를 한눈에 조망할 수 있는 로마 시대의 원형 극장입니다."
+    },
+    {
+      "id": "global_보드룸_rel_1",
+      "name": "야흐시 해변",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "부드러운 모래와 투명한 바닷물이 어우러져 수영과 일광욕을 즐기기에 최고의 명소입니다."
+    },
+    {
+      "id": "global_보드룸_act_1",
+      "name": "보드룸 마리나 요트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "럭셔리한 목선(구렛)을 타고 에게해의 푸른 바다와 숨겨진 만을 탐험하는 투어입니다."
+    },
+    {
+      "id": "global_보드룸_res_1",
+      "name": "밈오자 식당",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바닷가 바로 앞에 테이블이 세팅되어 로맨틱하게 해산물 메제를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_보드룸_res_2",
+      "name": "코카돈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아름답게 장식된 안뜰에서 고급스러운 터키 요리를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_보드룸_res_3",
+      "name": "오르포즈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "굴, 조개 등 창의적이고 특별한 해산물 코스 요리로 미식가들의 사랑을 받는 식당입니다."
+    },
+    {
+      "id": "global_보드룸_caf_1",
+      "name": "카페 카페 보드룸",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "좁은 골목길 사이에서 편안한 쿠션에 기대 터키식 차를 마시는 휴식 공간입니다."
+    },
+    {
+      "id": "global_보드룸_caf_2",
+      "name": "마호가니 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "요트 마리나가 한눈에 내려다보이는 전망과 함께 훌륭한 커피를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_보드룸_nig_1",
+      "name": "할리카르나소스 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 3,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "보드룸 밤거리의 활기찬 분위기와 네온사인이 바다와 어우러진 화려한 야경입니다."
+    }
+  ],
+  "파묵칼레": [
+    {
+      "id": "global_파묵칼레_att_1",
+      "name": "파묵칼레 석회붕",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "온천수가 흘러내리며 형성된 하얀 계단식 석회암 지대로 동화 같은 풍경을 선사합니다."
+    },
+    {
+      "id": "global_파묵칼레_att_2",
+      "name": "히에라폴리스 고대 도시",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 로마 시대의 거대한 원형 극장과 신전 유적들이 온전하게 보존된 유적지입니다."
+    },
+    {
+      "id": "global_파묵칼레_rel_1",
+      "name": "클레오파트라 온천",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로마 시대의 기둥 유적들이 가라앉아 있는 따뜻한 탄산 온천수로 수영을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_파묵칼레_act_1",
+      "name": "파묵칼레 열기구 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "하얀 석회붕과 고대 유적 위를 하늘에서 내려다보는 황홀한 비행 체험입니다."
+    },
+    {
+      "id": "global_파묵칼레_res_1",
+      "name": "화이트 하우스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "파묵칼레가 보이는 전망과 함께 친절한 서비스, 맛있는 피데를 제공하는 식당입니다."
+    },
+    {
+      "id": "global_파묵칼레_res_2",
+      "name": "카야스 와인 하우스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아늑한 분위기에서 로컬 와인과 터키 가정식을 여유롭게 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_파묵칼레_res_3",
+      "name": "람잔 우스타 베이커리",
+      "category": "restaurant",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 신선한 빵과 바삭한 시미트를 저렴한 가격에 판매하는 동네 빵집입니다."
+    },
+    {
+      "id": "global_파묵칼레_caf_1",
+      "name": "파묵칼레 자연 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "자연에 둘러싸여 석회붕을 오르기 전 시원한 음료로 목을 축이기 좋은 장소입니다."
+    },
+    {
+      "id": "global_파묵칼레_caf_2",
+      "name": "카페 다이크",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "달콤한 디저트와 함께 편안한 좌석에서 잠시 쉬어갈 수 있는 깔끔한 카페입니다."
+    },
+    {
+      "id": "global_파묵칼레_nig_1",
+      "name": "파묵칼레 석회붕 일몰 및 야경",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "붉게 물드는 노을과 밤하늘의 별빛 아래 하얗게 빛나는 석회붕의 절경입니다."
+    }
+  ],
+  "에페소스": [
+    {
+      "id": "global_에페소스_att_1",
+      "name": "켈수스 도서관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 로마 제국의 웅장함과 뛰어난 건축 기술을 엿볼 수 있는 에페소스의 대표 유적입니다."
+    },
+    {
+      "id": "global_에페소스_att_2",
+      "name": "성모 마리아의 집",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "성모 마리아가 여생을 보냈다고 전해지는 곳으로 전 세계 순례자들의 발길이 끊이지 않습니다."
+    },
+    {
+      "id": "global_에페소스_rel_1",
+      "name": "에페소스 박물관 정원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 유물들을 둘러본 후 조용한 정원에서 휴식을 취하며 역사를 되새기는 공간입니다."
+    },
+    {
+      "id": "global_에페소스_act_1",
+      "name": "에페소스 대극장 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "2만 5천 명을 수용할 수 있었던 거대한 고대 극장 유적을 걸어 올라가 봅니다."
+    },
+    {
+      "id": "global_에페소스_res_1",
+      "name": "에잣 베이 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 화덕에서 구워낸 피데와 케밥이 일품인 유적지 근처의 맛집입니다."
+    },
+    {
+      "id": "global_에페소스_res_2",
+      "name": "톨겟 다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "신선한 농장 재료로 만든 터키식 가정식과 올리브 오일 요리를 제공하는 식당입니다."
+    },
+    {
+      "id": "global_에페소스_res_3",
+      "name": "아야술루크 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "옛 성채가 보이는 언덕에 위치해 분위기 있게 튀르키예 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_에페소스_caf_1",
+      "name": "아고라 타번",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 유적지 주변에서 역사적인 분위기를 느끼며 터키시 커피를 마실 수 있는 곳입니다."
+    },
+    {
+      "id": "global_에페소스_caf_2",
+      "name": "셀축 커피 하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 그늘막 아래서 달콤한 바클라바와 터키 차를 즐기며 더위를 식힙니다."
+    },
+    {
+      "id": "global_에페소스_nig_1",
+      "name": "성 요한 모스크 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "역사 깊은 모스크 주변을 은은하게 밝히는 조명이 평화롭고 성스러운 밤을 연출합니다."
+    }
+  ],
+  "부르사": [
+    {
+      "id": "global_부르사_att_1",
+      "name": "그랜드 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "20개의 돔과 아름다운 실내 캘리그래피 장식이 압도적인 부르사의 심장 같은 사원입니다."
+    },
+    {
+      "id": "global_부르사_att_2",
+      "name": "그린 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오스만 제국 초기 건축의 걸작으로 푸른색과 녹색 타일이 만들어내는 섬세한 장식이 눈부십니다."
+    },
+    {
+      "id": "global_부르사_rel_1",
+      "name": "보타닉 파크",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광활한 부지에 세계 각국의 정원이 조성되어 있어 산책과 자전거 타기에 이상적입니다."
+    },
+    {
+      "id": "global_부르사_act_1",
+      "name": "울루다 산 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "터키 최장 케이블카를 타고 산 정상에 올라 아름다운 자연 풍경과 시내를 조망합니다."
+    },
+    {
+      "id": "global_부르사_res_1",
+      "name": "이스켄데르 케밥 본점",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "얇게 썬 고기 위에 토마토 소스와 버터를 부어 먹는 원조 이스켄데르 케밥 식당입니다."
+    },
+    {
+      "id": "global_부르사_res_2",
+      "name": "다루지야페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 오스만 양식 건물에서 옛 술탄들이 즐겼던 다채롭고 고급스러운 요리를 제공합니다."
+    },
+    {
+      "id": "global_부르사_res_3",
+      "name": "울루다그 케밥지시",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "언제나 사람들로 붐비는 숯불 향이 가득한 전통 케밥과 고기구이 전문점입니다."
+    },
+    {
+      "id": "global_부르사_caf_1",
+      "name": "코자 한 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "옛날 실크 교역소 안뜰의 커다란 나무 그늘 아래서 차를 마시는 역사적인 공간입니다."
+    },
+    {
+      "id": "global_부르사_caf_2",
+      "name": "마나스토르 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "붉은 벽돌의 아치형 천장이 돋보이는 고즈넉한 인테리어의 커피 앤 디저트 카페입니다."
+    },
+    {
+      "id": "global_부르사_nig_1",
+      "name": "톱하네 시계탑 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "부르사 시내를 내려다보는 언덕에 위치해 반짝이는 도시 불빛과 시계탑이 어우러집니다."
+    }
+  ],
+  "코냐": [
+    {
+      "id": "global_코냐_att_1",
+      "name": "메블라나 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신비주의 이슬람 수피즘의 창시자인 루미의 영묘가 안치된 성지입니다."
+    },
+    {
+      "id": "global_코냐_att_2",
+      "name": "알라에딘 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "언덕 정상에 위치한 셀주크 투르크 시대의 모스크로 아름다운 목조 기둥이 특징입니다."
+    },
+    {
+      "id": "global_코냐_rel_1",
+      "name": "교쿄수 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "코냐 시민들이 피크닉과 산책을 위해 즐겨 찾는 깨끗하고 평화로운 도심 호수 공원입니다."
+    },
+    {
+      "id": "global_코냐_act_1",
+      "name": "세마 의식 관람",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "하얀 치마를 입고 끊임없이 회전하며 신과의 합일을 추구하는 수피 댄스를 감상합니다."
+    },
+    {
+      "id": "global_코냐_res_1",
+      "name": "하즈 슈크뤼",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "입에서 살살 녹는 부드러운 양고기 오븐 구이인 '프른 케밥'으로 가장 유명한 맛집입니다."
+    },
+    {
+      "id": "global_코냐_res_2",
+      "name": "솜앗츠 피야데",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "코냐 전통 요리인 에틀리 에크멕(고기 빵)을 얇고 바삭하게 구워내어 인기가 많습니다."
+    },
+    {
+      "id": "global_코냐_res_3",
+      "name": "타리히 첼릭 오자크바시",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "숯불 화로 곁에서 셰프가 직접 구워주는 꼬치구이를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_코냐_caf_1",
+      "name": "아나톨리아 찻집",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세월의 흔적이 묻어나는 골목길에서 터키 전통 튤립 잔에 담긴 홍차를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_코냐_caf_2",
+      "name": "에이멘 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수피즘의 평화로운 분위기를 담은 아늑한 인테리어와 맛있는 디저트가 있는 공간입니다."
+    },
+    {
+      "id": "global_코냐_nig_1",
+      "name": "메블라나 광장 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "청록색 돔이 환하게 빛나는 메블라나 박물관과 광장의 신비로운 밤 풍경입니다."
+    }
+  ],
+  "안타키아": [
+    {
+      "id": "global_antakya_att_1",
+      "name": "안타키아 고고학 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계적인 로마 시대 모자이크 컬렉션을 소장하고 있는 역사적인 박물관입니다."
+    },
+    {
+      "id": "global_antakya_att_2",
+      "name": "성 베드로 동굴 교회",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "초기 기독교 역사에서 중요한 의미를 지닌 유서 깊은 동굴 교회입니다."
+    },
+    {
+      "id": "global_antakya_rel_1",
+      "name": "안타키아 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도시 중심부에 위치하여 현지인들이 여유롭게 휴식을 취하는 푸른 공원입니다."
+    },
+    {
+      "id": "global_antakya_act_1",
+      "name": "티투스 터널 하이킹",
+      "category": "activity",
+      "subCategory": "hiking",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "로마 시대에 만들어진 거대한 수로 터널을 따라 걷는 인상적인 하이킹 코스입니다."
+    },
+    {
+      "id": "global_antakya_res_1",
+      "name": "쿨루루 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "하타이 지역의 전통적인 미식 문화를 깊이 있게 경험할 수 있는 식당입니다."
+    },
+    {
+      "id": "global_antakya_res_2",
+      "name": "하타이 메제스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 재료로 만든 다채로운 안타키아식 전채 요리를 제공하는 맛집입니다."
+    },
+    {
+      "id": "global_antakya_res_3",
+      "name": "쿠네페 맛집",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "달콤한 치즈 디저트인 전통 쿠네페를 제대로 맛볼 수 있는 유명한 가게입니다."
+    },
+    {
+      "id": "global_antakya_caf_1",
+      "name": "아피스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통적인 튀르키예 커피와 차를 즐기며 오랜 역사를 느낄 수 있는 카페입니다."
+    },
+    {
+      "id": "global_antakya_caf_2",
+      "name": "안타키아 올드타운 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오래된 골목길에 자리잡아 고즈넉한 분위기를 자아내는 매력적인 공간입니다."
+    },
+    {
+      "id": "global_antakya_nig_1",
+      "name": "하타이 야경 뷰포인트",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "안타키아 시내의 야경을 한눈에 내려다볼 수 있는 낭만적인 조망 명소입니다."
+    }
+  ],
+  "가azi안테프": [
+    {
+      "id": "global_gaziantep_att_1",
+      "name": "제우그마 모자이크 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계 최대 규모의 정교한 모자이크 작품들을 전시하고 있는 필수 방문 명소입니다."
+    },
+    {
+      "id": "global_gaziantep_att_2",
+      "name": "가지안테프 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도시 중심 언덕에 우뚝 솟아 오랜 세월 동안 가지안테프를 지켜온 성채입니다."
+    },
+    {
+      "id": "global_gaziantep_rel_1",
+      "name": "100주년 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "도심 속에서 자연의 푸르름을 만끽하며 산책하기 좋은 넓은 시민 공원입니다."
+    },
+    {
+      "id": "global_gaziantep_act_1",
+      "name": "바크르츨라르 차르쉬스",
+      "category": "activity",
+      "subCategory": "shopping",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 2,
+        "culture": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 구리 공예품과 다채로운 특산품을 구경할 수 있는 활기찬 바자르입니다."
+    },
+    {
+      "id": "global_gaziantep_res_1",
+      "name": "이맘 차다쉬",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "가지안테프 최고의 케밥과 바클라바를 맛볼 수 있는 유서 깊은 식당입니다."
+    },
+    {
+      "id": "global_gaziantep_res_2",
+      "name": "켑치 할릴 마스타",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들의 압도적인 사랑을 받는 진정한 가지안테프식 숯불 케밥 전문점입니다."
+    },
+    {
+      "id": "global_gaziantep_res_3",
+      "name": "코치아크 바클라바",
+      "category": "restaurant",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "피스타치오가 듬뿍 들어간 튀르키예 최고의 달콤한 바클라바를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_gaziantep_caf_1",
+      "name": "타흐미스 카흐베시",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수백 년의 역사를 간직한 클래식한 커피하우스로 전통 멜렌기치 커피가 일품입니다."
+    },
+    {
+      "id": "global_gaziantep_caf_2",
+      "name": "파파간 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "젊은 분위기와 세련된 감각이 어우러져 여유로운 오후를 보내기 좋은 카페입니다."
+    },
+    {
+      "id": "global_gaziantep_nig_1",
+      "name": "성곽 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어둠이 내리면 조명으로 더욱 신비로운 분위기를 자아내는 성곽의 밤 풍경입니다."
+    }
+  ],
+  "산리우르파": [
+    {
+      "id": "global_sanliurfa_att_1",
+      "name": "괴베클리 테페",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "인류 역사상 가장 오래된 신전으로 여겨지는 신비롭고 경이로운 유적지입니다."
+    },
+    {
+      "id": "global_sanliurfa_att_2",
+      "name": "발르클르괼",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "성스러운 물고기 연못으로 불리며 평화로운 분위기가 감도는 산리우르파의 랜드마크입니다."
+    },
+    {
+      "id": "global_sanliurfa_rel_1",
+      "name": "괼바쉬 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "물가 주변을 거닐며 아름다운 풍경과 함께 고요한 휴식을 즐길 수 있는 공원입니다."
+    },
+    {
+      "id": "global_sanliurfa_act_1",
+      "name": "우르파 바자르 탐방",
+      "category": "activity",
+      "subCategory": "shopping",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 3,
+        "culture": 4,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "향신료와 전통 의상, 수공예품이 가득한 생동감 넘치는 전통 시장입니다."
+    },
+    {
+      "id": "global_sanliurfa_res_1",
+      "name": "체바히르 한",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "전통적인 숙소 형태인 '한'을 개조하여 훌륭한 분위기 속에서 지역 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_sanliurfa_res_2",
+      "name": "굴루올루",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "정통 산리우르파 스타일의 맛있는 케밥과 다채로운 고기 요리를 선보이는 곳입니다."
+    },
+    {
+      "id": "global_sanliurfa_res_3",
+      "name": "지게르 아흐메트",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "참나무 숯불에 구워내는 고소하고 쫄깃한 양간 꼬치구이로 명성이 자자합니다."
+    },
+    {
+      "id": "global_sanliurfa_caf_1",
+      "name": "귐뤼크 한 커피하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "중세 시대 실크로드의 정취가 살아있는 고풍스러운 안뜰에서 진한 커피를 음미해 보세요."
+    },
+    {
+      "id": "global_sanliurfa_caf_2",
+      "name": "할릴 라만 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신성한 연못을 바라보며 시원한 차 한잔의 여유를 만끽할 수 있는 쉼터입니다."
+    },
+    {
+      "id": "global_sanliurfa_nig_1",
+      "name": "우르파 성 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "불을 밝힌 우르파 시내의 전경과 고대 기둥들이 어우러져 황홀한 야경을 선사합니다."
+    }
+  ],
+  "에디르네": [
+    {
+      "id": "global_edirne_att_1",
+      "name": "셀리미예 모스크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "미마르 신난의 걸작으로 꼽히며 압도적인 웅장함을 뽐내는 유네스코 세계문화유산입니다."
+    },
+    {
+      "id": "global_edirne_att_2",
+      "name": "에디르네 구시가지",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 오스만 제국의 수도였던 영광스러운 역사의 흔적이 고스란히 남아있는 거리입니다."
+    },
+    {
+      "id": "global_edirne_rel_1",
+      "name": "메리치 강변 휴식",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "아름다운 석조 다리와 함께 평화롭게 흐르는 강변에서 조용한 휴식을 가질 수 있습니다."
+    },
+    {
+      "id": "global_edirne_act_1",
+      "name": "알리 파샤 바자르 쇼핑",
+      "category": "activity",
+      "subCategory": "shopping",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 2,
+        "culture": 3,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "역사적인 아케이드 구조 안에서 기념품과 현지 특산품을 구입하는 재미가 쏠쏠합니다."
+    },
+    {
+      "id": "global_edirne_res_1",
+      "name": "지에르지 니야지 우스타",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "에디르네의 명물인 얇게 썰어 바삭하게 튀겨낸 소간 요리 '타바 지에르'의 최고 맛집입니다."
+    },
+    {
+      "id": "global_edirne_res_2",
+      "name": "아이딘 타바 지에르",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들 사이에서 언제나 줄 서서 먹는 신선하고 고소한 간 튀김 전문 식당입니다."
+    },
+    {
+      "id": "global_edirne_res_3",
+      "name": "쾨프테지 오스만",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "육즙이 가득한 육류 완자 '쾨프테'가 일품이며 가성비 좋고 든든한 한 끼를 제공합니다."
+    },
+    {
+      "id": "global_edirne_caf_1",
+      "name": "로만 티 가든",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "강변의 산들바람을 맞으며 전통 터키식 홍차를 즐길 수 있는 낭만적인 야외 찻집입니다."
+    },
+    {
+      "id": "global_edirne_caf_2",
+      "name": "튤립 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아늑한 실내 분위기에서 맛있는 커피와 수제 디저트로 에너지를 충전할 수 있습니다."
+    },
+    {
+      "id": "global_edirne_nig_1",
+      "name": "셀리미예 모스크 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 은은한 조명을 받아 더욱 성스럽고 아름답게 빛나는 모스크의 풍광을 감상하세요."
+    }
+  ],
+  "카스": [
+    {
+      "id": "global_kas_att_1",
+      "name": "카푸타슈 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "절벽 사이에 숨겨진 환상적인 에메랄드빛 바다를 자랑하는 튀르키예 최고의 해변 중 하나입니다."
+    },
+    {
+      "id": "global_kas_att_2",
+      "name": "고대 극장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "푸른 바다를 배경으로 아름다운 일몰을 감상할 수 있는 잘 보존된 헬레니즘 양식의 극장입니다."
+    },
+    {
+      "id": "global_kas_rel_1",
+      "name": "파타라 해변 휴식",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "끝없이 펼쳐진 고운 백사장과 투명한 바닷물에서 평화롭게 수영과 일광욕을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_kas_act_1",
+      "name": "케코바 보트 투어",
+      "category": "activity",
+      "subCategory": "boat",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "투명한 바다 아래로 가라앉은 신비로운 고대 도시 유적을 보트 위에서 탐험해 보세요."
+    },
+    {
+      "id": "global_kas_res_1",
+      "name": "비우루 로칸타시",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "안락한 정원 테라스에서 훌륭한 퀄리티의 튀르키예식 아침 식사와 지역 요리를 제공합니다."
+    },
+    {
+      "id": "global_kas_res_2",
+      "name": "스마일리스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "신선한 해산물과 친절한 서비스로 여행객들에게 높은 만족도를 선사하는 레스토랑입니다."
+    },
+    {
+      "id": "global_kas_res_3",
+      "name": "오베이 메이하네",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "건강하고 창의적인 지중해식 채식 요리를 아름다운 항구 뷰와 함께 즐길 수 있습니다."
+    },
+    {
+      "id": "global_kas_caf_1",
+      "name": "피델로 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "여유로운 카스의 분위기에 완벽하게 어울리는 향긋한 커피와 아늑한 공간을 제공합니다."
+    },
+    {
+      "id": "global_kas_caf_2",
+      "name": "산초 판사 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "독특한 예술적 감각의 인테리어와 함께 칵테일과 디저트를 즐길 수 있는 힙한 카페입니다."
+    },
+    {
+      "id": "global_kas_nig_1",
+      "name": "카스 마리나 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "정박해 있는 수많은 요트와 잔잔한 밤바다, 불빛이 어우러져 로맨틱한 항구의 야경을 연출합니다."
+    }
+  ],
+  "시데": [
+    {
+      "id": "global_side_att_1",
+      "name": "아폴론 신전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "바다를 향해 서 있는 웅장한 대리석 기둥들이 아름다우며, 황홀한 일몰로 유명한 유적지입니다."
+    },
+    {
+      "id": "global_side_att_2",
+      "name": "시데 고대 극장",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "로마 시대의 거대한 규모와 디테일이 살아있는 웅장한 원형 극장 유적입니다."
+    },
+    {
+      "id": "global_side_rel_1",
+      "name": "시데 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "따뜻한 지중해 햇살 아래서 물놀이와 휴식을 취할 수 있는 매력적인 백사장 해변입니다."
+    },
+    {
+      "id": "global_side_act_1",
+      "name": "마나브가트 폭포 보트투어",
+      "category": "activity",
+      "subCategory": "boat",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "시원한 물줄기가 흐르는 폭포를 감상하고 자연을 누비는 상쾌한 강 보트 투어입니다."
+    },
+    {
+      "id": "global_side_res_1",
+      "name": "오르포즈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "갓 잡은 신선한 지중해식 해산물 요리와 우아한 바다 전망을 자랑하는 파인 다이닝입니다."
+    },
+    {
+      "id": "global_side_res_2",
+      "name": "카르마 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "세련된 분위기 속에서 퀄리티 높은 튀르키예 퓨전 요리와 활기찬 클럽 무드를 즐겨보세요."
+    },
+    {
+      "id": "global_side_res_3",
+      "name": "아프로디테 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "아폴론 신전 인근에 위치하여 멋진 전망과 함께 훌륭한 생선 요리를 선사하는 레스토랑입니다."
+    },
+    {
+      "id": "global_side_caf_1",
+      "name": "시데 카페 하우스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "구시가지 골목에서 향긋한 커피 한 잔과 함께 편안한 휴식을 취하기 좋은 아담한 카페입니다."
+    },
+    {
+      "id": "global_side_caf_2",
+      "name": "커피 카르텔",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 스페셜티 커피와 달콤한 수제 디저트로 입을 즐겁게 해주는 핫플레이스입니다."
+    },
+    {
+      "id": "global_side_nig_1",
+      "name": "아폴론 신전 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "황금빛 조명이 켜진 기둥들이 짙은 푸른 밤하늘과 대비되어 신화 속 한 장면을 연출합니다."
+    }
+  ],
+  "울루다그": [
+    {
+      "id": "global_uludag_att_1",
+      "name": "울루다그 국립공원",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "사계절 내내 빼어난 자연 경관을 선사하며 하이킹과 캠핑을 즐기기 좋은 거대한 국립공원입니다."
+    },
+    {
+      "id": "global_uludag_att_2",
+      "name": "부르사 케이블카",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "도심에서 산 정상까지 이어지는 세계에서 가장 긴 케이블카로 짜릿한 파노라마 뷰를 제공합니다."
+    },
+    {
+      "id": "global_uludag_rel_1",
+      "name": "울루다그 온천",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "천연 미네랄이 풍부한 따뜻한 온천수에 몸을 담그며 여행의 피로를 말끔히 풀 수 있습니다."
+    },
+    {
+      "id": "global_uludag_act_1",
+      "name": "울루다그 스키",
+      "category": "activity",
+      "subCategory": "sports",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "겨울철이면 완벽한 설질을 자랑하며 초보자부터 전문가까지 모두 즐길 수 있는 터키 최고의 스키장입니다."
+    },
+    {
+      "id": "global_uludag_res_1",
+      "name": "카르벨란 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "설산의 로맨틱한 풍경을 배경으로 따뜻한 수프와 든든한 산장식 고기 요리를 선보입니다."
+    },
+    {
+      "id": "global_uludag_res_2",
+      "name": "울루다그 케밥치시",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "부르사 지역을 대표하는 진정한 이스켄데르 케밥의 깊은 풍미를 제대로 느낄 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_uludag_res_3",
+      "name": "텔레페릭 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "케이블카 정류장 인근에서 탁 트인 시야와 함께 맛있는 식사를 편안하게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_uludag_caf_1",
+      "name": "스키 클럽 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 3,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "추운 스키 슬로프에서 벗어나 따뜻한 핫초코와 커피로 몸을 녹이는 아늑한 휴식처입니다."
+    },
+    {
+      "id": "global_uludag_caf_2",
+      "name": "마운틴 뷰 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "구름 위를 걷는 듯한 황홀한 고산 지대의 절경을 감상하며 여유로운 티타임을 가질 수 있습니다."
+    },
+    {
+      "id": "global_uludag_nig_1",
+      "name": "울루다그 별빛 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "맑은 공기 덕분에 하늘에서 쏟아질 듯 빛나는 무수히 많은 별들을 관측할 수 있는 장소입니다."
+    }
+  ],
+  "산토리니": [
+    {
+      "id": "global_santorini_att_1",
+      "name": "이아 마을",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "하얀 외벽과 파란 지붕이 돋보이는 엽서 속 풍경이자, 세계에서 가장 아름다운 일몰 명소입니다."
+    },
+    {
+      "id": "global_santorini_att_2",
+      "name": "아크로티리 유적",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "화산 폭발로 묻혀있던 고대 미노아 문명의 흔적이 고스란히 발굴된 경이로운 고고학 유적지입니다."
+    },
+    {
+      "id": "global_santorini_rel_1",
+      "name": "카마리 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "독특한 검은색 화산 모래사장과 맑은 바닷물이 어우러져 이국적인 해수욕을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_santorini_act_1",
+      "name": "산토리니 칼데라 크루즈",
+      "category": "activity",
+      "subCategory": "boat",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 2,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "요트를 타고 화산섬을 돌아보며 온천 수영과 선상 바비큐를 만끽하는 필수 액티비티입니다."
+    },
+    {
+      "id": "global_santorini_res_1",
+      "name": "암무디 피쉬 타베른",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "이아 마을 아래 위치한 절벽 항구에서 신선하게 갓 구운 문어와 생선 요리를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_santorini_res_2",
+      "name": "메탁시 마스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "섬 중앙의 아담한 마을에 숨겨진 로컬 맛집으로 정통 크레타 및 산토리니 가정식을 선보입니다."
+    },
+    {
+      "id": "global_santorini_res_3",
+      "name": "아르고 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "피라 마을의 압도적인 칼데라 뷰를 감상하며 로맨틱한 파인 다이닝을 경험할 수 있는 곳입니다."
+    },
+    {
+      "id": "global_santorini_caf_1",
+      "name": "프랑코스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "피라 마을 꼭대기에서 잔잔한 클래식 음악과 함께 칵테일이나 커피를 음미하는 명품 카페입니다."
+    },
+    {
+      "id": "global_santorini_caf_2",
+      "name": "비트린 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "이아 마을에서 가장 맛있는 크레페와 향긋한 커피로 지친 다리를 쉬어가게 해주는 멋진 공간입니다."
+    },
+    {
+      "id": "global_santorini_nig_1",
+      "name": "피라 마을 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "어두운 바다 위로 수놓아진 피라 마을의 아름다운 불빛들이 환상적인 야경을 선사합니다."
+    }
+  ],
+  "미코노스": [
+    {
+      "id": "global_mykonos_att_1",
+      "name": "리틀 베니스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 2,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바다와 맞닿은 파스텔톤 건물들이 마치 베네치아를 연상케 하는 낭만적인 해안가 명소입니다."
+    },
+    {
+      "id": "global_mykonos_att_2",
+      "name": "파나기아 파라포르티아니",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "눈부시게 하얀 비대칭 구조가 매력적인 미코노스를 대표하는 독특한 형태의 정교회 성당입니다."
+    },
+    {
+      "id": "global_mykonos_rel_1",
+      "name": "엘리아 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "곱고 부드러운 백사장과 잔잔한 물결이 어우러져 조용하게 일광욕을 만끽하기 좋은 해변입니다."
+    },
+    {
+      "id": "global_mykonos_act_1",
+      "name": "미코노스 스쿠버 다이빙",
+      "category": "activity",
+      "subCategory": "sports",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "에게해의 맑고 투명한 바닷속을 누비며 난파선과 다양한 해양 생물을 관찰하는 짜릿한 다이빙 체험입니다."
+    },
+    {
+      "id": "global_mykonos_res_1",
+      "name": "키키스 타베른",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "전기도 없이 숯불로만 구워내는 환상적인 그릴 요리로 유명한 숨겨진 해변의 보석 같은 식당입니다."
+    },
+    {
+      "id": "global_mykonos_res_2",
+      "name": "스필리아 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "자연 동굴 속에 자리하여 찰랑거리는 파도 소리를 들으며 최고급 해산물을 즐기는 레스토랑입니다."
+    },
+    {
+      "id": "global_mykonos_res_3",
+      "name": "엠 이팅",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "전통 그리스 요리에 현대적 감각을 섬세하게 더한 고품격 파인 다이닝의 정수를 보여줍니다."
+    },
+    {
+      "id": "global_mykonos_caf_1",
+      "name": "카테리나스 바 & 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "리틀 베니스의 탁 트인 오션뷰 발코니에서 칵테일 한 잔과 함께 노을을 감상하기 완벽한 곳입니다."
+    },
+    {
+      "id": "global_mykonos_caf_2",
+      "name": "메두사 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "미코노스 구시가지 골목길에서 브런치와 시원한 프라페를 즐기며 여유를 부릴 수 있는 카페입니다."
+    },
+    {
+      "id": "global_mykonos_nig_1",
+      "name": "카토 밀리 풍차 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "밤바다의 바람을 맞으며 조명이 켜진 고전적인 풍차들이 만들어내는 몽환적인 야경을 감상하세요."
+    }
+  ],
+  "로도스": [
+    {
+      "id": "global_rhodes_att_1",
+      "name": "기사단 단장의 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "성 요한 기사단이 세운 웅장한 중세 성곽으로, 고딕 양식의 진수를 볼 수 있는 박물관 겸 궁전입니다."
+    },
+    {
+      "id": "global_rhodes_att_2",
+      "name": "린도스 아크로폴리스",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "바다를 향해 뻗은 깎아지른 절벽 위에 위치하여 신전 유적과 압도적인 절경을 동시에 선사합니다."
+    },
+    {
+      "id": "global_rhodes_rel_1",
+      "name": "앤서니 퀸 베이",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "영화 촬영지로 유명해진 맑은 에메랄드빛 해안으로, 스노클링과 일광욕을 즐기기 완벽합니다."
+    },
+    {
+      "id": "global_rhodes_act_1",
+      "name": "로도스 구시가지 워킹 투어",
+      "category": "activity",
+      "subCategory": "walking",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유럽에서 가장 잘 보존된 중세 도시의 낭만적인 돌길을 걸으며 타임머신을 탄 듯한 기분을 느껴보세요."
+    },
+    {
+      "id": "global_rhodes_res_1",
+      "name": "타맘 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "그리스 전통의 맛과 오리엔탈의 풍미가 조화롭게 어우러진 최고 수준의 로컬 맛집입니다."
+    },
+    {
+      "id": "global_rhodes_res_2",
+      "name": "마브리코스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "린도스 광장에 자리잡아 수십 년간 고급스러운 그리스 전통 요리의 명성을 이어온 식당입니다."
+    },
+    {
+      "id": "global_rhodes_res_3",
+      "name": "코우코스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아름다운 전통 가옥 형태에서 브런치부터 디너까지 다채로운 그리스 음식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_rhodes_caf_1",
+      "name": "소크라테스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "활기찬 소크라테스 거리 중심에 위치해 오가는 사람들을 구경하며 커피를 마시기에 제격입니다."
+    },
+    {
+      "id": "global_rhodes_caf_2",
+      "name": "메갈리 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "시원한 그늘 아래에서 맛있는 페이스트리와 진한 그릭 커피의 여유를 선물하는 평화로운 쉼터입니다."
+    },
+    {
+      "id": "global_rhodes_nig_1",
+      "name": "만드라키 항구 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "과거 세계 7대 불가리아 거상이 서 있던 자리를 지키는 사슴 동상과 은은한 항구의 야경이 아름답습니다."
+    }
+  ],
+  "크레타": [
+    {
+      "id": "global_crete_att_1",
+      "name": "크노소스 궁전",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "유럽에서 가장 오래된 문명인 미노아 문명의 중심지이자 미노타우로스 신화의 배경이 된 유적입니다."
+    },
+    {
+      "id": "global_crete_att_2",
+      "name": "엘라포니시 해변",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "신비로운 핑크빛 모래와 크리스탈처럼 투명하고 얕은 바다가 어우러진 세계적인 휴양지입니다."
+    },
+    {
+      "id": "global_crete_rel_1",
+      "name": "발로스 라군",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "자연이 빚어낸 천연 수영장으로 야생적인 아름다움을 간직한 이국적인 석호 해변입니다."
+    },
+    {
+      "id": "global_crete_act_1",
+      "name": "사마리아 협곡 트레킹",
+      "category": "activity",
+      "subCategory": "hiking",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "유럽에서 가장 긴 장엄한 계곡을 따라 걸으며 대자연의 경이로움을 몸소 체감하는 트레킹 코스입니다."
+    },
+    {
+      "id": "global_crete_res_1",
+      "name": "페스케시",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "크레타 전통 요리의 진수를 예술적인 분위기에서 제대로 구현해 낸 최고의 유기농 레스토랑입니다."
+    },
+    {
+      "id": "global_crete_res_2",
+      "name": "타베르나 아레토우사",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "east",
+      "desc": "푸짐하고 넉넉한 인심이 느껴지는 가정식 그릴 요리와 라이브 음악으로 유쾌한 저녁을 선사합니다."
+    },
+    {
+      "id": "global_crete_res_3",
+      "name": "탈라시노 아게리",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "바닷물이 발끝에 닿을 듯한 로맨틱한 해변 테이블에서 최상급 해산물 요리를 즐기는 곳입니다."
+    },
+    {
+      "id": "global_crete_caf_1",
+      "name": "플라자 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "활기찬 광장의 중심에서 맛있는 그리스 페이스트리와 시원한 프레도 에스프레소를 즐겨보세요."
+    },
+    {
+      "id": "global_crete_caf_2",
+      "name": "아라베스크 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "이국적인 인테리어와 달콤한 바클라바, 특색 있는 허브티가 어우러져 편안한 오후를 약속합니다."
+    },
+    {
+      "id": "global_crete_nig_1",
+      "name": "베네치아 항구 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "불을 밝힌 요새와 성벽이 수면에 반사되어 중세 시대의 신비로움을 자아내는 고풍스러운 야경 명소입니다."
+    }
+  ],
+  "메테오라": [
+    {
+      "id": "global_meteora_att_1",
+      "name": "대 메테오라 수도원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아찔한 바위 기둥 위에 세워진 가장 크고 오래된 수도원으로, 경건함과 아찔한 전망을 제공합니다."
+    },
+    {
+      "id": "global_meteora_att_2",
+      "name": "발람 수도원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "풍부한 비잔틴 프레스코화와 박물관을 갖추고 있으며 절경을 자랑하는 두 번째로 큰 수도원입니다."
+    },
+    {
+      "id": "global_meteora_rel_1",
+      "name": "칼람바카 평원 산책",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "거대한 암석군이 병풍처럼 둘러싼 장엄한 평원을 거닐며 대자연의 고요함을 만끽하는 코스입니다."
+    },
+    {
+      "id": "global_meteora_act_1",
+      "name": "메테오라 암벽 등반",
+      "category": "activity",
+      "subCategory": "sports",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "수직으로 솟아오른 거대한 암석 기둥을 오르며 한계를 시험해보는 세계적인 클라이밍 명소입니다."
+    },
+    {
+      "id": "global_meteora_res_1",
+      "name": "메테오론 파노라마",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "이름 그대로 메테오라의 절경을 파노라마로 감상하며 맛있는 훌륭한 그리스 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_meteora_res_2",
+      "name": "타베르나 파넬리니온",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "마을 광장에 자리잡아 현지인들과 여행객 모두에게 사랑받는 전통 그릴 육류 요리 전문점입니다."
+    },
+    {
+      "id": "global_meteora_res_3",
+      "name": "가든 타베르나",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "나무 그늘이 우거진 정원 테라스에서 푸근한 미소와 정성이 가득 담긴 가정식을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_meteora_caf_1",
+      "name": "미크로 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "칼람바카 마을의 소박한 풍경 속에서 진한 커피 향기를 맡으며 아침을 시작하기 좋은 작은 카페입니다."
+    },
+    {
+      "id": "global_meteora_caf_2",
+      "name": "스카이 뷰 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "수도원 투어 중간에 시원한 음료와 함께 거대한 바위 기둥들을 멍하니 바라보며 쉬어가기 완벽합니다."
+    },
+    {
+      "id": "global_meteora_nig_1",
+      "name": "선셋 락 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "붉게 물드는 황홀한 일몰부터 마을에 하나둘 불빛이 켜지는 평화로운 야경까지 감상하는 최고의 전망대입니다."
+    }
+  ],
+  "델피": [
+    {
+      "id": "global_delphi_att_1",
+      "name": "아폴론 신전",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 그리스에서 세상의 중심으로 여겨졌던 곳으로, 신탁이 내려진 신비롭고 웅장한 유적입니다."
+    },
+    {
+      "id": "global_delphi_att_2",
+      "name": "델피 고고학 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신전 발굴 과정에서 출토된 진귀한 청동상과 스핑크스 등 고대 걸작들을 소장하고 있습니다."
+    },
+    {
+      "id": "global_delphi_rel_1",
+      "name": "파르나소스 산 산책",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "신화 속 영감이 깃든 거대한 산맥의 맑은 공기를 들이마시며 고즈넉한 숲길을 걷는 힐링 코스입니다."
+    },
+    {
+      "id": "global_delphi_act_1",
+      "name": "델피 유적지 가이드 투어",
+      "category": "activity",
+      "subCategory": "walking",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전문 가이드의 흥미진진한 신화와 역사 설명을 들으며 유적지의 비밀을 깊이 있게 파헤쳐봅니다."
+    },
+    {
+      "id": "global_delphi_res_1",
+      "name": "타베르나 바쿠스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "계곡이 한눈에 내려다보이는 발코니에서 와인과 함께 깊은 맛의 무사카를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_delphi_res_2",
+      "name": "토 파트리코 마스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "탁 트인 뷰와 친절한 서비스, 그리고 지역 특산물을 활용한 정통 그리스 요리가 일품인 식당입니다."
+    },
+    {
+      "id": "global_delphi_res_3",
+      "name": "에피코우로스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세련된 플레이팅의 그릴 요리와 다채로운 메제(전채)를 아름다운 전망과 곁들여 제공합니다."
+    },
+    {
+      "id": "global_delphi_caf_1",
+      "name": "멜로폴레이오 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현지 꿀과 견과류를 듬뿍 얹은 그릭 요거트와 진한 에스프레소가 완벽한 조화를 이루는 곳입니다."
+    },
+    {
+      "id": "global_delphi_caf_2",
+      "name": "델피 카페 바",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "따뜻한 차 한 잔을 마시며 코린토스 만으로 저무는 황홀한 노을을 조용히 감상할 수 있습니다."
+    },
+    {
+      "id": "global_delphi_nig_1",
+      "name": "델피 밸리 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "south",
+      "desc": "어둠이 내린 거대한 협곡과 멀리 바다 쪽에 반짝이는 불빛들이 어우러져 장관을 연출합니다."
+    }
+  ],
+  "나프플리오": [
+    {
+      "id": "global_nafplio_att_1",
+      "name": "팔라미디 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "999개의 가파른 계단을 오르면 도달하는 베네치아 시대의 철벽 요새로, 시내 전경이 압도적입니다."
+    },
+    {
+      "id": "global_nafplio_att_2",
+      "name": "부르지 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "항구 앞바다 작은 섬 위에 동화처럼 떠 있는 아름다운 성으로 배를 타고 방문할 수 있습니다."
+    },
+    {
+      "id": "global_nafplio_rel_1",
+      "name": "아르바니티아 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "팔라미디 요새 바로 아래 자리잡은 작고 고요한 자갈 해변에서 맑은 바닷물을 즐겨보세요."
+    },
+    {
+      "id": "global_nafplio_act_1",
+      "name": "나프플리오 올드타운 자전거 투어",
+      "category": "activity",
+      "subCategory": "sports",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아름다운 해안 도로와 낭만적인 골목길을 자전거를 타고 유유자적 탐험하는 액티비티입니다."
+    },
+    {
+      "id": "global_nafplio_res_1",
+      "name": "카라말리스 타베르나",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "바닷바람을 맞으며 오늘 갓 잡은 싱싱한 생선 구이와 깔라마리를 맛볼 수 있는 정통 타베르나입니다."
+    },
+    {
+      "id": "global_nafplio_res_2",
+      "name": "아이올리 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세련된 골목의 야외 테라스에서 훌륭한 파스타와 지중해식 퓨전 요리를 선보이는 맛집입니다."
+    },
+    {
+      "id": "global_nafplio_res_3",
+      "name": "스파토스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "현지인들로 늘 붐비며, 정통 그리스 수블라키와 미트볼을 가장 맛있게 먹을 수 있는 식당입니다."
+    },
+    {
+      "id": "global_nafplio_caf_1",
+      "name": "로소 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "광장을 마주보고 있어 커피 한 잔과 함께 나프플리오 특유의 여유롭고 우아한 분위기를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_nafplio_caf_2",
+      "name": "카페 첸트랄",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아이스크림과 다양한 디저트가 훌륭하며 밤이면 은은한 칵테일 바로 변신하는 매력적인 공간입니다."
+    },
+    {
+      "id": "global_nafplio_nig_1",
+      "name": "신타그마 광장 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "아름다운 대리석 바닥이 조명에 반짝이고 고풍스러운 건물들이 둘러싼 그리스에서 가장 우아한 광장입니다."
+    }
+  ],
+  "코르푸": [
+    {
+      "id": "global_corfu_att_1",
+      "name": "코르푸 올드 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "해자를 가로질러 들어가는 거대한 베네치아 요새로, 도시 전체와 바다를 아우르는 절경이 펼쳐집니다."
+    },
+    {
+      "id": "global_corfu_att_2",
+      "name": "아킬리온 궁전",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "오스트리아 황후 씨씨가 사랑했던 화려한 피서지로, 그리스 신화 동상과 정원이 매우 아름답습니다."
+    },
+    {
+      "id": "global_corfu_rel_1",
+      "name": "팔레오카스트리차 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "코르푸에서 가장 환상적인 에메랄드빛 물색을 자랑하는 아름다운 만에서 수영과 휴식을 취해보세요."
+    },
+    {
+      "id": "global_corfu_act_1",
+      "name": "코르푸 스피드 보트 투어",
+      "category": "activity",
+      "subCategory": "boat",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "이오니아해의 푸른 바다를 시원하게 가르며 숨겨진 푸른 동굴과 은밀한 해변들을 탐험하는 투어입니다."
+    },
+    {
+      "id": "global_corfu_res_1",
+      "name": "살토 와인 바 & 비스트로",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "다양한 로컬 와인과 함께 세련되고 창의적인 그리스 퓨전 타파스를 즐길 수 있는 세련된 비스트로입니다."
+    },
+    {
+      "id": "global_corfu_res_2",
+      "name": "렉스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "1932년에 문을 연 유서 깊은 식당으로, 파스티치오 등 코르푸 전통 요리의 정수를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_corfu_res_3",
+      "name": "타베르나 니콜라스",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "가족이 운영하는 따뜻한 분위기 속에서 바로 앞 바다에서 잡은 신선한 해산물 요리를 듬뿍 내어줍니다."
+    },
+    {
+      "id": "global_corfu_caf_1",
+      "name": "리스톤 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프랑스 아케이드 양식의 고풍스러운 거리에서 커피를 마시며 지나가는 사람들을 여유롭게 구경하세요."
+    },
+    {
+      "id": "global_corfu_caf_2",
+      "name": "파필론 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아기자기한 골목에 숨겨진 감성 가득한 카페로 시그니처 디저트와 프레시 주스가 일품입니다."
+    },
+    {
+      "id": "global_corfu_nig_1",
+      "name": "코르푸 타운 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "유네스코 세계문화유산인 구시가지의 베네치아풍 건물들이 가로등 불빛과 어우러져 로맨틱합니다."
+    }
+  ],
+  "하니아": [
+    {
+      "id": "global_chania_att_1",
+      "name": "올드 베네치아 항구",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "마치 한 폭의 그림처럼 아름다운 풍경을 자랑하며, 14세기에 지어진 등대가 돋보이는 역사적 항구입니다."
+    },
+    {
+      "id": "global_chania_att_2",
+      "name": "크레타 해양 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "아름다운 요새 건물 내에 위치하여 크레타 섬의 풍부한 해양 역사와 선박 모형들을 흥미롭게 전시합니다."
+    },
+    {
+      "id": "global_chania_rel_1",
+      "name": "네아 호라 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "도심에서 도보로 갈 수 있는 가장 접근성 좋은 모래 해변으로 가볍게 수영하며 쉴 수 있습니다."
+    },
+    {
+      "id": "global_chania_act_1",
+      "name": "하니아 쿠킹 클래스",
+      "category": "activity",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 5,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계적인 장수 식단으로 유명한 신선한 크레타 전통 요리를 직접 만들고 맛보는 특별한 체험입니다."
+    },
+    {
+      "id": "global_chania_res_1",
+      "name": "탐암 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "옛 터키식 목욕탕을 개조한 독특하고 매력적인 공간에서 훌륭한 크레타 및 동지중해 요리를 제공합니다."
+    },
+    {
+      "id": "global_chania_res_2",
+      "name": "살리스",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아름다운 항구 전경을 바라보며 와인 페어링과 함께 모던하게 해석된 고급 해산물 요리를 즐깁니다."
+    },
+    {
+      "id": "global_chania_res_3",
+      "name": "크리소스토모스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "화덕에서 구워내는 고소한 빵과 푸짐한 산악 지방 스타일의 정통 크레타 고기 요리로 극찬받는 곳입니다."
+    },
+    {
+      "id": "global_chania_caf_1",
+      "name": "보우가차 이오르다니스",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "치즈가 듬뿍 들어간 갓 구운 바삭한 보우가차(파이)로 하니아의 완벽한 아침을 책임지는 명소입니다."
+    },
+    {
+      "id": "global_chania_caf_2",
+      "name": "팔라스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "항구 제일의 명당에 자리잡아 시원한 바닷바람과 함께 커피와 칵테일을 즐기는 핫플레이스입니다."
+    },
+    {
+      "id": "global_chania_nig_1",
+      "name": "하니아 등대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "north",
+      "desc": "잔잔한 바다 너머로 조명이 켜진 등대와 올드 항구가 어우러져 만들어내는 잊지 못할 낭만적인 밤입니다."
+    }
+  ],
+  "이라클리온": [
+    {
+      "id": "global_heraklion_att_1",
+      "name": "이라클리온 고고학 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "미노아 문명의 걸작인 '파이스토스 원반'과 프레스코화 등 진귀한 유물 컬렉션을 집대성한 곳입니다."
+    },
+    {
+      "id": "global_heraklion_att_2",
+      "name": "쿨레스 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "베네치아 공화국 시대에 항구를 지키기 위해 세워진 견고한 해상 요새로 옥상 뷰가 아름답습니다."
+    },
+    {
+      "id": "global_heraklion_rel_1",
+      "name": "아무다라 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "끝없이 펼쳐진 긴 모래사장과 맑은 물을 자랑하며 여유롭게 일광욕과 해양 스포츠를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_heraklion_act_1",
+      "name": "올리브 오일 테이스팅",
+      "category": "activity",
+      "subCategory": "food",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "세계 최고 품질을 자랑하는 크레타 올리브 오일의 생산 과정을 배우고 직접 시음해보는 미식 체험입니다."
+    },
+    {
+      "id": "global_heraklion_res_1",
+      "name": "바르디스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들이 즐겨 찾는 아늑한 분위기의 식당으로 깊은 맛의 그리스식 그릴 요리가 일품입니다."
+    },
+    {
+      "id": "global_heraklion_res_2",
+      "name": "파라기",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "크레타 전통 음악 라이브 연주와 함께 신선한 지역 식재료로 만든 요리를 흥겹게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_heraklion_res_3",
+      "name": "카스타니스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "세련된 플레이팅과 창의적인 레시피로 모던 크레타 다이닝을 선도하는 감각적인 레스토랑입니다."
+    },
+    {
+      "id": "global_heraklion_caf_1",
+      "name": "비잔티노 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모로시니 분수 광장에 위치해 역사적인 분수를 바라보며 차가운 프라페 한 잔을 즐기는 여유를 누려보세요."
+    },
+    {
+      "id": "global_heraklion_caf_2",
+      "name": "크롭 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "이라클리온 최고의 스페셜티 커피와 트렌디한 브런치를 제공하여 젊은 층에게 인기 만점인 공간입니다."
+    },
+    {
+      "id": "global_heraklion_nig_1",
+      "name": "라이온 스퀘어 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "사자 장식의 분수에 조명이 켜지고 수많은 카페와 펍들이 생기를 발산하는 활기찬 도심의 밤 풍경입니다."
+    }
+  ],
+  "파트라스": [
+    {
+      "id": "global_patras_att_1",
+      "name": "파트라스 로마 원형 극장",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 한가운데 완벽하게 복원되어 고대 로마의 예술성을 보여주며, 현재도 공연이 열리는 역사적 유적입니다."
+    },
+    {
+      "id": "global_patras_att_2",
+      "name": "성 안드레아 성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "발칸 반도에서 가장 큰 정교회 성당으로, 화려한 비잔틴 양식의 황금빛 돔과 모자이크가 압도적입니다."
+    },
+    {
+      "id": "global_patras_rel_1",
+      "name": "칼로그리아 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "소나무 숲과 거대한 모래 언덕이 맑은 바다와 어우러져 이색적이고 평화로운 분위기를 자아냅니다."
+    },
+    {
+      "id": "global_patras_act_1",
+      "name": "파트라스 성벽 산책",
+      "category": "activity",
+      "subCategory": "walking",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "도시 가장 높은 곳에 위치한 중세 성곽을 따라 걷는 여유로운 산책길로 멋진 전경이 펼쳐집니다."
+    },
+    {
+      "id": "global_patras_res_1",
+      "name": "보데가스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현대적인 감각이 돋보이는 공간에서 뛰어난 퀄리티의 타파스와 파스타, 다채로운 와인을 제공합니다."
+    },
+    {
+      "id": "global_patras_res_2",
+      "name": "시노라",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통을 고수하는 클래식한 그릭 타베르나로 신선한 샐러드와 푸짐한 고기 그릴 요리가 훌륭합니다."
+    },
+    {
+      "id": "global_patras_res_3",
+      "name": "디오도로스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "로마 극장 인근에 자리하여 우아한 분위기 속에서 고급스러운 그리스 지중해식 다이닝을 선사합니다."
+    },
+    {
+      "id": "global_patras_caf_1",
+      "name": "디스커버 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "북카페 스타일로 꾸며져 책과 함께 아늑하고 차분하게 맛있는 커피를 즐길 수 있는 공간입니다."
+    },
+    {
+      "id": "global_patras_caf_2",
+      "name": "마키나 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "광장이 내다보이는 탁 트인 테라스에서 친구들과 시원한 음료를 마시며 수다 떨기 좋은 인기 카페입니다."
+    },
+    {
+      "id": "global_patras_nig_1",
+      "name": "파트라스 마리나 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "west",
+      "desc": "밤바다에 떠 있는 수많은 요트들의 불빛과 산들바람이 만들어내는 여유롭고 낭만적인 해안가 야경입니다."
+    }
+  ],
+  "라리사": [
+    {
+      "id": "global_larissa_att_1",
+      "name": "라리사 고대 극장",
+      "category": "attraction",
+      "subCategory": "ruins",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "번화가 중심에 위풍당당하게 남아있는 고대 그리스의 웅장한 원형 극장으로 발굴의 역사를 자랑합니다."
+    },
+    {
+      "id": "global_larissa_att_2",
+      "name": "베제스테니",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오스만 제국 시대의 견고한 실내 시장 건물로 과거의 영광을 짐작케 하는 인상적인 건축물입니다."
+    },
+    {
+      "id": "global_larissa_rel_1",
+      "name": "알카자르 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "강을 따라 조성된 푸르고 드넓은 공원으로 시민들에게 편안한 휴식과 피크닉 장소를 제공합니다."
+    },
+    {
+      "id": "global_larissa_act_1",
+      "name": "라리사 시립 미술관 투어",
+      "category": "activity",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 3,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "현대적이고 감각적인 미술 작품들과 조각들을 감상하며 도시의 예술적 감수성에 빠져드는 시간입니다."
+    },
+    {
+      "id": "global_larissa_res_1",
+      "name": "아고라 로칸타",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "정성 가득한 홈메이드 스타일의 다채로운 그리스 요리를 가성비 좋고 따뜻하게 차려냅니다."
+    },
+    {
+      "id": "global_larissa_res_2",
+      "name": "키포스 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "아름다운 덩굴 식물들로 장식된 정원 테라스에서 로맨틱한 분위기와 훌륭한 파인다이닝을 즐기세요."
+    },
+    {
+      "id": "global_larissa_res_3",
+      "name": "타판",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "현지인들로 북적이는 활기찬 타베르나로 입안에서 살살 녹는 육즙 가득한 숯불구이 고기가 일품입니다."
+    },
+    {
+      "id": "global_larissa_caf_1",
+      "name": "라스 람블라스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "최고급 원두로 내린 트렌디한 스페셜티 커피와 아침 식사로 안성맞춤인 풍성한 브런치를 즐겨보세요."
+    },
+    {
+      "id": "global_larissa_caf_2",
+      "name": "클리마 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "아늑한 조명과 목재 인테리어 속에서 부드러운 케이크 한 조각과 함께 지친 하루를 달래기 좋은 곳입니다."
+    },
+    {
+      "id": "global_larissa_nig_1",
+      "name": "타히드로메온 광장 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "시원한 분수가 뿜어져 나오고 예쁜 노천 카페들이 활기를 더해주는 라리사 최고의 번화가 야경입니다."
+    }
+  ],
+  "요아니나": [
+    {
+      "id": "global_ioannina_att_1",
+      "name": "팜보티스 호수",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "산자락에 둘러싸인 거울처럼 맑고 고요한 호수로, 보트를 타거나 호반을 산책하기 환상적인 명소입니다."
+    },
+    {
+      "id": "global_ioannina_att_2",
+      "name": "요아니나 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "비잔틴 시대에 세워져 오스만 제국의 알리 파샤가 통치했던 곳으로 다채로운 역사가 살아 숨 쉬는 성곽입니다."
+    },
+    {
+      "id": "global_ioannina_rel_1",
+      "name": "요아니나 섬 산책",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "호수 한가운데 떠 있는 자동차가 없는 평화로운 섬으로, 소나무 길을 걸으며 일상에서 벗어난 힐링을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_ioannina_act_1",
+      "name": "페라마 동굴 탐험",
+      "category": "activity",
+      "subCategory": "hiking",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "수백만 년 동안 자연이 빚어낸 거대하고 기괴한 종유석과 석순들이 가득한 신비로운 석회암 동굴 투어입니다."
+    },
+    {
+      "id": "global_ioannina_res_1",
+      "name": "프론초스 힐",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "언덕 꼭대기에 위치하여 호수와 도시의 환상적인 뷰를 감상하며 최고급 양고기 요리를 맛보는 곳입니다."
+    },
+    {
+      "id": "global_ioannina_res_2",
+      "name": "마스토라키스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "대대로 이어져 온 깊은 손맛으로 요아니나 전통식 파이와 푸짐한 가정식 요리를 따뜻하게 대접합니다."
+    },
+    {
+      "id": "global_ioannina_res_3",
+      "name": "세이리오스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "호숫가에 바로 인접해 찰랑이는 물소리를 들으며 신선한 송어 구이와 해산물을 음미하는 로맨틱한 식당입니다."
+    },
+    {
+      "id": "global_ioannina_caf_1",
+      "name": "리토스 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "따스한 햇살이 비치는 야외 테라스에서 달콤한 시럽이 발라진 튀르키예식 디저트와 진한 커피를 즐기세요."
+    },
+    {
+      "id": "global_ioannina_caf_2",
+      "name": "모텔 카페",
+      "category": "cafe",
+      "subCategory": "cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "빈티지하고 독특한 예술적 감각이 묻어나는 인테리어 속에서 시그니처 칵테일과 티타임을 가지기 완벽합니다."
+    },
+    {
+      "id": "global_ioannina_nig_1",
+      "name": "팜보티스 호수 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "evening",
+        "night"
+      ],
+      "zone": "center",
+      "desc": "달빛이 비치는 은은한 호수면 위로 요아니나 성의 불빛이 반사되어 고요하고 서정적인 야경을 선사합니다."
+    }
+  ],
+  "할키다": [
+    {
+      "id": "global_할키다_att_1",
+      "name": "할키다 고고학 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대부터 로마 시대까지 에비아 섬과 할키다의 다양한 고고학적 유물을 관람할 수 있는 박물관입니다."
+    },
+    {
+      "id": "global_할키다_att_2",
+      "name": "카라바바 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "베네치아 공화국에 대항하기 위해 오스만 제국이 언덕 위에 세운 요새로, 바다 전경이 일품입니다."
+    },
+    {
+      "id": "global_할키다_rel_1",
+      "name": "아스테리아 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "아름다운 에비아 해변에서 일광욕을 즐기며 여유로운 시간을 보낼 수 있는 할키다의 대표 휴양지입니다."
+    },
+    {
+      "id": "global_할키다_act_1",
+      "name": "에우리푸스 해협 보트 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "조수 간만의 차가 매우 큰 에우리푸스 해협의 기이한 물살을 직접 체험해볼 수 있는 보트 투어입니다."
+    },
+    {
+      "id": "global_할키다_res_1",
+      "name": "차푸타니스 해산물 타베르나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "그리스 전통 방식으로 조리된 신선한 해산물 요리와 전통주 우조를 즐길 수 있는 맛집입니다."
+    },
+    {
+      "id": "global_할키다_res_2",
+      "name": "기오르고스 수블라키",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "바삭하게 구워낸 그리스식 수블라키 꼬치와 피타 빵을 제공하는 인기 현지 식당입니다."
+    },
+    {
+      "id": "global_할키다_res_3",
+      "name": "피아토",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "세련된 분위기에서 지중해식 퓨전 요리와 다채로운 그리스 와인을 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_할키다_caf_1",
+      "name": "부다스 바 카페",
+      "category": "cafe",
+      "subCategory": "lounge",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "할키다 해안가에 위치해 이국적인 분위기 속에서 바다를 바라보며 커피와 칵테일을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_할키다_caf_2",
+      "name": "하이 카카오",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "진한 에스프레소와 함께 달콤한 초콜릿 디저트를 곁들여 먹기 좋은 디저트 전문 카페입니다."
+    },
+    {
+      "id": "global_할키다_nig_1",
+      "name": "에우리푸스 다리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "도심을 이어주는 현수교에 불이 켜지면 잔잔한 바다 위에 반사되는 환상적인 야경을 감상할 수 있습니다."
+    }
+  ],
+  "세레스": [
+    {
+      "id": "global_세레스_att_1",
+      "name": "세레스 고고학 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고대 마케도니아 시대와 로마 제국 시대의 유물을 통해 세레스의 오랜 역사를 엿볼 수 있는 공간입니다."
+    },
+    {
+      "id": "global_세레스_att_2",
+      "name": "쿨라스 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "도시 외곽 언덕에 자리 잡은 비잔틴 시대의 요새 유적으로, 시내 전경을 내려다보기에 좋습니다."
+    },
+    {
+      "id": "global_세레스_rel_1",
+      "name": "아기오이 아나르기리 계곡",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "울창한 나무와 시원한 계곡물이 어우러져 지역 주민들에게 사랑받는 세레스의 대표적인 휴식처입니다."
+    },
+    {
+      "id": "global_세레스_act_1",
+      "name": "세레스 레이싱 서킷",
+      "category": "activity",
+      "subCategory": "sports",
+      "themes": {
+        "healing": 0,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "모터스포츠 애호가들을 위해 마련된 그리스 최고의 레이싱 트랙에서 짜릿한 속도감을 느껴볼 수 있습니다."
+    },
+    {
+      "id": "global_세레스_res_1",
+      "name": "엘리아 타베르나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통 올리브 오일 요리와 신선한 샐러드를 제공하는 클래식한 분위기의 그리스 타베르나입니다."
+    },
+    {
+      "id": "global_세레스_res_2",
+      "name": "칼리테아 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "hills",
+      "desc": "언덕 위의 멋진 뷰와 함께 고급스러운 지중해 요리를 맛볼 수 있는 프리미엄 레스토랑입니다."
+    },
+    {
+      "id": "global_세레스_res_3",
+      "name": "토우지키스 수블라키",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "저렴한 가격에 푸짐하고 육즙 가득한 그릴 요리를 즐길 수 있는 세레스의 숨겨진 현지 맛집입니다."
+    },
+    {
+      "id": "global_세레스_caf_1",
+      "name": "시티 젠 카페",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "세레스 중심가의 활기찬 거리를 구경하며 시원한 프라페나 그리스식 커피를 마시기에 완벽한 장소입니다."
+    },
+    {
+      "id": "global_세레스_caf_2",
+      "name": "브릭 커피",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "갓 구운 페이스트리와 향긋한 스페셜티 커피를 맛볼 수 있는 세련된 인테리어의 카페입니다."
+    },
+    {
+      "id": "global_세레스_nig_1",
+      "name": "엘레프테리아스 광장 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "은은한 조명이 켜진 광장과 주변 카페들이 어우러져 로맨틱하고 생동감 넘치는 밤 분위기를 선사합니다."
+    }
+  ],
+  "코스": [
+    {
+      "id": "global_코스_att_1",
+      "name": "아스클레피에이온",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "nature",
+      "desc": "의학의 아버지 히포크라테스가 교육을 받았던 고대 그리스 최고의 치유 성소이자 역사 유적지입니다."
+    },
+    {
+      "id": "global_코스_att_2",
+      "name": "네라치아 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "성 요한 기사단이 항구를 방어하기 위해 세운 거대한 십자군 성채로, 바다 전경이 아름답습니다."
+    },
+    {
+      "id": "global_코스_rel_1",
+      "name": "티가키 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "하얀 백사장과 얕고 맑은 바닷물이 길게 뻗어 있어 휴양과 수영을 즐기기에 안성맞춤인 해변입니다."
+    },
+    {
+      "id": "global_코스_act_1",
+      "name": "코스섬 사이클링 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "평탄한 자전거 도로가 잘 갖춰진 코스섬의 해안선을 따라 시원한 바닷바람을 맞으며 달리는 투어입니다."
+    },
+    {
+      "id": "global_코스_res_1",
+      "name": "엘리아 타베르나 코스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "코스섬의 신선한 로컬 식재료로 만든 무사카와 그릭 샐러드가 일품인 전통 타베르나입니다."
+    },
+    {
+      "id": "global_코스_res_2",
+      "name": "펠라고스 비치 레스토랑",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "해변 모래사장 바로 앞에 위치해 파도 소리를 들으며 지중해식 해산물 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_코스_res_3",
+      "name": "카펠리아",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아늑한 정원 테라스에서 다양한 그리스풍 메제(Meze) 안주와 와인을 곁들여 식사하기 좋은 식당입니다."
+    },
+    {
+      "id": "global_코스_caf_1",
+      "name": "마리나 카페",
+      "category": "cafe",
+      "subCategory": "lounge",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "coast",
+      "desc": "수많은 요트가 정박해 있는 이국적인 항구 풍경을 보며 진한 커피 한 잔의 여유를 느낄 수 있습니다."
+    },
+    {
+      "id": "global_코스_caf_2",
+      "name": "플라테이아 커피",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "구시가지 중심 광장에서 현지인들의 활기찬 일상을 엿보며 맛있는 베이커리를 즐기기 좋은 카페입니다."
+    },
+    {
+      "id": "global_코스_nig_1",
+      "name": "코스 타운 하버 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "오래된 성벽과 정박된 요트들이 불빛을 반사하며 로맨틱하고 신비로운 지중해의 밤을 연출합니다."
+    }
+  ],
+  "사모스": [
+    {
+      "id": "global_사모스_att_1",
+      "name": "헤라 이온",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "nature",
+      "desc": "고대 그리스 신화 속 헤라 여신을 모시던 웅장한 신전 터로 유네스코 세계문화유산에 등재되어 있습니다."
+    },
+    {
+      "id": "global_사모스_att_2",
+      "name": "에우팔리노스 터널",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 0,
+        "activity": 2,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "기원전 6세기에 산을 뚫어 만든 경이로운 고대 수로 터널 유적을 직접 탐험해볼 수 있는 명소입니다."
+    },
+    {
+      "id": "global_사모스_rel_1",
+      "name": "차마두 비치",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "coast",
+      "desc": "투명하게 빛나는 청록색 바다와 부드러운 자갈이 어우러진 사모스 섬 최고의 힐링 해변입니다."
+    },
+    {
+      "id": "global_사모스_act_1",
+      "name": "사모스 와인 테이스팅 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "달콤하고 풍부한 향으로 유명한 사모스의 고유 포도 품종 와인을 포도밭과 와이너리에서 시음해보는 투어입니다."
+    },
+    {
+      "id": "global_사모스_res_1",
+      "name": "트리안타필로스 타베르나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "현지 해산물 요리와 그릴에 구운 고기 요리를 정감 넘치는 그리스 분위기 속에서 즐길 수 있습니다."
+    },
+    {
+      "id": "global_사모스_res_2",
+      "name": "포세이돈 레스토랑",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "바닷가 테라스에서 환상적인 일몰을 감상하며 신선한 지중해식 해산물 파스타를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_사모스_res_3",
+      "name": "마리나스 피쉬 타베르나",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "coast",
+      "desc": "당일 어부가 잡아 올린 신선한 생선만을 취급해 믿고 먹을 수 있는 소박한 분위기의 생선 요리 전문점입니다."
+    },
+    {
+      "id": "global_사모스_caf_1",
+      "name": "코너 스위트",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "그리스식 달콤한 꿀 디저트와 향이 깊은 커피가 잘 어울리는 사모스의 인기 디저트 카페입니다."
+    },
+    {
+      "id": "global_사모스_caf_2",
+      "name": "아고라 카페",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "마을 시장 근처에 위치하여 활기찬 분위기 속에서 로컬들의 쉼터 역할을 하는 매력적인 카페입니다."
+    },
+    {
+      "id": "global_사모스_nig_1",
+      "name": "피타고리오 항구 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "coast",
+      "desc": "밤이 되면 잔잔한 물결 위로 항구 주변의 조명이 아름답게 비치며 낭만적인 산책로가 조성됩니다."
+    }
+  ],
+  "인스부르크": [
+    {
+      "id": "global_인스부르크_att_1",
+      "name": "황금지붕",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "막시밀리안 1세를 기리기 위해 2,600개가 넘는 금동 기와로 장식된 인스부르크 구시가지의 핵심 상징물입니다."
+    },
+    {
+      "id": "global_인스부르크_att_2",
+      "name": "암브라스 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "알프스의 아름다운 경관과 함께 르네상스 예술품과 진귀한 무기 컬렉션을 감상할 수 있는 고성입니다."
+    },
+    {
+      "id": "global_인스부르크_rel_1",
+      "name": "호프가르텐",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 황실의 정원으로 사용되었던 도심 속 오아시스로, 여유롭게 산책하며 휴식을 취하기 완벽한 공원입니다."
+    },
+    {
+      "id": "global_인스부르크_act_1",
+      "name": "노르트케테 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "미래지향적 디자인의 케이블카를 타고 알프스 고산 지대까지 단숨에 올라 경이로운 파노라마 뷰를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_인스부르크_res_1",
+      "name": "슈티프츠켈러",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "중세의 고풍스러운 인테리어 속에서 오스트리아 정통 티롤 지역 요리와 시원한 맥주를 맛볼 수 있는 곳입니다."
+    },
+    {
+      "id": "global_인스부르크_res_2",
+      "name": "디 빌데마닌",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "지속 가능한 티롤산 로컬 식재료만을 고집하여 창의적이고 현대적인 오스트리아 요리를 선보이는 맛집입니다."
+    },
+    {
+      "id": "global_인스부르크_res_3",
+      "name": "뷔르거슈투베",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아늑한 나무 장식의 실내에서 부드러운 슈니첼과 굴라쉬 등 든든한 전통 오스트리아 가정식을 제공합니다."
+    },
+    {
+      "id": "global_인스부르크_caf_1",
+      "name": "카페 자허 인스부르크",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오스트리아 최고의 디저트인 자허토르테와 고급 비엔나 커피의 품격을 인스부르크에서도 그대로 만날 수 있습니다."
+    },
+    {
+      "id": "global_인스부르크_caf_2",
+      "name": "카페 크뢴",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "황금지붕 근처에 위치하여 향긋한 커피와 매일 굽는 신선한 슈트루델을 즐길 수 있는 유명한 베이커리 카페입니다."
+    },
+    {
+      "id": "global_인스부르크_nig_1",
+      "name": "마리아 테레지아 거리 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 0,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "뒤편으로 웅장하게 솟은 알프스 만년설과 화려한 도심의 불빛이 대비를 이루며 그림 같은 야경을 만들어냅니다."
+    }
+  ],
+  "그라츠": [
+    {
+      "id": "global_그라츠_att_1",
+      "name": "슐로스베르크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "그라츠 시내 한가운데 솟은 언덕으로, 상징적인 시계탑과 함께 구시가지 전체를 조망할 수 있는 최고의 명소입니다."
+    },
+    {
+      "id": "global_그라츠_att_2",
+      "name": "그라츠 쿤스트하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "친근한 외계인이라는 별명을 가진 독특한 현대 건축물로, 다채로운 현대 미술 전시가 열리는 미술관입니다."
+    },
+    {
+      "id": "global_그라츠_rel_1",
+      "name": "슈타트파르크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "그라츠 시민들의 평화로운 휴식처로, 넓은 잔디밭과 거목들이 어우러져 여유로운 소풍을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_그라츠_act_1",
+      "name": "무어인젤 도보 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "무어 강 한가운데 떠 있는 인공 섬 무어인젤을 중심으로 그라츠의 아름다운 수변 산책로를 걷는 활동입니다."
+    },
+    {
+      "id": "global_그라츠_res_1",
+      "name": "데어 슈타이어마르크",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "그라츠가 속한 슈타이어마르크 주의 호박씨 오일을 활용한 특색 있는 향토 요리와 와인을 선보이는 식당입니다."
+    },
+    {
+      "id": "global_그라츠_res_2",
+      "name": "슈미트호퍼 임 팔레",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "우아한 궁전 내부에 자리하여, 고급스러운 분위기 속에서 수준 높은 창작 요리를 맛볼 수 있는 파인 다이닝입니다."
+    },
+    {
+      "id": "global_그라츠_res_3",
+      "name": "글뢰클 브로이",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "광장 테라스에 앉아 시원하고 신선한 수제 맥주와 함께 오스트리아 전통 돼지고기 요리를 즐길 수 있는 펍 레스토랑입니다."
+    },
+    {
+      "id": "global_그라츠_caf_1",
+      "name": "오마스 티칸네",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "할머니의 찻주전자라는 이름답게 빈티지하고 아기자기한 소품들로 가득한 레트로 풍의 매력적인 찻집입니다."
+    },
+    {
+      "id": "global_그라츠_caf_2",
+      "name": "트리베카",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "river",
+      "desc": "그라츠 젊은 층에게 가장 인기 있는 스페셜티 커피 전문점으로, 모던한 분위기에서 훌륭한 라떼를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_그라츠_nig_1",
+      "name": "무어 강변 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "river",
+      "desc": "미래지향적인 무어인젤과 그라츠 쿤스트하우스에 불빛이 들어오며 강물에 비치는 모습이 매우 환상적입니다."
+    }
+  ],
+  "멜크": [
+    {
+      "id": "global_멜크_att_1",
+      "name": "멜크 수도원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "도나우 강이 내려다보이는 바위 언덕 위에 세워진 오스트리아 바로크 건축의 걸작이자 유네스코 세계문화유산입니다."
+    },
+    {
+      "id": "global_멜크_att_2",
+      "name": "멜크 시립 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "멜크 지역의 선사 시대 유물부터 현대에 이르기까지 풍부한 역사와 예술 문화를 소개하는 아담한 박물관입니다."
+    },
+    {
+      "id": "global_멜크_rel_1",
+      "name": "도나우 강변 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "푸른 도나우 강을 따라 유유자적 산책을 하거나 벤치에 앉아 조용히 사색을 즐길 수 있는 힐링 스팟입니다."
+    },
+    {
+      "id": "global_멜크_act_1",
+      "name": "바하우 계곡 유람선",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "도나우 강을 따라 멜크에서 크렘스까지 이동하며 아름다운 포도밭과 고성들을 감상하는 로맨틱한 유람선 투어입니다."
+    },
+    {
+      "id": "global_멜크_res_1",
+      "name": "슈티프츠레스토랑 멜크",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "hills",
+      "desc": "멜크 수도원 내부에 위치하여 관람 전후에 편리하게 들러 전통 오스트리아 요리를 맛볼 수 있는 식당입니다."
+    },
+    {
+      "id": "global_멜크_res_2",
+      "name": "라트하우스켈러 멜크",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "구시가지 시청사 건물 지하에 위치해 고풍스러운 분위기 속에서 바하우 계곡산 화이트 와인과 요리를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_멜크_res_3",
+      "name": "페어하우스 멜크",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "river",
+      "desc": "강변 바로 앞에 위치해 탁 트인 도나우 강의 전경을 바라보며 신선한 생선 요리를 맛볼 수 있는 낭만적인 식당입니다."
+    },
+    {
+      "id": "global_멜크_caf_1",
+      "name": "카페 슈테판",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "멜크 시내에서 가장 사랑받는 카페 중 하나로, 수제 케이크와 아펠슈트루델이 유명한 디저트 명소입니다."
+    },
+    {
+      "id": "global_멜크_caf_2",
+      "name": "젤메이어스 로스터리",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 내린 깊은 풍미의 커피와 현대적이고 세련된 인테리어를 자랑하는 멜크의 숨은 보석 같은 카페입니다."
+    },
+    {
+      "id": "global_멜크_nig_1",
+      "name": "멜크 수도원 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "river",
+      "desc": "밤이 되어 황금빛 조명이 켜지면 강둑 위로 솟아오른 거대한 바로크 양식의 수도원이 압도적인 장관을 연출합니다."
+    }
+  ],
+  "바트이슐": [
+    {
+      "id": "global_바트이슐_att_1",
+      "name": "카이저빌라",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "프란츠 요제프 1세 황제와 시시 황후가 여름 별장으로 사용했던 역사적인 우아한 궁전과 아름다운 정원입니다."
+    },
+    {
+      "id": "global_바트이슐_att_2",
+      "name": "바트 이슐 시립 박물관",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 황실의 휴양지였던 온천 도시 바트이슐의 화려했던 역사와 문화적 유산들을 보존하고 전시하는 곳입니다."
+    },
+    {
+      "id": "global_바트이슐_rel_1",
+      "name": "유로테르멘 리조트",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "소금 광산 지역의 특성을 살린 짭짤한 온천수 풀과 다양한 사우나 시설을 갖춘 최고의 웰빙 온천 리조트입니다."
+    },
+    {
+      "id": "global_바트이슐_act_1",
+      "name": "카트린 케이블카",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 2,
+        "activity": 4,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "레트로 감성의 케이블카를 타고 알프스의 7개 호수가 파노라마로 펼쳐지는 카트린 산 정상에 오르는 활동입니다."
+    },
+    {
+      "id": "global_바트이슐_res_1",
+      "name": "가스트호프 고세서",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "전통적인 오스트리아 시골 여관의 정취를 느끼며 푸짐한 고기 요리와 시원한 맥주를 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_바트이슐_res_2",
+      "name": "차우너 레스토랑",
+      "category": "restaurant",
+      "subCategory": "fine_dining",
+      "themes": {
+        "healing": 1,
+        "activity": 0,
+        "food": 5,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "과거 황실에 납품하던 유서 깊은 식당으로, 클래식한 분위기에서 격조 높은 오스트리아 다이닝을 경험할 수 있습니다."
+    },
+    {
+      "id": "global_바트이슐_res_3",
+      "name": "바이세스 크로이츠",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 4,
+        "culture": 3,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "친절한 서비스와 함께 정성스럽게 조리된 타펠슈피츠 등 티롤 스타일의 든든한 정통 식사를 제공하는 로컬 맛집입니다."
+    },
+    {
+      "id": "global_바트이슐_caf_1",
+      "name": "카페 차우너",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "프란츠 요제프 황제가 사랑했던 190년 전통의 카페로, 시그니처 디저트인 차우너슈톨렌은 꼭 맛봐야 합니다."
+    },
+    {
+      "id": "global_바트이슐_caf_2",
+      "name": "시시 카페",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "아름다운 시시 황후의 이름을 딴 로맨틱한 카페에서 여유로운 브런치와 향긋한 홍차를 즐기기 좋습니다."
+    },
+    {
+      "id": "global_바트이슐_nig_1",
+      "name": "트라운 강변 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "river",
+      "desc": "도시를 가로지르는 맑은 트라운 강 주변의 다리와 고풍스러운 건물들에 조명이 켜져 낭만적인 밤 산책을 선사합니다."
+    }
+  ],
+  "클라겐푸르트": [
+    {
+      "id": "global_클라겐푸르트_att_1",
+      "name": "미니문두스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "세계 각국의 유명한 건축물들을 1:25 비율로 정교하게 축소해 놓은 미니어처 테마파크입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_att_2",
+      "name": "린트부름 분수",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 0,
+        "activity": 1,
+        "food": 0,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "클라겐푸르트의 건국 신화에 등장하는 용 린트부름을 형상화한 노이어 플라츠 광장의 대표 조각상입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_rel_1",
+      "name": "뵈르터제 호수 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "투명하고 에메랄드빛을 띠는 오스트리아 남부의 아름다운 뵈르터제 호숫가에서 수영과 피크닉을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_클라겐푸르트_act_1",
+      "name": "호흐오스테르비츠 성 투어",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 1,
+        "activity": 4,
+        "food": 0,
+        "culture": 5,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "hills",
+      "desc": "가파른 바위산 꼭대기에 14개의 방어문을 뚫고 올라가는 중세 고성 탐험으로 진정한 기사의 삶을 엿볼 수 있습니다."
+    },
+    {
+      "id": "global_클라겐푸르트_res_1",
+      "name": "가스트하우스 임 호프",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 5,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "조용한 안뜰 정원이 있어 편안한 분위기 속에서 케른텐 지방의 전통 특산물 요리를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_res_2",
+      "name": "아우구스틴 브로이",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 0,
+        "activity": 0,
+        "food": 5,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "크고 왁자지껄한 맥주 홀에서 거품이 가득한 생맥주와 거대한 포크 너클을 푸짐하게 즐길 수 있는 비어 가든입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_res_3",
+      "name": "슈바이처하우스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "nature",
+      "desc": "크로이츠베르크 숲 속에 위치해 탁 트인 시내 전망과 함께 오스트리아식 바비큐 요리를 맛보는 힐링 레스토랑입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_caf_1",
+      "name": "무질 카페",
+      "category": "cafe",
+      "subCategory": "dessert",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 5,
+        "culture": 4,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "오스트리아의 유명 작가 로베르트 무질의 생가 건물에 자리한 고풍스러운 카페로 케른텐 꿀 케이크가 일품입니다."
+    },
+    {
+      "id": "global_클라겐푸르트_caf_2",
+      "name": "카페 빈너로이터",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning"
+      ],
+      "zone": "center",
+      "desc": "오랜 역사를 지닌 빵집 겸 카페로 매일 갓 구워낸 신선한 빵과 따뜻한 멜랑주 커피로 하루를 시작하기 좋습니다."
+    },
+    {
+      "id": "global_클라겐푸르트_nig_1",
+      "name": "노이어 플라츠 야경",
+      "category": "nightview",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 0,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "center",
+      "desc": "클라겐푸르트의 중심 광장으로, 밤에는 시청사와 린트부름 분수를 비추는 아름다운 조명 아래 산책하기 좋습니다."
+    }
+  ],
+  "사우스 루앙와": [
+    {
+      "id": "global_사우스루앙와_att_1",
+      "name": "사우스 루앙와 국립공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "아프리카 야생동물의 천국이자 세계적인 표범 관찰 명소로, 때 묻지 않은 자연 생태계를 자랑하는 국립공원입니다."
+    },
+    {
+      "id": "global_사우스루앙와_att_2",
+      "name": "루앙와 강",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "river",
+      "desc": "수많은 하마와 악어 무리가 서식하는 공원의 생명선으로, 강변을 따라 모여드는 코끼리 떼를 볼 수 있습니다."
+    },
+    {
+      "id": "global_사우스루앙와_rel_1",
+      "name": "음푸웨 롯지 스파",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 0,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "nature",
+      "desc": "사파리 투어 후 피로를 풀 수 있는 럭셔리 부시 스파로, 탁 트인 초원을 바라보며 힐링 마사지를 받을 수 있습니다."
+    },
+    {
+      "id": "global_사우스루앙와_act_1",
+      "name": "야간 워킹 사파리",
+      "category": "activity",
+      "subCategory": "tour",
+      "themes": {
+        "healing": 0,
+        "activity": 5,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "nature",
+      "desc": "전문 가이드와 함께 달빛이 비치는 덤불 숲을 걸으며 아프리카 밤의 신비로운 야생동물을 추적하는 짜릿한 투어입니다."
+    },
+    {
+      "id": "global_사우스루앙와_res_1",
+      "name": "더 크록 펍 앤 그릴",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 1,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "river",
+      "desc": "사파리를 마친 여행자들이 모여 야생의 무용담을 나누며 그릴 요리와 시원한 모시 맥주를 즐기는 강변 펍입니다."
+    },
+    {
+      "id": "global_사우스루앙와_res_2",
+      "name": "트랙 앤 트레일 다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 4,
+        "culture": 2,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "river",
+      "desc": "루앙와 강가의 야외 테라스에서 모닥불을 피워 놓고 잠비아 전통 요리와 서양식 바비큐 뷔페를 제공하는 곳입니다."
+    },
+    {
+      "id": "global_사우스루앙와_res_3",
+      "name": "플랫독 캠프 식당",
+      "category": "restaurant",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 2,
+        "activity": 0,
+        "food": 4,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "nature",
+      "desc": "가끔 주변을 서성이는 코끼리나 야생 동물들을 먼발치에서 보며 훌륭한 다국적 요리를 맛볼 수 있는 레스토랑입니다."
+    },
+    {
+      "id": "global_사우스루앙와_caf_1",
+      "name": "트라이벌 텍스타일 카페",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 3,
+        "activity": 0,
+        "food": 3,
+        "culture": 4,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "잠비아 현지 수공예품 작업장 옆에 마련된 아기자기한 카페로, 시원한 음료와 함께 기념품 쇼핑을 즐길 수 있습니다."
+    },
+    {
+      "id": "global_사우스루앙와_caf_2",
+      "name": "프로젝트 루앙와 카페",
+      "category": "cafe",
+      "subCategory": "casual",
+      "themes": {
+        "healing": 4,
+        "activity": 0,
+        "food": 3,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "suburb",
+      "desc": "수익금이 지역 사회 교육 지원에 쓰이는 공정 무역 카페로, 따뜻한 커피와 갓 구운 머핀을 제공합니다."
+    },
+    {
+      "id": "global_사우스루앙와_nig_1",
+      "name": "루앙와 리버 은하수 조망",
+      "category": "nightview",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 0,
+        "food": 0,
+        "culture": 0,
+        "shopping": 0
+      },
+      "timeOfDay": [
+        "night"
+      ],
+      "zone": "nature",
+      "desc": "빛 공해가 전혀 없는 대자연 속에서 타닥거리는 캠프파이어와 함께 밤하늘에 쏟아지는 경이로운 은하수를 감상합니다."
+    }
   ]
 };

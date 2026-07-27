@@ -8,8 +8,8 @@ const dbFile = '/home/j/Antigravity/travelWeb/src/data/cityPoiDatabase.js';
 let allPoisDict = {};
 let missingFiles = [];
 
-// Read all 32 files
-for (let i = 1; i <= 32; i++) {
+// Read all 42 files
+for (let i = 1; i <= 42; i++) {
     const file = path.join(scratchDir, `global_poi_${i}.json`);
     if (fs.existsSync(file)) {
         try {
@@ -48,7 +48,7 @@ if (missingFiles.length > 0) {
 
 const cityCount = Object.keys(allPoisDict).length;
 const totalPois = Object.values(allPoisDict).reduce((acc, arr) => acc + arr.length, 0);
-console.log(`All 32 batches found! Cities: ${cityCount}, Total POIs generated: ${totalPois}`);
+console.log(`All 42 batches found! Cities: ${cityCount}, Total POIs generated: ${totalPois}`);
 
 // Merge them into one big dictionary and save as poi_global_massive.js
 const fileContent = `export const poiGlobalMassive = ${JSON.stringify(allPoisDict, null, 2)};\n`;
