@@ -1,3 +1,4 @@
+import { poiGlobalMassive } from './poi/poi_global_massive.js';
 // Extended Categorized & Theme-Scored POI Database
 // Category types: 'attraction', 'restaurant', 'cafe', 'activity', 'relaxation', 'nightview'
 // Themes scores (1-5): healing, activity, food, culture, shopping
@@ -84,6 +85,7 @@ export const CITY_POI_DATABASE = {
   ...poiGlobalMissing,
   // 154 Global Cities
   ...poiGlobalOthers,
+  ...poiGlobalMassive,
   "교토": [
     {
       id: "kyoto_att_1", name: "금각사 (킨카쿠지)", category: "attraction", subCategory: "heritage",
