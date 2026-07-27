@@ -142,58 +142,5 @@ export const getCityPOIs = (cityName, countryName) => {
     return CITY_POI_DATABASE[cityName];
   }
 
-  // Base coordinates fallback
-  const baseLat = 35.0 + ((cityName.charCodeAt(0) % 20) * 0.1);
-  const baseLng = 135.0 + (((cityName.charCodeAt(1) || 65) % 20) * 0.1);
-
-  return [
-    {
-      id: `${cityName}_poi_1`, name: `${cityName} 시그니처 전통 수목원 & 공원`, category: "relaxation", subCategory: "park",
-      themes: { healing: 5, activity: 2, food: 1, culture: 3, shopping: 1 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [baseLat + 0.01, baseLng + 0.01], zone: "north",
-      desc: `${cityName}의 자연 식생과 고즈넉한 수목이 조화롭게 정원화된 힐링 도보 숲길.`
-    },
-    {
-      id: `${cityName}_poi_2`, name: `${cityName} 역사 문화 유적지 / 대성당`, category: "attraction", subCategory: "heritage",
-      themes: { healing: 3, activity: 2, food: 1, culture: 5, shopping: 1 },
-      timeOfDay: ["morning", "afternoon"], coordinates: [baseLat - 0.01, baseLng - 0.01], zone: "center",
-      desc: `오랜 세월 보존된 전통 문화유산과 웅장한 건축 양식을 관람하는 도보 산책.`
-    },
-    {
-      id: `${cityName}_poi_3`, name: `${cityName} 트렌디한 아트 갤러리 & 감성 거리`, category: "attraction", subCategory: "trendy",
-      themes: { healing: 3, activity: 3, food: 2, culture: 4, shopping: 4 },
-      timeOfDay: ["afternoon"], coordinates: [baseLat + 0.02, baseLng - 0.01], zone: "east",
-      desc: `로컬 아티스트 공방과 분위기 있는 독립 서점, 소품 상점가 탐방.`
-    },
-    {
-      id: `${cityName}_poi_4`, name: `${cityName} 스카이라인 시티 야경 전망대`, category: "nightview", subCategory: "viewpoint",
-      themes: { healing: 4, activity: 2, food: 2, culture: 2, shopping: 2 },
-      timeOfDay: ["evening"], coordinates: [baseLat - 0.02, baseLng + 0.02], zone: "south",
-      desc: `${cityName} 도심 마천루 전경과 아름다운 노을 및 화려한 조명 쇼 관람.`
-    },
-    {
-      id: `${cityName}_poi_5`, name: `${cityName} 정통 로컬 시그니처 런치`, category: "restaurant", subCategory: "gourmet",
-      themes: { healing: 3, activity: 1, food: 5, culture: 3, shopping: 1 },
-      timeOfDay: ["lunch"], coordinates: [baseLat + 0.005, baseLng], zone: "center",
-      desc: `${countryName} 특산 신선한 재료로 정갈하게 차려내는 고소하고 구수한 대표 점심.`
-    },
-    {
-      id: `${cityName}_poi_6`, name: `${cityName} 전통 시장 / 숯불 저녁 만찬`, category: "restaurant", subCategory: "gourmet",
-      themes: { healing: 2, activity: 3, food: 5, culture: 4, shopping: 3 },
-      timeOfDay: ["dinner"], coordinates: [baseLat, baseLng - 0.015], zone: "east",
-      desc: `활기찬 현지 야시장 먹거리 또는 정성스럽게 조리한 저녁 코스 디너.`
-    },
-    {
-      id: `${cityName}_poi_7`, name: `${cityName} 전망 좋은 감성 로스팅 카페`, category: "cafe", subCategory: "bakery_cafe",
-      themes: { healing: 5, activity: 1, food: 4, culture: 2, shopping: 2 },
-      timeOfDay: ["tea"], coordinates: [baseLat - 0.005, baseLng + 0.005], zone: "west",
-      desc: `탁 트인 정경을 조망하며 시원한 드립 커피와 수제 특산 베이커리 음미.`
-    },
-    {
-      id: `${cityName}_poi_8`, name: `${cityName} 이색 야외 액티비티 & 온천/스파`, category: "activity", subCategory: "leisure",
-      themes: { healing: 4, activity: 5, food: 1, culture: 2, shopping: 1 },
-      timeOfDay: ["afternoon", "evening"], coordinates: [baseLat + 0.015, baseLng + 0.02], zone: "south",
-      desc: `${cityName} 자연 지형을 활용한 스릴 레저 또는 피로를 푸는 따뜻한 스파 체험.`
-    }
-  ];
+  return [];
 };

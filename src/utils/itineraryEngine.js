@@ -90,93 +90,7 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
       return selected;
     }
 
-    // Dynamic Synth POI for extended multi-day trips when pool runs out
-    const synthIndex = usedIds.size + 1;
-    const synthId = `${cityName}_synth_${style}_${synthIndex}`;
-    usedIds.add(synthId);
-
-    // Resolve localized details from registry
-    const cityData = CITY_ITINERARY_DATA[cityName];
-    const countryReg = COUNTRY_REGISTRY[countryName] || {
-      type: "international",
-      continent: "Asia",
-      currency: "USD",
-      symbol: "$",
-      landmarks: ["중심 랜드마크", "도시 광장", "푸른 도심 공원", "감성 거리"],
-      foods: ["로컬 시그니처 요리", "전통 맛집 메뉴", "수제 디저트", "야경 디너 요리"]
-    };
-
-    const reg = {
-      ...countryReg,
-      landmarks: cityData && cityData.landmarks ? cityData.landmarks : countryReg.landmarks,
-      foods: cityData && cityData.foods ? cityData.foods : countryReg.foods,
-      activities: cityData && cityData.activities ? cityData.activities : ["이색적인 로컬 투어", "짜릿한 야외 액티비티 체험"]
-    };
-
-    const foodName = reg.foods[synthIndex % reg.foods.length];
-    const landmarkName = reg.landmarks[synthIndex % reg.landmarks.length];
-    const activityName = reg.activities[synthIndex % reg.activities.length];
-    
-    // Choose the best dessert or drink name
-    const getDessertOrDrink = (foodsList) => {
-      if (!foodsList || foodsList.length === 0) return "디저트";
-      const keywords = ['커피', '차', '음료', '빙수', '케이크', '크레페', '초콜릿', '디저트', '스콘', '쉐이크', '와인', '맥주', '칵테일', '푸딩', '빵', '타르트', '와플'];
-      for (const food of foodsList) {
-        if (keywords.some(k => food.includes(k))) return food;
-      }
-      return foodsList[foodsList.length - 1];
-    };
-    const dessertOrDrink = getDessertOrDrink(reg.foods);
-
-    const cafeStyles = ["전망 좋은 뷰 카페", "로컬 감성 로스팅 카페", "아기자기한 디저트 찻집", "핸드드립 스페셜티 카페"];
-    const cafeSuffix = cafeStyles[synthIndex % cafeStyles.length];
-
-    if (targetCategory === 'restaurant') {
-      return {
-        id: synthId,
-        name: `${cityName} ${foodName} 전문 맛집`,
-        category: 'restaurant',
-        desc: `${cityName}의 대표 특산 미식인 [${foodName}]을(를) 정성껏 조리하여 선보이는 소문난 현지 식당입니다.`,
-        badgeIcon: '🍽️',
-        isSynth: true
-      };
-    } else if (targetCategory === 'cafe') {
-      return {
-        id: synthId,
-        name: `${cityName} ${dessertOrDrink} & ${cafeSuffix}`,
-        category: 'cafe',
-        desc: `은은한 분위기 속에서 향긋한 로컬 음료와 달콤한 [${dessertOrDrink}](으)로 여행의 여유를 채워갑니다.`,
-        badgeIcon: '☕',
-        isSynth: true
-      };
-    } else if (style === 'activity' || targetCategory === 'activity') {
-      return {
-        id: synthId,
-        name: `${cityName} ${activityName} 체험`,
-        category: 'activity',
-        desc: `현지 문화와 생태를 깊이 있게 체감할 수 있는 인기 [${activityName}] 코스에 참여해 짜릿한 시간을 보냅니다.`,
-        badgeIcon: '🎡',
-        isSynth: true
-      };
-    } else if (style === 'healing' || targetCategory === 'relaxation') {
-      return {
-        id: synthId,
-        name: `${cityName} ${landmarkName} 산책로`,
-        category: 'relaxation',
-        desc: `복잡한 일상에서 완전히 벗어나 초록빛 자연과 [${landmarkName}]의 평화로운 정취를 만끽하며 천천히 걷는 힐링 타임.`,
-        badgeIcon: '🌿',
-        isSynth: true
-      };
-    } else {
-      return {
-        id: synthId,
-        name: `${cityName} ${landmarkName} 투어`,
-        category: 'attraction',
-        desc: `지역을 대표하는 핵심 명소인 [${landmarkName}]을(를) 천천히 둘러보며 숨겨진 역사 이야기를 듣고 멋진 인생샷을 기록합니다.`,
-        badgeIcon: '🏛️',
-        isSynth: true
-      };
-    }
+    return null;
   };
 
   const zones = ['center', 'east', 'west', 'north', 'south'];
@@ -233,6 +147,7 @@ export const buildDynamicItinerary = (cityName, countryName, style = 'healing', 
       
       pattern.forEach((slotInfo, index) => {
         const spot = selectPOI(slotInfo.cat, dayZone, currentCoord);
+        if (!spot) return;
         
         let distKm = null;
         if (currentCoord && spot.coordinates && !spot.isSynth) {
