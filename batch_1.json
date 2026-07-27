@@ -1,0 +1,37 @@
+[
+  {
+    "TypeName": "self",
+    "Role": "Global POI Writer 1",
+    "Prompt": "Generate real POI JSON data for these global cities: 푸켓, 파타야, 후아힌, 크라비, 코사무이, 아유타야, 치앙라이, 빠이, 칸차나부리, 핫야이, 피피섬, 치앙다오, 람빵, 차암, 코창, 야소톤, 수코타이, 롭부리, 하노이, 호치민, 나트랑, 푸꾸옥, 사파, 달랏, 훼, 호이안, 붕따우, 하이퐁, 무이네, 하롱베이, 껀터, 닌빈, 꾸이년, 디엔비엔푸, 미토, 달락, 판랑, 릴, 렌, 랭스, 르아브르, 디종, 몽생미셸, 콜마르, 생말로, 툴론, 그르노블, 낭시, 메스, 비아리츠, 토리노, 바리, 폼페이, 소렌토, 아말피, 포시타노, 카프리.\nFormat strictly as a JS module exporting an array of POI objects. Write it to /home/j/Antigravity/travelWeb/poi_global_1.js using the write_to_file tool. Do not do anything else, just generate and write the file. The objects should have: id, city, name, category, coordinates: [lat, lng], zone, timeOfDay, desc, themes. Each city should have exactly 2-3 REAL POIs (actual landmarks or restaurants).",
+    "Model": "pro",
+    "Workspace": "inherit"
+  },
+  {
+    "TypeName": "self",
+    "Role": "Global POI Writer 2",
+    "Prompt": "Generate real POI JSON data for these global cities: 산지미냐노, 라벤나, 루카, 아레초, 페루자, 아시시, 트렌토, 파도바, 트리에스테, 레체, 베르가모, 버밍엄, 브래드퍼드, 벨파스트, 바스, 윈저, 스트랫퍼드어폰에이번, 뉴캐슬, 글로스터, 브라이턴, 솔즈베리, 캔터베리, 체스터, 더럼, 에버딘, 스완지, 사라고사, 말라가, 무르시아, 팔마데마요르카, 라스팔마스, 산세바스티안, 이비자, 산티아고데콤포스텔라, 쿠엥카, 론다, 하와이 오아후, 로스앤젤레스, 샌프란시스코, 라스베이거스, 시애틀, 보스턴, 워싱턴DC, 마이애미, 올랜도, 호놀룰루, 샌디에고, 덴버, 포틀랜드, 필라델피아, 휴스턴, 달라스, 피닉스, 솔트레이크시티, 뉴올리언스, 내슈빌, 디트로이트.\nFormat strictly as a JS module exporting an array of POI objects. Write it to /home/j/Antigravity/travelWeb/poi_global_2.js using the write_to_file tool. Do not do anything else, just generate and write the file. The objects should have: id, city, name, category, coordinates: [lat, lng], zone, timeOfDay, desc, themes. Each city should have exactly 2-3 REAL POIs (actual landmarks or restaurants).",
+    "Model": "pro",
+    "Workspace": "inherit"
+  },
+  {
+    "TypeName": "self",
+    "Role": "Global POI Writer 3",
+    "Prompt": "Generate real POI JSON data for these global cities: 미니애폴리스, 괌, 사이판, 마우이, 카우아이, 빅아일랜드, 앵커리지, 산호세, 샬럿, 인디애나폴리스, 콜럼버스, 포트워스, 오클랜드, 멤피스, 볼티모어, 밀워키, 피츠버그, 새크라멘토, 애너하임, 버펄로, 하트퍼드, 프로비던스, 잭슨빌, 탬파, 발리, 수라바야, 반둥, 메단, 족자카르타, 롬복, 우붓, 짱구, 스미냑, 누사두아, 길리, 반다아체, 발리파판, 마나도, 사누르, 울루와뚜, 짐바란, 쿠타, 바탐, 멜버른, 브리즈번, 애들레이드, 골드코스트, 캔버라, 호바트, 다윈, 케언즈, 앨리스스프링스, 그레이트오션로드, 바이런베이, 뉴캐슬, 울릉공, 론세스턴.\nFormat strictly as a JS module exporting an array of POI objects. Write it to /home/j/Antigravity/travelWeb/poi_global_3.js using the write_to_file tool. Do not do anything else, just generate and write the file. The objects should have: id, city, name, category, coordinates: [lat, lng], zone, timeOfDay, desc, themes. Each city should have exactly 2-3 REAL POIs (actual landmarks or restaurants).",
+    "Model": "pro",
+    "Workspace": "inherit"
+  },
+  {
+    "TypeName": "self",
+    "Role": "Global POI Writer 4",
+    "Prompt": "Generate real POI JSON data for these global cities: 포트더글라스, 누사, 질롱, 타운즈빌, 상하이, 청두, 광저우, 선전, 시안, 항저우, 쑤저우, 구이린, 리장, 충칭, 칭다오, 샤먼, 우한, 창사, 쿤밍, 다롄, 톈진, 하이난, 싼야, 장자제, 둔황, 우루무치, 라사, 낙양, 정주, 소주, 난닝, 하이커우, 마카오, 심양, 장춘, 길림, 닝보, 무석, 온주, 서안, 밴쿠버, 몬트리올, 퀘벡, 오타와, 캘거리, 에드먼턴, 빅토리아, 위니펙, 핼리팩스, 밴프, 재스퍼, 휘슬러, 옐로나이프, 나이아가라폴스, 해밀턴, 세인트존스, 리자이나.\nFormat strictly as a JS module exporting an array of POI objects. Write it to /home/j/Antigravity/travelWeb/poi_global_4.js using the write_to_file tool. Do not do anything else, just generate and write the file. The objects should have: id, city, name, category, coordinates: [lat, lng], zone, timeOfDay, desc, themes. Each city should have exactly 2-3 REAL POIs (actual landmarks or restaurants).",
+    "Model": "pro",
+    "Workspace": "inherit"
+  },
+  {
+    "TypeName": "self",
+    "Role": "Global POI Writer 5",
+    "Prompt": "Generate real POI JSON data for these global cities: 사스카툰, 프랑크푸르트, 뒤셀도르프, 도르트문트, 에센, 하이델베르크, 로텐부르크, 브레멘, 본, 뒤스부르크, 포츠담, 바젤, 로잔, 체르마트, 생모리츠, 그란델발트, 융프라우, 몽트뢰, 로카르노, 루가노, 생갈렌, 툰, 브리엔츠, 베기스, 가오슝, 타이중, 타이난, 화롄, 지우펀, 예류, 단수이, 신주, 지룽, 타이동, 컨딩, 이란, 자이, 먀오리, 난터우, 장화, 펑후, 진먼, 마주, 마닐라, 세부, 보라카이, 보홀, 다바오, 클락, 바기오, 엘니도, 팔라완, 코론, 바콜로드, 일로일로, 카가얀데오로, 제네럴산토스.\nFormat strictly as a JS module exporting an array of POI objects. Write it to /home/j/Antigravity/travelWeb/poi_global_5.js using the write_to_file tool. Do not do anything else, just generate and write the file. The objects should have: id, city, name, category, coordinates: [lat, lng], zone, timeOfDay, desc, themes. Each city should have exactly 2-3 REAL POIs (actual landmarks or restaurants).",
+    "Model": "pro",
+    "Workspace": "inherit"
+  }
+]

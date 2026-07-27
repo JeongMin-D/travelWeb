@@ -1,0 +1,4151 @@
+{
+  "함양": [
+    {
+      "id": "ko_other_함양_att_1",
+      "name": "함양 상림공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "최치원 선생이 조성한 우리나라 최초의 인공 숲으로 계절마다 아름다운 꽃과 고즈넉한 숲길을 자랑합니다."
+    },
+    {
+      "id": "ko_other_함양_att_2",
+      "name": "용추계곡 & 용추사",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "울창한 숲과 기암괴석, 맑은 계곡물이 어우러진 함양의 대표 청정 피서지이자 고찰입니다."
+    },
+    {
+      "id": "ko_other_함양_rel_1",
+      "name": "지리산 둘레길 함양구간",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "지리산 자락을 따라 고즈넉한 정취와 다랭이논 풍경을 보며 느리게 걷는 힐링 산책로입니다."
+    },
+    {
+      "id": "ko_other_함양_act_1",
+      "name": "함양 대봉산휴양밸리 모노레일 & 짚라인",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "국내 최장 선로를 자랑하는 모노레일을 타고 올라가 아찔한 짚라인으로 산세를 누비는 액티비티 시설입니다."
+    },
+    {
+      "id": "ko_other_함양_res_1",
+      "name": "함양 안의갈비찜",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "두툼하고 부드러운 소갈비에 달콤매콤한 특제 양념이 깊게 밴 함양 안의면의 명물 갈비찜입니다."
+    },
+    {
+      "id": "ko_other_함양_res_2",
+      "name": "지리산 흑돼지 구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "south",
+      "desc": "지리산 청정 지역에서 자란 흑돼지의 쫀득한 육질과 고소한 풍미를 숯불 구이로 즐깁니다."
+    },
+    {
+      "id": "ko_other_함양_res_3",
+      "name": "함양 연밭식당 연잎밥 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "향긋한 연잎에 싸서 찐 영양 찰밥과 다채로운 정갈한 반찬이 어우러진 건강 웰빙 한정식입니다."
+    },
+    {
+      "id": "ko_other_함양_caf_1",
+      "name": "함양 로드48 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "탁 트인 뷰와 감성적인 인테리어에서 신선한 커피와 디저트를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "ko_other_함양_caf_2",
+      "name": "함양 케빈커피 로스터스",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "직접 로스팅한 원두로 깊고 풍부한 향의 스페셜티 커피를 선보이는 디저트 카페입니다."
+    },
+    {
+      "id": "ko_other_함양_nig_1",
+      "name": "함양 상림공원 야간 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "은은한 조명이 숲길과 수변 산책로를 밝혀 밤에도 로맨틱하고 호젓한 산책을 선사합니다."
+    }
+  ],
+  "거창": [
+    {
+      "id": "ko_other_거창_att_1",
+      "name": "거창 Y자형 출렁다리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "세 방향으로 연결된 국내 유일의 교각 없는 Y자형 출렁다리로 아찔한 스릴과 산세를 한눈에 품습니다."
+    },
+    {
+      "id": "ko_other_거창_att_2",
+      "name": "수승대 & 요수정",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "명승지로 지정된 맑은 계곡과 요수정 정자가 조화를 이루는 거창 명소로 연극제 명소로도 명성이 높습니다."
+    },
+    {
+      "id": "ko_other_거창_rel_1",
+      "name": "창포원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "황강 수변을 따라 억새와 꽃창포가 장관을 이루는 거대한 친환경 생태수목원입니다."
+    },
+    {
+      "id": "ko_other_거창_act_1",
+      "name": "감악산 아스타국화 플라잉 테마파크",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 4,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "가을철 보랏빛 아스타국화 밭과 풍력발전기가 이루는 장관 속에서 탁 트인 시야를 조망합니다."
+    },
+    {
+      "id": "ko_other_거창_res_1",
+      "name": "거창 어탕국수",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "민물고기를 고아 만든 칼칼하고 진한 국물에 국수를 말아낸 거창의 향토 보양 음식입니다."
+    },
+    {
+      "id": "ko_other_거창_res_2",
+      "name": "거창 둔마할매피순대",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "오랜 전통 방식으로 꽉 찬 피순대와 구수한 순댓국을 선보이는 거창의 대표 맛집입니다."
+    },
+    {
+      "id": "ko_other_거창_res_3",
+      "name": "거창 갈비탕 전문점",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "큼직한 소갈비가 아낌없이 들어가 맑고 깊은 육수를 자랑하는 든든한 국밥집입니다."
+    },
+    {
+      "id": "ko_other_거창_caf_1",
+      "name": "거창 민들레울",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "수승대 근처 월성계곡 옆에 위치하여 허브 향기와 맑은 계곡 뷰를 함께 누리는 감성 카페입니다."
+    },
+    {
+      "id": "ko_other_거창_caf_2",
+      "name": "거창 해플스 사과아트트리",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "거창 특산품 사과를 모티브로 한 신선한 사과주스와 디저트, 농장 체험이 어우러진 사이더하우스입니다."
+    },
+    {
+      "id": "ko_other_거창_nig_1",
+      "name": "거창 수승대 야간 경관조명",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "밤이면 계곡과 구름다리가 알록달록한 조명으로 물들어 아름다운 밤 풍경을 선사합니다."
+    }
+  ],
+  "합천": [
+    {
+      "id": "ko_other_합천_att_1",
+      "name": "해인사 & 팔만대장경",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "세계유산 팔만대장경판전이 보존된 유서 깊은 천년 고찰로 가야산의 장엄함 속에 위치합니다."
+    },
+    {
+      "id": "ko_other_합천_att_2",
+      "name": "합천 영상테마파크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "1920~1980년대 서울의 모습을 완벽히 재현한 한국 대표 시대극 영화 및 드라마 세트장입니다."
+    },
+    {
+      "id": "ko_other_합천_rel_1",
+      "name": "황매산 군립공원 억새 & 철쭉 군락지",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "봄에는 분홍빛 철쭉, 가을에는 억새가 장관을 이루어 시원한 산바람과 함께 걷기 좋은 명산입니다."
+    },
+    {
+      "id": "ko_other_합천_act_1",
+      "name": "합천호 수상레저 & 루지파크",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "넓은 합천호에서 즐기는 수상스키, 보트 및 신나는 카트 드라이빙을 선사하는 액티비티 공간입니다."
+    },
+    {
+      "id": "ko_other_합천_res_1",
+      "name": "합천 삼가 한우구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "south",
+      "desc": "삼가시장에서 오랜 역사를 지닌 고품질 한우를 착한 가격으로 부드럽게 구워 먹는 별미입니다."
+    },
+    {
+      "id": "ko_other_합천_res_2",
+      "name": "합천 돼지국밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "돼지고기를 푹 고아낸 진하고 담백한 육수에 푸짐한 살코기를 담아내는 든든한 국밥입니다."
+    },
+    {
+      "id": "ko_other_합천_res_3",
+      "name": "합천 산채정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "가야산에서 채취한 다양한 산나물과 건강한 장류로 차려낸 해인사 입구 한정식입니다."
+    },
+    {
+      "id": "ko_other_합천_caf_1",
+      "name": "합천 카페 로우풀",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "합천호의 오션뷰 같은 잔잔한 호수 장관을 바라보며 시원한 음료와 디저트를 즐길 수 있는 카페입니다."
+    },
+    {
+      "id": "ko_other_합천_caf_2",
+      "name": "합천 모토라드 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "라이더들과 여행객들에게 유명한 이색 테마 카페로 빵과 커피가 인기를 끕니다."
+    },
+    {
+      "id": "ko_other_합천_nig_1",
+      "name": "합천 영상테마파크 청와대 세트장 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "실제 청와대를 재현한 건물 주변에 조명이 밝혀지며 은은하고 위엄 있는 야경을 자아냅니다."
+    }
+  ],
+  "양양": [
+    {
+      "id": "ko_other_양양_att_1",
+      "name": "낙산사 & 의상대",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "동해 바다가 내려다보이는 해안 절벽 위에 위치한 천년 고찰로 해수관음상과 일출 경관이 장관입니다."
+    },
+    {
+      "id": "ko_other_양양_att_2",
+      "name": "휴휴암",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "쉬고 또 쉰다는 뜻을 지닌 암자로 바다와 맞닿은 기암괴석과 황어 떼를 관찰할 수 있는 명소입니다."
+    },
+    {
+      "id": "ko_other_양양_rel_1",
+      "name": "남애항전망대 & 해안산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "강원도 3대 미항으로 꼽히는 남애항의 스카이워크 전망대에서 탁 트인 동해 바다를 조망합니다."
+    },
+    {
+      "id": "ko_other_양양_act_1",
+      "name": "서피비치",
+      "category": "activity",
+      "subCategory": "beach",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 3,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "이국적인 휴양지 분위기 속에서 서핑 강습을 받거나 펍과 카바나에서 청춘의 열기를 누리는 해변입니다."
+    },
+    {
+      "id": "ko_other_양양_res_1",
+      "name": "양양 송이버섯 전골",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "양양의 특산품인 은은한 향의 자연산 송이버섯과 한우를 넣고 끓여낸 귀한 보양 전골입니다."
+    },
+    {
+      "id": "ko_other_양양_res_2",
+      "name": "양양 섭국",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "동해안 토종 자연산 홍합(섭)을 된장과 고추장 풀은 국물에 부추와 함께 걸쭉하게 끓여낸 별미입니다."
+    },
+    {
+      "id": "ko_other_양양_res_3",
+      "name": "양양 단양면옥 막국수",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "매콤달콤한 수육과 가자미 식해, 구수한 메밀 막국수가 어우러진 양양 시장의 오랜 노포입니다."
+    },
+    {
+      "id": "ko_other_양양_caf_1",
+      "name": "양양 카페 컨센트릭",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "설악산과 논밭 뷰가 어우러져 평화로운 힐링 분위기를 선사하는 모던한 로스터리 카페입니다."
+    },
+    {
+      "id": "ko_other_양양_caf_2",
+      "name": "양양 카페 서풍",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "시원한 파도 소리를 들으며 파노라마 오션뷰를 즐길 수 있는 감성 디저트 카페입니다."
+    },
+    {
+      "id": "ko_other_양양_nig_1",
+      "name": "양양 쏠비치 해변 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "north",
+      "desc": "스페인풍 건축물과 동해 밤바다가 조화를 이루며 감성적인 해변 조명 야경을 안겨줍니다."
+    }
+  ],
+  "홍천": [
+    {
+      "id": "ko_other_홍천_att_1",
+      "name": "수타사 & 수타사 산소길",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "신라 시대 고찰 수타사와 울창한 공작산 생태숲, 맑은 용담계곡을 끼고 걷는 힐링 산소길입니다."
+    },
+    {
+      "id": "ko_other_홍천_att_2",
+      "name": "알파카월드",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "청정 자연 속에서 순한 알파카들과 직접 먹이를 주고 교감할 수 있는 숲속 동물 체험 파크입니다."
+    },
+    {
+      "id": "ko_other_홍천_rel_1",
+      "name": "가령폭포 & 생태숲",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "우렁찬 물소리와 시원한 피톤치드가 가득한 숲길을 따라 거니는 쾌적한 휴식공간입니다."
+    },
+    {
+      "id": "ko_other_홍천_act_1",
+      "name": "홍천강 래프팅 & 카약",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "굽이치는 홍천강 물줄기를 따라 시원한 물보라를 맞으며 즐기는 래프팅과 수상 스포츠입니다."
+    },
+    {
+      "id": "ko_other_홍천_res_1",
+      "name": "홍천 양지말 화로구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "고추장 양념에 재운 돼지고기를 참숯 화로에 구워 메밀전병과 곁들여 먹는 홍천 대표 명물입니다."
+    },
+    {
+      "id": "ko_other_홍천_res_2",
+      "name": "홍천 쏘가리매운탕",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "홍천강에서 잡은 싱싱한 쏘가리와 수제비를 얼큰하게 끓여낸 깊은 풍미의 민물 매운탕입니다."
+    },
+    {
+      "id": "ko_other_홍천_res_3",
+      "name": "홍천 홍천잣콩두부 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "west",
+      "desc": "홍천 잣과 국산 콩을 사용해 고소하게 만든 손두부 보쌈과 부드러운 순두부 전골입니다."
+    },
+    {
+      "id": "ko_other_홍천_caf_1",
+      "name": "홍천 러스틱 라이프 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "숲속 오두막 콘셉트의 감성 공간에서 숲을 내려다보며 여유로운 음료와 브런치를 즐깁니다."
+    },
+    {
+      "id": "ko_other_홍천_caf_2",
+      "name": "홍천 테라스의 아침 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "홍천강변이 파노라마처럼 펼쳐지는 테라스에서 청량한 강바람을 느끼는 마운틴&리버뷰 카페입니다."
+    },
+    {
+      "id": "ko_other_홍천_nig_1",
+      "name": "비발디파크 루미나리에 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "화려한 빛의 정원과 산책로 조명이 수놓아 리조트 단지의 미학을 완성하는 밤 조명 코스입니다."
+    }
+  ],
+  "원주": [
+    {
+      "id": "ko_other_원주_att_1",
+      "name": "소금산 그랜드밸리 출렁다리",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "100m 높이 암벽 봉우리 사이를 잇는 아찔한 출렁다리와 울렁다리, 소금잔도를 체험하는 원주 대표 명소입니다."
+    },
+    {
+      "id": "ko_other_원주_att_2",
+      "name": "뮤지엄 산",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "세계적인 건축가 안도 타다오가 설계한 자연과 예술, 제임스 터렐 작품이 영감을 주는 숲속 미술관입니다."
+    },
+    {
+      "id": "ko_other_원주_rel_1",
+      "name": "치악산 구룡사 숲길",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "웅장한 치악산 자락 아래 금강소나무 숲길을 따라 걷는 고즈넉하고 울창한 사찰 산책로입니다."
+    },
+    {
+      "id": "ko_other_원주_act_1",
+      "name": "원주 레일파크",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "간현역에서 판대역까지 철길을 따라 시원한 풍경과 터널 레이저 쇼를 만끽하는 레일바이크입니다."
+    },
+    {
+      "id": "ko_other_원주_res_1",
+      "name": "원주 까치둥지 알탕",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "싱싱하고 꽉 찬 알과 곤이, 쑥갓이 듬뿍 들어가 얼큰하고 시원한 국물을 자랑하는 원주 최고 명물 식당입니다."
+    },
+    {
+      "id": "ko_other_원주_res_2",
+      "name": "원주 자유시장 신혼부부 돈가스",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "원주 전통시장 지하상가에서 추억의 분식 돈가스와 떡볶이, 쫄면을 착한 가격에 즐길 수 있습니다."
+    },
+    {
+      "id": "ko_other_원주_res_3",
+      "name": "원주 치악산 곤드레밥상",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "치악산 나물과 향긋한 곤드레를 돌솥에 넣어 갓 지어낸 밥에 양념장을 비벼 먹는 한정식입니다."
+    },
+    {
+      "id": "ko_other_원주_caf_1",
+      "name": "원주 스톤크릭 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "거대한 암벽 절경을 배경으로 야외 잔디밭에서 인생샷을 남길 수 있는 원주 대표 대형 뷰 카페입니다."
+    },
+    {
+      "id": "ko_other_원주_caf_2",
+      "name": "원주 사운드 오브 사일런스 Cafe",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "자연 경관 속에 자리잡아 잔잔한 음악과 고품격 정원 산책을 선사하는 힐링 공간입니다."
+    },
+    {
+      "id": "ko_other_원주_nig_1",
+      "name": "소금산 그랜드밸리 나이트 파크 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "절벽에 펼쳐지는 미디어 파사드 쇼와 음악 분수가 조화를 이루어 환상적인 밤을 만듭니다."
+    }
+  ],
+  "횡성": [
+    {
+      "id": "ko_other_횡성_att_1",
+      "name": "횡성호수길 5구간",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "횡성호의 호숫가를 따라 형성된 평지 수변 산책로로 가족 단위로 한적하게 거닐기 좋습니다."
+    },
+    {
+      "id": "ko_other_횡성_att_2",
+      "name": "풍수원성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "한국인 신부가 처음 세운 고딕 양식의 유서 깊은 성당으로 서정적이고 고즈넉한 성지입니다."
+    },
+    {
+      "id": "ko_other_횡성_rel_1",
+      "name": "청태산 자연휴양림",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "높이 솟은 인공림과 잣나무 숲길이 데크로드로 조성되어 삼림욕을 즐기기 완벽합니다."
+    },
+    {
+      "id": "ko_other_횡성_act_1",
+      "name": "횡성 루지체험장",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "실제 국도를 리모델링하여 만든 단일 코스 최장 길이의 루지로 스릴 만점 카트 레이싱을 제공합니다."
+    },
+    {
+      "id": "ko_other_횡성_res_1",
+      "name": "횡성 축협한우프라자 한우구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "대한민국 으뜸 브랜드 횡성 한우의 1++ 마블링 육질을 부위별로 숯불에 구워 맛보는 최고의 미식입니다."
+    },
+    {
+      "id": "ko_other_횡성_res_2",
+      "name": "횡성 안흥찐빵",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "국산 팥을 가마솥에 손수 삶아 쫄깃한 빵 속에 듬뿍 채워 넣은 안흥면 대표 영양 간식입니다."
+    },
+    {
+      "id": "ko_other_횡성_res_3",
+      "name": "횡성 더덕구이 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "횡성 특산 명품 더덕에 매콤달콤 양념을 발라 철판에 구워낸 향긋한 웰빙 건강 한상입니다."
+    },
+    {
+      "id": "ko_other_횡성_caf_1",
+      "name": "횡성 카페 호수길",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "횡성호수의 호수 뷰를 조망하며 차분한 테라스에서 커피와 베이커리를 나눌 수 있는 쉼터입니다."
+    },
+    {
+      "id": "ko_other_횡성_caf_2",
+      "name": "횡성 노을길 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "탁 트인 횡성의 마운틴 뷰와 아늑한 인테리어가 돋보이는 힐링 뷰 맛집 카페입니다."
+    },
+    {
+      "id": "ko_other_횡성_nig_1",
+      "name": "횡성 루지체험장 야간 조명 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "체험장 주변 산책로에 조명이 밝혀져 밤 시골길의 운치 있는 조명 산책을 안겨줍니다."
+    }
+  ],
+  "영월": [
+    {
+      "id": "ko_other_영월_att_1",
+      "name": "청령포",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "삼면이 서강으로 둘러싸이고 뒤편은 절벽인 조선 단종 임금의 유배지로 울창한 관음송 숲이 아픔을 간직합니다."
+    },
+    {
+      "id": "ko_other_영월_att_2",
+      "name": "한반도 지형",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "서강 줄기가 굽이치며 만든 완벽한 한반도 지도 모양의 침식 지형을 전망대에서 관람합니다."
+    },
+    {
+      "id": "ko_other_영월_rel_1",
+      "name": "장릉",
+      "category": "relaxation",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "세계유산으로 등재된 단종의 능으로 잘 정돈된 소나무 숲길과 단종역사관이 평화로움을 안겨줍니다."
+    },
+    {
+      "id": "ko_other_영월_act_1",
+      "name": "동강 래프팅 & 패러글라이딩",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "어라연 계곡의 기암절벽을 바라보며 동강 레프팅을 즐기거나 하늘을 나는 패러글라이딩에 도전합니다."
+    },
+    {
+      "id": "ko_other_영월_res_1",
+      "name": "영월 다첩 산채정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "장릉 부근에서 영월 산나물과 감자전, 도토리묵 등 다채롭고 정갈하게 차려내는 한정식입니다."
+    },
+    {
+      "id": "ko_other_영월_res_2",
+      "name": "영월 서부시장 메밀전병 & 닭강정",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "영월 서부시장에서 즉석 부쳐내는 칼칼한 메밀전병, 수수부꾸미, 유명 닭강정을 테이크아웃해 즐깁니다."
+    },
+    {
+      "id": "ko_other_영월_res_3",
+      "name": "영월 꼴두국수 & 곤드레밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "메밀면을 넣어 끓인 정겨운 꼴두국수와 향긋한 곤드레 밥이 고향의 푸근함을 전합니다."
+    },
+    {
+      "id": "ko_other_영월_caf_1",
+      "name": "영월 젊은달와이파크 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "붉은 대나무 조형물로 유명한 현대미술 공간 속 카페로 독특한 감성과 시그니처 음료를 즐깁니다."
+    },
+    {
+      "id": "ko_other_영월_caf_2",
+      "name": "영월 카페 모카라",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "동강 산세를 조망하는 감성 테라스 카페로 여유로운 티타임을 선사합니다."
+    },
+    {
+      "id": "ko_other_영월_nig_1",
+      "name": "영월 별마로 천문대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "봉래산 정상에서 쏟아질 듯한 맑은 별자리와 영월 시내의 반짝이는 파노라마 야경을 관측합니다."
+    }
+  ],
+  "평창": [
+    {
+      "id": "ko_other_평창_att_1",
+      "name": "대관령 양떼목장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "구릉진 이국적인 초지 위에서 양들이 한가로이 풀을 뜯는 모습을 보며 산책하는 알프스풍 목장입니다."
+    },
+    {
+      "id": "ko_other_평창_att_2",
+      "name": "월정사 전나무숲길",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "오대산 천년 고찰 월정사 입구까지 1km 넘게 늘어선 곧은 전나무 숲길로 한국 최고의 힐링 산책로입니다."
+    },
+    {
+      "id": "ko_other_평창_rel_1",
+      "name": "발왕산 기차 & 스카이워크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "케이블카를 타고 발왕산 정상에 올라 투명 스카이워크에서 백두대간의 웅장한 능선을 감상합니다."
+    },
+    {
+      "id": "ko_other_평창_act_1",
+      "name": "용평리조트 루지 & 알파인코스터",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "시원한 대관령 바람을 가르며 슬로프를 질주하는 루지와 알파인코스터 레저 시설입니다."
+    },
+    {
+      "id": "ko_other_평창_res_1",
+      "name": "평창 대관령 황태회관 황태구이 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "대관령 덕장에서 말린 고소한 황태 구이와 뽀얀 황태국을 맛보는 평창 대표 맛집입니다."
+    },
+    {
+      "id": "ko_other_평창_res_2",
+      "name": "평창 봉평 메밀막국수 & 메밀전",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "west",
+      "desc": "이효석 생가가 있는 봉평에서 메밀 향 짙은 시원한 막국수와 고소한 묵, 메밀전을 즐깁니다."
+    },
+    {
+      "id": "ko_other_평창_res_3",
+      "name": "평창 대관령 한우 타운",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "청정 대관령 고원지대에서 자란 명품 한우를 정육 식당에서 직접 골라 구워 먹습니다."
+    },
+    {
+      "id": "ko_other_평창_caf_1",
+      "name": "평창 엘림 베이커리 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "갓 구운 유기농 빵과 프리미엄 커피, 아기자기한 마당이 반겨주는 평창 핫플레이스입니다."
+    },
+    {
+      "id": "ko_other_평창_caf_2",
+      "name": "평창 발왕산 몽블랑 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "해발 1,458m 정상에서 구름을 발아래 두고 커피를 마시는 동화 같은 스카이 카페입니다."
+    },
+    {
+      "id": "ko_other_평창_nig_1",
+      "name": "평창 발왕산 스카이워크 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "밤하늘 은하수와 함께 리조트 단지의 오색 빛이 연출하는 환상적인 고원 야경입니다."
+    }
+  ],
+  "정선": [
+    {
+      "id": "ko_other_정선_att_1",
+      "name": "아우라지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "정선아리랑의 발상지로 두 물줄기가 아우러지는 징검다리와 초가집, 징검다리 정취가 아름답습니다."
+    },
+    {
+      "id": "ko_other_정선_att_2",
+      "name": "병방치 스카이워크 & 짚와이어",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "해발 583m 절벽 끝 U자형 유리 전망대에서 굽이치는 한반도 모양의 밤섬과 동강을 내려다봅니다."
+    },
+    {
+      "id": "ko_other_정선_rel_1",
+      "name": "가리왕산 케이블카 & 산소길",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "케이블카를 타고 가리왕산 하봉에 올라 탁 트인 첩첩산중 운해와 산책로를 만끽합니다."
+    },
+    {
+      "id": "ko_other_정선_act_1",
+      "name": "정선 레일바이크",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "구절리역에서 아우라지역까지 7.2km의 철길을 따라 정선의 수려한 자연을 달리며 힐링합니다."
+    },
+    {
+      "id": "ko_other_정선_res_1",
+      "name": "정선 아리랑시장 콧등치기 국수 & 수수부꾸미",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 5,
+        "shopping": 4
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "먹을 때 면발이 콧등을 친다는 메밀 국수와 올챙이국수, 수수부꾸미를 5일장에서 맛봅니다."
+    },
+    {
+      "id": "ko_other_정선_res_2",
+      "name": "정선 곤드레 밥상",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정선 산자락에서 자란 싱싱한 곤드레나물로 지은 들기름 향의 곤드레 밥과 강된장 정식입니다."
+    },
+    {
+      "id": "ko_other_정선_res_3",
+      "name": "정선 황기족발",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "정선 황기를 넣어 잡내 없이 푹 삶아 찢어 나오는 부드럽고 쫄깃한 한방 족발입니다."
+    },
+    {
+      "id": "ko_other_정선_caf_1",
+      "name": "정선 나전역 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "실제 간이역 레트로 분위기를 간직한 카페로 곤드레 크림 라테와 아기자기한 철길 뷰를 제공합니다."
+    },
+    {
+      "id": "ko_other_정선_caf_2",
+      "name": "정선 카페 아우라지",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "아우라지 강가 바로 앞에 위치하여 정선의 물줄기를 바라보며 편안하게 쉬어가는 찻집입니다."
+    },
+    {
+      "id": "ko_other_정선_nig_1",
+      "name": "하이원리조트 미디어파사드 & 분수 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "하이원 잔디광장에서 펼쳐지는 화려한 멀티미디어 분수 쇼와 라이팅 야경을 관람합니다."
+    }
+  ],
+  "철원": [
+    {
+      "id": "ko_other_철원_att_1",
+      "name": "철원 한탄강 주상절리길 & 은하수교",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "한탄강 화산지형의 웅장한 주상절리 절벽을 따라 공중에 띄운 잔도와 투명 은하수교를 걸어봅니다."
+    },
+    {
+      "id": "ko_other_철원_att_2",
+      "name": "고석정 & 고석정 꽃밭",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "임꺽정 전설이 전해지는 한탄강 변 바위 정자와 넓게 펼쳐지는 계절별 대규모 꽃밭입니다."
+    },
+    {
+      "id": "ko_other_철원_rel_1",
+      "name": "철원 소이산 모노레일 & 역사문화공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "모노레일을 타고 소이산 정상에 올라 탁 트인 철원평야와 DMZ 비무장지대 전경을 평화롭게 조망합니다."
+    },
+    {
+      "id": "ko_other_철원_act_1",
+      "name": "한탄강 래프팅 & 물길 트레킹",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "여름에는 한탄강 급류 래프팅, 겨울에는 얼어붙은 강 위를 걷는 얼음물길 트레킹 액티비티를 선사합니다."
+    },
+    {
+      "id": "ko_other_철원_res_1",
+      "name": "철원 오대쌀 밥상",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "대한민국 대표 명품 철원 오대쌀로 갓 지은 윤기 흐르는 솥밥과 풍성한 정갈한 반찬입니다."
+    },
+    {
+      "id": "ko_other_철원_res_2",
+      "name": "철원 삼통고와 갓지은 쌀밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "철원 농산물과 신선한 쌈채소, 제육볶음이 구수하게 차려지는 현지인 추천 식당입니다."
+    },
+    {
+      "id": "ko_other_철원_res_3",
+      "name": "철원 고석정 쌈밥 정식",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "고석정 관광지 근처에서 우렁강된장과 강원도 손두부, 신선한 쌈채소를 무한 제공하는 맛집입니다."
+    },
+    {
+      "id": "ko_other_철원_caf_1",
+      "name": "철원 카페 기와",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고즈넉한 한옥 건물의 멋스러움과 철원 오대쌀을 활용한 이색 음료 및 디저트가 있는 카페입니다."
+    },
+    {
+      "id": "ko_other_철원_caf_2",
+      "name": "철원 뜰꽃 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "예쁜 정원과 야생화가 정성스럽게 가꿔진 숲속 힐링 디저트 카페입니다."
+    },
+    {
+      "id": "ko_other_철원_nig_1",
+      "name": "철원 한탄강 은하수교 야간 조명",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "밤이 되면 주상절리 협곡을 횡단하는 은하수교에 형형색색의 조명이 켜져 낭만적인 밤을 선물합니다."
+    }
+  ],
+  "화천": [
+    {
+      "id": "ko_other_화천_att_1",
+      "name": "화천 산소길 & 파로호",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "북한강 맑은 물 위를 걸을 수 있는 숲속 숲바람 산소길과 탁 트인 파로호의 비경입니다."
+    },
+    {
+      "id": "ko_other_화천_att_2",
+      "name": "칠성전망대",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "DMZ 최전방 자락에서 북한 땅과 금성천을 시원하게 바라볼 수 있는 안보 체험 전망대입니다."
+    },
+    {
+      "id": "ko_other_화천_rel_1",
+      "name": "비수구미 마을 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "휴대폰 터지기 힘든 오지 오염되지 않은 비수구미 계곡길을 따라 청정한 피톤치드를 마십니다."
+    },
+    {
+      "id": "ko_other_화천_act_1",
+      "name": "화천 카누체험 & 수상레저",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "붕어섬 일대 북한강의 잔잔한 물결 위에서 카누와 자전거를 타며 신나는 스포츠를 플레이합니다."
+    },
+    {
+      "id": "ko_other_화천_res_1",
+      "name": "화천 비수구미 산채비빔밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "east",
+      "desc": "오지 오지마을 할머니들이 깊은 산속에서 직접 뜯어 준비한 참산나물로 비벼먹는 최고의 비빔밥입니다."
+    },
+    {
+      "id": "ko_other_화천_res_2",
+      "name": "화천 붕어섬 매운탕",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "북한강의 잡어와 쏘가리를 정성껏 끓여내 국물이 얼큰하고 칼칼한 현지 민물 매운탕입니다."
+    },
+    {
+      "id": "ko_other_화천_res_3",
+      "name": "화천 신읍리 손두부",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "매일 아침 가마솥에 국산 콩을 삶아 굳힌 고소한 손두부 전골과 두부구이입니다."
+    },
+    {
+      "id": "ko_other_화천_caf_1",
+      "name": "화천 카페 사랑해",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "북한강 잔잔한 강줄기를 바로 조망할 수 있는 통유리창 뷰가 예쁜 힐링 카페입니다."
+    },
+    {
+      "id": "ko_other_화천_caf_2",
+      "name": "화천 해산령 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "산자락 공기와 함께 감성적인 디저트와 아메리카노를 쉼 없이 나누는 분위기 있는 명소입니다."
+    },
+    {
+      "id": "ko_other_화천_nig_1",
+      "name": "화천 붕어섬 야간 경관공원",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "북한강 수변을 따라 붕어섬 공원에 야간 조명이 켜지며 고요하고 로맨틱한 밤 산책로를 연출합니다."
+    }
+  ],
+  "양구": [
+    {
+      "id": "ko_other_양구_att_1",
+      "name": "양구 두타연",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "50년간 민간인 출입이 통제되어 맑은 두타연 폭포와 민통선 숲길의 청정 생태가 보존된 국토정중앙 명소입니다."
+    },
+    {
+      "id": "ko_other_양구_att_2",
+      "name": "한반도섬 & 양구 파로호 습지",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "파로호 인공습지 위에 한반도 모양으로 조성된 인공섬을 나무 데크를 걸으며 산책합니다."
+    },
+    {
+      "id": "ko_other_양구_rel_1",
+      "name": "양구 박수근미술관 숲길",
+      "category": "relaxation",
+      "subCategory": "culture",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "화가 박수근의 질박한 예술세계가 담긴 돌담 미술관과 잔디밭, 산책로가 고즈넉함을 선사합니다."
+    },
+    {
+      "id": "ko_other_양구_act_1",
+      "name": "양구 짚라인 & 자전거 길",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "한반도섬을 가로지르는 짚라인 체험과 파로호 수변 자전거 라이딩을 즐길 수 있습니다."
+    },
+    {
+      "id": "ko_other_양구_res_1",
+      "name": "양구 시래기 명가",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "양구 펀치볼 고원에서 찬 바람으로 말린 연하고 구수한 명품 시래기 불고기 정식을 맛봅니다."
+    },
+    {
+      "id": "ko_other_양구_res_2",
+      "name": "양구 촌두부 전골",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "직접 만든 들기름 두부구이와 얼큰하고 고소하게 자작하게 끓여낸 촌두부 전골 맛집입니다."
+    },
+    {
+      "id": "ko_other_양구_res_3",
+      "name": "양구 흑돼지 구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "양구 청정 지역에서 사육된 흑돼지의 육즙 가득한 목살과 삼겹살 숯불구이입니다."
+    },
+    {
+      "id": "ko_other_양구_caf_1",
+      "name": "양구 카페 아인스",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "박수근미술관 부근에 어우러진 조용한 분위기의 감성 카페로 커피와 수제 디저트가 훌륭합니다."
+    },
+    {
+      "id": "ko_other_양구_caf_2",
+      "name": "양구 파로호 뷰 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "파로호 호수 전망을 시원하게 바라보며 청량한 에이드와 스페셜티를 즐기는 뷰 명소입니다."
+    },
+    {
+      "id": "ko_other_양구_nig_1",
+      "name": "양구 한반도섬 야간 조명 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "밤이면 한반도섬 연결 교량과 수변 둘레길에 은은한 빛이 들어와 산책하기 제격입니다."
+    }
+  ],
+  "인제": [
+    {
+      "id": "ko_other_인제_att_1",
+      "name": "원대리 자작나무 숲",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "하얀 자작나무 70만 그루가 빽빽하게 솟아 이국적인 북유럽 감성을 연출하는 인제 최고 명소입니다."
+    },
+    {
+      "id": "ko_other_인제_att_2",
+      "name": "백담사 & 백담계곡",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "설악산 깊은 계곡 속 만해 한용운 선생의 숨결이 깃든 고찰로 계곡의 소탑 밭이 장관을 이룹니다."
+    },
+    {
+      "id": "ko_other_인제_rel_1",
+      "name": "곰배령 야생화 군락지",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "점봉산 곰배령의 완만한 능선을 따라 철철이 피어나는 천상의 화원 야생화 생태탐방길입니다."
+    },
+    {
+      "id": "ko_other_인제_act_1",
+      "name": "인제 내린천 래프팅",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "대한민국 래프팅의 성지 내린천의 급류를 타고 내려오는 짜릿한 레포츠 체험입니다."
+    },
+    {
+      "id": "ko_other_인제_res_1",
+      "name": "인제 황태구이 & 황태해장국",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "용대리 덕장에서 바닷바람과 추위로 극상 부드러워진 황태 구이와 뽀얀 진국의 황태해장국입니다."
+    },
+    {
+      "id": "ko_other_인제_res_2",
+      "name": "인제 산촌 곤드레 밥상",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "인제 청정 자연 산나물과 갓 지은 향긋한 곤드레 솥밥으로 차려낸 정갈한 웰빙 건강식입니다."
+    },
+    {
+      "id": "ko_other_인제_res_3",
+      "name": "인제 손두부 전골",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "south",
+      "desc": "들기름에 두부를 구워 자작하게 찌개를 자박자박 끓여 먹는 인제 오랜 원대리 손두부 맛집입니다."
+    },
+    {
+      "id": "ko_other_인제_caf_1",
+      "name": "인제 카페 자작나무",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "자작나무 숲 하산 길에 위치해 시원한 커피와 하얀 나무 뷰를 함께 즐기는 휴식 공간입니다."
+    },
+    {
+      "id": "ko_other_인제_caf_2",
+      "name": "인제 내린천 스카이 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "내린천 고속도로 휴게소 상공 공중 다리에 설치된 파노라마 리버뷰 전망 카페입니다."
+    },
+    {
+      "id": "ko_other_인제_nig_1",
+      "name": "인제 스피디움 레이싱 서킷 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 3,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "국제 서킷의 은은한 조명과 산세가 어우러지는 모터스포츠 리조트의 이색적인 밤풍경입니다."
+    }
+  ],
+  "대구": [
+    {
+      "id": "ko_other_대구_att_1",
+      "name": "대구 서문시장 & 근대골목",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 2,
+        "activity": 3,
+        "food": 5,
+        "culture": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "조선 3대 시장 중 하나인 서문시장과 청라언덕, 이상화 고택을 따라 걸으며 골목 투어를 즐깁니다."
+    },
+    {
+      "id": "ko_other_대구_att_2",
+      "name": "팔공산 케이블카 & 동화사",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "대구의 명산 팔공산 케이블카를 타고 신무기 통일대불이 우뚝 선 동화사의 유서 깊은 풍경을 감상합니다."
+    },
+    {
+      "id": "ko_other_대구_rel_1",
+      "name": "수성못 생태공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "도심 속 탁 트인 호수를 끼고 산책로, 숲길, 오리배를 누리며 휴식을 취하는 대구 대표 공원입니다."
+    },
+    {
+      "id": "ko_other_대구_act_1",
+      "name": "이월드 & 83타워",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "유럽형 테마파크에서 신나는 놀이기구와 83타워 전망대 엑티비티를 마음껏 즐깁니다."
+    },
+    {
+      "id": "ko_other_대구_res_1",
+      "name": "대구 안지랑 곱창골목",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "south",
+      "desc": "양념 곱창과 막창을 바싹 구워 연탄불 향 가득히 즐기는 대구 10미 핫플레이스 골목입니다."
+    },
+    {
+      "id": "ko_other_대구_res_2",
+      "name": "대구 동인동 찜갈비",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 1,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "양은냄비에 알싸한 마늘과 매운 고춧가루 양념으로 푹 익혀낸 화끈하고 매콤한 소갈비찜입니다."
+    },
+    {
+      "id": "ko_other_대구_res_3",
+      "name": "대구 대구식 뭉티기",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "당일 도축한 쫀득하고 검붉은 우둔살을 특제 양념장에 찍어 먹는 고소한 대구 별미 생고기입니다."
+    },
+    {
+      "id": "ko_other_대구_caf_1",
+      "name": "대구 김광석길 카페거리",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "고 김광석 가수의 음악과 벽화가 함께하는 골목 카페거리에서 낭만적인 티타임을 보냅니다."
+    },
+    {
+      "id": "ko_other_대구_caf_2",
+      "name": "대구 룰리커피 수성못점",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "초록색 우체통 아이콘과 드립커피, 아이스크림이 대표적인 대구 최고 인기 수성못 카페입니다."
+    },
+    {
+      "id": "ko_other_대구_nig_1",
+      "name": "대구 앞산전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "케이블카를 타고 앞산 정상 전망대에 올라 대구 광역시 전체의 반짝이는 도시 야경을 한눈에 담습니다."
+    }
+  ],
+  "대전": [
+    {
+      "id": "ko_other_대전_att_1",
+      "name": "대전 한밭수목원 & 엑스포과학공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "도심 속 도심 최대 인공 수목원인 서원·동원과 엑스포 한빛탑이 어우러진 대전의 대표 명소입니다."
+    },
+    {
+      "id": "ko_other_대전_att_2",
+      "name": "계족산 황톳길",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "14.5km 길이의 부드러운 황톳길을 맨발로 걸으며 자연 소리를 듣는 에코 힐링 트레킹 코스입니다."
+    },
+    {
+      "id": "ko_other_대전_rel_1",
+      "name": "유성온천 족욕체험장",
+      "category": "relaxation",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon",
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "천연 온천수가 흐르는 야외 족욕장에서 누구나 무료로 발을 담그고 여행 피로를 해소합니다."
+    },
+    {
+      "id": "ko_other_대전_act_1",
+      "name": "국립중앙과학관 & 엑스포 아쿠아리움",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과학 수도 대전에서 우주관·자연사관과 화려한 수중 퍼포먼스가 넘치는 체험형 탐방 시설입니다."
+    },
+    {
+      "id": "ko_other_대전_res_1",
+      "name": "대전 성심당 본점",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": {
+        "healing": 2,
+        "activity": 2,
+        "food": 5,
+        "culture": 5,
+        "shopping": 5
+      },
+      "timeOfDay": [
+        "lunch",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "튀김소보로와 부추빵, 명란바게트로 전국의 빵지순례객을 모으는 대한민국 대표 베이커리 맛집입니다."
+    },
+    {
+      "id": "ko_other_대전_res_2",
+      "name": "대전 오문창 순대국밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "24시간 운영하며 쫄깃한 내장과 꽉 찬 순대가 가득 든 구수한 대전 최고의 순댓국집입니다."
+    },
+    {
+      "id": "ko_other_대전_res_3",
+      "name": "대전 칼국수 & 두부두루치기",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "매콤 칼칼한 양념 두부두루치기에 쫄깃한 얼큰 칼국수 면사리를 비벼 먹는 대전 향토 특미입니다."
+    },
+    {
+      "id": "ko_other_대전_caf_1",
+      "name": "대전 소제동 카페거리",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 4,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "철도 관사촌 한옥 건물을 레트로하게 개조한 수제 수풍 카페들이 들어선 핫플레이스 골목입니다."
+    },
+    {
+      "id": "ko_other_대전_caf_2",
+      "name": "대전 옛터민속박물관 찻집",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "모닥불 피어오르는 야외 민속 마당에서 따뜻한 쌍화차와 대추차를 즐기는 힐링 찻집입니다."
+    },
+    {
+      "id": "ko_other_대전_nig_1",
+      "name": "대전 엑스포 한빛탑 야경",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "한빛탑 미디어 파사드 레이저와 음악 분수쇼가 갑천변의 밤 풍경을 화려하게 수놓습니다."
+    }
+  ],
+  "울산": [
+    {
+      "id": "ko_other_울산_att_1",
+      "name": "태화강 국가정원 & 십리대숲",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "태화강변을 따라 4km에 달하는 울창한 십리대숲과 계절별 삼색 꽃밭이 장관을 이루는 대한민국 국가정원입니다."
+    },
+    {
+      "id": "ko_other_울산_att_2",
+      "name": "대왕암공원 & 출렁다리",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "100년 된 해송 숲과 동해 기암괴석 대왕암, 아찔한 해안 출렁다리를 산책하는 울산 동해의 비경입니다."
+    },
+    {
+      "id": "ko_other_울산_rel_1",
+      "name": "간절곶 일출공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "한반도 육지에서 해가 가장 먼저 뜨는 일출 명소로 커다란 소망우체통과 바다 언덕 산책로가 쾌적합니다."
+    },
+    {
+      "id": "ko_other_울산_act_1",
+      "name": "장생포 고래문화마을",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "과거 포구 마을을 재현한 고래 옛마을과 고래박물관, 고래바다여행선 체험을 경험합니다."
+    },
+    {
+      "id": "ko_other_울산_res_1",
+      "name": "울산 언양불고기",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "한우 암소를 얇게 다져 특제 양념에 재운 뒤 참숯 석쇠에 바싹 구워내는 울산 언양의 대표 불고기입니다."
+    },
+    {
+      "id": "ko_other_울산_res_2",
+      "name": "울산 방어진 회센터",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "east",
+      "desc": "방어진 항구 회센터에서 당일 잡은 갓 뜬 싱싱한 제철 활어회와 칼칼한 매운탕을 즐깁니다."
+    },
+    {
+      "id": "ko_other_울산_res_3",
+      "name": "울산 함양집 육회비빔밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "4대를 이어온 노포로 부드러운 육회와 묵채, 전복을 넣어 만든 전통 울산비빔밥의 진수입니다."
+    },
+    {
+      "id": "ko_other_울산_caf_1",
+      "name": "울산 간절곶 오션뷰 카페 AOP",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "간절곶 바다 지평선이 한눈에 보이는 대형 야외 정원 감성 로스터리 카페입니다."
+    },
+    {
+      "id": "ko_other_울산_caf_2",
+      "name": "울산 태화강 뷰 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "태화강 국가정원 십리대숲 전경을 바라보며 시원한 아메리카노와 베이커리를 나눕니다."
+    },
+    {
+      "id": "ko_other_울산_nig_1",
+      "name": "울산 울산대교 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "east",
+      "desc": "울산대교와 공업단지의 웅장한 불빛, 밤바다가 빚어내는 역동적이고 낭만적인 파노라마 야경입니다."
+    }
+  ],
+  "공주": [
+    {
+      "id": "ko_other_공주_att_1",
+      "name": "공산성",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "유네스코 세계유산에 등재된 백제 시대 도성으로 금강 물줄기를 따라 성곽길을 걸으며 역사를 느낍니다."
+    },
+    {
+      "id": "ko_other_공주_att_2",
+      "name": "무령왕릉과 왕릉원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "백제 25대 무령왕과 왕비가 잠든 무덤군으로 웅진 백제 문화의 찬란한 유물 전시관을 관람합니다."
+    },
+    {
+      "id": "ko_other_공주_rel_1",
+      "name": "마곡사 산사 숲길",
+      "category": "relaxation",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "춘마곡이라 불리는 백제 고찰 마곡사와 태극천 맑은 계곡길을 거니는 산사 숲길입니다."
+    },
+    {
+      "id": "ko_other_공주_act_1",
+      "name": "공주 금강 한옥마을 전통체험",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 4,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "전통 온돌 한옥 단지에서 국궁 활쏘기, 다도, 백제 의복 체험 등 옛 선비 문화를 경험합니다."
+    },
+    {
+      "id": "ko_other_공주_res_1",
+      "name": "공주 공주국밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "대파와 소고기를 듬뿍 넣고 푹 끓여내 국물이 얼큰하고 칼칼한 공주 오랜 국밥 맛집입니다."
+    },
+    {
+      "id": "ko_other_공주_res_2",
+      "name": "공주 석갈비",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "뜨거운 돌판 위에 양파와 숯불 돼지갈비를 구워 올린 냄새 없이 깔끔한 공주 유명 갈비입니다."
+    },
+    {
+      "id": "ko_other_공주_res_3",
+      "name": "공주 밤자장 & 짬뽕",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "공주 특산 고소한 알밤을 갈아 넣어 면발이 구수한 탕수육과 얼큰 짬뽕 중화요리입니다."
+    },
+    {
+      "id": "ko_other_공주_caf_1",
+      "name": "공주 베이커리 카페 밤마을",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "공산성 맞은편에서 달콤한 공주 밤파이와 밤 젤라토, 커피를 공산성 뷰와 함께 즐깁니다."
+    },
+    {
+      "id": "ko_other_공주_caf_2",
+      "name": "공주 한옥카페 로뎀나무",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "정갈한 한옥 뜰에서 고즈넉한 대추차와 핸드드립 커피로 힐링하는 서정적인 찻집입니다."
+    },
+    {
+      "id": "ko_other_공주_nig_1",
+      "name": "공주 공산성 성곽 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "금강 다리와 조명이 켜진 공산성 성곽 깃발이 금강물에 반사되어 장엄한 밤 풍경을 선보입니다."
+    }
+  ],
+  "보령": [
+    {
+      "id": "ko_other_보령_att_1",
+      "name": "대천해수욕장 & 머드광장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 4,
+        "activity": 4,
+        "food": 2,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "동양 유일의 패각분 백사장과 머드축제로 유명한 머드광장이 펼쳐진 서해안 대표 해수욕장입니다."
+    },
+    {
+      "id": "ko_other_보령_att_2",
+      "name": "성주산 자연휴양림",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "울창한 편백나무 숲과 단풍나무길을 거닐며 상쾌한 산림욕을 누릴 수 있는 성주산 청정 숲입니다."
+    },
+    {
+      "id": "ko_other_보령_rel_1",
+      "name": "죽도 상화원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "섬 전체가 한국 전통 정원으로 둘러싸여 바다 뷰 회랑을 따라 걸으며 차 한잔 즐기는 비밀 정원입니다."
+    },
+    {
+      "id": "ko_other_보령_act_1",
+      "name": "대천 스카이바이크 & 짚트랙",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "해안선 위 선로를 페달로 달리는 레일바이크와 백사장을 관통하는 짚트랙 레저 체험입니다."
+    },
+    {
+      "id": "ko_other_보령_res_1",
+      "name": "보령 대천항 키조개 삼합",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "싱싱한 키조개 관자와 차돌박이, 전복, 야채를 철판에 한데 구워 먹는 보령 명물 삼합입니다."
+    },
+    {
+      "id": "ko_other_보령_res_2",
+      "name": "보령 굴밥 & 굴구이",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "north",
+      "desc": "천북 굴단지에서 고소하게 구워낸 알이 꽉 찬 장작 불 굴구이와 영양 굴 솥밥입니다."
+    },
+    {
+      "id": "ko_other_보령_res_3",
+      "name": "보령 꽃게탕 & 간장게장",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "west",
+      "desc": "서해안의 신선한 살이 통통한 꽃게로 차려내는 매콤한 게탕과 짭조름한 밥도둑 간장게장입니다."
+    },
+    {
+      "id": "ko_other_보령_caf_1",
+      "name": "보령 갱스커피",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "폐광을 개조한 인더스트리얼 수변 포토존 공간에서 서해 바다 지평선을 조망하는 카페입니다."
+    },
+    {
+      "id": "ko_other_보령_caf_2",
+      "name": "보령 대천 오션뷰 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "대천해수욕장의 철길 파도 소리와 함께 시원한 크림 라테와 디저트를 먹는 오션 테라스 카페입니다."
+    },
+    {
+      "id": "ko_other_보령_nig_1",
+      "name": "보령 대천해수욕장 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "west",
+      "desc": "서해의 붉은 노을이 진 뒤 머드광장 조명과 수평선 어선 불빛이 자아내는 해변 밤 분위기입니다."
+    }
+  ],
+  "아산": [
+    {
+      "id": "ko_other_아산_att_1",
+      "name": "현충사 & 이순신 기념관",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 4,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "충무공 이순신 장군의 사당과 옛집, 난중일기 국보가 보존된 쾌적하고 웅장한 호국 성지입니다."
+    },
+    {
+      "id": "ko_other_아산_att_2",
+      "name": "외암민속마을",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "돌담길과 기와집, 짚풀 지붕 초가집이 살아 숨 쉬는 조선 시대 집성촌 마을을 산책합니다."
+    },
+    {
+      "id": "ko_other_아산_rel_1",
+      "name": "아산 신정호 수변공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "잔잔한 신정호 주변 연꽃 단지와 잔디광장, 야외 조각공원을 거니는 도심 속 휴식처입니다."
+    },
+    {
+      "id": "ko_other_아산_act_1",
+      "name": "파라다이스 스파 도고",
+      "category": "activity",
+      "subCategory": "spa",
+      "themes": {
+        "healing": 5,
+        "activity": 4,
+        "food": 2,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "west",
+      "desc": "유황 온천수를 기반으로 한 야외 바데풀, 온천 파도풀에서 가족과 스파 나들이를 즐깁니다."
+    },
+    {
+      "id": "ko_other_아산_res_1",
+      "name": "아산 염치 한우갈비구이",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "아산 염치 한우 마을에서 구수한 육즙의 참숯 암소 한우 생갈비와 등심 구이를 경험합니다."
+    },
+    {
+      "id": "ko_other_아산_res_2",
+      "name": "아산 온양온천 시장 소머리국밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 3
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "역사가 깊은 온양 전통시장에서 푹 끓여낸 쫀득한 머리고기와 진한 우사골 국밥 맛집입니다."
+    },
+    {
+      "id": "ko_other_아산_res_3",
+      "name": "아산 밀두리 칼국수",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "바지락과 닭 육수로 시원하게 우려낸 쫄깃한 면발의 아산 로컬 칼국수 식당입니다."
+    },
+    {
+      "id": "ko_other_아산_caf_1",
+      "name": "아산 신정호 뷰 카페 샌드유",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "신정호수 호수 뷰와 화려한 대형 루프탑 테라스에서 베이커리와 음료를 마시는 핫플 카페입니다."
+    },
+    {
+      "id": "ko_other_아산_caf_2",
+      "name": "아산 피나클랜드 카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 3,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "수목원 정상 메타세쿼이아 길과 달빛 조각 아래 수목원 뷰를 누리는 힐링 카페입니다."
+    },
+    {
+      "id": "ko_other_아산_nig_1",
+      "name": "아산 신정호수 공원 야간 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "호수를 따라 조성된 수변 데크 산책로 조명이 물에 비쳐 은은하고 조용한 밤 데이트 코스를 선사합니다."
+    }
+  ],
+  "서산": [
+    {
+      "id": "ko_other_서산_att_1",
+      "name": "서산해미읍성",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 4,
+        "activity": 3,
+        "food": 1,
+        "culture": 5,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "조선 시대 평지 읍성의 원형이 가장 잘 보존된 성곽으로 넓은 잔디밭과 회화나무가 정겹습니다."
+    },
+    {
+      "id": "ko_other_서산_att_2",
+      "name": "서산용현리마애여래삼존상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "백제의 미소라 불리는 국보 마애불로 빛의 방향에 따라 인자한 미소가 다채롭게 변하는 걸작입니다."
+    },
+    {
+      "id": "ko_other_서산_rel_1",
+      "name": "개심사 산사 숲길",
+      "category": "relaxation",
+      "subCategory": "heritage",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 5,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "east",
+      "desc": "마음을 연다는 뜻의 개심사에서 굽어진 자연 목재 기둥과 봄 왕벚꽃, 고즈넉한 숲 연못을 만납니다."
+    },
+    {
+      "id": "ko_other_서산_act_1",
+      "name": "서산 간월도 갯벌체험",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 3,
+        "activity": 5,
+        "food": 2,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "물때 맞춰 간월암 바닷길을 걸어가거나 풍요로운 서해 갯벌에서 바지락을 채취하는 체험입니다."
+    },
+    {
+      "id": "ko_other_서산_res_1",
+      "name": "서산 게국지 & 우럭젓국",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "겉절이 김치와 큼직한 꽃게를 넣어 끓인 게국지와 말린 우럭으로 우려낸 시원한 우럭젓국 찌개입니다."
+    },
+    {
+      "id": "ko_other_서산_res_2",
+      "name": "서산 해미읍성 얄개분식 떡볶이",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": {
+        "healing": 1,
+        "activity": 2,
+        "food": 5,
+        "culture": 4,
+        "shopping": 2
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "south",
+      "desc": "응답하라 드라마에 등장한 옛날 추억의 응답하라 모듬 떡볶이를 푸짐하고 달콤하게 냄비로 먹습니다."
+    },
+    {
+      "id": "ko_other_서산_res_3",
+      "name": "서산 어리굴젓 백반",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "south",
+      "desc": "간월도 알이 도톰한 자연산 굴로 담근 매콤하고 짭조름한 서산 대표 밥도둑 어리굴젓 한상입니다."
+    },
+    {
+      "id": "ko_other_서산_caf_1",
+      "name": "서산 해미읍성 한옥카페",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "해미읍성 성벽 바로 인근 고풍스러운 한옥 인테리어 속에서 수제 차와 에이드를 마십니다."
+    },
+    {
+      "id": "ko_other_서산_caf_2",
+      "name": "서산 간월도 바다전망 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "간월암과 수평선 바다가 내려다보이는 창가에서 아름다운 노을을 감상하는 시그니처 뷰 카페입니다."
+    },
+    {
+      "id": "ko_other_서산_nig_1",
+      "name": "서산 해미읍성 야간 성곽 조명",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "south",
+      "desc": "성곽 남문 진남루와 돌담길에 은은한 빛이 비치며 고풍스럽고 조용한 밤 은하수 산책을 선사합니다."
+    }
+  ],
+  "계룡": [
+    {
+      "id": "ko_other_계룡_att_1",
+      "name": "계룡산 국립공원 입구 & 암용추",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "north",
+      "desc": "계룡산 계곡 전설이 담긴 기암괴석 소와 청정한 숲길을 따라 걷는 힐링 자연 탐방로입니다."
+    },
+    {
+      "id": "ko_other_계룡_att_2",
+      "name": "계룡 입암저수지 메타세쿼이아길",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "저수지 수면에 반영되는 붉은 메타세쿼이아 가로수가 한 폭의 풍경화를 연출하는 서정적인 명소입니다."
+    },
+    {
+      "id": "ko_other_계룡_rel_1",
+      "name": "계룡 두계천 생태공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 3,
+        "food": 1,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "morning",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "두계천을 따라 조성된 수변 데크길과 계절 꽃길, 물놀이장이 조성된 깨끗하고 호젓한 공원입니다."
+    },
+    {
+      "id": "ko_other_계룡_act_1",
+      "name": "계룡 군문화체험장 & 병영체험관",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": {
+        "healing": 2,
+        "activity": 5,
+        "food": 1,
+        "culture": 4,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "국방 도시 계룡의 특색을 살려 서바이벌 사격, 가상 리얼 병영 체험 등을 흥미롭게 즐깁니다."
+    },
+    {
+      "id": "ko_other_계룡_res_1",
+      "name": "계룡 팥칼국수 & 묵밥",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 3,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch"
+      ],
+      "zone": "center",
+      "desc": "진하게 쑨 진국 팥물에 쫄깃하게 말아낸 팥칼국수와 시원한 도토리묵밥으로 소문난 식당입니다."
+    },
+    {
+      "id": "ko_other_계룡_res_2",
+      "name": "계룡 토종닭 백숙",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 5,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "north",
+      "desc": "계룡산 산자락 약재를 듬뿍 넣고 부드럽게 푹 고아낸 보양 토종닭 한방 백숙입니다."
+    },
+    {
+      "id": "ko_other_계룡_res_3",
+      "name": "계룡 석갈비 정식",
+      "category": "restaurant",
+      "subCategory": "meat",
+      "themes": {
+        "healing": 2,
+        "activity": 1,
+        "food": 5,
+        "culture": 3,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "lunch",
+        "dinner"
+      ],
+      "zone": "center",
+      "desc": "지글지글 돌판 위에서 구워져 나오는 달콤한 돼지 석갈비와 된장찌개 구수한 한상입니다."
+    },
+    {
+      "id": "ko_other_계룡_caf_1",
+      "name": "계룡 입암저수지 뷰 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": {
+        "healing": 5,
+        "activity": 1,
+        "food": 4,
+        "culture": 1,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "south",
+      "desc": "입암저수지 메타세쿼이아 숲 전경이 한눈에 보이는 통창 뷰에서 잔잔히 차를 음미합니다."
+    },
+    {
+      "id": "ko_other_계룡_caf_2",
+      "name": "계룡 감성 카페 다온",
+      "category": "cafe",
+      "subCategory": "trendy_cafe",
+      "themes": {
+        "healing": 4,
+        "activity": 1,
+        "food": 4,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "tea",
+        "afternoon"
+      ],
+      "zone": "center",
+      "desc": "모던하고 아늑한 도심 속 인테리어에서 수제 샌드위치와 시그니처 크림라테를 즐깁니다."
+    },
+    {
+      "id": "ko_other_계룡_nig_1",
+      "name": "계룡 두계천 수변공원 야간 산책로",
+      "category": "nightview",
+      "subCategory": "park",
+      "themes": {
+        "healing": 5,
+        "activity": 2,
+        "food": 1,
+        "culture": 2,
+        "shopping": 1
+      },
+      "timeOfDay": [
+        "evening"
+      ],
+      "zone": "center",
+      "desc": "두계천 수변 산책로를 따라 조성된 은은한 야간 조명이 편안하고 호젓한 밤 산책을 도와줍니다."
+    }
+  ]
+}

@@ -1,0 +1,2042 @@
+{
+  "말뫼": [
+    {
+      "id": "global_말뫼_att_1",
+      "name": "터닝 토르소",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "말뫼의 대표 랜드마크이자 스페인 건축가 산티아고 칼라트라바가 설계한 꼬여있는 형태의 주상복합 초고층 타워입니다."
+    },
+    {
+      "id": "global_말뫼_att_2",
+      "name": "말뫼성",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "스칸디나비아에서 가장 오래된 요새 중 하나로 수로에 둘러싸여 있으며 역사 박물관과 미술관을 구경할 수 있습니다."
+    },
+    {
+      "id": "global_말뫼_rel_1",
+      "name": "쿵스파르켄 & 슬롯스파르켄",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "말뫼성을 둘러싸고 도심 운하와 울창한 고목이 어우러진 평화롭고 고즈넉한 대형 산책 공원입니다."
+    },
+    {
+      "id": "global_말뫼_act_1",
+      "name": "립세르스보리 야외 목욕탕",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 5, "activity": 4, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "바다 위에 지어진 전통목욕탕에서 따뜻한 사우나 후 외레순 해협의 바다로 뛰어드는 스웨덴식 힐링 체험입니다."
+    },
+    {
+      "id": "global_말뫼_res_1",
+      "name": "루스 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "구시가지 중심에서 매일 아침 직송되는 로컬 식재료와 수제 빵을 정갈하게 선보이는 모던 북유럽 다이닝입니다."
+    },
+    {
+      "id": "global_말뫼_res_2",
+      "name": "불렌 전통 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "오랜 역사를 가진 클래식 스웨덴 주점으로 촉촉한 미트볼과 링곤베리잼, 슈니첼 요리가 일품인 전통 맛집입니다."
+    },
+    {
+      "id": "global_말뫼_res_3",
+      "name": "말뫼 살루할 푸드홀",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "북유럽 해산물부터 수제 치즈, 파스타, 델리 요리까지 다양한 식문화가 한곳에 모인 미식가들의 푸드홀입니다."
+    },
+    {
+      "id": "global_말뫼_caf_1",
+      "name": "솔데 커피 바",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "말뫼 스페셜티 커피의 성지로 직접 로스팅한 신선한 바리스타 드립 커피와 훌륭한 에스프레소를 선보입니다."
+    },
+    {
+      "id": "global_말뫼_caf_2",
+      "name": "릴라 카페세트",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "17세기 앤틱 목조 건물 안에서 스웨덴 전통 디저트와 향긋한 카다몸 번으로 피카 타임을 만끽할 수 있는 카페입니다."
+    },
+    {
+      "id": "global_말뫼_nig_1",
+      "name": "릴라 토르이 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 3, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "중세풍 자갈길과 16세기 건축물 주변 테라스에 은은한 조명이 불을 밝히는 말뫼 밤의 핫플레이스입니다."
+    }
+  ],
+  "웁살라": [
+    {
+      "id": "global_웁살라_att_1",
+      "name": "웁살라 대성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "스칸디나비아에서 가장 크고 높은 고딕 양식의 성당으로 스웨덴 국왕과 왕비들의 무덤이 조성되어 있습니다."
+    },
+    {
+      "id": "global_웁살라_att_2",
+      "name": "웁살라 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "언덕 위에 위치한 16세기 분홍빛 성채로 성 내부의 미술관 감상과 함께 웁살라 시내 전경을 내려다봅니다."
+    },
+    {
+      "id": "global_웁살라_rel_1",
+      "name": "린네 정원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "현대 식물 분류학의 아버지 칼 폰 린네가 가꾼 스웨덴 최초의 역사 깊은 도심 식물원입니다."
+    },
+    {
+      "id": "global_웁살라_act_1",
+      "name": "귀스타비아눔 박물관",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": { "healing": 2, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "웁살라 대학교의 가장 오래된 구관 건물로 돔형 해부학 극장과 바이킹 시대 보물 유적을 관람하는 탐방입니다."
+    },
+    {
+      "id": "global_웁살라_res_1",
+      "name": "돔트랍셸라렌 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "대성당 아래 14세기 동굴 지하 감옥 공간을 개조해 스웨덴 순록, 순 훈제 연어 다이닝을 선사합니다."
+    },
+    {
+      "id": "global_웁살라_res_2",
+      "name": "함베르그스 피스크",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "웁살라 최고의 북유럽 해산물 식당으로 싱싱한 생굴과 연어 스테이크, 크리미한 해산물 스튜를 자랑합니다."
+    },
+    {
+      "id": "global_웁살라_res_3",
+      "name": "웁살라 살루할렌",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 3, "activity": 2, "food": 5, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "피리스 강변에 위치한 고급 푸드홀로 미트볼, 아르티장 수제 치즈, 샌드위치를 자유롭게 즐길 수 있습니다."
+    },
+    {
+      "id": "global_웁살라_caf_1",
+      "name": "귄터스카 호프콘디토리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "center",
+      "desc": "1884년부터 명성을 이어온 웁살라 왕실 납품 베이커리로 고급스러운 스웨덴 케이크와 커피를 제공합니다."
+    },
+    {
+      "id": "global_웁살라_caf_2",
+      "name": "카페 린네",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "피리스 강변의 따스한 분위기 속에서 갓 구운 시나몬 롤과 함께 스웨덴 전통 피카를 즐기는 우아한 카페입니다."
+    },
+    {
+      "id": "global_웁살라_nig_1",
+      "name": "피리스 강변 & 성당 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "조명이 켜진 대성당의 두 첨탑이 잔잔한 피리스 강 수면에 비치는 한낮과는 또 다른 조용한 야경 산책로입니다."
+    }
+  ],
+  "오슬로": [
+    {
+      "id": "global_오슬로_att_1",
+      "name": "오슬로 오페라 하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "바다 위 빙하를 형상화한 이탈리아 대리석 건물로 경사진 지붕 위를 직접 걸어 다니며 피요르드를 감상할 수 있습니다."
+    },
+    {
+      "id": "global_오슬로_att_2",
+      "name": "뭉크 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "노르웨이의 표현주의 거장 에드바르 뭉크의 대표작 '절규'를 포함해 최대 규모의 소장품을 관람할 수 있는 13층 현대 미술관입니다."
+    },
+    {
+      "id": "global_오슬로_rel_1",
+      "name": "비겔란 조각공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "조각가 구스타브 비겔란의 희로애락을 담은 200여 점의 청동과 석조 조각상이 푸른 잔디밭에 늘어선 야외 공원입니다."
+    },
+    {
+      "id": "global_오슬로_act_1",
+      "name": "아케르 브뤼게 & 툽홀멘 수변 탐방",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 4, "activity": 4, "food": 2, "culture": 3, "shopping": 4 },
+      "timeOfDay": ["afternoon"],
+      "zone": "west",
+      "desc": "옛 항구의 부두 창고를 개조해 미네랄 워터프런트 쇼핑몰과 현대 미술 갤러리, 바다 산책을 동시에 즐기는 코스입니다."
+    },
+    {
+      "id": "global_오슬로_res_1",
+      "name": "피스케리에트 피시 앤 칩스",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "갓 잡은 바다 대구로 만든 파삭한 피시 앤 칩스와 시원하고 진한 노르웨이 해물 크림스튜를 파는 수산 전문 식당입니다."
+    },
+    {
+      "id": "global_오슬로_res_2",
+      "name": "마토할렌 오슬로",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아케르 강변의 힙한 푸드홀로 노르웨이산 훈제 연어, 순록 고기 패티, 수제 구다 치즈를 맛볼 수 있는 미식 명소입니다."
+    },
+    {
+      "id": "global_오슬로_res_3",
+      "name": "카페스토바 노르웨이 전통식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "1899년에 오픈하여 대물림되는 정통 노르웨이 가정식 미트볼(Kjøttkaker)과 감자 요리를 제공하는 역사 깊은 곳입니다."
+    },
+    {
+      "id": "global_오슬로_caf_1",
+      "name": "팀 윈델보",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "월드 바리스타 챔피언 팀 윈델보가 운영하며 극상의 라이트 로스팅 북유럽 스페셜티 커피를 선사하는 메카입니다."
+    },
+    {
+      "id": "global_오슬로_caf_2",
+      "name": "푸글렌 오슬로",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "1953년 오픈해 50년대 북유럽 빈티지 가구로 꾸며졌으며 낮에는 드립 커피, 밤에는 칵테일 바가 되는 명소입니다."
+    },
+    {
+      "id": "global_오슬로_nig_1",
+      "name": "아케르 브뤼게 항구 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "west",
+      "desc": "오슬로 피요르드 바다 건너 세련된 조명이 비치는 조각 같은 건물들과 오페라 하우스가 조화를 이루는 로맨틱 야경입니다."
+    }
+  ],
+  "베스테로스": [
+    {
+      "id": "global_베스테로스_att_1",
+      "name": "베스테로스 대성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "스웨덴 왕 에릭 14세가 안치된 고풍스러운 붉은 벽돌의 13세기 고딕 양식 대성당입니다."
+    },
+    {
+      "id": "global_베스테로스_att_2",
+      "name": "아눙스회그 고분군",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "스웨덴 최대 규모의 바이킹 시대 거대 고인돌과 루네 문자 석판이 남아있는 신비로운 역사 유적지입니다."
+    },
+    {
+      "id": "global_베스테로스_rel_1",
+      "name": "베스테로스 식물원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도심 속 정갈한 산책로와 다채로운 북유럽 야생화가 펼쳐진 고즈넉한 식물 정원입니다."
+    },
+    {
+      "id": "global_베스테로스_act_1",
+      "name": "코크풍엔 액션 워터파크",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 5, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "오래된 발전소 건물을 재개조해 스릴 넘치는 수중 워터 슬라이드와 사우나 시설을 갖춘 특색 있는 스파 파크입니다."
+    },
+    {
+      "id": "global_베스테로스_res_1",
+      "name": "셰크로겐 바베큐 & 파인다이닝",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "south",
+      "desc": "멜라렌 호숫가 포구에 세워져 잔잔한 호수 뷰와 함께 직화 해산물 구이, 스테이크를 내놓는 분위기 맛집입니다."
+    },
+    {
+      "id": "global_베스테로스_res_2",
+      "name": "셰크네 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "로컬 농가에서 수확한 신선한 계절 채소와 스웨덴 수제 소시지, 버거를 세련되게 조리하는 비스트로입니다."
+    },
+    {
+      "id": "global_베스테로스_res_3",
+      "name": "베스테로스 살루할 시장식당",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "전통 시장 내부에서 신선한 연어 오픈 샌드위치와 따끈한 스웨덴 육류 스튜를 그자리에서 즐기는 식당입니다."
+    },
+    {
+      "id": "global_베스테로스_caf_1",
+      "name": "카페 린네 베스테로스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "고풍스러운 클래식 목조 분위기에서 핸드드립 커피와 스웨덴 피카 문화를 대표하는 디저트를 즐길 수 있습니다."
+    },
+    {
+      "id": "global_베스테로스_caf_2",
+      "name": "코파른 아르티장 베이커리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "매일 아침 유기농 밀가루로 갓 구워내는 시나몬 번과 바삭한 크루아상이 매력적인 로컬 베이커리 카페입니다."
+    },
+    {
+      "id": "global_베스테로스_nig_1",
+      "name": "멜라렌 호수 수변 공원 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "south",
+      "desc": "달빛 아래 잔잔하게 찰랑이는 멜라렌 호수의 물결과 가로등 산책로가 낭만적인 밤 풍경을 형성합니다."
+    }
+  ],
+  "외레브로": [
+    {
+      "id": "global_외레브로_att_1",
+      "name": "외레브로 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "스바르탄 강 한가운데 작은 섬 위에 거대하게 솟아있는 둥근 탑을 가진 중세 요새 성채입니다."
+    },
+    {
+      "id": "global_외레브로_att_2",
+      "name": "바드쾨핑 야외 박물관",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 2, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "스웨덴 붉은 목조 가옥들과 옛 공방들을 그대로 이전해 놓아 동화 속 과거로 들어온 듯한 보존 지구입니다."
+    },
+    {
+      "id": "global_외레브로_rel_1",
+      "name": "외레브로 시티 파크",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "스웨덴 최고의 공원으로 선정된 바 있으며 아름다운 장미 정원과 스바르탄 강변 산책로가 연결되어 있습니다."
+    },
+    {
+      "id": "global_외레브로_act_1",
+      "name": "구스타브스빅 테마 워터파크",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 5, "food": 1, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "정글 탐험 콘셉트의 대형 실내 워터파크로 유수풀과 수중 다이빙, 온천탕을 온 가족이 경험합니다."
+    },
+    {
+      "id": "global_외레브로_res_1",
+      "name": "아마노 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "이탈리아 요리와 스웨덴 신선 식재료를 조화롭게 접목한 세련된 파인다이닝 레스토랑입니다."
+    },
+    {
+      "id": "global_외레브로_res_2",
+      "name": "외레브로 살루할",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "다양한 델리 매장과 그릴 식당이 융합된 중앙 푸드홀로 프리미엄 스테이크와 치즈 플래터를 즐깁니다."
+    },
+    {
+      "id": "global_외레브로_res_3",
+      "name": "스토라 외레브로 클럽식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "광장 중심에 위치해 정통 스웨덴 돼지 갈비 구이와 수제 와인 리스트를 다채롭게 제공합니다."
+    },
+    {
+      "id": "global_외레브로_caf_1",
+      "name": "바드쾨핑 전통 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "east",
+      "desc": "바드쾨핑 야외 박물관 내 붉은 고택 마당에서 전통 바닐라 빵과 따스한 홍차를 나눌 수 있는 쉼터입니다."
+    },
+    {
+      "id": "global_외레브로_caf_2",
+      "name": "바사 콘디토리",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "오랜 전통을 가진 디저트 카페로 푹신한 조각 케이크와 진한 북유럽 로스팅 드립 커피가 인기를 끌고 있습니다."
+    },
+    {
+      "id": "global_외레브로_nig_1",
+      "name": "외레브로 성 경관 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "밤이 되면 조명이 수려하게 투사된 중세 성채의 모습이 스바르탄 강물에 거울처럼 비치는 환상적인 야경입니다."
+    }
+  ],
+  "헬싱보리": [
+    {
+      "id": "global_헬싱보리_att_1",
+      "name": "샤르난 타워",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "중세 요새 성채 중 유일하게 우뚝 남아있는 35m 높이의 벽돌 탑으로, 탑 상부에서 외레순 해협을 건너 덴마크까지 바라봅니다."
+    },
+    {
+      "id": "global_헬싱보리_att_2",
+      "name": "소피에로 궁전 & 정원",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "스웨덴 왕실의 여름 별장이었던 곳으로 초여름 만병초 꽃밭과 아기자기한 궁전 정원이 바다와 조화를 이룹니다."
+    },
+    {
+      "id": "global_헬싱보리_rel_1",
+      "name": "그뢰닝엔 해안 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "외레순 해협을 따라 시원한 바닷바람과 잔디밭, 산책로가 일직선으로 펼쳐진 해안 휴식처입니다."
+    },
+    {
+      "id": "global_헬싱보리_act_1",
+      "name": "펠셰세 바다 목욕탕",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 5, "activity": 4, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "바다 전망 사우나실에서 땀을 흘린 후 외레순 바닷물로 뛰어들어 상쾌함을 느끼는 전통 바다목욕 체험입니다."
+    },
+    {
+      "id": "global_헬싱보리_res_1",
+      "name": "쇼크로나 수산 식당",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "포구 바로 앞에서 갓 잡은 외레순 생선 구이와 통통한 새우를 수북이 올린 오픈 샌드위치를 내놓습니다."
+    },
+    {
+      "id": "global_헬싱보리_res_2",
+      "name": "신넨 세미 파인다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "스칸디나비아 유기농 식재료를 오감을 만족시키듯 독창적으로 플레이팅하는 북유럽 모던 레스토랑입니다."
+    },
+    {
+      "id": "global_헬싱보리_res_3",
+      "name": "불스 워터프런트 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "바닷가 근처 활기찬 분위기 속에서 수제 두툼한 비프 버거와 해산물 그릴 요리를 맥주와 나누기 좋습니다."
+    },
+    {
+      "id": "global_헬싱보리_caf_1",
+      "name": "에바스 피카",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1950년대 미국과 스웨덴 레트로 인테리어로 꾸며져 앤틱한 그릇에 달콤한 수제 케이크를 내놓는 카페입니다."
+    },
+    {
+      "id": "global_헬싱보리_caf_2",
+      "name": "쇼콜라트 파브리켄",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "진한 카카오 풍미의 수제 초콜릿과 따스한 핫초콜릿, 에스프레소를 즐길 수 있는 디저트 전문 카페입니다."
+    },
+    {
+      "id": "global_헬싱보리_nig_1",
+      "name": "샤르난 언덕 해협 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "샤르난 타워 언덕 위 계단에서 항구 조명과 바다 너머 덴마크 헬싱외르의 반짝이는 불빛을 감상하는 야경입니다."
+    }
+  ],
+  "코펜하겐": [
+    {
+      "id": "global_코펜하겐_att_1",
+      "name": "뉘하운",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 3, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "알록달록한 파스텔톤 17세기 건물들과 운하에 정박한 목선들이 아름다운 코펜하겐의 대표 랜드마크입니다."
+    },
+    {
+      "id": "global_코펜하겐_att_2",
+      "name": "인어공주 상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "안데르센의 동화에서 영감을 받아 바위 위에 고즈넉하게 앉아있는 코펜하겐의 상징적인 청동 조각상입니다."
+    },
+    {
+      "id": "global_코펜하겐_rel_1",
+      "name": "킹스 가든",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "로젠보르 성을 배경으로 푸른 잔디와 웅장한 장미 정원이 어우러진 덴마크에서 가장 오래된 왕실 공원입니다."
+    },
+    {
+      "id": "global_코펜하겐_act_1",
+      "name": "티볼리 공원",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 5, "food": 3, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "1843년에 개장한 세계적인 클래식 테마파크로 아기자기한 놀이기구, 정원 조명과 공연을 즐기는 액티비티 명소입니다."
+    },
+    {
+      "id": "global_코펜하겐_res_1",
+      "name": "토르베하레네 푸드 홀",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 4 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "덴마크 대표 오픈 샌드위치 스뫼르레브뢰드와 신선한 유기농 식재료, 해산물 델리가 가득한 유리 창고 시장입니다."
+    },
+    {
+      "id": "global_코펜하겐_res_2",
+      "name": "레스토랑 셰네만",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "1877년에 시작되어 전통 덴마크 절임 청어와 정갈한 스뫼르레브뢰드를 선보이는 유서 깊은 식당입니다."
+    },
+    {
+      "id": "global_코펜하겐_res_3",
+      "name": "쾨드뷔엔스 피스케바르",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "south",
+      "desc": "미트패킹 디스트릭트에 자리 잡아 트렌디한 분위기 속에서 외레순 굴과 생선 구이 다이닝을 서빙하는 미식 공간입니다."
+    },
+    {
+      "id": "global_코펜하겐_caf_1",
+      "name": "아틀리에 세프템버",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "감성적인 북유럽 인테리어와 수제 아보카도 토스트, 정갈한 스페셜티 드립 커피로 사랑받는 코펜하겐 핫카페입니다."
+    },
+    {
+      "id": "global_코펜하겐_caf_2",
+      "name": "데모크라틱 커피",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "center",
+      "desc": "코펜하겐 중앙도서관 1층에서 바삭하고 고소한 갓 구운 아몬드 크루아상과 최고급 에스프레소를 선사합니다."
+    },
+    {
+      "id": "global_코펜하겐_nig_1",
+      "name": "뉘하운 운하 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "운하 양옆 조명이 물 위에 반사되고 노천 카페 사람들의 담소가 어우러지는 코펜하겐 제일의 밤 풍경입니다."
+    }
+  ],
+  "올보르": [
+    {
+      "id": "global_올보르_att_1",
+      "name": "우촌 하우스 센터",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "시드니 오페라 하우스를 설계한 건축가 요른 우촌을 기리기 위해 설립된 림피요르드 강변의 현대 문화 센터입니다."
+    },
+    {
+      "id": "global_올보르_att_2",
+      "name": "올보르후스 요새",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "16세기에 세워진 붉은 목조 와틀과 성벽으로 이루어진 수변 요새로 역사 산책을 즐기기 좋습니다."
+    },
+    {
+      "id": "global_올보르_rel_1",
+      "name": "베스트레 피요르드 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 3, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "림피요르드 수변에 친환경적으로 조성된 야외 수영 및 휴식 공원으로 피크닉을 즐기기 최적입니다."
+    },
+    {
+      "id": "global_올보르_act_1",
+      "name": "린드홀름 회예 바이킹 유적",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "언덕 위에 바이킹 시대 수백 개의 돌무지 무덤들이 장관을 이루는 유적지로 바이킹 역사를 배우는 액티비티입니다."
+    },
+    {
+      "id": "global_올보르_res_1",
+      "name": "모텐스 크로 파인다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "올보르를 대표하는 파인다이닝 식당으로 세련된 덴마크 현대 미식 코스와 와인 페어링을 다채롭게 제공합니다."
+    },
+    {
+      "id": "global_올보르_res_2",
+      "name": "올보르 스트리트 푸드 마켓",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "항구의 리모델링된 해군 창고에서 세계 각국의 타코, 수제 버거, 덴마크 해산물 요리를 즐기는 푸드홀입니다."
+    },
+    {
+      "id": "global_올보르_res_3",
+      "name": "서고르 브리그하우스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "광장 중심에 위치하여 매장에서 직접 양조하는 수제 맥주와 든든한 덴마크 돼지고기 구이를 서빙합니다."
+    },
+    {
+      "id": "global_올보르_caf_1",
+      "name": "카페 페니 레인",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "아기자기한 빈티지 소품들과 달콤한 수제 케이크, 덴마크 패스트리가 인상적인 아늑한 감성 카페입니다."
+    },
+    {
+      "id": "global_올보르_caf_2",
+      "name": "코흐스 카페바",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "올보르 도심에서 정갈하게 내려주는 에스프레소와 북유럽 원두 드립 커피로 로컬들에게 사랑받는 카페입니다."
+    },
+    {
+      "id": "global_올보르_nig_1",
+      "name": "욤프루 아네 가데 야경 골목",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 2, "activity": 4, "food": 3, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "덴마크에서 가장 유명한 펍 골목으로 보행자 전용 길을 따라 네온 조명과 음악이 가득 차오르는 밤거리를 체험합니다."
+    }
+  ],
+  "오덴세": [
+    {
+      "id": "global_오덴세_att_1",
+      "name": "안데르센 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": { "healing": 4, "activity": 3, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "동화 작가 안데르센의 생가 주변에 세워진 현대적 건축물로 그의 작품 세계를 체험하도록 꾸며진 입체 박물관입니다."
+    },
+    {
+      "id": "global_오덴세_att_2",
+      "name": "성 크누드 대성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "덴마크 수호성인 크누드 왕의 유골이 순금 성해함에 보관되어 있는 고풍스러운 고딕 양식 성당입니다."
+    },
+    {
+      "id": "global_오덴세_rel_1",
+      "name": "뭉케모세 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "오덴세 강이 여유롭게 가로지르며 잔디밭과 동화 캐릭터 조각상들이 어우러진 조용한 휴식 공간입니다."
+    },
+    {
+      "id": "global_오덴세_act_1",
+      "name": "덴마크 철도 박물관",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "실물 역사 속 증기기관차와 왕실 전용 열차 내부를 직접 들어갈 수 있어 이색적인 재미를 전해주는 박물관입니다."
+    },
+    {
+      "id": "global_오덴세_res_1",
+      "name": "스톰스 파쿠스 푸드 마켓",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "east",
+      "desc": "옛 목재 창고를 개조해 다채로운 세계 길거리 음식과 수제 맥주를 파는 빈티지 스타일 푸드홀입니다."
+    },
+    {
+      "id": "global_오덴세_res_2",
+      "name": "그뢴토르베트 스뫼르레브뢰드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "구시가지 시장 광장의 고풍스러운 레스토랑으로 덴마크 전통 오픈 샌드위치를 풍성하게 차려냅니다."
+    },
+    {
+      "id": "global_오덴세_res_3",
+      "name": "콕 앤 뱅 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "프렌치 스타일과 북유럽 제철 재료를 결합해 깔끔하고 깊은 풍미를 자랑하는 레스토랑입니다."
+    },
+    {
+      "id": "global_오덴세_caf_1",
+      "name": "넬레스 강변 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "오덴세 강변 산책로에 자리하여 푸른 숲 뷰와 함께 훌륭한 스페셜티 커피와 와인을 내놓는 카페입니다."
+    },
+    {
+      "id": "global_오덴세_caf_2",
+      "name": "카페 클로스테르토르베트",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "중세 벽돌 건물 안에서 아늑한 조명 아래 스콘, 당근 케이크와 우아한 티타임을 경험하는 공간입니다."
+    },
+    {
+      "id": "global_오덴세_nig_1",
+      "name": "오덴세 구시가지 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "은은한 가스등 조명이 비치는 구불구불한 자갈길과 18세기 가옥들이 동화 같은 분위기를 자아내는 밤 산책길입니다."
+    }
+  ],
+  "크리스티안산": [
+    {
+      "id": "global_크리스티안산_att_1",
+      "name": "크리스티안산 대성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "토르브 중앙 광장에 도도하게 서 있는 70m 높이 첨탑의 붉은 벽돌 네오고딕 양식 성당입니다."
+    },
+    {
+      "id": "global_크리스티안산_att_2",
+      "name": "크리스티안스홀름 요새",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "17세기에 바다를 향해 둥근 원형 석조로 지어진 해안 요새로 탁 트인 바다뷰를 감상할 수 있습니다."
+    },
+    {
+      "id": "global_크리스티안산_rel_1",
+      "name": "뷔스트란덴 도심 해변",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": { "healing": 5, "activity": 3, "food": 1, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도심 한복판에 하얀 고운 모래사장과 야자수가 어우러져 노르웨이 남부의 휴양 감성을 선사하는 해변입니다."
+    },
+    {
+      "id": "global_크리스티안산_act_1",
+      "name": "디레파르켄 동물원 & 테마파크",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 5, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "북유럽 동물원과 해적 마을 테마파크가 통합되어 노르웨이 가족 및 여행객들에게 최고의 액티비티 공간입니다."
+    },
+    {
+      "id": "global_크리스티안산_res_1",
+      "name": "피스케브뤼가 수산시장 식당",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "운하 수변 포구 바로 옆에서 싱싱한 킹크랩, 노르웨이 연어, 갓 깐 새우 샌드위치를 즐기는 수산 식당입니다."
+    },
+    {
+      "id": "global_크리스티안산_res_2",
+      "name": "쇼후셋 바다 레스토랑",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "바다 위 목조 건물에 정갈하게 자리 잡아 신선한 생선 스테이크와 정성 어린 와인을 서빙합니다."
+    },
+    {
+      "id": "global_크리스티안산_res_3",
+      "name": "박고르덴 보데 옥 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아기자기한 중정 안뜰 테라스에서 수제 타파스, 버거, 우아한 스낵 요리를 즐기는 비스트로입니다."
+    },
+    {
+      "id": "global_크리스티안산_caf_1",
+      "name": "포세뷔엔 감성 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "구시가지 포세뷔엔의 아담한 하얀 목조 주택 사이에 조용하게 위치하여 고즈넉하게 커피를 마시는 쉼터입니다."
+    },
+    {
+      "id": "global_크리스티안산_caf_2",
+      "name": "예헤브 전통 베이커리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "노르웨이 남부 전통 빵과 디저트를 선보이는 베이커리로 갓 짜낸 주스와 카푸치노 조합이 훌륭합니다."
+    },
+    {
+      "id": "global_크리스티안산_nig_1",
+      "name": "피스케브뤼가 운하 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "west",
+      "desc": "운하에 정박한 보트와 수변 테라스 건물들의 조명이 수면에 어우러져 한적하고 차분한 밤을 만들어냅니다."
+    }
+  ],
+  "오르후스": [
+    {
+      "id": "global_오르후스_att_1",
+      "name": "ARoS 오르후스 미술관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": { "healing": 3, "activity": 3, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "옥상에 무지개 빛깔의 유리 터널 '유어 레인보우 파노라마'가 설치된 세계적 명성의 현대 미술관입니다."
+    },
+    {
+      "id": "global_오르후스_att_2",
+      "name": "덴 감레 비 야외 박물관",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "덴마크 전역의 18~20세기 역사적 목조 건물 75여 채를 이전해 옛 덴마크 사람들의 삶을 재현한 민속 마을입니다."
+    },
+    {
+      "id": "global_오르후스_rel_1",
+      "name": "오르후스 식물원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "덴 감레 비 옆에 위치한 드넓은 언덕 정원으로 거대한 돔형 열대 온실과 푸른 잔디가 어우러져 있습니다."
+    },
+    {
+      "id": "global_오르후스_act_1",
+      "name": "마르셀리스보르 사슴 공원",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 5, "activity": 4, "food": 1, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "울창한 숲속에서 자생하는 야생 사슴들에게 당근을 직접 먹여주며 자연을 체험하는 해안 산림 액티비티입니다."
+    },
+    {
+      "id": "global_오르후스_res_1",
+      "name": "오르후스 스트리트 푸드",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "구 버스 터미널을 리모델링하여 세계 30여 개국의 길거리 요리를 합리적인 가격에 파는 힙한 다이닝 공간입니다."
+    },
+    {
+      "id": "global_오르후스_res_2",
+      "name": "케일러 빌라 다이닝",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "south",
+      "desc": "덴마크 프리미엄 도자기 브랜드를 식기에 활용해 스칸디나비아 파인다이닝을 예술적으로 차려내는 레스토랑입니다."
+    },
+    {
+      "id": "global_오르후스_res_3",
+      "name": "레스토랑 뢰메르",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "오르후스 운하 변 테라스에서 남미와 북유럽 퓨전 그릴 요리와 수제 타파스를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_오르후스_caf_1",
+      "name": "라 카브라 오르후스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "전 세계 커피 마니아들이 찾는 오르후스발 세계적 스페셜티 커피 브랜드의 본점 카페입니다."
+    },
+    {
+      "id": "global_오르후스_caf_2",
+      "name": "그레이트 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "바리스타 챔피언이 운영하며 조용한 중정 건물 내부에서 세심하게 내린 드립 커피의 풍미를 전달합니다."
+    },
+    {
+      "id": "global_오르후스_nig_1",
+      "name": "오르후스 운하 산책로 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "도심 운하를 따라 길게 늘어선 카페와 바의 야외 조명이 밝혀져 도시에 생기를 불어넣는 낭만적 야경입니다."
+    }
+  ],
+  "오울루": [
+    {
+      "id": "global_오울루_att_1",
+      "name": "오울루 시장 광장 & 순경 동상",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 2, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "오울루의 시그니처인 친근하고 뚱뚱한 구리 순경 동상(Toripolliisi)과 오래된 붉은 시장 창고가 위치한 광장입니다."
+    },
+    {
+      "id": "global_오울루_att_2",
+      "name": "티에토마 과학 센터",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": { "healing": 2, "activity": 4, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "핀란드 최초의 대형 과학관으로 다양한 물리 체험 전시와 엘리베이터로 오르는 관람 전망 타워가 있습니다."
+    },
+    {
+      "id": "global_오울루_rel_1",
+      "name": "아인올라 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "운하와 수로가 아기자기하게 가로지르고 울창한 숲과 온실 식물원이 있는 오울루 최고의 도심 쉼터입니다."
+    },
+    {
+      "id": "global_오울루_act_1",
+      "name": "날리까리 해변 레크리에이션",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 4, "activity": 5, "food": 1, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "보트니아 만 해안선을 따라 등대 산책, 수영, 겨울철 얼음 바다 위 걷기 액티비티를 즐길 수 있는 휴양 구역입니다."
+    },
+    {
+      "id": "global_오울루_res_1",
+      "name": "소케리-유신 키에바리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "피키사리 섬의 전통 붉은 목조 가옥에서 핀란드식 순록 고기 구이와 따끈한 연어 크림스튜를 파는 전문 식당입니다."
+    },
+    {
+      "id": "global_오울루_res_2",
+      "name": "라빈톨라 오울라",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "북핀란드 라플란드의 청정 재료와 야생 버섯, 신선한 베리를 모던하게 재해석한 파인다이닝 식당입니다."
+    },
+    {
+      "id": "global_오울루_res_3",
+      "name": "카우푸리 5 수제 버거",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "오울루에서 가장 손꼽히는 수제 버거 전문점으로 직화로 구운 두꺼운 고기 패티와 특제 소스를 제공합니다."
+    },
+    {
+      "id": "global_오울루_caf_1",
+      "name": "테티토르닌 천문대 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "옛 천문대 타워 건물에 위치하여 360도 수변 풍경을 보며 수제 파이와 드립 커피를 나누는 감성 공간입니다."
+    },
+    {
+      "id": "global_오울루_caf_2",
+      "name": "카페 비스케티",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "오울루 중심가에서 갓 튀긴 핀란드식 계피 번(Korvapuusti)과 고소한 라테를 파는 아늑한 베이커리입니다."
+    },
+    {
+      "id": "global_오울루_nig_1",
+      "name": "피키사리 목조 마을 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "예술가들이 거주하는 목조 마을과 운하 다리에 은은하게 켜지는 조명이 북유럽의 차분한 밤을 만듭니다."
+    }
+  ],
+  "더블린": [
+    {
+      "id": "global_더블린_att_1",
+      "name": "트리니티 콜리지 & 켈스의 서",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "아일랜드 최고 명문 대학 내 위치한 수사 복사본 필사본 '켈스의 서'와 웅장한 롱룸 도서관이 있는 랜드마크입니다."
+    },
+    {
+      "id": "global_더블린_att_2",
+      "name": "기네스 스토어하우스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 2, "activity": 3, "food": 4, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "아일랜드의 아이콘 기네스 맥주의 7층 규모 브루어리 박물관으로 최상층 그래비티 바에서 360도 더블린 파노라마 뷰를 즐깁니다."
+    },
+    {
+      "id": "global_더블린_rel_1",
+      "name": "세인트 스티븐스 그린",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "더블린 중심가에 고즈넉이 들어선 빅토리아 양식 공원으로 아름다운 연못과 잔디밭이 시민과 여행자에게 휴식을 제공합니다."
+    },
+    {
+      "id": "global_더블린_act_1",
+      "name": "템플 바 지구 펍 투어",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 2, "activity": 4, "food": 3, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "돌로 깔린 문화 거리를 거닐며 아일랜드 전통 라이브 음악과 신선한 기네스 파인트를 마시는 바이탈 액티비티입니다."
+    },
+    {
+      "id": "global_더블린_res_1",
+      "name": "더 뱅크 온 다임 스트리트",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "19세기 빅토리아풍 은행 건물의 화려한 천장 아래에서 아일랜드 프리미엄 비프 스테이크와 바다 요리를 선사합니다."
+    },
+    {
+      "id": "global_더블린_res_2",
+      "name": "갤러허스 보스티 하우스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아일랜드 전통 감자 펜케이크 요리인 '보스티(Boxty)'를 다양한 훈제 연어, 비프 소스와 함께 다채롭게 조리합니다."
+    },
+    {
+      "id": "global_더블린_res_3",
+      "name": "더 윈딩 스테어",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "리피 강변 서점 건물 위층에 위치하여 전통 아일랜드 유기농 농산물로 정갈하고 깊은 요리를 선사합니다."
+    },
+    {
+      "id": "global_더블린_caf_1",
+      "name": "3FE 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "더블린 스페셜티 커피 문화를 이끈 원조 성지로 세심하게 로스팅된 원두 드립 커피와 라테를 제공합니다."
+    },
+    {
+      "id": "global_더블린_caf_2",
+      "name": "더 퀸 오브 타르츠",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "클래식 아일랜드 감성의 수제 디저트 전문점으로 따스하게 갓 구운 수제 타르트, 스콘과 아이리시 티 세트가 훌륭합니다."
+    },
+    {
+      "id": "global_더블린_nig_1",
+      "name": "하페니 브리지 & 리피 강 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "더블린의 아이콘 하페니 주철 아치교의 조명과 리피 강변 펍들의 붉은 불빛이 강물에 반영되는 아름다운 야경입니다."
+    }
+  ],
+  "헬싱키": [
+    {
+      "id": "global_헬싱키_att_1",
+      "name": "헬싱키 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "원로원 광장에 눈부시게 서 있는 백색 외벽과 녹색 돔이 인상적인 네오클래식 양식의 헬싱키 상징 대성당입니다."
+    },
+    {
+      "id": "global_헬싱키_att_2",
+      "name": "캄피 침묵의 교회",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 5, "activity": 1, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도심 광장 한복판에 곡면 나무 벽체로 지어져 완벽한 평온과 안식을 선사하는 독창적인 모던 목조 예배당입니다."
+    },
+    {
+      "id": "global_헬싱키_rel_1",
+      "name": "에스플라나디 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도심 중심가를 가로지르는 가로수 산책로로 여름철 거리 음악가들과 야외 카페가 활기를 띠는 쉼터입니다."
+    },
+    {
+      "id": "global_헬싱키_act_1",
+      "name": "뢰일리 바다 사우나",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 5, "activity": 4, "food": 2, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "south",
+      "desc": "발트해 바로 앞에 위치한 친환경 목조 건축물에서 전통 사우나를 즐기고 바닷물에 수영하는 핀란드 필수 체험입니다."
+    },
+    {
+      "id": "global_헬싱키_res_1",
+      "name": "올드 마켓 홀",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 4 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "1889년부터 개장한 실내 수산 시장으로 갓 끓인 크리미 연어 스튜와 순록 고기 샌드위치를 즐길 수 있는 식당입니다."
+    },
+    {
+      "id": "global_헬싱키_res_2",
+      "name": "라빈톨라 사보타",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "원로원 광장 맞은편에서 핀란드 전통 시골 오두막 분위기로 순록 고기 구이와 목초지 요리를 선사하는 전통 식당입니다."
+    },
+    {
+      "id": "global_헬싱키_res_3",
+      "name": "라빈톨라 노까",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "east",
+      "desc": "카타야녹카 항구의 옛 붉은 벽돌 창고를 개조해 북유럽 유기농 야생 식재료 다이닝을 선보이는 고급 식당입니다."
+    },
+    {
+      "id": "global_헬싱키_caf_1",
+      "name": "카페 엑베리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1852년에 시작해 핀란드에서 가장 오래된 가문 경영 베이커리로 갓 구운 시나몬 번과 브런치가 뛰어납니다."
+    },
+    {
+      "id": "global_헬싱키_caf_2",
+      "name": "요한 앤 뉘스트룀",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "east",
+      "desc": "붉은 벽돌 창고 건물 안에서 풍미 깊은 핸드드립 커피와 다양한 아르티장 차를 파는 스타일리시한 로스터리 카페입니다."
+    },
+    {
+      "id": "global_헬싱키_nig_1",
+      "name": "우스펜스키 대성당 & 항구 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "east",
+      "desc": "언덕 위 붉은 벽돌과 금빛 돔의 우스펜스키 성당 조명과 발트해 항구 수면에 비친 도심 빛이 어우러지는 야경입니다."
+    }
+  ],
+  "투르쿠": [
+    {
+      "id": "global_투르쿠_att_1",
+      "name": "투르쿠 성",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "13세기에 건설된 핀란드에서 가장 오래되고 웅장한 중세 석조 성채로 핀란드의 파란만장한 역사를 간직하고 있습니다."
+    },
+    {
+      "id": "global_투르쿠_att_2",
+      "name": "투르쿠 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "아우라 강변에 위치한 핀란드 루터교 국립 대성당으로 웅장한 첨탑과 고풍스러운 내부를 관람할 수 있습니다."
+    },
+    {
+      "id": "global_투르쿠_rel_1",
+      "name": "아우라 강변 산책로",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "투르쿠 도심을 흐르는 아우라 강을 따라 선상 레스토랑, 고목 길과 야외 조각이 늘어선 대표 힐링 코스입니다."
+    },
+    {
+      "id": "global_투르쿠_act_1",
+      "name": "아보아 베투스 & 아르스 노바",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": { "healing": 3, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "지하에 발굴된 중세 투르쿠 도시 유적지와 지상의 현대 미술 전시를 동시에 만날 수 있는 이색 박물관 탐방입니다."
+    },
+    {
+      "id": "global_투르쿠_res_1",
+      "name": "라빈톨라 카스키스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "핀란드 최고의 레스토랑 중 하나로 뽑히며 아우라 강 근처에서 로컬 제철 식재료로 미슐랭급 코스를 선보입니다."
+    },
+    {
+      "id": "global_투르쿠_res_2",
+      "name": "스모르 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아우라 강변의 지하 벽돌 아치 구조 안에서 정갈한 북유럽 퓨전 미식을 계절마다 다르게 조리해냅니다."
+    },
+    {
+      "id": "global_투르쿠_res_3",
+      "name": "바이킹 레스토랑 하랄드",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "바이킹 선박 콘셉트의 이색 테마 식당으로 투구와 바이킹 연장을 활용해 순록, 멧돼지 숯불 구이를 내놓습니다."
+    },
+    {
+      "id": "global_투르쿠_caf_1",
+      "name": "카페 아트",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "아우라 강 바로 앞에 위치하여 핀란드 바리스타 챔피언의 드립 커피와 수제 조각 케이크를 제공하는 카페입니다."
+    },
+    {
+      "id": "global_투르쿠_caf_2",
+      "name": "바게리 오 베이커리",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "천연 발효종 사워도우 빵과 바삭한 크루아상, 페스트리로 투르쿠 현지인들에게 가장 사랑받는 베이커리입니다."
+    },
+    {
+      "id": "global_투르쿠_nig_1",
+      "name": "아우라 강 다리 & 선상 바 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "아우라 강을 건너는 교량들의 색색의 경관 조명과 강 위에 떠 있는 선상 바들의 불빛이 로맨틱한 밤을 연출합니다."
+    }
+  ],
+  "탐페레": [
+    {
+      "id": "global_탐페레_att_1",
+      "name": "탐메르코스키 운하 & 벽돌 방직공장",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "두 호수를 잇는 도심 운하 여울과 과거 방직공장이었던 붉은 벽돌 건축 유산이 멋지게 어우러진 탐페레의 랜드마크입니다."
+    },
+    {
+      "id": "global_탐페레_att_2",
+      "name": "무민 박물관",
+      "category": "attraction",
+      "subCategory": "museum",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "작가 토베 얀손의 원작 무민 일러스트레이션과 3D 디오라마를 관람할 수 있는 세계 유일의 무민 입체 박물관입니다."
+    },
+    {
+      "id": "global_탐페레_rel_1",
+      "name": "피요니키 언덕 & 전망대",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 3, "food": 3, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "울창한 소나무 숲 언덕으로 전망대 타워에서 호수를 조망하고 갓 튀긴 명물 시나몬 도넛을 맛볼 수 있는 휴식처입니다."
+    },
+    {
+      "id": "global_탐페레_act_1",
+      "name": "세르켄니에미 테마파크",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 2, "activity": 5, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "124m 나신네울라 전망대 타워, 롤러코스터, 수족관, 플라네타륨이 모여있는 대형 유원지 액티비티 공간입니다."
+    },
+    {
+      "id": "global_탐페레_res_1",
+      "name": "탐페레 전통 마켓 홀",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "북유럽 최대 규모의 실내 시장으로 탐페레의 명물인 블랙 소시지(Mustamakkara)와 링곤베리잼을 경험하는 식당입니다."
+    },
+    {
+      "id": "global_탐페레_res_2",
+      "name": "라빈톨라 나신네울라",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "north",
+      "desc": "124m 높이 타워 위 회전 레스토랑으로 탐페레 호수 전경을 360도로 바라보며 최고급 북유럽 다이닝을 서빙합니다."
+    },
+    {
+      "id": "global_탐페레_res_3",
+      "name": "플레브나 브루어리 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "옛 붉은 방직 공장 건물 안에 위치한 대형 하우스 브루어리로 자체 제작 맥주와 푸짐한 소시지 구이를 제공합니다."
+    },
+    {
+      "id": "global_탐페레_caf_1",
+      "name": "피요니키 도넛 카페",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "탐페레 필수 방문지로 따끈따끈하게 갓 튀겨 솔솔 설탕을 묻힌 시나몬 도넛(Munkki)과 커피 맛집입니다."
+    },
+    {
+      "id": "global_탐페레_caf_2",
+      "name": "카필라 감성 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "힙한 인테리어와 다양한 직수입 원두, 달콤한 핀란드 라즈베리 타르트가 인상적인 도심 카페입니다."
+    },
+    {
+      "id": "global_탐페레_nig_1",
+      "name": "탐메르코스키 운하 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "붉은 벽돌 공장 건물들과 운하 다리에 감성적인 조명이 불을 밝혀 물결에 반사되는 밤 풍경을 선사합니다."
+    }
+  ],
+  "골웨이": [
+    {
+      "id": "global_골웨이_att_1",
+      "name": "스패니시 아치",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1584년에 건설되어 골웨이 항구를 지키던 아치형 석조 요새 유적으로 코리브 강이 바다로 흘러드는 입구에 위치합니다."
+    },
+    {
+      "id": "global_골웨이_att_2",
+      "name": "골웨이 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "코리브 강변에 웅장하게 서 있는 석조 대성당으로 르네상스 돔과 고풍스러운 모자이크 유리창이 아름답습니다."
+    },
+    {
+      "id": "global_골웨이_rel_1",
+      "name": "솔트힐 산책로",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": { "healing": 5, "activity": 3, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "골웨이 만을 따라 길게 이어진 수변 산책로로 시원한 대서양 바다 파도 소리를 들으며 걷는 힐링 코스입니다."
+    },
+    {
+      "id": "global_골웨이_act_1",
+      "name": "퀘이 스트리트 버스킹 탐방",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 4, "food": 3, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "아일랜드 전통 바이올린과 피리 소리, 탭댄서들의 버스킹이 퍼지는 활기찬 알록달록 골목길 탐방입니다."
+    },
+    {
+      "id": "global_골웨이_res_1",
+      "name": "아니아 미슐랭 레스토랑",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "미슐랭 1스타를 받은 파인다이닝 식당으로 아일랜드 서부 해안의 야생 해초와 해산물 요리를 창의적으로 선보입니다."
+    },
+    {
+      "id": "global_골웨이_res_2",
+      "name": "맥도나스 피시 앤 칩스",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "퀘이 스트리트에 자리 잡은 골웨이 최고의 전통 피시 앤 칩스와 싱싱한 아일랜드 바다 굴 전문 식당입니다."
+    },
+    {
+      "id": "global_골웨이_res_3",
+      "name": "더 킹스 헤드 전통 펍",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "800년 역사를 간직한 건물에서 아이리시 소고기 파이와 기네스 맥주, 라이브 포크 음악을 함께 즐기는 식당입니다."
+    },
+    {
+      "id": "global_골웨이_caf_1",
+      "name": "커피웍스 프레스",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "독립 서점과 스페셜티 드립 커피가 어우러져 아일랜드의 예술적 감성과 최고급 커피를 제공하는 카페입니다."
+    },
+    {
+      "id": "global_골웨이_caf_2",
+      "name": "더 시크릿 가든",
+      "category": "cafe",
+      "subCategory": "tea",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "west",
+      "desc": "60여 가지 프리미엄 찻잎과 정갈한 수제 케이크, 포근한 방석 인테리어가 돋보이는 힐링 찻집입니다."
+    },
+    {
+      "id": "global_골웨이_nig_1",
+      "name": "퀘이 스트리트 펍 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 3, "activity": 4, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "거리마다 노란 조명이 조화롭고 전통 퍼브에서 흘러나오는 아일랜드 음악 소리가 흥겨운 밤 풍경입니다."
+    }
+  ],
+  "크라쿠프": [
+    {
+      "id": "global_크라쿠프_att_1",
+      "name": "바벨 왕궁",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "비스와 강 언덕 위에 우뚝 솟아있는 폴란드 국왕들의 옛 거처이자 르네상스 양식의 거대한 궁전 성채입니다."
+    },
+    {
+      "id": "global_크라쿠프_att_2",
+      "name": "중앙 시장 광장 & 성 마리아 성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 2, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "유럽에서 가장 넓은 중세 광장 중 하나로 고딕 양식의 성 마리아 성당과 직물 회관이 중심에 늘어서 있습니다."
+    },
+    {
+      "id": "global_크라쿠프_rel_1",
+      "name": "플란티 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "옛 성벽 자리를 따라 크라쿠프 구시가지를 한 바퀴 둘러싸고 있는 연록색 산책 공원 벨트입니다."
+    },
+    {
+      "id": "global_크라쿠프_act_1",
+      "name": "카지미에시 유대인 지구 탐방",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 3, "activity": 3, "food": 3, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["afternoon"],
+      "zone": "south",
+      "desc": "유서 깊은 유대인 회당, 빈티지 카페, 앤틱 시장과 독창적인 갤러리들이 모여있는 감성 문화 지구입니다."
+    },
+    {
+      "id": "global_크라쿠프_res_1",
+      "name": "프지스타네크 피에로가르니아",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "폴란드 전통 만두 피에로기(Pierogi) 전문점으로 치즈, 고기, 블루베리 등 수제 피에로기를 손쉽게 맛봅니다."
+    },
+    {
+      "id": "global_크라쿠프_res_2",
+      "name": "포드 아니오와미 전통 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "13세기 고풍스러운 지하 아치 공간에서 참나무 숯불로 구워낸 전통 폴란드 고기 구이를 제공하는 식당입니다."
+    },
+    {
+      "id": "global_크라쿠프_res_3",
+      "name": "슈타라 쿠프니아 거위 요리",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "중앙 광장에 위치하여 폴란드 전통 거위 및 오리 구이 요리를 현대적 감각으로 플레이팅해 선보입니다."
+    },
+    {
+      "id": "global_크라쿠프_caf_1",
+      "name": "카페 카멜롯",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "center",
+      "desc": "레이스 장식과 촛불 인테리어가 돋보이는 분위기 속에서 수제 아플 피에와 따스한 커피를 즐기는 카페입니다."
+    },
+    {
+      "id": "global_크라쿠프_caf_2",
+      "name": "베소와 카페",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "크라쿠프 최고의 스페셜티 로스터리 카페로 상쾌한 드립 커피와 수제 브런치 토스트가 유명합니다."
+    },
+    {
+      "id": "global_크라쿠프_nig_1",
+      "name": "중앙 시장 광장 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "고풍스러운 가스등 은은한 조명이 마차와 성당 건물들을 비추며 펼쳐지는 유럽 최고의 로맨틱한 밤풍경입니다."
+    }
+  ],
+  "코크": [
+    {
+      "id": "global_코크_att_1",
+      "name": "인글리시 마켓",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 5, "culture": 5, "shopping": 4 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1788년에 개장한 전통 실내 재래시장으로 신선한 해산물, 수제 치즈와 코크 식재료가 한데 모인 랜드마크입니다."
+    },
+    {
+      "id": "global_코크_att_2",
+      "name": "성 핀바르 대성당",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "3개의 정교한 첨탑이 하늘로 솟아 있는 웅장한 프랑스 고딕 양식의 개신교 대성당입니다."
+    },
+    {
+      "id": "global_코크_rel_1",
+      "name": "피츠제럴드 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "리 강변에 펼쳐진 푸른 잔디와 조각품, 화려한 장미 정원이 조성된 조용하고 아늑한 도심 공원입니다."
+    },
+    {
+      "id": "global_코크_act_1",
+      "name": "코크 감옥 박물관",
+      "category": "activity",
+      "subCategory": "museum",
+      "themes": { "healing": 2, "activity": 4, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "19세기 성채 모양의 감옥을 개조하여 당시 죄수들의 생활상과 코크의 역사 이야기를 실감 나게 들려주는 박물관입니다."
+    },
+    {
+      "id": "global_코크_res_1",
+      "name": "팜게이트 카페",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "인글리시 마켓 2층 발코니에 위치해 아래 마켓의 신선한 생굴과 훈제 연어, 트리프 스튜를 제공하는 시그니처 식당입니다."
+    },
+    {
+      "id": "global_코크_res_2",
+      "name": "마켓 레인 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "코크 중심가에서 로컬 유기농 농산물로 만든 비프 스테이크와 크리미 해산물 차우더를 선보이는 미식 레스토랑입니다."
+    },
+    {
+      "id": "global_코크_res_3",
+      "name": "더 올리버 플런켓",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아일랜드 전통 퍼브 스타일 식당으로 파이 요리와 머피스 기네스 맥주, 밤마다 흘러나오는 아이리시 음악을 자랑합니다."
+    },
+    {
+      "id": "global_코크_caf_1",
+      "name": "소마 커피 컴퍼니",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "코크 최고의 스페셜티 커피 브랜드로 매장에서 직접 로스팅한 원두로 내리는 핸드드립 커피가 명품입니다."
+    },
+    {
+      "id": "global_코크_caf_2",
+      "name": "듀크스 커피",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "편안하고 친근한 감성 공간에서 갓 구운 수제 클럽 샌드위치와 정성 어린 라테 아트를 선사하는 카페입니다."
+    },
+    {
+      "id": "global_코크_nig_1",
+      "name": "리 강변 & 패트릭 스트리트 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "코크 도심을 가르는 리 강 다리의 다채로운 경관 조명과 수면에 반사되는 따스한 빛이 자아내는 밤의 경치입니다."
+    }
+  ],
+  "리에주": [
+    {
+      "id": "global_리에주_att_1",
+      "name": "뷔랑 계단",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "374개의 가파른 석조 계단길로 상부 언덕 전망대에 오르면 리에주 도심과 뫼즈 강 전경이 시원하게 펼쳐집니다."
+    },
+    {
+      "id": "global_리에주_att_2",
+      "name": "리에주 기예맹 역",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "세계적 건축가 산티아고 칼라트라바가 설계한 유선형 거대 기둥의 웅장한 미래지향적 하얀 철도역입니다."
+    },
+    {
+      "id": "global_리에주_rel_1",
+      "name": "파르크 드 라 보브리",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "뫼즈 강과 운하 사이에 형성된 아름다운 섬 공원으로 라 보브리 미술관과 잔디밭 산책로가 조성되어 있습니다."
+    },
+    {
+      "id": "global_리에주_act_1",
+      "name": "시타델 언덕 역사 산책",
+      "category": "activity",
+      "subCategory": "experience",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "옛 요새 성벽 유적지와 녹음이 짙은 골목길을 따라 걷는 아기자기하고 역사 깊은 힐링 트레킹입니다."
+    },
+    {
+      "id": "global_리에주_res_1",
+      "name": "아스 피올레 미트볼 식당",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "달콤한 리에주 사과 시럽 소스에 푹 졸여낸 전통 리에주식 미트볼(Boulets Liégeois)과 프렌치 프라이 맛집입니다."
+    },
+    {
+      "id": "global_리에주_res_2",
+      "name": "르 벰 비스트로",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "주기적으로 내부 테마 인테리어가 바뀌는 감성적인 비스트로로 정갈한 벨기에-프렌치 미식을 제공합니다."
+    },
+    {
+      "id": "global_리에주_res_3",
+      "name": "브라세리 홉스",
+      "category": "restaurant",
+      "subCategory": "local",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "벨기에 수도원 맥주와 수제 맥주 탭, 든든한 홍합 찜 요리를 분위기 있게 즐길 수 있는 브루어리 펍입니다."
+    },
+    {
+      "id": "global_리에주_caf_1",
+      "name": "위느 고프르 라 리에주",
+      "category": "cafe",
+      "subCategory": "bakery",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "펄 슈거가 씹히는 달콤하고 쫀득한 원조 오리지널 리에주 와플을 바삭하게 구워 파는 베이커리 핫스팟입니다."
+    },
+    {
+      "id": "global_리에주_caf_2",
+      "name": "겟 유어 머그",
+      "category": "cafe",
+      "subCategory": "coffee",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "tea"],
+      "zone": "center",
+      "desc": "모던한 인테리어와 정갈한 에스프레소, 갓 만든 브런치 토스트가 매력적인 도심 인기 카페입니다."
+    },
+    {
+      "id": "global_리에주_nig_1",
+      "name": "퐁 드 프라네 & 뫼즈 강 야경",
+      "category": "nightview",
+      "subCategory": "waterfront",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "south",
+      "desc": "고풍스러운 조각상들이 우아하게 서 있는 퐁 드 프라네 다리와 뫼즈 강의 불빛이 조화로운 아름다운 야경입니다."
+    }
+  ]
+}

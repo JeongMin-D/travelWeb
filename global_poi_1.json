@@ -1,0 +1,2042 @@
+{
+  "나고야": [
+    {
+      "id": "global_나고야_att_1",
+      "name": "나고야 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "금빛 샤치호코 장식이 돋보이는 도쿠가와 이에야스의 대표 상징 성곽입니다."
+    },
+    {
+      "id": "global_나고야_att_2",
+      "name": "아츠타 신궁",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "삼종의 신기 중 하나인 쿠사나기의 검을 모시는 고요하고 신성한 신사입니다."
+    },
+    {
+      "id": "global_나고야_rel_1",
+      "name": "시로토리 정원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 1, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "나고야 남부의 대규모 회유식 일본 정원으로 연못과 다도실이 한 폭의 그림 같은 풍경을 제공합니다."
+    },
+    {
+      "id": "global_나고야_act_1",
+      "name": "레고랜드 재팬",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": { "healing": 2, "activity": 5, "food": 2, "culture": 1, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "레고 블록으로 만들어진 다채로운 어트랙션과 미니어처 도시를 체험하는 가족 테마파크입니다."
+    },
+    {
+      "id": "global_나고야_res_1",
+      "name": "아츠타 호라이켄 본점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "south",
+      "desc": "140년 전통의 나고야 명물 히츠마부시(장어덮밥)를 3가지 방식으로 맛볼 수 있는 원조 맛집입니다."
+    },
+    {
+      "id": "global_나고야_res_2",
+      "name": "야바톤 야바쵸 본점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "진한 붉은 미소 된장 소스를 듬뿍 얹어 먹는 바삭한 나고야식 미소카츠 전문점입니다."
+    },
+    {
+      "id": "global_나고야_res_3",
+      "name": "세계의 야마짱 본점",
+      "category": "restaurant",
+      "subCategory": "izakaya",
+      "themes": { "healing": 1, "activity": 2, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "매콤하고 후추 향 가득한 테바사키(닭날개 튀김)와 시원한 맥주를 함께 즐기는 명물 이자카야입니다."
+    },
+    {
+      "id": "global_나고야_caf_1",
+      "name": "코메다 커피 본점",
+      "category": "cafe",
+      "subCategory": "bakery_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "east",
+      "desc": "아침 주문 시 토스트와 달콤한 단팥앙금을 곁들여 주는 오구라 토스트의 원조 카페입니다."
+    },
+    {
+      "id": "global_나고야_caf_2",
+      "name": "카페 다우니 사카에점",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 3, "activity": 1, "food": 4, "culture": 1, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "신선한 과일 케이크와 팬케이크, 감성적인 인테리어가 어우러진 인기 수제 디저트 카페입니다."
+    },
+    {
+      "id": "global_나고야_nig_1",
+      "name": "미라이 타워 & 오아시스 21 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "우주선 모양의 물의 우주선 유리 지붕과 나고야 TV탑 라이트업이 펼쳐지는 화려한 야경 스팟입니다."
+    }
+  ],
+  "나라": [
+    {
+      "id": "global_나라_att_1",
+      "name": "나라 공원",
+      "category": "attraction",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 3, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "수백 마리의 야생 사슴들이 자유롭게 거니는 나라의 상징적인 녹지 공원입니다."
+    },
+    {
+      "id": "global_나라_att_2",
+      "name": "도다이지",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "세계 최대 규모의 목조건축물인 대불전과 거대한 청동 대불상을 품은 천년 고찰입니다."
+    },
+    {
+      "id": "global_나라_rel_1",
+      "name": "가스가타이샤",
+      "category": "relaxation",
+      "subCategory": "heritage",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "울창한 원시림 속에 3천여 개의 석등과 수놓은 주홍빛 신사 건물이 신비로운 휴식을 선사합니다."
+    },
+    {
+      "id": "global_나라_act_1",
+      "name": "와카쿠사산 트레킹",
+      "category": "activity",
+      "subCategory": "nature",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon"],
+      "zone": "east",
+      "desc": "잔디 언덕을 오르며 나라 시가지 전체와 도다이지 전경을 한눈에 담는 산책 코스입니다."
+    },
+    {
+      "id": "global_나라_res_1",
+      "name": "시즈카 나라공원점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "주문 즉시 정성스럽게 지어내는 나라 전통 해산물 솥밥(카마메시) 전문점입니다."
+    },
+    {
+      "id": "global_나라_res_2",
+      "name": "멘투암 우동",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "커다란 유부 주머니 속에 탱글한 면발이 들어있는 이색 유부 우동으로 유명한 맛집입니다."
+    },
+    {
+      "id": "global_나라_res_3",
+      "name": "가스도노 차카유 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "구수한 차물에 밥을 말아 정갈한 반찬과 곁들여 먹는 나라 전통 건강 죽 정식입니다."
+    },
+    {
+      "id": "global_나라_caf_1",
+      "name": "미카사차야",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "고즈넉한 찻집에서 나라 특산 떡과 말차, 팥 빙수를 맛볼 수 있는 한적한 휴식공간입니다."
+    },
+    {
+      "id": "global_나라_caf_2",
+      "name": "에어사이드 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "연못과 정원을 바라보며 세련된 디저트와 브런치를 menikmati 할 수 있는 감성 카페입니다."
+    },
+    {
+      "id": "global_나라_nig_1",
+      "name": "와카쿠사산 정상 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "east",
+      "desc": "신(新) 일본 3대 야경으로 선정된 곳으로 나라 분지의 밤빛을 한눈에 감상할 수 있습니다."
+    }
+  ],
+  "요코하마": [
+    {
+      "id": "global_요코하마_att_1",
+      "name": "요코하마 아카렌가 창고",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 3, "culture": 4, "shopping": 4 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "메이지 시대 붉은 벽돌 항만 창고를 개조해 쇼핑과 문화 행사가 열리는 항구도시의 상징입니다."
+    },
+    {
+      "id": "global_요코하마_att_2",
+      "name": "요코하마 차이나타운",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": { "healing": 2, "activity": 3, "food": 5, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["lunch", "afternoon"],
+      "zone": "center",
+      "desc": "일본 최대 규모의 중화가로 화려한 문과 다양하고 활기찬 길거리 중화 요리를 체험할 수 있습니다."
+    },
+    {
+      "id": "global_요코하마_rel_1",
+      "name": "야마시타 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "요코하마 항구를 바라보는 해안 공원으로 장미 정원과 시원한 바다 바람을 만끽합니다."
+    },
+    {
+      "id": "global_요코하마_act_1",
+      "name": "요코하마 코스모월드",
+      "category": "activity",
+      "subCategory": "theme_park",
+      "themes": { "healing": 2, "activity": 5, "food": 2, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "대형 시계 관람차 '시계바늘 21'과 놀이기구를 즐길 수 있는 도심형 놀이공원입니다."
+    },
+    {
+      "id": "global_요코하마_res_1",
+      "name": "만친키 본관",
+      "category": "restaurant",
+      "subCategory": "chinese",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "차이나타운에서 100년 넘는 역사를 지닌 고품격 광둥요리 전문 레스토랑입니다."
+    },
+    {
+      "id": "global_요코하마_res_2",
+      "name": "기요켄 본점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "요코하마의 명물 돼지고기 슈마이(시우마이) 만두를 정식으로 푸짐하게 즐길 수 있는 본점입니다."
+    },
+    {
+      "id": "global_요코하마_res_3",
+      "name": "요코하마 이에케이 라멘 본가",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "진한 돼지사골 간장 육수와 굵은 면발, 김과 차슈가 어우러진 원조 요코하마 라멘입니다."
+    },
+    {
+      "id": "global_요코하마_caf_1",
+      "name": "빌스 요코하마 아카렌가",
+      "category": "cafe",
+      "subCategory": "brunch_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "center",
+      "desc": "아카렌가 창고 내부에서 부드러운 리코타 핫케이크와 감성적인 브런치를 즐기는 카페입니다."
+    },
+    {
+      "id": "global_요코하마_caf_2",
+      "name": "카페 드 라 프레스",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "클래식한 클래식 유럽풍 인테리어와 정통 에스프레소, 디저트가 돋보이는 역사적 분위기의 찻집입니다."
+    },
+    {
+      "id": "global_요코하마_nig_1",
+      "name": "랜드마크 타워 스카이 가든",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "69층 전망대에서 요코하마 미나토미라이 항구와 베이브릿지의 환상적인 360도 야경을 관람합니다."
+    }
+  ],
+  "고베": [
+    {
+      "id": "global_고베_att_1",
+      "name": "고베 하버랜드 모자이크",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 3, "food": 3, "culture": 2, "shopping": 4 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "south",
+      "desc": "항구 바다를 마주한 대형 복합 쇼핑몰로 고베 포트타워와 항만 전경이 펼쳐집니다."
+    },
+    {
+      "id": "global_고베_att_2",
+      "name": "기타노 이진칸 거리",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 2, "food": 2, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "구한말 외국인 거주지였던 곳으로 이국적인 유럽풍 서양관들이 모여있는 동네입니다."
+    },
+    {
+      "id": "global_고베_rel_1",
+      "name": "고베 누노비키 허브원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "로프웨이를 타고 올라가 만나는 일본 최대 규모의 허브 정원과 족욕탕, 산책로입니다."
+    },
+    {
+      "id": "global_고베_act_1",
+      "name": "록코산 케이블카",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon"],
+      "zone": "east",
+      "desc": "록코산 정상으로 오르며 숲속 풍경과 고베 시가지 경치를 감상하는 레트로 케이블카입니다."
+    },
+    {
+      "id": "global_고베_res_1",
+      "name": "스테이크 랜드 고베 본점",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "세계적으로 유명한 고베비프(Kobe Beef) 철판구이 스테이크를 눈앞에서 직접 구워줍니다."
+    },
+    {
+      "id": "global_고베_res_2",
+      "name": "난킨마치 코쇼켄",
+      "category": "restaurant",
+      "subCategory": "chinese",
+      "themes": { "healing": 1, "activity": 2, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "afternoon"],
+      "zone": "center",
+      "desc": "고베 차이나타운 난킨마치에서 줄 서서 먹는 육즙 가득한 수제 돼지고기 만두 맛집입니다."
+    },
+    {
+      "id": "global_고베_res_3",
+      "name": "멘야 잇케이 고베역점",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "깔끔하고 깊은 맛의 간장 차슈 라멘과 만두를 든든하게 즐기는 지역 대표 라멘 집입니다."
+    },
+    {
+      "id": "global_고베_caf_1",
+      "name": "스타벅스 기타노 이진칸점",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "1907년에 지어진 등록유형문화재 목조 건물을 그대로 활용한 낭만적인 스타벅스 매장입니다."
+    },
+    {
+      "id": "global_고베_caf_2",
+      "name": "고베 유후인 카페 모토마치",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 1, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "고베 디저트의 명성에 걸맞은 촉촉한 프렌치 토스트와 아삼 홍차를 선보이는 분위기 있는 찻집입니다."
+    },
+    {
+      "id": "global_고베_nig_1",
+      "name": "록코산 가든 테라스 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "east",
+      "desc": "1000만 불짜리 야경이라 불리는 고베 항구와 오사카 만 전체의 반짝이는 파노라마 야경입니다."
+    }
+  ],
+  "하코다테": [
+    {
+      "id": "global_하코다테_att_1",
+      "name": "고료카쿠 공원 & 타워",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "별 모양의 서양식 요새 공원과 전망 타워에서 계절마다 바뀌는 장관을 조망할 수 있습니다."
+    },
+    {
+      "id": "global_하코다테_att_2",
+      "name": "모토마치 언덕길",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "하코마치 항구가 내다보이는 언덕길을 따라 이국적인 하치만자카와 역사적 교회가 늘어서 있습니다."
+    },
+    {
+      "id": "global_하코다테_rel_1",
+      "name": "유노카와 온천 족욕장",
+      "category": "relaxation",
+      "subCategory": "hot_spring",
+      "themes": { "healing": 5, "activity": 1, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "east",
+      "desc": "바다 근처 오랜 전통의 유노카와 온천 마을에서 무료로 피로를 푸는 야외 족욕 스팟입니다."
+    },
+    {
+      "id": "global_하코다테_act_1",
+      "name": "하코다테산 로프웨이",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "west",
+      "desc": "로프웨이를 타고 3분 만에 산 정상에 오르며 하코다테 특유의 바다와 어우러진 지형을 감상합니다."
+    },
+    {
+      "id": "global_하코다테_res_1",
+      "name": "하코다테 아침시장 카이센동",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["morning", "lunch"],
+      "zone": "center",
+      "desc": "갓 잡은 신선한 성게, 연어알, 털게, 오징어를 푸짐하게 올린 아침 시장 대표 해산물덮밥입니다."
+    },
+    {
+      "id": "global_하코다테_res_2",
+      "name": "럭키 피에로 베이테라스점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "하코다테에서만 맛볼 수 있는 명물 수제버거로 차이니즈 치킨버거가 단연 독보적입니다."
+    },
+    {
+      "id": "global_하코다테_res_3",
+      "name": "아지사이 시오라멘 본점",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "맑고 깨끗한 맑은 닭육수와 짭조름한 소금 양념이 조화로운 하코다테 전통 시오(소금)라멘입니다."
+    },
+    {
+      "id": "global_하코다테_caf_1",
+      "name": "구 하코다테 공공회당 카페",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "west",
+      "desc": "화려한 화양식 건물의 연회장에서 항구를 바라보며 드립 커피를 마시는 우아한 공간입니다."
+    },
+    {
+      "id": "global_하코다테_caf_2",
+      "name": "스나바 & 홋카이도 스위츠 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "홋카이도산 신선한 우유로 만든 아이스크림과 사르르 녹는 치즈케이크를 맛보는 카페입니다."
+    },
+    {
+      "id": "global_하코다테_nig_1",
+      "name": "하코다테산 정상 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "west",
+      "desc": "양쪽 바다가 좁아지는 잘록한 목 형태의 지형 위로 펼쳐지는 세계 최고 수준의 환상적인 밤풍경입니다."
+    }
+  ],
+  "시즈오카": [
+    {
+      "id": "global_시즈오카_att_1",
+      "name": "순푸성 공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도쿠가와 이에야스가 만년을 보낸 성터 공원으로 아름다운 성문과 해자가 보존되어 있습니다."
+    },
+    {
+      "id": "global_시즈오카_att_2",
+      "name": "니혼다이라 꿈 테라스",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "쿠마 켄고가 설계한 전망 테라스에서 후지산과 스루가 만의 탁 트인 360도 경치를 만납니다."
+    },
+    {
+      "id": "global_시즈오카_rel_1",
+      "name": "미호노 마츠바라",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "검은 모래 해변과 7천여 그루의 울창한 소나무 숲 너머로 후지산이 솟아있는 세계유산입니다."
+    },
+    {
+      "id": "global_시즈오카_act_1",
+      "name": "구능산 토쇼구 & 로프웨이",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "니혼다이라에서 로프웨이를 타고 절벽 건너 이에야스의 묘소가 자리한 신사를 방문합니다."
+    },
+    {
+      "id": "global_시즈오카_res_1",
+      "name": "스와야카 함바그 시즈오카역점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "뜨거운 철판에 수제 소고기 숯불 주먹 함바그를 지글지글 소스와 함께 즐기는 시즈오카 최고의 명물입니다."
+    },
+    {
+      "id": "global_시즈오카_res_2",
+      "name": "아오바 오뎅거리",
+      "category": "restaurant",
+      "subCategory": "izakaya",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "검은 국물에 꼬치를 넣어 구수한 파스가루를 뿌려 먹는 레트로 정취의 시즈오카 오뎅골목입니다."
+    },
+    {
+      "id": "global_시즈오카_res_3",
+      "name": "시미즈 항 마구로칸 참치덮밥",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "east",
+      "desc": "일본 최대 참치 어항인 시미즈 항에서 입에 넣자마자 녹는 생참치 덮밥을 맛볼 수 있습니다."
+    },
+    {
+      "id": "global_시즈오카_caf_1",
+      "name": "나나야 시즈오카점",
+      "category": "cafe",
+      "subCategory": "matcha_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "1단계부터 7단계까지 세계에서 가장 진한 프리미엄 시즈오카 녹차 아이스크림을 판매하는 곳입니다."
+    },
+    {
+      "id": "global_시즈오카_caf_2",
+      "name": "차마치 킨자부로",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "다양한 시즈오카 잎차와 녹차 와플, 찰떡 디저트를 다채롭게 음미할 수 있는 차 전문 카페입니다."
+    },
+    {
+      "id": "global_시즈오카_nig_1",
+      "name": "니혼다이라 정상 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "east",
+      "desc": "달빛 아래 실루엣으로 드러나는 후지산과 시미즈 항구 항만 조명이 멋진 야경 명소입니다."
+    }
+  ],
+  "아오모리": [
+    {
+      "id": "global_아오모리_att_1",
+      "name": "아오모리 네부타의 집 와라세",
+      "category": "attraction",
+      "subCategory": "culture",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "일본 3대 축제 네부타 마츠리에 사용된 거대하고 화려한 등불 대차를 전시하는 박물관입니다."
+    },
+    {
+      "id": "global_아오모리_att_2",
+      "name": "산나이 마루야마 유적",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "조몬 시대(약 5500년 전) 대규모 취락지를 복원해 놓은 일본 최대의 고대 유적지입니다."
+    },
+    {
+      "id": "global_아오모리_rel_1",
+      "name": "아사무시 온천 해변",
+      "category": "relaxation",
+      "subCategory": "hot_spring",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "east",
+      "desc": "아오모리의 아쿠아 온천이라 불리는 바닷가 온천 마을로 석양과 함께溫泉浴을 즐깁니다."
+    },
+    {
+      "id": "global_아오모리_act_1",
+      "name": "아오모리 베이브릿지 산책로",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": { "healing": 4, "activity": 3, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "아오모리 항구를 가로지르는 사장교 보행로를 걸으며 맑은 바닷바람과 항구 풍경을 만끽합니다."
+    },
+    {
+      "id": "global_아오모리_res_1",
+      "name": "아오모리 어부시장 노코세동",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["morning", "lunch"],
+      "zone": "center",
+      "desc": "시장에서 쿠폰을 구매해 수많은 해산물 상점에서 원하는 횟감을 셀프 토핑하는 참치·가리비 덮밥입니다."
+    },
+    {
+      "id": "global_아오모리_res_2",
+      "name": "아지노 사포로 오니시",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "된장, 카레, 우유, 버터가 독특하게 조화된 아오모리 대표 영혼의 '미소 카레 우유 라멘'입니다."
+    },
+    {
+      "id": "global_아오모리_res_3",
+      "name": "가리비 요리 전문점 아오모리",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "육시가 꽉 찬 통통한 아오모리 특산 가리비를 미소 구이와 튀김, 찌개로 다채롭게 차려냅니다."
+    },
+    {
+      "id": "global_아오모리_caf_1",
+      "name": "A-FACTORY 사과 시드르 카페",
+      "category": "cafe",
+      "subCategory": "bakery_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 4 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "아오모리 특산 사과로 직접 양조한 시드르(사과주)와 바삭한 사과 파이를 시음 및 맛보는 공간입니다."
+    },
+    {
+      "id": "global_아오모리_caf_2",
+      "name": "린고 젤라토 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 1, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "품종별 아오모리 사과로 만든 아삭하고 달콤한 스페셜 수제 수제 아이스크림 카페입니다."
+    },
+    {
+      "id": "global_아오모리_nig_1",
+      "name": "아스파무 13층 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "삼각형 모양의 아오모리 관광물산관 최고층에서 베이브릿지와 무츠 만의 은은한 밤바다를 감상합니다."
+    }
+  ],
+  "히로시마": [
+    {
+      "id": "global_히로시마_att_1",
+      "name": "히로시마 평화기념공원 & 원폭 돔",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "세계 평화를 기원하는 기념관과 원폭의 아픔을 간직한 유네스코 세계유산 원폭 돔입니다."
+    },
+    {
+      "id": "global_히로시마_att_2",
+      "name": "히로시마 성",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "잉어의 성이라 불리며 운하 해자와 아름다운 목조 천수각이 인상적인 역사적인 성곽입니다."
+    },
+    {
+      "id": "global_히로시마_rel_1",
+      "name": "슈케이엔 정원",
+      "category": "relaxation",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 1, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1620년에 조성된 대명 정원으로 작은 계곡과 다리, 다도실이 한데 어우러진 평화로운 쉼터입니다."
+    },
+    {
+      "id": "global_히로시마_act_1",
+      "name": "미야지마 페리 & 이츠쿠시마 신사",
+      "category": "activity",
+      "subCategory": "cruise",
+      "themes": { "healing": 4, "activity": 4, "food": 2, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "페리를 타고 들어가 바다 위에 떠 있는 거대한 붉은 도리이와 신성한 이츠쿠시마 신사를 탐방합니다."
+    },
+    {
+      "id": "global_히로시마_res_1",
+      "name": "미치쿠사 오코노미야키 마을",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 2, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "면과 양배추, 계란을 겹겹이 볶아내는 히로시마풍 오코노미야키 전문 점포들이 모여있는 빌딩입니다."
+    },
+    {
+      "id": "global_히로시마_res_2",
+      "name": "미야지마 굴 요리 카키야",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "west",
+      "desc": "히로시마 특산 통통한 싱싱한 굴을 숯불구이, 튀김, 덮밥으로 즐기는 최고의 굴 요리 집입니다."
+    },
+    {
+      "id": "global_히로시마_res_3",
+      "name": "히로시마 국물없는 탄탄멘",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "매콤한 산초와 고추기름, 다진 고기를 면과 강하게 비벼 먹는 히로시마의 중독적인 면 요리입니다."
+    },
+    {
+      "id": "global_히로시마_caf_1",
+      "name": "모미지 만주 전통 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "west",
+      "desc": "단풍잎 모양의 전통 모미지 빵을 갓 튀겨 따뜻한 차와 곁들여 먹는 명물 디저트 찻집입니다."
+    },
+    {
+      "id": "global_히로시마_caf_2",
+      "name": "카페 테라스 포테이토",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "평화공원 강변을 따라 조성된 테라스에서 강물 흐름을 보며 여유롭게 라떼를 즐기는 공간입니다."
+    },
+    {
+      "id": "global_히로시마_nig_1",
+      "name": "오리자루 타워 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "원폭 돔 바로 옆 건물 루프탑에 위치해 히로시마 도심과 평화공원의 야경을 품직하게 바라봅니다."
+    }
+  ],
+  "도야마": [
+    {
+      "id": "global_도야마_att_1",
+      "name": "도야마 성지공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "아름다운 해자와 천수각이 우뚝 선 도야마 번주의 거성으로 사계절 산책에 안성맞춤입니다."
+    },
+    {
+      "id": "global_도야마_att_2",
+      "name": "도야마현 미술관",
+      "category": "attraction",
+      "subCategory": "art",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "피카소 등 20세기 거장들의 예술품과 옥상 타테야마 알프스 전망 정원이 어우러진 현대 미술관입니다."
+    },
+    {
+      "id": "global_도야마_rel_1",
+      "name": "도야마 환수공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "운하를 품은 도심 수변 공원으로 텐몬교 다리와 시원한 잔디밭이 여유로운 힐링을 안겨줍니다."
+    },
+    {
+      "id": "global_도야마_act_1",
+      "name": "도야마 노면전차(트램) 탐방",
+      "category": "activity",
+      "subCategory": "transit",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["afternoon"],
+      "zone": "center",
+      "desc": "신형 저상 트램 센트람을 타고 레트로와 현대가 공존하는 도야마 시내 곳곳을 여행합니다."
+    },
+    {
+      "id": "global_도야마_res_1",
+      "name": "시로에비 세이코 본점",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "도야마만의 보석이라 불리는 달콤하고 투명한 흰털새우(시로에비) 튀김덮밥 전문점입니다."
+    },
+    {
+      "id": "global_도야마_res_2",
+      "name": "도야마 블랙 라멘 이로하",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "진하고 짭조름한 검은 간장 육수와 강렬한 후추 맛이 특색인 도야마 명물 라멘입니다."
+    },
+    {
+      "id": "global_도야마_res_3",
+      "name": "마스스시 원조 미나모토",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "대나무 잎에 쌓인 분홍빛 송어 초밥(마스스시)으로 고소한 풍미와 깊은 전통을 느낄 수 있습니다."
+    },
+    {
+      "id": "global_도야마_caf_1",
+      "name": "스타벅스 도야마 환수공원점",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 5, "activity": 1, "food": 3, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "세계에서 가장 아름다운 매장 상을 수상한 통유리창 운하뷰 컨셉의 스타벅스 명소입니다."
+    },
+    {
+      "id": "global_도야마_caf_2",
+      "name": "도야마 다테야마 말차 카페",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "도야마 현지 그린티와 일본식 전통 당과를 고즈넉하게 만끽할 수 있는 분위기 있는 카페입니다."
+    },
+    {
+      "id": "global_도야마_nig_1",
+      "name": "도야마 시청 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "시청 옥상 전망탑에서 도야마 시내의 빛나는 밤거리와 멀리 다테야마 산맥의 밤 기운을 바라봅니다."
+    }
+  ],
+  "기후": [
+    {
+      "id": "global_기후_att_1",
+      "name": "기후 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "오다 노부나가가 천하통일의 거점으로 삼았던 금화산 정상 위 요새 성곽입니다."
+    },
+    {
+      "id": "global_기후_att_2",
+      "name": "금화산 (킨카잔)",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": { "healing": 5, "activity": 4, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "기후시 중심에 우뚝 솟은 울창한 산으로 다람쥐 마을과 전망대가 위치하고 있습니다."
+    },
+    {
+      "id": "global_기후_rel_1",
+      "name": "나가라강 수변공원",
+      "category": "relaxation",
+      "subCategory": "riverside",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "north",
+      "desc": "맑은 나가라강을 따라 산책로가 이어지며 여름철 가마우지 낚시(우카이) 전통이 이어지는 강변입니다."
+    },
+    {
+      "id": "global_기후_act_1",
+      "name": "킨카잔 로프웨이",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "기후 공원에서 킨카잔 산상까지 3분 만에 오르며 시원한 산세와 기후 시내를 내려다봅니다."
+    },
+    {
+      "id": "global_기후_res_1",
+      "name": "기후 히다규 마츠사카 정식",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "기후현 최고의 명품 소고기 히다규를 호바 잎 위 된장 구이나 스키야키로 서빙받는 고급 요리입니다."
+    },
+    {
+      "id": "global_기후_res_2",
+      "name": "나가라강 은어(아유) 소금구이",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "north",
+      "desc": "청정 나가라강에서 갓 잡은 은어에 소금을 쳐 숯불에 노릇하게 구워내는 대표 향토 음식입니다."
+    },
+    {
+      "id": "global_기후_res_3",
+      "name": "기후 전통 소바 야마부키",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "메밀 본연의 구수한 향과 쫄깃함을 살려 차가운 츠유 소스에 적셔 먹는 전통 소바 집입니다."
+    },
+    {
+      "id": "global_기후_caf_1",
+      "name": "가와라마치 고택 카페",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "검은 판벽의 옛 격자문 상가 거리에서 따뜻한 한방차와 팥 디저트를 곁들이는 감성 카페입니다."
+    },
+    {
+      "id": "global_기후_caf_2",
+      "name": "미노와시 지우산 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "기후 전통 한지(미노와시) 및 지우산 장식으로 꾸며진 아늑하고 독특한 공간입니다."
+    },
+    {
+      "id": "global_기후_nig_1",
+      "name": "킨카잔 정상 나이트 뷰",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "north",
+      "desc": "파노라마 야경 레스토랑과 전망대에서 나가라강에 비친 도시 불빛과 라이트업된 기후성을 감상합니다."
+    }
+  ],
+  "다카마쓰": [
+    {
+      "id": "global_다카마쓰_att_1",
+      "name": "리츠린 공원",
+      "category": "attraction",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "미슐랭 3스타에 빛나는 일본 최고의 대명 정원으로 6개의 연못과 13개의 인공산이 차경을 이룹니다."
+    },
+    {
+      "id": "global_다카마쓰_att_2",
+      "name": "타카마쓰 성터 (타마모 공원)",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "바닷물을 성 해자로 끌어들인 일본 3대 해성 중 하나로 성 안에서 도미 먹이주기 체험이 가능합니다."
+    },
+    {
+      "id": "global_다카마쓰_rel_1",
+      "name": "야시마 산상 전망대",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "east",
+      "desc": "평평한 메사 지형 산 정상에서 세토내해의 다도해 섬들과 아름다운 노을을 감상합니다."
+    },
+    {
+      "id": "global_다카마쓰_act_1",
+      "name": "쇼도시마 페리 여행",
+      "category": "activity",
+      "subCategory": "cruise",
+      "themes": { "healing": 4, "activity": 5, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "다카마쓰 항에서 페리를 타고 올리브와 엔젤로드가 유명한 쇼도시마 섬으로 해상 여행을 떠납니다."
+    },
+    {
+      "id": "global_다카마쓰_res_1",
+      "name": "가모 우동",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "lunch"],
+      "zone": "west",
+      "desc": "사누키 우동의 성지 카가와현을 대표하는 곳으로 쫄깃한 면발에 갓 튀긴 튀김을 올려 먹습니다."
+    },
+    {
+      "id": "global_다카마쓰_res_2",
+      "name": "잇카쿠 다카마쓰점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "매콤한 스파이스 양념을 발라 오븐에 구워낸 명물 닭다리구이 '호네츠키도리' 전문점입니다."
+    },
+    {
+      "id": "global_다카마쓰_res_3",
+      "name": "사누키 붓카케 우동 산구",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "진한 쯔유 육수를 면에 부어 날계란과 파, 튀김 부스러기와 함께 비벼 먹는 명품 우동입니다."
+    },
+    {
+      "id": "global_다카마쓰_caf_1",
+      "name": "리츠린 공원 키쿠게츠테이",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 5, "activity": 1, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "정원 연못 한가운데 위치한 다도실에서 말차와 화과자를 조용히 음미하는 다도 찻집입니다."
+    },
+    {
+      "id": "global_다카마쓰_caf_2",
+      "name": "북하버 오션 뷰 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "다카마쓰 항구 등대와 세토내해를 드나드는 배들을 바라보며 커피를 마시는 수변 카페입니다."
+    },
+    {
+      "id": "global_다카마쓰_nig_1",
+      "name": "다카마쓰 심볼타워 타워안 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 2, "shopping": 2 },
+      "timeOfDay": ["evening"],
+      "zone": "north",
+      "desc": "시코쿠 최고 높이 건물 전망층에서 다카마쓰 항구 및 도시 조명이 이루는 바다 야경을 즐깁니다."
+    }
+  ],
+  "와카야마": [
+    {
+      "id": "global_와카야마_att_1",
+      "name": "와카야마 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "도쿠가와 3가문 중 하나가 거주했던 성으로 단풍 정원 모미지니와와 흰 천수각이 근사합니다."
+    },
+    {
+      "id": "global_와카야마_att_2",
+      "name": "포르토 유럽 테마파크",
+      "category": "attraction",
+      "subCategory": "theme_park",
+      "themes": { "healing": 3, "activity": 4, "food": 2, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "지중해 연안 프랑스, 이탈리아, 스페인의 옛 거리를 정교하게 재현한 이국적인 해안 테마파크입니다."
+    },
+    {
+      "id": "global_와카야마_rel_1",
+      "name": "와카노우라 해변 산책로",
+      "category": "relaxation",
+      "subCategory": "beach",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "south",
+      "desc": "예로부터 시인들이 칭송하던 만곡형 해안선과 갯벌, 붉은 석양이 연출하는 평화로운 정경입니다."
+    },
+    {
+      "id": "global_와카야마_act_1",
+      "name": "구로시오 시장 참치 해체쇼",
+      "category": "activity",
+      "subCategory": "market_experience",
+      "themes": { "healing": 2, "activity": 5, "food": 5, "culture": 3, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "매일 박력 넘치게 펼쳐지는 거대한 생참치 해체 공연을 관람하고 갓 뜬 참치를 바로 시식합니다."
+    },
+    {
+      "id": "global_와카야마_res_1",
+      "name": "이데 쇼텐 본점",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "진한 돼지사골 간장 육수로 일본 전역 방송 라멘 콘테스트 1위를 차지했던 전국구 라멘집입니다."
+    },
+    {
+      "id": "global_와카야마_res_2",
+      "name": "구로시오 시장 해물바비큐",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 2, "food": 5, "culture": 2, "shopping": 3 },
+      "timeOfDay": ["lunch"],
+      "zone": "south",
+      "desc": "시장 내 수산물 코너에서 갓 구운 전복, 가리비, 새우 및 참치 덮밥을 야외 바다 테라스에서 즐깁니다."
+    },
+    {
+      "id": "global_와카야마_res_3",
+      "name": "와카야마 남고매 밥상 정식",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 3, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "와카야마 명물 프리미엄 매실장아찌(우메보시)와 도미 요리를 정갈하게 곁들인 건강 한상입니다."
+    },
+    {
+      "id": "global_와카야마_caf_1",
+      "name": "와카야마 성 공원 다도 다실",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 5, "activity": 1, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "성곽 정원 모미지니와 안 다도실에서 울창한 연못 조경을 감상하며 따뜻한 말차를 마십니다."
+    },
+    {
+      "id": "global_와카야마_caf_2",
+      "name": "마리나 시티 오션 테라스 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "south",
+      "desc": "요트 마리나 항구와 맑은 와카야마 바다를 배경으로 시원한 음료와 수제 타르트를 즐기는 카페입니다."
+    },
+    {
+      "id": "global_와카야마_nig_1",
+      "name": "와카야마 성 라이트업 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "어둠 속 환하게 불을 밝힌 백색 천수각과 조명 켜진 수평 다리 오하시로카의 몽환적 밤풍경입니다."
+    }
+  ],
+  "마쓰야마": [
+    {
+      "id": "global_마쓰야마_att_1",
+      "name": "마쓰야마 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 3, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "가츠야마 산 정상에 보존된 원형 천수각 성으로 시가지를 한눈에 굽어보는 시코쿠 대표 명성입니다."
+    },
+    {
+      "id": "global_마쓰야마_att_2",
+      "name": "도고 온천 본관",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon", "evening"],
+      "zone": "east",
+      "desc": "3천 년 역사를 지닌 일본 최목 온천이자 센과 치히로의 행방불명 목욕탕의 모티브가 된 3층 목조 건물입니다."
+    },
+    {
+      "id": "global_마쓰야마_rel_1",
+      "name": "도고 공원",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "옛 유즈키 성터에 조성된 공원으로 해자와 벚나무 숲길을 따라 한적하게 힐링 산책을 즐깁니다."
+    },
+    {
+      "id": "global_마쓰야마_act_1",
+      "name": "봇찬 열차 탑승 체험",
+      "category": "activity",
+      "subCategory": "transit",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "나츠메 소세키의 소설 '도련님'에 등장하는 고풍스러운 클래식 증기 기관차 스타일의 노면전차입니다."
+    },
+    {
+      "id": "global_마쓰야마_res_1",
+      "name": "마쓰야마 타이메시 분큐",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "싱싱한 도미 회를 특제 간장 양념과 날계란에 섞어 밥 위에 얹어 먹는 우와지마식 도미밥(타이메시)입니다."
+    },
+    {
+      "id": "global_마쓰야마_res_2",
+      "name": "아사히 냄비우동",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "달콤하고 따뜻한 멸치 육수를 알루미늄 냄비에 담아 보글보글 끓여내는 마쓰야마 추억의 우동집입니다."
+    },
+    {
+      "id": "global_마쓰야마_res_3",
+      "name": "마쓰야마 감귤 돼지구이",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "에히메 특산 감귤 사료를 먹여 사육한 부드럽고 상큼한 풍미의 고급 돈육 구이 전문점입니다."
+    },
+    {
+      "id": "global_마쓰야마_caf_1",
+      "name": "도고 온천 봇찬 카페",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "east",
+      "desc": "도고 온천 상가 상징 시계탑 옆에서 타르트 과자와 미칸 감귤 쥬스를 함께 맛보는 레트로 카페입니다."
+    },
+    {
+      "id": "global_마쓰야마_caf_2",
+      "name": "10X10 에히메 미칸 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 2, "shopping": 3 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "수도꼭지를 틀면 진짜 감귤 주스가 나오는 이색 체험과 다양한 에히메 감귤 디저트를 판매합니다."
+    },
+    {
+      "id": "global_마쓰야마_nig_1",
+      "name": "마쓰야마 성 정상 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "케이블카나 걸어서 올라간 산 정상에서 마쓰야마 시내의 빛나는 밤하늘과 세토내해 야경을 만끽합니다."
+    }
+  ],
+  "돗토리": [
+    {
+      "id": "global_돗토리_att_1",
+      "name": "돗토리 사구",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": { "healing": 5, "activity": 4, "food": 1, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "동해 바다와 닿아 있는 일본 최대 규모의 해안 사구로 거대한 모래언덕 풍경이 장관입니다."
+    },
+    {
+      "id": "global_돗토리_att_2",
+      "name": "돗토리 모래 미술관",
+      "category": "attraction",
+      "subCategory": "art",
+      "themes": { "healing": 4, "activity": 1, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "세계 유명 모래 조각가들이 모래와 물만으로 만들어낸 섬세하고 거대한 샌드 아트를 전시합니다."
+    },
+    {
+      "id": "global_돗토리_rel_1",
+      "name": "우라도메 해안",
+      "category": "relaxation",
+      "subCategory": "coast",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "에메랄드빛 맑은 바다와 기암괴석, 동굴이 빚어내는 리아스식 해안의 아름다운 휴식처입니다."
+    },
+    {
+      "id": "global_돗토리_act_1",
+      "name": "사구 샌드보드 & 낙타 체험",
+      "category": "activity",
+      "subCategory": "leisure",
+      "themes": { "healing": 2, "activity": 5, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "넓은 모래 언덕을 타고 내려오는 사막 보드 체험과 낙타를 타고 사구를 거니는 이색 액티비티입니다."
+    },
+    {
+      "id": "global_돗토리_res_1",
+      "name": "돗토리 대게 마츠바가니 정식",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "겨울철 돗토리 명물인 수컷 대게(마츠바가니)를 회, 찜, 게장 볶음밥으로 달콤하게 맛봅니다."
+    },
+    {
+      "id": "global_돗토리_res_2",
+      "name": "돗토리 화우 고기덮밥",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "올레인산이 풍부해 풍미가 깊은 돗토리 명품 와규 소고기를 살짝 익혀 올린 정갈한 덮밥입니다."
+    },
+    {
+      "id": "global_돗토리_res_3",
+      "name": "돗토리 소고기 사골 라멘",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "돼지 대신 소 사골을 진하게 우려내어 구수하고 고소한 국물이 돋보이는 돗토리 지역 라멘입니다."
+    },
+    {
+      "id": "global_돗토리_caf_1",
+      "name": "스나바 커피 본점",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["morning", "tea"],
+      "zone": "center",
+      "desc": "스타벅스가 없던 시절 돗토리의 자랑이 된 지역 고유 브랜드 커피로 모래 구이 로스팅이 특징입니다."
+    },
+    {
+      "id": "global_돗토리_caf_2",
+      "name": "사구전망대 오션뷰 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "east",
+      "desc": "사구와 동해 바다를 굽어보며 돗토리 20세기 배(梨)로 만든 상큼한 소프트아이스크림을 즐깁니다."
+    },
+    {
+      "id": "global_돗토리_nig_1",
+      "name": "돗토리 사구 별빛 별자리 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "east",
+      "desc": "인공 조명이 거의 없는 밤의 사구 위에서 밤하늘 가득 펼쳐지는 쏟아질 듯한 은하수를 관측합니다."
+    }
+  ],
+  "구마모토": [
+    {
+      "id": "global_구마모토_att_1",
+      "name": "구마모토 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "일본 3대 명성 중 하나로 웅장한 석축 '무샤가에시'와 복원된 멋진 혼마루 어전이 돋보입니다."
+    },
+    {
+      "id": "global_구마모토_att_2",
+      "name": "스이젠지 조주엔",
+      "category": "attraction",
+      "subCategory": "garden",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "후지산 미니어처와 도카이도 53차 경치를 모티브로 조성한 아름다운 츠키야마 회유식 정원입니다."
+    },
+    {
+      "id": "global_구마모토_rel_1",
+      "name": "에즈코 호수 공원",
+      "category": "relaxation",
+      "subCategory": "lake",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "구마모토 도심 속 맑은 용천수가 샘솟는 표탄 모양 호수로 오리배와 여유로운 보행길이 조성되어 있습니다."
+    },
+    {
+      "id": "global_구마모토_act_1",
+      "name": "사쿠라노바바 조사이엔",
+      "category": "activity",
+      "subCategory": "culture",
+      "themes": { "healing": 3, "activity": 4, "food": 4, "culture": 5, "shopping": 4 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "구마모토 성 아래 옛 에도 시대 성하마을을 재현해 의상 체험과 전통 음식 시식을 경험합니다."
+    },
+    {
+      "id": "global_구마모토_res_1",
+      "name": "고쿠테이 라멘 본점",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "태운 마늘 기름(마유)과 고소한 돈코츠 육수, 계란 노른자가 더해진 구마모토 대표 라멘입니다."
+    },
+    {
+      "id": "global_구마모토_res_2",
+      "name": "스가노야 본점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "구마모토 명물 말고기 육회(바사시)와 말고기 불고기를 코스로 제공하는 최고급 전통 식당입니다."
+    },
+    {
+      "id": "global_구마모토_res_3",
+      "name": "아카우시 덮밥 전문점",
+      "category": "restaurant",
+      "subCategory": "gourmet",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "아소 청정 지역 지방이 적고 붉은 살코기가 고소한 아카우시 흑우를 겉만 익혀 올린 덮밥입니다."
+    },
+    {
+      "id": "global_구마모토_caf_1",
+      "name": "스이젠지 고킨덴 전통 찻집",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 5, "activity": 1, "food": 3, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "east",
+      "desc": "정원 내 위치한 초가 지붕 건물에서 녹색 미니어처 산을 보며 말차와 화과자를 즐기는 카페입니다."
+    },
+    {
+      "id": "global_구마모토_caf_2",
+      "name": "쿠마몬 스퀘어 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 2, "food": 4, "culture": 3, "shopping": 5 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "구마모토 마스코트 쿠마몬의 영업부장실과 함께 귀여운 쿠마몬 라떼와 디저트를 만나는 공간입니다."
+    },
+    {
+      "id": "global_구마모토_nig_1",
+      "name": "구마모토 시청 14층 전망대",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "시청 최고층 무료 전망대에서 조명이 은은히 비치는 구마모토 성과 시내 밤경치를 정면으로 바라봅니다."
+    }
+  ],
+  "나가사키": [
+    {
+      "id": "global_나가사키_att_1",
+      "name": "나가사키 평화공원",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "평화 기원 동상과 평화의 샘이 조성되어 인류 평화를 다짐하는 상징적인 역사 공원입니다."
+    },
+    {
+      "id": "global_나가사키_att_2",
+      "name": "글로버 가든 (구로바 엔)",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "south",
+      "desc": "언덕 위 서양 개항기 저택들이 정원과 함께 조성되어 나가사키 항구를 아름답게 전망합니다."
+    },
+    {
+      "id": "global_나가사키_rel_1",
+      "name": "데지마 워프",
+      "category": "relaxation",
+      "subCategory": "harbour",
+      "themes": { "healing": 5, "activity": 2, "food": 3, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "나가사키 항구 테라스 데크를 따라 라이브 음악과 요트를 보며 여유를 즐기는 수변 구역입니다."
+    },
+    {
+      "id": "global_나가사키_act_1",
+      "name": "나가사키 로프웨이",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "west",
+      "desc": "유리로 된 시스루 로프웨이 카를 타고 이나사야마 산 정상까지 감동적인 공중 산책을 선사합니다."
+    },
+    {
+      "id": "global_나가사키_res_1",
+      "name": "시코쿠엔 (사해루) 본점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "south",
+      "desc": "1899년 나가사키 짬뽕과 볶음 짬뽕(사라도동)을 최초로 개발한 발상지 대형 레스토랑입니다."
+    },
+    {
+      "id": "global_나가사키_res_2",
+      "name": "츠루찬 원조 토르코 라이스",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "돈카츠, 스파게티, 볶음밥을 한 접시에 푸짐하게 담아내는 나가사키 원조 경양식집입니다."
+    },
+    {
+      "id": "global_나가사키_res_3",
+      "name": "요세코이 스시 데지마점",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "나가사키 청정 바다에서 갓 잡은 전갱이, 고등어, 참치 스시를 신선하게 맛보는 맛집입니다."
+    },
+    {
+      "id": "global_나가사키_caf_1",
+      "name": "후쿠사야 본점 카스테라 카페",
+      "category": "cafe",
+      "subCategory": "bakery_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 5, "shopping": 4 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "400년 전통 바닥에 결정 설탕이 씹히는 원조 나가사키 카스테라와 진한 홍차를 제공합니다."
+    },
+    {
+      "id": "global_나가사키_caf_2",
+      "name": "오우라 성당 앤틱 카페",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "south",
+      "desc": "오우라 천주당 입구 언덕에서 스테인드글라스 빛 아래 커피를 마시는 고풍스러운 찻집입니다."
+    },
+    {
+      "id": "global_나가사키_nig_1",
+      "name": "이나사야마 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "west",
+      "desc": "홍콩, 모나코와 함께 세계 신 3대 야경으로 불리는 산과 바다, 도시 불빛의 입체적인 보석상자 야경입니다."
+    }
+  ],
+  "기타큐슈": [
+    {
+      "id": "global_기타큐슈_att_1",
+      "name": "고쿠라 성",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "독특한 당조 양식의 4층보다 5층이 더 큰 천수각과 벚꽃으로 둘러싸인 기타큐슈 상징 성곽입니다."
+    },
+    {
+      "id": "global_기타큐슈_att_2",
+      "name": "모지코 레트로 거리",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 4, "activity": 2, "food": 3, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "메이지·쇼와 시대 근대 서양식 건축물과 국제 항구의 낭만이 남아있는 대표 관광지입니다."
+    },
+    {
+      "id": "global_기타큐슈_rel_1",
+      "name": "아라타치산 공원",
+      "category": "relaxation",
+      "subCategory": "nature",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "모지코 해협이 내다보이는 산속 산책로와 열대 식물원이 있는 한적하고 푸른 쉼터입니다."
+    },
+    {
+      "id": "global_기타큐슈_act_1",
+      "name": "사라쿠라야마 케이블카",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 3, "activity": 4, "food": 1, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "south",
+      "desc": "케이블카와 슬로프카를 이어서 타고 해발 622m 정상 전망대로 오르는 아찔한 체험입니다."
+    },
+    {
+      "id": "global_기타큐슈_res_1",
+      "name": "모지코 야키카레 베어프루트",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "north",
+      "desc": "밥 위에 카레, 계란, 치즈를 올려 오븐에 고소하게 구워내는 모지코 명물 구운 카레 전문점입니다."
+    },
+    {
+      "id": "global_기타큐슈_res_2",
+      "name": "스케산 우동 고쿠라 본점",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "바삭한 긴 우엉 튀김(고보텐)과 소고기가 들어간 기타큐슈의 영혼 단골 우동 전문점입니다."
+    },
+    {
+      "id": "global_기타큐슈_res_3",
+      "name": "탄가시장 대학당 덮밥",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": { "healing": 1, "activity": 2, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["lunch"],
+      "zone": "center",
+      "desc": "100년 역사의 탄가 시장에서 맨밥 그릇을 사서 반찬과 회를 자유롭게 얹어 먹는 재미있는 덮밥입니다."
+    },
+    {
+      "id": "global_기타큐슈_caf_1",
+      "name": "모지코 아인슈페너 레트로 카페",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "옛 구 모지미츠이 클럽 인근 고풍스러운 건물에서 정통 아인슈페너와 야키카레 디저트를 선사합니다."
+    },
+    {
+      "id": "global_기타큐슈_caf_2",
+      "name": "고쿠라 리버워크 뷰 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 2, "shopping": 3 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "고쿠라 성과 강변 해자를 동시에 바라볼 수 있는 복합 쇼핑몰 리버워크 내 야외 테라스 카페입니다."
+    },
+    {
+      "id": "global_기타큐슈_nig_1",
+      "name": "사라쿠라야마 정상 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "south",
+      "desc": "신 일본 3대 야경에 손꼽히는 스팟으로 기타큐슈 공업지대와 도카이 만의 '100억 달러 야경'입니다."
+    }
+  ],
+  "가고시마": [
+    {
+      "id": "global_가고시마_att_1",
+      "name": "센간엔 정원",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "사쿠라지마 화산을 연못 삼고 가고시마 만을 정원 삼아 차경한 시마즈 가문의 유네스코 세계유산 정원입니다."
+    },
+    {
+      "id": "global_가고시마_att_2",
+      "name": "사쿠라지마 활화산",
+      "category": "attraction",
+      "subCategory": "nature",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "east",
+      "desc": "지금도 연기를 분출하는 세계적인 활화산 섬으로 거친 용암 들판과 웅장한 화산 풍경을 마주합니다."
+    },
+    {
+      "id": "global_가고시마_rel_1",
+      "name": "사쿠라지마 족욕 공원",
+      "category": "relaxation",
+      "subCategory": "hot_spring",
+      "themes": { "healing": 5, "activity": 1, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["afternoon"],
+      "zone": "east",
+      "desc": "100m 길이에 달하는 천연 온천 족욕탕에 발을 담그고 바다 너머 가고시마 시내를 바라보는 힐링 장소입니다."
+    },
+    {
+      "id": "global_가고시마_act_1",
+      "name": "사쿠라지마 페리 유람",
+      "category": "activity",
+      "subCategory": "cruise",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 1, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "24시간 운항하는 페리를 타고 15분간 가고시마 만을 건너며 선상 명물 야부텐 우동을 맛봅니다."
+    },
+    {
+      "id": "global_가고시마_res_1",
+      "name": "흑돼지 돈카츠 아지모리",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "가고시마 특산 흑돼지(구로부타) 돈샤브샤브와 육즙 가득한 바삭한 돈카츠의 최고봉 맛집입니다."
+    },
+    {
+      "id": "global_가고시마_res_2",
+      "name": "가고시마 라멘 무사시",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "돼지고기와 닭고기를 섞은 부드러운 육수에 단무지와 절임 채소가 함께 나오는 지역 고유 라멘입니다."
+    },
+    {
+      "id": "global_가고시마_res_3",
+      "name": "가고시마 잿방어 사츠마아게 정식",
+      "category": "restaurant",
+      "subCategory": "seafood",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "신선한 잿방어 회와 갓 튀겨낸 수제 어묵 튀김(사츠마아게)을 정갈하게 차려낸 미식 밥상입니다."
+    },
+    {
+      "id": "global_가고시마_caf_1",
+      "name": "텐몬칸 무자키 시로쿠마 본점",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "연유얼음 위에 젤리와 과일로 백곰 얼굴을 장식한 가고시마 대표 빙수 시로쿠마의 원조집입니다."
+    },
+    {
+      "id": "global_가고시마_caf_2",
+      "name": "시로야마 호텔 라운지 카페",
+      "category": "cafe",
+      "subCategory": "view_cafe",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "언덕 위 시로야마 호텔에서 사쿠라지마 화산을 감상하며 갓 구운 빵과 커피를 즐기는 럭셔리 라운지입니다."
+    },
+    {
+      "id": "global_가고시마_nig_1",
+      "name": "시로야마 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "해발 107m 시로야마 산 정상에서 가고시마 번화가 불빛과 어둠 속 우뚝 선 사쿠라지마 실루엣을 감상합니다."
+    }
+  ],
+  "벳푸": [
+    {
+      "id": "global_벳푸_att_1",
+      "name": "벳푸 지옥온천 순례",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 5, "shopping": 3 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "코발트블루빛 우미지옥과 붉은 피바다지옥 등 7가지 신비로운 온천 원천을 둘러보는 벳푸 최고 관광지입니다."
+    },
+    {
+      "id": "global_벳푸_att_2",
+      "name": "벳푸 타워",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "center",
+      "desc": "도쿄타워를 설계한 내통수각이 두 번째로 건축한 레트로 분위기의 역사적인 해안 전망 타워입니다."
+    },
+    {
+      "id": "global_벳푸_rel_1",
+      "name": "효탄 온천",
+      "category": "relaxation",
+      "subCategory": "hot_spring",
+      "themes": { "healing": 5, "activity": 2, "food": 2, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "north",
+      "desc": "미슐랭 3스타 온천 시설로 낙차 큰 모래 찜질, 노천탕, 대나무 수증기 온천을 모두 갖춘 힐링 명소입니다."
+    },
+    {
+      "id": "global_벳푸_act_1",
+      "name": "벳푸 로프웨이",
+      "category": "activity",
+      "subCategory": "cablecar",
+      "themes": { "healing": 4, "activity": 4, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "west",
+      "desc": "101인승 대형 로프웨이를 타고 츠루미다케 정상으로 오르며 벳푸 만과 아소 산맥까지 굽어봅니다."
+    },
+    {
+      "id": "global_벳푸_res_1",
+      "name": "지옥찜 공방 칸나와",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 3, "activity": 3, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "north",
+      "desc": "100도 고온의 온천 수증기 찜통(지옥마솥)에 해산물과 야채, 계란을 셀프로 쪄서 먹는 특색 식당입니다."
+    },
+    {
+      "id": "global_벳푸_res_2",
+      "name": "도요노쿠니 토리텐 전문점",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "오이타 벳푸의 소울푸드인 닭고기 튀김(토리텐)을 ponzu 소스와 겨자에 찍어 먹는 발상지 맛집입니다."
+    },
+    {
+      "id": "global_벳푸_res_3",
+      "name": "벳푸 냉면 육성엔",
+      "category": "restaurant",
+      "subCategory": "ramen",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "재일한국인이 시작하여 전파된 벳푸 특산 냉면으로 쫄깃한 메밀 면발과 시원한 양배추 김치가 특징입니다."
+    },
+    {
+      "id": "global_벳푸_caf_1",
+      "name": "오카모토야 매점 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 3, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "묘반 온천 수증기로 푹 쪄내어 쌉싸름하고 달콤한 원조 온천 지옥 푸딩으로 명성이 높습니다."
+    },
+    {
+      "id": "global_벳푸_caf_2",
+      "name": "온천마을 고택 다원",
+      "category": "cafe",
+      "subCategory": "traditional_tea",
+      "themes": { "healing": 5, "activity": 1, "food": 4, "culture": 4, "shopping": 1 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "north",
+      "desc": "수증기 김이 피어오르는 칸나와 온천 골목에 위치해 따뜻한 녹차와 단팥죽을 다정하게 내어주는 다방입니다."
+    },
+    {
+      "id": "global_벳푸_nig_1",
+      "name": "쥬몬지바루 전망대 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 5, "activity": 2, "food": 1, "culture": 2, "shopping": 1 },
+      "timeOfDay": ["evening"],
+      "zone": "west",
+      "desc": "일본 밤경치 유산으로 지정된 곳으로 벳푸 도심의溫泉 수증기 연기와 해안선 불빛이 어우러집니다."
+    }
+  ],
+  "하얼빈": [
+    {
+      "id": "global_하얼빈_att_1",
+      "name": "성 소피아 대성당",
+      "category": "attraction",
+      "subCategory": "landmark",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "1907년에 건립된 웅장한 비잔틴 양식의 러시아 정교회 성당으로 하얼빈의 랜드마크입니다."
+    },
+    {
+      "id": "global_하얼빈_att_2",
+      "name": "안중근 의사 기념관",
+      "category": "attraction",
+      "subCategory": "heritage",
+      "themes": { "healing": 3, "activity": 2, "food": 1, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "center",
+      "desc": "하얼빈 역 내에 위치하여 1909년 안중근 의사의 이토 히로부미 격전 현장과 역사 자료를 전합니다."
+    },
+    {
+      "id": "global_하얼빈_rel_1",
+      "name": "태양도 공원 (타이양다오)",
+      "category": "relaxation",
+      "subCategory": "park",
+      "themes": { "healing": 5, "activity": 3, "food": 1, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["morning", "afternoon"],
+      "zone": "north",
+      "desc": "송화강 북쪽에 위치한 드넓은 생태 섬 공원으로 자작나무 숲과 러시아풍 정원이 조성되어 있습니다."
+    },
+    {
+      "id": "global_하얼빈_act_1",
+      "name": "하얼빈 빙설대세계",
+      "category": "activity",
+      "subCategory": "winter_festival",
+      "themes": { "healing": 2, "activity": 5, "food": 2, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["afternoon", "evening"],
+      "zone": "north",
+      "desc": "세계 최대 규모의 겨울 얼음 축제로 거대한 얼음 궁전과 화려한 얼음 미끄럼틀을 체험합니다."
+    },
+    {
+      "id": "global_하얼빈_res_1",
+      "name": "하얼빈 궈바오러우 라오추자",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 1, "activity": 1, "food": 5, "culture": 5, "shopping": 1 },
+      "timeOfDay": ["lunch", "dinner"],
+      "zone": "center",
+      "desc": "1907년 청나라 황실 요리사가 하얼빈에서 창안한 달콤바삭한 원조 꿔바로우(찹쌀탕수육) 맛집입니다."
+    },
+    {
+      "id": "global_하얼빈_res_2",
+      "name": "하얼빈 홍창 명가",
+      "category": "restaurant",
+      "subCategory": "street_food",
+      "themes": { "healing": 1, "activity": 2, "food": 5, "culture": 4, "shopping": 3 },
+      "timeOfDay": ["lunch", "afternoon"],
+      "zone": "center",
+      "desc": "러시아 영향을 받은 훈제 돼지고기 소시지(홍창)로 마늘 향과 훈연 풍미가 깊은 하얼빈 대표 명물입니다."
+    },
+    {
+      "id": "global_하얼빈_res_3",
+      "name": "동북 철솥 닭볶음탕 (궈둔지)",
+      "category": "restaurant",
+      "subCategory": "local_food",
+      "themes": { "healing": 2, "activity": 1, "food": 5, "culture": 3, "shopping": 1 },
+      "timeOfDay": ["dinner"],
+      "zone": "center",
+      "desc": "커다란 무쇠 솥에 토종닭과 옥수수 빵, 감자를 넣어 진하게 조려 먹는 추위를 녹이는 동북 요리입니다."
+    },
+    {
+      "id": "global_하얼빈_caf_1",
+      "name": "마뎨얼 아이스크림 & 중앙대거리 카페",
+      "category": "cafe",
+      "subCategory": "dessert_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 5, "culture": 4, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "1906년 설립된 마뎨얼 호텔 1층에서 영하 20도에도 즐기는 진한 바닐라 우유 얼음과자를 판매합니다."
+    },
+    {
+      "id": "global_하얼빈_caf_2",
+      "name": "러시아풍 바이칼 로스토프 카페",
+      "category": "cafe",
+      "subCategory": "classic_cafe",
+      "themes": { "healing": 4, "activity": 1, "food": 4, "culture": 5, "shopping": 2 },
+      "timeOfDay": ["tea", "afternoon"],
+      "zone": "center",
+      "desc": "러시아 홍차 체르니  чай와 전통 수제 케이크 꿀케이크(메도비크)를 고풍스럽게 선보이는 카페입니다."
+    },
+    {
+      "id": "global_하얼빈_nig_1",
+      "name": "중앙대거리 (중앙다지에) 야경",
+      "category": "nightview",
+      "subCategory": "viewpoint",
+      "themes": { "healing": 4, "activity": 3, "food": 2, "culture": 4, "shopping": 4 },
+      "timeOfDay": ["evening"],
+      "zone": "center",
+      "desc": "유럽풍 돌길 보행로를 따라 르네상스·절풍 건물 조명들이 켜져 이국적인 유럽 밤거리 풍경을 자랑합니다."
+    }
+  ]
+}
