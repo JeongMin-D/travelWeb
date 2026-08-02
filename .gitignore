@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Temporary / Scratch
+scratch/
+*.tmp
+*.bak
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

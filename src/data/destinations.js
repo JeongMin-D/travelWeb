@@ -457,12 +457,6 @@ export const WIKI_TAGLINE_EN = {
   "코펜하겐": "Copenhagen is the capital and most populous city of Denmark, with a population of 671,714 people in the municipality and 1.4 million in the urban area.",
   "올보르": "Aalborg or Ålborg is Denmark's fourth largest city with a population of 119,862 in the town proper and an urban population of 143,598.",
   "오울루": "Oulu is a major port city in Finland and the regional capital of North Ostrobothnia.",
-  "더블린": "Dublin is the capital and largest city of Ireland.",
-  "골웨이": "Galway is a city in County Galway.",
-  "슈체친": "Szczecin, historically known in English as Stettin, is the capital and largest city of the West Pomeranian Voivodeship in northwestern Poland.",
-  "페스": "Fez or Fes is a city in northern inland Morocco and the capital of the Fez-Meknes administrative region.",
-  "셰프샤우엔": "Chefchaouen is a city in northwest Morocco.",
-  "산티아고": "Santiago, also known as Santiago de Chile, is the capital and largest city of Chile and one of the largest cities in the Americas.",
 
   "성남": "Seongnam is the fourth largest city in South Korea's Gyeonggi Province after Suwon and the 10th largest city in the country.",
   "고양": "Goyang is a city in Gyeonggi Province in the northern part of South Korea.",
