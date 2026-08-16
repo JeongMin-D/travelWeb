@@ -106,7 +106,19 @@ class AppDB {
     if (!cloudDb.isInitialized) return;
 
     try {
-      // Listen to cloud custom destinations
+      // Auto-upload any local seed/existing records to cloud
+      this.cloud.syncLocalToCloud().catch(err => console.warn('[AppDB] Cloud auto-sync notice:', err.message));
+
+      // 1. Listen to cloud users
+      cloudDb.subscribeCollection('users', (cloudUsers) => {
+        if (cloudUsers && cloudUsers.length > 0) {
+          this._setItem('users', cloudUsers);
+          this._notify('users', cloudUsers);
+          this._notify('auth', this.auth.getCurrentUser());
+        }
+      });
+
+      // 2. Listen to cloud custom destinations
       cloudDb.subscribeCollection('custom_destinations', (cloudDests) => {
         if (cloudDests && cloudDests.length > 0) {
           this._setItem('custom_destinations', cloudDests);
@@ -114,11 +126,27 @@ class AppDB {
         }
       });
 
-      // Listen to cloud trips
+      // 3. Listen to cloud trips
       cloudDb.subscribeCollection('trips', (cloudTrips) => {
         if (cloudTrips && cloudTrips.length > 0) {
           this._setItem('trips', cloudTrips);
           this._notify('trips', this.trips.getAll());
+        }
+      });
+
+      // 4. Listen to cloud expenses
+      cloudDb.subscribeCollection('expenses', (cloudExpenses) => {
+        if (cloudExpenses && cloudExpenses.length > 0) {
+          this._setItem('expenses', cloudExpenses);
+          this._notify('expenses', this.expenses.getAll());
+        }
+      });
+
+      // 5. Listen to cloud visited records
+      cloudDb.subscribeCollection('visited', (cloudVisited) => {
+        if (cloudVisited && cloudVisited.length > 0) {
+          this._setItem('visited', cloudVisited);
+          this._notify('visited', this.visited.getAll());
         }
       });
     } catch (e) {
