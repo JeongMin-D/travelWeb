@@ -238,7 +238,7 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
             <h4 style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
               {isEn ? 'Conquered Cities' : '정복한 도시 수'}
             </h4>
-            <p style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-success)' }}>{totalVisited} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ 906</span></p>
+            <p style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--color-success)' }}>{totalVisited} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {(destinations && destinations.length) || 911}</span></p>
           </div>
         </div>
 

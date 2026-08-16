@@ -142,7 +142,7 @@ export default function PrintBrochureModal({
                 ★ VOYAGE GLOBAL TRAVEL MAGAZINE • PAGE 1 (COVER & OVERVIEW)
               </span>
               <span style={{ fontSize: '10px', fontWeight: 800 }}>
-                {isEn ? 'ISSUE #906 CATALOG' : '906개 도시 스페셜 에디션'}
+                {isEn ? 'GLOBAL CITIES SPECIAL CATALOG' : '글로벌 도시 스페셜 에디션'}
               </span>
             </div>
           </div>
