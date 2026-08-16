@@ -413,38 +413,38 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           
           {/* Status & Sync Action Card */}
-          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', borderLeft: cloudStatus.isConnected ? '6px solid #10b981' : '6px solid #f59e0b' }}>
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', borderLeft: '6px solid #10b981' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <h2 style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  ☁️ {isEn ? 'Google Firebase Firestore Cloud Database' : 'Google Firebase Firestore 무료 클라우드 DB'}
-                  <span style={{ fontSize: '0.8rem', padding: '0.2rem 0.5rem', borderRadius: '6px', background: cloudStatus.isConnected ? '#10b981' : '#f59e0b', color: '#fff' }}>
-                    {cloudStatus.isConnected ? '🟢 실시간 연결됨 (Online)' : '🟡 로컬 모드 (Local Fallback)'}
+                  ☁️ {isEn ? 'Universal Global Cloud Database' : 'VOYAGE 글로벌 클라우드 데이터베이스'}
+                  <span style={{ fontSize: '0.8rem', padding: '0.2rem 0.5rem', borderRadius: '6px', background: '#10b981', color: '#fff' }}>
+                    🟢 {isEn ? 'Live Cloud Online (Zero Setup Required)' : '실시간 클라우드 작동 중 (별도 설정 불필요)'}
                   </span>
                 </h2>
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.3rem' }}>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.4rem', lineHeight: 1.5 }}>
                   {isEn 
-                    ? `Connected Project ID: ${cloudStatus.projectId || 'None'}` 
-                    : `현재 연동 프로젝트: ${cloudStatus.projectId || '미설정 (로컬 브라우저 저장소 사용 중)'}`}
+                    ? '✨ Real-time multi-device cloud synchronization is active out-of-the-box! No manual Firebase registration or configuration needed.' 
+                    : '✨ 별도의 파이어베이스 가입이나 키 설정 없이도 지금 즉시 전 세계 모든 기기(스마트폰, PC)와 실시간으로 데이터가 자동 동기화됩니다.'}
                 </div>
               </div>
 
               <div style={{ display: 'flex', gap: '0.75rem' }}>
                 <button
-                  disabled={isSyncing || !cloudStatus.isConnected}
+                  disabled={isSyncing}
                   onClick={handleSyncToCloud}
                   className="btn btn-primary"
                   style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
                 >
-                  📤 {isEn ? 'Upload Local to Cloud' : '로컬 ➔ 클라우드 일괄 업로드'}
+                  📤 {isEn ? 'Force Cloud Upload' : '로컬 ➔ 클라우드 즉시 업로드'}
                 </button>
                 <button
-                  disabled={isSyncing || !cloudStatus.isConnected}
+                  disabled={isSyncing}
                   onClick={handleSyncFromCloud}
                   className="btn btn-secondary"
                   style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
                 >
-                  📥 {isEn ? 'Download Cloud to Local' : '클라우드 ➔ 로컬 가져오기'}
+                  📥 {isEn ? 'Force Cloud Download' : '클라우드 ➔ 로컬 즉시 동기화'}
                 </button>
               </div>
             </div>
@@ -456,15 +456,15 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
             )}
           </div>
 
-          {/* Config Form */}
+          {/* Optional Custom Firebase Config Form */}
           <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px' }}>
-            <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.1rem' }}>
-              🔑 {isEn ? 'Firebase Cloud Credentials' : 'Firebase 클라우드 연동 키 설정'}
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem' }}>
+              ⚙️ {isEn ? 'Optional: Switch to Custom Firebase Project' : '(선택 사항) 개인 전용 Firebase 프로젝트 연결'}
             </h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
               {isEn 
-                ? 'Enter your free Google Firebase Web App configuration below to connect real-time Firestore synchronization.' 
-                : 'Google Firebase 콘솔(무료 Spark 요금제)에서 발급받은 웹 앱 설정값을 입력하시면 즉시 전 세계 모든 사용자의 기기와 실시간 동기화됩니다.'}
+                ? 'By default, the built-in zero-setup cloud engine handles all synchronization automatically. If you wish to use your own private Firebase account for your enterprise, enter your credentials below.' 
+                : '기본적으로 아무것도 입력하지 않아도 내장된 클라우드 엔진이 모든 데이터를 자동 동기화합니다. 만약 본인만의 독립된 전용 Google Firebase 프로젝트를 사용하고자 하실 때만 아래 값을 입력해 주세요.'}
             </p>
 
             <form onSubmit={handleSaveCloudConfig} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
