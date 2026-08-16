@@ -6,41 +6,38 @@ import ManualPlanner from './components/ManualPlanner';
 import BudgetTracker from './components/BudgetTracker';
 import WorldMap from './components/WorldMap';
 import VisitedTracker from './components/VisitedTracker';
-import { destinations as defaultDestinations, generateCustomDestination } from './data/destinations';
-
-
+import DataBackupModal from './components/DataBackupModal';
+import { destinations as defaultDestinations } from './data/destinations';
+import appDb from './db/appDb';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('dashboard'); // dashboard, randomizer, itinerary, manual, budget
+  const [activeTab, setActiveTab] = useState('dashboard');
   const [allDests, setAllDests] = useState([]);
+  const [showDbModal, setShowDbModal] = useState(false);
   
-  // Theme state: 'light' | 'dark'
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('app_theme') || 'light';
-  });
+  // Theme state backed by AppDB
+  const [theme, setTheme] = useState(() => appDb.preferences.getTheme());
 
-  // Language state: 'en' | 'ko' (default 'en' as requested)
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('app_lang') || 'en';
-  });
+  // Language state backed by AppDB
+  const [language, setLanguage] = useState(() => appDb.preferences.getLang());
 
+  // Subscribe to theme and language changes
   useEffect(() => {
-    localStorage.setItem('app_theme', theme);
+    appDb.preferences.setTheme(theme);
   }, [theme]);
 
   useEffect(() => {
-    localStorage.setItem('app_lang', language);
+    appDb.preferences.setLang(language);
   }, [language]);
 
-  // Load standard + custom destinations on mount
+  // Load destinations & subscribe to custom destination changes
   useEffect(() => {
-    const stored = localStorage.getItem('custom_dests');
-    if (stored) {
-      const parsedCustoms = JSON.parse(stored);
-      setAllDests([...defaultDestinations, ...parsedCustoms]);
-    } else {
-      setAllDests(defaultDestinations);
-    }
+    const refreshDests = () => {
+      const customs = appDb.customDestinations.getAll();
+      setAllDests([...defaultDestinations, ...customs]);
+    };
+    refreshDests();
+    return appDb.subscribe('custom_destinations', refreshDests);
   }, []);
   
   // States for viewing a specific recommendation
@@ -53,14 +50,7 @@ function App() {
   const [prefilledDestForBudget, setPrefilledDestForBudget] = useState(null);
 
   const handleRegisterCustomDest = (customDestObj) => {
-    const updated = [...allDests, customDestObj];
-    setAllDests(updated);
-
-    const stored = localStorage.getItem('custom_dests');
-    const existingCustoms = stored ? JSON.parse(stored) : [];
-    const newCustoms = [...existingCustoms, customDestObj];
-    localStorage.setItem('custom_dests', JSON.stringify(newCustoms));
-
+    appDb.customDestinations.create(customDestObj);
     handleSelectDestination(customDestObj, 3, 'healing');
   };
 
@@ -79,10 +69,6 @@ function App() {
   const handleStartBudgeting = (dest) => {
     setPrefilledDestForBudget(dest);
     setActiveTab('budget');
-  };
-
-  const handleClearPrefilled = () => {
-    setPrefilledDest(null);
   };
 
   const toggleTheme = () => {
@@ -116,6 +102,11 @@ function App() {
           <div className="buy-a-dell-sticker">
             VOYAGE <span className="purple-sticker-a">SMART</span> PLANNER
           </div>
+
+          {/* Database Management / Backup Button */}
+          <button onClick={() => setShowDbModal(true)} className="control-badge-btn" title="Database Management & Backup">
+            💾 {isEn ? 'DB / Backup' : 'DB 관리 / 백업'}
+          </button>
 
           {/* Mode Controls: Language & Theme Switches */}
           <button onClick={toggleLanguage} className="control-badge-btn" title="Toggle Language">
@@ -278,10 +269,17 @@ function App() {
         </div>
         <div className="compatibility-text">
           {isEn 
-            ? 'Real-time exchange rate info powered by Open Exchange Rate API.'
-            : '실시간 환율 정보는 Open Exchange Rate API를 연동하여 제공되며, 오프라인 시 백업 데이터로 계산됩니다.'}
+            ? 'Real-time exchange rate info powered by Open Exchange Rate API. Persistent client database powered by AppDB.'
+            : '실시간 환율 정보는 Open Exchange Rate API를 연동하여 제공되며, 사용자 데이터는 AppDB 엔진을 통해 안전하게 영구 보존됩니다.'}
         </div>
       </footer>
+
+      {/* Database Management & Backup Modal */}
+      <DataBackupModal 
+        isOpen={showDbModal} 
+        onClose={() => setShowDbModal(false)} 
+        lang={language} 
+      />
     </div>
   );
 }

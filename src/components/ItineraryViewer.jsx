@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getLandmarkCoordinates, getClothingAndWeatherGuide, getTranslatedDestination, translateChecklistItem, translateActivityTitle, translateActivityDesc, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
 import { regenerateSlot } from '../utils/itineraryEngine';
 import PrintBrochureModal from './PrintBrochureModal';
+import appDb from '../db/appDb';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -12,8 +13,6 @@ L.Icon.Default.mergeOptions({
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
-
-
 
 export default function ItineraryViewer({ 
   destination, 
@@ -44,37 +43,30 @@ export default function ItineraryViewer({
     }
   }, [destination]);
 
-  // Load or construct checklist
+  // Load checklist from AppDB
   useEffect(() => {
-    const storageKey = `checklist_${destination.id}`;
-    const stored = localStorage.getItem(storageKey);
-    if (stored) {
-      setChecklist(JSON.parse(stored));
-    } else {
-      // Build default list
-      const defaults = [
-        ...destination.essentials.map(item => ({ text: item, checked: false, category: 'essential' })),
-        { text: '휴대폰 충전기', checked: false, category: 'electronics' },
-        { text: '개인 세면도구', checked: false, category: 'toiletries' },
-        { text: '편한 여벌 옷', checked: false, category: 'clothing' },
-        { text: '상비약 (종합감기약, 대역전)', checked: false, category: 'other' }
-      ];
-      // If international, add international items
-      if (destination.type === 'international') {
-        defaults.unshift(
-          { text: '여권 및 여권 복사본', checked: false, category: 'essential' },
-          { text: '해외 매직 플러그 (어댑터)', checked: false, category: 'electronics' },
-          { text: '해외 결제 카드 / 현금 환전', checked: false, category: 'essential' }
-        );
-      }
-      setChecklist(defaults);
+    const defaults = [
+      ...destination.essentials.map(item => ({ text: item, checked: false, category: 'essential' })),
+      { text: '휴대폰 충전기', checked: false, category: 'electronics' },
+      { text: '개인 세면도구', checked: false, category: 'toiletries' },
+      { text: '편한 여벌 옷', checked: false, category: 'clothing' },
+      { text: '상비약 (종합감기약, 대역전)', checked: false, category: 'other' }
+    ];
+    if (destination.type === 'international') {
+      defaults.unshift(
+        { text: '여권 및 여권 복사본', checked: false, category: 'essential' },
+        { text: '해외 매직 플러그 (어댑터)', checked: false, category: 'electronics' },
+        { text: '해외 결제 카드 / 현금 환전', checked: false, category: 'essential' }
+      );
     }
+    const items = appDb.checklists.get(destination.id, defaults);
+    setChecklist(items);
   }, [destination]);
 
-  // Save checklist to localStorage whenever it changes
+  // Save checklist to AppDB
   const saveChecklist = (list) => {
     setChecklist(list);
-    localStorage.setItem(`checklist_${destination.id}`, JSON.stringify(list));
+    appDb.checklists.save(destination.id, list);
   };
 
   const handleToggleCheck = (index) => {
@@ -96,8 +88,7 @@ export default function ItineraryViewer({
 
   const handleResetChecklist = () => {
     if (window.confirm('체크리스트를 처음 상태로 초기화할까요?')) {
-      localStorage.removeItem(`checklist_${destination.id}`);
-      // Re-trigger the checklist construction effect by reloading destination
+      appDb.checklists.reset(destination.id);
       const defaults = [
         ...destination.essentials.map(item => ({ text: item, checked: false, category: 'essential' })),
         { text: '휴대폰 충전기', checked: false, category: 'electronics' },
@@ -172,18 +163,17 @@ export default function ItineraryViewer({
   const [isVisited, setIsVisited] = useState(false);
 
   useEffect(() => {
-    const visitedList = JSON.parse(localStorage.getItem('visited_cities') || '[]');
-    const exists = visitedList.some(v => v.id === destination.id);
-    setIsVisited(exists);
+    setIsVisited(appDb.visited.isVisited(destination.id));
+    return appDb.subscribe('visited', () => {
+      setIsVisited(appDb.visited.isVisited(destination.id));
+    });
   }, [destination]);
 
   const handleToggleVisited = () => {
-    const visitedList = JSON.parse(localStorage.getItem('visited_cities') || '[]');
-    let updated;
     if (isVisited) {
-      updated = visitedList.filter(v => v.id !== destination.id);
+      appDb.visited.remove(destination.id);
       setIsVisited(false);
-      alert(`🗑️ [${destination.name}] 다녀온 도시 목록에서 해제되었습니다.`);
+      alert(isEn ? `🗑️ [${destination.name}] removed from visited list.` : `🗑️ [${destination.name}] 다녀온 도시 목록에서 해제되었습니다.`);
     } else {
       const visitObj = {
         id: destination.id,
@@ -192,14 +182,14 @@ export default function ItineraryViewer({
         continent: destination.continent,
         imageUrl: destination.imageUrl,
         tagline: destination.tagline,
-        visitedAt: new Date().toISOString().split('T')[0],
-        notes: ''
+        visitedDate: new Date().toISOString().split('T')[0],
+        rating: 5,
+        memo: ''
       };
-      updated = [...visitedList, visitObj];
+      appDb.visited.add(visitObj);
       setIsVisited(true);
-      alert(`🎉 [${destination.name}] 다녀온 도시 목록에 등록되었습니다! "다녀온 도시" 탭에서 확인해 보세요.`);
+      alert(isEn ? `🎉 [${destination.name}] added to visited cities list!` : `🎉 [${destination.name}] 다녀온 도시 목록에 등록되었습니다! "다녀온 도시" 탭에서 확인해 보세요.`);
     }
-    localStorage.setItem('visited_cities', JSON.stringify(updated));
   };
 
 

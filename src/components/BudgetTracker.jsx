@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import appDb from '../db/appDb';
 
 const FALLBACK_RATES = {
   KRW: 1.0,
@@ -66,16 +67,17 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
     }
   };
 
-  // Load budgets & expenses from localStorage on mount
+  // Load budgets & expenses from AppDB on mount and subscribe
   useEffect(() => {
-    const storedBudget = localStorage.getItem('budget_limit');
-    if (storedBudget) {
-      setBudgetLimit(Number(storedBudget));
-    }
-    const storedExpenses = localStorage.getItem('budget_expenses');
-    if (storedExpenses) {
-      setExpenses(JSON.parse(storedExpenses));
-    }
+    setBudgetLimit(appDb.budgets.getLimit());
+    setExpenses(appDb.expenses.getAll());
+
+    const unsubBudget = appDb.subscribe('budget_limit', (lim) => setBudgetLimit(lim));
+    const unsubExpenses = appDb.subscribe('expenses', (exps) => setExpenses(exps));
+    return () => {
+      unsubBudget();
+      unsubExpenses();
+    };
   }, []);
 
   // Pre-fill destination currency if routed from ItineraryViewer
@@ -89,7 +91,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
 
   const handleSaveBudgetLimit = (limit) => {
     setBudgetLimit(limit);
-    localStorage.setItem('budget_limit', limit);
+    appDb.budgets.setLimit(limit);
   };
 
   const handleAddExpense = (e) => {
@@ -97,7 +99,6 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
     if (!expTitle.trim() || expAmount <= 0) return;
 
     // Conversion to KRW
-    // rate = 1 KRW = X foreign_currency. So KRW = foreign_currency_amount / rate
     const rate = rates[expCurrency] || 1.0;
     const amountInKRW = Math.round(expAmount / rate);
 
@@ -112,9 +113,7 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
       date: new Date().toLocaleDateString()
     };
 
-    const updated = [newExpense, ...expenses];
-    setExpenses(updated);
-    localStorage.setItem('budget_expenses', JSON.stringify(updated));
+    appDb.expenses.create(newExpense);
 
     // Reset inputs
     setExpTitle('');
@@ -122,15 +121,12 @@ export default function BudgetTracker({ prefilledDestForBudget, lang = 'en' }) {
   };
 
   const handleDeleteExpense = (id) => {
-    const updated = expenses.filter(e => e.id !== id);
-    setExpenses(updated);
-    localStorage.setItem('budget_expenses', JSON.stringify(updated));
+    appDb.expenses.delete(id);
   };
 
   const handleClearAllExpenses = () => {
     if (window.confirm('정말 모든 지출 내역을 삭제할까요?')) {
-      setExpenses([]);
-      localStorage.removeItem('budget_expenses');
+      appDb.expenses.clear();
     }
   };
 

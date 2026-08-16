@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { getCityCoordinates, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
+import appDb from '../db/appDb';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -20,9 +21,9 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
   const mapContainerRef = useRef(null);
   const markersRef = useRef({});
 
-  // Load visited cities from LocalStorage on mount and sync with fresh database imageUrls
+  // Load visited cities from AppDB on mount and subscribe
   useEffect(() => {
-    const list = JSON.parse(localStorage.getItem('visited_cities') || '[]');
+    const list = appDb.visited.getAll();
     if (destinations && destinations.length > 0) {
       const synced = list.map(city => {
         const dbCity = destinations.find(d => d.id === city.id);
@@ -38,16 +39,20 @@ export default function VisitedTracker({ destinations, onSelectDestination, lang
         return city;
       });
       setVisitedList(synced);
-      localStorage.setItem('visited_cities', JSON.stringify(synced));
     } else {
       setVisitedList(list);
     }
+
+    return appDb.subscribe('visited', (updated) => {
+      setVisitedList(updated);
+    });
   }, [destinations]);
 
-  // Save to LocalStorage
+  // Save to AppDB
   const saveList = (newList) => {
     setVisitedList(newList);
-    localStorage.setItem('visited_cities', JSON.stringify(newList));
+    appDb._setItem('visited', newList);
+    appDb._notify('visited', newList);
   };
 
   // Initialize Map

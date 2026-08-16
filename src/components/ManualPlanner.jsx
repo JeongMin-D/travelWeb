@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { destinations, getPolishedItinerary, getClothingAndWeatherGuide, COUNTRY_ENGLISH_MAPPING } from '../data/destinations';
 import PrintBrochureModal from './PrintBrochureModal';
+import appDb from '../db/appDb';
 
 export default function ManualPlanner({ prefilledDestination, onClearPrefilled, lang = 'en' }) {
   const isEn = lang === 'en';
@@ -24,16 +25,21 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
   // Active day filter in editor
   const [activeDayView, setActiveDayView] = useState(1);
 
-  // Load trips from localStorage on mount
+  // Load trips from AppDB on mount and subscribe
   useEffect(() => {
-    const stored = localStorage.getItem('custom_trips');
-    if (stored) {
-      const parsed = JSON.parse(stored);
-      setTrips(parsed);
-      if (parsed.length > 0) {
-        setActiveTripId(parsed[0].id);
-      }
+    const loaded = appDb.trips.getAll();
+    setTrips(loaded);
+    if (loaded.length > 0) {
+      setActiveTripId(prev => prev || loaded[0].id);
     }
+    return appDb.subscribe('trips', (updated) => {
+      setTrips(updated);
+      if (updated.length > 0) {
+        setActiveTripId(prev => (updated.some(t => t.id === prev) ? prev : updated[0].id));
+      } else {
+        setActiveTripId(null);
+      }
+    });
   }, []);
 
   // Pre-fill creation form or import trip if routed from ItineraryViewer
@@ -70,9 +76,7 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
           createdAt: new Date().toISOString()
         };
 
-        const updated = [newTrip, ...trips];
-        setTrips(updated);
-        localStorage.setItem('custom_trips', JSON.stringify(updated));
+        appDb.trips.create(newTrip);
         setActiveTripId(newTrip.id);
         setActiveDayView(1);
         setActDay(1);
@@ -85,11 +89,12 @@ export default function ManualPlanner({ prefilledDestination, onClearPrefilled, 
       }
       onClearPrefilled(); // Clear so it doesn't loop
     }
-  }, [prefilledDestination, trips]);
+  }, [prefilledDestination]);
 
   const saveTripsToStorage = (updatedTrips) => {
     setTrips(updatedTrips);
-    localStorage.setItem('custom_trips', JSON.stringify(updatedTrips));
+    appDb._setItem('trips', updatedTrips);
+    appDb._notify('trips', updatedTrips);
   };
 
   const handleCreateTrip = (e) => {
