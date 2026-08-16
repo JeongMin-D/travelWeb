@@ -41,19 +41,29 @@ function App() {
     appDb.preferences.setLang(language);
   }, [language]);
 
-  // Load destinations & subscribe to real-time Firebase Firestore destinations
+  const [cloudStatus, setCloudStatus] = useState(() => appDb.cloud.getStatus());
+  const [isTestingCloud, setIsTestingCloud] = useState(false);
+
+  // Load destinations & subscribe to custom destinations
   useEffect(() => {
     const refreshDests = () => {
-      const cloudDests = appDb.destinations.getAll();
-      if (cloudDests && cloudDests.length > 0) {
-        setAllDests(cloudDests);
-      } else {
-        setAllDests(defaultDestinations);
-      }
+      const customs = appDb.customDestinations.getAll();
+      setAllDests([...defaultDestinations, ...customs]);
     };
     refreshDests();
-    return appDb.subscribe('destinations', refreshDests);
+    return appDb.subscribe('custom_destinations', refreshDests);
   }, []);
+
+  const handleTestCloudConnection = async () => {
+    setIsTestingCloud(true);
+    const res = await appDb.cloud.testConnection();
+    setIsTestingCloud(false);
+    if (res.success) {
+      alert(`🔥 Google Firebase Firestore 정상 연결됨!\n\n• 프로젝트: ${res.projectId}\n• 응답 속도: ${res.latencyMs}ms\n• 실시간 클라우드 DB 데이터 현황:\n  - 회원(users): ${res.counts.users}명\n  - 여행 일정(trips): ${res.counts.trips}개\n  - 가계부 지출(expenses): ${res.counts.expenses}건\n  - 방문 기록(visited): ${res.counts.visited}개\n  - 커스텀 여행지: ${res.counts.customs}개`);
+    } else {
+      alert(`❌ Firebase 연결 점검 오류:\n${res.error}`);
+    }
+  };
   
   // States for viewing a specific recommendation
   const [selectedDest, setSelectedDest] = useState(null);
@@ -167,6 +177,26 @@ function App() {
               🔑 {isEn ? 'Login / Sign Up' : '로그인 / 회원가입'}
             </button>
           )}
+
+          {/* Cloud Firebase Real-Time Status & Diagnostics */}
+          <button 
+            onClick={handleTestCloudConnection}
+            className="control-badge-btn"
+            style={{ 
+              background: 'rgba(16, 185, 129, 0.1)', 
+              color: '#10b981', 
+              borderColor: '#10b981',
+              fontWeight: 700,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.35rem'
+            }}
+            title="Click to test live Firebase Firestore connectivity"
+            disabled={isTestingCloud}
+          >
+            <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 6px #10b981' }}></span>
+            {isTestingCloud ? (isEn ? 'Pinging...' : '점검중...') : (isEn ? '🔥 Firebase Live' : '🔥 DB 실시간 연동')}
+          </button>
 
           {/* Admin Dashboard Entry Button - ADMIN ONLY */}
           {currentUser?.role === 'admin' && (
