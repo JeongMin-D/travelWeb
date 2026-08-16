@@ -39,24 +39,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
     }
   };
 
-  const handleDemoUserLogin = () => {
-    const res = appDb.auth.demoLogin();
-    if (res.success) {
-      if (onAuthSuccess) onAuthSuccess(res.user);
-      onClose();
-    }
-  };
-
-  const handleDemoAdminLogin = () => {
-    const res = appDb.auth.login('admin', 'admin1234');
-    if (res.success) {
-      if (onAuthSuccess) onAuthSuccess(res.user);
-      onClose();
-    } else {
-      setErrorMsg(res.error);
-    }
-  };
-
   return (
     <div 
       className="modal-overlay" 
@@ -65,7 +47,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
       <div className="modal-content" style={{ maxWidth: '440px', width: '92%', borderRadius: '16px', padding: '2rem' }}>
         
         {/* Header */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
           <div style={{ display: 'flex', gap: '0.5rem' }}>
             <button
               type="button"
@@ -73,7 +55,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
               style={{
                 background: 'none',
                 border: 'none',
-                borderBottom: mode === 'login' ? '2px solid #000' : '2px solid transparent',
+                borderBottom: mode === 'login' ? '2px solid var(--colors-ink, #000)' : '2px solid transparent',
                 fontWeight: mode === 'login' ? 'bold' : 'normal',
                 fontSize: '1.1rem',
                 cursor: 'pointer',
@@ -89,7 +71,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
               style={{
                 background: 'none',
                 border: 'none',
-                borderBottom: mode === 'signup' ? '2px solid #000' : '2px solid transparent',
+                borderBottom: mode === 'signup' ? '2px solid var(--colors-ink, #000)' : '2px solid transparent',
                 fontWeight: mode === 'signup' ? 'bold' : 'normal',
                 fontSize: '1.1rem',
                 cursor: 'pointer',
@@ -97,60 +79,38 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
                 color: 'inherit'
               }}
             >
-              📝 {isEn ? 'Sign Up' : '무료 회원가입'}
+              📝 {isEn ? 'Sign Up' : '회원가입'}
             </button>
           </div>
 
-          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: '1.4rem', cursor: 'pointer', color: 'inherit' }}>
+          <button 
+            onClick={onClose} 
+            style={{ background: 'none', border: 'none', fontSize: '1.4rem', cursor: 'pointer', color: 'inherit' }}
+            title={isEn ? 'Close' : '닫기'}
+          >
             ✕
           </button>
         </div>
 
-        {/* Quick Demo Logins Banner */}
-        <div style={{ marginBottom: '1.25rem', padding: '0.85rem', background: 'var(--bg-secondary)', borderRadius: '10px' }}>
-          <div style={{ fontSize: '0.8rem', fontWeight: 'bold', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
-            ⚡ {isEn ? 'Quick Instant Logins' : '1초 빠른 로그인 체험'}
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button 
-              type="button" 
-              onClick={handleDemoUserLogin}
-              className="btn btn-secondary"
-              style={{ flex: 1, fontSize: '0.75rem', padding: '0.45rem', whiteSpace: 'nowrap' }}
-              title="Demo Traveler (demo / 1234)"
-            >
-              ✈️ {isEn ? 'Traveler Demo' : '일반 여행자 체험'}
-            </button>
-            <button 
-              type="button" 
-              onClick={handleDemoAdminLogin}
-              className="btn btn-secondary"
-              style={{ flex: 1, fontSize: '0.75rem', padding: '0.45rem', whiteSpace: 'nowrap' }}
-              title="Admin Manager (admin / admin1234)"
-            >
-              🛡️ {isEn ? 'Admin Demo' : '관리자 체험'}
-            </button>
-          </div>
-        </div>
-
         {/* Form */}
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
           <div>
-            <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>
+            <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
               {isEn ? 'Username' : '아이디'}
             </label>
             <input
               type="text"
               required
+              autoFocus
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder={isEn ? 'Enter username (e.g. demo / admin)' : '아이디 (예: demo, admin)'}
-              style={{ width: '100%', padding: '0.65rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+              placeholder={isEn ? 'Enter your username' : '아이디를 입력하세요'}
+              style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
             />
           </div>
 
           <div>
-            <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>
+            <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
               {isEn ? 'Password' : '비밀번호'}
             </label>
             <input
@@ -158,15 +118,15 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder={isEn ? 'Enter password (demo: 1234)' : '비밀번호 (데모: 1234)'}
-              style={{ width: '100%', padding: '0.65rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+              placeholder={isEn ? 'Enter your password' : '비밀번호를 입력하세요'}
+              style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
             />
           </div>
 
           {mode === 'signup' && (
             <>
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
                   {isEn ? 'Your Name / Nickname' : '이름 / 닉네임'}
                 </label>
                 <input
@@ -175,12 +135,25 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={isEn ? 'e.g. Travel Explorer' : '예: 김정민, 세계여행자'}
-                  style={{ width: '100%', padding: '0.65rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
                 />
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                  {isEn ? 'Email (Optional)' : '이메일 (선택)'}
+                </label>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={isEn ? 'traveler@example.com' : 'traveler@example.com'}
+                  style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                />
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
                   {isEn ? 'Select Traveler Avatar' : '여행자 아바타 선택'}
                 </label>
                 <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
@@ -193,8 +166,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
                         fontSize: '1.25rem',
                         padding: '0.4rem 0.6rem',
                         borderRadius: '8px',
-                        border: avatar === av ? '2px solid #000' : '1px solid var(--glass-border)',
-                        background: avatar === av ? '#f3f4f6' : 'transparent',
+                        border: avatar === av ? '2px solid var(--colors-ink, #000)' : '1px solid var(--glass-border)',
+                        background: avatar === av ? 'var(--bg-secondary, #f3f4f6)' : 'transparent',
                         cursor: 'pointer'
                       }}
                     >
@@ -207,7 +180,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
           )}
 
           {errorMsg && (
-            <div style={{ color: '#dc2626', fontSize: '0.85rem', background: '#fee2e2', padding: '0.6rem', borderRadius: '6px', textAlign: 'center' }}>
+            <div style={{ color: '#dc2626', fontSize: '0.85rem', background: '#fee2e2', padding: '0.65rem', borderRadius: '8px', textAlign: 'center' }}>
               {errorMsg}
             </div>
           )}
@@ -215,9 +188,9 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
           <button 
             type="submit" 
             className="btn btn-primary"
-            style={{ width: '100%', padding: '0.75rem', marginTop: '0.5rem', fontWeight: 'bold' }}
+            style={{ width: '100%', padding: '0.8rem', marginTop: '0.5rem', fontWeight: 'bold', fontSize: '1rem' }}
           >
-            {mode === 'login' ? (isEn ? 'Log In' : '로그인하기') : (isEn ? 'Create Account' : '가입하고 시작하기')}
+            {mode === 'login' ? (isEn ? 'Log In' : '로그인') : (isEn ? 'Create Account' : '회원가입 완료')}
           </button>
         </form>
       </div>

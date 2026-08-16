@@ -70,10 +70,6 @@ export default function AuthRequiredGuard({ tab = 'manual', onOpenAuth, lang = '
             📝 {isEn ? 'Sign Up (Free)' : '무료 회원가입'}
           </button>
         </div>
-
-        <div style={{ marginTop: '1.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-          ⚡ {isEn ? 'Quick demo test account available in login window' : '로그인 창에서 1초 데모 계정으로 즉시 체험 가능합니다.'}
-        </div>
       </div>
     </div>
   );
