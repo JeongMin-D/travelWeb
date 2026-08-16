@@ -13,10 +13,16 @@ import AuthRequiredGuard from './components/AuthRequiredGuard';
 import ErrorBoundary from './components/ErrorBoundary';
 import { destinations as defaultDestinations } from './data/destinations';
 import appDb from './db/appDb';
+import { trackPageView } from './services/analytics';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [allDests, setAllDests] = useState([]);
+  
+  // Track Page Views in Google Analytics (GA4)
+  useEffect(() => {
+    trackPageView(activeTab, `VOYAGE - ${activeTab.toUpperCase()}`);
+  }, [activeTab]);
   
   // Auth state backed by AppDB
   const [currentUser, setCurrentUser] = useState(() => appDb.auth.getCurrentUser());
