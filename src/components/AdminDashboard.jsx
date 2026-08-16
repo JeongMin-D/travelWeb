@@ -417,15 +417,15 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <h2 style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  ☁️ {isEn ? 'Universal Global Cloud Database' : 'VOYAGE 글로벌 클라우드 데이터베이스'}
+                  🔥 {isEn ? 'Google Firebase Firestore Cloud Database' : 'Google Firebase Firestore 클라우드 데이터베이스'}
                   <span style={{ fontSize: '0.8rem', padding: '0.2rem 0.5rem', borderRadius: '6px', background: '#10b981', color: '#fff' }}>
-                    🟢 {isEn ? 'Live Cloud Online (Zero Setup Required)' : '실시간 클라우드 작동 중 (별도 설정 불필요)'}
+                    🟢 {isEn ? 'Firebase Connected' : 'Firebase 실시간 연동 완료'}
                   </span>
                 </h2>
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.4rem', lineHeight: 1.5 }}>
                   {isEn 
-                    ? '✨ Real-time multi-device cloud synchronization is active out-of-the-box! No manual Firebase registration or configuration needed.' 
-                    : '✨ 별도의 파이어베이스 가입이나 키 설정 없이도 지금 즉시 전 세계 모든 기기(스마트폰, PC)와 실시간으로 데이터가 자동 동기화됩니다.'}
+                    ? '✨ Successfully connected to your official Google Firebase project [my-travel-web-a1cb7]!' 
+                    : '✨ 사용자님의 공식 Google Firebase 프로젝트 [my-travel-web-a1cb7]에 성공적으로 연동되었습니다!'}
                 </div>
               </div>
 
@@ -436,7 +436,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                   className="btn btn-primary"
                   style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
                 >
-                  📤 {isEn ? 'Force Cloud Upload' : '로컬 ➔ 클라우드 즉시 업로드'}
+                  📤 {isEn ? 'Upload Local to Firestore' : '로컬 ➔ Firestore 일괄 업로드'}
                 </button>
                 <button
                   disabled={isSyncing}
@@ -444,24 +444,24 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                   className="btn btn-secondary"
                   style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
                 >
-                  📥 {isEn ? 'Force Cloud Download' : '클라우드 ➔ 로컬 즉시 동기화'}
+                  📥 {isEn ? 'Download Firestore to Local' : 'Firestore ➔ 로컬 가져오기'}
                 </button>
               </div>
             </div>
 
             <div style={{ marginTop: '0.85rem', padding: '0.65rem 0.9rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <div>
-                <strong>🔗 {isEn ? 'Live Cloud Storage Endpoint:' : '실시간 클라우드 DB 원본 링크:'}</strong>{' '}
+                <strong>🔥 {isEn ? 'Firebase Console Link:' : '내 Firebase 콘솔 데이터베이스 바로가기:'}</strong>{' '}
                 <a 
-                  href="https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f" 
+                  href="https://console.firebase.google.com/project/my-travel-web-a1cb7/firestore" 
                   target="_blank" 
                   rel="noreferrer"
-                  style={{ color: '#3b82f6', textDecoration: 'underline', wordBreak: 'break-all', fontFamily: 'monospace' }}
+                  style={{ color: '#3b82f6', textDecoration: 'underline', fontWeight: 'bold' }}
                 >
-                  https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f
+                  https://console.firebase.google.com/project/my-travel-web-a1cb7/firestore ↗
                 </a>
               </div>
-              <span style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600 }}>🟢 200 OK Live</span>
+              <span style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600 }}>🟢 Project: my-travel-web-a1cb7</span>
             </div>
 
             {syncMsg && (
