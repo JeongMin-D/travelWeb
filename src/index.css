@@ -902,9 +902,7 @@ input, select, textarea {
 .app-container.theme-dark h5,
 .app-container.theme-dark h6,
 .app-container.theme-dark p,
-.app-container.theme-dark label,
-.app-container.theme-dark div,
-.app-container.theme-dark span:not(.purple-sticker-a):not(.phone-callout) {
+.app-container.theme-dark label {
   color: #f8fafc;
 }
 
@@ -943,31 +941,43 @@ input, select, textarea {
   color: #cbd5e1;
 }
 
+/* Sidebar Active Navigation Button */
 .app-container.theme-dark .nav-grid-button {
   background-color: #1e293b;
-  color: #f8fafc;
+  color: #f8fafc !important;
   border-color: #334155;
 }
 
+.app-container.theme-dark .nav-grid-button:hover {
+  background-color: #334155;
+  color: #ffffff !important;
+}
+
 .app-container.theme-dark .nav-grid-button.active {
-  background-color: var(--colors-primary);
-  color: #ffffff;
+  background-color: #e91d2a !important;
+  color: #ffffff !important;
+  border-color: #e91d2a !important;
+  box-shadow: 0 0 10px rgba(233, 29, 42, 0.4);
+}
+
+.app-container.theme-dark .nav-grid-button.active * {
+  color: #ffffff !important;
 }
 
 .app-container.theme-dark .nav-icon-pair {
-  color: #f8fafc;
+  color: inherit;
 }
 
 .app-container.theme-dark .control-badge-btn {
   background-color: #1e293b;
-  color: #f8fafc;
+  color: #f8fafc !important;
   border-color: #475569;
 }
 
 .app-container.theme-dark .control-badge-btn:hover {
-  background-color: var(--colors-yellow-sticker);
-  color: #000000;
-  border-color: #000000;
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  border-color: #facc15 !important;
 }
 
 /* Dark Mode Destination Card & Ribbon Overrides */
@@ -978,8 +988,12 @@ input, select, textarea {
 
 .app-container.theme-dark .destination-card-title {
   background-color: #020617;
-  color: #f8fafc;
+  color: #f8fafc !important;
   border-bottom-color: #334155;
+}
+
+.app-container.theme-dark .destination-card-title * {
+  color: #f8fafc !important;
 }
 
 .app-container.theme-dark .destination-card-body {
@@ -997,25 +1011,80 @@ input, select, textarea {
   border-color: #475569;
 }
 
+/* Dark Mode Form & Buttons */
 .app-container.theme-dark .btn-secondary {
   background-color: #1e293b;
-  color: #f8fafc;
+  color: #f8fafc !important;
   border-color: #475569;
 }
 
 .app-container.theme-dark .btn-secondary:hover {
   background-color: #334155;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
+/* Active / Selected Buttons in Dark Mode: High-contrast Vibrant Accent (Yellow Gold + Jet Black) */
 .app-container.theme-dark .btn-primary {
-  background-color: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  border-color: #facc15 !important;
+  font-weight: 800 !important;
+}
+
+.app-container.theme-dark .btn-primary,
+.app-container.theme-dark .btn-primary * {
+  color: #000000 !important;
 }
 
 .app-container.theme-dark .btn-primary:hover {
-  background-color: #e2e8f0;
+  background-color: #eab308 !important;
+  color: #000000 !important;
+}
+
+/* Filter Tab Buttons in Dark Mode */
+.app-container.theme-dark .filter-button {
+  background-color: #1e293b;
+  color: #f8fafc !important;
+  border-color: #475569;
+}
+
+.app-container.theme-dark .filter-button:hover {
+  background-color: #334155;
+  color: #ffffff !important;
+}
+
+.app-container.theme-dark .filter-button.active {
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  border-color: #facc15 !important;
+  font-weight: 800 !important;
+}
+
+.app-container.theme-dark .filter-button.active,
+.app-container.theme-dark .filter-button.active * {
+  color: #000000 !important;
+}
+
+/* Search Bar in Dark Mode */
+.app-container.theme-dark .search-bar-wrapper {
+  background-color: #0f172a;
+  border-color: #475569;
+}
+
+.app-container.theme-dark .search-bar-input {
+  color: #f8fafc !important;
+}
+
+.app-container.theme-dark .search-bar-input::placeholder {
+  color: #64748b !important;
+}
+
+.app-container.theme-dark .search-clear-btn {
+  color: #94a3b8;
+}
+
+.app-container.theme-dark .search-clear-btn:hover {
+  color: #f8fafc;
 }
 
 /* ==========================================================================
