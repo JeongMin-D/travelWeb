@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   NEIGHBOR_MAPPING, 
   COUNTRY_REGISTRY, 
@@ -48,6 +48,10 @@ export default function ItineraryViewer({
   const [checklist, setChecklist] = useState([]);
   const [newItemText, setNewItemText] = useState('');
   const [showBrochureModal, setShowBrochureModal] = useState(false);
+
+  const mapContainerRef = useRef(null);
+  const mapInstanceRef = useRef(null);
+  const [mapInstance, setMapInstance] = useState(null);
 
   // Styles list supported by this destination
   const availableStyles = safeDest.itineraries && typeof safeDest.itineraries === 'object' && Object.keys(safeDest.itineraries).length > 0
@@ -153,7 +157,7 @@ export default function ItineraryViewer({
       } finally {
         setIsGenerating(false);
       }
-    }, 400); // Fast responsive feel
+    }, 300);
     return () => clearTimeout(timer);
   }, [safeDest.name, style, duration]);
 
@@ -234,15 +238,15 @@ export default function ItineraryViewer({
     }
   };
 
-  const [mapInstance, setMapInstance] = useState(null);
-
-  // Initialize Map safely
+  // Initialize Map safely with React Ref
   useEffect(() => {
-    const container = document.getElementById('itinerary-map');
-    if (!container) return;
+    if (!mapContainerRef.current) return;
 
-    if (container._leaflet_id) {
-      container._leaflet_id = null;
+    if (mapInstanceRef.current) {
+      try {
+        mapInstanceRef.current.remove();
+      } catch (e) {}
+      mapInstanceRef.current = null;
     }
 
     let cityLat = 37.5665;
@@ -259,9 +263,8 @@ export default function ItineraryViewer({
       }
     }
 
-    let map;
     try {
-      map = L.map(container, {
+      const map = L.map(mapContainerRef.current, {
         zoomControl: true,
         scrollWheelZoom: false
       }).setView([cityLat, cityLng], 12);
@@ -271,14 +274,18 @@ export default function ItineraryViewer({
         maxZoom: 20
       }).addTo(map);
 
+      mapInstanceRef.current = map;
       setMapInstance(map);
     } catch (err) {
       console.warn('[ItineraryViewer] Leaflet init error:', err);
     }
 
     return () => {
-      if (map) {
-        try { map.remove(); } catch (e) {}
+      if (mapInstanceRef.current) {
+        try {
+          mapInstanceRef.current.remove();
+        } catch (e) {}
+        mapInstanceRef.current = null;
       }
     };
   }, [safeDest.name]);
@@ -577,7 +584,7 @@ export default function ItineraryViewer({
           🗺️ {isEn ? `${translatedDest.name} Recommended Route Map` : `${translatedDest.name} 여행 경로 지도`}
         </h3>
         <div 
-          id="itinerary-map" 
+          ref={mapContainerRef} 
           style={{ 
             height: '350px', 
             borderRadius: 'var(--radius-md)', 
