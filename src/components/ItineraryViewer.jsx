@@ -10,6 +10,7 @@ import {
   translateChecklistItem, 
   translateActivityTitle, 
   translateActivityDesc, 
+  translateDistText, 
   COUNTRY_ENGLISH_MAPPING, 
   CONTINENT_ENGLISH_MAPPING 
 } from '../data/destinations';
@@ -669,7 +670,7 @@ export default function ItineraryViewer({
                           {act.distText && (
                             <div style={{ position: 'relative', margin: '-0.75rem 0', left: '-2.25rem', display: 'flex', alignItems: 'center' }}>
                               <div style={{ background: 'var(--color-bg)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.75rem', color: 'var(--text-muted)', border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', gap: '0.3rem', zIndex: 2 }}>
-                                🚗 <span style={{ fontWeight: 600 }}>{act.distText}</span>
+                                🚗 <span style={{ fontWeight: 600 }}>{translateDistText(act.distText, isEn)}</span>
                               </div>
                             </div>
                           )}
@@ -814,7 +815,7 @@ export default function ItineraryViewer({
             
             {checklist.length === 0 && (
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', textAlign: 'center', padding: '1.5rem' }}>
-                준비물 목록이 비어 있습니다.
+                {isEn ? 'Packing list is empty.' : '준비물 목록이 비어 있습니다.'}
               </p>
             )}
           </div>
@@ -823,9 +824,9 @@ export default function ItineraryViewer({
           {checklist.length > 0 && (
             <div style={{ background: 'rgba(255,255,255,0.02)', padding: '0.85rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--glass-border)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                <span>준비 완료 진척도</span>
+                <span>{isEn ? 'Packing Progress' : '준비 완료 진척도'}</span>
                 <span>
-                  {checklist.filter(c => c.checked).length} / {checklist.length}개 ({Math.round((checklist.filter(c => c.checked).length / checklist.length) * 100)}%)
+                  {checklist.filter(c => c.checked).length} / {checklist.length}{isEn ? ' items' : '개'} ({Math.round((checklist.filter(c => c.checked).length / checklist.length) * 100)}%)
                 </span>
               </div>
               <div className="progress-bar-container">

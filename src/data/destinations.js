@@ -4945,3 +4945,15 @@ export const translateActivityDesc = (desc, englishName) => {
   if (clean.includes('공항') || clean.includes('출발') || clean.includes('귀국')) return `Complete final preparations and transfer to the airport for your departure from ${englishName}.`;
   return `Explore landmark attractions, take memorable photos, and experience signature local culture in ${englishName}.`;
 };
+
+export const translateDistText = (distText, isEn) => {
+  if (!distText) return '';
+  if (!isEn) return distText;
+  
+  let text = String(distText);
+  text = text.replace(/약\s*/g, 'approx. ');
+  text = text.replace(/(\d+)\s*시간/g, '$1 hr');
+  text = text.replace(/(\d+)\s*분/g, '$1 mins');
+  return text;
+};
+
