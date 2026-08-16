@@ -1,5 +1,5 @@
-import { CITY_ITINERARY_DATA } from "./cityItineraryData";
-import { buildDynamicItinerary } from "../utils/itineraryEngine";
+import { CITY_ITINERARY_DATA } from "./cityItineraryData.js";
+import { buildDynamicItinerary } from "../utils/itineraryEngine.js";
 export const WIKI_TAGLINE_KO = {
   "서울": "서울특별시(서울特別市)는 대한민국의 수도이자 문화·인문·정치·경제 중심지 역할을 하는 도시로, 경기도와 인천광역시까지 아우르는 수도권의 중심지 기능을 하고 있다.",
   "경주": "경주시(慶州市)는 대한민국 경상북도 동남부에 있는 시이다.",

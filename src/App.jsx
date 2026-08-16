@@ -40,14 +40,18 @@ function App() {
     appDb.preferences.setLang(language);
   }, [language]);
 
-  // Load destinations & subscribe to custom destination changes
+  // Load destinations & subscribe to real-time Firebase Firestore destinations
   useEffect(() => {
     const refreshDests = () => {
-      const customs = appDb.customDestinations.getAll();
-      setAllDests([...defaultDestinations, ...customs]);
+      const cloudDests = appDb.destinations.getAll();
+      if (cloudDests && cloudDests.length > 0) {
+        setAllDests(cloudDests);
+      } else {
+        setAllDests(defaultDestinations);
+      }
     };
     refreshDests();
-    return appDb.subscribe('custom_destinations', refreshDests);
+    return appDb.subscribe('destinations', refreshDests);
   }, []);
   
   // States for viewing a specific recommendation

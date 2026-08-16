@@ -4,9 +4,9 @@
  * Features:
  * - Multi-tenant User Authentication (login, signup, logout, role-based access control)
  * - User-scoped data isolation (trips, budgets, expenses, visited, checklists)
- * - Global shared data (customDestinations, preferences)
+ * - Full Global Cloud Database for all 911+ Destinations (destinations)
  * - Comprehensive Administrator Data Engine (admin)
- * - Firebase Firestore Cloud Database Sync (cloud)
+ * - Direct Google Firebase Firestore Cloud Database Sync (cloud)
  * - Reactive Pub/Sub event bus
  */
 
@@ -101,14 +101,11 @@ class AppDB {
     }
   }
 
-  // Subscribe to real-time Cloud Firestore updates when initialized
+  // Subscribe to real-time Cloud Firestore updates across all collections
   _initCloudListeners() {
     if (!cloudDb.isInitialized) return;
 
     try {
-      // Auto-upload any local seed/existing records to cloud
-      this.cloud.syncLocalToCloud().catch(err => console.warn('[AppDB] Cloud auto-sync notice:', err.message));
-
       // 1. Listen to cloud users
       cloudDb.subscribeCollection('users', (cloudUsers) => {
         if (cloudUsers && cloudUsers.length > 0) {
@@ -118,11 +115,11 @@ class AppDB {
         }
       });
 
-      // 2. Listen to cloud custom destinations
-      cloudDb.subscribeCollection('custom_destinations', (cloudDests) => {
+      // 2. Listen to cloud all destinations
+      cloudDb.subscribeCollection('destinations', (cloudDests) => {
         if (cloudDests && cloudDests.length > 0) {
-          this._setItem('custom_destinations', cloudDests);
-          this._notify('custom_destinations', cloudDests);
+          this._setItem('destinations', cloudDests);
+          this._notify('destinations', cloudDests);
         }
       });
 
@@ -262,7 +259,7 @@ class AppDB {
       this._setItem('users', updatedUsers);
       this._setItem('current_session', { userId: newUser.id, loggedInAt: new Date().toISOString() });
       
-      // Async sync to Cloud DB
+      // Async sync to Cloud Firestore
       cloudDb.set('users', newUser.id, newUser);
 
       this._notify('auth', newUser);
@@ -501,79 +498,56 @@ class AppDB {
   };
 
   // ==========================================
-  // 5. USER-SCOPED CHECKLISTS
+  // 5. GLOBAL DESTINATIONS (Managed in Firebase Firestore)
   // ==========================================
-  checklists = {
-    get: (destId, defaultItems = []) => {
-      const uid = this.auth.getCurrentUserId() || 'guest';
-      const key = `checklist_${uid}_${destId}`;
-      const stored = this._getItem(key);
-      if (stored) return stored;
-      this._setItem(key, defaultItems);
-      return defaultItems;
+  destinations = {
+    getAll: () => this._getItem('destinations', []),
+    getById: (id) => {
+      const all = this.destinations.getAll();
+      return all.find(d => d.id === id || d.name === id) || null;
     },
-
-    save: (destId, items) => {
-      const uid = this.auth.getCurrentUserId() || 'guest';
-      const key = `checklist_${uid}_${destId}`;
-      this._setItem(key, items);
-      cloudDb.set('checklists', `${uid}_${destId}`, { items, userId: uid, destId });
-      this._notify(`checklist_${destId}`, items);
-    },
-
-    reset: (destId) => {
-      const uid = this.auth.getCurrentUserId() || 'guest';
-      const key = `checklist_${uid}_${destId}`;
-      this._removeItem(key);
-      cloudDb.delete('checklists', `${uid}_${destId}`);
-      this._notify(`checklist_${destId}`, null);
-    }
-  };
-
-  // ==========================================
-  // 6. GLOBAL SHARED: CUSTOM DESTINATIONS & PREFERENCES
-  // ==========================================
-  customDestinations = {
-    getAll: () => this._getItem('custom_destinations', []),
     create: (dest) => {
-      const items = this.customDestinations.getAll();
+      const items = this.destinations.getAll();
       const newDest = {
         ...dest,
-        creatorId: this.auth.getCurrentUserId(),
+        id: dest.id || `dest_${Date.now()}`,
         createdAt: dest.createdAt || new Date().toISOString()
       };
-      const updated = [...items, newDest];
-      this._setItem('custom_destinations', updated);
-      cloudDb.set('custom_destinations', newDest.id, newDest);
+      const updated = [newDest, ...items];
+      this._setItem('destinations', updated);
+      cloudDb.set('destinations', newDest.id, newDest);
 
-      this._notify('custom_destinations', updated);
+      this._notify('destinations', updated);
       return newDest;
     },
     update: (id, updates) => {
-      const items = this.customDestinations.getAll();
+      const items = this.destinations.getAll();
       let updatedDest = null;
       const updated = items.map(d => {
-        if (d.id === id) {
-          updatedDest = { ...d, ...updates };
+        if (d.id === id || d.name === id) {
+          updatedDest = { ...d, ...updates, updatedAt: new Date().toISOString() };
           return updatedDest;
         }
         return d;
       });
-      this._setItem('custom_destinations', updated);
-      if (updatedDest) cloudDb.set('custom_destinations', id, updatedDest);
+      this._setItem('destinations', updated);
+      if (updatedDest) cloudDb.set('destinations', id, updatedDest);
 
-      this._notify('custom_destinations', updated);
+      this._notify('destinations', updated);
       return updatedDest;
     },
     delete: (id) => {
-      const items = this.customDestinations.getAll().filter(d => d.id !== id);
-      this._setItem('custom_destinations', items);
-      cloudDb.delete('custom_destinations', id);
+      const items = this.destinations.getAll().filter(d => d.id !== id && d.name !== id);
+      this._setItem('destinations', items);
+      cloudDb.delete('destinations', id);
 
-      this._notify('custom_destinations', items);
+      this._notify('destinations', items);
       return items;
     }
   };
+
+  // Alias for backward compatibility
+  customDestinations = this.destinations;
 
   preferences = {
     getTheme: () => this._getItem('pref_theme', 'light'),
@@ -589,7 +563,7 @@ class AppDB {
   };
 
   // ==========================================
-  // 7. CLOUD DB CONTROLS & SYNCHRONIZATION
+  // 6. CLOUD DB CONTROLS & SYNCHRONIZATION
   // ==========================================
   cloud = {
     getStatus: () => {
@@ -633,9 +607,9 @@ class AppDB {
         await cloudDb.set('visited', `${v.userId}_${v.id}`, v);
       }
 
-      const customDests = this._getItem('custom_destinations', []);
-      for (const d of customDests) {
-        await cloudDb.set('custom_destinations', d.id, d);
+      const dests = this._getItem('destinations', []);
+      for (const d of dests) {
+        await cloudDb.set('destinations', d.id, d);
       }
 
       return {
@@ -643,7 +617,7 @@ class AppDB {
         trips: trips.length,
         expenses: expenses.length,
         visited: visited.length,
-        destinations: customDests.length
+        destinations: dests.length
       };
     },
 
@@ -663,8 +637,8 @@ class AppDB {
       const cloudVisited = await cloudDb.getAll('visited');
       if (cloudVisited.length > 0) this._setItem('visited', cloudVisited);
 
-      const cloudDests = await cloudDb.getAll('custom_destinations');
-      if (cloudDests.length > 0) this._setItem('custom_destinations', cloudDests);
+      const cloudDests = await cloudDb.getAll('destinations');
+      if (cloudDests.length > 0) this._setItem('destinations', cloudDests);
 
       this._notify('*', 'cloud_pull');
       return {
@@ -678,7 +652,7 @@ class AppDB {
   };
 
   // ==========================================
-  // 8. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
+  // 7. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
   // ==========================================
   admin = {
     _checkAdmin: () => {
@@ -693,14 +667,14 @@ class AppDB {
       const trips = this._getItem('trips', []);
       const expenses = this._getItem('expenses', []);
       const visited = this._getItem('visited', []);
-      const customDests = this._getItem('custom_destinations', []);
+      const dests = this._getItem('destinations', []);
 
       return {
         totalUsers: users.length,
         totalTrips: trips.length,
         totalExpenses: expenses.length,
         totalVisited: visited.length,
-        totalCustomDests: customDests.length,
+        totalDestinations: dests.length,
         totalExpenseKRW: expenses.reduce((sum, e) => sum + (e.amountInKRW || 0), 0)
       };
     },
@@ -865,25 +839,25 @@ class AppDB {
       return visited;
     },
 
-    // Custom Destinations Admin CRUD
+    // Destinations Admin CRUD (Full Firebase Firestore Management)
     getAllDestinations: () => {
       this.admin._checkAdmin();
-      return this._getItem('custom_destinations', []);
+      return this.destinations.getAll();
     },
 
     createDestination: (data) => {
       this.admin._checkAdmin();
-      return this.customDestinations.create(data);
+      return this.destinations.create(data);
     },
 
     updateDestination: (id, updates) => {
       this.admin._checkAdmin();
-      return this.customDestinations.update(id, updates);
+      return this.destinations.update(id, updates);
     },
 
     deleteDestination: (id) => {
       this.admin._checkAdmin();
-      return this.customDestinations.delete(id);
+      return this.destinations.delete(id);
     }
   };
 }

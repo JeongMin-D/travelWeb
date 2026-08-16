@@ -1,5 +1,5 @@
-import { getCityPOIs } from '../data/cityPoiDatabase';
-import { NEIGHBOR_MAPPING } from '../data/destinations';
+import { getCityPOIs } from '../data/cityPoiDatabase.js';
+import { NEIGHBOR_MAPPING } from '../data/destinations.js';
 
 const getDistanceKm = (coord1, coord2) => {
   if (!coord1 || !coord2) return 0;
