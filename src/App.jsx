@@ -7,6 +7,8 @@ import BudgetTracker from './components/BudgetTracker';
 import WorldMap from './components/WorldMap';
 import VisitedTracker from './components/VisitedTracker';
 import DataBackupModal from './components/DataBackupModal';
+import AuthModal from './components/AuthModal';
+import AuthRequiredGuard from './components/AuthRequiredGuard';
 import { destinations as defaultDestinations } from './data/destinations';
 import appDb from './db/appDb';
 
@@ -15,13 +17,22 @@ function App() {
   const [allDests, setAllDests] = useState([]);
   const [showDbModal, setShowDbModal] = useState(false);
   
-  // Theme state backed by AppDB
-  const [theme, setTheme] = useState(() => appDb.preferences.getTheme());
+  // Auth state backed by AppDB
+  const [currentUser, setCurrentUser] = useState(() => appDb.auth.getCurrentUser());
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authInitialMode, setAuthInitialMode] = useState('login');
 
-  // Language state backed by AppDB
+  // Theme & Language state backed by AppDB
+  const [theme, setTheme] = useState(() => appDb.preferences.getTheme());
   const [language, setLanguage] = useState(() => appDb.preferences.getLang());
 
-  // Subscribe to theme and language changes
+  // Subscribe to auth, theme, and language changes
+  useEffect(() => {
+    return appDb.subscribe('auth', (user) => {
+      setCurrentUser(user);
+    });
+  }, []);
+
   useEffect(() => {
     appDb.preferences.setTheme(theme);
   }, [theme]);
@@ -49,6 +60,17 @@ function App() {
   const [prefilledDest, setPrefilledDest] = useState(null);
   const [prefilledDestForBudget, setPrefilledDestForBudget] = useState(null);
 
+  const handleOpenAuth = (mode = 'login') => {
+    setAuthInitialMode(mode);
+    setShowAuthModal(true);
+  };
+
+  const handleLogout = () => {
+    if (window.confirm(isEn ? 'Are you sure you want to log out?' : '정말 로그아웃 하시겠습니까?')) {
+      appDb.auth.logout();
+    }
+  };
+
   const handleRegisterCustomDest = (customDestObj) => {
     appDb.customDestinations.create(customDestObj);
     handleSelectDestination(customDestObj, 3, 'healing');
@@ -63,12 +85,20 @@ function App() {
 
   const handleStartPlanning = (dest, duration, style) => {
     setPrefilledDest({ dest, duration, style });
-    setActiveTab('manual');
+    if (!currentUser) {
+      handleOpenAuth('login');
+    } else {
+      setActiveTab('manual');
+    }
   };
 
   const handleStartBudgeting = (dest) => {
     setPrefilledDestForBudget(dest);
-    setActiveTab('budget');
+    if (!currentUser) {
+      handleOpenAuth('login');
+    } else {
+      setActiveTab('budget');
+    }
   };
 
   const toggleTheme = () => {
@@ -102,6 +132,36 @@ function App() {
           <div className="buy-a-dell-sticker">
             VOYAGE <span className="purple-sticker-a">SMART</span> PLANNER
           </div>
+
+          {/* User Auth Profile / Login Button */}
+          {currentUser ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <div 
+                className="control-badge-btn"
+                style={{ background: '#f3f4f6', color: '#111827', fontWeight: 600 }}
+                title={`Logged in as ${currentUser.username}`}
+              >
+                {currentUser.avatar || '👤'} {currentUser.name}
+              </div>
+              <button 
+                onClick={handleLogout} 
+                className="control-badge-btn" 
+                title="Log Out"
+                style={{ background: '#fee2e2', color: '#dc2626', borderColor: '#fca5a5' }}
+              >
+                🚪 {isEn ? 'Logout' : '로그아웃'}
+              </button>
+            </div>
+          ) : (
+            <button 
+              onClick={() => handleOpenAuth('login')} 
+              className="control-badge-btn"
+              style={{ background: '#000000', color: '#ffffff', fontWeight: 'bold' }}
+              title="Log In / Sign Up"
+            >
+              🔑 {isEn ? 'Login / Sign Up' : '로그인 / 회원가입'}
+            </button>
+          )}
 
           {/* Database Management / Backup Button */}
           <button onClick={() => setShowDbModal(true)} className="control-badge-btn" title="Database Management & Backup">
@@ -140,13 +200,13 @@ function App() {
               className={`nav-grid-button ${activeTab === 'manual' ? 'active' : ''}`}
               onClick={() => setActiveTab('manual')}
             >
-              📅 {isEn ? 'Planner' : '셀프 플래너'}
+              📅 {isEn ? 'Planner' : '셀프 플래너'} {!currentUser && '🔒'}
             </button>
             <button 
               className={`nav-grid-button ${activeTab === 'budget' ? 'active' : ''}`}
               onClick={() => setActiveTab('budget')}
             >
-              💰 {isEn ? 'Budget' : '예산 & 환율'}
+              💰 {isEn ? 'Budget' : '예산 & 환율'} {!currentUser && '🔒'}
             </button>
             <button 
               className={`nav-grid-button ${activeTab === 'worldmap' ? 'active' : ''}`}
@@ -158,7 +218,7 @@ function App() {
               className={`nav-grid-button ${activeTab === 'visited' ? 'active' : ''}`}
               onClick={() => setActiveTab('visited')}
             >
-              ✅ {isEn ? 'Visited' : '다녀온 도시'}
+              ✅ {isEn ? 'Visited' : '다녀온 도시'} {!currentUser && '🔒'}
             </button>
           </div>
 
@@ -212,18 +272,26 @@ function App() {
           )}
 
           {activeTab === 'manual' && (
-            <ManualPlanner 
-              prefilledDestination={prefilledDest}
-              onClearPrefilled={() => setPrefilledDest(null)}
-              lang={language}
-            />
+            currentUser ? (
+              <ManualPlanner 
+                prefilledDestination={prefilledDest}
+                onClearPrefilled={() => setPrefilledDest(null)}
+                lang={language}
+              />
+            ) : (
+              <AuthRequiredGuard tab="manual" onOpenAuth={handleOpenAuth} lang={language} />
+            )
           )}
 
           {activeTab === 'budget' && (
-            <BudgetTracker 
-              prefilledDestForBudget={prefilledDestForBudget}
-              lang={language}
-            />
+            currentUser ? (
+              <BudgetTracker 
+                prefilledDestForBudget={prefilledDestForBudget}
+                lang={language}
+              />
+            ) : (
+              <AuthRequiredGuard tab="budget" onOpenAuth={handleOpenAuth} lang={language} />
+            )
           )}
           
           {activeTab === 'worldmap' && (
@@ -235,11 +303,15 @@ function App() {
           )}
 
           {activeTab === 'visited' && (
-            <VisitedTracker 
-              destinations={allDests}
-              onSelectDestination={handleSelectDestination}
-              lang={language}
-            />
+            currentUser ? (
+              <VisitedTracker 
+                destinations={allDests}
+                onSelectDestination={handleSelectDestination}
+                lang={language}
+              />
+            ) : (
+              <AuthRequiredGuard tab="visited" onOpenAuth={handleOpenAuth} lang={language} />
+            )
           )}
         </main>
       </div>
@@ -269,8 +341,8 @@ function App() {
         </div>
         <div className="compatibility-text">
           {isEn 
-            ? 'Real-time exchange rate info powered by Open Exchange Rate API. Persistent client database powered by AppDB.'
-            : '실시간 환율 정보는 Open Exchange Rate API를 연동하여 제공되며, 사용자 데이터는 AppDB 엔진을 통해 안전하게 영구 보존됩니다.'}
+            ? 'Real-time exchange rate info powered by Open Exchange Rate API. Multi-tenant secure storage powered by AppDB.'
+            : '실시간 환율 정보는 Open Exchange Rate API를 연동하여 제공되며, 개인별 여행 데이터는 AppDB 멀티테넌트 인증 엔진으로 안전하게 분리 보존됩니다.'}
         </div>
       </footer>
 
@@ -279,6 +351,14 @@ function App() {
         isOpen={showDbModal} 
         onClose={() => setShowDbModal(false)} 
         lang={language} 
+      />
+
+      {/* Authentication (Login/Signup) Modal */}
+      <AuthModal 
+        isOpen={showAuthModal} 
+        onClose={() => setShowAuthModal(false)} 
+        initialMode={authInitialMode}
+        lang={language}
       />
     </div>
   );

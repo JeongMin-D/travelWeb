@@ -170,6 +170,11 @@ export default function ItineraryViewer({
   }, [destination]);
 
   const handleToggleVisited = () => {
+    if (!appDb.auth.getCurrentUserId()) {
+      alert(isEn ? '🔒 Please log in first to save this city to your personal visited map!' : '🔒 나만의 다녀온 도시 지도로 저장하려면 먼저 로그인해 주세요!');
+      return;
+    }
+
     if (isVisited) {
       appDb.visited.remove(destination.id);
       setIsVisited(false);
