@@ -21,7 +21,7 @@ function App() {
   
   // Track Page Views in Google Analytics (GA4)
   useEffect(() => {
-    trackPageView(activeTab, `VOYAGE - ${activeTab.toUpperCase()}`);
+    trackPageView(activeTab, `YEOMYEONG - ${activeTab.toUpperCase()}`);
   }, [activeTab]);
   
   // Auth state backed by AppDB
@@ -142,21 +142,21 @@ function App() {
       <div className="top-banner">
         <div className="top-banner-left">
           <span className="banner-headline" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <span style={{ fontSize: '1.25rem' }}>🗺️</span>
-            {isEn ? 'GALJIDO : GLOBAL SMART TRAVEL PLANNER' : '갈지도 : 전 세계 맞춤 여행 플래너'}
+            <span style={{ fontSize: '1.25rem' }}>🌅</span>
+            {isEn ? 'YEOMYEONG : GLOBAL TRAVEL STATEMENT & PLANNER' : '여명 : 전 세계 맞춤 [여행 명세서]'}
           </span>
           <span className="banner-subline">
             {isEn 
-              ? 'Where will you go? 1~14 Day Itineraries, Budgets & Footprint Map' 
-              : '어디 갈지도 모를 땐? 실시간 맞춤 코스 추천, 예산 관리 & 세계 여행 지도'}
+              ? 'Custom 1~14 Day Travel Statements, Budgets & Footprint Map' 
+              : '출국 전 꼭 챙겨야 할 나만의 여행 명세서 • 실시간 코스, 예산 & 세계 여행 지도'}
           </span>
         </div>
         <div className="top-banner-right">
           <span className="phone-callout">
-            {isEn ? `${allDests.length || 911} GLOBAL CITIES` : `전 세계 ${allDests.length || 911}개 도시`}
+            {isEn ? `${allDests.length || 911} CITIES STATEMENTS` : `전 세계 ${allDests.length || 911}개 도시 명세서`}
           </span>
           <div className="buy-a-dell-sticker">
-            갈지도 <span className="purple-sticker-a">SMART</span> MAP
+            여명 <span className="purple-sticker-a">여행</span> 명세서
           </div>
 
           {/* User Auth Profile / Login Button */}
@@ -290,16 +290,16 @@ function App() {
 
           {/* Service Feature Banner */}
           <div className="cta-block-red">
-            <h3>{isEn ? 'GALJIDO SERVICE GUIDE' : '갈지도(GALJIDO) 서비스 안내'}</h3>
+            <h3>{isEn ? 'YEOMYEONG SERVICE GUIDE' : '여명(여행 명세서) 이용 안내'}</h3>
             {isEn 
-              ? `Where will you go? Explore ${allDests.length || 911} cities worldwide, generate custom 1-14 day itineraries, track real-time budgets, and log your travel footprint!`
-              : `어디 갈지도 모를 땐? 전 세계 ${allDests.length || 911}개 도시 검색부터 1~14일 맞춤 코스 생성, 실시간 예산/환율 계산기, 다녀온 도시 발도장까지 한곳에서!`}
+              ? `Explore ${allDests.length || 911} cities worldwide, generate custom 1-14 day travel statements, track real-time multi-currency budgets, and stamp your travel memories!`
+              : `전 세계 ${allDests.length || 911}개 도시 검색부터 1~14일 맞춤 여행 명세서 발급, 실시간 예산/환율 계산기, 다녀온 도시 발도장까지 한눈에!`}
           </div>
 
           {/* Service Seal Badge */}
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
             <div className="cert-seal">
-              <div>GALJIDO SMART</div>
+              <div>여명 명세서</div>
               <div style={{ fontSize: '6px', margin: '2px 0' }}>★★★★★</div>
               <div>{allDests.length || 911} CITIES GUIDE</div>
             </div>
@@ -416,7 +416,7 @@ function App() {
           </a>
         </div>
         <div className="copyright-row">
-          Copyright © 2026 갈지도 (GALJIDO) Travel Co. All rights reserved. <a href="#">(Terms of Use)</a>
+          Copyright © 2026 여명 (YEOMYEONG) Travel Statement Co. All rights reserved. <a href="#">(Terms of Use)</a>
         </div>
         <div className="compatibility-text">
           {isEn 

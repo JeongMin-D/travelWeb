@@ -1,29 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fde047" />
-      <stop offset="100%" stop-color="#eab308" />
+    <linearGradient id="sunDawnGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="60%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fde047" />
     </linearGradient>
-    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="stampBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#f97316" />
     </linearGradient>
   </defs>
 
-  <!-- Wing Left -->
-  <path d="M14 26 C6 22 4 14 12 18 C14 19 19 24 20 28 Z" fill="url(#wingGrad)" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M11 31 C5 28 4 23 10 25 C13 26 18 29 19 33 Z" fill="url(#wingGrad)" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Outer Stamp Circle -->
+  <circle cx="32" cy="32" r="30" fill="#0f172a" stroke="url(#stampBorderGrad)" stroke-width="2.5"/>
 
-  <!-- Wing Right -->
-  <path d="M50 26 C58 22 60 14 52 18 C50 19 45 24 44 28 Z" fill="url(#wingGrad)" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M53 31 C59 28 60 23 54 25 C51 26 46 29 45 33 Z" fill="url(#wingGrad)" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Sunrise Horizon Background -->
+  <path d="M6 34 A26 26 0 0 1 58 34 Z" fill="url(#sunDawnGrad)" opacity="0.95"/>
+  <circle cx="32" cy="34" r="13" fill="#ffffff" opacity="0.3"/>
+  <circle cx="32" cy="34" r="8" fill="#ffffff"/>
 
-  <!-- Main Map Pin Body -->
-  <path d="M32 6 C20.95 6 12 14.95 12 26 C12 39 32 58 32 58 C32 58 52 39 52 26 C52 14.95 43.05 6 32 6 Z" fill="url(#pinGrad)" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Mountain / Horizon Silhouette -->
+  <polygon points="6,34 18,25 28,34 38,23 58,34" fill="#1e293b" opacity="0.85"/>
 
-  <!-- Inner Compass / Eye Circle -->
-  <circle cx="32" cy="25" r="10" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
-  <polygon points="32,18 35,25 32,23 29,25" fill="#ef4444" stroke="#0f172a" stroke-width="1.5"/>
-  <polygon points="32,32 35,25 32,27 29,25" fill="#0284c7" stroke="#0f172a" stroke-width="1.5"/>
-  <circle cx="32" cy="25" r="2" fill="#0f172a"/>
+  <!-- Perforated Travel Statement / Receipt Ticket -->
+  <path d="M18 26 L46 26 L46 54 L42 51 L38 54 L34 51 L30 54 L26 51 L22 54 L18 51 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Statement Lines & Korean '여명' Symbol -->
+  <text x="32" y="38" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="9" font-weight="900" text-anchor="middle" fill="#0f172a" letter-spacing="1">여명</text>
+  <line x1="22" y1="42" x2="42" y2="42" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="23" y1="46" x2="33" y2="46" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="36" y1="46" x2="41" y2="46" stroke="#0ea5e9" stroke-width="1.2"/>
 </svg>

@@ -139,7 +139,7 @@ export default function PrintBrochureModal({
           <div className="brochure-catalog-stamp-header">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '2px solid #000', paddingBottom: '6px' }}>
               <span style={{ fontFamily: 'Arial Black', fontSize: '12px', letterSpacing: '0.1em' }}>
-                ★ GALJIDO GLOBAL TRAVEL MAGAZINE • PAGE 1 (COVER & OVERVIEW)
+                ★ YEOMYEONG TRAVEL STATEMENT • PAGE 1 (COVER & SPECIFICATION)
               </span>
               <span style={{ fontSize: '10px', fontWeight: 800 }}>
                 {isEn ? 'GLOBAL CITIES SPECIAL CATALOG' : '글로벌 도시 스페셜 에디션'}
@@ -215,7 +215,7 @@ export default function PrintBrochureModal({
           </div>
           
           <div className="brochure-page-footer-seal">
-            PAGE 1 / 2 • GALJIDO GLOBAL TRAVEL MAGAZINE
+            PAGE 1 / 2 • YEOMYEONG (여명) TRAVEL STATEMENT
           </div>
         </div>
 
@@ -225,7 +225,7 @@ export default function PrintBrochureModal({
           <div className="brochure-catalog-stamp-header">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '2px solid #000', paddingBottom: '6px' }}>
               <span style={{ fontFamily: 'Arial Black', fontSize: '12px', letterSpacing: '0.1em' }}>
-                ★ GALJIDO GLOBAL TRAVEL MAGAZINE • PAGE 2 (FULL ITINERARY & CHECKLIST)
+                ★ YEOMYEONG TRAVEL STATEMENT • PAGE 2 (FULL ITINERARY & CHECKLIST)
               </span>
               <span style={{ fontSize: '10px', fontWeight: 800 }}>
                 {destination.name} COMPLETE PLAN
@@ -288,7 +288,7 @@ export default function PrintBrochureModal({
           </div>
 
           <div className="brochure-page-footer-seal">
-            PAGE 2 / 2 • END OF CATALOGUE • GALJIDO SMART PLANNER
+            PAGE 2 / 2 • END OF STATEMENT • YEOMYEONG (여명) SMART PLANNER
           </div>
         </div>
 
