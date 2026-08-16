@@ -163,10 +163,17 @@ function App() {
             </button>
           )}
 
-          {/* Database Management / Backup Button */}
-          <button onClick={() => setShowDbModal(true)} className="control-badge-btn" title="Database Management & Backup">
-            💾 {isEn ? 'DB / Backup' : 'DB 관리 / 백업'}
-          </button>
+          {/* Database Management / Backup Button - ADMIN ONLY */}
+          {currentUser?.role === 'admin' && (
+            <button 
+              onClick={() => setShowDbModal(true)} 
+              className="control-badge-btn" 
+              style={{ background: '#4f46e5', color: '#ffffff', borderColor: '#4338ca', fontWeight: 'bold' }}
+              title="Administrator Database Management & Backup"
+            >
+              🛡️ {isEn ? '[Admin] DB Backup' : '[관리자] DB 백업'}
+            </button>
+          )}
 
           {/* Mode Controls: Language & Theme Switches */}
           <button onClick={toggleLanguage} className="control-badge-btn" title="Toggle Language">

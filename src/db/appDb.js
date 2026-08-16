@@ -78,17 +78,34 @@ class AppDB {
       if (typeof localStorage === 'undefined') return;
 
       const users = this._getItem('users', []);
-      if (!users.some(u => u.username === 'demo')) {
+      let updatedUsers = [...users];
+
+      if (!updatedUsers.some(u => u.username === 'admin')) {
+        updatedUsers.push({
+          id: 'user_admin_001',
+          username: 'admin',
+          password: 'admin1234',
+          name: '시스템 관리자',
+          avatar: '🛡️',
+          role: 'admin',
+          email: 'admin@voyage.travel',
+          createdAt: new Date().toISOString()
+        });
+      }
+
+      if (!updatedUsers.some(u => u.username === 'demo')) {
         const demoUser = {
           id: 'user_demo_001',
           username: 'demo',
           password: '1234',
           name: '여행자 데모',
           avatar: '✈️',
+          role: 'user',
           email: 'demo@voyage.travel',
           createdAt: new Date().toISOString()
         };
-        this._setItem('users', [...users, demoUser]);
+        updatedUsers.push(demoUser);
+        this._setItem('users', updatedUsers);
 
         // Seed sample trip for demo user
         const sampleTrip = {
@@ -197,6 +214,7 @@ class AppDB {
         password: password,
         name: (name || cleanUsername).trim(),
         avatar: avatar || '✈️',
+        role: 'user',
         email: email.trim(),
         createdAt: new Date().toISOString()
       };
@@ -208,6 +226,11 @@ class AppDB {
       this._notify('auth', newUser);
       this._notify('*', 'signup');
       return { success: true, user: newUser };
+    },
+
+    isAdmin: () => {
+      const u = this.auth.getCurrentUser();
+      return u?.role === 'admin';
     },
 
     logout: () => {

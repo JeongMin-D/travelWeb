@@ -79,13 +79,16 @@ export default function DataBackupModal({ isOpen, onClose, lang = 'en' }) {
   };
 
   return (
-    <div className="modal-overlay" style={{ zIndex: 9999, background: 'rgba(0,0,0,0.65)' }}>
+    <div 
+      className="modal-overlay" 
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+    >
       <div className="modal-content" style={{ maxWidth: '600px', width: '90%', borderRadius: '16px', padding: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-          <h2 style={{ margin: 0, fontSize: '1.4rem' }}>
-            🗄️ {isEn ? 'Voyage Database Manager' : '통합 데이터베이스 관리 & 백업'}
+          <h2 style={{ margin: 0, fontSize: '1.3rem' }}>
+            🛡️ {isEn ? '[Admin] Database Manager & Backup' : '[관리자 전용] 데이터베이스 관리 & 백업'}
           </h2>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer' }}>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: 'inherit' }}>
             ✕
           </button>
         </div>

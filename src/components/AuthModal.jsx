@@ -39,7 +39,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
     }
   };
 
-  const handleDemoLogin = () => {
+  const handleDemoUserLogin = () => {
     const res = appDb.auth.demoLogin();
     if (res.success) {
       if (onAuthSuccess) onAuthSuccess(res.user);
@@ -47,8 +47,21 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
     }
   };
 
+  const handleDemoAdminLogin = () => {
+    const res = appDb.auth.login('admin', 'admin1234');
+    if (res.success) {
+      if (onAuthSuccess) onAuthSuccess(res.user);
+      onClose();
+    } else {
+      setErrorMsg(res.error);
+    }
+  };
+
   return (
-    <div className="modal-overlay" style={{ zIndex: 99999, background: 'rgba(0,0,0,0.65)' }}>
+    <div 
+      className="modal-overlay" 
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+    >
       <div className="modal-content" style={{ maxWidth: '440px', width: '92%', borderRadius: '16px', padding: '2rem' }}>
         
         {/* Header */}
@@ -93,22 +106,31 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
           </button>
         </div>
 
-        {/* Quick Demo Login Banner */}
-        <div style={{ marginBottom: '1.25rem', padding: '0.85rem', background: 'var(--bg-secondary)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div>
-            <div style={{ fontSize: '0.85rem', fontWeight: 'bold' }}>⚡ {isEn ? 'Instant Demo Login' : '1초 데모 계정 체험'}</div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-              {isEn ? 'Test prefilled trips & expenses instantly' : '샘플 일정과 지출 내역이 포함된 계정'}
-            </div>
+        {/* Quick Demo Logins Banner */}
+        <div style={{ marginBottom: '1.25rem', padding: '0.85rem', background: 'var(--bg-secondary)', borderRadius: '10px' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 'bold', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+            ⚡ {isEn ? 'Quick Instant Logins' : '1초 빠른 로그인 체험'}
           </div>
-          <button 
-            type="button" 
-            onClick={handleDemoLogin}
-            className="btn btn-secondary"
-            style={{ fontSize: '0.8rem', padding: '0.4rem 0.75rem', whiteSpace: 'nowrap' }}
-          >
-            {isEn ? 'Demo Login' : '체험하기'}
-          </button>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <button 
+              type="button" 
+              onClick={handleDemoUserLogin}
+              className="btn btn-secondary"
+              style={{ flex: 1, fontSize: '0.75rem', padding: '0.45rem', whiteSpace: 'nowrap' }}
+              title="Demo Traveler (demo / 1234)"
+            >
+              ✈️ {isEn ? 'Traveler Demo' : '일반 여행자 체험'}
+            </button>
+            <button 
+              type="button" 
+              onClick={handleDemoAdminLogin}
+              className="btn btn-secondary"
+              style={{ flex: 1, fontSize: '0.75rem', padding: '0.45rem', whiteSpace: 'nowrap' }}
+              title="Admin Manager (admin / admin1234)"
+            >
+              🛡️ {isEn ? 'Admin Demo' : '관리자 체험'}
+            </button>
+          </div>
         </div>
 
         {/* Form */}
@@ -122,7 +144,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder={isEn ? 'Enter username (min 3 chars)' : '아이디를 입력하세요 (3자 이상)'}
+              placeholder={isEn ? 'Enter username (e.g. demo / admin)' : '아이디 (예: demo, admin)'}
               style={{ width: '100%', padding: '0.65rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
             />
           </div>
@@ -136,7 +158,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder={isEn ? 'Enter password (min 4 chars)' : '비밀번호를 입력하세요 (4자 이상)'}
+              placeholder={isEn ? 'Enter password (demo: 1234)' : '비밀번호 (데모: 1234)'}
               style={{ width: '100%', padding: '0.65rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
             />
           </div>
