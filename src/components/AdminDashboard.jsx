@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import appDb from '../db/appDb';
+import { sendTestEmail } from '../services/emailService';
 
 export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const isEn = lang === 'en';
@@ -22,6 +23,10 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const [emailForm, setEmailForm] = useState(() => appDb.email.getConfig());
   const [syncMsg, setSyncMsg] = useState('');
   const [isSyncing, setIsSyncing] = useState(false);
+
+  // Email Test state
+  const [isTestingEmail, setIsTestingEmail] = useState(false);
+  const [testEmailMsg, setTestEmailMsg] = useState('');
 
   // Destination Creation/Edit Form state
   const [showDestModal, setShowDestModal] = useState(false);
@@ -78,6 +83,32 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       alert(isEn ? 'Email notification configuration saved!' : '관리자 이메일 알림 설정이 저장되었습니다!');
     } else {
       alert(isEn ? 'Failed to save email settings.' : '이메일 설정 저장에 실패했습니다.');
+    }
+  };
+
+  const handleSendTestEmail = async () => {
+    if (!emailForm.adminEmail || !emailForm.adminEmail.includes('@')) {
+      alert(isEn ? 'Please enter a valid email address first.' : '알림을 수신할 유효한 이메일 주소를 먼저 입력해 주세요.');
+      return;
+    }
+    setIsTestingEmail(true);
+    setTestEmailMsg(isEn ? 'Sending test notification email...' : '테스트 알림 메일을 전송하는 중입니다...');
+    try {
+      appDb.email.saveConfig(emailForm);
+      const res = await sendTestEmail(emailForm.adminEmail);
+      if (res && res.success) {
+        setTestEmailMsg(isEn 
+          ? `✅ Test email successfully sent to [${emailForm.adminEmail}]! Please check your inbox & spam folder.` 
+          : `✅ [${emailForm.adminEmail}]으로 테스트 메일이 발송되었습니다! 받은편지함(또는 스팸함)을 확인해 주세요.`);
+      } else {
+        setTestEmailMsg(isEn 
+          ? `⚠️ FormSubmit dispatched. If this is your first time, please check your inbox for the 1-time 'Activate Form' confirmation email!` 
+          : `⚠️ 테스트 요청이 발송되었습니다! [${emailForm.adminEmail}] 받은편지함(스팸함)에 FormSubmit에서 온 'Activate Form(첫 1회 폼 활성화)' 메일이 있는지 확인하시고 활성화 버튼을 눌러주세요.`);
+      }
+    } catch (err) {
+      setTestEmailMsg(`❌ ${isEn ? 'Test error:' : '테스트 전송 오류:'} ${err.message}`);
+    } finally {
+      setIsTestingEmail(false);
     }
   };
 
@@ -265,6 +296,8 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     (v.ownerName && v.ownerName.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
+  const hasUnconfiguredEmail = !emailForm.adminEmail || emailForm.adminEmail === 'admin@voyage.travel';
+
   return (
     <div className="fade-in" style={{ padding: '1rem', maxWidth: '1200px', margin: '0 auto' }}>
       
@@ -418,7 +451,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
 
             <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #8b5cf6' }}>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>🌍 {isEn ? 'Custom Destinations' : '커스텀 여행지'}</div>
-              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalDestinations || 911}</div>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalDestinations || (911 + destinations.length)}</div>
             </div>
           </div>
 
@@ -445,6 +478,21 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       {/* 2. FEEDBACKS & BUG REPORTS TAB */}
       {activeSubTab === 'feedbacks' && (
         <div>
+          {/* Email Unconfigured Warning Banner */}
+          {hasUnconfiguredEmail && (
+            <div style={{ background: 'rgba(239, 68, 68, 0.12)', border: '1px solid #ef4444', color: '#ef4444', padding: '1rem 1.25rem', borderRadius: '10px', marginBottom: '1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
+              <div>
+                <strong style={{ fontSize: '0.95rem' }}>⚠️ 관리자 알림 이메일이 아직 설정되지 않았습니다!</strong>
+                <div style={{ fontSize: '0.85rem', marginTop: '0.25rem', color: 'var(--text-secondary)' }}>
+                  사용자가 피드백/버그를 등록했을 때 실시간 메일 알림을 받으시려면 본인의 실제 이메일을 등록해 주세요.
+                </div>
+              </div>
+              <button onClick={() => setActiveSubTab('cloud')} className="btn btn-primary" style={{ fontSize: '0.85rem', padding: '0.45rem 1rem', background: '#ef4444' }}>
+                ⚙️ 이메일 설정 바로가기
+              </button>
+            </div>
+          )}
+
           {/* Filter Bar */}
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.25rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -621,44 +669,60 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
             <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               📧 {isEn ? 'Admin Email Notification Dispatch Settings' : '관리자 이메일 실시간 알림 수신 설정'}
             </h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: '0 0 1.25rem 0' }}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: '0 0 1.25rem 0', lineHeight: 1.5 }}>
               {isEn 
-                ? 'When users submit feedback or bug reports, instant email notifications will be sent to your inbox.' 
-                : '사용자가 피드백이나 버그를 접수하면 아래 설정된 관리자 이메일로 알림 메일이 자동 발송됩니다.'}
+                ? 'Register your actual email address to receive immediate email notifications whenever a user submits a bug report or suggestion.' 
+                : '사용자가 피드백이나 버그를 접수했을 때 실시간 알림을 수신할 본인의 실제 이메일 주소(Gmail, Naver 등)를 등록해 주세요.'}
             </p>
 
             <form onSubmit={handleSaveEmailConfig} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
-                  {isEn ? 'Admin Notification Email' : '알림을 수신할 관리자 이메일'}
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 700 }}>
+                  {isEn ? 'Admin Notification Email' : '알림 수신 이메일 주소'} <span style={{ color: '#ef4444' }}>*</span>
                 </label>
                 <input
                   type="email"
                   required
                   value={emailForm.adminEmail}
                   onChange={(e) => setEmailForm({ ...emailForm, adminEmail: e.target.value })}
-                  placeholder="admin@voyage.travel 또는 본인 이메일"
-                  style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  placeholder="예: your-email@naver.com 또는 your-email@gmail.com"
+                  style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '2px solid var(--color-primary)', background: 'var(--bg-secondary)', color: 'inherit', fontSize: '0.9rem' }}
                 />
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
-                  {isEn ? 'Dispatch Method' : '메일 전송 방식'}
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 700 }}>
+                  {isEn ? 'Dispatch Method' : '메일 전송 엔진'}
                 </label>
                 <select
                   value={emailForm.serviceType}
                   onChange={(e) => setEmailForm({ ...emailForm, serviceType: e.target.value })}
-                  style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  style={{ width: '100%', padding: '0.7rem', borderRadius: '8px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontSize: '0.9rem' }}
                 >
-                  <option value="formsubmit">FormSubmit (무료 다이렉트 이메일 전송)</option>
-                  <option value="formspree">Formspree (Formspree 엔드포인트 연동)</option>
-                  <option value="webhook">Custom Webhook (Slack / Discord / 커스텀 서버)</option>
+                  <option value="formsubmit">FormSubmit (무료 다이렉트 전송, 첫 1회 확인 필요)</option>
+                  <option value="web3forms">Web3Forms (Access Key 연동)</option>
+                  <option value="formspree">Formspree (Formspree ID 연동)</option>
+                  <option value="webhook">Custom Webhook (Slack / Discord 웹훅)</option>
                 </select>
               </div>
 
+              {emailForm.serviceType === 'web3forms' && (
+                <div style={{ gridColumn: '1 / -1' }}>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    Web3Forms Access Key
+                  </label>
+                  <input
+                    type="text"
+                    value={emailForm.web3formsKey || ''}
+                    onChange={(e) => setEmailForm({ ...emailForm, web3formsKey: e.target.value })}
+                    placeholder="예: 00000000-0000-0000-0000-000000000000"
+                    style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  />
+                </div>
+              )}
+
               {emailForm.serviceType === 'formspree' && (
-                <div>
+                <div style={{ gridColumn: '1 / -1' }}>
                   <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
                     Formspree Form ID
                   </label>
@@ -687,10 +751,30 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                 </div>
               )}
 
-              <div style={{ gridColumn: '1 / -1' }}>
+              <div style={{ gridColumn: '1 / -1', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '0.25rem' }}>
                 <button type="submit" className="btn btn-primary" style={{ padding: '0.65rem 1.5rem', fontWeight: 700 }}>
                   💾 {isEn ? 'Save Email Settings' : '이메일 수신 설정 저장하기'}
                 </button>
+                <button 
+                  type="button" 
+                  onClick={handleSendTestEmail}
+                  disabled={isTestingEmail}
+                  className="btn btn-secondary" 
+                  style={{ padding: '0.65rem 1.25rem', fontWeight: 700, borderColor: '#ef4444', color: '#ef4444' }}
+                >
+                  {isTestingEmail ? '전송 중...' : '🔔 테스트 메일 발송해보기'}
+                </button>
+              </div>
+
+              {testEmailMsg && (
+                <div style={{ gridColumn: '1 / -1', marginTop: '0.5rem', padding: '0.85rem 1rem', borderRadius: '8px', background: 'rgba(255,255,255,0.06)', fontSize: '0.85rem', lineHeight: 1.5, borderLeft: '4px solid #f59e0b' }}>
+                  {testEmailMsg}
+                </div>
+              )}
+
+              <div style={{ gridColumn: '1 / -1', background: 'rgba(0,0,0,0.2)', padding: '0.85rem 1rem', borderRadius: '8px', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                💡 <strong>FormSubmit 첫 1회 이메일 활성화 안내</strong>:<br />
+                새로운 이메일 주소를 처음 등록하신 후 테스트 메일을 보내면, FormSubmit에서 스팸 방지를 위해 <code>[Action Required: Activate Form]</code> 메일을 1회 발송합니다. 해당 메일의 <strong>"Activate Form"</strong> 버튼을 한 번만 클릭해 주시면 이후 모든 사용자 피드백이 실시간으로 자동 수신됩니다!
               </div>
             </form>
           </div>
