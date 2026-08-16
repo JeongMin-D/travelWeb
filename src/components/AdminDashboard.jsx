@@ -307,7 +307,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
           <span style={{ fontSize: '1.8rem' }}>🛡️</span>
           <div>
             <h1 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              VOYAGE {isEn ? 'ADMIN CONTROL CENTER' : '통합 관리자 센터'}
+              GALJIDO {isEn ? 'ADMIN CONTROL CENTER' : '갈지도 통합 관리자 센터'}
               <span style={{
                 fontSize: '0.7rem',
                 padding: '0.2rem 0.6rem',

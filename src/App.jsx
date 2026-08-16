@@ -141,13 +141,14 @@ function App() {
       {/* Top Banner */}
       <div className="top-banner">
         <div className="top-banner-left">
-          <span className="banner-headline">
-            {isEn ? 'VOYAGE GLOBAL SMART TRAVEL PLANNER' : 'VOYAGE 전 세계 맞춤 여행 플래너'}
+          <span className="banner-headline" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <span style={{ fontSize: '1.25rem' }}>🗺️</span>
+            {isEn ? 'GALJIDO : GLOBAL SMART TRAVEL PLANNER' : '갈지도 : 전 세계 맞춤 여행 플래너'}
           </span>
           <span className="banner-subline">
             {isEn 
-              ? 'Custom 1~14 Day Itineraries, Budget Calculator & Footprint Tracker' 
-              : '실시간 1~14일 코스 추천, 예산 관리 및 방문 기록 서비스'}
+              ? 'Where will you go? 1~14 Day Itineraries, Budgets & Footprint Map' 
+              : '어디 갈지도 모를 땐? 실시간 맞춤 코스 추천, 예산 관리 & 세계 여행 지도'}
           </span>
         </div>
         <div className="top-banner-right">
@@ -155,7 +156,7 @@ function App() {
             {isEn ? `${allDests.length || 911} GLOBAL CITIES` : `전 세계 ${allDests.length || 911}개 도시`}
           </span>
           <div className="buy-a-dell-sticker">
-            VOYAGE <span className="purple-sticker-a">SMART</span> PLANNER
+            갈지도 <span className="purple-sticker-a">SMART</span> MAP
           </div>
 
           {/* User Auth Profile / Login Button */}
@@ -289,16 +290,16 @@ function App() {
 
           {/* Service Feature Banner */}
           <div className="cta-block-red">
-            <h3>{isEn ? 'VOYAGE SERVICE GUIDE' : 'VOYAGE 서비스 안내'}</h3>
+            <h3>{isEn ? 'GALJIDO SERVICE GUIDE' : '갈지도(GALJIDO) 서비스 안내'}</h3>
             {isEn 
-              ? `Explore ${allDests.length || 911} cities worldwide, generate custom 1-14 day itineraries, track real-time budgets, and log your travel memories—all in one place!`
-              : `전 세계 ${allDests.length || 911}개 도시 검색부터 1~14일 맞춤 일정 생성, 실시간 예산/환율 계산기, 다녀온 도시 기록 메모까지 한곳에서 스마트하게 이용해보세요!`}
+              ? `Where will you go? Explore ${allDests.length || 911} cities worldwide, generate custom 1-14 day itineraries, track real-time budgets, and log your travel footprint!`
+              : `어디 갈지도 모를 땐? 전 세계 ${allDests.length || 911}개 도시 검색부터 1~14일 맞춤 코스 생성, 실시간 예산/환율 계산기, 다녀온 도시 발도장까지 한곳에서!`}
           </div>
 
           {/* Service Seal Badge */}
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
             <div className="cert-seal">
-              <div>VOYAGE SMART</div>
+              <div>GALJIDO SMART</div>
               <div style={{ fontSize: '6px', margin: '2px 0' }}>★★★★★</div>
               <div>{allDests.length || 911} CITIES GUIDE</div>
             </div>
@@ -415,7 +416,7 @@ function App() {
           </a>
         </div>
         <div className="copyright-row">
-          Copyright © 2026 VOYAGE Travel Co. All rights reserved. <a href="#">(Terms of Use)</a>
+          Copyright © 2026 갈지도 (GALJIDO) Travel Co. All rights reserved. <a href="#">(Terms of Use)</a>
         </div>
         <div className="compatibility-text">
           {isEn 
