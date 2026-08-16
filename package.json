@@ -8,6 +8,7 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "deploy:firebase": "npm run build && npx -y firebase-tools deploy --only hosting",
     "lint": "oxlint",
     "preview": "vite preview"
   },
