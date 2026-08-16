@@ -51,8 +51,9 @@ export default function FeedbackModal({ isOpen, onClose, lang = 'en' }) {
   };
 
   const TYPE_OPTIONS = [
+    { key: 'city_request', icon: '🌍', label: isEn ? 'City Addition Request' : '신규 도시 추가 요청', desc: isEn ? 'Request new cities to be added to catalog' : '목록에 없는 새로운 도시 추가 요청' },
     { key: 'bug', icon: '🐛', label: isEn ? 'Bug / System Error' : '버그 / 시스템 오류 신고', desc: isEn ? 'Report UI breaks, calculation errors, or bugs' : '화면 깨짐, 계산 오류, 오작동 제보' },
-    { key: 'feature', icon: '💡', label: isEn ? 'Feature / City Request' : '기능 개선 / 여행지 제안', desc: isEn ? 'Suggest new features or missing travel spots' : '새로운 기능 아이디어 및 여행지 추가 요청' },
+    { key: 'feature', icon: '💡', label: isEn ? 'Feature Suggestion' : '기능 개선 제안', desc: isEn ? 'Suggest new features or improvements' : '서비스 기능 및 편의성 개선 아이디어' },
     { key: 'inquiry', icon: '❓', label: isEn ? 'General Inquiry' : '일반 문의사항', desc: isEn ? 'Questions regarding usage and features' : '서비스 이용 관련 질문 및 안내 문의' },
     { key: 'other', icon: '📝', label: isEn ? 'Other Feedback' : '기타 의견', desc: isEn ? 'General thoughts and comments' : '자유로운 응원 및 피드백' }
   ];

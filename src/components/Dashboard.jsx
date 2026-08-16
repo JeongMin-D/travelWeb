@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { BANNED_COUNTRIES, generateCustomDestination, COUNTRY_REGISTRY, getClothingAndWeatherGuide, getTranslatedDestination, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
+import { BANNED_COUNTRIES, COUNTRY_REGISTRY, getClothingAndWeatherGuide, getTranslatedDestination, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
+import appDb from '../db/appDb';
 
-export default function Dashboard({ destinations, onSelectDestination, onRegisterCustomDest, lang = 'en' }) {
+export default function Dashboard({ destinations, onSelectDestination, lang = 'en' }) {
   const isEn = lang === 'en';
   const [filterType, setFilterType] = useState('all'); // all, domestic, international
   const [searchQuery, setSearchQuery] = useState('');
@@ -14,14 +15,16 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     setVisibleCount(24);
   }, [filterType, searchQuery]);
 
-
-  // Custom city generator form state
+  // Request new city modal/form state
   const [showAddCity, setShowAddCity] = useState(false);
   const [cityName, setCityName] = useState('');
   const [countryName, setCountryName] = useState('');
   const [continent, setContinent] = useState('Asia');
-  const [currency, setCurrency] = useState('USD');
-  const [currencySymbol, setCurrencySymbol] = useState('$');
+  const [requestNotes, setRequestNotes] = useState('');
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [isSubmittingRequest, setIsSubmittingRequest] = useState(false);
+  const [requestSuccessMsg, setRequestSuccessMsg] = useState('');
   const [formError, setFormError] = useState('');
 
   const handleCountryChange = (val) => {
@@ -33,8 +36,6 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     if (registryKey) {
       const reg = COUNTRY_REGISTRY[registryKey];
       setContinent(reg.continent);
-      setCurrency(reg.currency);
-      setCurrencySymbol(reg.symbol);
     }
   };
 
@@ -52,12 +53,13 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     return true;
   });
 
-  const handleRegisterSubmit = (e) => {
+  const handleRequestSubmit = async (e) => {
     e.preventDefault();
     setFormError('');
+    setRequestSuccessMsg('');
 
     if (!cityName.trim() || !countryName.trim()) {
-      setFormError('도시명과 국가명을 모두 입력해주세요.');
+      setFormError(isEn ? 'City name and country are required.' : '도시명과 국가명을 모두 입력해주세요.');
       return;
     }
 
@@ -69,35 +71,55 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
 
     if (isBanned) {
       setFormError(
-        `🚨 [안전 경고] 입력하신 국가는 외교부 지정 여행경보 4단계(여행금지) 국가 및 지역입니다. 외교 통상 및 안전 상의 사유로 본 웹사이트에서는 해당 국가의 여행 일정표 생성과 계획 작성을 차단하고 있습니다. 안전한 국가를 입력해주시기 바랍니다.`
+        isEn 
+          ? '🚨 [Travel Warning] The requested country is under a Level 4 (Do Not Travel) government restriction. For safety compliance, this destination cannot be requested.'
+          : '🚨 [안전 경고] 입력하신 국가는 외교부 지정 여행경보 4단계(여행금지) 국가입니다. 안전 상의 사유로 본 서비스에서는 해당 지역의 일정 추가 요청이 제한됩니다.'
       );
       return;
     }
 
-    // Set correct currency defaults if domestic
-    let finalCurrency = currency;
-    let finalSymbol = currencySymbol;
-    if (normalizedCountry === '대한민국' || normalizedCountry === 'korea') {
-      finalCurrency = 'KRW';
-      finalSymbol = '₩';
+    setIsSubmittingRequest(true);
+
+    try {
+      const currentUser = appDb.auth.getCurrentUser();
+      const finalUserName = userName.trim() || (currentUser?.name || currentUser?.username) || (isEn ? 'Traveler' : '여행자');
+      const finalEmail = userEmail.trim() || currentUser?.email || '';
+
+      await appDb.feedback.create({
+        type: 'city_request',
+        title: `[신규 도시 추가 요청] ${cityName.trim()} (${countryName.trim()})`,
+        content: `• 요청 도시: ${cityName.trim()}\n• 국가: ${countryName.trim()} (${continent})\n• 추천 명소 / 요청 사유: ${requestNotes.trim() || '상세 사유 없음'}\n• 신청자: ${finalUserName} (${finalEmail || '이메일 미기재'})`,
+        userName: finalUserName,
+        userEmail: finalEmail,
+        browserInfo: `${navigator.userAgent} | Screen: ${window.innerWidth}x${window.innerHeight}`
+      });
+
+      setIsSubmittingRequest(false);
+      setRequestSuccessMsg(
+        isEn 
+          ? `✅ Your request for [${cityName.trim()}] has been submitted to the admin! It will be verified and added to the official catalog.` 
+          : `✅ [${cityName.trim()}] 도시 추가 요청이 관리자에게 안전하게 전달되었습니다! 데이터 검증 및 코스 생성 후 정식 등록됩니다.`
+      );
+      setCityName('');
+      setCountryName('');
+      setRequestNotes('');
+
+      setTimeout(() => {
+        setShowAddCity(false);
+        setRequestSuccessMsg('');
+      }, 3500);
+    } catch (err) {
+      setIsSubmittingRequest(false);
+      setFormError(isEn ? `Failed to submit request: ${err.message}` : `요청 전송 중 오류가 발생했습니다: ${err.message}`);
     }
+  };
 
-    // Procedurally generate destination object
-    const customDest = generateCustomDestination(
-      cityName.trim(),
-      countryName.trim(),
-      continent,
-      finalCurrency,
-      finalSymbol
-    );
-
-    onRegisterCustomDest(customDest);
-    
-    // Reset Form
-    setCityName('');
-    setCountryName('');
+  const handleOpenRequestWithSearch = () => {
+    if (searchQuery.trim()) {
+      setCityName(searchQuery.trim());
+    }
+    setShowAddCity(true);
     setFormError('');
-    setShowAddCity(false);
   };
 
   const STYLE_NAMES = {
@@ -106,7 +128,6 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     culture: isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화',
     food: isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행'
   };
-  const getStyleKoreanName = (styleKey) => STYLE_NAMES[styleKey] || styleKey;
 
   const handleCardClick = (dest) => {
     let selectedStyle = style || 'healing';
@@ -127,8 +148,8 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
           {isEn 
-            ? `Browse ${destinations.length || 911} cities worldwide, view custom itineraries, and plan your dream trip.` 
-            : `전 세계 ${destinations.length || 911}개 도시의 맞춤형 추천 일정과 여행 정보를 자유롭게 탐색해보세요.`}
+            ? `Browse ${destinations.length || 911} cities worldwide, view custom travel statements, and plan your dream trip.` 
+            : `전 세계 ${destinations.length || 911}개 도시의 맞춤형 여행 명세서와 상세 여행 코스를 자유롭게 탐색해보세요.`}
         </p>
       </div>
 
@@ -136,193 +157,219 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
       <div className="glass-panel" style={{ marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
           
-          {/* Filter Buttons (Unified Button Design System) */}
+          {/* Filter Buttons */}
           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
             <button 
-              className={`btn ${filterType === 'all' ? 'btn-primary' : 'btn-secondary'}`} 
+              className={`filter-button ${filterType === 'all' ? 'active' : ''}`}
               onClick={() => setFilterType('all')}
-              style={{ fontSize: '0.85rem', padding: '0.45rem 1rem' }}
             >
-              🗺️ {isEn ? 'All Cities' : '전체'}
+              🌐 {isEn ? 'All' : '전체'} ({destinations.length})
             </button>
             <button 
-              className={`btn ${filterType === 'domestic' ? 'btn-primary' : 'btn-secondary'}`} 
+              className={`filter-button ${filterType === 'domestic' ? 'active' : ''}`}
               onClick={() => setFilterType('domestic')}
-              style={{ fontSize: '0.85rem', padding: '0.45rem 1rem' }}
             >
-              🇰🇷 {isEn ? 'Domestic' : '국내'}
+              🇰🇷 {isEn ? 'Domestic (Korea)' : '국내 여행'}
             </button>
             <button 
-              className={`btn ${filterType === 'international' ? 'btn-primary' : 'btn-secondary'}`} 
+              className={`filter-button ${filterType === 'international' ? 'active' : ''}`}
               onClick={() => setFilterType('international')}
-              style={{ fontSize: '0.85rem', padding: '0.45rem 1rem' }}
             >
-              ✈️ {isEn ? 'International' : '해외'}
+              ✈️ {isEn ? 'International' : '해외 여행'}
             </button>
           </div>
 
-          {/* Search Box */}
-          <div style={{ position: 'relative', flex: 1, minWidth: '260px' }}>
-            <input
-              type="text"
-              placeholder={isEn ? "Search city, country, continent..." : "도시, 국가, 대륙명 검색..."}
+          {/* Search Input Bar */}
+          <div style={{ flex: 1, minWidth: '240px', maxWidth: '400px' }}>
+            <input 
+              type="text" 
+              placeholder={isEn ? "Search by city, country, or keyword..." : "도시, 국가, 테마 키워드 검색..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              style={{ width: '100%', paddingLeft: '2.5rem' }}
+              style={{ width: '100%' }}
             />
-            <span style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)' }}>
-              🔍
-            </span>
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem', borderTop: '1px solid var(--colors-frame-ink)', paddingTop: '1rem' }}>
-          
+        {/* Style & Duration Selectors */}
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', borderTop: '1px solid var(--colors-ink)', paddingTop: '0.75rem' }}>
           {/* Duration Selector */}
-          <div>
-            <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.85rem', fontWeight: 600 }}>
-              📅 {isEn ? 'Trip Duration' : '여행 기간'}
-            </label>
-            <select
-              value={duration}
-              onChange={(e) => setDuration(Number(e.target.value))}
-              style={{ width: '100%', padding: '0.45rem' }}
-            >
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14].map((d) => (
-                <option key={d} value={d}>{isEn ? `${d} Days` : `${d}일 일정`}</option>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>⏱️ {isEn ? 'Duration' : '일정 기간'}:</span>
+            <div style={{ display: 'flex', gap: '0.25rem' }}>
+              {[1, 2, 3, 4, 5, 7, 10, 14].map((d) => (
+                <button
+                  key={d}
+                  onClick={() => setDuration(d)}
+                  className={`btn ${duration === d ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ padding: '0.2rem 0.5rem', fontSize: '0.8rem' }}
+                >
+                  {d}{isEn ? 'D' : '일'}
+                </button>
               ))}
-            </select>
+            </div>
           </div>
 
-          {/* Style Selector */}
-          <div>
-            <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.85rem', fontWeight: 600 }}>
-              🏕️ {isEn ? 'Travel Style' : '여행 스타일'}
-            </label>
-            <select 
-              value={style} 
-              onChange={(e) => setStyle(e.target.value)}
-              style={{ width: '100%' }}
-            >
-              <option value="healing">🌿 {isEn ? 'Healing & Rest' : '힐링 & 휴식'}</option>
-              <option value="activity">⚡ {isEn ? 'Activity & Adventure' : '액티비티 & 체험'}</option>
-              <option value="culture">🏛️ {isEn ? 'History & Culture' : '역사 & 문화'}</option>
-              <option value="food">🍕 {isEn ? 'Food & Gourmet' : '식도락 여행'}</option>
-            </select>
+          {/* Travel Style Selector */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>🎨 {isEn ? 'Theme Style' : '여행 테마'}:</span>
+            <div style={{ display: 'flex', gap: '0.25rem', flexWrap: 'wrap' }}>
+              {['healing', 'activity', 'culture', 'food'].map((sKey) => (
+                <button
+                  key={sKey}
+                  onClick={() => setStyle(sKey)}
+                  className={`btn ${style === sKey ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ padding: '0.2rem 0.6rem', fontSize: '0.8rem' }}
+                >
+                  {STYLE_NAMES[sKey]}
+                </button>
+              ))}
+            </div>
           </div>
-
         </div>
       </div>
 
-      {/* Dynamic Destination Registrator Panel */}
+      {/* New City Request Form Box */}
       {showAddCity && (
-        <div className="glass-panel fade-in" style={{ marginBottom: '2.5rem', border: '2px solid var(--colors-primary)' }}>
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '0.5rem' }}>
-            🌐 {isEn ? 'Register New City & AI Itinerary Design' : '새 도시 등록 및 인공지능 일정 설계'}
-          </h3>
-          <p style={{ fontSize: '13px', marginBottom: '1rem' }}>
-            {isEn ? 'Register any custom city worldwide. Travel-banned countries are automatically blocked in real-time.' : '데이터베이스에 없는 전 세계 모든 도시를 등록해 보세요. 외교부 지정 여행금지 국가는 실시간 자동 차단됩니다.'}
+        <div className="glass-panel" style={{ marginBottom: '2rem', borderLeft: '6px solid #f59e0b', padding: '1.5rem', borderRadius: '12px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            <h3 style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📮 {isEn ? 'Request New City Addition (Admin Verification)' : '신규 도시 추가 요청 (관리자 검수 후 정식 등록)'}
+            </h3>
+            <button 
+              onClick={() => { setShowAddCity(false); setFormError(''); setRequestSuccessMsg(''); }}
+              style={{ background: 'none', border: 'none', fontSize: '1.3rem', cursor: 'pointer', color: 'inherit' }}
+            >
+              ✕
+            </button>
+          </div>
+
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1.25rem', lineHeight: 1.5 }}>
+            {isEn 
+              ? 'Looking for a city not in our catalog? Submit a request and our administrator will verify the data and create complete curated itineraries for everyone.' 
+              : '원하시는 도시가 목록에 없으신가요? 도시명과 국가를 요청해 주시면 관리자가 여행 명소, 환율, 좌표 데이터 검증 후 정식 여행 명세서로 등록해 드립니다.'}
           </p>
 
-          <form onSubmit={handleRegisterSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-              <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'City Name' : '도시명'}</label>
-                <input
-                  type="text"
-                  required
-                  placeholder={isEn ? "e.g., Vancouver, Bangkok, Jeju" : "예: 밴쿠버, 방콕, 제주도"}
-                  value={cityName}
-                  onChange={(e) => setCityName(e.target.value)}
-                  style={{ width: '100%' }}
-                />
+          {requestSuccessMsg ? (
+            <div style={{ padding: '1.5rem', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid #10b981', color: '#10b981', borderRadius: '8px', fontWeight: 700, fontSize: '0.95rem' }}>
+              {requestSuccessMsg}
+            </div>
+          ) : (
+            <form onSubmit={handleRequestSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    {isEn ? 'City Name' : '도시명'} <span style={{ color: '#ef4444' }}>*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder={isEn ? "e.g., Salzburg, Chiang Mai, Malaga" : "예: 잘츠부르크, 치앙마이, 말라가"}
+                    value={cityName}
+                    onChange={(e) => setCityName(e.target.value)}
+                    style={{ width: '100%', padding: '0.65rem' }}
+                  />
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    {isEn ? 'Country Name' : '국가명'} <span style={{ color: '#ef4444' }}>*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder={isEn ? "e.g., Austria, Thailand, Spain" : "예: 오스트리아, 태국, 스페인"}
+                    value={countryName}
+                    onChange={(e) => handleCountryChange(e.target.value)}
+                    style={{ width: '100%', padding: '0.65rem' }}
+                  />
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    {isEn ? 'Continent' : '대륙'}
+                  </label>
+                  <select
+                    value={continent}
+                    onChange={(e) => setContinent(e.target.value)}
+                    style={{ width: '100%', padding: '0.65rem' }}
+                  >
+                    <option value="Asia">Asia (아시아)</option>
+                    <option value="Europe">Europe (유럽)</option>
+                    <option value="North America">North America (북아메리카)</option>
+                    <option value="South America">South America (남아메리카)</option>
+                    <option value="Oceania">Oceania (오세아니아)</option>
+                    <option value="Africa">Africa (아프리카)</option>
+                  </select>
+                </div>
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Country Name' : '국가명'}</label>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                  {isEn ? 'Recommended Spots / Reason for Request (Optional)' : '추천 명소 / 요청 사유 (선택)'}
+                </label>
                 <input
                   type="text"
-                  required
-                  placeholder={isEn ? "e.g., Canada, Thailand, Korea" : "예: 캐나다, 태국, 대한민국"}
-                  value={countryName}
-                  onChange={(e) => handleCountryChange(e.target.value)}
-                  style={{ width: '100%' }}
+                  placeholder={isEn ? "e.g., Must-visit old town cafes, Mozart birthplace, etc." : "예: 미라벨 정원 산책 코스, 모차르트 생가 투어 등 꼭 포함되었으면 하는 명소"}
+                  value={requestNotes}
+                  onChange={(e) => setRequestNotes(e.target.value)}
+                  style={{ width: '100%', padding: '0.65rem' }}
                 />
               </div>
 
-              <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Continent' : '대륙'}</label>
-                <select
-                  value={continent}
-                  onChange={(e) => setContinent(e.target.value)}
-                  style={{ width: '100%' }}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '1rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    {isEn ? 'Your Name' : '신청자 이름'}
+                  </label>
+                  <input
+                    type="text"
+                    placeholder={isEn ? "Nickname" : "이름 또는 닉네임"}
+                    value={userName}
+                    onChange={(e) => setUserName(e.target.value)}
+                    style={{ width: '100%', padding: '0.65rem' }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    {isEn ? 'Notification Email' : '등록 알림 수신 이메일 (선택)'}
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="your-email@example.com"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    style={{ width: '100%', padding: '0.65rem' }}
+                  />
+                </div>
+              </div>
+
+              {formError && (
+                <div style={{ color: 'var(--colors-primary)', background: 'rgba(239, 68, 68, 0.1)', padding: '0.75rem', fontSize: '0.85rem', border: '1px solid var(--colors-primary)', borderRadius: '6px' }}>
+                  {formError}
+                </div>
+              )}
+
+              <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.5rem' }}>
+                <button 
+                  type="submit" 
+                  disabled={isSubmittingRequest}
+                  className="btn btn-primary" 
+                  style={{ flex: 2, padding: '0.7rem', fontWeight: 700, background: '#f59e0b' }}
                 >
-                  <option value="Asia">Asia ({isEn ? 'Asia' : '아시아'})</option>
-                  <option value="Europe">Europe ({isEn ? 'Europe' : '유럽'})</option>
-                  <option value="Americas">Americas ({isEn ? 'Americas' : '아메리카'})</option>
-                  <option value="Oceania">Oceania ({isEn ? 'Oceania' : '오세아니아'})</option>
-                  <option value="Africa">Africa ({isEn ? 'Africa' : '아프리카'})</option>
-                </select>
-              </div>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-              <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Currency Code' : '결제 통화 코드'}</label>
-                <select
-                  value={currency}
-                  onChange={(e) => setCurrency(e.target.value)}
-                  style={{ width: '100%' }}
+                  {isSubmittingRequest ? (isEn ? 'Submitting Request...' : '요청 전송 중...') : (isEn ? '📮 Submit City Addition Request' : '📮 관리자에게 도시 추가 요청하기')}
+                </button>
+                <button 
+                  type="button" 
+                  onClick={() => { setShowAddCity(false); setFormError(''); }} 
+                  className="btn btn-secondary"
+                  style={{ flex: 1, padding: '0.7rem' }}
                 >
-                  <option value="USD">USD ($)</option>
-                  <option value="JPY">JPY (¥)</option>
-                  <option value="EUR">EUR (€)</option>
-                  <option value="GBP">GBP (£)</option>
-                  <option value="AUD">AUD (A$)</option>
-                  <option value="THB">THB (฿)</option>
-                  <option value="IDR">IDR (Rp)</option>
-                  <option value="KRW">KRW (₩)</option>
-                </select>
+                  {isEn ? 'Cancel' : '취소'}
+                </button>
               </div>
-
-              <div>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{isEn ? 'Currency Symbol' : '통화 기호'}</label>
-                <input
-                  type="text"
-                  placeholder={isEn ? "e.g., $, ¥, €, ₩" : "예: $, ¥, €, ₩"}
-                  value={currencySymbol}
-                  onChange={(e) => setCurrencySymbol(e.target.value)}
-                  style={{ width: '100%' }}
-                />
-              </div>
-            </div>
-
-            {formError && (
-              <div style={{ 
-                color: 'var(--colors-primary)', 
-                background: 'rgba(233, 29, 42, 0.08)', 
-                padding: '0.75rem', 
-                fontSize: '13px',
-                border: '1px solid var(--colors-primary)' 
-              }}>
-                {formError}
-              </div>
-            )}
-
-            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-              <button type="submit" className="btn btn-accent" style={{ flex: 1 }}>
-                🚀 {isEn ? 'Register & Generate Plan' : '도시 등록 및 일정 설계'}
-              </button>
-              <button 
-                type="button" 
-                onClick={() => { setShowAddCity(false); setFormError(''); }} 
-                className="btn btn-secondary"
-                style={{ flex: 1 }}
-              >
-                {isEn ? 'Cancel' : '취소'}
-              </button>
-            </div>
-          </form>
+            </form>
+          )}
         </div>
       )}
 
@@ -333,24 +380,34 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
         </h3>
         
         <button 
-          className="btn btn-accent" 
-          onClick={() => { setShowAddCity(!showAddCity); setFormError(''); }}
-          style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
+          className="btn btn-secondary" 
+          onClick={() => { setShowAddCity(!showAddCity); setFormError(''); setRequestSuccessMsg(''); }}
+          style={{ fontSize: '0.85rem', padding: '0.5rem 1rem', borderColor: '#f59e0b', color: 'inherit' }}
         >
           {showAddCity 
-            ? (isEn ? '✕ Close Window' : '✕ 등록 창 닫기') 
-            : (isEn ? '🌐 Register Custom City' : '🌐 목록에 없는 도시 등록하기')}
+            ? (isEn ? '✕ Close Request Window' : '✕ 요청 창 닫기') 
+            : (isEn ? '📮 Request Missing City' : '📮 목록에 없는 도시 추가 요청하기')}
         </button>
       </div>
 
       {filtered.length === 0 ? (
-        <div className="glass-panel" style={{ textAlign: 'center', padding: '3rem' }}>
-          <p style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-            {isEn ? '🔍 No destinations matching your search.' : '🔍 검색 결과에 맞는 여행지가 없습니다.'}
+        <div className="glass-panel" style={{ textAlign: 'center', padding: '3.5rem 1.5rem', borderRadius: '12px' }}>
+          <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🗺️</div>
+          <p style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+            {isEn ? `No destinations found for "${searchQuery}".` : `"${searchQuery}" 검색 결과에 맞는 여행지가 없습니다.`}
           </p>
-          <p style={{ fontSize: '0.9rem' }}>
-            {isEn ? 'Try different keywords or filters, or register a new city above.' : '다른 키워드나 필터를 적용하거나 우측 상단 버튼을 통해 새로운 도시를 등록해보세요.'}
+          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+            {isEn 
+              ? 'Would you like to request this city to be added? Our administrator will verify and register it.' 
+              : '찾으시는 도시가 없으신가요? 관리자에게 추가 요청을 남겨주시면 검수 후 정식 여행 명세서로 등록해 드립니다!'}
           </p>
+          <button 
+            onClick={handleOpenRequestWithSearch}
+            className="btn btn-primary"
+            style={{ padding: '0.7rem 1.5rem', fontWeight: 700, background: '#f59e0b' }}
+          >
+            📮 {isEn ? `Request "${searchQuery}" Addition` : `"${searchQuery}" 도시 추가 요청하기`}
+          </button>
         </div>
       ) : (
         <>

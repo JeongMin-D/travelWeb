@@ -256,6 +256,40 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     }
   };
 
+  const handleQuickRegisterFromRequest = (item) => {
+    let extractedName = '';
+    let extractedCountry = '';
+    let extractedContinent = 'Asia';
+
+    const match = item.title.match(/\[신규 도시 추가 요청\]\s*(.+?)\s*\((.+?)\)/);
+    if (match) {
+      extractedName = match[1].trim();
+      extractedCountry = match[2].trim();
+    } else {
+      extractedName = item.title.replace('[신규 도시 추가 요청]', '').trim();
+    }
+
+    if (item.content.includes('유럽') || item.content.includes('Europe')) extractedContinent = 'Europe';
+    else if (item.content.includes('북아메리카') || item.content.includes('North America') || item.content.includes('Americas')) extractedContinent = 'North America';
+    else if (item.content.includes('남아메리카') || item.content.includes('South America')) extractedContinent = 'South America';
+    else if (item.content.includes('오세아니아') || item.content.includes('Oceania')) extractedContinent = 'Oceania';
+    else if (item.content.includes('아프리카') || item.content.includes('Africa')) extractedContinent = 'Africa';
+
+    setEditingDest(null);
+    setDestForm({
+      name: extractedName,
+      country: extractedCountry,
+      continent: extractedContinent,
+      currency: extractedCountry === '대한민국' || extractedCountry === '한국' ? 'KRW' : 'USD',
+      currencySymbol: extractedCountry === '대한민국' || extractedCountry === '한국' ? '₩' : '$',
+      tagline: `${extractedName}의 대표 명소와 추천 여행 코스`,
+      tags: '추천여행지, 힐링, 문화, 미식',
+      lat: 37.5665,
+      lng: 126.9780
+    });
+    setShowDestModal(true);
+  };
+
   // Filtering
   const filteredFeedbacks = feedbacks.filter(f => {
     const matchCategory = feedbackCategoryFilter === 'all' || f.type === feedbackCategoryFilter;
@@ -495,16 +529,16 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
 
           {/* Filter Bar */}
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.25rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>유형:</span>
-              {['all', 'bug', 'feature', 'inquiry', 'other'].map(cat => (
+              {['all', 'city_request', 'bug', 'feature', 'inquiry', 'other'].map(cat => (
                 <button
                   key={cat}
                   onClick={() => setFeedbackCategoryFilter(cat)}
                   className={`btn ${feedbackCategoryFilter === cat ? 'btn-primary' : 'btn-secondary'}`}
                   style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem' }}
                 >
-                  {cat === 'all' ? '전체' : cat === 'bug' ? '🐛 버그/오류' : cat === 'feature' ? '💡 기능 개선' : cat === 'inquiry' ? '❓ 문의' : '📝 기타'}
+                  {cat === 'all' ? '전체' : cat === 'city_request' ? '🌍 도시 추가 요청' : cat === 'bug' ? '🐛 버그/오류' : cat === 'feature' ? '💡 기능 개선' : cat === 'inquiry' ? '❓ 문의' : '📝 기타'}
                 </button>
               ))}
             </div>
@@ -533,6 +567,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {filteredFeedbacks.map((item) => {
                 const typeInfo = {
+                  city_request: { label: '🌍 도시 추가 요청', color: '#10b981', bg: 'rgba(16, 185, 129, 0.12)' },
                   bug: { label: '🐛 버그/오류', color: '#ef4444', bg: 'rgba(239, 68, 68, 0.1)' },
                   feature: { label: '💡 기능 개선', color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.1)' },
                   inquiry: { label: '❓ 일반 문의', color: '#f59e0b', bg: 'rgba(245, 158, 11, 0.1)' },
@@ -549,7 +584,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                         <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>{item.title}</h4>
                       </div>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
                         {/* Status dropdown */}
                         <select
                           value={item.status || 'new'}
@@ -570,14 +605,25 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                           <option value="resolved">🟢 처리 완료</option>
                         </select>
 
+                        {/* One-click register as official city for city_request */}
+                        {item.type === 'city_request' && (
+                          <button
+                            onClick={() => handleQuickRegisterFromRequest(item)}
+                            className="btn btn-primary"
+                            style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem', background: '#10b981', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}
+                          >
+                            ✨ {isEn ? 'Register Official City' : '이 도시 정식 등록하기'}
+                          </button>
+                        )}
+
                         {/* Direct Email Reply */}
                         {item.userEmail && (
                           <a
-                            href={`mailto:${item.userEmail}?subject=${encodeURIComponent(`[Voyage 답변] ${item.title}`)}&body=${encodeURIComponent(`안녕하세요, ${item.userName}님!\n보내주신 [${item.title}] 건에 대한 답변입니다.\n\n---\n작성자 문의 내용:\n${item.content}\n\n---\n답변 내용:\n`)}`}
+                            href={`mailto:${item.userEmail}?subject=${encodeURIComponent(`[여명 답변] ${item.title}`)}&body=${encodeURIComponent(`안녕하세요, ${item.userName}님!\n보내주신 [${item.title}] 건에 대한 답변입니다.\n\n---\n요청 내용:\n${item.content}\n\n---\n답변 내용:\n`)}`}
                             className="btn btn-secondary"
                             style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}
                           >
-                            ✉️ {isEn ? 'Reply Email' : '답장 메일 보내기'}
+                            ✉️ {isEn ? 'Reply Email' : '답장 메일'}
                           </a>
                         )}
 
