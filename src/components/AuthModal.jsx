@@ -16,25 +16,25 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorMsg('');
 
     if (mode === 'login') {
-      const res = appDb.auth.login(username, password);
-      if (res.success) {
+      const res = await appDb.auth.login(username, password);
+      if (res && res.success) {
         if (onAuthSuccess) onAuthSuccess(res.user);
         onClose();
       } else {
-        setErrorMsg(res.error || (isEn ? 'Invalid username or password.' : '아이디 또는 비밀번호가 잘못되었습니다.'));
+        setErrorMsg(res?.error || (isEn ? 'Invalid username or password.' : '아이디 또는 비밀번호가 잘못되었습니다.'));
       }
     } else {
-      const res = appDb.auth.signup({ username, password, name, avatar, email });
-      if (res.success) {
+      const res = await appDb.auth.signup({ username, password, name, avatar, email });
+      if (res && res.success) {
         if (onAuthSuccess) onAuthSuccess(res.user);
         onClose();
       } else {
-        setErrorMsg(res.error || (isEn ? 'Sign up failed.' : '회원가입에 실패했습니다.'));
+        setErrorMsg(res?.error || (isEn ? 'Sign up failed.' : '회원가입에 실패했습니다.'));
       }
     }
   };
