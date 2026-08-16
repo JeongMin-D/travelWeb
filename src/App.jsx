@@ -178,25 +178,27 @@ function App() {
             </button>
           )}
 
-          {/* Cloud Firebase Real-Time Status & Diagnostics */}
-          <button 
-            onClick={handleTestCloudConnection}
-            className="control-badge-btn"
-            style={{ 
-              background: 'rgba(16, 185, 129, 0.1)', 
-              color: '#10b981', 
-              borderColor: '#10b981',
-              fontWeight: 700,
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.35rem'
-            }}
-            title="Click to test live Firebase Firestore connectivity"
-            disabled={isTestingCloud}
-          >
-            <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 6px #10b981' }}></span>
-            {isTestingCloud ? (isEn ? 'Pinging...' : '점검중...') : (isEn ? '🔥 Firebase Live' : '🔥 DB 실시간 연동')}
-          </button>
+          {/* Cloud Firebase Real-Time Status & Diagnostics - ADMIN ONLY */}
+          {currentUser?.role === 'admin' && (
+            <button 
+              onClick={handleTestCloudConnection}
+              className="control-badge-btn"
+              style={{ 
+                background: 'rgba(16, 185, 129, 0.1)', 
+                color: '#10b981', 
+                borderColor: '#10b981',
+                fontWeight: 700,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}
+              title="Click to test live Firebase Firestore connectivity"
+              disabled={isTestingCloud}
+            >
+              <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 6px #10b981' }}></span>
+              {isTestingCloud ? (isEn ? 'Pinging...' : '점검중...') : (isEn ? '🔥 Firebase Live' : '🔥 DB 실시간 연동')}
+            </button>
+          )}
 
           {/* Admin Dashboard Entry Button - ADMIN ONLY */}
           {currentUser?.role === 'admin' && (
