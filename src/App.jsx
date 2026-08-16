@@ -6,7 +6,7 @@ import ManualPlanner from './components/ManualPlanner';
 import BudgetTracker from './components/BudgetTracker';
 import WorldMap from './components/WorldMap';
 import VisitedTracker from './components/VisitedTracker';
-import DataBackupModal from './components/DataBackupModal';
+import AdminDashboard from './components/AdminDashboard';
 import AuthModal from './components/AuthModal';
 import AuthRequiredGuard from './components/AuthRequiredGuard';
 import { destinations as defaultDestinations } from './data/destinations';
@@ -15,7 +15,6 @@ import appDb from './db/appDb';
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [allDests, setAllDests] = useState([]);
-  const [showDbModal, setShowDbModal] = useState(false);
   
   // Auth state backed by AppDB
   const [currentUser, setCurrentUser] = useState(() => appDb.auth.getCurrentUser());
@@ -68,6 +67,7 @@ function App() {
   const handleLogout = () => {
     if (window.confirm(isEn ? 'Are you sure you want to log out?' : '정말 로그아웃 하시겠습니까?')) {
       appDb.auth.logout();
+      if (activeTab === 'admin') setActiveTab('dashboard');
     }
   };
 
@@ -163,15 +163,15 @@ function App() {
             </button>
           )}
 
-          {/* Database Management / Backup Button - ADMIN ONLY */}
+          {/* Admin Dashboard Entry Button - ADMIN ONLY */}
           {currentUser?.role === 'admin' && (
             <button 
-              onClick={() => setShowDbModal(true)} 
-              className="control-badge-btn" 
+              onClick={() => setActiveTab('admin')} 
+              className={`control-badge-btn ${activeTab === 'admin' ? 'active' : ''}`}
               style={{ background: '#4f46e5', color: '#ffffff', borderColor: '#4338ca', fontWeight: 'bold' }}
-              title="Administrator Database Management & Backup"
+              title="Access Admin Console"
             >
-              🛡️ {isEn ? '[Admin] DB Backup' : '[관리자] DB 백업'}
+              🛡️ {isEn ? 'Admin Console' : '관리자 센터'}
             </button>
           )}
 
@@ -227,6 +227,17 @@ function App() {
             >
               ✅ {isEn ? 'Visited' : '다녀온 도시'} {!currentUser && '🔒'}
             </button>
+
+            {/* Admin Management Tab in Sidebar if Admin */}
+            {currentUser?.role === 'admin' && (
+              <button 
+                className={`nav-grid-button ${activeTab === 'admin' ? 'active' : ''}`}
+                onClick={() => setActiveTab('admin')}
+                style={{ background: activeTab === 'admin' ? '#4f46e5' : '#312e81', color: '#ffffff', fontWeight: 'bold', gridColumn: 'span 2', marginTop: '0.25rem' }}
+              >
+                🛡️ {isEn ? 'Admin Center' : '관리자 센터'}
+              </button>
+            )}
           </div>
 
           {/* Service Feature Banner */}
@@ -320,6 +331,17 @@ function App() {
               <AuthRequiredGuard tab="visited" onOpenAuth={handleOpenAuth} lang={language} />
             )
           )}
+
+          {activeTab === 'admin' && (
+            currentUser?.role === 'admin' ? (
+              <AdminDashboard 
+                onExitAdmin={() => setActiveTab('dashboard')}
+                lang={language}
+              />
+            ) : (
+              <AuthRequiredGuard tab="manual" onOpenAuth={handleOpenAuth} lang={language} />
+            )
+          )}
         </main>
       </div>
 
@@ -352,13 +374,6 @@ function App() {
             : '실시간 환율 정보는 Open Exchange Rate API를 연동하여 제공되며, 개인별 여행 데이터는 AppDB 멀티테넌트 인증 엔진으로 안전하게 분리 보존됩니다.'}
         </div>
       </footer>
-
-      {/* Database Management & Backup Modal */}
-      <DataBackupModal 
-        isOpen={showDbModal} 
-        onClose={() => setShowDbModal(false)} 
-        lang={language} 
-      />
 
       {/* Authentication (Login/Signup) Modal */}
       <AuthModal 

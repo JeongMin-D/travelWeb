@@ -2,7 +2,7 @@
  * Voyage Travel Planner - User-Partitioned Client Database Engine (AppDB)
  * 
  * Features:
- * - Multi-tenant User Authentication (login, signup, logout, demoLogin)
+ * - Multi-tenant User Authentication (login, signup, logout, role-based access control)
  * - User-scoped data isolation for:
  *   - Trips (trips)
  *   - Budgets & Expenses (budgets, expenses)
@@ -11,8 +11,8 @@
  * - Global shared data:
  *   - Custom Destinations (customDestinations)
  *   - User Preferences (preferences)
+ * - Comprehensive Administrator Data Engine (admin)
  * - Reactive Pub/Sub event bus
- * - JSON Backup & Restore
  */
 
 const DB_PREFIX = 'voyage_db_';
@@ -119,6 +119,11 @@ class AppDB {
       return u ? u.id : null;
     },
 
+    isAdmin: () => {
+      const u = this.auth.getCurrentUser();
+      return u?.role === 'admin';
+    },
+
     login: (username, password) => {
       const cleanUsername = (username || '').trim().toLowerCase();
       const cleanPassword = (password || '').trim();
@@ -182,7 +187,7 @@ class AppDB {
         password: password,
         name: (name || cleanUsername).trim(),
         avatar: avatar || '✈️',
-        role: 'user',
+        role: cleanUsername === 'admin' ? 'admin' : 'user',
         email: email.trim(),
         createdAt: new Date().toISOString()
       };
@@ -194,11 +199,6 @@ class AppDB {
       this._notify('auth', newUser);
       this._notify('*', 'signup');
       return { success: true, user: newUser };
-    },
-
-    isAdmin: () => {
-      const u = this.auth.getCurrentUser();
-      return u?.role === 'admin';
     },
 
     logout: () => {
@@ -452,6 +452,13 @@ class AppDB {
       this._notify('custom_destinations', updated);
       return newDest;
     },
+    update: (id, updates) => {
+      const items = this.customDestinations.getAll();
+      const updated = items.map(d => (d.id === id ? { ...d, ...updates } : d));
+      this._setItem('custom_destinations', updated);
+      this._notify('custom_destinations', updated);
+      return updated.find(d => d.id === id);
+    },
     delete: (id) => {
       const items = this.customDestinations.getAll().filter(d => d.id !== id);
       this._setItem('custom_destinations', items);
@@ -474,93 +481,175 @@ class AppDB {
   };
 
   // ==========================================
-  // 7. BACKUP, RESTORE & STATS
+  // 7. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
   // ==========================================
-  backup = {
-    getStats: () => {
-      const user = this.auth.getCurrentUser();
-      return {
-        currentUser: user ? user.name : null,
-        tripsCount: this.trips.getAll().length,
-        expensesCount: this.expenses.getAll().length,
-        visitedCount: this.visited.getAll().length,
-        totalExpensesKRW: this.expenses.getAll().reduce((sum, e) => sum + (e.amountInKRW || 0), 0),
-        budgetLimit: this.budgets.getLimit(),
-        customDestinationsCount: this.customDestinations.getAll().length
-      };
-    },
-
-    exportJSON: () => {
-      const user = this.auth.getCurrentUser();
-      const uid = user ? user.id : null;
-      const data = {
-        version: '2.0.0',
-        exportedAt: new Date().toISOString(),
-        user: user ? { id: user.id, username: user.username, name: user.name } : null,
-        tables: {
-          trips: this.trips.getAll(),
-          expenses: this.expenses.getAll(),
-          budget_limit: this.budgets.getLimit(),
-          visited: this.visited.getAll(),
-          custom_destinations: this.customDestinations.getAll()
-        }
-      };
-      return JSON.stringify(data, null, 2);
-    },
-
-    importJSON: (jsonString) => {
-      try {
-        const parsed = typeof jsonString === 'string' ? JSON.parse(jsonString) : jsonString;
-        if (!parsed.tables) throw new Error('Invalid backup format.');
-        const uid = this.auth.getCurrentUserId();
-        if (!uid) throw new Error('로그인 후 백업을 복원할 수 있습니다.');
-
-        const { tables } = parsed;
-        if (Array.isArray(tables.trips)) {
-          const remappedTrips = tables.trips.map(t => ({ ...t, userId: uid }));
-          const otherTrips = this._getItem('trips', []).filter(t => t.userId !== uid);
-          this._setItem('trips', [...remappedTrips, ...otherTrips]);
-          this._notify('trips', this.trips.getAll());
-        }
-
-        if (Array.isArray(tables.expenses)) {
-          const remappedExps = tables.expenses.map(e => ({ ...e, userId: uid }));
-          const otherExps = this._getItem('expenses', []).filter(e => e.userId !== uid);
-          this._setItem('expenses', [...remappedExps, ...otherExps]);
-          this._notify('expenses', this.expenses.getAll());
-        }
-
-        if (tables.budget_limit !== undefined) {
-          this.budgets.setLimit(tables.budget_limit);
-        }
-
-        if (Array.isArray(tables.visited)) {
-          const remappedVisited = tables.visited.map(v => ({ ...v, userId: uid }));
-          const otherVisited = this._getItem('visited', []).filter(v => v.userId !== uid);
-          this._setItem('visited', [...remappedVisited, ...otherVisited]);
-          this._notify('visited', this.visited.getAll());
-        }
-
-        return { success: true };
-      } catch (err) {
-        return { success: false, error: err.message };
+  admin = {
+    _checkAdmin: () => {
+      if (!this.auth.isAdmin()) {
+        throw new Error('관리자 권한이 필요합니다.');
       }
     },
 
-    resetAll: () => {
-      const uid = this.auth.getCurrentUserId();
-      if (!uid) return;
+    getOverviewStats: () => {
+      this.admin._checkAdmin();
+      const users = this._getItem('users', []);
+      const trips = this._getItem('trips', []);
+      const expenses = this._getItem('expenses', []);
+      const visited = this._getItem('visited', []);
+      const customDests = this._getItem('custom_destinations', []);
 
-      const trips = this._getItem('trips', []).filter(t => t.userId !== uid);
-      const exps = this._getItem('expenses', []).filter(e => e.userId !== uid);
-      const visited = this._getItem('visited', []).filter(v => v.userId !== uid);
+      return {
+        totalUsers: users.length,
+        totalTrips: trips.length,
+        totalExpenses: expenses.length,
+        totalVisited: visited.length,
+        totalCustomDests: customDests.length,
+        totalExpenseKRW: expenses.reduce((sum, e) => sum + (e.amountInKRW || 0), 0)
+      };
+    },
 
+    // Users CRUD
+    getAllUsers: () => {
+      this.admin._checkAdmin();
+      return this._getItem('users', []);
+    },
+
+    updateUser: (userId, updates) => {
+      this.admin._checkAdmin();
+      const users = this._getItem('users', []);
+      const updated = users.map(u => (u.id === userId ? { ...u, ...updates } : u));
+      this._setItem('users', updated);
+      this._notify('users', updated);
+      return updated.find(u => u.id === userId);
+    },
+
+    deleteUser: (userId) => {
+      this.admin._checkAdmin();
+      if (userId === 'user_admin_001') {
+        throw new Error('최고 관리자 계정은 삭제할 수 없습니다.');
+      }
+      const users = this._getItem('users', []).filter(u => u.id !== userId);
+      this._setItem('users', users);
+
+      // Cascade delete user data
+      const trips = this._getItem('trips', []).filter(t => t.userId !== userId);
+      const expenses = this._getItem('expenses', []).filter(e => e.userId !== userId);
+      const visited = this._getItem('visited', []).filter(v => v.userId !== userId);
       this._setItem('trips', trips);
-      this._setItem('expenses', exps);
+      this._setItem('expenses', expenses);
       this._setItem('visited', visited);
-      this._removeItem(`budget_limit_${uid}`);
+      this._removeItem(`budget_limit_${userId}`);
 
-      this._notify('*', 'reset');
+      this._notify('*', 'admin_update');
+      return users;
+    },
+
+    // Trips Admin CRUD
+    getAllTrips: () => {
+      this.admin._checkAdmin();
+      const trips = this._getItem('trips', []);
+      const users = this._getItem('users', []);
+      const userMap = Object.fromEntries(users.map(u => [u.id, u.name || u.username]));
+      return trips.map(t => ({
+        ...t,
+        ownerName: userMap[t.userId] || '알 수 없는 사용자'
+      }));
+    },
+
+    updateTrip: (tripId, updates) => {
+      this.admin._checkAdmin();
+      const trips = this._getItem('trips', []);
+      const updated = trips.map(t => (t.id === tripId ? { ...t, ...updates, updatedAt: new Date().toISOString() } : t));
+      this._setItem('trips', updated);
+      this._notify('trips', updated);
+      return updated.find(t => t.id === tripId);
+    },
+
+    deleteTrip: (tripId) => {
+      this.admin._checkAdmin();
+      const trips = this._getItem('trips', []).filter(t => t.id !== tripId);
+      this._setItem('trips', trips);
+      this._notify('trips', trips);
+      return trips;
+    },
+
+    // Expenses Admin CRUD
+    getAllExpenses: () => {
+      this.admin._checkAdmin();
+      const expenses = this._getItem('expenses', []);
+      const users = this._getItem('users', []);
+      const userMap = Object.fromEntries(users.map(u => [u.id, u.name || u.username]));
+      return expenses.map(e => ({
+        ...e,
+        ownerName: userMap[e.userId] || '알 수 없는 사용자'
+      }));
+    },
+
+    updateExpense: (expenseId, updates) => {
+      this.admin._checkAdmin();
+      const expenses = this._getItem('expenses', []);
+      const updated = expenses.map(e => (e.id === expenseId ? { ...e, ...updates } : e));
+      this._setItem('expenses', updated);
+      this._notify('expenses', updated);
+      return updated.find(e => e.id === expenseId);
+    },
+
+    deleteExpense: (expenseId) => {
+      this.admin._checkAdmin();
+      const expenses = this._getItem('expenses', []).filter(e => e.id !== expenseId);
+      this._setItem('expenses', expenses);
+      this._notify('expenses', expenses);
+      return expenses;
+    },
+
+    // Visited Records Admin CRUD
+    getAllVisited: () => {
+      this.admin._checkAdmin();
+      const visited = this._getItem('visited', []);
+      const users = this._getItem('users', []);
+      const userMap = Object.fromEntries(users.map(u => [u.id, u.name || u.username]));
+      return visited.map(v => ({
+        ...v,
+        ownerName: userMap[v.userId] || '알 수 없는 사용자'
+      }));
+    },
+
+    updateVisited: (visitedId, updates) => {
+      this.admin._checkAdmin();
+      const visited = this._getItem('visited', []);
+      const updated = visited.map(v => (v.id === visitedId ? { ...v, ...updates } : v));
+      this._setItem('visited', updated);
+      this._notify('visited', updated);
+      return updated.find(v => v.id === visitedId);
+    },
+
+    deleteVisited: (visitedId) => {
+      this.admin._checkAdmin();
+      const visited = this._getItem('visited', []).filter(v => v.id !== visitedId);
+      this._setItem('visited', visited);
+      this._notify('visited', visited);
+      return visited;
+    },
+
+    // Custom Destinations Admin CRUD
+    getAllDestinations: () => {
+      this.admin._checkAdmin();
+      return this._getItem('custom_destinations', []);
+    },
+
+    createDestination: (data) => {
+      this.admin._checkAdmin();
+      return this.customDestinations.create(data);
+    },
+
+    updateDestination: (id, updates) => {
+      this.admin._checkAdmin();
+      return this.customDestinations.update(id, updates);
+    },
+
+    deleteDestination: (id) => {
+      this.admin._checkAdmin();
+      return this.customDestinations.delete(id);
     }
   };
 }
