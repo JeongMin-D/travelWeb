@@ -141,23 +141,34 @@ function App() {
       {/* Top Banner */}
       <div className="top-banner">
         <div className="top-banner-left">
-          <span className="banner-headline" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <span style={{ fontSize: '1.25rem' }}>🌅</span>
-            {isEn ? 'YEOMYEONG : GLOBAL TRAVEL STATEMENT & PLANNER' : '여명 : 전 세계 맞춤 [여행 명세서]'}
-          </span>
-          <span className="banner-subline">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '1.4rem' }}>🌅</span>
+            <span className="banner-headline" style={{ fontSize: '1.15rem', fontWeight: 900, letterSpacing: '-0.02em', color: '#ffffff' }}>
+              {isEn ? 'YEOMYEONG' : '여명 (YEOMYEONG)'}
+            </span>
+            <span style={{
+              fontSize: '0.75rem',
+              background: '#facc15',
+              color: '#000000',
+              fontWeight: 800,
+              padding: '2px 8px',
+              borderRadius: '4px',
+              letterSpacing: '0.02em',
+              boxShadow: '1px 1px 0px rgba(0,0,0,0.5)'
+            }}>
+              {isEn ? 'TRAVEL STATEMENT' : '여행 명세서'}
+            </span>
+          </div>
+          <span className="banner-subline" style={{ marginTop: '3px', color: '#94a3b8', fontSize: '0.82rem' }}>
             {isEn 
               ? 'Custom 1~14 Day Travel Statements, Budgets & Footprint Map' 
-              : '출국 전 꼭 챙겨야 할 나만의 여행 명세서 • 실시간 코스, 예산 & 세계 여행 지도'}
+              : '출국 전 꼭 챙겨야 할 나만의 여행 명세서 • 실시간 코스 추천 & 스마트 예산 관리'}
           </span>
         </div>
         <div className="top-banner-right">
-          <span className="phone-callout">
-            {isEn ? `${allDests.length || 911} CITIES STATEMENTS` : `전 세계 ${allDests.length || 911}개 도시 명세서`}
+          <span className="phone-callout" style={{ background: '#000000', color: '#facc15', border: '1px solid #facc15', padding: '4px 10px', borderRadius: '6px', fontWeight: 800, fontSize: '0.85rem' }}>
+            🌍 {isEn ? `${allDests.length || 911} GLOBAL CITIES` : `전 세계 ${allDests.length || 911}개 도시`}
           </span>
-          <div className="buy-a-dell-sticker">
-            여명 <span className="purple-sticker-a">여행</span> 명세서
-          </div>
 
           {/* User Auth Profile / Login Button */}
           {currentUser ? (
