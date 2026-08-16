@@ -3,7 +3,7 @@ import appDb from '../db/appDb';
 
 export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const isEn = lang === 'en';
-  const [activeSubTab, setActiveSubTab] = useState('overview'); // 'overview' | 'users' | 'destinations' | 'trips' | 'expenses' | 'visited'
+  const [activeSubTab, setActiveSubTab] = useState('overview'); // 'overview' | 'users' | 'destinations' | 'trips' | 'expenses' | 'visited' | 'cloud'
   
   const [stats, setStats] = useState({});
   const [users, setUsers] = useState([]);
@@ -12,6 +12,12 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const [expenses, setExpenses] = useState([]);
   const [visited, setVisited] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+
+  // Cloud DB Config state
+  const [cloudStatus, setCloudStatus] = useState(() => appDb.cloud.getStatus());
+  const [cloudForm, setCloudForm] = useState(() => appDb.cloud.getConfig());
+  const [syncMsg, setSyncMsg] = useState('');
+  const [isSyncing, setIsSyncing] = useState(false);
 
   // Destination Creation/Edit Form state
   const [showDestModal, setShowDestModal] = useState(false);
@@ -36,6 +42,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       setTrips(appDb.admin.getAllTrips());
       setExpenses(appDb.admin.getAllExpenses());
       setVisited(appDb.admin.getAllVisited());
+      setCloudStatus(appDb.cloud.getStatus());
     } catch (err) {
       console.error('[AdminDashboard] Error loading data:', err);
     }
@@ -45,6 +52,50 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     loadData();
     return appDb.subscribe('*', loadData);
   }, []);
+
+  // Cloud Actions
+  const handleSaveCloudConfig = (e) => {
+    e.preventDefault();
+    const ok = appDb.cloud.saveConfig(cloudForm);
+    if (ok) {
+      setCloudStatus(appDb.cloud.getStatus());
+      alert(isEn ? 'Cloud configuration saved and re-initialized!' : '클라우드 DB 설정이 저장되었으며 초기화가 완료되었습니다!');
+      loadData();
+    } else {
+      alert(isEn ? 'Failed to save configuration.' : '설정 저장에 실패했습니다.');
+    }
+  };
+
+  const handleSyncToCloud = async () => {
+    setIsSyncing(true);
+    setSyncMsg(isEn ? 'Uploading local database records to Cloud Firestore...' : '로컬 데이터를 클라우드 Firestore로 일괄 업로드 중...');
+    try {
+      const res = await appDb.cloud.syncLocalToCloud();
+      setSyncMsg(isEn 
+        ? `✅ Success! Uploaded ${res.users} users, ${res.trips} trips, ${res.expenses} expenses, ${res.visited} visited records to Cloud DB.` 
+        : `✅ 업로드 완료! 회원 ${res.users}명, 일정 ${res.trips}개, 지출 ${res.expenses}건, 방문기록 ${res.visited}개가 클라우드 DB에 동기화되었습니다.`);
+    } catch (err) {
+      setSyncMsg(`❌ ${isEn ? 'Sync Error:' : '동기화 오류:'} ${err.message}`);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
+
+  const handleSyncFromCloud = async () => {
+    setIsSyncing(true);
+    setSyncMsg(isEn ? 'Fetching latest records from Cloud Firestore...' : '클라우드 Firestore에서 최신 데이터를 가져오는 중...');
+    try {
+      const res = await appDb.cloud.syncCloudToLocal();
+      setSyncMsg(isEn 
+        ? `✅ Success! Downloaded and merged ${res.users} users, ${res.trips} trips, ${res.expenses} expenses from Cloud DB.` 
+        : `✅ 다운로드 완료! 클라우드에서 회원 ${res.users}명, 일정 ${res.trips}개, 지출 ${res.expenses}건을 성공적으로 동기화했습니다.`);
+      loadData();
+    } catch (err) {
+      setSyncMsg(`❌ ${isEn ? 'Fetch Error:' : '동기화 오류:'} ${err.message}`);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   // User Actions
   const handleToggleUserRole = (user) => {
@@ -194,15 +245,25 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     <div className="fade-in" style={{ padding: '1rem', maxWidth: '1200px', margin: '0 auto' }}>
       
       {/* Top Admin Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', background: '#000000', color: '#ffffff', padding: '1.25rem 1.5rem', borderRadius: '12px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', background: '#000000', color: '#ffffff', padding: '1.25rem 1.5rem', borderRadius: '12px', flexWrap: 'wrap', gap: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <span style={{ fontSize: '1.8rem' }}>🛡️</span>
           <div>
-            <h1 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em' }}>
+            <h1 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               VOYAGE {isEn ? 'ADMIN CONTROL CENTER' : '통합 관리자 센터'}
+              <span style={{
+                fontSize: '0.7rem',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '12px',
+                background: cloudStatus.isConnected ? '#10b981' : '#f59e0b',
+                color: '#ffffff',
+                fontWeight: 'bold'
+              }}>
+                {cloudStatus.isConnected ? '☁️ Cloud Online' : '💾 Local Fallback'}
+              </span>
             </h1>
             <div style={{ fontSize: '0.8rem', color: '#9ca3af' }}>
-              {isEn ? 'Full Database Access, Data Inspection & Real-time CRUD Operations' : '시스템 전체 데이터 실시간 조회, 검색 및 조작(CRUD) 콘솔'}
+              {isEn ? 'Full Database Access, Data Inspection & Multi-device Cloud Sync' : '시스템 전체 데이터 실시간 조회, 검색 및 다중 기기 클라우드 동기화 콘솔'}
             </div>
           </div>
         </div>
@@ -229,6 +290,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', overflowX: 'auto', borderBottom: '2px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
         {[
           { key: 'overview', icon: '📊', nameKo: '시스템 개요', nameEn: 'Overview' },
+          { key: 'cloud', icon: '☁️', nameKo: '클라우드 DB 연동', nameEn: 'Cloud DB Sync' },
           { key: 'users', icon: '👥', nameKo: `회원 관리 (${users.length})`, nameEn: `Users (${users.length})` },
           { key: 'destinations', icon: '🌍', nameKo: `커스텀 여행지 (${destinations.length})`, nameEn: `Destinations (${destinations.length})` },
           { key: 'trips', icon: '📅', nameKo: `전체 일정 (${trips.length})`, nameEn: `Trips (${trips.length})` },
@@ -253,7 +315,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       </div>
 
       {/* Global Search Bar for Tables */}
-      {activeSubTab !== 'overview' && (
+      {activeSubTab !== 'overview' && activeSubTab !== 'cloud' && (
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', gap: '1rem', flexWrap: 'wrap' }}>
           <div style={{ position: 'relative', flex: 1, maxWidth: '400px' }}>
             <input
@@ -329,6 +391,9 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
           <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px' }}>
             <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.1rem' }}>⚡ {isEn ? 'Quick Admin Actions' : '관리자 빠른 바로가기'}</h3>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <button onClick={() => setActiveSubTab('cloud')} className="btn btn-primary" style={{ padding: '0.75rem 1.25rem', background: '#2563eb' }}>
+                ☁️ {isEn ? 'Cloud Database Setup' : '무료 클라우드 DB 연동 설정'}
+              </button>
               <button onClick={() => setActiveSubTab('users')} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
                 👥 {isEn ? 'Manage Users' : '회원 목록 관리'}
               </button>
@@ -338,11 +403,146 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
               <button onClick={() => setActiveSubTab('trips')} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
                 📅 {isEn ? 'Inspect Trips' : '여행 일정 전체 열람'}
               </button>
-              <button onClick={() => setActiveSubTab('expenses')} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
-                💰 {isEn ? 'Review Expenses' : '지출 내역 전체 열람'}
-              </button>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* CLOUD DB SETTINGS TAB */}
+      {activeSubTab === 'cloud' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          
+          {/* Status & Sync Action Card */}
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', borderLeft: cloudStatus.isConnected ? '6px solid #10b981' : '6px solid #f59e0b' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+              <div>
+                <h2 style={{ margin: 0, fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  ☁️ {isEn ? 'Google Firebase Firestore Cloud Database' : 'Google Firebase Firestore 무료 클라우드 DB'}
+                  <span style={{ fontSize: '0.8rem', padding: '0.2rem 0.5rem', borderRadius: '6px', background: cloudStatus.isConnected ? '#10b981' : '#f59e0b', color: '#fff' }}>
+                    {cloudStatus.isConnected ? '🟢 실시간 연결됨 (Online)' : '🟡 로컬 모드 (Local Fallback)'}
+                  </span>
+                </h2>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '0.3rem' }}>
+                  {isEn 
+                    ? `Connected Project ID: ${cloudStatus.projectId || 'None'}` 
+                    : `현재 연동 프로젝트: ${cloudStatus.projectId || '미설정 (로컬 브라우저 저장소 사용 중)'}`}
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                <button
+                  disabled={isSyncing || !cloudStatus.isConnected}
+                  onClick={handleSyncToCloud}
+                  className="btn btn-primary"
+                  style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
+                >
+                  📤 {isEn ? 'Upload Local to Cloud' : '로컬 ➔ 클라우드 일괄 업로드'}
+                </button>
+                <button
+                  disabled={isSyncing || !cloudStatus.isConnected}
+                  onClick={handleSyncFromCloud}
+                  className="btn btn-secondary"
+                  style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
+                >
+                  📥 {isEn ? 'Download Cloud to Local' : '클라우드 ➔ 로컬 가져오기'}
+                </button>
+              </div>
+            </div>
+
+            {syncMsg && (
+              <div style={{ marginTop: '1rem', padding: '0.75rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem' }}>
+                {syncMsg}
+              </div>
+            )}
+          </div>
+
+          {/* Config Form */}
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px' }}>
+            <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.1rem' }}>
+              🔑 {isEn ? 'Firebase Cloud Credentials' : 'Firebase 클라우드 연동 키 설정'}
+            </h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+              {isEn 
+                ? 'Enter your free Google Firebase Web App configuration below to connect real-time Firestore synchronization.' 
+                : 'Google Firebase 콘솔(무료 Spark 요금제)에서 발급받은 웹 앱 설정값을 입력하시면 즉시 전 세계 모든 사용자의 기기와 실시간 동기화됩니다.'}
+            </p>
+
+            <form onSubmit={handleSaveCloudConfig} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>apiKey</label>
+                  <input
+                    type="text"
+                    required
+                    value={cloudForm.apiKey || ''}
+                    onChange={(e) => setCloudForm({ ...cloudForm, apiKey: e.target.value })}
+                    placeholder="AIzaSy..."
+                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>projectId</label>
+                  <input
+                    type="text"
+                    required
+                    value={cloudForm.projectId || ''}
+                    onChange={(e) => setCloudForm({ ...cloudForm, projectId: e.target.value })}
+                    placeholder="my-travel-app-12345"
+                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
+                  />
+                </div>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>authDomain</label>
+                  <input
+                    type="text"
+                    value={cloudForm.authDomain || ''}
+                    onChange={(e) => setCloudForm({ ...cloudForm, authDomain: e.target.value })}
+                    placeholder="my-travel-app.firebaseapp.com"
+                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>appId</label>
+                  <input
+                    type="text"
+                    value={cloudForm.appId || ''}
+                    onChange={(e) => setCloudForm({ ...cloudForm, appId: e.target.value })}
+                    placeholder="1:123456:web:abcdef"
+                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
+                  />
+                </div>
+              </div>
+
+              <button 
+                type="submit" 
+                className="btn btn-primary"
+                style={{ padding: '0.75rem', fontWeight: 'bold', alignSelf: 'flex-start', minWidth: '160px' }}
+              >
+                💾 {isEn ? 'Save Cloud Config' : '클라우드 DB 설정 저장 & 적용'}
+              </button>
+            </form>
+          </div>
+
+          {/* 3-Minute Free Setup Guide */}
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', background: 'var(--bg-secondary)' }}>
+            <h3 style={{ margin: '0 0 0.75rem 0', fontSize: '1.05rem' }}>
+              📖 {isEn ? '3-Minute Free Firebase Setup Guide' : '3분 만에 무료 Firebase 클라우드 DB 만드는 방법'}
+            </h3>
+            <ol style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.8, paddingLeft: '1.25rem', margin: 0 }}>
+              <li>
+                <a href="https://console.firebase.google.com/" target="_blank" rel="noreferrer" style={{ color: '#2563eb', fontWeight: 'bold' }}>
+                  Firebase Console (https://console.firebase.google.com/)
+                </a>에 접속하여 Google 계정으로 무료 프로젝트를 생성합니다.
+              </li>
+              <li>좌측 메뉴의 <strong>Firestore Database</strong>를 클릭하고 <strong>데이터베이스 만들기</strong>를 선택합니다 (테스트 모드 시작).</li>
+              <li>프로젝트 설정(톱니바퀴) ➔ 일반 ➔ <strong>내 앱(웹 앱 &lt;/&gt;)</strong>을 추가하면 발급되는 <code>firebaseConfig</code> 객체의 값들을 위의 입력창에 붙여넣고 저장합니다.</li>
+              <li>이제 서로 다른 사용자가 모바일/PC 어디서 접속하든 데이터가 클라우드에 중앙 저장되고 실시간으로 동기화됩니다!</li>
+            </ol>
+          </div>
+
         </div>
       )}
 

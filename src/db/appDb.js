@@ -3,17 +3,14 @@
  * 
  * Features:
  * - Multi-tenant User Authentication (login, signup, logout, role-based access control)
- * - User-scoped data isolation for:
- *   - Trips (trips)
- *   - Budgets & Expenses (budgets, expenses)
- *   - Visited Cities (visited)
- *   - Packing Checklists (checklists)
- * - Global shared data:
- *   - Custom Destinations (customDestinations)
- *   - User Preferences (preferences)
+ * - User-scoped data isolation (trips, budgets, expenses, visited, checklists)
+ * - Global shared data (customDestinations, preferences)
  * - Comprehensive Administrator Data Engine (admin)
+ * - Firebase Firestore Cloud Database Sync (cloud)
  * - Reactive Pub/Sub event bus
  */
+
+import cloudDb from './firebase.js';
 
 const DB_PREFIX = 'voyage_db_';
 
@@ -21,6 +18,7 @@ class AppDB {
   constructor() {
     this.listeners = new Map();
     this._initSeed();
+    this._initCloudListeners();
   }
 
   // Pub/Sub Event System
@@ -103,6 +101,31 @@ class AppDB {
     }
   }
 
+  // Subscribe to real-time Cloud Firestore updates when initialized
+  _initCloudListeners() {
+    if (!cloudDb.isInitialized) return;
+
+    try {
+      // Listen to cloud custom destinations
+      cloudDb.subscribeCollection('custom_destinations', (cloudDests) => {
+        if (cloudDests && cloudDests.length > 0) {
+          this._setItem('custom_destinations', cloudDests);
+          this._notify('custom_destinations', cloudDests);
+        }
+      });
+
+      // Listen to cloud trips
+      cloudDb.subscribeCollection('trips', (cloudTrips) => {
+        if (cloudTrips && cloudTrips.length > 0) {
+          this._setItem('trips', cloudTrips);
+          this._notify('trips', this.trips.getAll());
+        }
+      });
+    } catch (e) {
+      console.warn('[AppDB] Cloud listener setup notice:', e);
+    }
+  }
+
   // ==========================================
   // 1. AUTH & USER SESSION MANAGEMENT
   // ==========================================
@@ -124,7 +147,7 @@ class AppDB {
       return u?.role === 'admin';
     },
 
-    login: (username, password) => {
+    login: async (username, password) => {
       const cleanUsername = (username || '').trim().toLowerCase();
       const cleanPassword = (password || '').trim();
 
@@ -152,10 +175,25 @@ class AppDB {
         return { success: true, user: adminUser };
       }
 
-      const users = this._getItem('users', []);
-      const user = users.find(u => 
+      let users = this._getItem('users', []);
+      let user = users.find(u => 
         u.username.toLowerCase() === cleanUsername && u.password === cleanPassword
       );
+
+      // If not in local cache, check cloud Firestore
+      if (!user && cloudDb.isInitialized) {
+        try {
+          const cloudUsers = await cloudDb.getAll('users');
+          user = cloudUsers.find(u => 
+            u.username.toLowerCase() === cleanUsername && u.password === cleanPassword
+          );
+          if (user) {
+            this._setItem('users', [...users, user]);
+          }
+        } catch (e) {
+          console.warn('[AppDB] Cloud user lookup error:', e);
+        }
+      }
 
       if (!user) {
         return { success: false, error: '아이디 또는 비밀번호가 일치하지 않습니다.' };
@@ -167,7 +205,7 @@ class AppDB {
       return { success: true, user };
     },
 
-    signup: ({ username, password, name, avatar = '✈️', email = '' }) => {
+    signup: async ({ username, password, name, avatar = '✈️', email = '' }) => {
       const cleanUsername = (username || '').trim().toLowerCase();
       if (!cleanUsername || cleanUsername.length < 3) {
         return { success: false, error: '아이디는 3글자 이상이어야 합니다.' };
@@ -196,6 +234,9 @@ class AppDB {
       this._setItem('users', updatedUsers);
       this._setItem('current_session', { userId: newUser.id, loggedInAt: new Date().toISOString() });
       
+      // Async sync to Cloud DB
+      cloudDb.set('users', newUser.id, newUser);
+
       this._notify('auth', newUser);
       this._notify('*', 'signup');
       return { success: true, user: newUser };
@@ -239,6 +280,8 @@ class AppDB {
 
       const updated = [newTrip, ...all];
       this._setItem('trips', updated);
+      cloudDb.set('trips', newTrip.id, newTrip);
+
       this._notify('trips', this.trips.getAll());
       return newTrip;
     },
@@ -248,14 +291,18 @@ class AppDB {
       if (!uid) throw new Error('로그인이 필요합니다.');
 
       const all = this._getItem('trips', []);
+      let updatedTrip = null;
       const updated = all.map(t => {
         if (t.id === id && t.userId === uid) {
-          return { ...t, ...updates, updatedAt: new Date().toISOString() };
+          updatedTrip = { ...t, ...updates, updatedAt: new Date().toISOString() };
+          return updatedTrip;
         }
         return t;
       });
 
       this._setItem('trips', updated);
+      if (updatedTrip) cloudDb.set('trips', id, updatedTrip);
+
       this._notify('trips', this.trips.getAll());
       return this.trips.getById(id);
     },
@@ -267,6 +314,8 @@ class AppDB {
       const all = this._getItem('trips', []);
       const updated = all.filter(t => !(t.id === id && t.userId === uid));
       this._setItem('trips', updated);
+      cloudDb.delete('trips', id);
+
       this._notify('trips', this.trips.getAll());
       return this.trips.getAll();
     }
@@ -297,6 +346,8 @@ class AppDB {
 
       const updated = [newExp, ...all];
       this._setItem('expenses', updated);
+      cloudDb.set('expenses', newExp.id, newExp);
+
       this._notify('expenses', this.expenses.getAll());
       return newExp;
     },
@@ -308,6 +359,8 @@ class AppDB {
       const all = this._getItem('expenses', []);
       const updated = all.filter(e => !(e.id === id && e.userId === uid));
       this._setItem('expenses', updated);
+      cloudDb.delete('expenses', id);
+
       this._notify('expenses', this.expenses.getAll());
       return this.expenses.getAll();
     },
@@ -317,6 +370,9 @@ class AppDB {
       if (!uid) return;
 
       const all = this._getItem('expenses', []);
+      const userExps = all.filter(e => e.userId === uid);
+      userExps.forEach(e => cloudDb.delete('expenses', e.id));
+
       const updated = all.filter(e => e.userId !== uid);
       this._setItem('expenses', updated);
       this._notify('expenses', []);
@@ -334,6 +390,7 @@ class AppDB {
       const uid = this.auth.getCurrentUserId();
       if (!uid) return;
       this._setItem(`budget_limit_${uid}`, Number(limit));
+      cloudDb.set('budgets', uid, { limit: Number(limit), userId: uid });
       this._notify('budget_limit', Number(limit));
     }
   };
@@ -374,6 +431,8 @@ class AppDB {
 
       const updated = [newVisited, ...all];
       this._setItem('visited', updated);
+      cloudDb.set('visited', `${uid}_${city.id}`, newVisited);
+
       this._notify('visited', this.visited.getAll());
       return this.visited.getAll();
     },
@@ -385,6 +444,8 @@ class AppDB {
       const all = this._getItem('visited', []);
       const updated = all.filter(v => !(v.id === destId && v.userId === uid));
       this._setItem('visited', updated);
+      cloudDb.delete('visited', `${uid}_${destId}`);
+
       this._notify('visited', this.visited.getAll());
       return this.visited.getAll();
     },
@@ -394,14 +455,18 @@ class AppDB {
       if (!uid) return [];
 
       const all = this._getItem('visited', []);
+      let updatedRecord = null;
       const updated = all.map(v => {
         if (v.id === destId && v.userId === uid) {
-          return { ...v, ...updates };
+          updatedRecord = { ...v, ...updates };
+          return updatedRecord;
         }
         return v;
       });
 
       this._setItem('visited', updated);
+      if (updatedRecord) cloudDb.set('visited', `${uid}_${destId}`, updatedRecord);
+
       this._notify('visited', this.visited.getAll());
       return this.visited.getAll();
     }
@@ -424,6 +489,7 @@ class AppDB {
       const uid = this.auth.getCurrentUserId() || 'guest';
       const key = `checklist_${uid}_${destId}`;
       this._setItem(key, items);
+      cloudDb.set('checklists', `${uid}_${destId}`, { items, userId: uid, destId });
       this._notify(`checklist_${destId}`, items);
     },
 
@@ -431,6 +497,7 @@ class AppDB {
       const uid = this.auth.getCurrentUserId() || 'guest';
       const key = `checklist_${uid}_${destId}`;
       this._removeItem(key);
+      cloudDb.delete('checklists', `${uid}_${destId}`);
       this._notify(`checklist_${destId}`, null);
     }
   };
@@ -449,19 +516,32 @@ class AppDB {
       };
       const updated = [...items, newDest];
       this._setItem('custom_destinations', updated);
+      cloudDb.set('custom_destinations', newDest.id, newDest);
+
       this._notify('custom_destinations', updated);
       return newDest;
     },
     update: (id, updates) => {
       const items = this.customDestinations.getAll();
-      const updated = items.map(d => (d.id === id ? { ...d, ...updates } : d));
+      let updatedDest = null;
+      const updated = items.map(d => {
+        if (d.id === id) {
+          updatedDest = { ...d, ...updates };
+          return updatedDest;
+        }
+        return d;
+      });
       this._setItem('custom_destinations', updated);
+      if (updatedDest) cloudDb.set('custom_destinations', id, updatedDest);
+
       this._notify('custom_destinations', updated);
-      return updated.find(d => d.id === id);
+      return updatedDest;
     },
     delete: (id) => {
       const items = this.customDestinations.getAll().filter(d => d.id !== id);
       this._setItem('custom_destinations', items);
+      cloudDb.delete('custom_destinations', id);
+
       this._notify('custom_destinations', items);
       return items;
     }
@@ -481,7 +561,96 @@ class AppDB {
   };
 
   // ==========================================
-  // 7. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
+  // 7. CLOUD DB CONTROLS & SYNCHRONIZATION
+  // ==========================================
+  cloud = {
+    getStatus: () => {
+      return {
+        isInitialized: cloudDb.isInitialized,
+        isConnected: cloudDb.isConnected,
+        projectId: cloudDb.getConfig()?.projectId || ''
+      };
+    },
+
+    getConfig: () => cloudDb.getConfig(),
+
+    saveConfig: (config) => {
+      const ok = cloudDb.saveConfig(config);
+      this._initCloudListeners();
+      this._notify('*', 'cloud_config_update');
+      return ok;
+    },
+
+    // Sync all local records to cloud Firestore
+    syncLocalToCloud: async () => {
+      if (!cloudDb.isInitialized) throw new Error('Cloud DB is not connected.');
+
+      const users = this._getItem('users', []);
+      for (const u of users) {
+        await cloudDb.set('users', u.id, u);
+      }
+
+      const trips = this._getItem('trips', []);
+      for (const t of trips) {
+        await cloudDb.set('trips', t.id, t);
+      }
+
+      const expenses = this._getItem('expenses', []);
+      for (const e of expenses) {
+        await cloudDb.set('expenses', e.id, e);
+      }
+
+      const visited = this._getItem('visited', []);
+      for (const v of visited) {
+        await cloudDb.set('visited', `${v.userId}_${v.id}`, v);
+      }
+
+      const customDests = this._getItem('custom_destinations', []);
+      for (const d of customDests) {
+        await cloudDb.set('custom_destinations', d.id, d);
+      }
+
+      return {
+        users: users.length,
+        trips: trips.length,
+        expenses: expenses.length,
+        visited: visited.length,
+        destinations: customDests.length
+      };
+    },
+
+    // Fetch all records from Cloud Firestore into local cache
+    syncCloudToLocal: async () => {
+      if (!cloudDb.isInitialized) throw new Error('Cloud DB is not connected.');
+
+      const cloudUsers = await cloudDb.getAll('users');
+      if (cloudUsers.length > 0) this._setItem('users', cloudUsers);
+
+      const cloudTrips = await cloudDb.getAll('trips');
+      if (cloudTrips.length > 0) this._setItem('trips', cloudTrips);
+
+      const cloudExpenses = await cloudDb.getAll('expenses');
+      if (cloudExpenses.length > 0) this._setItem('expenses', cloudExpenses);
+
+      const cloudVisited = await cloudDb.getAll('visited');
+      if (cloudVisited.length > 0) this._setItem('visited', cloudVisited);
+
+      const cloudDests = await cloudDb.getAll('custom_destinations');
+      if (cloudDests.length > 0) this._setItem('custom_destinations', cloudDests);
+
+      this._notify('*', 'cloud_pull');
+      return {
+        users: cloudUsers.length,
+        trips: cloudTrips.length,
+        expenses: cloudExpenses.length,
+        visited: cloudVisited.length,
+        destinations: cloudDests.length
+      };
+    }
+  };
+
+  // ==========================================
+  // 8. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
   // ==========================================
   admin = {
     _checkAdmin: () => {
@@ -519,8 +688,11 @@ class AppDB {
       const users = this._getItem('users', []);
       const updated = users.map(u => (u.id === userId ? { ...u, ...updates } : u));
       this._setItem('users', updated);
+      const user = updated.find(u => u.id === userId);
+      if (user) cloudDb.set('users', userId, user);
+
       this._notify('users', updated);
-      return updated.find(u => u.id === userId);
+      return user;
     },
 
     deleteUser: (userId) => {
@@ -530,6 +702,7 @@ class AppDB {
       }
       const users = this._getItem('users', []).filter(u => u.id !== userId);
       this._setItem('users', users);
+      cloudDb.delete('users', userId);
 
       // Cascade delete user data
       const trips = this._getItem('trips', []).filter(t => t.userId !== userId);
@@ -559,16 +732,27 @@ class AppDB {
     updateTrip: (tripId, updates) => {
       this.admin._checkAdmin();
       const trips = this._getItem('trips', []);
-      const updated = trips.map(t => (t.id === tripId ? { ...t, ...updates, updatedAt: new Date().toISOString() } : t));
+      let updatedTrip = null;
+      const updated = trips.map(t => {
+        if (t.id === tripId) {
+          updatedTrip = { ...t, ...updates, updatedAt: new Date().toISOString() };
+          return updatedTrip;
+        }
+        return t;
+      });
       this._setItem('trips', updated);
+      if (updatedTrip) cloudDb.set('trips', tripId, updatedTrip);
+
       this._notify('trips', updated);
-      return updated.find(t => t.id === tripId);
+      return updatedTrip;
     },
 
     deleteTrip: (tripId) => {
       this.admin._checkAdmin();
       const trips = this._getItem('trips', []).filter(t => t.id !== tripId);
       this._setItem('trips', trips);
+      cloudDb.delete('trips', tripId);
+
       this._notify('trips', trips);
       return trips;
     },
@@ -588,16 +772,27 @@ class AppDB {
     updateExpense: (expenseId, updates) => {
       this.admin._checkAdmin();
       const expenses = this._getItem('expenses', []);
-      const updated = expenses.map(e => (e.id === expenseId ? { ...e, ...updates } : e));
+      let updatedExp = null;
+      const updated = expenses.map(e => {
+        if (e.id === expenseId) {
+          updatedExp = { ...e, ...updates };
+          return updatedExp;
+        }
+        return e;
+      });
       this._setItem('expenses', updated);
+      if (updatedExp) cloudDb.set('expenses', expenseId, updatedExp);
+
       this._notify('expenses', updated);
-      return updated.find(e => e.id === expenseId);
+      return updatedExp;
     },
 
     deleteExpense: (expenseId) => {
       this.admin._checkAdmin();
       const expenses = this._getItem('expenses', []).filter(e => e.id !== expenseId);
       this._setItem('expenses', expenses);
+      cloudDb.delete('expenses', expenseId);
+
       this._notify('expenses', expenses);
       return expenses;
     },
@@ -617,16 +812,27 @@ class AppDB {
     updateVisited: (visitedId, updates) => {
       this.admin._checkAdmin();
       const visited = this._getItem('visited', []);
-      const updated = visited.map(v => (v.id === visitedId ? { ...v, ...updates } : v));
+      let updatedVisited = null;
+      const updated = visited.map(v => {
+        if (v.id === visitedId) {
+          updatedVisited = { ...v, ...updates };
+          return updatedVisited;
+        }
+        return v;
+      });
       this._setItem('visited', updated);
+      if (updatedVisited) cloudDb.set('visited', `${updatedVisited.userId}_${visitedId}`, updatedVisited);
+
       this._notify('visited', updated);
-      return updated.find(v => v.id === visitedId);
+      return updatedVisited;
     },
 
     deleteVisited: (visitedId) => {
       this.admin._checkAdmin();
       const visited = this._getItem('visited', []).filter(v => v.id !== visitedId);
       this._setItem('visited', visited);
+      cloudDb.delete('visited', visitedId);
+
       this._notify('visited', visited);
       return visited;
     },
