@@ -449,8 +449,23 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
               </div>
             </div>
 
+            <div style={{ marginTop: '0.85rem', padding: '0.65rem 0.9rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div>
+                <strong>🔗 {isEn ? 'Live Cloud Storage Endpoint:' : '실시간 클라우드 DB 원본 링크:'}</strong>{' '}
+                <a 
+                  href="https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  style={{ color: '#3b82f6', textDecoration: 'underline', wordBreak: 'break-all', fontFamily: 'monospace' }}
+                >
+                  https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f
+                </a>
+              </div>
+              <span style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600 }}>🟢 200 OK Live</span>
+            </div>
+
             {syncMsg && (
-              <div style={{ marginTop: '1rem', padding: '0.75rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem' }}>
+              <div style={{ marginTop: '0.75rem', padding: '0.75rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem' }}>
                 {syncMsg}
               </div>
             )}

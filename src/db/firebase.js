@@ -2,9 +2,10 @@
  * Voyage Universal Cloud Database Service
  * 
  * Features:
- * 1. Zero-Setup Global Cloud Relay (Default) - Works immediately across all devices with 0 configuration!
+ * 1. Zero-Setup Global Cloud Storage (Default) - Backed by live cloud JSON endpoint
+ *    Live URL: https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f
  * 2. Optional Custom Firebase Firestore - If admin provides custom Firebase credentials, switches to dedicated Firestore.
- * 3. Automatic offline fallback & realtime multi-device sync.
+ * 3. Automatic realtime polling & instant synchronization across all devices worldwide.
  */
 
 import { initializeApp, getApps, getApp } from 'firebase/app';
@@ -19,7 +20,7 @@ import {
 } from 'firebase/firestore';
 
 const CLOUD_CONFIG_KEY = 'voyage_cloud_config';
-const GLOBAL_CLOUD_RELAY_BUCKET = 'https://kvdb.io/6n9f4m8bV7y2qX1z8c4j'; // Zero-config global cloud storage endpoint
+const GLOBAL_CLOUD_ENDPOINT = 'https://api.restful-api.dev/objects/ff8081819ff5b11001a008db0604294f';
 
 class CloudDBService {
   constructor() {
@@ -31,6 +32,13 @@ class CloudDBService {
     this.unsubscribers = [];
     this.pollInterval = null;
     this.listeners = new Map();
+    this.cachedCloudData = {
+      users: [],
+      trips: [],
+      expenses: [],
+      visited: [],
+      custom_destinations: []
+    };
     this.init();
   }
 
@@ -79,59 +87,78 @@ class CloudDBService {
       }
     }
 
-    // Default: Zero-Setup Instant Cloud Relay Mode
+    // Default: Zero-Setup Live Global Cloud Mode
     this.mode = 'zero_config_cloud';
     this.isInitialized = true;
     this.isConnected = true;
+    this._fetchFullCloudState().then(() => this._broadcastAll());
     this._startZeroConfigPolling();
-    console.log('[CloudDB] Zero-Setup Global Cloud Active (No manual setup required).');
+    console.log('[CloudDB] Zero-Setup Global Cloud Active:', GLOBAL_CLOUD_ENDPOINT);
   }
 
   _startZeroConfigPolling() {
     if (this.pollInterval) clearInterval(this.pollInterval);
     if (typeof window === 'undefined') return;
 
-    // Poll cloud collections periodically for changes from other devices
+    // Poll cloud storage every 6 seconds for updates from other devices
     this.pollInterval = setInterval(async () => {
       if (this.mode !== 'zero_config_cloud') return;
-      for (const [colName, callbacks] of this.listeners.entries()) {
-        try {
-          const items = await this._fetchRelayCollection(colName);
-          if (items && items.length > 0) {
-            callbacks.forEach(cb => {
-              try { cb(items); } catch (e) { /* silent */ }
-            });
-          }
-        } catch (e) {
-          // Ignore network hiccups
-        }
+      const changed = await this._fetchFullCloudState();
+      if (changed) {
+        this._broadcastAll();
       }
-    }, 8000);
+    }, 6000);
   }
 
-  // Low-level HTTP helper for Zero-Config Cloud Relay
-  async _fetchRelayCollection(colName) {
-    try {
-      const res = await fetch(`${GLOBAL_CLOUD_RELAY_BUCKET}/voyage_${colName}`, {
-        headers: { 'Cache-Control': 'no-cache' }
+  _broadcastAll() {
+    for (const [colName, callbacks] of this.listeners.entries()) {
+      const items = this.cachedCloudData[colName] || [];
+      callbacks.forEach(cb => {
+        try { cb(items); } catch (e) { /* silent */ }
       });
-      if (!res.ok) return [];
-      const data = await res.json();
-      return Array.isArray(data) ? data : [];
-    } catch {
-      return [];
     }
   }
 
-  async _saveRelayCollection(colName, items) {
+  // Fetch full cloud document
+  async _fetchFullCloudState() {
     try {
-      await fetch(`${GLOBAL_CLOUD_RELAY_BUCKET}/voyage_${colName}`, {
-        method: 'POST',
+      const res = await fetch(GLOBAL_CLOUD_ENDPOINT, {
+        headers: { 'Cache-Control': 'no-cache' }
+      });
+      if (!res.ok) return false;
+      const json = await res.json();
+      if (json && json.data) {
+        const newData = {
+          users: json.data.users || [],
+          trips: json.data.trips || [],
+          expenses: json.data.expenses || [],
+          visited: json.data.visited || [],
+          custom_destinations: json.data.custom_destinations || []
+        };
+        const isDifferent = JSON.stringify(newData) !== JSON.stringify(this.cachedCloudData);
+        this.cachedCloudData = newData;
+        return isDifferent;
+      }
+      return false;
+    } catch {
+      return false;
+    }
+  }
+
+  // Push updated cloud document
+  async _pushFullCloudState() {
+    try {
+      await fetch(GLOBAL_CLOUD_ENDPOINT, {
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(items)
+        body: JSON.stringify({
+          name: "voyage_db",
+          data: this.cachedCloudData
+        })
       });
       return true;
     } catch (e) {
+      console.warn('[CloudDB] Push error:', e);
       return false;
     }
   }
@@ -150,12 +177,14 @@ class CloudDBService {
       }
     }
 
-    // Zero-Config Cloud Relay
+    // Zero-Config Cloud
     try {
-      const current = await this._fetchRelayCollection(colName);
-      const updated = current.filter(item => item.id !== docId && `${item.userId}_${item.id}` !== docId);
+      const list = this.cachedCloudData[colName] || [];
+      const updated = list.filter(item => item.id !== docId && `${item.userId}_${item.id}` !== docId);
       updated.unshift({ ...data, id: data.id || docId, updatedAt: new Date().toISOString() });
-      await this._saveRelayCollection(colName, updated);
+      this.cachedCloudData[colName] = updated;
+      await this._pushFullCloudState();
+      this._broadcastAll();
       return true;
     } catch (e) {
       return false;
@@ -173,11 +202,13 @@ class CloudDBService {
       }
     }
 
-    // Zero-Config Cloud Relay
+    // Zero-Config Cloud
     try {
-      const current = await this._fetchRelayCollection(colName);
-      const updated = current.filter(item => item.id !== docId && `${item.userId}_${item.id}` !== docId);
-      await this._saveRelayCollection(colName, updated);
+      const list = this.cachedCloudData[colName] || [];
+      const updated = list.filter(item => item.id !== docId && `${item.userId}_${item.id}` !== docId);
+      this.cachedCloudData[colName] = updated;
+      await this._pushFullCloudState();
+      this._broadcastAll();
       return true;
     } catch (e) {
       return false;
@@ -199,8 +230,11 @@ class CloudDBService {
       }
     }
 
-    // Zero-Config Cloud Relay
-    return await this._fetchRelayCollection(colName);
+    // Zero-Config Cloud
+    if (!this.cachedCloudData[colName] || this.cachedCloudData[colName].length === 0) {
+      await this._fetchFullCloudState();
+    }
+    return this.cachedCloudData[colName] || [];
   }
 
   subscribeCollection(colName, callback) {
@@ -223,16 +257,15 @@ class CloudDBService {
       }
     }
 
-    // Zero-Config Cloud Relay
+    // Zero-Config Cloud
     if (!this.listeners.has(colName)) {
       this.listeners.set(colName, new Set());
     }
     this.listeners.get(colName).add(callback);
 
-    // Immediate initial fetch
-    this._fetchRelayCollection(colName).then(items => {
-      if (items && items.length > 0) callback(items);
-    });
+    // Provide current state immediately
+    const items = this.cachedCloudData[colName] || [];
+    if (items.length > 0) callback(items);
 
     return () => {
       this.listeners.get(colName)?.delete(callback);
