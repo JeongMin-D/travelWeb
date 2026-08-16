@@ -109,11 +109,13 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
   const getStyleKoreanName = (styleKey) => STYLE_NAMES[styleKey] || styleKey;
 
   const handleCardClick = (dest) => {
-    let selectedStyle = style;
-    if (!dest.itineraries[style]) {
-      selectedStyle = Object.keys(dest.itineraries)[0] || 'healing';
+    let selectedStyle = style || 'healing';
+    if (dest?.itineraries && typeof dest.itineraries === 'object') {
+      if (!dest.itineraries[selectedStyle]) {
+        selectedStyle = Object.keys(dest.itineraries)[0] || 'healing';
+      }
     }
-    onSelectDestination(dest, duration, selectedStyle);
+    onSelectDestination(dest, duration || 3, selectedStyle);
   };
 
   return (

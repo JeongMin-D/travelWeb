@@ -380,10 +380,9 @@ export default function Randomizer({ destinations, onSelectDestination, lang = '
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: 1.5 }}>
                   {translatedResult.description}
                 </p>
-                
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                   <button
-                    onClick={() => onSelectDestination(result, 3, Object.keys(result.itineraries)[0] || 'healing')}
+                    onClick={() => onSelectDestination(result, 3, (result?.itineraries && Object.keys(result.itineraries)[0]) || 'healing')}
                     className="btn btn-primary"
                     style={{ fontSize: '0.9rem', padding: '0.6rem 1.2rem' }}
                   >
