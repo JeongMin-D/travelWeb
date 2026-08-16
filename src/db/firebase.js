@@ -21,15 +21,15 @@ import {
 
 const CLOUD_CONFIG_KEY = 'voyage_cloud_config';
 
-// User's Google Firebase Configuration
+// Read Google Firebase Configuration securely from environment variables
 export const DEFAULT_FIREBASE_CONFIG = {
-  apiKey: "AIzaSyBtAkLtJdJ3aOoGlcHu0VdOGmABG7l_8Is",
-  authDomain: "my-travel-web-a1cb7.firebaseapp.com",
-  projectId: "my-travel-web-a1cb7",
-  storageBucket: "my-travel-web-a1cb7.firebasestorage.app",
-  messagingSenderId: "535718528471",
-  appId: "1:535718528471:web:3ea9e3916f55c6fd273792",
-  measurementId: "G-559P8TCQXX"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "my-travel-web-a1cb7.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "my-travel-web-a1cb7",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "my-travel-web-a1cb7.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "535718528471",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:535718528471:web:3ea9e3916f55c6fd273792",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-559P8TCQXX"
 };
 
 class CloudDBService {
