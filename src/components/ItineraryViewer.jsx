@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { NEIGHBOR_MAPPING, COUNTRY_REGISTRY, getPolishedItinerary, getCityCoordinates, getLandmarkCoordinates, getClothingAndWeatherGuide, getTranslatedDestination, translateChecklistItem, translateActivityTitle, translateActivityDesc, COUNTRY_ENGLISH_MAPPING, CONTINENT_ENGLISH_MAPPING } from '../data/destinations';
+import { 
+  NEIGHBOR_MAPPING, 
+  COUNTRY_REGISTRY, 
+  getPolishedItinerary, 
+  getCityCoordinates, 
+  getLandmarkCoordinates, 
+  getClothingAndWeatherGuide, 
+  getTranslatedDestination, 
+  translateChecklistItem, 
+  translateActivityTitle, 
+  translateActivityDesc, 
+  COUNTRY_ENGLISH_MAPPING, 
+  CONTINENT_ENGLISH_MAPPING 
+} from '../data/destinations';
 import { regenerateSlot } from '../utils/itineraryEngine';
 import PrintBrochureModal from './PrintBrochureModal';
 import appDb from '../db/appDb';
@@ -15,64 +28,74 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function ItineraryViewer({ 
-  destination, 
-  initialDuration, 
-  initialStyle, 
+  destination = {}, 
+  initialDuration = 3, 
+  initialStyle = 'healing', 
   onBack, 
   onStartPlanning, 
   onStartBudgeting,
   lang = 'en'
 }) {
   const isEn = lang === 'en';
-  const translatedDest = getTranslatedDestination(destination, isEn);
-  const displayContinent = isEn ? (CONTINENT_ENGLISH_MAPPING[destination.continent] || destination.continent) : destination.continent;
+  const safeDest = destination || {};
+  const translatedDest = getTranslatedDestination(safeDest, isEn) || safeDest;
+  const displayContinent = isEn 
+    ? (CONTINENT_ENGLISH_MAPPING[safeDest.continent] || safeDest.continent || 'Global') 
+    : (safeDest.continent || '전세계');
 
-  const [duration, setDuration] = useState(initialDuration);
-  const [style, setStyle] = useState(initialStyle);
+  const [duration, setDuration] = useState(initialDuration || 3);
+  const [style, setStyle] = useState(initialStyle || 'healing');
   const [checklist, setChecklist] = useState([]);
   const [newItemText, setNewItemText] = useState('');
   const [showBrochureModal, setShowBrochureModal] = useState(false);
 
   // Styles list supported by this destination
-  const availableStyles = Object.keys(destination.itineraries);
+  const availableStyles = safeDest.itineraries && typeof safeDest.itineraries === 'object' && Object.keys(safeDest.itineraries).length > 0
+    ? Object.keys(safeDest.itineraries)
+    : ['healing', 'activity', 'foodTour', 'culture'];
 
   // If initialStyle is not supported by the destination, pick the first one
   useEffect(() => {
     if (!availableStyles.includes(style)) {
       setStyle(availableStyles[0] || 'healing');
     }
-  }, [destination]);
+  }, [safeDest.name]);
 
   // Load checklist from AppDB
   useEffect(() => {
+    const rawEssentials = Array.isArray(safeDest.essentials) ? safeDest.essentials : [];
     const defaults = [
-      ...destination.essentials.map(item => ({ text: item, checked: false, category: 'essential' })),
+      ...rawEssentials.map(item => ({ text: item, checked: false, category: 'essential' })),
       { text: '휴대폰 충전기', checked: false, category: 'electronics' },
       { text: '개인 세면도구', checked: false, category: 'toiletries' },
       { text: '편한 여벌 옷', checked: false, category: 'clothing' },
-      { text: '상비약 (종합감기약, 대역전)', checked: false, category: 'other' }
+      { text: '상비약 (종합감기약, 소화제)', checked: false, category: 'other' }
     ];
-    if (destination.type === 'international') {
+    if (safeDest.type === 'international') {
       defaults.unshift(
         { text: '여권 및 여권 복사본', checked: false, category: 'essential' },
         { text: '해외 매직 플러그 (어댑터)', checked: false, category: 'electronics' },
         { text: '해외 결제 카드 / 현금 환전', checked: false, category: 'essential' }
       );
     }
-    const items = appDb.checklists.get(destination.id, defaults);
+    const destKey = safeDest.id || safeDest.name || 'default_dest';
+    const items = appDb.checklists.get(destKey, defaults);
     setChecklist(items);
-  }, [destination]);
+  }, [safeDest.id, safeDest.name]);
 
   // Save checklist to AppDB
   const saveChecklist = (list) => {
     setChecklist(list);
-    appDb.checklists.save(destination.id, list);
+    const destKey = safeDest.id || safeDest.name || 'default_dest';
+    appDb.checklists.save(destKey, list);
   };
 
   const handleToggleCheck = (index) => {
     const updated = [...checklist];
-    updated[index].checked = !updated[index].checked;
-    saveChecklist(updated);
+    if (updated[index]) {
+      updated[index].checked = !updated[index].checked;
+      saveChecklist(updated);
+    }
   };
 
   const handleAddCustomItem = (e) => {
@@ -88,15 +111,17 @@ export default function ItineraryViewer({
 
   const handleResetChecklist = () => {
     if (window.confirm('체크리스트를 처음 상태로 초기화할까요?')) {
-      appDb.checklists.reset(destination.id);
+      const destKey = safeDest.id || safeDest.name || 'default_dest';
+      appDb.checklists.reset(destKey);
+      const rawEssentials = Array.isArray(safeDest.essentials) ? safeDest.essentials : [];
       const defaults = [
-        ...destination.essentials.map(item => ({ text: item, checked: false, category: 'essential' })),
+        ...rawEssentials.map(item => ({ text: item, checked: false, category: 'essential' })),
         { text: '휴대폰 충전기', checked: false, category: 'electronics' },
         { text: '개인 세면도구', checked: false, category: 'toiletries' },
         { text: '편한 여벌 옷', checked: false, category: 'clothing' },
-        { text: '상비약 (종합감기약, 대역전)', checked: false, category: 'other' }
+        { text: '상비약 (종합감기약, 소화제)', checked: false, category: 'other' }
       ];
-      if (destination.type === 'international') {
+      if (safeDest.type === 'international') {
         defaults.unshift(
           { text: '여권 및 여권 복사본', checked: false, category: 'essential' },
           { text: '해외 매직 플러그 (어댑터)', checked: false, category: 'electronics' },
@@ -112,62 +137,73 @@ export default function ItineraryViewer({
     saveChecklist(updated);
   };
 
-  // Always use original Korean name for itinerary lookup (keys in data are Korean)
+  // Dynamic AI itinerary calculation
   const [isGenerating, setIsGenerating] = useState(false);
   const [activeItineraryData, setActiveItineraryData] = useState({});
 
   useEffect(() => {
     setIsGenerating(true);
     const timer = setTimeout(() => {
-      const data = getPolishedItinerary(destination, style, duration);
-      setActiveItineraryData(data);
-      setIsGenerating(false);
-    }, 1500); // Simulate AI calculation time
+      try {
+        const data = getPolishedItinerary(safeDest, style, duration);
+        setActiveItineraryData(data || {});
+      } catch (err) {
+        console.warn('[ItineraryViewer] Itinerary calculation notice:', err);
+        setActiveItineraryData({});
+      } finally {
+        setIsGenerating(false);
+      }
+    }, 400); // Fast responsive feel
     return () => clearTimeout(timer);
-  }, [destination, style, duration]);
+  }, [safeDest.name, style, duration]);
 
   const handleRegenerateSlot = (dayNum, actIndex, currentCat) => {
     const usedIds = [];
     Object.values(activeItineraryData).forEach(dayArr => {
-      dayArr.forEach(act => {
-        if (act.id) usedIds.push(act.id);
-      });
+      if (Array.isArray(dayArr)) {
+        dayArr.forEach(act => {
+          if (act?.id) usedIds.push(act.id);
+        });
+      }
     });
 
     const dayZone = ['center', 'east', 'west', 'north', 'south'][(dayNum - 1) % 5];
-    const newSpot = regenerateSlot(destination.name, destination.country, style, currentCat, dayZone, usedIds);
+    const newSpot = regenerateSlot(safeDest.name, safeDest.country, style, currentCat, dayZone, usedIds);
     
     if (newSpot) {
       setActiveItineraryData(prev => {
         const newData = { ...prev };
-        const newAct = { ...newData[dayNum][actIndex] };
-        newAct.id = newSpot.id;
-        // Keep the emoji prefix if it exists
-        const parts = newAct.title.split(' ');
-        if (parts.length > 1 && /[\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF]/.test(parts[0])) {
-          newAct.title = parts[0] + ' ' + newSpot.name;
-        } else {
-          newAct.title = newSpot.name;
+        if (newData[dayNum] && newData[dayNum][actIndex]) {
+          const newAct = { ...newData[dayNum][actIndex] };
+          newAct.id = newSpot.id;
+          const parts = (newAct.title || '').split(' ');
+          if (parts.length > 1 && /[\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF]/.test(parts[0])) {
+            newAct.title = parts[0] + ' ' + newSpot.name;
+          } else {
+            newAct.title = newSpot.name;
+          }
+          newAct.desc = newSpot.desc;
+          newAct.categoryType = newSpot.category || newAct.categoryType;
+          newData[dayNum][actIndex] = newAct;
         }
-        newAct.desc = newSpot.desc;
-        newAct.categoryType = newSpot.category || newAct.categoryType;
-        newData[dayNum][actIndex] = newAct;
         return newData;
       });
     } else {
       alert(isEn ? 'No more alternative places available for this category.' : '이 카테고리의 대체 가능한 다른 장소가 더 이상 없습니다.');
     }
   };
-  const neighbors = NEIGHBOR_MAPPING[destination.name] || [];
+
+  const neighbors = NEIGHBOR_MAPPING[safeDest.name] || [];
 
   const [isVisited, setIsVisited] = useState(false);
 
   useEffect(() => {
-    setIsVisited(appDb.visited.isVisited(destination.id));
+    const destKey = safeDest.id || safeDest.name;
+    setIsVisited(appDb.visited.isVisited(destKey));
     return appDb.subscribe('visited', () => {
-      setIsVisited(appDb.visited.isVisited(destination.id));
+      setIsVisited(appDb.visited.isVisited(destKey));
     });
-  }, [destination]);
+  }, [safeDest.id, safeDest.name]);
 
   const handleToggleVisited = () => {
     if (!appDb.auth.getCurrentUserId()) {
@@ -175,154 +211,184 @@ export default function ItineraryViewer({
       return;
     }
 
+    const destKey = safeDest.id || safeDest.name;
     if (isVisited) {
-      appDb.visited.remove(destination.id);
+      appDb.visited.remove(destKey);
       setIsVisited(false);
-      alert(isEn ? `🗑️ [${destination.name}] removed from visited list.` : `🗑️ [${destination.name}] 다녀온 도시 목록에서 해제되었습니다.`);
+      alert(isEn ? `🗑️ [${safeDest.name}] removed from visited list.` : `🗑️ [${safeDest.name}] 다녀온 도시 목록에서 해제되었습니다.`);
     } else {
       const visitObj = {
-        id: destination.id,
-        name: destination.name,
-        country: destination.country,
-        continent: destination.continent,
-        imageUrl: destination.imageUrl,
-        tagline: destination.tagline,
+        id: destKey,
+        name: safeDest.name,
+        country: safeDest.country,
+        continent: safeDest.continent,
+        imageUrl: safeDest.imageUrl,
+        tagline: safeDest.tagline,
         visitedDate: new Date().toISOString().split('T')[0],
         rating: 5,
         memo: ''
       };
       appDb.visited.add(visitObj);
       setIsVisited(true);
-      alert(isEn ? `🎉 [${destination.name}] added to visited cities list!` : `🎉 [${destination.name}] 다녀온 도시 목록에 등록되었습니다! "다녀온 도시" 탭에서 확인해 보세요.`);
+      alert(isEn ? `🎉 [${safeDest.name}] added to visited cities list!` : `🎉 [${safeDest.name}] 다녀온 도시 목록에 등록되었습니다! "다녀온 도시" 탭에서 확인해 보세요.`);
     }
   };
 
-
   const [mapInstance, setMapInstance] = useState(null);
 
-  // Initialize Map
+  // Initialize Map safely
   useEffect(() => {
-    const [cityLat, cityLng] = getCityCoordinates(destination.name, destination.country);
-    const map = L.map('itinerary-map', {
-      zoomControl: true,
-      scrollWheelZoom: false
-    }).setView([cityLat, cityLng], 12);
+    const container = document.getElementById('itinerary-map');
+    if (!container) return;
 
-    L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=ko', {
-      attribution: '&copy; Google Maps',
-      maxZoom: 20
-    }).addTo(map);
+    if (container._leaflet_id) {
+      container._leaflet_id = null;
+    }
 
-    setMapInstance(map);
+    let cityLat = 37.5665;
+    let cityLng = 126.9780;
+
+    if (safeDest.coordinates?.lat && safeDest.coordinates?.lng) {
+      cityLat = Number(safeDest.coordinates.lat);
+      cityLng = Number(safeDest.coordinates.lng);
+    } else {
+      const coords = getCityCoordinates(safeDest.name || '', safeDest.country || '');
+      if (Array.isArray(coords) && Number.isFinite(coords[0]) && Number.isFinite(coords[1])) {
+        cityLat = coords[0];
+        cityLng = coords[1];
+      }
+    }
+
+    let map;
+    try {
+      map = L.map(container, {
+        zoomControl: true,
+        scrollWheelZoom: false
+      }).setView([cityLat, cityLng], 12);
+
+      L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=ko', {
+        attribution: '&copy; Google Maps',
+        maxZoom: 20
+      }).addTo(map);
+
+      setMapInstance(map);
+    } catch (err) {
+      console.warn('[ItineraryViewer] Leaflet init error:', err);
+    }
 
     return () => {
-      map.remove();
-    };
-  }, [destination]);
-
-  // Update Markers & Routes
-  useEffect(() => {
-    if (!mapInstance) return;
-
-    mapInstance.eachLayer((layer) => {
-      if (layer instanceof L.Marker || layer instanceof L.Polyline) {
-        mapInstance.removeLayer(layer);
+      if (map) {
+        try { map.remove(); } catch (e) {}
       }
-    });
-
-    const [cityLat, cityLng] = getCityCoordinates(destination.name, destination.country);
-    
-    const dayColors = {
-      1: '#6366f1',
-      2: '#06b6d4',
-      3: '#10b981',
-      4: '#f59e0b',
-      5: '#ec4899'
     };
+  }, [safeDest.name]);
 
-    const allCoords = [];
-    const placedMarkerCoords = [];
+  // Update Markers & Routes safely
+  useEffect(() => {
+    if (!mapInstance || !activeItineraryData) return;
 
-    for (let dayNum = 1; dayNum <= duration; dayNum++) {
-      const dayActivities = activeItineraryData[dayNum] || [];
-      const dayColor = dayColors[dayNum] || '#6366f1';
-      const dayPathCoords = [];
-
-      dayActivities.forEach((act, actIndex) => {
-        const rawCoords = getLandmarkCoordinates(destination.name, act.title, dayNum, actIndex, destination.country);
-        
-        // Anti-overlap jittering algorithm: if another marker is within ~150m, fan out gently
-        let finalLat = rawCoords[0];
-        let finalLng = rawCoords[1];
-
-        const overlappingCount = placedMarkerCoords.filter(p => {
-          const dLat = Math.abs(p[0] - finalLat);
-          const dLng = Math.abs(p[1] - finalLng);
-          return dLat < 0.002 && dLng < 0.002;
-        }).length;
-
-        if (overlappingCount > 0) {
-          const angle = (overlappingCount * 75 + dayNum * 45 + actIndex * 30) * (Math.PI / 180);
-          const offsetDist = 0.002 + (overlappingCount * 0.0006); // ~200m offset fan-out
-          finalLat += Math.sin(angle) * offsetDist;
-          finalLng += Math.cos(angle) * offsetDist;
+    try {
+      mapInstance.eachLayer((layer) => {
+        if (layer instanceof L.Marker || layer instanceof L.Polyline) {
+          mapInstance.removeLayer(layer);
         }
-
-        const actCoords = [finalLat, finalLng];
-        placedMarkerCoords.push(actCoords);
-        dayPathCoords.push(actCoords);
-        allCoords.push(actCoords);
-
-        const divIcon = L.divIcon({
-          className: 'custom-map-marker',
-          html: `<div class="marker-dot" style="background-color: ${dayColor}; box-shadow: 0 0 10px ${dayColor};">${dayNum}-${actIndex + 1}</div>`,
-          iconSize: [26, 26],
-          iconAnchor: [13, 13]
-        });
-
-        const zIndexOffset = (dayNum * 100) + (actIndex * 10);
-
-        L.marker(actCoords, { 
-          icon: divIcon,
-          zIndexOffset: zIndexOffset
-        })
-          .addTo(mapInstance)
-          .bindPopup(`
-            <div style="color: #0b0f19; font-family: sans-serif; font-size: 0.85rem; padding: 2px;">
-              <strong style="color: ${dayColor}; display: block; margin-bottom: 2px;">☀️ DAY ${dayNum} - 🕒 ${act.time}</strong>
-              <strong style="font-size: 0.9rem; display: block; margin-bottom: 4px;">${act.title}</strong>
-              <span style="color: #555; display: block; font-size: 0.75rem; line-height: 1.3;">${act.desc}</span>
-            </div>
-          `);
       });
 
-      if (dayPathCoords.length >= 2) {
-        L.polyline(dayPathCoords, {
-          color: dayColor,
-          weight: 3.5,
-          opacity: 0.7,
-          dashArray: '7, 7'
-        }).addTo(mapInstance);
+      const dayColors = {
+        1: '#6366f1',
+        2: '#06b6d4',
+        3: '#10b981',
+        4: '#f59e0b',
+        5: '#ec4899'
+      };
+
+      const allCoords = [];
+      const placedMarkerCoords = [];
+
+      for (let dayNum = 1; dayNum <= duration; dayNum++) {
+        const dayActivities = activeItineraryData[dayNum] || [];
+        const dayColor = dayColors[dayNum] || '#6366f1';
+        const dayPathCoords = [];
+
+        dayActivities.forEach((act, actIndex) => {
+          if (!act) return;
+          const rawCoords = getLandmarkCoordinates(safeDest.name || '', act.title || '', dayNum, actIndex, safeDest.country || '');
+          
+          if (!Array.isArray(rawCoords) || !Number.isFinite(rawCoords[0]) || !Number.isFinite(rawCoords[1])) return;
+
+          let finalLat = rawCoords[0];
+          let finalLng = rawCoords[1];
+
+          const overlappingCount = placedMarkerCoords.filter(p => {
+            const dLat = Math.abs(p[0] - finalLat);
+            const dLng = Math.abs(p[1] - finalLng);
+            return dLat < 0.002 && dLng < 0.002;
+          }).length;
+
+          if (overlappingCount > 0) {
+            const angle = (overlappingCount * 75 + dayNum * 45 + actIndex * 30) * (Math.PI / 180);
+            const offsetDist = 0.002 + (overlappingCount * 0.0006);
+            finalLat += Math.sin(angle) * offsetDist;
+            finalLng += Math.cos(angle) * offsetDist;
+          }
+
+          const actCoords = [finalLat, finalLng];
+          placedMarkerCoords.push(actCoords);
+          dayPathCoords.push(actCoords);
+          allCoords.push(actCoords);
+
+          const divIcon = L.divIcon({
+            className: 'custom-map-marker',
+            html: `<div class="marker-dot" style="background-color: ${dayColor}; box-shadow: 0 0 10px ${dayColor};">${dayNum}-${actIndex + 1}</div>`,
+            iconSize: [26, 26],
+            iconAnchor: [13, 13]
+          });
+
+          const zIndexOffset = (dayNum * 100) + (actIndex * 10);
+
+          L.marker(actCoords, { 
+            icon: divIcon,
+            zIndexOffset: zIndexOffset
+          })
+            .addTo(mapInstance)
+            .bindPopup(`
+              <div style="color: #0b0f19; font-family: sans-serif; font-size: 0.85rem; padding: 2px;">
+                <strong style="color: ${dayColor}; display: block; margin-bottom: 2px;">☀️ DAY ${dayNum} - 🕒 ${act.time || '10:00'}</strong>
+                <strong style="font-size: 0.9rem; display: block; margin-bottom: 4px;">${act.title || ''}</strong>
+                <span style="color: #555; display: block; font-size: 0.75rem; line-height: 1.3;">${act.desc || ''}</span>
+              </div>
+            `);
+        });
+
+        if (dayPathCoords.length >= 2) {
+          L.polyline(dayPathCoords, {
+            color: dayColor,
+            weight: 3.5,
+            opacity: 0.7,
+            dashArray: '7, 7'
+          }).addTo(mapInstance);
+        }
       }
+
+      if (allCoords.length > 0) {
+        const bounds = L.latLngBounds(allCoords);
+        mapInstance.fitBounds(bounds, { padding: [40, 40] });
+      }
+    } catch (err) {
+      console.warn('[ItineraryViewer] Map marker update notice:', err);
     }
-
-    if (allCoords.length > 0) {
-      const bounds = L.latLngBounds(allCoords);
-      mapInstance.fitBounds(bounds, { padding: [40, 40] });
-    }
-  }, [mapInstance, activeItineraryData, duration]);
-
-
+  }, [mapInstance, activeItineraryData, duration, safeDest.name]);
 
   const STYLE_NAMES = {
     healing: isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식',
     activity: isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험',
     culture: isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화',
+    foodTour: isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행',
     food: isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행'
   };
   const getStyleKoreanName = (styleKey) => STYLE_NAMES[styleKey] || styleKey;
 
-  const weatherInfo = getClothingAndWeatherGuide(destination.name, destination.country, isEn);
+  const weatherInfo = getClothingAndWeatherGuide(safeDest.name || '', safeDest.country || '', isEn);
 
   return (
     <div className="fade-in">
@@ -366,8 +432,8 @@ export default function ItineraryViewer({
           }}
         >
           <img 
-            src={translatedDest.imageUrl} 
-            alt={translatedDest.name} 
+            src={translatedDest.imageUrl || 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80'} 
+            alt={translatedDest.name || 'Destination'} 
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
           />
         </div>
@@ -379,21 +445,21 @@ export default function ItineraryViewer({
               {translatedDest.type === 'domestic' ? (isEn ? 'DOMESTIC' : '국내 여행지') : (isEn ? 'INTERNATIONAL' : '해외 여행지')}
             </span>
             <span className="badge badge-emerald">{displayContinent}</span>
-            <span className="badge badge-amber">💰 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency} ({translatedDest.currencySymbol})</span>
+            <span className="badge badge-amber">💰 {isEn ? 'Currency:' : '통화:'} {translatedDest.currency || 'KRW'} ({translatedDest.currencySymbol || '₩'})</span>
           </div>
 
           <h1 style={{ fontSize: '2.5rem', fontWeight: 800, margin: '0.35rem 0', color: 'var(--text-primary)' }}>
-            {translatedDest.name}
+            {translatedDest.name || '추천 여행지'}
             <span style={{ fontSize: '1.1rem', marginLeft: '0.75rem', fontWeight: 400, color: 'var(--text-secondary)' }}>
-              {translatedDest.englishName}, {translatedDest.country}
+              {translatedDest.englishName || ''}{translatedDest.country ? `, ${translatedDest.country}` : ''}
             </span>
           </h1>
 
           <p style={{ color: 'var(--color-accent)', fontSize: '1.05rem', fontWeight: 600, marginBottom: '0.5rem' }}>
-            "{translatedDest.tagline}"
+            "{translatedDest.tagline || ''}"
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>
-            {translatedDest.description}
+            {translatedDest.description || ''}
           </p>
         </div>
       </div>
@@ -401,21 +467,21 @@ export default function ItineraryViewer({
       {/* Weather & Clothing Recommendation Guide Panel */}
       <div className="glass-panel" style={{ marginBottom: '2rem', background: 'rgba(15, 23, 42, 0.4)', borderLeft: '4px solid var(--color-accent)' }}>
         <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
-          <div style={{ fontSize: '3rem', lineHeight: 1 }}>{weatherInfo.icon}</div>
+          <div style={{ fontSize: '3rem', lineHeight: 1 }}>{weatherInfo?.icon || '🌤️'}</div>
           <div style={{ flex: 1, minWidth: '240px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
               <span className="badge badge-amber" style={{ fontSize: '11px', fontWeight: 800 }}>
-                🌡️ {weatherInfo.tempC}°C
+                🌡️ {weatherInfo?.tempC || 23}°C
               </span>
               <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-primary)' }}>
-                {weatherInfo.summary} (Lat: {weatherInfo.lat}°)
+                {weatherInfo?.summary || '쾌적한 날씨'} (Lat: {weatherInfo?.lat || 37.5}°)
               </span>
             </div>
             <h4 style={{ fontSize: '0.9rem', fontWeight: 800, margin: '0.25rem 0', color: 'var(--color-accent)' }}>
               👕 {isEn ? 'Recommended Outfit & Packing Guide:' : '추천 여행 복장 & 코디 가이드:'}
             </h4>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: 0, lineHeight: 1.4 }}>
-              {weatherInfo.outfit}
+              {weatherInfo?.outfit || '편안한 일상복과 걷기 편한 신발을 권장합니다.'}
             </p>
           </div>
         </div>
@@ -452,50 +518,52 @@ export default function ItineraryViewer({
             </select>
           </div>
 
-          {/* Style Selector */}
+          {/* Travel Style Selector */}
           <div>
             <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
-              {isEn ? 'Travel Theme' : '여행 테마'}
+              {isEn ? 'Travel Style' : '여행 테마 선택'}
             </span>
-            <div style={{ display: 'flex', gap: '0.25rem', flexWrap: 'wrap' }}>
-              {availableStyles.map((s) => (
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              {['healing', 'activity', 'culture', 'foodTour'].map((sKey) => (
                 <button
-                  key={s}
-                  onClick={() => setStyle(s)}
-                  className={`btn ${style === s ? 'btn-accent' : 'btn-secondary'}`}
-                  style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}
+                  key={sKey}
+                  onClick={() => setStyle(sKey)}
+                  className={`btn ${style === sKey ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ fontSize: '0.85rem', padding: '0.4rem 0.8rem' }}
                 >
-                  {getStyleKoreanName(s)}
+                  {getStyleKoreanName(sKey)}
                 </button>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Action triggers */}
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+        {/* Action Buttons: Planner & Budget Hand-off */}
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
           <button 
-            onClick={() => onStartPlanning(destination, duration, style)} 
+            onClick={() => onStartPlanning && onStartPlanning(safeDest, duration, activeItineraryData)}
             className="btn btn-primary"
-            style={{ fontSize: '0.9rem' }}
+            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
           >
-            ✈️ {isEn ? 'Import to Custom Planner (Edit)' : '셀프 플래너로 가져오기 (편집)'}
+            📅 {isEn ? 'Import into Planner' : '이 코스로 일정 편집하기'}
           </button>
+          
           <button 
-            onClick={() => onStartBudgeting(destination)} 
-            className="btn btn-accent"
-            style={{ fontSize: '0.9rem' }}
+            onClick={() => onStartBudgeting && onStartBudgeting(safeDest, duration)}
+            className="btn btn-secondary"
+            style={{ fontSize: '0.85rem', padding: '0.5rem 1rem' }}
           >
-            💰 {isEn ? 'Calculate Travel Budget' : '예산 수립하기'}
+            💰 {isEn ? 'Calculate Budget' : '예산 장부 쓰기'}
           </button>
+
+          {/* Visited Toggle Button */}
           <button 
-            onClick={handleToggleVisited} 
-            className="btn"
+            onClick={handleToggleVisited}
+            className={`btn ${isVisited ? 'btn-primary' : 'btn-secondary'}`}
             style={{ 
-              fontSize: '0.9rem', 
-              background: isVisited ? 'var(--color-success)' : 'rgba(255,255,255,0.05)', 
-              color: '#ffffff',
-              border: '1px solid var(--glass-border)'
+              fontSize: '0.85rem', 
+              padding: '0.5rem 1rem',
+              borderColor: isVisited ? 'var(--color-primary)' : 'var(--glass-border)'
             }}
           >
             {isVisited ? (isEn ? '💚 Visited City!' : '💚 다녀온 도시!') : (isEn ? '🤍 Mark Visited' : '🤍 가본 도시 등록')}
@@ -525,7 +593,6 @@ export default function ItineraryViewer({
             : '지도 상의 번호는 각 일차(Day)와 해당 활동 순서를 뜻합니다 (예: 1-2 = 1일차 2번째 활동). 점선은 일차별 이동 동선입니다.'}
         </p>
       </div>
-
 
       {/* Two Column Layout: Itinerary & Packing Checklist */}
       <div className="grid-2" style={{ alignItems: 'flex-start' }}>
@@ -570,10 +637,11 @@ export default function ItineraryViewer({
                 ) : (
                   <div className="timeline" style={{ position: 'relative', borderLeft: '2px dashed var(--glass-border)', marginLeft: '1rem', paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                     {dayActivities.map((act, actIndex) => {
+                      if (!act) return null;
                       const displayTitle = isEn ? translateActivityTitle(act.title, actIndex, translatedDest.name) : act.title;
                       const displayDesc = isEn ? translateActivityDesc(act.desc, translatedDest.name) : act.desc;
 
-                      // Category badge helper (Strictly based on categoryType to prevent false positives)
+                      // Category badge helper
                       let catBadge = null;
                       if (act.categoryType === 'relaxation') {
                         catBadge = <span className="badge badge-emerald" style={{ fontSize: '10px', padding: '2px 8px', marginRight: '8px', flexShrink: 0 }}>{isEn ? '🌿 Relaxation' : '🌿 힐링/휴식'}</span>;
@@ -623,7 +691,7 @@ export default function ItineraryViewer({
                             
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
                               <div className="timeline-time" style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '1.1rem' }}>
-                                {act.time}
+                                {act.time || '10:00'}
                               </div>
                               <button 
                                 onClick={() => handleRegenerateSlot(dayNum, actIndex, act.categoryType)}
@@ -667,7 +735,7 @@ export default function ItineraryViewer({
           </h3>
 
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '-0.75rem' }}>
-            {isEn ? `Essential travel items for ${translatedDest.name}. Check off items as you pack.` : `기본적인 준비물과 ${destination.name} 맞춤 아이템 목록입니다. 체크하며 가방을 싸보세요.`}
+            {isEn ? `Essential travel items for ${translatedDest.name}. Check off items as you pack.` : `기본적인 준비물과 ${safeDest.name || '여행지'} 맞춤 아이템 목록입니다. 체크하며 가방을 싸보세요.`}
           </p>
 
           {/* Add custom item form */}
@@ -679,13 +747,13 @@ export default function ItineraryViewer({
               onChange={(e) => setNewItemText(e.target.value)}
               style={{ flex: 1, padding: '0.5rem 0.8rem', fontSize: '0.85rem' }}
             />
-            <button type="submit" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
-              {isEn ? 'Add' : '추가'}
+            <button type="submit" className="btn btn-secondary" style={{ padding: '0.5rem 0.8rem', fontSize: '0.85rem' }}>
+              ➕ {isEn ? 'Add' : '추가'}
             </button>
           </form>
 
-          {/* Checklist render grouped */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', maxHeight: '420px', overflowY: 'auto', paddingRight: '0.5rem' }}>
+          {/* Checklist items */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxHeight: '420px', overflowY: 'auto', paddingRight: '0.25rem' }}>
             {checklist.map((item, index) => (
               <div 
                 key={index} 
@@ -693,10 +761,12 @@ export default function ItineraryViewer({
                   display: 'flex', 
                   alignItems: 'center', 
                   justifyContent: 'space-between',
-                  background: 'rgba(255,255,255,0.01)',
-                  padding: '0.5rem 0.75rem',
+                  padding: '0.6rem 0.8rem', 
+                  background: item.checked ? 'rgba(255,255,255,0.01)' : 'rgba(255,255,255,0.03)', 
                   borderRadius: 'var(--radius-sm)',
-                  border: '1px solid rgba(255,255,255,0.03)'
+                  border: '1px solid var(--glass-border)',
+                  opacity: item.checked ? 0.6 : 1,
+                  transition: 'all 0.2s'
                 }}
               >
                 <label className="checkbox-container" style={{ flex: 1 }}>

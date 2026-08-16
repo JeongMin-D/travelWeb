@@ -9,6 +9,7 @@ import VisitedTracker from './components/VisitedTracker';
 import AdminDashboard from './components/AdminDashboard';
 import AuthModal from './components/AuthModal';
 import AuthRequiredGuard from './components/AuthRequiredGuard';
+import ErrorBoundary from './components/ErrorBoundary';
 import { destinations as defaultDestinations } from './data/destinations';
 import appDb from './db/appDb';
 
@@ -282,15 +283,17 @@ function App() {
           )}
 
           {activeTab === 'itinerary' && selectedDest && (
-            <ItineraryViewer 
-              destination={selectedDest}
-              initialDuration={selectedDuration}
-              initialStyle={selectedStyle}
-              onBack={() => setActiveTab('dashboard')}
-              onStartPlanning={handleStartPlanning}
-              onStartBudgeting={handleStartBudgeting}
-              lang={language}
-            />
+            <ErrorBoundary onReset={() => setActiveTab('dashboard')}>
+              <ItineraryViewer 
+                destination={selectedDest}
+                initialDuration={selectedDuration}
+                initialStyle={selectedStyle}
+                onBack={() => setActiveTab('dashboard')}
+                onStartPlanning={handleStartPlanning}
+                onStartBudgeting={handleStartBudgeting}
+                lang={language}
+              />
+            </ErrorBoundary>
           )}
 
           {activeTab === 'manual' && (
