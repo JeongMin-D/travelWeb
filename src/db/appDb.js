@@ -4,12 +4,14 @@
  * Features:
  * - Multi-tenant User Authentication (login, signup, logout, role-based access control)
  * - User-scoped data isolation (trips, budgets, expenses, visited, checklists)
+ * - User Feedback & Bug Reporting with Cloud Sync & Email Dispatch (feedback)
  * - Live Google Firebase Firestore Cloud Database Synchronization (cloud)
  * - Comprehensive Administrator Data Engine (admin)
  * - Reactive Pub/Sub event bus
  */
 
 import cloudDb from './firebase.js';
+import { sendFeedbackEmail, getEmailConfig, saveEmailConfig } from '../services/emailService.js';
 
 const DB_PREFIX = 'voyage_db_';
 
@@ -146,6 +148,14 @@ class AppDB {
           this._notify('custom_destinations', customDests);
         }
       });
+
+      // 6. Listen to user feedbacks
+      cloudDb.subscribeCollection('feedback', (cloudFeedbacks) => {
+        if (cloudFeedbacks && Array.isArray(cloudFeedbacks)) {
+          this._setItem('feedback', cloudFeedbacks);
+          this._notify('feedback', cloudFeedbacks);
+        }
+      });
     } catch (e) {
       console.warn('[AppDB] Cloud listener setup notice:', e);
     }
@@ -156,12 +166,13 @@ class AppDB {
     if (!cloudDb.isInitialized) return;
 
     try {
-      const [cloudUsers, cloudTrips, cloudExpenses, cloudVisited, cloudCustoms] = await Promise.all([
+      const [cloudUsers, cloudTrips, cloudExpenses, cloudVisited, cloudCustoms, cloudFeedbacks] = await Promise.all([
         cloudDb.getAll('users'),
         cloudDb.getAll('trips'),
         cloudDb.getAll('expenses'),
         cloudDb.getAll('visited'),
-        cloudDb.getAll('custom_destinations')
+        cloudDb.getAll('custom_destinations'),
+        cloudDb.getAll('feedback')
       ]);
 
       let hasUpdated = false;
@@ -184,6 +195,10 @@ class AppDB {
       }
       if (cloudCustoms.length > 0) {
         this._setItem('custom_destinations', cloudCustoms);
+        hasUpdated = true;
+      }
+      if (cloudFeedbacks.length > 0) {
+        this._setItem('feedback', cloudFeedbacks);
         hasUpdated = true;
       }
 
@@ -635,7 +650,84 @@ class AppDB {
   };
 
   // ==========================================
-  // 7. CLOUD DB CONTROLS & SYNCHRONIZATION
+  // 7. USER FEEDBACK & ERROR REPORTING
+  // ==========================================
+  feedback = {
+    getAll: () => {
+      const items = this._getItem('feedback', []);
+      return items.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    },
+
+    create: async (feedbackData) => {
+      const user = this.auth.getCurrentUser();
+      const newFeedback = {
+        ...feedbackData,
+        id: `fb_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+        userId: user ? user.id : 'guest',
+        userName: feedbackData.userName || (user ? user.name || user.username : '익명 사용자'),
+        userEmail: feedbackData.userEmail || (user ? user.email : ''),
+        type: feedbackData.type || 'feature', // 'bug' | 'feature' | 'inquiry' | 'other'
+        status: 'new', // 'new' | 'in_review' | 'resolved'
+        createdAt: new Date().toISOString()
+      };
+
+      // 1. Save to Local Cache
+      const all = this._getItem('feedback', []);
+      const updated = [newFeedback, ...all];
+      this._setItem('feedback', updated);
+
+      // 2. Save to Cloud Firestore
+      cloudDb.set('feedback', newFeedback.id, newFeedback);
+
+      // 3. Dispatch Email to Administrator
+      sendFeedbackEmail(newFeedback).catch(err => {
+        console.warn('[AppDB] Email notification send note:', err);
+      });
+
+      this._notify('feedback', updated);
+      return newFeedback;
+    },
+
+    updateStatus: (id, status) => {
+      const all = this._getItem('feedback', []);
+      let updatedItem = null;
+      const updated = all.map(item => {
+        if (item.id === id) {
+          updatedItem = { ...item, status, updatedAt: new Date().toISOString() };
+          return updatedItem;
+        }
+        return item;
+      });
+      this._setItem('feedback', updated);
+      if (updatedItem) cloudDb.set('feedback', id, updatedItem);
+      this._notify('feedback', updated);
+      return updatedItem;
+    },
+
+    delete: (id) => {
+      const all = this._getItem('feedback', []);
+      const updated = all.filter(f => f.id !== id);
+      this._setItem('feedback', updated);
+      cloudDb.delete('feedback', id);
+      this._notify('feedback', updated);
+      return updated;
+    }
+  };
+
+  // ==========================================
+  // 8. EMAIL NOTIFICATION SETTINGS
+  // ==========================================
+  email = {
+    getConfig: () => getEmailConfig(),
+    saveConfig: (config) => {
+      const ok = saveEmailConfig(config);
+      this._notify('*', 'email_config_update');
+      return ok;
+    }
+  };
+
+  // ==========================================
+  // 9. CLOUD DB CONTROLS & SYNCHRONIZATION
   // ==========================================
   cloud = {
     getStatus: () => {
@@ -660,12 +752,13 @@ class AppDB {
       if (!cloudDb.isInitialized) return { success: false, error: 'Firebase SDK not initialized' };
       const start = Date.now();
       try {
-        const [users, trips, expenses, visited, customs] = await Promise.all([
+        const [users, trips, expenses, visited, customs, feedbacks] = await Promise.all([
           cloudDb.getAll('users'),
           cloudDb.getAll('trips'),
           cloudDb.getAll('expenses'),
           cloudDb.getAll('visited'),
-          cloudDb.getAll('custom_destinations')
+          cloudDb.getAll('custom_destinations'),
+          cloudDb.getAll('feedback')
         ]);
         const latencyMs = Date.now() - start;
         return {
@@ -677,7 +770,8 @@ class AppDB {
             trips: trips.length,
             expenses: expenses.length,
             visited: visited.length,
-            customs: customs.length
+            customs: customs.length,
+            feedback: feedbacks.length
           }
         };
       } catch (err) {
@@ -714,12 +808,18 @@ class AppDB {
         await cloudDb.set('custom_destinations', c.id, c);
       }
 
+      const feedbacks = this._getItem('feedback', []);
+      for (const f of feedbacks) {
+        await cloudDb.set('feedback', f.id, f);
+      }
+
       return {
         users: users.length,
         trips: trips.length,
         expenses: expenses.length,
         visited: visited.length,
-        customs: customs.length
+        customs: customs.length,
+        feedback: feedbacks.length
       };
     },
 
@@ -742,19 +842,23 @@ class AppDB {
       const cloudCustoms = await cloudDb.getAll('custom_destinations');
       if (cloudCustoms.length > 0) this._setItem('custom_destinations', cloudCustoms);
 
+      const cloudFeedbacks = await cloudDb.getAll('feedback');
+      if (cloudFeedbacks.length > 0) this._setItem('feedback', cloudFeedbacks);
+
       this._notify('*', 'cloud_pull');
       return {
         users: cloudUsers.length,
         trips: cloudTrips.length,
         expenses: cloudExpenses.length,
         visited: cloudVisited.length,
-        customs: cloudCustoms.length
+        customs: cloudCustoms.length,
+        feedback: cloudFeedbacks.length
       };
     }
   };
 
   // ==========================================
-  // 8. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
+  // 10. ADMINISTRATOR DATA MANAGEMENT API (Admin Only)
   // ==========================================
   admin = {
     _checkAdmin: () => {
@@ -770,6 +874,7 @@ class AppDB {
       const expenses = this._getItem('expenses', []);
       const visited = this._getItem('visited', []);
       const customs = this._getItem('custom_destinations', []);
+      const feedbacks = this._getItem('feedback', []);
 
       return {
         totalUsers: users.length,
@@ -777,6 +882,8 @@ class AppDB {
         totalExpenses: expenses.length,
         totalVisited: visited.length,
         totalDestinations: 911 + customs.length,
+        totalFeedbacks: feedbacks.length,
+        newFeedbacks: feedbacks.filter(f => f.status === 'new').length,
         totalExpenseKRW: expenses.reduce((sum, e) => sum + (e.amountInKRW || 0), 0)
       };
     },
@@ -955,6 +1062,21 @@ class AppDB {
     deleteDestination: (id) => {
       this.admin._checkAdmin();
       return this.customDestinations.delete(id);
+    },
+
+    getAllFeedbacks: () => {
+      this.admin._checkAdmin();
+      return this.feedback.getAll();
+    },
+
+    updateFeedbackStatus: (id, status) => {
+      this.admin._checkAdmin();
+      return this.feedback.updateStatus(id, status);
+    },
+
+    deleteFeedback: (id) => {
+      this.admin._checkAdmin();
+      return this.feedback.delete(id);
     }
   };
 }

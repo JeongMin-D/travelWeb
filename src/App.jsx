@@ -8,6 +8,7 @@ import WorldMap from './components/WorldMap';
 import VisitedTracker from './components/VisitedTracker';
 import AdminDashboard from './components/AdminDashboard';
 import AuthModal from './components/AuthModal';
+import FeedbackModal from './components/FeedbackModal';
 import AuthRequiredGuard from './components/AuthRequiredGuard';
 import ErrorBoundary from './components/ErrorBoundary';
 import { destinations as defaultDestinations } from './data/destinations';
@@ -21,6 +22,9 @@ function App() {
   const [currentUser, setCurrentUser] = useState(() => appDb.auth.getCurrentUser());
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [authInitialMode, setAuthInitialMode] = useState('login');
+
+  // Feedback Modal state
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
 
   // Theme & Language state backed by AppDB
   const [theme, setTheme] = useState(() => appDb.preferences.getTheme());
@@ -414,11 +418,54 @@ function App() {
         </div>
       </footer>
 
+      {/* Floating Feedback / Bug Report Action Pill */}
+      <button
+        onClick={() => setShowFeedbackModal(true)}
+        style={{
+          position: 'fixed',
+          bottom: '24px',
+          right: '24px',
+          zIndex: 999,
+          background: '#000000',
+          color: '#ffffff',
+          border: '2px solid #3b82f6',
+          borderRadius: '50px',
+          padding: '0.65rem 1.15rem',
+          fontSize: '0.85rem',
+          fontWeight: 700,
+          boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.45rem',
+          transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'translateY(-3px)';
+          e.currentTarget.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.4)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'translateY(0px)';
+          e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.35)';
+        }}
+        title={isEn ? 'Send suggestions or report bugs' : '개선사항 제안 및 버그 제보'}
+      >
+        <span style={{ fontSize: '1.1rem' }}>💬</span>
+        <span>{isEn ? 'Feedback / Bug' : '의견 제안 & 버그 신고'}</span>
+      </button>
+
       {/* Authentication (Login/Signup) Modal */}
       <AuthModal 
         isOpen={showAuthModal} 
         onClose={() => setShowAuthModal(false)} 
         initialMode={authInitialMode}
+        lang={language}
+      />
+
+      {/* Feedback & Bug Reporting Modal */}
+      <FeedbackModal
+        isOpen={showFeedbackModal}
+        onClose={() => setShowFeedbackModal(false)}
         lang={language}
       />
     </div>

@@ -3,7 +3,7 @@ import appDb from '../db/appDb';
 
 export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const isEn = lang === 'en';
-  const [activeSubTab, setActiveSubTab] = useState('overview'); // 'overview' | 'users' | 'destinations' | 'trips' | 'expenses' | 'visited' | 'cloud'
+  const [activeSubTab, setActiveSubTab] = useState('overview'); // 'overview' | 'feedbacks' | 'users' | 'destinations' | 'trips' | 'expenses' | 'visited' | 'cloud'
   
   const [stats, setStats] = useState({});
   const [users, setUsers] = useState([]);
@@ -11,11 +11,15 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   const [trips, setTrips] = useState([]);
   const [expenses, setExpenses] = useState([]);
   const [visited, setVisited] = useState([]);
+  const [feedbacks, setFeedbacks] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [feedbackCategoryFilter, setFeedbackCategoryFilter] = useState('all');
+  const [feedbackStatusFilter, setFeedbackStatusFilter] = useState('all');
 
   // Cloud DB Config state
   const [cloudStatus, setCloudStatus] = useState(() => appDb.cloud.getStatus());
   const [cloudForm, setCloudForm] = useState(() => appDb.cloud.getConfig());
+  const [emailForm, setEmailForm] = useState(() => appDb.email.getConfig());
   const [syncMsg, setSyncMsg] = useState('');
   const [isSyncing, setIsSyncing] = useState(false);
 
@@ -42,6 +46,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       setTrips(appDb.admin.getAllTrips());
       setExpenses(appDb.admin.getAllExpenses());
       setVisited(appDb.admin.getAllVisited());
+      setFeedbacks(appDb.admin.getAllFeedbacks());
       setCloudStatus(appDb.cloud.getStatus());
     } catch (err) {
       console.error('[AdminDashboard] Error loading data:', err);
@@ -66,14 +71,24 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     }
   };
 
+  const handleSaveEmailConfig = (e) => {
+    e.preventDefault();
+    const ok = appDb.email.saveConfig(emailForm);
+    if (ok) {
+      alert(isEn ? 'Email notification configuration saved!' : '관리자 이메일 알림 설정이 저장되었습니다!');
+    } else {
+      alert(isEn ? 'Failed to save email settings.' : '이메일 설정 저장에 실패했습니다.');
+    }
+  };
+
   const handleSyncToCloud = async () => {
     setIsSyncing(true);
     setSyncMsg(isEn ? 'Uploading local database records to Cloud Firestore...' : '로컬 데이터를 클라우드 Firestore로 일괄 업로드 중...');
     try {
       const res = await appDb.cloud.syncLocalToCloud();
       setSyncMsg(isEn 
-        ? `✅ Success! Uploaded ${res.users} users, ${res.trips} trips, ${res.expenses} expenses, ${res.visited} visited records to Cloud DB.` 
-        : `✅ 업로드 완료! 회원 ${res.users}명, 일정 ${res.trips}개, 지출 ${res.expenses}건, 방문기록 ${res.visited}개가 클라우드 DB에 동기화되었습니다.`);
+        ? `✅ Success! Uploaded ${res.users} users, ${res.trips} trips, ${res.expenses} expenses, ${res.visited} visited, ${res.feedback || 0} feedbacks to Cloud DB.` 
+        : `✅ 업로드 완료! 회원 ${res.users}명, 일정 ${res.trips}개, 지출 ${res.expenses}건, 방문기록 ${res.visited}개, 피드백 ${res.feedback || 0}건이 클라우드 DB에 동기화되었습니다.`);
     } catch (err) {
       setSyncMsg(`❌ ${isEn ? 'Sync Error:' : '동기화 오류:'} ${err.message}`);
     } finally {
@@ -135,14 +150,14 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       currency: 'KRW',
       currencySymbol: '₩',
       tagline: '',
-      tags: '힐링, 휴양, 자연',
+      tags: '',
       lat: 37.5665,
       lng: 126.9780
     });
     setShowDestModal(true);
   };
 
-  const handleOpenEditDestModal = (dest) => {
+  const handleEditDest = (dest) => {
     setEditingDest(dest);
     setDestForm({
       name: dest.name || '',
@@ -158,28 +173,32 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
     setShowDestModal(true);
   };
 
-  const handleSaveDestForm = (e) => {
+  const handleSaveDest = (e) => {
     e.preventDefault();
-    const tagArray = destForm.tags.split(',').map(t => t.trim()).filter(Boolean);
-    const destPayload = {
+    if (!destForm.name || !destForm.country) {
+      alert(isEn ? 'Name and country are required.' : '여행지 이름과 국가는 필수입니다.');
+      return;
+    }
+
+    const payload = {
       name: destForm.name.trim(),
       country: destForm.country.trim(),
       continent: destForm.continent,
       currency: destForm.currency.trim().toUpperCase(),
       currencySymbol: destForm.currencySymbol.trim(),
       tagline: destForm.tagline.trim(),
-      tags: tagArray,
-      coordinates: { lat: Number(destForm.lat), lng: Number(destForm.lng) },
-      type: destForm.country.trim() === '대한민국' ? 'domestic' : 'international',
-      imageUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80',
-      description: destForm.tagline.trim() || `${destForm.name.trim()} 여행`
+      tags: destForm.tags.split(',').map(t => t.trim()).filter(Boolean),
+      coordinates: {
+        lat: Number(destForm.lat),
+        lng: Number(destForm.lng)
+      },
+      type: destForm.country === '대한민국' || destForm.country === '한국' ? 'domestic' : 'international'
     };
 
     if (editingDest) {
-      appDb.admin.updateDestination(editingDest.id, destPayload);
+      appDb.admin.updateDestination(editingDest.id, payload);
     } else {
-      destPayload.id = `custom_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`;
-      appDb.admin.createDestination(destPayload);
+      appDb.admin.createDestination(payload);
     }
 
     setShowDestModal(false);
@@ -187,55 +206,60 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
   };
 
   const handleDeleteDest = (dest) => {
-    if (window.confirm(isEn ? `Delete custom destination [${dest.name}]?` : `커스텀 여행지 [${dest.name}]를 삭제하시겠습니까?`)) {
+    if (window.confirm(isEn ? `Delete custom destination [${dest.name}]?` : `[${dest.name}] 커스텀 여행지를 삭제하시겠습니까?`)) {
       appDb.admin.deleteDestination(dest.id);
       loadData();
     }
   };
 
-  // Trip Actions
-  const handleDeleteTrip = (trip) => {
-    if (window.confirm(isEn ? `Delete trip [${trip.title}]?` : `[${trip.title}] 일정을 삭제하시겠습니까?`)) {
-      appDb.admin.deleteTrip(trip.id);
+  // Feedback Actions
+  const handleUpdateFeedbackStatus = (id, newStatus) => {
+    appDb.admin.updateFeedbackStatus(id, newStatus);
+    loadData();
+  };
+
+  const handleDeleteFeedback = (id) => {
+    if (window.confirm(isEn ? 'Delete this feedback item?' : '이 피드백 항목을 삭제하시겠습니까?')) {
+      appDb.admin.deleteFeedback(id);
       loadData();
     }
   };
 
-  // Expense Actions
-  const handleDeleteExpense = (exp) => {
-    if (window.confirm(isEn ? `Delete expense entry [${exp.title}]?` : `[${exp.title}] 지출 내역을 삭제하시겠습니까?`)) {
-      appDb.admin.deleteExpense(exp.id);
-      loadData();
-    }
-  };
+  // Filtering
+  const filteredFeedbacks = feedbacks.filter(f => {
+    const matchCategory = feedbackCategoryFilter === 'all' || f.type === feedbackCategoryFilter;
+    const matchStatus = feedbackStatusFilter === 'all' || f.status === feedbackStatusFilter;
+    const matchSearch = !searchTerm || 
+      (f.title && f.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (f.content && f.content.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (f.userName && f.userName.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (f.userEmail && f.userEmail.toLowerCase().includes(searchTerm.toLowerCase()));
+    return matchCategory && matchStatus && matchSearch;
+  });
 
-  // Visited Actions
-  const handleDeleteVisited = (v) => {
-    if (window.confirm(isEn ? `Delete visit record for [${v.name}]?` : `[${v.name}] 방문 기록을 삭제하시겠습니까?`)) {
-      appDb.admin.deleteVisited(v.id);
-      loadData();
-    }
-  };
-
-  // Filters
   const filteredUsers = users.filter(u => 
     u.username.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    (u.name && u.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    (u.name && u.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (u.email && u.email.toLowerCase().includes(searchTerm.toLowerCase()))
   );
-  const filteredDests = destinations.filter(d => 
+
+  const filteredDestinations = destinations.filter(d => 
     d.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    (d.country && d.country.toLowerCase().includes(searchTerm.toLowerCase()))
+    d.country.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
   const filteredTrips = trips.filter(t => 
-    t.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    (t.ownerName && t.ownerName.toLowerCase().includes(searchTerm.toLowerCase())) ||
-    (t.destinationName && t.destinationName.toLowerCase().includes(searchTerm.toLowerCase()))
+    t.destinationName.toLowerCase().includes(searchTerm.toLowerCase()) || 
+    (t.title && t.title.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (t.ownerName && t.ownerName.toLowerCase().includes(searchTerm.toLowerCase()))
   );
+
   const filteredExpenses = expenses.filter(e => 
     e.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    (e.ownerName && e.ownerName.toLowerCase().includes(searchTerm.toLowerCase())) ||
-    (e.category && e.category.toLowerCase().includes(searchTerm.toLowerCase()))
+    (e.category && e.category.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (e.ownerName && e.ownerName.toLowerCase().includes(searchTerm.toLowerCase()))
   );
+
   const filteredVisited = visited.filter(v => 
     v.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
     (v.ownerName && v.ownerName.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -290,7 +314,8 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', overflowX: 'auto', borderBottom: '2px solid var(--glass-border)', paddingBottom: '0.5rem' }}>
         {[
           { key: 'overview', icon: '📊', nameKo: '시스템 개요', nameEn: 'Overview' },
-          { key: 'cloud', icon: '☁️', nameKo: '클라우드 DB 연동', nameEn: 'Cloud DB Sync' },
+          { key: 'feedbacks', icon: '💬', nameKo: `피드백/버그 (${feedbacks.length})`, nameEn: `Feedbacks (${feedbacks.length})`, badge: feedbacks.filter(f => f.status === 'new').length },
+          { key: 'cloud', icon: '☁️', nameKo: '클라우드 DB & 알림', nameEn: 'Cloud & Email' },
           { key: 'users', icon: '👥', nameKo: `회원 관리 (${users.length})`, nameEn: `Users (${users.length})` },
           { key: 'destinations', icon: '🌍', nameKo: `커스텀 여행지 (${destinations.length})`, nameEn: `Destinations (${destinations.length})` },
           { key: 'trips', icon: '📅', nameKo: `전체 일정 (${trips.length})`, nameEn: `Trips (${trips.length})` },
@@ -306,10 +331,16 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
               fontSize: '0.9rem',
               fontWeight: activeSubTab === tab.key ? 700 : 500,
               whiteSpace: 'nowrap',
-              borderRadius: '8px'
+              borderRadius: '8px',
+              position: 'relative'
             }}
           >
             {tab.icon} {isEn ? tab.nameEn : tab.nameKo}
+            {tab.badge > 0 && (
+              <span style={{ marginLeft: '6px', background: '#ef4444', color: '#fff', fontSize: '0.7rem', padding: '1px 6px', borderRadius: '10px', fontWeight: 800 }}>
+                {tab.badge}
+              </span>
+            )}
           </button>
         ))}
       </div>
@@ -359,6 +390,14 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
       {activeSubTab === 'overview' && (
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+            <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #ef4444' }}>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>💬 {isEn ? 'User Feedbacks & Bugs' : '피드백 / 버그 제보'}</div>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem', color: '#ef4444' }}>
+                {stats.totalFeedbacks || 0}
+                {stats.newFeedbacks > 0 && <span style={{ fontSize: '0.9rem', marginLeft: '0.5rem', color: '#f59e0b' }}>({stats.newFeedbacks} 신규)</span>}
+              </div>
+            </div>
+
             <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #3b82f6' }}>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>👥 {isEn ? 'Registered Users' : '총 등록 회원'}</div>
               <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalUsers || 0}</div>
@@ -379,20 +418,18 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
 
             <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #8b5cf6' }}>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>🌍 {isEn ? 'Custom Destinations' : '커스텀 여행지'}</div>
-              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalCustomDests || 0}</div>
-            </div>
-
-            <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #ec4899' }}>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>✅ {isEn ? 'Visited Footprints' : '다녀온 도시 기록'}</div>
-              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalVisited || 0}</div>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '0.4rem' }}>{stats.totalDestinations || 911}</div>
             </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px' }}>
             <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.1rem' }}>⚡ {isEn ? 'Quick Admin Actions' : '관리자 빠른 바로가기'}</h3>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <button onClick={() => setActiveSubTab('feedbacks')} className="btn btn-primary" style={{ padding: '0.75rem 1.25rem', background: '#ef4444' }}>
+                💬 {isEn ? 'View User Feedbacks' : '피드백/버그 제보 확인'}
+              </button>
               <button onClick={() => setActiveSubTab('cloud')} className="btn btn-primary" style={{ padding: '0.75rem 1.25rem', background: '#2563eb' }}>
-                ☁️ {isEn ? 'Cloud Database Setup' : '무료 클라우드 DB 연동 설정'}
+                ☁️ {isEn ? 'Cloud Database & Email' : '클라우드 DB & 이메일 설정'}
               </button>
               <button onClick={() => setActiveSubTab('users')} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
                 👥 {isEn ? 'Manage Users' : '회원 목록 관리'}
@@ -400,15 +437,138 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
               <button onClick={handleOpenNewDestModal} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
                 🌍 {isEn ? 'Add New City' : '새로운 도시 추가'}
               </button>
-              <button onClick={() => setActiveSubTab('trips')} className="btn btn-secondary" style={{ padding: '0.75rem 1.25rem' }}>
-                📅 {isEn ? 'Inspect Trips' : '여행 일정 전체 열람'}
-              </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* CLOUD DB SETTINGS TAB */}
+      {/* 2. FEEDBACKS & BUG REPORTS TAB */}
+      {activeSubTab === 'feedbacks' && (
+        <div>
+          {/* Filter Bar */}
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.25rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>유형:</span>
+              {['all', 'bug', 'feature', 'inquiry', 'other'].map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setFeedbackCategoryFilter(cat)}
+                  className={`btn ${feedbackCategoryFilter === cat ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem' }}
+                >
+                  {cat === 'all' ? '전체' : cat === 'bug' ? '🐛 버그/오류' : cat === 'feature' ? '💡 기능 개선' : cat === 'inquiry' ? '❓ 문의' : '📝 기타'}
+                </button>
+              ))}
+            </div>
+
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>상태:</span>
+              {['all', 'new', 'in_review', 'resolved'].map(st => (
+                <button
+                  key={st}
+                  onClick={() => setFeedbackStatusFilter(st)}
+                  className={`btn ${feedbackStatusFilter === st ? 'btn-primary' : 'btn-secondary'}`}
+                  style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem' }}
+                >
+                  {st === 'all' ? '전체' : st === 'new' ? '🟡 접수 대기' : st === 'in_review' ? '🔵 검토 중' : '🟢 처리 완료'}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {filteredFeedbacks.length === 0 ? (
+            <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center', color: 'var(--text-secondary)' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>📭</div>
+              <p>{isEn ? 'No feedback messages found.' : '도착한 피드백 또는 버그 제보가 없습니다.'}</p>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {filteredFeedbacks.map((item) => {
+                const typeInfo = {
+                  bug: { label: '🐛 버그/오류', color: '#ef4444', bg: 'rgba(239, 68, 68, 0.1)' },
+                  feature: { label: '💡 기능 개선', color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.1)' },
+                  inquiry: { label: '❓ 일반 문의', color: '#f59e0b', bg: 'rgba(245, 158, 11, 0.1)' },
+                  other: { label: '📝 기타 의견', color: '#8b5cf6', bg: 'rgba(139, 92, 246, 0.1)' }
+                }[item.type] || { label: '💬 피드백', color: '#6b7280', bg: 'rgba(107, 114, 128, 0.1)' };
+
+                return (
+                  <div key={item.id} className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', borderLeft: `5px solid ${typeInfo.color}` }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+                        <span style={{ background: typeInfo.bg, color: typeInfo.color, padding: '0.2rem 0.6rem', borderRadius: '6px', fontSize: '0.75rem', fontWeight: 800 }}>
+                          {typeInfo.label}
+                        </span>
+                        <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>{item.title}</h4>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        {/* Status dropdown */}
+                        <select
+                          value={item.status || 'new'}
+                          onChange={(e) => handleUpdateFeedbackStatus(item.id, e.target.value)}
+                          style={{
+                            padding: '0.35rem 0.65rem',
+                            borderRadius: '6px',
+                            fontSize: '0.8rem',
+                            fontWeight: 700,
+                            background: item.status === 'resolved' ? '#10b981' : item.status === 'in_review' ? '#3b82f6' : '#f59e0b',
+                            color: '#ffffff',
+                            border: 'none',
+                            cursor: 'pointer'
+                          }}
+                        >
+                          <option value="new">🟡 접수 대기</option>
+                          <option value="in_review">🔵 검토 중</option>
+                          <option value="resolved">🟢 처리 완료</option>
+                        </select>
+
+                        {/* Direct Email Reply */}
+                        {item.userEmail && (
+                          <a
+                            href={`mailto:${item.userEmail}?subject=${encodeURIComponent(`[Voyage 답변] ${item.title}`)}&body=${encodeURIComponent(`안녕하세요, ${item.userName}님!\n보내주신 [${item.title}] 건에 대한 답변입니다.\n\n---\n작성자 문의 내용:\n${item.content}\n\n---\n답변 내용:\n`)}`}
+                            className="btn btn-secondary"
+                            style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}
+                          >
+                            ✉️ {isEn ? 'Reply Email' : '답장 메일 보내기'}
+                          </a>
+                        )}
+
+                        <button
+                          onClick={() => handleDeleteFeedback(item.id)}
+                          className="btn btn-secondary"
+                          style={{ padding: '0.35rem 0.6rem', fontSize: '0.8rem', color: '#ef4444' }}
+                          title="삭제"
+                        >
+                          🗑️
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Content text */}
+                    <div style={{ background: 'var(--bg-secondary)', padding: '0.85rem 1rem', borderRadius: '8px', fontSize: '0.9rem', lineHeight: 1.6, whiteSpace: 'pre-wrap', marginBottom: '0.75rem' }}>
+                      {item.content}
+                    </div>
+
+                    {/* Footer info */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: 'var(--text-muted)', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      <div>
+                        👤 <strong>{item.userName}</strong> {item.userEmail ? `(${item.userEmail})` : '(이메일 미기재)'} • 🕒 {item.createdAt ? new Date(item.createdAt).toLocaleString('ko-KR') : ''}
+                      </div>
+                      {item.browserInfo && (
+                        <div style={{ maxWidth: '400px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={item.browserInfo}>
+                          🖥️ {item.browserInfo}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 3. CLOUD DB & EMAIL SETTINGS TAB */}
       {activeSubTab === 'cloud' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           
@@ -449,170 +609,234 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
               </div>
             </div>
 
-            <div style={{ marginTop: '0.85rem', padding: '0.65rem 0.9rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <div>
-                <strong>🔥 {isEn ? 'Firebase Console Link:' : '내 Firebase 콘솔 데이터베이스 바로가기:'}</strong>{' '}
-                <a 
-                  href="https://console.firebase.google.com/project/my-travel-web-a1cb7/firestore" 
-                  target="_blank" 
-                  rel="noreferrer"
-                  style={{ color: '#3b82f6', textDecoration: 'underline', fontWeight: 'bold' }}
-                >
-                  https://console.firebase.google.com/project/my-travel-web-a1cb7/firestore ↗
-                </a>
-              </div>
-              <span style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 600 }}>🟢 Project: my-travel-web-a1cb7</span>
-            </div>
-
             {syncMsg && (
-              <div style={{ marginTop: '0.75rem', padding: '0.75rem', borderRadius: '8px', background: 'var(--bg-secondary)', fontSize: '0.85rem' }}>
+              <div style={{ marginTop: '1rem', padding: '0.75rem', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', fontSize: '0.85rem', fontWeight: 600 }}>
                 {syncMsg}
               </div>
             )}
           </div>
 
-          {/* Optional Custom Firebase Config Form */}
-          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px' }}>
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem' }}>
-              ⚙️ {isEn ? 'Optional: Switch to Custom Firebase Project' : '(선택 사항) 개인 전용 Firebase 프로젝트 연결'}
+          {/* Email Notification Settings Card */}
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', borderLeft: '6px solid #ef4444' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📧 {isEn ? 'Admin Email Notification Dispatch Settings' : '관리자 이메일 실시간 알림 수신 설정'}
             </h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', margin: '0 0 1.25rem 0' }}>
               {isEn 
-                ? 'By default, the built-in zero-setup cloud engine handles all synchronization automatically. If you wish to use your own private Firebase account for your enterprise, enter your credentials below.' 
-                : '기본적으로 아무것도 입력하지 않아도 내장된 클라우드 엔진이 모든 데이터를 자동 동기화합니다. 만약 본인만의 독립된 전용 Google Firebase 프로젝트를 사용하고자 하실 때만 아래 값을 입력해 주세요.'}
+                ? 'When users submit feedback or bug reports, instant email notifications will be sent to your inbox.' 
+                : '사용자가 피드백이나 버그를 접수하면 아래 설정된 관리자 이메일로 알림 메일이 자동 발송됩니다.'}
             </p>
 
-            <form onSubmit={handleSaveCloudConfig} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>apiKey</label>
-                  <input
-                    type="text"
-                    required
-                    value={cloudForm.apiKey || ''}
-                    onChange={(e) => setCloudForm({ ...cloudForm, apiKey: e.target.value })}
-                    placeholder="AIzaSy..."
-                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
-                  />
-                </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>projectId</label>
-                  <input
-                    type="text"
-                    required
-                    value={cloudForm.projectId || ''}
-                    onChange={(e) => setCloudForm({ ...cloudForm, projectId: e.target.value })}
-                    placeholder="my-travel-app-12345"
-                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
-                  />
-                </div>
+            <form onSubmit={handleSaveEmailConfig} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              <div>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                  {isEn ? 'Admin Notification Email' : '알림을 수신할 관리자 이메일'}
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={emailForm.adminEmail}
+                  onChange={(e) => setEmailForm({ ...emailForm, adminEmail: e.target.value })}
+                  placeholder="admin@voyage.travel 또는 본인 이메일"
+                  style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>authDomain</label>
-                  <input
-                    type="text"
-                    value={cloudForm.authDomain || ''}
-                    onChange={(e) => setCloudForm({ ...cloudForm, authDomain: e.target.value })}
-                    placeholder="my-travel-app.firebaseapp.com"
-                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
-                  />
-                </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>appId</label>
-                  <input
-                    type="text"
-                    value={cloudForm.appId || ''}
-                    onChange={(e) => setCloudForm({ ...cloudForm, appId: e.target.value })}
-                    placeholder="1:123456:web:abcdef"
-                    style={{ width: '100%', padding: '0.6rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit', fontFamily: 'monospace' }}
-                  />
-                </div>
+              <div>
+                <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                  {isEn ? 'Dispatch Method' : '메일 전송 방식'}
+                </label>
+                <select
+                  value={emailForm.serviceType}
+                  onChange={(e) => setEmailForm({ ...emailForm, serviceType: e.target.value })}
+                  style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                >
+                  <option value="formsubmit">FormSubmit (무료 다이렉트 이메일 전송)</option>
+                  <option value="formspree">Formspree (Formspree 엔드포인트 연동)</option>
+                  <option value="webhook">Custom Webhook (Slack / Discord / 커스텀 서버)</option>
+                </select>
               </div>
 
-              <button 
-                type="submit" 
-                className="btn btn-primary"
-                style={{ padding: '0.75rem', fontWeight: 'bold', alignSelf: 'flex-start', minWidth: '160px' }}
-              >
-                💾 {isEn ? 'Save Cloud Config' : '클라우드 DB 설정 저장 & 적용'}
-              </button>
+              {emailForm.serviceType === 'formspree' && (
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    Formspree Form ID
+                  </label>
+                  <input
+                    type="text"
+                    value={emailForm.formspreeId || ''}
+                    onChange={(e) => setEmailForm({ ...emailForm, formspreeId: e.target.value })}
+                    placeholder="예: xpzgvqwa"
+                    style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  />
+                </div>
+              )}
+
+              {emailForm.serviceType === 'webhook' && (
+                <div style={{ gridColumn: '1 / -1' }}>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.35rem', fontWeight: 600 }}>
+                    Webhook URL
+                  </label>
+                  <input
+                    type="url"
+                    value={emailForm.webhookUrl || ''}
+                    onChange={(e) => setEmailForm({ ...emailForm, webhookUrl: e.target.value })}
+                    placeholder="https://hooks.slack.com/... 또는 커스텀 엔드포인트"
+                    style={{ width: '100%', padding: '0.65rem', borderRadius: '6px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'inherit' }}
+                  />
+                </div>
+              )}
+
+              <div style={{ gridColumn: '1 / -1' }}>
+                <button type="submit" className="btn btn-primary" style={{ padding: '0.65rem 1.5rem', fontWeight: 700 }}>
+                  💾 {isEn ? 'Save Email Settings' : '이메일 수신 설정 저장하기'}
+                </button>
+              </div>
             </form>
           </div>
-
-          {/* 3-Minute Free Setup Guide */}
-          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '12px', background: 'var(--bg-secondary)' }}>
-            <h3 style={{ margin: '0 0 0.75rem 0', fontSize: '1.05rem' }}>
-              📖 {isEn ? '3-Minute Free Firebase Setup Guide' : '3분 만에 무료 Firebase 클라우드 DB 만드는 방법'}
-            </h3>
-            <ol style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.8, paddingLeft: '1.25rem', margin: 0 }}>
-              <li>
-                <a href="https://console.firebase.google.com/" target="_blank" rel="noreferrer" style={{ color: '#2563eb', fontWeight: 'bold' }}>
-                  Firebase Console (https://console.firebase.google.com/)
-                </a>에 접속하여 Google 계정으로 무료 프로젝트를 생성합니다.
-              </li>
-              <li>좌측 메뉴의 <strong>Firestore Database</strong>를 클릭하고 <strong>데이터베이스 만들기</strong>를 선택합니다 (테스트 모드 시작).</li>
-              <li>프로젝트 설정(톱니바퀴) ➔ 일반 ➔ <strong>내 앱(웹 앱 &lt;/&gt;)</strong>을 추가하면 발급되는 <code>firebaseConfig</code> 객체의 값들을 위의 입력창에 붙여넣고 저장합니다.</li>
-              <li>이제 서로 다른 사용자가 모바일/PC 어디서 접속하든 데이터가 클라우드에 중앙 저장되고 실시간으로 동기화됩니다!</li>
-            </ol>
-          </div>
-
         </div>
       )}
 
-      {/* 2. USERS TAB */}
+      {/* 4. USERS TAB */}
       {activeSubTab === 'users' && (
-        <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
+        <div className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
             <thead>
-              <tr style={{ borderBottom: '2px solid var(--glass-border)', textAlign: 'left' }}>
-                <th style={{ padding: '0.75rem' }}>{isEn ? 'User' : '사용자'}</th>
-                <th style={{ padding: '0.75rem' }}>{isEn ? 'Username' : '아이디'}</th>
-                <th style={{ padding: '0.75rem' }}>{isEn ? 'Role' : '권한'}</th>
-                <th style={{ padding: '0.75rem' }}>{isEn ? 'Email' : '이메일'}</th>
-                <th style={{ padding: '0.75rem' }}>{isEn ? 'Created At' : '가입일'}</th>
-                <th style={{ padding: '0.75rem', textAlign: 'right' }}>{isEn ? 'Actions' : '관리'}</th>
+              <tr style={{ borderBottom: '2px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
+                <th style={{ padding: '0.75rem' }}>사용자</th>
+                <th style={{ padding: '0.75rem' }}>아이디</th>
+                <th style={{ padding: '0.75rem' }}>권한</th>
+                <th style={{ padding: '0.75rem' }}>가입 일시</th>
+                <th style={{ padding: '0.75rem', textAlign: 'right' }}>관리 액션</th>
               </tr>
             </thead>
             <tbody>
-              {filteredUsers.map(u => (
-                <tr key={u.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
+              {filteredUsers.map(user => (
+                <tr key={user.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
                   <td style={{ padding: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <span style={{ fontSize: '1.25rem' }}>{u.avatar || '👤'}</span>
-                    <span style={{ fontWeight: 600 }}>{u.name || u.username}</span>
+                    <span style={{ fontSize: '1.25rem' }}>{user.avatar || '👤'}</span>
+                    <strong>{user.name || user.username}</strong>
                   </td>
-                  <td style={{ padding: '0.75rem', fontFamily: 'monospace' }}>{u.username}</td>
+                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>{user.username}</td>
                   <td style={{ padding: '0.75rem' }}>
                     <span style={{
                       padding: '0.2rem 0.5rem',
-                      borderRadius: '4px',
+                      borderRadius: '6px',
                       fontSize: '0.75rem',
                       fontWeight: 'bold',
-                      background: u.role === 'admin' ? '#4f46e5' : '#e2e8f0',
-                      color: u.role === 'admin' ? '#ffffff' : '#334155'
+                      background: user.role === 'admin' ? '#ef4444' : '#3b82f6',
+                      color: '#ffffff'
                     }}>
-                      {u.role === 'admin' ? '🛡️ ADMIN' : 'USER'}
+                      {user.role === 'admin' ? '🛡️ 관리자' : '👤 일반 회원'}
                     </span>
                   </td>
-                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>{u.email || '-'}</td>
-                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>
-                    {u.createdAt ? u.createdAt.split('T')[0] : '-'}
+                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
+                    {user.createdAt ? new Date(user.createdAt).toLocaleDateString() : '-'}
                   </td>
                   <td style={{ padding: '0.75rem', textAlign: 'right' }}>
                     <button
-                      onClick={() => handleToggleUserRole(u)}
+                      onClick={() => handleToggleUserRole(user)}
                       className="btn btn-secondary"
-                      style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', marginRight: '0.4rem' }}
-                      title="Toggle Admin / User"
+                      style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', marginRight: '0.5rem' }}
                     >
-                      {u.role === 'admin' ? '일반 전환' : '관리자 승격'}
+                      {user.role === 'admin' ? '일반회원으로 전환' : '관리자 권한 부여'}
                     </button>
+                    {user.username !== 'admin' && (
+                      <button
+                        onClick={() => handleDeleteUser(user)}
+                        className="btn btn-secondary"
+                        style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', color: '#ef4444', borderColor: '#ef4444' }}
+                      >
+                        삭제
+                      </button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* 5. DESTINATIONS TAB */}
+      {activeSubTab === 'destinations' && (
+        <div className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', overflowX: 'auto' }}>
+          {filteredDestinations.length === 0 ? (
+            <p style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '2rem 0' }}>
+              {isEn ? 'No custom destinations created yet.' : '등록된 커스텀 여행지가 없습니다. 상단 버튼으로 추가해 보세요!'}
+            </p>
+          ) : (
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
+                  <th style={{ padding: '0.75rem' }}>도시명</th>
+                  <th style={{ padding: '0.75rem' }}>국가 / 대륙</th>
+                  <th style={{ padding: '0.75rem' }}>통화</th>
+                  <th style={{ padding: '0.75rem' }}>한줄 테마</th>
+                  <th style={{ padding: '0.75rem', textAlign: 'right' }}>관리</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredDestinations.map(d => (
+                  <tr key={d.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
+                    <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>{d.name}</td>
+                    <td style={{ padding: '0.75rem' }}>{d.country} ({d.continent})</td>
+                    <td style={{ padding: '0.75rem' }}>{d.currency} ({d.currencySymbol})</td>
+                    <td style={{ padding: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>{d.tagline}</td>
+                    <td style={{ padding: '0.75rem', textAlign: 'right' }}>
+                      <button
+                        onClick={() => handleEditDest(d)}
+                        className="btn btn-secondary"
+                        style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', marginRight: '0.5rem' }}
+                      >
+                        수정
+                      </button>
+                      <button
+                        onClick={() => handleDeleteDest(d)}
+                        className="btn btn-secondary"
+                        style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', color: '#ef4444' }}
+                      >
+                        삭제
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
+
+      {/* 6. TRIPS TAB */}
+      {activeSubTab === 'trips' && (
+        <div className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '2px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
+                <th style={{ padding: '0.75rem' }}>소유 회원</th>
+                <th style={{ padding: '0.75rem' }}>여행지</th>
+                <th style={{ padding: '0.75rem' }}>일정 제목</th>
+                <th style={{ padding: '0.75rem' }}>기간</th>
+                <th style={{ padding: '0.75rem', textAlign: 'right' }}>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredTrips.map(t => (
+                <tr key={t.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
+                  <td style={{ padding: '0.75rem', fontWeight: 600 }}>{t.ownerName}</td>
+                  <td style={{ padding: '0.75rem' }}>{t.destinationName}</td>
+                  <td style={{ padding: '0.75rem' }}>{t.title || '여행 플랜'}</td>
+                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>{t.days ? `${t.days.length}일 코스` : '-'}</td>
+                  <td style={{ padding: '0.75rem', textAlign: 'right' }}>
                     <button
-                      onClick={() => handleDeleteUser(u)}
+                      onClick={() => {
+                        if (window.confirm('이 여행 플랜을 삭제하시겠습니까?')) {
+                          appDb.admin.deleteTrip(t.id);
+                          loadData();
+                        }
+                      }}
                       className="btn btn-secondary"
-                      style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', color: '#dc2626', borderColor: '#fca5a5' }}
-                      title="Delete User"
+                      style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', color: '#ef4444' }}
                     >
                       삭제
                     </button>
@@ -624,214 +848,105 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
         </div>
       )}
 
-      {/* 3. DESTINATIONS TAB */}
-      {activeSubTab === 'destinations' && (
-        <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', overflowX: 'auto' }}>
-          {filteredDests.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-secondary)' }}>
-              {isEn ? 'No custom destinations found.' : '등록된 커스텀 여행지가 없습니다.'}
-            </div>
-          ) : (
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid var(--glass-border)', textAlign: 'left' }}>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Destination' : '도시명'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Country' : '국가'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Continent' : '대륙'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Currency' : '통화'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Tagline' : '한줄 소개'}</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'right' }}>{isEn ? 'Actions' : '관리'}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredDests.map(d => (
-                  <tr key={d.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{d.name}</td>
-                    <td style={{ padding: '0.75rem' }}>{d.country}</td>
-                    <td style={{ padding: '0.75rem' }}>{d.continent}</td>
-                    <td style={{ padding: '0.75rem' }}>{d.currency} ({d.currencySymbol})</td>
-                    <td style={{ padding: '0.75rem', color: 'var(--text-secondary)', maxWidth: '250px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {d.tagline || '-'}
-                    </td>
-                    <td style={{ padding: '0.75rem', textAlign: 'right' }}>
-                      <button
-                        onClick={() => handleOpenEditDestModal(d)}
-                        className="btn btn-secondary"
-                        style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', marginRight: '0.4rem' }}
-                      >
-                        수정
-                      </button>
-                      <button
-                        onClick={() => handleDeleteDest(d)}
-                        className="btn btn-secondary"
-                        style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', color: '#dc2626', borderColor: '#fca5a5' }}
-                      >
-                        삭제
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-        </div>
-      )}
-
-      {/* 4. TRIPS TAB */}
-      {activeSubTab === 'trips' && (
-        <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', overflowX: 'auto' }}>
-          {filteredTrips.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-secondary)' }}>
-              {isEn ? 'No trips recorded yet.' : '등록된 여행 일정이 없습니다.'}
-            </div>
-          ) : (
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid var(--glass-border)', textAlign: 'left' }}>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Owner' : '작성자'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Title' : '일정 제목'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Destination' : '여행지'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Duration' : '기간'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Activities' : '활동 개수'}</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'right' }}>{isEn ? 'Actions' : '관리'}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredTrips.map(t => (
-                  <tr key={t.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{t.ownerName}</td>
-                    <td style={{ padding: '0.75rem' }}>{t.title}</td>
-                    <td style={{ padding: '0.75rem' }}>{t.destinationName}</td>
-                    <td style={{ padding: '0.75rem' }}>{t.duration}일</td>
-                    <td style={{ padding: '0.75rem' }}>{t.activities ? t.activities.length : 0}개 항목</td>
-                    <td style={{ padding: '0.75rem', textAlign: 'right' }}>
-                      <button
-                        onClick={() => handleDeleteTrip(t)}
-                        className="btn btn-secondary"
-                        style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', color: '#dc2626', borderColor: '#fca5a5' }}
-                      >
-                        삭제
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
-        </div>
-      )}
-
-      {/* 5. EXPENSES TAB */}
+      {/* 7. EXPENSES TAB */}
       {activeSubTab === 'expenses' && (
-        <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', overflowX: 'auto' }}>
-          {filteredExpenses.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-secondary)' }}>
-              {isEn ? 'No expenses recorded yet.' : '등록된 지출 내역이 없습니다.'}
-            </div>
-          ) : (
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid var(--glass-border)', textAlign: 'left' }}>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'User' : '사용자'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Title' : '항목'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Category' : '카테고리'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Original Amount' : '현지 금액'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'KRW Amount' : '원화 환산'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Date' : '날짜'}</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'right' }}>{isEn ? 'Actions' : '관리'}</th>
+        <div className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '2px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
+                <th style={{ padding: '0.75rem' }}>회원</th>
+                <th style={{ padding: '0.75rem' }}>지출 항목</th>
+                <th style={{ padding: '0.75rem' }}>카테고리</th>
+                <th style={{ padding: '0.75rem' }}>금액 (원화 환산)</th>
+                <th style={{ padding: '0.75rem', textAlign: 'right' }}>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredExpenses.map(e => (
+                <tr key={e.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
+                  <td style={{ padding: '0.75rem', fontWeight: 600 }}>{e.ownerName}</td>
+                  <td style={{ padding: '0.75rem' }}>{e.title}</td>
+                  <td style={{ padding: '0.75rem' }}>{e.category}</td>
+                  <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>
+                    ₩{(e.amountInKRW || e.amount || 0).toLocaleString()}
+                  </td>
+                  <td style={{ padding: '0.75rem', textAlign: 'right' }}>
+                    <button
+                      onClick={() => {
+                        if (window.confirm('이 지출 기록을 삭제하시겠습니까?')) {
+                          appDb.admin.deleteExpense(e.id);
+                          loadData();
+                        }
+                      }}
+                      className="btn btn-secondary"
+                      style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', color: '#ef4444' }}
+                    >
+                      삭제
+                    </button>
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {filteredExpenses.map(e => (
-                  <tr key={e.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{e.ownerName}</td>
-                    <td style={{ padding: '0.75rem' }}>{e.title}</td>
-                    <td style={{ padding: '0.75rem' }}>{e.category}</td>
-                    <td style={{ padding: '0.75rem' }}>{e.currency} {Number(e.amount).toLocaleString()}</td>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>₩{Number(e.amountInKRW || e.amount).toLocaleString()}</td>
-                    <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>{e.date}</td>
-                    <td style={{ padding: '0.75rem', textAlign: 'right' }}>
-                      <button
-                        onClick={() => handleDeleteExpense(e)}
-                        className="btn btn-secondary"
-                        style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', color: '#dc2626', borderColor: '#fca5a5' }}
-                      >
-                        삭제
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
+              ))}
+            </tbody>
+          </table>
         </div>
       )}
 
-      {/* 6. VISITED TAB */}
+      {/* 8. VISITED TAB */}
       {activeSubTab === 'visited' && (
-        <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '12px', overflowX: 'auto' }}>
-          {filteredVisited.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-secondary)' }}>
-              {isEn ? 'No visited records recorded yet.' : '등록된 방문 기록이 없습니다.'}
-            </div>
-          ) : (
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid var(--glass-border)', textAlign: 'left' }}>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'User' : '사용자'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'City' : '도시명'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Country' : '국가'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Rating' : '별점'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Visited Date' : '방문일'}</th>
-                  <th style={{ padding: '0.75rem' }}>{isEn ? 'Memo' : '후기 메모'}</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'right' }}>{isEn ? 'Actions' : '관리'}</th>
+        <div className="glass-panel" style={{ padding: '1rem', borderRadius: '12px', overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '2px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
+                <th style={{ padding: '0.75rem' }}>회원</th>
+                <th style={{ padding: '0.75rem' }}>다녀온 도시</th>
+                <th style={{ padding: '0.75rem' }}>별점</th>
+                <th style={{ padding: '0.75rem' }}>방문 메모</th>
+                <th style={{ padding: '0.75rem', textAlign: 'right' }}>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredVisited.map(v => (
+                <tr key={v.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
+                  <td style={{ padding: '0.75rem', fontWeight: 600 }}>{v.ownerName}</td>
+                  <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>{v.name} ({v.country})</td>
+                  <td style={{ padding: '0.75rem' }}>{'⭐'.repeat(v.rating || 5)}</td>
+                  <td style={{ padding: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>{v.memo || '-'}</td>
+                  <td style={{ padding: '0.75rem', textAlign: 'right' }}>
+                    <button
+                      onClick={() => {
+                        if (window.confirm('이 방문 기록을 삭제하시겠습니까?')) {
+                          appDb.admin.deleteVisited(v.id);
+                          loadData();
+                        }
+                      }}
+                      className="btn btn-secondary"
+                      style={{ padding: '0.3rem 0.6rem', fontSize: '0.8rem', color: '#ef4444' }}
+                    >
+                      삭제
+                    </button>
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {filteredVisited.map(v => (
-                  <tr key={v.id} style={{ borderBottom: '1px solid var(--glass-border)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{v.ownerName}</td>
-                    <td style={{ padding: '0.75rem', fontWeight: 600 }}>{v.name}</td>
-                    <td style={{ padding: '0.75rem' }}>{v.country}</td>
-                    <td style={{ padding: '0.75rem', color: '#f59e0b' }}>{'★'.repeat(v.rating || 5)}</td>
-                    <td style={{ padding: '0.75rem', color: 'var(--text-secondary)' }}>{v.visitedDate || '-'}</td>
-                    <td style={{ padding: '0.75rem', color: 'var(--text-secondary)', maxWidth: '200px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {v.memo || '-'}
-                    </td>
-                    <td style={{ padding: '0.75rem', textAlign: 'right' }}>
-                      <button
-                        onClick={() => handleDeleteVisited(v)}
-                        className="btn btn-secondary"
-                        style={{ fontSize: '0.75rem', padding: '0.3rem 0.6rem', color: '#dc2626', borderColor: '#fca5a5' }}
-                      >
-                        삭제
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          )}
+              ))}
+            </tbody>
+          </table>
         </div>
       )}
 
-      {/* Destination Modal (Add/Edit) */}
+      {/* Destination Modal */}
       {showDestModal && (
         <div className="modal-overlay" onClick={(e) => { if (e.target === e.currentTarget) setShowDestModal(false); }}>
-          <div className="modal-content" style={{ maxWidth: '520px', width: '92%', borderRadius: '16px', padding: '2rem' }}>
+          <div className="modal-content" style={{ maxWidth: '540px', width: '92%', borderRadius: '16px', padding: '2rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-              <h2 style={{ margin: 0, fontSize: '1.3rem' }}>
-                🌍 {editingDest ? (isEn ? 'Edit Destination' : '여행지 정보 수정') : (isEn ? 'Add New Destination' : '새로운 여행지 등록')}
-              </h2>
-              <button onClick={() => setShowDestModal(false)} style={{ background: 'none', border: 'none', fontSize: '1.4rem', cursor: 'pointer', color: 'inherit' }}>
-                ✕
-              </button>
+              <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800 }}>
+                {editingDest ? '🌍 커스텀 여행지 정보 수정' : '🌍 신규 커스텀 여행지 등록'}
+              </h3>
+              <button onClick={() => setShowDestModal(false)} style={{ background: 'none', border: 'none', fontSize: '1.3rem', cursor: 'pointer', color: 'inherit' }}>✕</button>
             </div>
 
-            <form onSubmit={handleSaveDestForm} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <form onSubmit={handleSaveDest} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>도시명 *</label>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>도시명</label>
                   <input
                     type="text"
                     required
@@ -842,7 +957,7 @@ export default function AdminDashboard({ onExitAdmin, lang = 'en' }) {
                   />
                 </div>
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>국가명 *</label>
+                  <label style={{ display: 'block', fontSize: '0.85rem', marginBottom: '0.3rem', fontWeight: 600 }}>국가명</label>
                   <input
                     type="text"
                     required
