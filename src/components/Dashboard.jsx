@@ -154,55 +154,73 @@ export default function Dashboard({ destinations, onSelectDestination, lang = 'e
       </div>
 
       {/* Filter and Control Panel */}
-      <div className="glass-panel" style={{ marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <div className="glass-panel" style={{ marginBottom: '1.75rem', padding: '1.25rem', borderRadius: '12px' }}>
+        {/* Top Row: Category Tabs + Search Bar */}
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
           
           {/* Filter Buttons */}
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
             <button 
+              type="button"
               className={`filter-button ${filterType === 'all' ? 'active' : ''}`}
               onClick={() => setFilterType('all')}
             >
-              🌐 {isEn ? 'All' : '전체'} ({destinations.length})
+              🌐 {isEn ? 'All Cities' : '전체 도시'} <span style={{ opacity: 0.75, fontSize: '0.85em' }}>({destinations.length})</span>
             </button>
             <button 
+              type="button"
               className={`filter-button ${filterType === 'domestic' ? 'active' : ''}`}
               onClick={() => setFilterType('domestic')}
             >
-              🇰🇷 {isEn ? 'Domestic (Korea)' : '국내 여행'}
+              🇰🇷 {isEn ? 'Domestic' : '국내 여행'}
             </button>
             <button 
+              type="button"
               className={`filter-button ${filterType === 'international' ? 'active' : ''}`}
               onClick={() => setFilterType('international')}
             >
-              ✈️ {isEn ? 'International' : '해외 여행'}
+              ✈️ {isEn ? 'Overseas' : '해외 여행'}
             </button>
           </div>
 
           {/* Search Input Bar */}
-          <div style={{ flex: 1, minWidth: '240px', maxWidth: '400px' }}>
-            <input 
-              type="text" 
-              placeholder={isEn ? "Search by city, country, or keyword..." : "도시, 국가, 테마 키워드 검색..."}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              style={{ width: '100%' }}
-            />
+          <div style={{ flex: '1 1 260px', maxWidth: '420px', minWidth: '0', width: '100%' }}>
+            <div className="search-bar-wrapper">
+              <span style={{ fontSize: '1.1rem', opacity: 0.6, userSelect: 'none' }}>🔍</span>
+              <input 
+                type="text" 
+                className="search-bar-input"
+                placeholder={isEn ? "Search city, country, or theme..." : "도시, 국가, 테마 키워드 검색..."}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+              {searchQuery && (
+                <button 
+                  type="button" 
+                  onClick={() => setSearchQuery('')}
+                  className="search-clear-btn"
+                  title="검색어 지우기"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
         {/* Style & Duration Selectors */}
-        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', borderTop: '1px solid var(--colors-ink)', paddingTop: '0.75rem' }}>
+        <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', borderTop: '1px solid rgba(0,0,0,0.1)', paddingTop: '0.9rem', marginTop: '0.9rem', alignItems: 'center' }}>
           {/* Duration Selector */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>⏱️ {isEn ? 'Duration' : '일정 기간'}:</span>
-            <div style={{ display: 'flex', gap: '0.25rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.82rem', fontWeight: 800, whiteSpace: 'nowrap' }}>⏱️ {isEn ? 'Duration' : '일정 기간'}:</span>
+            <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
               {[1, 2, 3, 4, 5, 7, 10, 14].map((d) => (
                 <button
                   key={d}
+                  type="button"
                   onClick={() => setDuration(d)}
                   className={`btn ${duration === d ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ padding: '0.2rem 0.5rem', fontSize: '0.8rem' }}
+                  style={{ padding: '0.3rem 0.6rem', fontSize: '0.78rem', borderRadius: '4px' }}
                 >
                   {d}{isEn ? 'D' : '일'}
                 </button>
@@ -211,15 +229,16 @@ export default function Dashboard({ destinations, onSelectDestination, lang = 'e
           </div>
 
           {/* Travel Style Selector */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>🎨 {isEn ? 'Theme Style' : '여행 테마'}:</span>
-            <div style={{ display: 'flex', gap: '0.25rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.82rem', fontWeight: 800, whiteSpace: 'nowrap' }}>🎨 {isEn ? 'Theme Style' : '여행 테마'}:</span>
+            <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
               {['healing', 'activity', 'culture', 'food'].map((sKey) => (
                 <button
                   key={sKey}
+                  type="button"
                   onClick={() => setStyle(sKey)}
                   className={`btn ${style === sKey ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ padding: '0.2rem 0.6rem', fontSize: '0.8rem' }}
+                  style={{ padding: '0.3rem 0.65rem', fontSize: '0.78rem', borderRadius: '4px' }}
                 >
                   {STYLE_NAMES[sKey]}
                 </button>
@@ -374,15 +393,16 @@ export default function Dashboard({ destinations, onSelectDestination, lang = 'e
       )}
 
       {/* Destinations Header with Add Button */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '1rem' }}>
-        <h3 style={{ fontSize: '1.5rem', fontWeight: 700 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+        <h3 style={{ fontSize: '1.35rem', fontWeight: 800, margin: 0 }}>
           {isEn ? `Recommended Destinations (${filtered.length})` : `추천 여행지 (${filtered.length})`}
         </h3>
         
         <button 
+          type="button"
           className="btn btn-secondary" 
           onClick={() => { setShowAddCity(!showAddCity); setFormError(''); setRequestSuccessMsg(''); }}
-          style={{ fontSize: '0.85rem', padding: '0.5rem 1rem', borderColor: '#f59e0b', color: 'inherit' }}
+          style={{ fontSize: '0.82rem', padding: '0.45rem 0.85rem', borderColor: '#f59e0b', color: 'inherit', borderRadius: '6px' }}
         >
           {showAddCity 
             ? (isEn ? '✕ Close Request Window' : '✕ 요청 창 닫기') 
