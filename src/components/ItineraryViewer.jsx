@@ -319,15 +319,13 @@ export default function ItineraryViewer({
 
 
 
-  const getStyleKoreanName = (styleKey) => {
-    switch (styleKey) {
-      case 'healing': return isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식';
-      case 'activity': return isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험';
-      case 'culture': return isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화';
-      case 'food': return isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행';
-      default: return styleKey;
-    }
+  const STYLE_NAMES = {
+    healing: isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식',
+    activity: isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험',
+    culture: isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화',
+    food: isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행'
   };
+  const getStyleKoreanName = (styleKey) => STYLE_NAMES[styleKey] || styleKey;
 
   const weatherInfo = getClothingAndWeatherGuide(destination.name, destination.country, isEn);
 

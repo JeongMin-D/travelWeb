@@ -46,12 +46,8 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     // 2. Search query (matches name, englishName, country, continent, or tagline)
     const query = searchQuery.toLowerCase().trim();
     if (query) {
-      const matchName = dest.name.toLowerCase().includes(query);
-      const matchEngName = dest.englishName.toLowerCase().includes(query);
-      const matchCountry = dest.country.toLowerCase().includes(query);
-      const matchContinent = dest.continent.toLowerCase().includes(query);
-      const matchTag = dest.tagline.toLowerCase().includes(query);
-      if (!matchName && !matchEngName && !matchCountry && !matchContinent && !matchTag) return false;
+      const haystack = `${dest.name} ${dest.englishName || ''} ${dest.country} ${dest.continent} ${dest.tagline}`.toLowerCase();
+      if (!haystack.includes(query)) return false;
     }
     return true;
   });
@@ -104,15 +100,13 @@ export default function Dashboard({ destinations, onSelectDestination, onRegiste
     setShowAddCity(false);
   };
 
-  const getStyleKoreanName = (styleKey) => {
-    switch (styleKey) {
-      case 'healing': return isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식';
-      case 'activity': return isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험';
-      case 'culture': return isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화';
-      case 'food': return isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행';
-      default: return styleKey;
-    }
+  const STYLE_NAMES = {
+    healing: isEn ? '🌿 Healing & Rest' : '🌿 힐링 & 휴식',
+    activity: isEn ? '⚡ Activity & Adventure' : '⚡ 액티비티 & 체험',
+    culture: isEn ? '🏛️ History & Culture' : '🏛️ 역사 & 문화',
+    food: isEn ? '🍕 Food & Culinary' : '🍕 식도락 여행'
   };
+  const getStyleKoreanName = (styleKey) => STYLE_NAMES[styleKey] || styleKey;
 
   const handleCardClick = (dest) => {
     let selectedStyle = style;
